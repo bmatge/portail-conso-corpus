@@ -15,7 +15,6 @@ clean_crawl.py
 Dockerfile
 docker-compose.yml
 deploy.sh
-entrypoint.sh
 vitest.config.js
 package*.json
 __pycache__/

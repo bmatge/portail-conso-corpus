@@ -9,6 +9,8 @@ import sys
 
 PORT = 8888
 PROXY_PATH = "/proxy/"
+API_PATH = "/api/"
+API_BACKEND = "http://localhost:8000"
 
 
 class Handler(http.server.SimpleHTTPRequestHandler):
@@ -21,7 +23,18 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         else:
             super().do_OPTIONS()
 
+    def do_GET(self):
+        # Proxy /api/* → FastAPI backend
+        if self.path.startswith(API_PATH):
+            self._proxy_api()
+        else:
+            super().do_GET()
+
     def do_POST(self):
+        if self.path.startswith(API_PATH):
+            self._proxy_api()
+            return
+
         if not self.path.startswith(PROXY_PATH):
             self.send_error(404)
             return
@@ -59,6 +72,32 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.send_header("Content-Type", "application/json")
             self.end_headers()
             self.wfile.write(resp_body)
+
+    def _proxy_api(self):
+        """Proxy /api/* requests to FastAPI backend."""
+        target_url = API_BACKEND + self.path
+        content_length = int(self.headers.get("Content-Length", 0))
+        body = self.rfile.read(content_length) if content_length else None
+
+        req = urllib.request.Request(
+            target_url, data=body, method=self.command,
+            headers={"Content-Type": self.headers.get("Content-Type", "application/json")},
+        )
+        try:
+            with urllib.request.urlopen(req) as resp:
+                resp_body = resp.read()
+                self.send_response(resp.status)
+                self.send_header("Content-Type", resp.headers.get("Content-Type", "application/json"))
+                self.end_headers()
+                self.wfile.write(resp_body)
+        except urllib.error.HTTPError as e:
+            resp_body = e.read()
+            self.send_response(e.code)
+            self.send_header("Content-Type", "application/json")
+            self.end_headers()
+            self.wfile.write(resp_body)
+        except urllib.error.URLError:
+            self.send_error(502, "Backend API non disponible (lancer uvicorn sur le port 8000)")
 
     def _cors_headers(self):
         self.send_header("Access-Control-Allow-Origin", "*")
