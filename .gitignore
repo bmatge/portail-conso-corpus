@@ -15,5 +15,3 @@ __pycache__/
 # Divers
 .env
 run.sh
-corpus/*
-!corpus/index.json
