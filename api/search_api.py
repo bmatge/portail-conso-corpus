@@ -760,8 +760,10 @@ async def agent_chat(req: AgentChatRequest):
 
         # ── CLASSIFY phase ───────────────────────────────
         if session.phase == Phase.CLASSIFY:
-            enriched_prompt = _build_rag_system_prompt(system_prompt, rag_results)
-            data = await _llm_call_blocking(enriched_prompt, req.messages, req.temperature, 320)
+            # RAG context is NOT injected here — it made the LLM too
+            # hesitant, always returning clarification instead of committing
+            # to a situation_id. RAG is used later in the ANSWER phase.
+            data = await _llm_call_blocking(system_prompt, req.messages, req.temperature, 320)
             content = data.get("choices", [{}])[0].get("message", {}).get("content", "")
 
             # Parse JSON result
