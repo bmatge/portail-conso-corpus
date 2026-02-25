@@ -15,15 +15,24 @@ export class TaxonomyTree {
     this.candidates = [];
     this.dur      = 550;
 
-    this.COLORS = [
-      '#6a6af4', '#009081', '#e36500', '#18753c',
-      '#0063cb', '#8585f6', '#ce0500', '#8d4e85',
-    ];
-    this.DOMAIN_SHORT = [
-      'Com. deloyales', 'Contrats', 'Prix', 'Alimentaire',
-      'Numerique', 'Secteurs', 'Securite', 'Concurrence',
-    ];
-    this.DOMAIN_EMOJI = ['⚠️','📋','🏷️','🍽️','💻','🏢','🛡️','⚖️'];
+    // Derive colors, short labels and emojis from taxonomy data
+    this.ICON_EMOJI = {
+      'fr-icon-warning-fill': '⚠️',
+      'fr-icon-file-text-fill': '📋',
+      'fr-icon-price-tag-3-fill': '🏷️',
+      'fr-icon-restaurant-fill': '🍽️',
+      'fr-icon-computer-fill': '💻',
+      'fr-icon-building-fill': '🏢',
+      'fr-icon-shield-fill': '🛡️',
+      'fr-icon-bar-chart-box-fill': '📊',
+      'fr-icon-home-4-fill': '🏠',
+      'fr-icon-bank-fill': '🏦',
+      'fr-icon-scales-fill': '⚖️',
+      'fr-icon-heart-fill': '🕊️',
+    };
+    this.COLORS = taxonomy.domaines.map(d => d.couleur || '#888');
+    this.DOMAIN_SHORT = taxonomy.domaines.map(d => this._shortLabel(d.label));
+    this.DOMAIN_EMOJI = taxonomy.domaines.map(d => this.ICON_EMOJI[d.icone] || '📌');
 
     this.lookup = {};
     taxonomy.domaines.forEach((d, di) => {
@@ -356,12 +365,39 @@ export class TaxonomyTree {
   _short(str, max) {
     return str && str.length > max ? str.slice(0, max - 1) + '…' : (str || '');
   }
+  _shortLabel(label) {
+    const map = {
+      'pratiques commerciales': 'Com. déloyales',
+      'contrats': 'Contrats',
+      'prix': 'Prix',
+      'fraude et sécurité alimentaire': 'Alimentaire',
+      'numérique': 'Numérique',
+      'secteurs réglementés': 'Secteurs',
+      'sécurité des produits': 'Sécurité',
+      'pratiques anticoncurrentielles': 'Concurrence',
+      'logement': 'Logement',
+      'banque': 'Banque',
+      'droits du consommateur': 'Droits conso',
+      'services funéraires': 'Funéraire',
+    };
+    const lower = (label || '').toLowerCase();
+    for (const [key, short] of Object.entries(map)) {
+      if (lower.startsWith(key)) return short;
+    }
+    // Fallback: first two words, max 15 chars
+    const words = label.split(/[\s,]+/).slice(0, 2).join(' ');
+    return words.length > 15 ? words.slice(0, 14) + '…' : words;
+  }
 
   _showTooltip(event, d) {
     if (!this.tooltip) return;
     const nd = d.data;
     let html = '';
-    if (nd.type === 'root') html = '<strong>DGCCRF</strong><br>8 domaines · 92 situations';
+    if (nd.type === 'root') {
+      const nDom = this.taxonomy.domaines.length;
+      const nSit = this.taxonomy.domaines.reduce((s, d) => s + d.sous_domaines.reduce((s2, ss) => s2 + ss.situations.length, 0), 0);
+      html = `<strong>DGCCRF</strong><br>${nDom} domaines · ${nSit} situations`;
+    }
     else if (nd.type === 'domaine') html = `<strong>${nd.fullLabel || nd.label}</strong><br>${nd.count} situations`;
     else if (nd.type === 'sous_domaine') html = `<strong>${nd.fullLabel || nd.label}</strong>`;
     else html = `<strong>${nd.fullLabel || nd.label}</strong>` + (nd.active ? '<br><em>✓ Situation identifiee</em>' : '');
@@ -414,7 +450,7 @@ export class TaxonomyTree {
     this.foundId = null;
     this.candidates = [];
     this._draw();
-    this._setStateLabel('Vue d\'ensemble — 8 domaines');
+    this._setStateLabel(`Vue d'ensemble — ${this.taxonomy.domaines.length} domaines`);
   }
 
   _setStateLabel(txt) {

@@ -18,3 +18,4 @@ corpus/index.json
 # Divers
 .env
 run.sh
+.DS_Store
