@@ -29,3 +29,4 @@ __pycache__/
 !scripts/build_corpus_index.py
 !README.md
 !PRESENTATION.md
+!PROMPTS.md

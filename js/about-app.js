@@ -1,11 +1,12 @@
 /**
  * Controller for the About page.
- * Two sub-pages: presentation (PRESENTATION.md) and technique (README.md with mermaid).
+ * Three sub-pages: presentation, technique (README with mermaid), prompts.
  */
 
 const PAGES = {
-  presentation: { file: './PRESENTATION.md', title: 'Presentation fonctionnelle' },
+  presentation: { file: './PRESENTATION.md', title: 'Présentation fonctionnelle' },
   technique:    { file: './README.md',        title: 'Documentation technique' },
+  prompts:      { file: './PROMPTS.md',       title: 'Prompts de rédaction' },
 };
 
 const cache = {};
