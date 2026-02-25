@@ -1,7 +1,7 @@
 /**
  * Gestion du panneau droit : bascule entre l'arbre D3 et le viewer de fiche.
  */
-import { stripFrontmatter } from './fiches-renderer.js';
+import { stripFrontmatter, parseFrontmatter, buildMetadataBadge } from './fiches-renderer.js';
 
 /**
  * Extrait la section "En bref" d'un markdown brut.
@@ -34,7 +34,9 @@ export async function showFicheInPanel(taxonomyId, state) {
 
   const md = state.ficheCache[taxonomyId];
   const body = stripFrontmatter(md);
+  const meta = parseFrontmatter(md);
   const html = window.marked.parse(body);
+  const metaBadge = buildMetadataBadge(meta, body);
 
   // Remplir le viewer
   const viewer = document.getElementById('fiche-viewer');
@@ -47,6 +49,7 @@ export async function showFicheInPanel(taxonomyId, state) {
         `<li><span class="fr-breadcrumb__link" aria-current="page">${esc(info.title)}</span></li>` +
       `</ol>` +
     `</nav>` +
+    `<div style="position:relative">${metaBadge}</div>` +
     `<article class="fr-text fiche-article">${html}</article>`;
 
   // Basculer la visibilite

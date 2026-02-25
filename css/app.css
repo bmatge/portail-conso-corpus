@@ -237,6 +237,30 @@ html, body { height: 100%; margin: 0; overflow: hidden; }
 .msg-bubble ul, .msg-bubble ol { padding-left: 1.2rem; margin: .3rem 0; }
 .msg-bubble p { margin: .3rem 0; }
 
+/* ── Fiche metadata badge ── */
+.fiche-meta-badge {
+  position: absolute; top: 0; right: 0; z-index: 2;
+  font-size: .72rem; line-height: 1.4;
+  color: var(--text-mention-grey, #666);
+}
+.fiche-meta-badge summary {
+  cursor: pointer; padding: .2rem .5rem;
+  background: var(--background-alt-grey, #f6f6f6);
+  border: 1px solid var(--border-default-grey, #e0e0e0);
+  border-radius: .25rem; user-select: none;
+}
+.fiche-meta-badge[open] summary { border-radius: .25rem .25rem 0 0; }
+.fiche-meta-badge table {
+  background: #fff;
+  border: 1px solid var(--border-default-grey, #e0e0e0);
+  border-top: none; border-radius: 0 0 .25rem .25rem;
+  padding: .35rem .5rem;
+  white-space: nowrap;
+}
+.fiche-meta-badge td { padding: .1rem .4rem .1rem 0; }
+.fiche-meta-badge td:first-child { color: var(--text-mention-grey, #999); }
+.fiche-meta-badge td:last-child { text-align: right; }
+
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .split { flex-direction: column; }
