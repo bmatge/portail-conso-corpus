@@ -3,10 +3,6 @@ node_modules/
 *.md
 tests/
 scripts/
-dgccrf-drupal/
-particuliers-drupal/
-entreprises-drupal/
-inc-conso-md/
 chroma_db/
 serve.py
 scrape_inc_conso.py
@@ -19,7 +15,15 @@ vitest.config.js
 package*.json
 __pycache__/
 
-# Exceptions : corpus et script de build
+# Re-include corpus, sources and build script
 !corpus/
 !corpus/**
+!dgccrf-drupal/
+!dgccrf-drupal/**
+!particuliers-drupal/
+!particuliers-drupal/**
+!entreprises-drupal/
+!entreprises-drupal/**
+!inc-conso-md/
+!inc-conso-md/**
 !scripts/build_corpus_index.py
