@@ -1,0 +1,3073 @@
+{
+  "meta": {
+    "titre": "Taxonomie DGCCRF — Référentiel unifié consommation / concurrence / alimentaire / cyber",
+    "version": "2.1",
+    "date": "2026-02",
+    "description": "Fichier de référence unique combinant la taxonomie des problèmes de consommation DGCCRF et le mapping complet vers SignalConso. Pour chaque situation : libellé usager, exemples, sorties de fléchage priorisées, catégorie SignalConso avec URL de signalement direct et hints de sous-catégories. v2.1 : enrichi par analyse vectorielle (KMeans sur embeddings E5 du corpus DGCCRF, 1754 contenus).",
+    "contenu": {
+      "domaines": 8,
+      "sous_domaines": 44,
+      "situations": 112,
+      "types_sortie": 16,
+      "categories_signalconso": 18,
+      "sous_domaines_vectoriels": 10,
+      "situations_vectorielles": 20
+    },
+    "auteur": "MIWEB — Mission Ingénierie du Web, SNUM, Ministère de l'Économie et des Finances",
+    "usage": "Arbre de décision / chatbot de fléchage usager. Chaque situation est un nœud terminal. Les champs 'sorties' et 'signalconso' permettent de générer le fléchage vers le bon service ou formulaire."
+  },
+  "types_sortie": {
+    "signal_conso": {
+      "label": "Signalement SignalConso",
+      "description": "Plateforme officielle de signalement des anomalies auprès des professionnels et de la DGCCRF",
+      "url": "https://signal.conso.gouv.fr"
+    },
+    "mediation": {
+      "label": "Médiation de la consommation",
+      "description": "Recours gratuit auprès d'un médiateur sectoriel agréé, obligatoire pour les professionnels",
+      "url": "https://www.economie.gouv.fr/mediation-conso"
+    },
+    "service_public": {
+      "label": "Fiche service-public.fr",
+      "description": "Information officielle sur les droits et démarches",
+      "url": "https://www.service-public.fr"
+    },
+    "autorite_cnil": {
+      "label": "Saisine CNIL",
+      "description": "Commission Nationale de l'Informatique et des Libertés — protection des données personnelles",
+      "url": "https://www.cnil.fr/fr/plaintes"
+    },
+    "autorite_arcom": {
+      "label": "Saisine ARCOM",
+      "description": "Autorité de Régulation de la Communication Audiovisuelle et Numérique",
+      "url": "https://www.arcom.fr"
+    },
+    "autorite_amf": {
+      "label": "Saisine AMF",
+      "description": "Autorité des Marchés Financiers — investissements frauduleux",
+      "url": "https://www.amf-france.org/fr/espace-epargnants/signaler-une-escroquerie"
+    },
+    "autorite_dgal": {
+      "label": "Saisine DGAL / DDPP",
+      "description": "Direction Générale de l'Alimentation — fraude alimentaire production/distribution",
+      "url": "https://agriculture.gouv.fr/dgal"
+    },
+    "autorite_ansm": {
+      "label": "Signalement ANSM",
+      "description": "Agence Nationale de Sécurité du Médicament — produits de santé",
+      "url": "https://ansm.sante.fr"
+    },
+    "autorite_acpr": {
+      "label": "Saisine ACPR",
+      "description": "Autorité de Contrôle Prudentiel et de Résolution — banques et assurances",
+      "url": "https://acpr.banque-france.fr"
+    },
+    "autorite_arcep": {
+      "label": "Saisine ARCEP",
+      "description": "Autorité de Régulation des Communications Électroniques — opérateurs téléphonie/internet",
+      "url": "https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/espace-utilisateurs.html"
+    },
+    "juridiction": {
+      "label": "Recours judiciaire",
+      "description": "Tribunal judiciaire, juge des contentieux de la protection (JCP) pour litiges <= 10 000 €",
+      "url": "https://www.service-public.fr/particuliers/vosdroits/N19-6"
+    },
+    "police_gendarmerie": {
+      "label": "Dépôt de plainte",
+      "description": "En commissariat, gendarmerie ou en ligne via thesee.gouv.fr pour les arnaques en ligne",
+      "url": "https://www.thesee.gouv.fr"
+    },
+    "17cyber": {
+      "label": "17Cyber",
+      "description": "Assistance aux victimes de cybermalveillance",
+      "url": "https://www.17cyber.gouv.fr"
+    },
+    "cybermalveillance": {
+      "label": "Cybermalveillance.gouv.fr",
+      "description": "Assistance et diagnostic pour les victimes de cyberattaques",
+      "url": "https://www.cybermalveillance.gouv.fr"
+    },
+    "rappelconso": {
+      "label": "Consulter RappelConso",
+      "description": "Base officielle des rappels de produits en France",
+      "url": "https://rappel.conso.gouv.fr"
+    },
+    "idf_mediation": {
+      "label": "Médiation de la consommation — liste des médiateurs",
+      "description": "Trouver le médiateur compétent selon le secteur",
+      "url": "https://www.economie.gouv.fr/mediation-conso/trouver-un-mediateur"
+    }
+  },
+  "signalconso_categories": {
+    "AchatInternet": {
+      "label": "Achat sur Internet",
+      "url_thematique": "https://signal.conso.gouv.fr/fr/achat-site",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement",
+      "description": "Problèmes liés aux achats effectués sur des sites web, applications mobiles, places de marché"
+    },
+    "AchatMagasin": {
+      "label": "Achat en magasin",
+      "url_thematique": "https://signal.conso.gouv.fr/fr/achat-magasin",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
+      "description": "Problèmes rencontrés lors d'achats dans un commerce physique"
+    },
+    "Restauration": {
+      "label": "Café, restaurant",
+      "url_thematique": "https://signal.conso.gouv.fr/fr/cafe-restaurant",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/cafe-restaurant/faire-un-signalement",
+      "description": "Problèmes d'hygiène, de qualité, d'affichage des prix dans la restauration"
+    },
+    "DemarchageAbusif": {
+      "label": "Démarchage abusif",
+      "url_thematique": "https://signal.conso.gouv.fr/fr/demarchage-abusif",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/demarchage-abusif/faire-un-signalement",
+      "description": "Appels téléphoniques non sollicités, démarchage à domicile abusif, abus de faiblesse"
+    },
+    "DemarchesAdministratives": {
+      "label": "Démarches administratives",
+      "url_thematique": "https://signal.conso.gouv.fr/fr/demarches-administratives",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/demarches-administratives/faire-un-signalement",
+      "description": "Entreprises qui se font passer pour des administrations ou usurpent des identités officielles"
+    },
+    "IntoxicationAlimentaire": {
+      "label": "Intoxication alimentaire",
+      "url_thematique": "https://signal.conso.gouv.fr/fr/intoxication-alimentaire",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/intoxication-alimentaire/faire-un-signalement",
+      "description": "Toxi-infections alimentaires collectives (TIAC) et intoxications individuelles"
+    },
+    "EauGazElec": {
+      "label": "Eau, gaz, électricité",
+      "url_thematique": "https://signal.conso.gouv.fr/fr/eau-gaz-electricite",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/eau-gaz-electricite/faire-un-signalement",
+      "description": "Problèmes avec les fournisseurs d'énergie ou d'eau"
+    },
+    "TravauxRenovation": {
+      "label": "Travaux, rénovation, artisans",
+      "url_thematique": "https://signal.conso.gouv.fr/fr/travaux-renovation",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/travaux-renovation/faire-un-signalement",
+      "description": "Litiges avec des artisans, entrepreneurs du bâtiment, arnaques à la rénovation énergétique"
+    },
+    "VoyageLoisirs": {
+      "label": "Transports, voyages, loisirs",
+      "url_thematique": "https://signal.conso.gouv.fr/fr/voyage-loisirs",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/voyage-loisirs/faire-un-signalement",
+      "description": "Problèmes avec les agences de voyages, compagnies aériennes, hôtels, activités de loisirs"
+    },
+    "TelephonieFAI": {
+      "label": "Téléphonie, FAI et médias",
+      "url_thematique": "https://signal.conso.gouv.fr/fr/tel-internet-media",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/tel-internet-media/faire-un-signalement",
+      "description": "Litiges avec les opérateurs téléphoniques et fournisseurs d'accès à Internet"
+    },
+    "Banque": {
+      "label": "Banque et assurance",
+      "url_thematique": "https://signal.conso.gouv.fr/fr/banque-assurance",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/banque-assurance/faire-un-signalement",
+      "description": "Problèmes avec les banques, assurances, organismes de crédit"
+    },
+    "Voiture": {
+      "label": "Voiture et véhicule",
+      "url_thematique": "https://signal.conso.gouv.fr/fr/voiture-vehicule",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/voiture-vehicule/faire-un-signalement",
+      "description": "Problèmes lors de l'achat ou de la réparation d'un véhicule"
+    },
+    "Immobilier": {
+      "label": "Immobilier",
+      "url_thematique": "https://signal.conso.gouv.fr/fr/immobilier",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/immobilier/faire-un-signalement",
+      "description": "Problèmes avec agences immobilières, locations, diagnostics"
+    },
+    "Influenceur": {
+      "label": "Influenceur",
+      "url_thematique": "https://signal.conso.gouv.fr/fr/signaler-un-influenceur",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/signaler-un-influenceur/faire-un-signalement",
+      "description": "Publicités non déclarées, promotions trompeuses par des influenceurs"
+    },
+    "ProduitDangereux": {
+      "label": "Produit dangereux ou non conforme",
+      "url_thematique": "https://signal.conso.gouv.fr/fr",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement",
+      "description": "Produits présentant un risque pour la sécurité des consommateurs"
+    },
+    "Formation": {
+      "label": "Formation professionnelle",
+      "url_thematique": "https://signal.conso.gouv.fr/fr/cpf-formation",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/cpf-formation/faire-un-signalement",
+      "description": "Arnaques au CPF, organismes de formation frauduleux, diplômes bidons"
+    },
+    "Sante": {
+      "label": "Santé, beauté, médical",
+      "url_thematique": "https://signal.conso.gouv.fr/fr",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement",
+      "description": "Produits cosmétiques non conformes, pratiques médicales abusives"
+    },
+    "FauxSiteGouvernemental": {
+      "label": "Faux site gouvernemental",
+      "url_thematique": "https://signal.conso.gouv.fr/fr/faux-site-gouvernemental",
+      "url_signalement": "https://signal.conso.gouv.fr/fr/faux-site-gouvernemental/faire-un-signalement",
+      "description": "Sites imitant des services publics pour soutirer de l'argent"
+    }
+  },
+  "questions_qualification": [
+    {
+      "id": "q_profil",
+      "question": "Vous êtes…",
+      "type": "choix_unique",
+      "options": [
+        {
+          "id": "particulier",
+          "label": "Un particulier (consommateur)"
+        },
+        {
+          "id": "professionnel_tpe",
+          "label": "Un professionnel / TPE"
+        },
+        {
+          "id": "association",
+          "label": "Une association de consommateurs"
+        }
+      ],
+      "note": "Le périmètre DGCCRF couvre principalement les relations B2C. Les professionnels victimes de pratiques anticoncurrentielles ou de pratiques commerciales abusives B2B sont aussi concernés."
+    },
+    {
+      "id": "q_interlocuteur",
+      "question": "Votre problème concerne un litige avec…",
+      "type": "choix_unique",
+      "options": [
+        {
+          "id": "pro_france",
+          "label": "Un professionnel basé en France"
+        },
+        {
+          "id": "pro_ue",
+          "label": "Un professionnel basé dans l'Union Européenne"
+        },
+        {
+          "id": "pro_hors_ue",
+          "label": "Un professionnel basé hors de l'UE"
+        },
+        {
+          "id": "particulier",
+          "label": "Un autre particulier"
+        },
+        {
+          "id": "inconnue",
+          "label": "Je ne sais pas / un site internet sans coordonnées claires"
+        }
+      ]
+    },
+    {
+      "id": "q_deja_contacte",
+      "question": "Avez-vous déjà contacté le professionnel par écrit pour résoudre le problème ?",
+      "type": "choix_unique",
+      "options": [
+        {
+          "id": "oui",
+          "label": "Oui, sans réponse ou refus"
+        },
+        {
+          "id": "non",
+          "label": "Non, pas encore"
+        }
+      ],
+      "note": "La mise en demeure écrite est un préalable recommandé avant toute médiation ou recours judiciaire."
+    }
+  ],
+  "domaines": [
+    {
+      "id": "pratiques_commerciales",
+      "label": "Pratiques commerciales déloyales",
+      "icone": "fr-icon-warning-fill",
+      "description": "Publicité mensongère, démarchage abusif, arnaques diverses, manipulation du consommateur",
+      "couleur": "#E1000F",
+      "sous_domaines": [
+        {
+          "id": "publicite_trompeuse",
+          "label": "Publicité trompeuse ou mensongère",
+          "situations": [
+            {
+              "id": "pub_caracteristiques_fausses",
+              "label": "Les caractéristiques du produit/service annoncées ne correspondent pas à la réalité",
+              "exemples": [
+                "Produit décrit comme neuf mais reconditionné",
+                "Performance annoncée sans fondement"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1,
+                  "url": "https://signal.conso.gouv.fr/fr/internet/faire-un-signalement"
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2,
+                  "url": "https://www.service-public.fr/particuliers/vosdroits/F24270"
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "category_alt": "AchatMagasin",
+                "subcategory_hints": [
+                  "Publicite_mensongere",
+                  "Tromperie_sur_les_caracteristiques"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement",
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
+                },
+                "question_pivot": "L'achat a-t-il été effectué en ligne ou en magasin ?",
+                "note": "La catégorie SignalConso dépend du canal d'achat. En ligne → AchatInternet, en magasin → AchatMagasin"
+              }
+            },
+            {
+              "id": "pub_prix_mensonger",
+              "label": "Le prix réel est supérieur au prix annoncé (frais cachés, conditions non affichées)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2,
+                  "condition": "Litige chiffré avec le professionnel"
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "category_alt": "AchatMagasin",
+                "subcategory_hints": [
+                  "Prix_non_conforme",
+                  "Frais_caches"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement",
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
+                },
+                "question_pivot": "L'achat a-t-il été effectué en ligne ou en magasin ?",
+                "note": "Frais cachés en ligne → AchatInternet. Prix mal affiché en magasin → AchatMagasin"
+              }
+            },
+            {
+              "id": "pub_influenceur_dissimule",
+              "label": "Contenu sponsorisé d'un influenceur non identifié comme publicité",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_arcom",
+                  "priorite": 2,
+                  "note": "L'ARCOM régule la publicité des influenceurs depuis la loi du 9 juin 2023"
+                }
+              ],
+              "signalconso": {
+                "category": "Influenceur",
+                "subcategory_hints": [
+                  "Partenariat_commercial_non_declare",
+                  "Publicite_deguisee"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/signaler-un-influenceur/faire-un-signalement",
+                "note": "Catégorie dédiée aux influenceurs sur SignalConso depuis la loi juin 2023"
+              }
+            },
+            {
+              "id": "pub_greenwashing",
+              "label": "Allégations environnementales mensongères (greenwashing, faux écolabel)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "url": "https://www.service-public.fr/particuliers/vosdroits/F24270"
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "category_alt": "AchatMagasin",
+                "subcategory_hints": [
+                  "Publicite_mensongere",
+                  "Allegation_environnementale_fausse"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement",
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
+                },
+                "question_pivot": "La publicité mensongère est-elle sur un site web ou en magasin ?"
+              }
+            }
+          ]
+        },
+        {
+          "id": "demarchage",
+          "label": "Démarchage abusif",
+          "situations": [
+            {
+              "id": "demarchage_telephonique",
+              "label": "Démarchage téléphonique non sollicité (hors exceptions légales)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2,
+                  "label": "S'inscrire sur Bloctel",
+                  "url": "https://www.bloctel.gouv.fr"
+                }
+              ],
+              "signalconso": {
+                "category": "DemarchageAbusif",
+                "subcategory_hints": [
+                  "Probleme_de_demarchage_telephonique",
+                  "Je_recois_des_appels_commerciaux_non_desires",
+                  "Je_suis_demarche_par_un_operateur_utilisant_un_numero_commencant_par_09"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/demarchage-abusif/faire-un-signalement",
+                "note": "Catégorie la plus utilisée sur SignalConso. Inclut les numéros masqués ou commençant par 09xx."
+              }
+            },
+            {
+              "id": "demarchage_domicile",
+              "label": "Vente à domicile avec pression ou sans remise du bon de rétractation",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "url": "https://www.service-public.fr/particuliers/vosdroits/F24040"
+                }
+              ],
+              "signalconso": {
+                "category": "DemarchageAbusif",
+                "subcategory_hints": [
+                  "Probleme_de_demarchage_a_domicile",
+                  "Bon_de_retractation_non_remis"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/demarchage-abusif/faire-un-signalement"
+              }
+            },
+            {
+              "id": "abus_faiblesse",
+              "label": "Abus de faiblesse ou de vulnérabilité (personne âgée, état de détresse…)",
+              "sorties": [
+                {
+                  "type": "police_gendarmerie",
+                  "priorite": 1
+                },
+                {
+                  "type": "signal_conso",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "DemarchageAbusif",
+                "subcategory_hints": [
+                  "Abus_de_faiblesse",
+                  "Abus_de_vulnerabilite"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/demarchage-abusif/faire-un-signalement",
+                "note": "Signaler sur SignalConso ET déposer plainte en gendarmerie / commissariat. SignalConso seul est insuffisant pour l'abus de faiblesse (infraction pénale)."
+              }
+            }
+          ]
+        },
+        {
+          "id": "faux_avis",
+          "label": "Faux avis en ligne",
+          "situations": [
+            {
+              "id": "faux_avis_client",
+              "label": "Des avis clients semblent faux ou achetés",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "subcategory_hints": [
+                  "Faux_avis_en_ligne",
+                  "Avis_manipules"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+              }
+            },
+            {
+              "id": "suppression_avis_negatifs",
+              "label": "Un professionnel fait supprimer des avis négatifs légitimes",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "subcategory_hints": [
+                  "Faux_avis_en_ligne"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ventes_abusives",
+          "label": "Ventes liées, forcées ou abusives",
+          "situations": [
+            {
+              "id": "vente_liee",
+              "label": "Obligation d'acheter un produit pour en obtenir un autre (vente liée illégale)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "category_alt": "AchatInternet",
+                "subcategory_hints": [
+                  "Vente_liee",
+                  "Obligation_achat_produit"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+                },
+                "question_pivot": "L'achat forcé a-t-il eu lieu en ligne ou en magasin ?"
+              }
+            },
+            {
+              "id": "abonnement_cache",
+              "label": "Souscription à un abonnement sans consentement explicite (case précochée, option par défaut)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "subcategory_hints": [
+                  "Abonnement_non_desire",
+                  "Souscription_sans_consentement"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+              }
+            },
+            {
+              "id": "renouvellement_tacite_sans_preavis",
+              "label": "Renouvellement automatique d'un contrat sans information préalable",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "category_alt": "TelephonieFAI",
+                "subcategory_hints": [
+                  "Reconduction_tacite_sans_information",
+                  "Resiliation"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement",
+                  "url_signalement_telecom": "https://signal.conso.gouv.fr/fr/tel-internet-media/faire-un-signalement"
+                },
+                "question_pivot": "Le renouvellement concerne-t-il un abonnement téléphonique/internet ou un autre service ?"
+              }
+            }
+          ]
+        },
+        {
+          "id": "soldes_promotions",
+          "label": "Soldes et promotions mensongères",
+          "situations": [
+            {
+              "id": "prix_reference_fictif",
+              "label": "Le prix barré (prix de référence) n'a jamais été pratiqué ou est fictif",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "category_alt": "AchatInternet",
+                "subcategory_hints": [
+                  "Prix_reference_fictif",
+                  "Fausse_reduction",
+                  "Soldes_irreguliers"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+                },
+                "urls_complementaires": {
+                  "url_thematique_speciale": "https://signal.conso.gouv.fr/fr/black-friday-fausse-reduction"
+                }
+              }
+            },
+            {
+              "id": "soldes_irreguliers",
+              "label": "Soldes pratiqués en dehors des périodes légales sans autorisation",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "subcategory_hints": [
+                  "Soldes_irreguliers",
+                  "Prix_reference_fictif"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contrats_garanties",
+      "label": "Contrats, garanties et droits du consommateur",
+      "icone": "fr-icon-file-text-fill",
+      "description": "Clauses abusives, garanties légales, droit de rétractation, livraison, SAV",
+      "couleur": "#0063CB",
+      "sous_domaines": [
+        {
+          "id": "retractation",
+          "label": "Droit de rétractation",
+          "situations": [
+            {
+              "id": "retractation_refuse",
+              "label": "Le professionnel refuse d'appliquer le droit de rétractation de 14 jours (achat en ligne ou à distance)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "url": "https://www.service-public.fr/particuliers/vosdroits/F10485"
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "subcategory_hints": [
+                  "Droit_de_retractation_refuse",
+                  "Remboursement_refuse"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+              }
+            },
+            {
+              "id": "retractation_domicile",
+              "label": "Le professionnel refuse le droit de rétractation pour une vente à domicile",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "DemarchageAbusif",
+                "subcategory_hints": [
+                  "Bon_de_retractation_non_remis",
+                  "Droit_de_retractation_refuse"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/demarchage-abusif/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "livraison",
+          "label": "Livraison et non-délivrance",
+          "situations": [
+            {
+              "id": "non_livraison",
+              "label": "Le produit commandé n'est pas livré et le vendeur ne répond pas",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                },
+                {
+                  "type": "juridiction",
+                  "priorite": 3,
+                  "note": "Mise en demeure préalable recommandée"
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "subcategory_hints": [
+                  "Non_livraison",
+                  "Commande_non_recue",
+                  "Vendeur_injoignable"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+              }
+            },
+            {
+              "id": "retard_livraison",
+              "label": "Retard de livraison significatif sans information ni solution proposée",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "subcategory_hints": [
+                  "Retard_de_livraison",
+                  "Delai_non_respecte"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+              }
+            },
+            {
+              "id": "produit_endommage_livraison",
+              "label": "Produit reçu endommagé",
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "url": "https://www.service-public.fr/particuliers/vosdroits/F11628"
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "subcategory_hints": [
+                  "Produit_endommage",
+                  "Colis_abime_a_la_reception"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "garanties",
+          "label": "Garanties légales et commerciales",
+          "situations": [
+            {
+              "id": "garantie_conformite_refusee",
+              "label": "Le vendeur refuse la garantie légale de conformité (2 ans pour produits neufs, 1 an pour occasion)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "url": "https://www.service-public.fr/particuliers/vosdroits/F11094"
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "category_alt": "AchatInternet",
+                "subcategory_hints": [
+                  "Garantie_legale_refusee",
+                  "Garantie_de_conformite"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+                },
+                "question_pivot": "Le produit a-t-il été acheté en ligne ou en magasin ?"
+              }
+            },
+            {
+              "id": "garantie_vices_caches",
+              "label": "Défaut caché découvert après achat (vice caché)",
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "url": "https://www.service-public.fr/particuliers/vosdroits/F11094"
+                },
+                {
+                  "type": "juridiction",
+                  "priorite": 2,
+                  "note": "La garantie des vices cachés relève du juge civil"
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "category_alt": "AchatInternet",
+                "subcategory_hints": [
+                  "Vice_cache",
+                  "Defaut_cache"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+                },
+                "note": "SignalConso peut enregistrer le signalement mais le recours judiciaire reste nécessaire pour obtenir réparation (vice caché = garantie civile)"
+              }
+            },
+            {
+              "id": "garantie_commerciale_non_respectee",
+              "label": "La garantie commerciale du fabricant ou du vendeur n'est pas appliquée",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "category_alt": "AchatInternet",
+                "subcategory_hints": [
+                  "Garantie_commerciale_non_respectee"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "clauses_abusives",
+          "label": "Clauses abusives dans un contrat",
+          "situations": [
+            {
+              "id": "clause_resiliation_abusive",
+              "label": "Le contrat impose des conditions de résiliation excessivement contraignantes",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "url": "https://www.service-public.fr/particuliers/vosdroits/F2175"
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "subcategory_hints": [
+                  "Clause_abusive",
+                  "Conditions_de_resiliation_abusives"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+              }
+            },
+            {
+              "id": "clause_responsabilite_limitee",
+              "label": "Une clause exclut ou limite abusivement la responsabilité du professionnel",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "category_alt": "AchatMagasin",
+                "subcategory_hints": [
+                  "Clause_abusive"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement",
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
+                }
+              }
+            },
+            {
+              "id": "clause_unilaterale_modification",
+              "label": "Le professionnel se réserve le droit de modifier unilatéralement le contrat",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "subcategory_hints": [
+                  "Clause_abusive",
+                  "Modification_unilaterale_contrat"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "sav",
+          "label": "Service après-vente (SAV) défaillant",
+          "situations": [
+            {
+              "id": "sav_non_reponse",
+              "label": "Le SAV ne répond pas ou refuse de traiter la demande",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "category_alt": "AchatInternet",
+                "subcategory_hints": [
+                  "Service_apres_vente_defaillant",
+                  "SAV_injoignable"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+                }
+              }
+            },
+            {
+              "id": "reparation_facturee_garantie",
+              "label": "Une réparation est facturée alors qu'elle devrait être couverte par la garantie",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "subcategory_hints": [
+                  "Reparation_facturee_sous_garantie",
+                  "Garantie_legale_refusee"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prix_etiquetage",
+      "label": "Prix et étiquetage",
+      "icone": "fr-icon-price-tag-3-fill",
+      "description": "Affichage des prix, double étiquetage, frais cachés, transparence tarifaire",
+      "couleur": "#009099",
+      "sous_domaines": [
+        {
+          "id": "affichage_prix",
+          "label": "Affichage des prix non conforme",
+          "situations": [
+            {
+              "id": "prix_non_affiche",
+              "label": "Les prix ne sont pas affichés en magasin ou sur le site",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "category_alt": "AchatInternet",
+                "subcategory_hints": [
+                  "Prix_non_affiche",
+                  "Affichage_des_prix_incorrect"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+                }
+              }
+            },
+            {
+              "id": "prix_ttc_non_mentionne",
+              "label": "Le prix TTC n'est pas clairement indiqué (uniquement HT sans mention)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "category_alt": "AchatInternet",
+                "subcategory_hints": [
+                  "Prix_TTC_non_affiche"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+                }
+              }
+            },
+            {
+              "id": "frais_caches_commande",
+              "label": "Des frais (livraison, service) apparaissent seulement au moment du paiement",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "subcategory_hints": [
+                  "Frais_caches",
+                  "Frais_supplementaires_non_annonces"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "etiquetage_produits",
+          "label": "Étiquetage incorrect des produits",
+          "situations": [
+            {
+              "id": "etiquette_double",
+              "label": "Double étiquetage (nouveau prix sur ancien, l'original reste lisible et est différent)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "subcategory_hints": [
+                  "Double_etiquetage",
+                  "Etiquetage_frauduleux"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
+              }
+            },
+            {
+              "id": "etiquette_mensongere_origine",
+              "label": "L'origine du produit indiquée est fausse ou trompeuse",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "category_alt": "AchatInternet",
+                "subcategory_hints": [
+                  "Etiquetage_frauduleux",
+                  "Origine_fausse"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "etiquetage_textile_cuir",
+          "label": "Étiquetage des textiles, cuir et chaussures",
+          "source_vectorielle": "Cluster S7.4 — 14 contenus DGCCRF",
+          "situations": [
+            {
+              "id": "composition_textile_fausse",
+              "label": "La composition textile indiquée sur l'étiquette est fausse (ex. : « 100% coton » alors que c'est du polyester)",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "category_alt": "AchatInternet",
+                "subcategory_hints": ["Etiquetage_textile_non_conforme", "Composition_fausse"],
+                "url_signalement_alt": {
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+                }
+              }
+            },
+            {
+              "id": "faux_cuir",
+              "label": "Produit vendu comme « cuir » alors qu'il s'agit de simili-cuir ou matière synthétique",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "category_alt": "AchatInternet",
+                "subcategory_hints": ["Denomination_cuir_abusive", "Tromperie_matiere"],
+                "url_signalement_alt": {
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alimentaire",
+      "label": "Fraude et sécurité alimentaire",
+      "icone": "fr-icon-restaurant-fill",
+      "description": "Fraude sur la composition, étiquetage alimentaire, hygiène, allégations nutritionnelles, compléments alimentaires",
+      "couleur": "#18753C",
+      "sous_domaines": [
+        {
+          "id": "fraude_composition",
+          "label": "Fraude sur la composition des aliments",
+          "situations": [
+            {
+              "id": "composition_differente_etiquette",
+              "label": "La composition réelle du produit ne correspond pas à l'étiquette (ex : viande de cheval vendue comme bœuf)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_dgal",
+                  "priorite": 2,
+                  "note": "Pour les fraudes sur la production agricole et l'industrie agroalimentaire"
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "category_alt": "Restauration",
+                "subcategory_hints": [
+                  "Composition_differente_de_letiquette",
+                  "Fraude_alimentaire"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
+                  "url_signalement_restaurant": "https://signal.conso.gouv.fr/fr/cafe-restaurant/faire-un-signalement"
+                },
+                "question_pivot": "Le produit est-il acheté en épicerie/grande surface ou consommé au restaurant ?"
+              }
+            },
+            {
+              "id": "fraude_bio",
+              "label": "Produit vendu comme bio sans certification valide",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_dgal",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "subcategory_hints": [
+                  "Fraude_label_bio",
+                  "Produit_bio_non_certifie"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
+              }
+            },
+            {
+              "id": "fraude_aoc_igp",
+              "label": "Usage abusif d'une AOP/IGP/Label Rouge",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_dgal",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "subcategory_hints": [
+                  "Usage_abusif_AOP_IGP",
+                  "Fraude_sur_label"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
+              }
+            },
+            {
+              "id": "origine_geographique_fausse",
+              "label": "L'origine géographique annoncée est fausse (ex : fromage présenté comme provençal, fabriqué en Pologne)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "subcategory_hints": [
+                  "Origine_geographique_fausse",
+                  "Etiquetage_frauduleux"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "etiquetage_alimentaire",
+          "label": "Étiquetage alimentaire non conforme",
+          "situations": [
+            {
+              "id": "allergenes_absents",
+              "label": "Les allergènes ne sont pas mentionnés ou sont masqués sur l'étiquette",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1,
+                  "note": "Urgence potentielle pour la sécurité des personnes allergiques"
+                },
+                {
+                  "type": "autorite_dgal",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "category_alt": "Restauration",
+                "subcategory_hints": [
+                  "Allergenes_non_mentionnes",
+                  "Etiquetage_alimentaire_non_conforme"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
+                  "url_signalement_restaurant": "https://signal.conso.gouv.fr/fr/cafe-restaurant/faire-un-signalement"
+                },
+                "note": "Situation potentiellement urgente pour les personnes allergiques. Signalement prioritaire.",
+                "urgence": true
+              }
+            },
+            {
+              "id": "date_peremption_manquante",
+              "label": "Date de péremption (DLC/DDM) absente ou illisible",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "subcategory_hints": [
+                  "Date_de_peremption_manquante",
+                  "Etiquetage_alimentaire_non_conforme"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
+              }
+            },
+            {
+              "id": "produit_perime_vendu",
+              "label": "Des produits périmés sont en vente",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "subcategory_hints": [
+                  "Produit_perime_en_vente",
+                  "DLC_depassee"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
+              }
+            },
+            {
+              "id": "allegations_nutritionnelles_fausses",
+              "label": "Allégations nutritionnelles ou de santé fausses ou non autorisées (ex : 'réduit le cholestérol' sans preuve)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "category_alt": "AchatInternet",
+                "subcategory_hints": [
+                  "Allegation_nutritionnelle_fausse",
+                  "Publicite_mensongere"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "complements_alimentaires",
+          "label": "Compléments alimentaires",
+          "situations": [
+            {
+              "id": "complement_allegations_medicales",
+              "label": "Un complément alimentaire est présenté comme un médicament (guérit, soigne une maladie)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_ansm",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "category_alt": "AchatMagasin",
+                "subcategory_hints": [
+                  "Complement_alimentaire_allegation_medicale",
+                  "Publicite_mensongere"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement",
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
+                }
+              }
+            },
+            {
+              "id": "complement_substance_interdite",
+              "label": "Présence suspectée d'une substance interdite dans un complément alimentaire",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_ansm",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "category_alt": "AchatMagasin",
+                "subcategory_hints": [
+                  "Substance_interdite",
+                  "Produit_non_conforme"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement",
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "restauration",
+          "label": "Restauration",
+          "situations": [
+            {
+              "id": "hygiene_restauration",
+              "label": "Problème d'hygiène grave dans un restaurant (rongeurs, cafards, cuisine insalubre…)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_dgal",
+                  "priorite": 2,
+                  "note": "Les DDPP inspectent la restauration"
+                }
+              ],
+              "signalconso": {
+                "category": "Restauration",
+                "subcategory_hints": [
+                  "Probleme_hygiene_cuisine",
+                  "Presence_nuisibles",
+                  "Conditions_insalubres"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/cafe-restaurant/faire-un-signalement"
+              }
+            },
+            {
+              "id": "tromperie_carte_restaurant",
+              "label": "Produits du menu différents de ce qui est servi (surgelé annoncé comme frais, composition différente)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "Restauration",
+                "subcategory_hints": [
+                  "Produit_different_de_la_carte",
+                  "Surgele_presente_comme_frais",
+                  "Composition_differente"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/cafe-restaurant/faire-un-signalement"
+              }
+            },
+            {
+              "id": "intoxication_alimentaire",
+              "label": "Intoxication alimentaire (toxi-infection alimentaire collective suspectée)",
+              "sorties": [
+                {
+                  "type": "autorite_dgal",
+                  "priorite": 1,
+                  "note": "Signalement via les DDPP / ARS pour enquête épidémiologique"
+                },
+                {
+                  "type": "signal_conso",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "IntoxicationAlimentaire",
+                "subcategory_hints": [
+                  "Intoxication_alimentaire_collective",
+                  "Intoxication_alimentaire_individuelle"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/intoxication-alimentaire/faire-un-signalement",
+                "urls_complementaires": {
+                  "url_thematique": "https://signal.conso.gouv.fr/fr/intoxication-alimentaire"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "vins_spiritueux",
+          "label": "Vins et spiritueux",
+          "source_vectorielle": "Cluster S7.3 — 20 contenus DGCCRF",
+          "situations": [
+            {
+              "id": "vin_appellation_frauduleuse",
+              "label": "Vin vendu sous une appellation d'origine (AOC/AOP) sans y avoir droit",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 },
+                { "type": "autorite_dgal", "priorite": 2, "note": "La DGAL/FranceAgriMer contrôle les appellations viticoles" }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "subcategory_hints": ["Fraude_appellation_origine", "Vin_non_conforme"],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
+              }
+            },
+            {
+              "id": "spiritueux_etiquetage",
+              "label": "Étiquetage non conforme sur une bouteille de vin ou spiritueux (degré, origine, cépage)",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "subcategory_hints": ["Etiquetage_vin_non_conforme", "Mention_obligatoire_absente"],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "agriculture_bio_labels",
+          "label": "Agriculture biologique et labels de qualité",
+          "source_vectorielle": "Clusters S7.1 + S5.2 — 40+ contenus DGCCRF",
+          "situations": [
+            {
+              "id": "faux_label_bio",
+              "label": "Produit vendu comme « bio » sans certification officielle (logo AB ou Eurofeuille absent)",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "category_alt": "AchatInternet",
+                "subcategory_hints": ["Faux_label_bio", "Usage_abusif_mention_bio"],
+                "url_signalement_alt": {
+                  "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+                }
+              }
+            },
+            {
+              "id": "label_qualite_usurpe",
+              "label": "Usage frauduleux d'un signe de qualité (Label Rouge, IGP, STG) ou d'une mention valorisante (« fermier », « artisanal »)",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 }
+              ],
+              "signalconso": {
+                "category": "AchatMagasin",
+                "subcategory_hints": ["Label_qualite_usurpe", "Mention_valorisante_trompeuse"],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "numerique_cyber",
+      "label": "Numérique, cyber et commerce en ligne",
+      "icone": "fr-icon-computer-fill",
+      "description": "Arnaques en ligne, plateformes, influenceurs, dark patterns, données personnelles, investissements frauduleux",
+      "couleur": "#6A6AF4",
+      "sous_domaines": [
+        {
+          "id": "arnaques_en_ligne",
+          "label": "Arnaques en ligne",
+          "situations": [
+            {
+              "id": "faux_site_commerce",
+              "label": "Faux site de vente en ligne : j'ai commandé et payé, mais rien reçu et le site a disparu",
+              "sorties": [
+                {
+                  "type": "police_gendarmerie",
+                  "priorite": 1,
+                  "url": "https://www.thesee.gouv.fr"
+                },
+                {
+                  "type": "signal_conso",
+                  "priorite": 2
+                },
+                {
+                  "type": "17cyber",
+                  "priorite": 3
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "subcategory_hints": [
+                  "Site_web_frauduleux",
+                  "Escroquerie_en_ligne",
+                  "Non_livraison",
+                  "Vendeur_injoignable"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement",
+                "note": "SignalConso est utile mais insuffisant seul. Orienter vers Thesee pour le dépôt de plainte en ligne."
+              }
+            },
+            {
+              "id": "phishing",
+              "label": "Hameçonnage (phishing) : j'ai reçu un faux email/SMS imitant un organisme officiel",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1,
+                  "url": "https://www.signal-spam.fr",
+                  "label": "Signaler sur Signal Spam"
+                },
+                {
+                  "type": "cybermalveillance",
+                  "priorite": 2
+                },
+                {
+                  "type": "17cyber",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "subcategory_hints": [],
+                "canal_principal_si_hors_sc": "signal_spam",
+                "note": "Le phishing ne concerne pas un professionnel identifié. SignalConso ne s'applique pas directement. Orienter vers signal-spam.fr, cybermalveillance.gouv.fr et 17cyber.gouv.fr.",
+                "urls_complementaires": {
+                  "url_signal_spam": "https://www.signal-spam.fr"
+                }
+              }
+            },
+            {
+              "id": "faux_site_gouvernemental",
+              "label": "Faux site imitant un service public pour obtenir des paiements indus (faux permis de conduire, faux timbres fiscaux…)",
+              "sorties": [
+                {
+                  "type": "police_gendarmerie",
+                  "priorite": 1
+                },
+                {
+                  "type": "cybermalveillance",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "FauxSiteGouvernemental",
+                "subcategory_hints": [
+                  "Faux_site_imitant_administration",
+                  "Usurpation_identite_service_public"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faux-site-gouvernemental/faire-un-signalement",
+                "urls_complementaires": {
+                  "url_thematique": "https://signal.conso.gouv.fr/fr/faux-site-gouvernemental"
+                }
+              }
+            },
+            {
+              "id": "arnaque_support_technique",
+              "label": "Arnaque au support technique (fausse alerte virus, prise en main à distance non sollicitée)",
+              "sorties": [
+                {
+                  "type": "cybermalveillance",
+                  "priorite": 1
+                },
+                {
+                  "type": "police_gendarmerie",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "subcategory_hints": [
+                  "Arnaque_support_technique",
+                  "Fausse_alerte_virus"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement",
+                "note": "Signalement sur SignalConso si une entreprise est identifiée. Sinon → cybermalveillance.gouv.fr"
+              }
+            },
+            {
+              "id": "arnaque_investissement",
+              "label": "Placement financier frauduleux (crypto, forex, fonds d'investissement promettant des rendements élevés)",
+              "sorties": [
+                {
+                  "type": "autorite_amf",
+                  "priorite": 1
+                },
+                {
+                  "type": "police_gendarmerie",
+                  "priorite": 1
+                },
+                {
+                  "type": "17cyber",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "subcategory_hints": [
+                  "Investissement_frauduleux",
+                  "Escroquerie_financiere"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement",
+                "note": "Compléter impérativement avec un signalement AMF (Autorité des Marchés Financiers) et un dépôt de plainte"
+              }
+            }
+          ]
+        },
+        {
+          "id": "plateformes_marketplaces",
+          "label": "Plateformes et places de marché",
+          "situations": [
+            {
+              "id": "vendeur_marketplace_defaillant",
+              "label": "Un vendeur tiers sur une marketplace (Amazon, Cdiscount, Leboncoin…) ne livre pas ou vend un produit défectueux",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2,
+                  "note": "La plateforme est responsable de mettre en relation avec le médiateur"
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "subcategory_hints": [
+                  "Non_livraison",
+                  "Produit_non_conforme",
+                  "Vendeur_marketplace_defaillant"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement",
+                "note": "Signaler la marketplace elle-même (Amazon, Cdiscount…) qui est responsable de mettre en relation avec le médiateur"
+              }
+            },
+            {
+              "id": "plateforme_classement_opaque",
+              "label": "Les résultats ou avis sur une plateforme semblent manipulés ou favorisent des partenaires payants sans information",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "subcategory_hints": [
+                  "Classement_manipule",
+                  "Avis_trompeursements"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "dark_patterns",
+          "label": "Interfaces trompeuses (dark patterns)",
+          "situations": [
+            {
+              "id": "dark_pattern_abonnement",
+              "label": "Un abonnement a été activé suite à une interface conçue pour tromper (case précochée, bouton déguisé, défilement trompeur)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "subcategory_hints": [
+                  "Abonnement_non_desire",
+                  "Souscription_sans_consentement",
+                  "Interface_trompeuse"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
+              }
+            },
+            {
+              "id": "dark_pattern_cookies",
+              "label": "Impossible de refuser les cookies aussi facilement qu'on peut les accepter",
+              "sorties": [
+                {
+                  "type": "autorite_cnil",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "subcategory_hints": [],
+                "canal_principal_si_hors_sc": "cnil",
+                "note": "Dark pattern cookies → relève de la CNIL exclusivement, pas de SignalConso",
+                "urls_complementaires": {
+                  "url_cnil": "https://www.cnil.fr/fr/plaintes"
+                }
+              }
+            },
+            {
+              "id": "dark_pattern_resiliation",
+              "label": "La résiliation d'un service en ligne est délibérément complexifiée (procédure introuvable, obstacles artificiels)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "AchatInternet",
+                "category_alt": "TelephonieFAI",
+                "subcategory_hints": [
+                  "Resiliation_difficile",
+                  "Obstacle_a_la_resiliation"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement",
+                  "url_signalement_telecom": "https://signal.conso.gouv.fr/fr/tel-internet-media/faire-un-signalement"
+                },
+                "question_pivot": "La résiliation bloquée concerne-t-elle un opérateur télécom/internet ?"
+              }
+            }
+          ]
+        },
+        {
+          "id": "donnees_personnelles_commerce",
+          "label": "Données personnelles et pratiques commerciales",
+          "situations": [
+            {
+              "id": "donnees_vendues_tiers",
+              "label": "Mes données personnelles ont été transmises ou vendues à des tiers sans mon consentement à des fins commerciales",
+              "sorties": [
+                {
+                  "type": "autorite_cnil",
+                  "priorite": 1
+                },
+                {
+                  "type": "signal_conso",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "subcategory_hints": [],
+                "canal_principal_si_hors_sc": "cnil",
+                "note": "Relève de la CNIL pour la partie données personnelles. SignalConso peut être complémentaire si une pratique commerciale déloyale est associée.",
+                "urls_complementaires": {
+                  "url_cnil": "https://www.cnil.fr/fr/plaintes"
+                }
+              }
+            },
+            {
+              "id": "droit_acces_refuse",
+              "label": "Un site refuse d'exercer mon droit d'accès, de rectification ou de suppression de mes données",
+              "sorties": [
+                {
+                  "type": "autorite_cnil",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "subcategory_hints": [],
+                "canal_principal_si_hors_sc": "cnil",
+                "note": "Relève exclusivement de la CNIL.",
+                "urls_complementaires": {
+                  "url_cnil": "https://www.cnil.fr/fr/plaintes"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "influenceurs",
+          "label": "Influenceurs et marketing en ligne",
+          "situations": [
+            {
+              "id": "promo_produit_sante_influenceur",
+              "label": "Un influenceur promeut un produit de santé, de chirurgie esthétique ou financier de façon trompeuse",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_arcom",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "Influenceur",
+                "subcategory_hints": [
+                  "Promotion_produit_sante_trompeuse",
+                  "Contenu_publicitaire_non_declare"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/signaler-un-influenceur/faire-un-signalement",
+                "urls_complementaires": {
+                  "url_thematique": "https://signal.conso.gouv.fr/fr/signaler-un-influenceur"
+                }
+              }
+            },
+            {
+              "id": "partenariat_non_declare",
+              "label": "Un partenariat commercial n'est pas déclaré dans une publication ou vidéo",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_arcom",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "Influenceur",
+                "subcategory_hints": [
+                  "Partenariat_commercial_non_declare"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/signaler-un-influenceur/faire-un-signalement"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "secteurs_reglementes",
+      "label": "Secteurs réglementés",
+      "icone": "fr-icon-building-fill",
+      "description": "Immobilier, crédit, voyages, énergie, automobile, téléphonie, assurance, formation",
+      "couleur": "#A558A0",
+      "sous_domaines": [
+        {
+          "id": "immobilier",
+          "label": "Immobilier",
+          "mediateur": {
+            "label": "Médiateur de l'immobilier",
+            "url": "https://www.mediateur-immobilier.fr"
+          },
+          "situations": [
+            {
+              "id": "agence_honoraires_abusifs",
+              "label": "Honoraires d'agence immobilière non affichés, abusifs ou non conformes à la loi Alur",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "Immobilier",
+                "subcategory_hints": [
+                  "Honoraires_agence_non_conformes",
+                  "Honoraires_non_affiches"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/immobilier/faire-un-signalement"
+              }
+            },
+            {
+              "id": "diagnostic_errone",
+              "label": "Diagnostic immobilier (DPE, amiante…) erroné ou frauduleux",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "juridiction",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "Immobilier",
+                "subcategory_hints": [
+                  "Diagnostic_immobilier_errone",
+                  "DPE_frauduleux"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/immobilier/faire-un-signalement"
+              }
+            },
+            {
+              "id": "location_logement_non_conforme",
+              "label": "Logement loué non conforme (DPE mensonger, surfaces fausses, caractéristiques non conformes)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "Immobilier",
+                "subcategory_hints": [
+                  "Logement_non_conforme",
+                  "DPE_mensonger",
+                  "Surface_fausse"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/immobilier/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "credit",
+          "label": "Crédit à la consommation et prêts",
+          "mediateur": {
+            "label": "Médiateur de la banque et de l'assurance",
+            "url": "https://www.lemediateur.fr"
+          },
+          "situations": [
+            {
+              "id": "teg_errone",
+              "label": "Taux d'intérêt ou TAEG (Taux Annuel Effectif Global) erroné ou non communiqué",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "Banque",
+                "subcategory_hints": [
+                  "TAEG_errone",
+                  "Taux_interet_incorrect"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/banque-assurance/faire-un-signalement"
+              }
+            },
+            {
+              "id": "credit_revolving_abusif",
+              "label": "Crédit renouvelable proposé de façon agressive ou sans vérification de solvabilité",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_acpr",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "Banque",
+                "subcategory_hints": [
+                  "Credit_revolving_abusif",
+                  "Verification_solvabilite_absente"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/banque-assurance/faire-un-signalement"
+              }
+            },
+            {
+              "id": "assurance_emprunteur_refus",
+              "label": "Refus illégal de substitution d'assurance emprunteur",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "Banque",
+                "subcategory_hints": [
+                  "Refus_substitution_assurance_emprunteur"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/banque-assurance/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "voyages_tourisme",
+          "label": "Voyages et tourisme",
+          "mediateur": {
+            "label": "Médiateur du tourisme et du voyage (MTV)",
+            "url": "https://www.mtv.travel"
+          },
+          "situations": [
+            {
+              "id": "vol_annule_remboursement_refuse",
+              "label": "Vol annulé et la compagnie refuse le remboursement ou l'indemnisation (règlement CE 261/2004)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2,
+                  "label": "Médiateur du Tourisme et du Voyage"
+                }
+              ],
+              "signalconso": {
+                "category": "VoyageLoisirs",
+                "subcategory_hints": [
+                  "Vol_annule_remboursement_refuse",
+                  "Indemnisation_refusee"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/voyage-loisirs/faire-un-signalement"
+              }
+            },
+            {
+              "id": "sejour_non_conforme",
+              "label": "Le séjour ou le voyage à forfait ne correspond pas à ce qui était décrit",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "VoyageLoisirs",
+                "subcategory_hints": [
+                  "Sejour_non_conforme",
+                  "Voyage_a_forfait_non_conforme"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/voyage-loisirs/faire-un-signalement"
+              }
+            },
+            {
+              "id": "agence_voyage_defaillante",
+              "label": "L'agence de voyages a fait faillite ou n'exécute pas le contrat",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "url": "https://www.service-public.fr/particuliers/vosdroits/F2088"
+                }
+              ],
+              "signalconso": {
+                "category": "VoyageLoisirs",
+                "subcategory_hints": [
+                  "Agence_voyage_defaillante",
+                  "Faillite_agence_voyage"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/voyage-loisirs/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "energie",
+          "label": "Énergie (électricité, gaz)",
+          "mediateur": {
+            "label": "Médiateur national de l'énergie",
+            "url": "https://www.energie-mediateur.fr"
+          },
+          "situations": [
+            {
+              "id": "demarchage_energie_abusif",
+              "label": "Démarchage abusif d'un fournisseur d'énergie (pression, faux EDF, changement non voulu de fournisseur)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2,
+                  "label": "Médiateur national de l'énergie"
+                }
+              ],
+              "signalconso": {
+                "category": "DemarchageAbusif",
+                "category_alt": "EauGazElec",
+                "subcategory_hints": [
+                  "Probleme_de_demarchage_a_domicile",
+                  "Changement_fournisseur_non_voulu",
+                  "Faux_technicien_EDF_GDF"
+                ],
+                "url_signalement_alt": {
+                  "url_signalement_demarchage": "https://signal.conso.gouv.fr/fr/demarchage-abusif/faire-un-signalement",
+                  "url_signalement_energie": "https://signal.conso.gouv.fr/fr/eau-gaz-electricite/faire-un-signalement"
+                },
+                "question_pivot": "Y a-t-il eu pression lors du démarchage ou changement de fournisseur sans consentement ?"
+              }
+            },
+            {
+              "id": "facture_energie_anormale",
+              "label": "Facture d'énergie anormalement élevée ou inexpliquée",
+              "sorties": [
+                {
+                  "type": "mediation",
+                  "priorite": 1,
+                  "label": "Médiateur national de l'énergie"
+                },
+                {
+                  "type": "signal_conso",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "EauGazElec",
+                "subcategory_hints": [
+                  "Facture_anormalement_elevee",
+                  "Erreur_de_facturation_energie"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/eau-gaz-electricite/faire-un-signalement"
+              }
+            },
+            {
+              "id": "resiliation_energie_bloquee",
+              "label": "Résiliation du contrat d'énergie bloquée ou frais abusifs",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "EauGazElec",
+                "subcategory_hints": [
+                  "Resiliation_bloquee",
+                  "Frais_resiliation_abusifs"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/eau-gaz-electricite/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "automobile",
+          "label": "Automobile",
+          "mediateur": {
+            "label": "Médiateur des constructeurs automobiles",
+            "url": "https://www.cnpm-mediation-consommation.eu"
+          },
+          "situations": [
+            {
+              "id": "voiture_occasion_vices",
+              "label": "Voiture d'occasion vendue avec des défauts cachés",
+              "sorties": [
+                {
+                  "type": "juridiction",
+                  "priorite": 1,
+                  "note": "Garantie des vices cachés : recours civil"
+                },
+                {
+                  "type": "signal_conso",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "Voiture",
+                "subcategory_hints": [
+                  "Vice_cache_vehicule",
+                  "Vehicule_occasion_defaut_cache"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/voiture-vehicule/faire-un-signalement"
+              }
+            },
+            {
+              "id": "garage_surfacturation",
+              "label": "Garage : facturation de réparations non effectuées ou devis non respecté",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "Voiture",
+                "subcategory_hints": [
+                  "Reparation_non_effectuee_facturee",
+                  "Devis_non_respecte_garage"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/voiture-vehicule/faire-un-signalement"
+              }
+            },
+            {
+              "id": "compteur_kilometre_truque",
+              "label": "Compteur kilométrique manifestement truqué sur un véhicule d'occasion",
+              "sorties": [
+                {
+                  "type": "police_gendarmerie",
+                  "priorite": 1
+                },
+                {
+                  "type": "signal_conso",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "Voiture",
+                "subcategory_hints": [
+                  "Compteur_kilometrique_truque",
+                  "Fraude_vehicule_occasion"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/voiture-vehicule/faire-un-signalement",
+                "note": "Infraction pénale : orienter aussi vers dépôt de plainte"
+              }
+            }
+          ]
+        },
+        {
+          "id": "telephonie_internet",
+          "label": "Téléphonie et internet",
+          "mediateur": {
+            "label": "Médiation des communications électroniques",
+            "url": "https://www.mediateur-telecom.fr"
+          },
+          "situations": [
+            {
+              "id": "operateur_resiliation_difficile",
+              "label": "L'opérateur téléphonique rend la résiliation difficile ou facture des pénalités abusives",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_arcep",
+                  "priorite": 2
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 3
+                }
+              ],
+              "signalconso": {
+                "category": "TelephonieFAI",
+                "subcategory_hints": [
+                  "Resiliation_difficile",
+                  "Frais_resiliation_abusifs_telecom"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/tel-internet-media/faire-un-signalement",
+                "urls_complementaires": {
+                  "url_thematique": "https://signal.conso.gouv.fr/fr/obligation-adsl-fibre"
+                }
+              }
+            },
+            {
+              "id": "service_non_conforme_offre",
+              "label": "Le service fourni ne correspond pas à l'offre souscrite (débit insuffisant, couverture réseau)",
+              "sorties": [
+                {
+                  "type": "autorite_arcep",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "TelephonieFAI",
+                "subcategory_hints": [
+                  "Debit_insuffisant",
+                  "Service_non_conforme_offre_souscrite"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/tel-internet-media/faire-un-signalement"
+              }
+            },
+            {
+              "id": "surcharge_facture_telecom",
+              "label": "Surcharges incompréhensibles sur la facture téléphonique",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "TelephonieFAI",
+                "subcategory_hints": [
+                  "Surcharge_facture",
+                  "Facturation_abusive_telecom"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/tel-internet-media/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "assurance",
+          "label": "Assurance",
+          "mediateur": {
+            "label": "Médiation de l'assurance",
+            "url": "https://www.mediation-assurance.org"
+          },
+          "situations": [
+            {
+              "id": "sinistre_rembourse_insuffisamment",
+              "label": "Indemnisation suite à un sinistre refusée ou sous-évaluée",
+              "sorties": [
+                {
+                  "type": "mediation",
+                  "priorite": 1,
+                  "label": "Médiateur de l'assurance"
+                },
+                {
+                  "type": "autorite_acpr",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "Banque",
+                "subcategory_hints": [
+                  "Indemnisation_sinistre_refusee",
+                  "Remboursement_assurance_insuffisant"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/banque-assurance/faire-un-signalement"
+              }
+            },
+            {
+              "id": "resiliation_assurance_abusive",
+              "label": "Résiliation abusive d'un contrat d'assurance",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "Banque",
+                "subcategory_hints": [
+                  "Resiliation_abusive_assurance"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/banque-assurance/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "formation_professionnelle",
+          "label": "Formation professionnelle et enseignement privé",
+          "situations": [
+            {
+              "id": "organisme_formation_frauduleux",
+              "label": "Organisme de formation qui perçoit des fonds CPF sans dispenser la formation correctement",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "url": "https://www.service-public.fr/particuliers/vosdroits/F2928"
+                }
+              ],
+              "signalconso": {
+                "category": "Formation",
+                "subcategory_hints": [
+                  "Arnaque_CPF",
+                  "Formation_non_dispensee",
+                  "Organisme_formation_frauduleux"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/cpf-formation/faire-un-signalement",
+                "urls_complementaires": {
+                  "url_thematique": "https://signal.conso.gouv.fr/fr/cpf-formation"
+                }
+              }
+            },
+            {
+              "id": "diplome_bidon",
+              "label": "Diplôme ou certification bidon vendu à prix élevé",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "police_gendarmerie",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "Formation",
+                "subcategory_hints": [
+                  "Diplome_ou_certification_frauduleux"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/cpf-formation/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "sante_beaute",
+          "label": "Santé et produits de beauté",
+          "situations": [
+            {
+              "id": "cosmetique_non_conforme",
+              "label": "Produit cosmétique provoquant des effets indésirables graves ou non conforme",
+              "sorties": [
+                {
+                  "type": "autorite_ansm",
+                  "priorite": 1
+                },
+                {
+                  "type": "signal_conso",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "Sante",
+                "subcategory_hints": [
+                  "Cosmetique_non_conforme",
+                  "Effet_indesirable_cosmetique"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
+              }
+            },
+            {
+              "id": "medecine_douce_arnaque",
+              "label": "Praticien de médecine alternative facturant des soins inefficaces présentés comme curatifs",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "Sante",
+                "subcategory_hints": [
+                  "Pratique_medicale_abusive",
+                  "Soin_inefficace_presente_comme_curatif"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "sport_loisirs",
+          "label": "Sport, salles de remise en forme et loisirs",
+          "source_vectorielle": "Clusters S3.6 + S12 — 40+ contenus DGCCRF",
+          "situations": [
+            {
+              "id": "salle_sport_contrat_abusif",
+              "label": "Contrat de salle de sport avec clauses abusives (engagement, résiliation impossible, prélèvements après résiliation)",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 },
+                { "type": "mediation", "priorite": 2 }
+              ],
+              "signalconso": {
+                "category": "VoyageLoisirs",
+                "subcategory_hints": ["Salle_sport_contrat_abusif", "Clause_abusive_resiliation"],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/voyage-loisirs/faire-un-signalement"
+              }
+            },
+            {
+              "id": "salle_sport_hygiene",
+              "label": "Problème d'hygiène ou de sécurité dans une salle de sport (équipements défectueux, propreté)",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 }
+              ],
+              "signalconso": {
+                "category": "VoyageLoisirs",
+                "subcategory_hints": ["Salle_sport_hygiene", "Securite_equipement"],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/voyage-loisirs/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bricolage_btp",
+          "label": "Bricolage, BTP et équipements de la maison",
+          "source_vectorielle": "Cluster S12.2 — 8+ contenus DGCCRF",
+          "situations": [
+            {
+              "id": "materiau_construction_non_conforme",
+              "label": "Matériaux de construction vendus sans les certifications obligatoires ou avec des caractéristiques trompeuses",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 }
+              ],
+              "signalconso": {
+                "category": "TravauxRenovation",
+                "subcategory_hints": ["Materiau_non_conforme", "Certification_absente"],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/travaux-renovation/faire-un-signalement"
+              }
+            },
+            {
+              "id": "outillage_dangereux",
+              "label": "Outil de bricolage ou de jardin dangereux (débroussailleuse, tronçonneuse, perceuse sans protections)",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 },
+                { "type": "rappelconso", "priorite": 2 }
+              ],
+              "signalconso": {
+                "category": "ProduitDangereux",
+                "subcategory_hints": ["Outillage_dangereux", "Protection_absente"],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "securite_produits",
+      "label": "Sécurité des produits",
+      "icone": "fr-icon-shield-fill",
+      "description": "Produits dangereux, non conformités réglementaires, rappels de produits",
+      "couleur": "#FF6F4A",
+      "sous_domaines": [
+        {
+          "id": "produit_dangereux",
+          "label": "Produit dangereux ou non conforme",
+          "situations": [
+            {
+              "id": "jouet_dangereux",
+              "label": "Jouet dangereux (pièces détachables pour enfants en bas âge, absence de marquage CE, matériaux toxiques)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "rappelconso",
+                  "priorite": 2,
+                  "note": "Vérifier si le produit fait l'objet d'un rappel"
+                }
+              ],
+              "signalconso": {
+                "category": "ProduitDangereux",
+                "subcategory_hints": [
+                  "Jouet_dangereux",
+                  "Marquage_CE_absent",
+                  "Produit_non_conforme"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement",
+                "urls_complementaires": {
+                  "url_rappelconso": "https://rappel.conso.gouv.fr"
+                }
+              }
+            },
+            {
+              "id": "produit_electrique_dangereux",
+              "label": "Appareil électrique provoquant des chocs, surchauffe ou incendie",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "rappelconso",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "ProduitDangereux",
+                "subcategory_hints": [
+                  "Produit_electrique_dangereux",
+                  "Risque_electrocution_incendie"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement",
+                "urls_complementaires": {
+                  "url_rappelconso": "https://rappel.conso.gouv.fr"
+                }
+              }
+            },
+            {
+              "id": "produit_chimique_dangereux",
+              "label": "Produit chimique (détergent, biocide) sans étiquetage de danger ou non conforme",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "ProduitDangereux",
+                "subcategory_hints": [
+                  "Produit_chimique_sans_etiquetage_danger"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
+              }
+            },
+            {
+              "id": "produit_sous_rappel",
+              "label": "Je pense avoir acheté un produit faisant l'objet d'un rappel",
+              "sorties": [
+                {
+                  "type": "rappelconso",
+                  "priorite": 1
+                },
+                {
+                  "type": "signal_conso",
+                  "priorite": 2
+                }
+              ],
+              "signalconso": {
+                "category": "ProduitDangereux",
+                "subcategory_hints": [
+                  "Produit_rappele_encore_en_vente"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement",
+                "urls_complementaires": {
+                  "url_rappelconso": "https://rappel.conso.gouv.fr"
+                }
+              }
+            },
+            {
+              "id": "marquage_ce_absent",
+              "label": "Un produit vendu en France ne porte pas le marquage CE obligatoire",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "category": "ProduitDangereux",
+                "subcategory_hints": [
+                  "Marquage_CE_absent",
+                  "Produit_non_conforme_norme"
+                ],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "securite_enfants_puericulture",
+          "label": "Sécurité des enfants et puériculture",
+          "source_vectorielle": "Clusters S3.4 + S4.4 — 54 contenus DGCCRF",
+          "situations": [
+            {
+              "id": "puericulture_non_conforme",
+              "label": "Article de puériculture non conforme (lit, poussette, chaise haute, porte-bébé)",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 },
+                { "type": "rappelconso", "priorite": 2 }
+              ],
+              "signalconso": {
+                "category": "ProduitDangereux",
+                "subcategory_hints": ["Puericulture_dangereuse", "Article_enfant_non_conforme"],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
+              }
+            },
+            {
+              "id": "jouet_petites_pieces",
+              "label": "Jouet contenant des petites pièces détachables dangereuses pour enfants de moins de 3 ans",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 },
+                { "type": "rappelconso", "priorite": 2 }
+              ],
+              "signalconso": {
+                "category": "ProduitDangereux",
+                "subcategory_hints": ["Jouet_dangereux", "Petites_pieces_detachables"],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "securite_piscines_loisirs",
+          "label": "Sécurité des piscines et aires de jeux",
+          "source_vectorielle": "Cluster S4.6 — 19 contenus DGCCRF",
+          "situations": [
+            {
+              "id": "piscine_non_securisee",
+              "label": "Piscine privée sans dispositif de sécurité obligatoire (barrière, alarme, couverture, abri)",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 },
+                { "type": "service_public", "priorite": 2, "url": "https://www.service-public.fr/particuliers/vosdroits/F1722" }
+              ],
+              "signalconso": {
+                "category": "ProduitDangereux",
+                "subcategory_hints": ["Securite_piscine", "Absence_dispositif_securite"],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
+              }
+            },
+            {
+              "id": "aire_jeux_dangereuse",
+              "label": "Aire de jeux collective avec équipements dangereux ou mal entretenus",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 }
+              ],
+              "signalconso": {
+                "category": "ProduitDangereux",
+                "subcategory_hints": ["Aire_jeux_dangereuse", "Equipement_non_conforme"],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "equipements_protection",
+          "label": "Équipements de protection individuelle et sportive",
+          "source_vectorielle": "Cluster S4.2 — 37 contenus DGCCRF",
+          "situations": [
+            {
+              "id": "epi_non_conforme",
+              "label": "Équipement de protection individuelle (casque, lunettes, gants) non conforme ou sans marquage CE",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 }
+              ],
+              "signalconso": {
+                "category": "ProduitDangereux",
+                "subcategory_hints": ["EPI_non_conforme", "Marquage_CE_absent"],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
+              }
+            },
+            {
+              "id": "equipement_sport_dangereux",
+              "label": "Équipement sportif dangereux (vélo, trottinette, équipement équestre, nautique)",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 },
+                { "type": "rappelconso", "priorite": 2 }
+              ],
+              "signalconso": {
+                "category": "ProduitDangereux",
+                "subcategory_hints": ["Equipement_sport_dangereux", "Produit_non_conforme"],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "cosmetiques_tatouage",
+          "label": "Cosmétiques, tatouage et produits de beauté",
+          "source_vectorielle": "Clusters S7.5 + S4.3 — 44 contenus DGCCRF",
+          "situations": [
+            {
+              "id": "cosmetique_dangereux",
+              "label": "Produit cosmétique provoquant une réaction allergique ou contenant des substances interdites",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 },
+                { "type": "autorite_ansm", "priorite": 2, "note": "L'ANSM surveille les produits cosmétiques" }
+              ],
+              "signalconso": {
+                "category": "Sante",
+                "subcategory_hints": ["Produit_cosmetique_dangereux", "Reaction_allergique"],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
+              }
+            },
+            {
+              "id": "tatouage_non_conforme",
+              "label": "Salon de tatouage ou produits de tatouage/maquillage permanent non conformes",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 }
+              ],
+              "signalconso": {
+                "category": "Sante",
+                "subcategory_hints": ["Tatouage_non_conforme", "Encre_tatouage_dangereuse"],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "materiaux_contact_alimentaire",
+          "label": "Matériaux au contact des denrées alimentaires",
+          "source_vectorielle": "Cluster S4.5 — 26 contenus DGCCRF",
+          "situations": [
+            {
+              "id": "materiau_contact_non_conforme",
+              "label": "Emballage, ustensile ou contenant alimentaire libérant des substances nocives (migration, bisphénol, plomb)",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 },
+                { "type": "rappelconso", "priorite": 2 }
+              ],
+              "signalconso": {
+                "category": "ProduitDangereux",
+                "subcategory_hints": ["Materiau_contact_alimentaire", "Migration_substances_nocives"],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
+              }
+            },
+            {
+              "id": "ustensile_cuisine_dangereux",
+              "label": "Ustensile de cuisine (poêle, casserole, spatule) avec revêtement dégradé ou matériau non conforme",
+              "sorties": [
+                { "type": "signal_conso", "priorite": 1 }
+              ],
+              "signalconso": {
+                "category": "ProduitDangereux",
+                "subcategory_hints": ["Ustensile_non_conforme", "Revetement_degrade"],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "concurrence",
+      "label": "Pratiques anticoncurrentielles",
+      "icone": "fr-icon-bar-chart-box-fill",
+      "description": "Ententes, abus de position dominante, pratiques restrictives de concurrence (principalement B2B)",
+      "couleur": "#1E1E1E",
+      "note": "Ce domaine concerne principalement les relations entre professionnels. Les particuliers sont rarement directement parties à ces litiges, mais en subissent les effets (prix élevés, choix réduit).",
+      "sous_domaines": [
+        {
+          "id": "ententes",
+          "label": "Ententes anticoncurrentielles",
+          "situations": [
+            {
+              "id": "entente_prix",
+              "label": "Des concurrents s'entendent sur les prix ou se répartissent le marché (cartel)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1,
+                  "note": "La DGCCRF instruit les dossiers de concurrence locaux"
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2,
+                  "url": "https://www.autoritedelaconcurrence.fr/fr/plainte",
+                  "label": "Autorité de la concurrence (pour les marchés nationaux)"
+                }
+              ],
+              "signalconso": {
+                "subcategory_hints": [],
+                "canal_principal_si_hors_sc": "autorite_concurrence",
+                "note": "Les ententes anticoncurrentielles ne sont pas dans le périmètre du formulaire SignalConso pour les particuliers. Signalement à adresser directement à la DGCCRF ou à l'Autorité de la concurrence.",
+                "urls_complementaires": {
+                  "url_autorite_concurrence": "https://www.autoritedelaconcurrence.fr/fr/plainte"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "abus_position_dominante",
+          "label": "Abus de position dominante",
+          "situations": [
+            {
+              "id": "conditions_abusives_fournisseur",
+              "label": "Un partenaire commercial dominant impose des conditions contractuelles abusives (délais de paiement non légaux, marges arrière imposées…)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "url": "https://www.autoritedelaconcurrence.fr/fr/plainte"
+                }
+              ],
+              "signalconso": {
+                "subcategory_hints": [],
+                "canal_principal_si_hors_sc": "dgccrf_direct",
+                "note": "Pratiques restrictives B2B : relève de la DGCCRF via signalement direct, pas SignalConso (orienté B2C). Un professionnel peut tout de même utiliser SignalConso.",
+                "urls_complementaires": {
+                  "url_dgccrf": "https://www.economie.gouv.fr/dgccrf/signaler-un-probleme"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "pratiques_restrictives",
+          "label": "Pratiques commerciales restrictives (B2B)",
+          "situations": [
+            {
+              "id": "delais_paiement_depasses",
+              "label": "Un client dépasse les délais de paiement légaux (60 jours en général)",
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ],
+              "signalconso": {
+                "subcategory_hints": [],
+                "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement",
+                "note": "Délais de paiement B2B : la DGCCRF instruit ces dossiers. Signalement possible via SignalConso pour le professionnel victime."
+              }
+            },
+            {
+              "id": "rupture_brutale_relations",
+              "label": "Rupture brutale de relations commerciales établies sans préavis",
+              "sorties": [
+                {
+                  "type": "juridiction",
+                  "priorite": 1,
+                  "note": "Tribunal de commerce compétent"
+                }
+              ],
+              "signalconso": {
+                "subcategory_hints": [],
+                "canal_principal_si_hors_sc": "juridiction",
+                "note": "Relève du tribunal de commerce exclusivement. SignalConso non applicable."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "situations_transversales": [
+    {
+      "id": "litige_ue",
+      "label": "Litige avec un professionnel basé dans un autre pays de l'UE",
+      "sorties": [
+        {
+          "type": "service_public",
+          "label": "Centre Européen des Consommateurs (CEC France)",
+          "url": "https://www.europe-consommateurs.eu",
+          "priorite": 1
+        }
+      ]
+    },
+    {
+      "id": "litige_hors_ue",
+      "label": "Litige avec un professionnel basé hors UE",
+      "sorties": [
+        {
+          "type": "service_public",
+          "label": "Recours limités — conseils CEC France",
+          "url": "https://www.europe-consommateurs.eu",
+          "priorite": 1
+        },
+        {
+          "type": "police_gendarmerie",
+          "priorite": 2,
+          "note": "Si l'arnaque est caractérisée"
+        }
+      ]
+    },
+    {
+      "id": "urgence_securite",
+      "label": "Danger immédiat pour la santé ou la sécurité",
+      "sorties": [
+        {
+          "type": "autorite_dgal",
+          "priorite": 1,
+          "note": "Pour les alertes alimentaires"
+        },
+        {
+          "type": "autorite_ansm",
+          "priorite": 1,
+          "note": "Pour les produits de santé"
+        },
+        {
+          "type": "signal_conso",
+          "priorite": 2
+        }
+      ]
+    }
+  ]
+}

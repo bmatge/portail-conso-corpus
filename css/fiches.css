@@ -1,0 +1,43 @@
+/* ══════════════════════════════════════════════════════════
+   Styles fiches pratiques — override app.css viewport lock
+   + layout sidebar/contenu
+   ══════════════════════════════════════════════════════════ */
+
+/* Override full-viewport lock from app.css */
+html, body { height: auto; overflow: auto; }
+#page { height: auto; min-height: 100vh; display: block; }
+
+/* Main content area */
+.fiches-main { padding-top: 1.5rem; padding-bottom: 2rem; }
+
+/* Sidemenu sticky on desktop */
+@media (min-width: 62em) {
+  .fiches-sidebar {
+    position: sticky;
+    top: 1rem;
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+  }
+}
+
+/* Fiche content typography */
+#fiche-content article h1 { margin-top: 0; }
+#fiche-content article h2 {
+  margin-top: 2rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid var(--border-default-grey, #e0e0e0);
+}
+#fiche-content article h3 { margin-top: 1.5rem; }
+#fiche-content article ul,
+#fiche-content article ol { padding-left: 1.5rem; }
+
+/* Landing page cards */
+.fiches-landing h2 {
+  margin-top: 2rem;
+  color: var(--text-action-high-blue-france, #000091);
+}
+.fiches-landing h3 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--text-mention-grey, #666);
+}

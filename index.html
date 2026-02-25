@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr" data-fr-scheme="system">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assistant Consommateur — DGCCRF</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/dsfr/dsfr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/utility/icons/icons.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="page">
+
+  <!-- ── Header DSFR ── -->
+  <header class="fr-header" role="banner">
+    <div class="fr-header__body">
+      <div class="fr-container">
+        <div class="fr-header__body-row">
+          <div class="fr-header__brand fr-enlarge-link">
+            <div class="fr-header__brand-top">
+              <div class="fr-header__logo">
+                <p class="fr-logo">
+                  R&eacute;publique
+                  <br>Fran&ccedil;aise
+                </p>
+              </div>
+              <div class="fr-header__navbar">
+                <button class="fr-btn--menu fr-btn" data-fr-opened="false"
+                        aria-controls="modal-menu" aria-haspopup="menu"
+                        id="btn-menu" title="Menu">Menu</button>
+                <button class="fr-btn--search fr-btn" data-fr-opened="false"
+                        aria-controls="header-search-modal" title="Rechercher">Rechercher</button>
+              </div>
+            </div>
+            <div class="fr-header__service">
+              <a href="/" title="Accueil - Assistant Consommateur DGCCRF">
+                <p class="fr-header__service-title">Assistant Consommateur — DGCCRF</p>
+              </a>
+              <p class="fr-header__service-tagline">D&eacute;crivez votre probl&egrave;me en langage libre. Je vous oriente vers le bon recours.</p>
+            </div>
+          </div>
+          <div class="fr-header__tools">
+            <div class="fr-header__tools-links">
+              <ul class="fr-btns-group">
+                <li>
+                  <button class="fr-btn fr-icon-search-line" data-fr-opened="false"
+                          aria-controls="header-search-modal" title="Rechercher">Rechercher</button>
+                </li>
+              </ul>
+            </div>
+            <div class="fr-header__search fr-modal" id="header-search-modal">
+              <div class="fr-container fr-container-lg--fluid">
+                <button class="fr-btn--close fr-btn" aria-controls="header-search-modal" title="Fermer">Fermer</button>
+                <div class="fr-search-bar" role="search">
+                  <label class="fr-label" for="header-search-input">Rechercher</label>
+                  <input class="fr-input" placeholder="Ex : garantie l&eacute;gale, signaler une arnaque…"
+                         type="search" id="header-search-input">
+                  <button class="fr-btn" title="Rechercher" id="header-search-submit">Rechercher</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fr-header__menu fr-modal" id="modal-menu">
+      <div class="fr-container">
+        <button class="fr-btn--close fr-btn" aria-controls="modal-menu" title="Fermer">Fermer</button>
+        <div class="fr-header__menu-links"></div>
+        <nav class="fr-nav" role="navigation" aria-label="Menu principal">
+          <ul class="fr-nav__list">
+            <li class="fr-nav__item">
+              <a class="fr-nav__link" href="index.html" aria-current="page">Assistant</a>
+            </li>
+            <li class="fr-nav__item">
+              <a class="fr-nav__link" href="fiches.html">Fiches pratiques</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Config panel (accordion DSFR) ── -->
+  <section class="fr-accordion" id="config-section">
+    <h3 class="fr-accordion__title">
+      <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-config">
+        Configuration du mod&egrave;le LLM
+      </button>
+    </h3>
+    <div class="fr-collapse" id="accordion-config">
+      <div class="config-grid">
+        <div class="full">
+          <div class="config-preset-bar">
+            <button class="fr-tag fr-tag--sm" data-preset="albert">Albert (DINUM)</button>
+            <button class="fr-tag fr-tag--sm" data-preset="mistral">Mistral API</button>
+            <button class="fr-tag fr-tag--sm" data-preset="openai">OpenAI</button>
+            <button class="fr-tag fr-tag--sm" data-preset="ollama">Ollama local</button>
+            <button class="fr-tag fr-tag--sm" data-preset="anthropic">Anthropic</button>
+          </div>
+        </div>
+        <div class="fr-input-group">
+          <label class="fr-label" for="cfg-endpoint">Endpoint</label>
+          <input class="fr-input" id="cfg-endpoint" type="url" placeholder="https://albert.api.etalab.gouv.fr/v1/chat/completions">
+        </div>
+        <div class="fr-input-group">
+          <label class="fr-label" for="cfg-model">Mod&egrave;le</label>
+          <input class="fr-input" id="cfg-model" type="text" placeholder="albert-large">
+        </div>
+        <div class="fr-input-group">
+          <label class="fr-label" for="cfg-key">Cl&eacute; API</label>
+          <input class="fr-input" id="cfg-key" type="password" placeholder="sk-…">
+        </div>
+        <div class="fr-select-group">
+          <label class="fr-label" for="cfg-format">Format</label>
+          <select class="fr-select" id="cfg-format">
+            <option value="openai">OpenAI-compatible (Albert, Mistral, Ollama…)</option>
+            <option value="anthropic">Anthropic (Claude)</option>
+          </select>
+        </div>
+        <div class="fr-input-group">
+          <label class="fr-label" for="cfg-temp">Temp&eacute;rature</label>
+          <input class="fr-input" id="cfg-temp" type="number" min="0" max="1" step="0.05" value="0.1">
+        </div>
+        <div class="fr-input-group">
+          <label class="fr-label" for="cfg-maxtokens">Max tokens</label>
+          <input class="fr-input" id="cfg-maxtokens" type="number" min="64" max="512" step="32" value="256">
+        </div>
+      </div>
+      <div class="config-status" id="config-status"></div>
+      <div style="margin-top:.6rem">
+        <button class="fr-btn fr-btn--sm fr-btn--secondary" id="test-config-btn">Tester</button>
+        <button class="fr-btn fr-btn--sm" id="save-config-btn" style="margin-left:.5rem">Enregistrer</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Split layout ── -->
+  <div class="split">
+
+    <!-- ── Chat column ── -->
+    <div class="chat-col">
+      <div id="conversation" aria-live="polite" aria-label="Conversation"></div>
+      <div id="input-zone">
+        <textarea id="user-input" rows="1"
+          placeholder="Ex : Mon garagiste m'a factur&eacute; une r&eacute;paration qu'il n'a pas faite…"></textarea>
+        <button id="reset-btn" class="fr-btn fr-btn--tertiary fr-btn--sm fr-icon-refresh-line" title="Nouvelle conversation"></button>
+        <button id="send-btn" class="fr-btn fr-btn--sm">Envoyer</button>
+      </div>
+    </div>
+
+    <!-- ── Tree column ── -->
+    <div class="tree-col">
+      <div class="tree-toolbar">
+        <div class="tree-toolbar-title">
+          <span class="fr-icon-tree-line" aria-hidden="true"></span>
+          Arbre de d&eacute;cision
+          <span class="tree-state-label" id="tree-state-label">Vue d'ensemble — 8 domaines</span>
+        </div>
+        <div class="tree-toolbar-actions">
+          <button class="fr-btn fr-btn--sm fr-btn--tertiary" id="tree-fit-btn">Ajuster</button>
+        </div>
+      </div>
+      <div id="tree-svg-wrap">
+        <div class="tree-placeholder" id="tree-placeholder">
+          <div class="tree-placeholder-icon"><span class="fr-icon-tree-line" aria-hidden="true" style="font-size:2.5rem"></span></div>
+          <div>Chargement de la taxonomie…</div>
+        </div>
+      </div>
+      <div id="tree-footer">
+        <div class="tree-legend" id="tree-legend"></div>
+        <div id="tree-info">Zoom : molette · Pan : clic-glisser</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Tooltip flottant -->
+  <div class="tree-node-tooltip" id="tree-tooltip"></div>
+
+</div><!-- /#page -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/dsfr/dsfr.module.min.js" type="module"></script>
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/header-search.js"></script>
+</body>
+</html>

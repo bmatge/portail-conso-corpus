@@ -1,0 +1,44 @@
+---
+date: 2020-10-23
+scraped_at: '2026-02-24T23:32:51.474631'
+source: https://www.inc-conso.fr/content/affichette-metier-du-monnayeur
+tags:
+- INC-Conso
+title: Affichette métier du Monnayeur
+---
+
+# Affichette métier du Monnayeur
+
+![](/sites/all/themes/custom/inc/assets/images/icons/pedago_3_coeur.jpg)
+
+## Objectif(s)
+
+Donner des explications sur le travail du monnayeur.
+
+## Contenu
+
+Affichette de 30 cm x 40 cm qui représente le monnayeur et donne des réponses aux questions suivantes : -C'est quoi le monnayeur ? -Où est-ce que je travaille ? -Comment devenait-on monnayeur ? Voir aussi la valise pédagogique « l'Economie, un jeu d'enfant » (Fiche dans la pédagothèque au thème « banque-Argent ».
+
+## Observations du Comité Paritaire
+
+Affichette bien conçue et recouverte d'un film de protection en plastique pertinent pour une utilisation collective et de longue durée. Elle est attrayante et les différentes réponses données aux questions posées autour du monnayeur sont claires et précises.
+
+## Publics concernés
+
+Enseignants - Formateurs - Animateurs, Particuliers## Support
+
+Support papier, Exposition## Thème
+
+Banque/argent## Conditions de diffusion
+
+Diffusion gratuite
+
+## Pour l'obtenir
+
+Fondation Entreprise Réussite Scolaire4, rue Joseph Serlin 69001 Lyon
+
+04 26 20 69 82
+
+## Site internet
+
+[http://www.fers.asso.fr](http://www.fers.asso.fr)

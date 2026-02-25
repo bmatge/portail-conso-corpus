@@ -1,0 +1,74 @@
+/* ── Search page ── */
+
+.search-bar-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search-loading {
+  text-align: center;
+  margin: 3rem 0;
+  color: var(--text-mention-grey, #666);
+}
+
+.empty-state {
+  text-align: center;
+  margin: 4rem 0;
+  color: var(--text-mention-grey, #666);
+}
+
+/* ── Result cards ── */
+
+.result-snippet {
+  font-size: .875rem;
+  line-height: 1.6;
+  color: var(--text-default-grey, #3a3a3a);
+  margin-bottom: .75rem;
+  /* Clamp to 4 lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.result-meta {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  flex-wrap: wrap;
+  font-size: .75rem;
+  color: var(--text-mention-grey, #666);
+}
+
+/* ── Source badges ── */
+
+.source-badge {
+  font-size: .7rem;
+  padding: .15rem .5rem;
+  border-radius: .25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.source-badge--dgccrf       { background: var(--background-action-high-blue-france, #000091); }
+.source-badge--particuliers  { background: var(--background-flat-info, #0063cb); }
+.source-badge--entreprises   { background: var(--background-flat-success, #18753c); }
+.source-badge--inc           { background: var(--background-contrast-grey, #eee); color: var(--text-default-grey, #3a3a3a); }
+
+/* ── Score bar ── */
+
+.score-bar {
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background: var(--background-contrast-grey, #e5e5e5);
+  border-radius: 2px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.score-bar__fill {
+  height: 100%;
+  background: var(--background-action-high-blue-france, #000091);
+}

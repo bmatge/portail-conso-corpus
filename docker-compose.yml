@@ -1,0 +1,36 @@
+services:
+  portail-conso:
+    build: .
+    container_name: portail-conso
+    restart: unless-stopped
+    volumes:
+      - ./chroma_db:/chroma_db:ro
+    environment:
+      - CHROMA_DB_PATH=/chroma_db
+    networks:
+      - ecosystem-network
+    labels:
+      # --- Traefik ---
+      - "traefik.enable=true"
+
+      # HTTP → redirect HTTPS
+      - "traefik.http.routers.portail-conso-http.rule=Host(`conso.bercy.matge.com`)"
+      - "traefik.http.routers.portail-conso-http.entrypoints=web"
+      - "traefik.http.routers.portail-conso-http.middlewares=redirect-to-https@docker"
+
+      # HTTPS avec certificat Let's Encrypt
+      - "traefik.http.routers.portail-conso-https.rule=Host(`conso.bercy.matge.com`)"
+      - "traefik.http.routers.portail-conso-https.entrypoints=websecure"
+      - "traefik.http.routers.portail-conso-https.tls=true"
+      - "traefik.http.routers.portail-conso-https.tls.certresolver=letsencrypt"
+
+      # Service
+      - "traefik.http.services.portail-conso.loadbalancer.server.port=80"
+
+      # Middleware redirect (réutilisable)
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.permanent=true"
+
+networks:
+  ecosystem-network:
+    external: true

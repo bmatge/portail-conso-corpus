@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr" data-fr-scheme="system">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recherche — Assistant Consommateur DGCCRF</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/dsfr/dsfr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/utility/icons/icons.min.css">
+  <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+<div id="page">
+
+  <!-- ── Header DSFR ── -->
+  <header class="fr-header" role="banner">
+    <div class="fr-header__body">
+      <div class="fr-container">
+        <div class="fr-header__body-row">
+          <div class="fr-header__brand fr-enlarge-link">
+            <div class="fr-header__brand-top">
+              <div class="fr-header__logo">
+                <p class="fr-logo">R&eacute;publique<br>Fran&ccedil;aise</p>
+              </div>
+            </div>
+            <div class="fr-header__service">
+              <a href="/" title="Accueil - Assistant Consommateur DGCCRF">
+                <p class="fr-header__service-title">Assistant Consommateur — DGCCRF</p>
+              </a>
+              <p class="fr-header__service-tagline">Recherche s&eacute;mantique dans la base de connaissances</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Contenu principal ── -->
+  <main class="fr-container fr-mt-4w fr-mb-8w">
+
+    <!-- Barre de recherche -->
+    <div class="search-bar-wrap">
+      <div class="fr-search-bar fr-search-bar--lg" role="search">
+        <label class="fr-label" for="search-input">Rechercher dans la base de connaissances</label>
+        <input class="fr-input" placeholder="Ex : garantie l&eacute;gale, signaler une arnaque…"
+               type="search" id="search-input">
+        <button class="fr-btn" title="Rechercher" id="search-submit">Rechercher</button>
+      </div>
+    </div>
+
+    <!-- En-tête résultats -->
+    <div id="results-header" class="fr-mt-3w" hidden>
+      <p class="fr-text--sm fr-text--mention-grey">
+        <span id="results-count"></span> r&eacute;sultats pour
+        <strong id="results-query"></strong>
+        <span id="results-time" class="fr-ml-1w"></span>
+      </p>
+    </div>
+
+    <!-- Loading -->
+    <div id="search-loading" class="search-loading" hidden>
+      <div class="fr-spinner" aria-label="Recherche en cours…"></div>
+      <p class="fr-mt-1w">Recherche en cours…</p>
+    </div>
+
+    <!-- Erreur -->
+    <div id="search-error" hidden>
+      <div class="fr-alert fr-alert--error fr-mt-3w">
+        <p class="fr-alert__title">Erreur</p>
+        <p id="error-message"></p>
+      </div>
+    </div>
+
+    <!-- Grille de résultats -->
+    <div class="fr-grid-row fr-grid-row--gutters fr-mt-2w" id="results-container"></div>
+
+    <!-- État vide -->
+    <div id="empty-state" class="empty-state" hidden>
+      <span class="fr-icon-search-line" aria-hidden="true" style="font-size:3rem"></span>
+      <p class="fr-text--lg fr-mt-2w">Aucun r&eacute;sultat trouv&eacute;</p>
+      <p class="fr-text--sm fr-text--mention-grey">Essayez avec d'autres mots-cl&eacute;s</p>
+    </div>
+
+  </main>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/dsfr/dsfr.module.min.js" type="module"></script>
+<script type="module" src="js/search-page.js"></script>
+</body>
+</html>

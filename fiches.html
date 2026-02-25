@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr" data-fr-scheme="system">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fiches pratiques — DGCCRF</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/dsfr/dsfr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/utility/icons/icons.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/fiches.css">
+</head>
+<body>
+<div id="page">
+
+  <!-- ── Header DSFR ── -->
+  <header class="fr-header" role="banner">
+    <div class="fr-header__body">
+      <div class="fr-container">
+        <div class="fr-header__body-row">
+          <div class="fr-header__brand fr-enlarge-link">
+            <div class="fr-header__brand-top">
+              <div class="fr-header__logo">
+                <p class="fr-logo">
+                  R&eacute;publique
+                  <br>Fran&ccedil;aise
+                </p>
+              </div>
+              <div class="fr-header__navbar">
+                <button class="fr-btn--menu fr-btn" data-fr-opened="false"
+                        aria-controls="modal-menu" aria-haspopup="menu"
+                        id="btn-menu" title="Menu">Menu</button>
+              </div>
+            </div>
+            <div class="fr-header__service">
+              <a href="/" title="Accueil - Assistant Consommateur DGCCRF">
+                <p class="fr-header__service-title">Assistant Consommateur — DGCCRF</p>
+              </a>
+              <p class="fr-header__service-tagline">Fiches pratiques — Vos droits de consommateur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fr-header__menu fr-modal" id="modal-menu">
+      <div class="fr-container">
+        <button class="fr-btn--close fr-btn" aria-controls="modal-menu" title="Fermer">Fermer</button>
+        <div class="fr-header__menu-links"></div>
+        <nav class="fr-nav" role="navigation" aria-label="Menu principal">
+          <ul class="fr-nav__list">
+            <li class="fr-nav__item">
+              <a class="fr-nav__link" href="index.html">Assistant</a>
+            </li>
+            <li class="fr-nav__item">
+              <a class="fr-nav__link" href="fiches.html" aria-current="page">Fiches pratiques</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Main content ── -->
+  <div class="fr-container fiches-main">
+    <div class="fr-grid-row fr-grid-row--gutters">
+
+      <!-- Sidebar -->
+      <div class="fr-col-12 fr-col-md-4 fr-col-lg-3 fiches-sidebar">
+        <nav class="fr-sidemenu" id="fiches-sidemenu" aria-labelledby="sidemenu-title">
+          <div class="fr-sidemenu__inner">
+            <button class="fr-sidemenu__btn" aria-controls="sidemenu-wrapper" aria-expanded="false">
+              Dans cette rubrique
+            </button>
+            <div class="fr-collapse" id="sidemenu-wrapper">
+              <p class="fr-sidemenu__title" id="sidemenu-title">Fiches pratiques</p>
+              <ul class="fr-sidemenu__list" id="sidemenu-list">
+                <!-- populated by JS -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Content area -->
+      <div class="fr-col-12 fr-col-md-8 fr-col-lg-9">
+        <div id="fiche-content">
+          <div class="fr-alert fr-alert--info fr-alert--sm">
+            <p>Chargement des fiches pratiques&hellip;</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div><!-- /#page -->
+
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/dsfr/dsfr.module.min.js" type="module"></script>
+<script type="module" src="js/fiches-app.js"></script>
+</body>
+</html>

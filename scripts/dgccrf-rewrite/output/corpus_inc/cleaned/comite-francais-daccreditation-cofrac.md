@@ -1,0 +1,35 @@
+---
+date: 2022-07-25
+description: Le COFRAC, créé en 1994 sous le régime de la loi du 1er juillet 1901
+  sur les associations, a été désigné comme unique instance nationale d’accréditation
+  par le décret du 19 décembre 2008, reconnaissant ainsi l’accréditation comme une
+  activité de puissance publique. Cette accréditation consiste à vérifier les compétences
+  et l’impartialité des organismes d’analyse et de contrôles (laboratoires d'essais,
+  d'analyses, d'étalonnages, de biologie médicale, ainsi qu'aux organismes de certification
+  (certification de produits, etc.).
+scraped_at: '2026-02-24T23:21:49.786089'
+source: https://www.inc-conso.fr/content/comite-francais-daccreditation-cofrac
+tags:
+- INC-Conso
+title: Comité français d´accréditation - COFRAC
+---
+
+# Comité français d´accréditation - COFRAC
+
+## Adresse
+
+52, rue Jacques Hillairet75012 PARIS
+
+## Téléphone
+
+01 44 68 82 20## Site internet
+
+[http://www.cofrac.fr](http://www.cofrac.fr)
+
+## Description
+
+Le COFRAC, créé en 1994 sous le régime de la loi du 1er juillet 1901 sur les associations, a été désigné comme unique instance nationale d’accréditation par le décret du 19 décembre 2008, reconnaissant ainsi l’accréditation comme une activité de puissance publique.
+
+Cette accréditation consiste à vérifier les compétences et l’impartialité des organismes d’analyse et de contrôles (laboratoires d'essais, d'analyses, d'étalonnages, de biologie médicale, ainsi qu'aux organismes de certification (certification de produits, etc.).
+
+Tous les intérêts liés à l’accréditation sont représentés au sein de l’Assemblée générale et du Conseil d’administration et de toutes les instances de décision, dont les associations de consommateurs, d’usagers ou de protection de l’environnement.

@@ -1,0 +1,57 @@
+paths:
+  taxonomy_file: "../../taxonomie-dgccrf.json"
+  dgccrf_corpus_dir: "../../dgccrf-drupal"
+  particuliers_corpus_dir: "../../particuliers-drupal"
+  entreprises_corpus_dir: "../../entreprises-drupal"
+  inc_corpus_dir: "../../inc-conso-md/content"
+  output_dir: "./output"
+  chroma_db_path: "../../chroma_db"
+  prompts_dir: "./prompts"
+  fiches_dir: "../../corpus"
+
+inc_cleaning:
+  min_content_length: 200
+  skip_directories:
+    - "categories-des-rappels-produits"
+    - "thematique-des-organismes"
+  boilerplate_markers:
+    - "ce site utilise et partage avec des tiers"
+    - "cookies et autres traceurs"
+    - "paramétrer votre choix"
+    - "gérer les cookies"
+    - "le dépôt de ces cookies est soumis"
+    - "politique cookies"
+    - "mesure d'audience"
+    - "partage de contenu sur les réseaux sociaux"
+    - "vous pouvez indiquer votre choix catégorie par catégorie"
+    - "accepter ou de refuser globalement"
+  boilerplate_threshold: 4
+
+embeddings:
+  model_name: "intfloat/multilingual-e5-small"
+  dimension: 384
+
+chunking:
+  chunk_size: 500
+  chunk_overlap: 100
+  min_chunk_length: 50
+
+retrieval:
+  collection_name: "dgccrf_corpus"
+  top_k: 20
+  min_score: 0.3
+  max_source_chars: 25000
+  dgccrf_weight: 1.5
+
+llm:
+  endpoint: "https://albert.api.etalab.gouv.fr/v1"
+  # api_key: via LLM_API_KEY env var
+  model: "openweight-medium"
+  temperature: 0.3
+  max_tokens_situation: 6000
+  max_tokens_sous_domaine: 8000
+  max_tokens_domaine: 6000
+  timeout: 120
+  rate_limit_rpm: 30
+  retry_count: 3
+  retry_delay: 5
