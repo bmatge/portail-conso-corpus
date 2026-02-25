@@ -4,7 +4,7 @@ services:
     container_name: portail-conso
     restart: unless-stopped
     volumes:
-      - ./chroma_db:/chroma_db:ro
+      - ./chroma_db:/chroma_db
     environment:
       - CHROMA_DB_PATH=/chroma_db
     networks:
