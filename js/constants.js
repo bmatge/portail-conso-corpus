@@ -2,16 +2,17 @@
 // CONFIG LLM
 // ════════════════════════════════════════════════════════════
 export const DEFAULT_CONFIG = {
+  mode: 'builtin',          // 'builtin' = server-side key via /api/chat, 'custom' = client-side key via proxy
   endpoint: 'https://albert.api.etalab.gouv.fr/v1/chat/completions',
-  model: 'albert-large',
+  model: 'openweight-medium',
   apiKey: '',
   format: 'openai',
-  temperature: 0.1,
+  temperature: 0.9,
   maxTokens: 320,
 };
 
 export const PRESETS = {
-  albert:    { endpoint: 'https://albert.api.etalab.gouv.fr/v1/chat/completions', model: 'albert-large',             format: 'openai' },
+  albert:    { endpoint: 'https://albert.api.etalab.gouv.fr/v1/chat/completions', model: 'openweight-medium',         format: 'openai' },
   mistral:   { endpoint: 'https://api.mistral.ai/v1/chat/completions',            model: 'mistral-small-latest',      format: 'openai' },
   openai:    { endpoint: 'https://api.openai.com/v1/chat/completions',             model: 'gpt-4o-mini',              format: 'openai' },
   ollama:    { endpoint: 'http://localhost:11434/v1/chat/completions',              model: 'mistral',                  format: 'openai' },

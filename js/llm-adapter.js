@@ -9,7 +9,14 @@ export class LLMAdapter {
   }
 
   async classify(messages) {
-    const { endpoint, apiKey, format, model, temperature, maxTokens } = this.config;
+    const { mode, endpoint, apiKey, format, model, temperature, maxTokens } = this.config;
+
+    // Builtin mode: call server-side /api/chat (no client API key needed)
+    if (mode === 'builtin') {
+      return this._callBuiltin(messages, temperature, maxTokens);
+    }
+
+    // Custom mode: call proxy with client-side API key
     if (!endpoint) throw new Error('Endpoint non configure');
     if (!apiKey)   throw new Error('Cle API non configuree');
     switch (format) {
@@ -17,6 +24,19 @@ export class LLMAdapter {
       case 'anthropic': return this._callAnthropic(endpoint, apiKey, model, messages, temperature, maxTokens);
       default: throw new Error(`Format inconnu : ${format}`);
     }
+  }
+
+  async _callBuiltin(messages, temperature, maxTokens) {
+    const res = await fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ messages, temperature, max_tokens: maxTokens }),
+    });
+    if (!res.ok) { const e = await res.text(); throw new Error(`API ${res.status}: ${e.slice(0, 200)}`); }
+    const data = await res.json();
+    const text = data?.choices?.[0]?.message?.content;
+    if (!text) throw new Error('Reponse vide du modele');
+    return LLMAdapter.parseJSON(text);
   }
 
   async _callOpenAI(endpoint, apiKey, model, messages, temperature, maxTokens) {

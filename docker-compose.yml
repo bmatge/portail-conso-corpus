@@ -7,6 +7,8 @@ services:
       - ./chroma_db:/chroma_db
     environment:
       - CHROMA_DB_PATH=/chroma_db
+      - LLM_API_KEY=${LLM_API_KEY}
+      - LLM_MODEL=openweight-medium
     networks:
       - ecosystem-network
     labels:

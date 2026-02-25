@@ -35,12 +35,15 @@ export function saveConfig(formValues) {
     model:       formValues.model?.trim() || '',
     apiKey:      formValues.apiKey?.trim() || '',
     format:      formValues.format || 'openai',
-    temperature: parseFloat(formValues.temperature) || 0.1,
+    temperature: parseFloat(formValues.temperature) || 0.9,
     maxTokens:   parseInt(formValues.maxTokens) || 320,
   };
 
-  if (!config.endpoint || !config.apiKey || !config.model) {
-    return { config, adapter: null, error: 'Endpoint, modele et cle API sont obligatoires.' };
+  // If user provides an API key → custom mode, otherwise → builtin
+  config.mode = config.apiKey ? 'custom' : 'builtin';
+
+  if (config.mode === 'custom' && (!config.endpoint || !config.model)) {
+    return { config, adapter: null, error: 'En mode custom, endpoint et modele sont obligatoires.' };
   }
 
   const adapter = new LLMAdapter(config);
@@ -55,7 +58,7 @@ export function saveConfig(formValues) {
  * @returns {Promise<{ok: boolean, message: string}>}
  */
 export async function testConfig(config) {
-  if (!config.apiKey || !config.endpoint) {
+  if (config.mode !== 'builtin' && (!config.apiKey || !config.endpoint)) {
     return { ok: false, message: 'Sauvegardez d\'abord.' };
   }
   try {

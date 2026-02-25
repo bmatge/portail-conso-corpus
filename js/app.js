@@ -123,7 +123,11 @@ function onSaveConfig() {
   }
   state.currentConfig = config;
   state.adapter = adapter;
-  setStatusUI('ok', `✓ ${config.model} sur ${new URL(config.endpoint).hostname}`);
+  if (config.mode === 'builtin') {
+    setStatusUI('ok', `✓ Mode integre — Albert (${config.model})`);
+  } else {
+    setStatusUI('ok', `✓ ${config.model} sur ${new URL(config.endpoint).hostname}`);
+  }
   closeConfigPanel();
 }
 
@@ -157,16 +161,16 @@ window.addEventListener('DOMContentLoaded', async () => {
     'Bonjour, je suis l\'assistant consommateur de la DGCCRF.\n\n' +
     'Decrivez votre probleme en langage libre — livraison non recue, demarchage abusif, ' +
     'probleme d\'hygiene, arnaque en ligne… — et je vous oriente vers le bon recours.\n\n' +
-    'L\'arbre a droite suit votre conversation en temps reel.\n\n' +
-    'Configurez votre modele LLM dans le panneau ci-dessus avant de commencer.');
+    'L\'arbre a droite suit votre conversation en temps reel.');
 
   // Restaurer config
   state.currentConfig = loadSavedConfig();
-  if (state.currentConfig.apiKey && state.currentConfig.endpoint) {
-    state.adapter = new LLMAdapter(state.currentConfig);
-  }
+  // Always create adapter — builtin mode works without a client API key
+  state.adapter = new LLMAdapter(state.currentConfig);
   writeFormValues(state.currentConfig);
-  if (state.adapter) {
+  if (state.currentConfig.mode === 'builtin') {
+    setStatusUI('ok', `✓ Mode integre — Albert (${state.currentConfig.model})`);
+  } else if (state.currentConfig.apiKey) {
     setStatusUI('ok', `✓ Config restauree — ${state.currentConfig.model} sur ${new URL(state.currentConfig.endpoint).hostname}`);
   }
 

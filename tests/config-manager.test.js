@@ -26,7 +26,7 @@ describe('loadSavedConfig', () => {
     expect(cfg.apiKey).toBe('sk-test');
     // defaults preserved
     expect(cfg.format).toBe('openai');
-    expect(cfg.temperature).toBe(0.1);
+    expect(cfg.temperature).toBe(0.9);
   });
 
   it('retourne DEFAULT_CONFIG si localStorage contient du JSON invalide', () => {
@@ -41,7 +41,7 @@ describe('applyPreset', () => {
     const preset = applyPreset('albert');
     expect(preset).not.toBeNull();
     expect(preset.endpoint).toContain('albert');
-    expect(preset.model).toBe('albert-large');
+    expect(preset.model).toBe('openweight-medium');
     expect(preset.format).toBe('openai');
   });
 
@@ -58,18 +58,19 @@ describe('applyPreset', () => {
 });
 
 describe('saveConfig', () => {
-  it('retourne une erreur quand endpoint est manquant', () => {
+  it('retourne une erreur quand endpoint est manquant en mode custom', () => {
     const { error } = saveConfig({ endpoint: '', model: 'x', apiKey: 'sk-x' });
     expect(error).toBeTruthy();
     expect(error).toContain('obligatoires');
   });
 
-  it('retourne une erreur quand apiKey est manquant', () => {
-    const { error } = saveConfig({ endpoint: 'https://api.test', model: 'x', apiKey: '' });
-    expect(error).toBeTruthy();
+  it('no apiKey = builtin mode, no error', () => {
+    const { config, error } = saveConfig({ endpoint: 'https://api.test', model: 'x', apiKey: '' });
+    expect(error).toBeNull();
+    expect(config.mode).toBe('builtin');
   });
 
-  it('retourne une erreur quand model est manquant', () => {
+  it('retourne une erreur quand model est manquant en mode custom', () => {
     const { error } = saveConfig({ endpoint: 'https://api.test', model: '', apiKey: 'sk-x' });
     expect(error).toBeTruthy();
   });
