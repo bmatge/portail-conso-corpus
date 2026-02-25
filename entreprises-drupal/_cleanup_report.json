@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-25T00:25:17.776625",
+  "mode": "SIMULATION",
+  "min_length": 800,
+  "total_scanned": 271,
+  "kept": 267,
+  "removed": 4,
+  "removed_files": [
+    {
+      "file": "3235878-g-rer-sa-fiscalit-et-ses-imp-ts.md",
+      "reason": "trop court (60 car.)"
+    },
+    {
+      "file": "3235893-g-rer-son-entreprise-au-quotidien.md",
+      "reason": "trop court (96 car.)"
+    },
+    {
+      "file": "3235905-d-velopper-son-entreprise.md",
+      "reason": "trop court (124 car.)"
+    },
+    {
+      "file": "3235917-trouver-des-aides-et-des-financements.md",
+      "reason": "trop court (154 car.)"
+    }
+  ]
+}

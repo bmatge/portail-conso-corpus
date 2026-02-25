@@ -1,0 +1,3761 @@
+{
+  "total_nodes": 632,
+  "total_sectors": 12,
+  "total_themes": 49,
+  "embedding_dim": 768,
+  "method": "KMeans 2-level",
+  "params": {
+    "n_sectors": 12,
+    "n_themes_per_sector": 6
+  },
+  "sectors": [
+    {
+      "label": "Impôt / Votre / Entreprises",
+      "keywords": [
+        "impôt",
+        "votre",
+        "entreprises",
+        "change",
+        "revenu"
+      ],
+      "count": 95,
+      "content_types": {
+        "article": 95
+      },
+      "groups": {
+        "Particuliers": 63,
+        "Entreprises": 32
+      },
+      "themes": [
+        {
+          "label": "Impôt / Change / Revenu",
+          "keywords": [
+            "impôt",
+            "change",
+            "revenu",
+            "impôt revenu"
+          ],
+          "count": 21,
+          "content_types": {
+            "article": 21
+          },
+          "groups": {
+            "Particuliers": 18,
+            "Entreprises": 3
+          },
+          "sample_docs": [
+            {
+              "nid": 76650,
+              "title": "Comment calculer votre impôt d'après le barème de l'impôt sur le revenu ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/impots-et-fiscalite/gerer-mon-impot-sur-le-revenu/comment-calculer-votre-impot-dapres-le-bareme-de-limpot-sur-le-revenu"
+            },
+            {
+              "nid": 87073,
+              "title": "Pouvez-vous bénéficier de la décote de l'impôt sur le revenu ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-impot-sur-le-revenu/pouvez-vous-beneficier-de-la-decote-de-limpot-sur-le"
+            },
+            {
+              "nid": 36842,
+              "title": "Première déclaration de revenus, mode d’emploi",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-impot-sur-le-revenu/premiere-declaration-de-revenus-mode-demploi"
+            },
+            {
+              "nid": 53310,
+              "title": "Impôt sur le revenu : comment déduire les frais de double résidence ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-impot-sur-le-revenu/impot-sur-le-revenu-comment-deduire-les-frais-de-double"
+            },
+            {
+              "nid": 37267,
+              "title": "Comment faire une donation ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/preparer-ma-retraite-et-ma-succession/comment-faire-une-donation"
+            },
+            {
+              "nid": 37311,
+              "title": "Impôt sur le revenu : BIC, BNC, comment ça marche ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/limpot-sur-les-benefices-ir-et/impot-sur-le-revenu-bic"
+            },
+            {
+              "nid": 37364,
+              "title": "Comment gérer votre taux de prélèvement à la source ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/impots-et-fiscalite/gerer-mon-impot-sur-le-revenu/comment-gerer-votre-taux-de"
+            },
+            {
+              "nid": 34365,
+              "title": "Impôt sur le revenu : le calendrier de la déclaration en 2025",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/impots-et-fiscalite/gerer-mon-impot-sur-le-revenu/impot-sur-le-revenu-le-calendrier-de"
+            }
+          ]
+        },
+        {
+          "label": "Taxe / Habitation / Impôt",
+          "keywords": [
+            "taxe",
+            "habitation",
+            "impôt",
+            "taxe aménagement"
+          ],
+          "count": 17,
+          "content_types": {
+            "article": 17
+          },
+          "groups": {
+            "Particuliers": 14,
+            "Entreprises": 3
+          },
+          "sample_docs": [
+            {
+              "nid": 38205,
+              "title": "S'implanter dans un bassin d’emploi à redynamiser, quels avantages ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/les-aides-limplantation-geographique/simplanter-dans-un-bassin-demploi-redynamiser"
+            },
+            {
+              "nid": 2876503,
+              "title": "Location en zone tendue et encadrement des loyers : ce qu’il faut savoir ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/location-en-zone-tendue-et"
+            },
+            {
+              "nid": 2894390,
+              "title": "Loc’Avantages : louez abordable et bénéficiez d’une réduction d’impôt",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/investir-dans-limmobilier/locavantages-louez-abordable-et-beneficiez-dune-reduction-dimpot"
+            },
+            {
+              "nid": 36643,
+              "title": "Impôt : quelles règles pour les résidents à l’étranger ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-impot-sur-le-revenu/impot-quelles-regles-pour-les-residents-letranger"
+            },
+            {
+              "nid": 36843,
+              "title": "Propriétaire, comment réviser un loyer d’habitation ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/proprietaire-comment-reviser-un-loyer"
+            },
+            {
+              "nid": 34170,
+              "title": "Assurance habitation, auto, complémentaire santé : comment résilier son contrat ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/emprunter-et-sassurer/assurance-habitation-auto-complementaire-sante-comment-resilier"
+            },
+            {
+              "nid": 57762,
+              "title": "Investissement locatif : quelles sont vos réductions d’impôt ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/beneficier-daides-et-de-reductions-dimpots/investissement-locatif"
+            },
+            {
+              "nid": 37208,
+              "title": "Comment fonctionne la taxe sur les voitures de tourisme de forte puissance ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/impots-et-fiscalite/gerer-mes-autres-impots-et-taxes/comment-fonctionne-la-taxe-sur"
+            }
+          ]
+        },
+        {
+          "label": "Impôt / Aides / Frais",
+          "keywords": [
+            "impôt",
+            "aides",
+            "frais",
+            "pouvez"
+          ],
+          "count": 16,
+          "content_types": {
+            "article": 16
+          },
+          "groups": {
+            "Particuliers": 13,
+            "Entreprises": 3
+          },
+          "sample_docs": [
+            {
+              "nid": 86419,
+              "title": "Impôt : quelles sont les aides fiscales liées à la famille ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/beneficier-daides-et-de-reductions-dimpots/impot-quelles-sont-les"
+            },
+            {
+              "nid": 36253,
+              "title": "Droits de succession : que devez-vous payer sur votre part ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/preparer-ma-retraite-et-ma-succession/droits-de-succession-que-devez-vous-payer-sur-votre-part"
+            },
+            {
+              "nid": 34212,
+              "title": "Prime d’activité : pouvez-vous en bénéficier ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/vie-en-entreprise/prime-dactivite-pouvez-vous-en-beneficier"
+            },
+            {
+              "nid": 50334,
+              "title": "Rentrée scolaire : quelles sont les aides à votre disposition ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/beneficier-daides-et-de-reductions-dimpots/rentree-scolaire-quelles"
+            },
+            {
+              "nid": 51786,
+              "title": "Êtes-vous le bénéficiaire d'un contrat d'assurance obsèques ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/etes-vous-le-beneficiaire-dun-1"
+            },
+            {
+              "nid": 37552,
+              "title": "Prélèvement à la source et crédits d’impôt : comment ça marche ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-impot-sur-le-revenu/prelevement-la-source-et-credits-dimpot-comment-ca"
+            },
+            {
+              "nid": 34297,
+              "title": "Travailleurs indépendants : sous quelles conditions obtenir la prime d'activité ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-micro-entreprise/travailleurs-independants-sous-quelles-conditions-obtenir-la-prime-dactivite"
+            },
+            {
+              "nid": 34356,
+              "title": "Propriétaires : comment vous assurer de l'authenticité des justificatifs de revenus ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/investir-dans-limmobilier/proprietaires-comment-vous-assurer-de-lauthenticite-des"
+            }
+          ]
+        },
+        {
+          "label": "Bonus / Prime / Rénovation",
+          "keywords": [
+            "bonus",
+            "prime",
+            "rénovation",
+            "votre"
+          ],
+          "count": 15,
+          "content_types": {
+            "article": 15
+          },
+          "groups": {
+            "Particuliers": 13,
+            "Entreprises": 2
+          },
+          "sample_docs": [
+            {
+              "nid": 3219350,
+              "title": "TPE/PME : les aides pour faire face à la hausse des prix de l’énergie",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/trouver-des-solutions-pour-son-entreprise-en-1"
+            },
+            {
+              "nid": 84448,
+              "title": "MaPrimeRénov' parcours par geste : la prime pour la rénovation énergétique ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/faire-des-economies-denergie/maprimerenov-parcours-par-geste-la-prime-pour-la-renovation-energetique"
+            },
+            {
+              "nid": 2312468,
+              "title": "Comment bénéficier du chèque énergie ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/comment-beneficier-du-cheque-energie"
+            },
+            {
+              "nid": 36473,
+              "title": "Achat d’un véhicule : comment fonctionne le bonus écologique ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/voyager-et-se-deplacer/achat-dun-vehicule-comment-fonctionne-le-bonus-ecologique"
+            },
+            {
+              "nid": 36476,
+              "title": "Buralistes, bénéficiez d'aides pour soutenir et développer votre activité",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/les-aides-et-financements-pour-developper-son-entreprise/buralistes-beneficiez-daides-pour-soutenir"
+            },
+            {
+              "nid": 37091,
+              "title": "Qu'est ce que la prime à la conversion ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/beneficier-daides-et-de-reductions-dimpots/quest-ce-que-la-prime-la"
+            },
+            {
+              "nid": 37319,
+              "title": "Tout comprendre à votre abonnement de gaz et d’électricité",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/faire-des-economies-denergie/tout-comprendre-votre-abonnement-de-gaz-et-delectricite"
+            },
+            {
+              "nid": 34579,
+              "title": "Rénovation énergétique : les aides auxquelles vous pouvez prétendre",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/faire-des-economies-denergie/renovation-energetique-les-aides-auxquelles-vous-pouvez-pretendre"
+            }
+          ]
+        },
+        {
+          "label": "Change / Entreprises / Entreprises change",
+          "keywords": [
+            "change",
+            "entreprises",
+            "entreprises change",
+            "votre"
+          ],
+          "count": 14,
+          "content_types": {
+            "article": 14
+          },
+          "groups": {
+            "Entreprises": 11,
+            "Particuliers": 3
+          },
+          "sample_docs": [
+            {
+              "nid": 128839,
+              "title": "Employeurs : quels sont vos droits et obligations lors de l’arrêt de travail d’un salarié ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/employeurs-quels-sont-vos-droits-et"
+            },
+            {
+              "nid": 37258,
+              "title": "S'implanter en zone France ruralités revitalisation, quels avantages ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/les-aides-limplantation-geographique/simplanter-0"
+            },
+            {
+              "nid": 37441,
+              "title": "Malus automobile : quelles taxes devez-vous payer sur votre véhicule ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/voyager-et-se-deplacer/malus-automobile-quelles-taxes-devez-vous-payer-sur-votre-vehicule"
+            },
+            {
+              "nid": 34358,
+              "title": "Embauche d'un apprenti : vous avez droit à des aides",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/embauche-dun-apprenti-vous-avez-droit-des-aides"
+            },
+            {
+              "nid": 34891,
+              "title": "Entreprises : quels produits en plastique à usage unique vous sont interdits ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/gerer-un-commerce/entreprises-quels-produits-en-plastique-usage-unique-vous-sont-interdits"
+            },
+            {
+              "nid": 35425,
+              "title": "Votre entreprise peut-elle bénéficier du crédit d'impôt innovation (CII) ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/les-aides-et-financements-pour-developper-son-entreprise/votre-entreprise-peut-elle-0"
+            },
+            {
+              "nid": 268858,
+              "title": "Tout savoir sur l’indice de réparabilité ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/tout-savoir-sur-lindice-de-reparabilite"
+            },
+            {
+              "nid": 35732,
+              "title": "Votre entreprise peut-elle bénéficier du crédit d’impôt recherche (CIR) ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/les-aides-et-financements-pour-developper-son-6"
+            }
+          ]
+        },
+        {
+          "label": "Entreprises / Impôt / Cotisation",
+          "keywords": [
+            "entreprises",
+            "impôt",
+            "cotisation",
+            "fonctionne"
+          ],
+          "count": 12,
+          "content_types": {
+            "article": 12
+          },
+          "groups": {
+            "Entreprises": 10,
+            "Particuliers": 2
+          },
+          "sample_docs": [
+            {
+              "nid": 38094,
+              "title": "Tout savoir sur la réduction d'impôt sur le revenu « Madelin »",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/beneficier-daides-et-de-reductions-dimpots/tout-savoir-sur-la"
+            },
+            {
+              "nid": 38188,
+              "title": "Zones franches urbaines - territoires entrepreneurs, quelles opportunités pour les entreprises ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/les-aides-limplantation-geographique/zones-franches-urbaines-territoires-entrepreneurs-quelles"
+            },
+            {
+              "nid": 36520,
+              "title": "Ce qu’il faut savoir sur la certification des logiciels de caisse",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/gerer-sa-comptabilite-et-ses-demarches/ce-quil-faut-savoir-sur-la-certification-des-logiciels-de-caisse"
+            },
+            {
+              "nid": 34122,
+              "title": "Marchés publics : la facturation électronique, comment ça fonctionne ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-comptabilite-et-ses-demarches/marches-publics-la-facturation-electronique"
+            },
+            {
+              "nid": 36981,
+              "title": "Tout savoir sur la cotisation foncière des entreprises (CFE)",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/tout-savoir-sur-la-cotisation-fonciere-des-entreprises-cfe"
+            },
+            {
+              "nid": 37027,
+              "title": "Qu’est-ce que la cotisation sur la valeur ajoutée des entreprises (CVAE) ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/quest-ce-que-la-cotisation-sur-la-valeur-ajoutee-des-entreprises-cvae"
+            },
+            {
+              "nid": 37174,
+              "title": "Comment fonctionne la Sécurité sociale pour les indépendants ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-micro-entreprise/comment-fonctionne-la-securite-sociale-pour-les-independants"
+            },
+            {
+              "nid": 37464,
+              "title": "Tout savoir sur le crédit d'impôt pour la formation des dirigeants",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/limpot-sur-les-benefices-ir-et/tout-savoir-sur-le"
+            }
+          ]
+        }
+      ],
+      "id": 1
+    },
+    {
+      "label": "Gérer / Entreprise / Impôts",
+      "keywords": [
+        "gérer",
+        "entreprise",
+        "impôts",
+        "aides",
+        "vos"
+      ],
+      "count": 94,
+      "content_types": {
+        "article": 65,
+        "page_navigation": 28,
+        "accueil_espace": 1
+      },
+      "groups": {
+        "Entreprises": 53,
+        "Particuliers": 41
+      },
+      "themes": [
+        {
+          "label": "Gérer / Entreprise / Impôts",
+          "keywords": [
+            "gérer",
+            "entreprise",
+            "impôts",
+            "mon"
+          ],
+          "count": 32,
+          "content_types": {
+            "page_navigation": 24,
+            "article": 7,
+            "accueil_espace": 1
+          },
+          "groups": {
+            "Entreprises": 17,
+            "Particuliers": 15
+          },
+          "sample_docs": [
+            {
+              "nid": 36299,
+              "title": "Entreprises, combien de temps devez-vous conserver vos documents ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-comptabilite-et-ses-demarches/entreprises-combien-de-temps-devez-vous"
+            },
+            {
+              "nid": 36468,
+              "title": "Testament, héritage, donation, indivision... Tout savoir sur la succession",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/preparer-ma-retraite-et-ma-succession/testament-heritage-donation-indivision-tout"
+            },
+            {
+              "nid": 34084,
+              "title": "S'informer sur les normes comptables ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-comptabilite-et-ses-demarches/sinformer-sur-les-normes-comptables"
+            },
+            {
+              "nid": 34159,
+              "title": "Créer votre boutique en ligne : mode d’emploi",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/innover-et-numeriser-son-entreprise/creer-votre-boutique-en-ligne-mode-demploi"
+            },
+            {
+              "nid": 37539,
+              "title": "Bercy infos : qui sommes-nous ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/bercy-infos-qui-sommes-nous"
+            },
+            {
+              "nid": 35662,
+              "title": "Chef d’entreprise : vous aussi, vous pouvez vous former",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/les-aides-et-financements-pour-developper-son-7"
+            },
+            {
+              "nid": 36135,
+              "title": "Estimez la valeur d'un bien immobilier avec le service « Demande de valeurs foncières »",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/investir-dans-limmobilier/estimez-la-valeur-dun-bien-immobilier-avec-le-service-demande-de-valeurs-foncieres"
+            },
+            {
+              "nid": 3235728,
+              "title": "Bercy Infos Entreprises",
+              "type": "accueil_espace",
+              "group": "Entreprises",
+              "alias": "/entreprises"
+            }
+          ]
+        },
+        {
+          "label": "Vos / Salariés / Obligations",
+          "keywords": [
+            "vos",
+            "salariés",
+            "obligations",
+            "entreprise"
+          ],
+          "count": 32,
+          "content_types": {
+            "article": 30,
+            "page_navigation": 2
+          },
+          "groups": {
+            "Entreprises": 19,
+            "Particuliers": 13
+          },
+          "sample_docs": [
+            {
+              "nid": 21528,
+              "title": "Suppression des cotisations chômage et maladie pour les salariés du secteur privé : simulez ce que vous allez gagner",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/impots-et-fiscalite/gerer-mes-autres-impots-et-taxes/suppression-des-cotisations"
+            },
+            {
+              "nid": 3220986,
+              "title": "Ce qu’il faut savoir sur les titres-restaurant en tant que salarié",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/vie-en-entreprise/ce-quil-faut-savoir-sur-les-titres-restaurant-en-tant-que-salarie"
+            },
+            {
+              "nid": 38076,
+              "title": "Entreprises : quelles sont vos obligations en matière de financement de la formation professionnelle ? ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/entreprises-quelles-sont-vos-obligations-en-matiere-de-financement-de-la-formation"
+            },
+            {
+              "nid": 183889,
+              "title": "Collecte des données de vos salariés : quelles sont les règles à respecter ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/collecte-des-donnees-de-vos-salaries"
+            },
+            {
+              "nid": 36441,
+              "title": "Rémunération de vos salariés : tout ce que vous devez savoir en 7 questions",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/remuneration-de-vos-salaries-tout-ce-que"
+            },
+            {
+              "nid": 36446,
+              "title": "Étudiants, huit questions à vous poser avant de vous lancer dans l’alternance",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/vie-en-entreprise/etudiants-huit-questions-vous-poser-avant-de-vous-lancer-dans"
+            },
+            {
+              "nid": 36516,
+              "title": "Mentions sur votre site internet : les obligations à respecter",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/innover-et-numeriser-son-entreprise/mentions-sur-votre-site-internet-les-obligations-respecter"
+            },
+            {
+              "nid": 36544,
+              "title": "Emploi à domicile : ce qu’il faut savoir sur le statut de particulier employeur",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-impot-sur-le-revenu/emploi-domicile-ce-quil-faut-savoir-sur-le-statut-de"
+            }
+          ]
+        },
+        {
+          "label": "Prix / Affichage / Affichage prix",
+          "keywords": [
+            "prix",
+            "affichage",
+            "affichage prix",
+            "impôt"
+          ],
+          "count": 13,
+          "content_types": {
+            "article": 13
+          },
+          "groups": {
+            "Particuliers": 8,
+            "Entreprises": 5
+          },
+          "sample_docs": [
+            {
+              "nid": 128138,
+              "title": "Affichage des prix : ce que vous devez savoir",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/affichage-des-prix-ce-que-vous-devez-savoir"
+            },
+            {
+              "nid": 36531,
+              "title": "Comment facturer dans une monnaie étrangère ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/gerer-sa-comptabilite-et-ses-demarches/comment"
+            },
+            {
+              "nid": 36694,
+              "title": "Professionnels, quelles sont vos obligations en matière d’affichage des prix ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/gerer-un-commerce/professionnels-quelles-sont-vos-obligations-en-matiere-daffichage-des-prix"
+            },
+            {
+              "nid": 36812,
+              "title": "Retard de paiement de l’impôt : que risquez-vous ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/limpot-sur-les-benefices-ir-et/retard-de-paiement-de"
+            },
+            {
+              "nid": 36848,
+              "title": "Que faire si vous avez des difficultés à payer vos impôts ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/beneficier-daides-et-de-reductions-dimpots/que-faire-si-vous-avez-des"
+            },
+            {
+              "nid": 34126,
+              "title": "Timbre fiscal électronique : nos conseils pour un achat sécurisé ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/timbre-fiscal-electronique-nos-conseils-pour-un-achat"
+            },
+            {
+              "nid": 37211,
+              "title": "Impôt sur le revenu : toute la documentation utile sur impots.gouv.fr",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-impot-sur-le-revenu/impot-sur-le-revenu-toute-la-documentation-utile-sur"
+            },
+            {
+              "nid": 34273,
+              "title": "Mentions obligatoires d'une facture : tout savoir",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/gerer-sa-comptabilite-et-ses-demarches/mentions-obligatoires-dune-facture-tout-savoir"
+            }
+          ]
+        },
+        {
+          "label": "Aides / Entreprises / Votre",
+          "keywords": [
+            "aides",
+            "entreprises",
+            "votre",
+            "entreprises aides"
+          ],
+          "count": 12,
+          "content_types": {
+            "article": 10,
+            "page_navigation": 2
+          },
+          "groups": {
+            "Entreprises": 11,
+            "Particuliers": 1
+          },
+          "sample_docs": [
+            {
+              "nid": 3220319,
+              "title": "Entreprises : quelles aides pour assurer votre transition écologique ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises-quelles-aides-pour-assurer-votre-transition-ecologique"
+            },
+            {
+              "nid": 3219368,
+              "title": "ETI, grandes entreprises : les aides pour faire face à la hausse des prix de l’énergie ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/trouver-des-solutions-pour-son-entreprise-en/eti"
+            },
+            {
+              "nid": 36357,
+              "title": "TPE/PME : connaissez-vous les règles des crédits aux entreprises ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/tpepme-connaissez-vous-les-regles-des-credits-aux-entreprises"
+            },
+            {
+              "nid": 58731,
+              "title": "Entreprise implantée en zone rurale : vous avez le droit à des aides ! ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/les-aides-limplantation-geographique/entreprise-implantee-en-zone-rurale-vous-avez-le"
+            },
+            {
+              "nid": 37264,
+              "title": "Femmes entrepreneures, quels dispositifs pour vous accompagner ? ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/les-aides-et-financements-pour-developper-son-entreprise/femmes-entrepreneures-quels-dispositifs"
+            },
+            {
+              "nid": 34766,
+              "title": "Accéder simplement aux services publics avec FranceConnect",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/numerique-et-cybersecurite/acceder-simplement-aux-services-publics-avec-franceconnect"
+            },
+            {
+              "nid": 35552,
+              "title": "Création ou reprise d’entreprise : quelles sont les garanties à votre disposition ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/creer-une-entreprise/creation-ou-reprise-dentreprise-quelles-sont-les-garanties-votre"
+            },
+            {
+              "nid": 35667,
+              "title": "Financement : retrouvez toutes les aides publiques sur le site Aides-entreprises.fr",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/les-aides-et-financements-pour-developper-son/financement-retrouvez-toutes-les-aides-publiques-sur"
+            }
+          ]
+        },
+        {
+          "label": "Numéros commençant / Commençant / Commençant tarifs",
+          "keywords": [
+            "numéros commençant",
+            "commençant",
+            "commençant tarifs",
+            "tarifs"
+          ],
+          "count": 3,
+          "content_types": {
+            "article": 3
+          },
+          "groups": {
+            "Particuliers": 3
+          },
+          "sample_docs": [
+            {
+              "nid": 34098,
+              "title": "Où trouver le prix des carburants près de chez-soi ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/voyager-et-se-deplacer/ou-trouver-le-prix-des-carburants-pres-de-chez-soi"
+            },
+            {
+              "nid": 34164,
+              "title": "Téléphonie mobile : quels frais à l'étranger ? ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/voyager-et-se-deplacer/telephonie-mobile-quels-frais-letranger"
+            },
+            {
+              "nid": 35671,
+              "title": "Numéros commençant par 08 : quels sont les tarifs ? ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/eviter-les-arnaques/numeros-commencant-par-08-quels-sont-les-tarifs"
+            }
+          ]
+        }
+      ],
+      "id": 2
+    },
+    {
+      "label": "Impôt / Fonctionne / Taxe",
+      "keywords": [
+        "impôt",
+        "fonctionne",
+        "taxe",
+        "entreprises",
+        "tva"
+      ],
+      "count": 84,
+      "content_types": {
+        "article": 83,
+        "page_navigation": 1
+      },
+      "groups": {
+        "Particuliers": 43,
+        "Entreprises": 41
+      },
+      "themes": [
+        {
+          "label": "Impôt / Revenu / Impôt revenu",
+          "keywords": [
+            "impôt",
+            "revenu",
+            "impôt revenu",
+            "déclarer"
+          ],
+          "count": 33,
+          "content_types": {
+            "article": 32,
+            "page_navigation": 1
+          },
+          "groups": {
+            "Entreprises": 17,
+            "Particuliers": 16
+          },
+          "sample_docs": [
+            {
+              "nid": 21541,
+              "title": "Calcul du prélèvement à la source",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-impot-sur-le-revenu/calcul-du-prelevement-la-source"
+            },
+            {
+              "nid": 76548,
+              "title": "Indemnités d’arrêt de travail : comment ça fonctionne avec le prélèvement à la source ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-impot-sur-le-revenu/indemnites-darret-de-travail-comment-ca-fonctionne-avec"
+            },
+            {
+              "nid": 37870,
+              "title": "Quotient familial et impôt sur le revenu : comment ça marche ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-impot-sur-le-revenu/quotient-familial-et-impot-sur-le-revenu-comment-ca"
+            },
+            {
+              "nid": 36244,
+              "title": "Imposition des entreprises : qu’est-ce que le régime réel normal ? ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/limpot-sur-les-benefices-ir-et/imposition-des-entreprises-quest-ce-que-le-regime-reel"
+            },
+            {
+              "nid": 36669,
+              "title": "Impôt : la demande de remise gracieuse, comment ça fonctionne ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/impot-la-demande-de-remise-gracieuse-comment-ca-fonctionne"
+            },
+            {
+              "nid": 36683,
+              "title": "Qu’est-ce que le régime de la déclaration contrôlée ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/limpot-sur-les-benefices-ir-et/quest-ce-que-le-regime"
+            },
+            {
+              "nid": 36714,
+              "title": "Tout savoir sur la taxe sur les salaires",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/tout-savoir-sur-la-taxe-sur-les"
+            },
+            {
+              "nid": 36814,
+              "title": "Déclarer ses revenus ou payer ses impôts en retard, quelles conséquences ? ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/impots-et-fiscalite/gerer-mon-impot-sur-le-revenu/declarer-ses-revenus-ou-payer-ses"
+            }
+          ]
+        },
+        {
+          "label": "Taxe / Fonctionne / Foncière",
+          "keywords": [
+            "taxe",
+            "fonctionne",
+            "foncière",
+            "taxe foncière"
+          ],
+          "count": 16,
+          "content_types": {
+            "article": 16
+          },
+          "groups": {
+            "Particuliers": 13,
+            "Entreprises": 3
+          },
+          "sample_docs": [
+            {
+              "nid": 87544,
+              "title": "Vente d'objets précieux : quelle fiscalité ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/impots-et-fiscalite/gerer-mes-autres-impots-et-taxes/vente-dobjets-precieux-quelle"
+            },
+            {
+              "nid": 37627,
+              "title": "Taxe et redevance sur les ordures ménagères : êtes-vous concerné ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/impots-et-fiscalite/gerer-mes-impots-locaux/taxe-et-redevance-sur-les-ordures"
+            },
+            {
+              "nid": 38165,
+              "title": "Taxe foncière sur les propriétés bâties : comment ça marche pour les entreprises ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/taxe-fonciere-sur-les"
+            },
+            {
+              "nid": 36601,
+              "title": "La mensualisation, pour quels impôts ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-impot-sur-le-revenu/la-mensualisation-pour-quels-impots"
+            },
+            {
+              "nid": 37453,
+              "title": "Comment fonctionne le prélèvement forfaitaire unique (PFU) ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/impots-et-fiscalite/gerer-mes-autres-impots-et-taxes/comment-fonctionne-le-prelevement"
+            },
+            {
+              "nid": 34347,
+              "title": "Comment fonctionne l’impôt sur la fortune immobilière (IFI) ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/impots-et-fiscalite/gerer-mes-autres-impots-et-taxes/comment-fonctionne-limpot-sur-la"
+            },
+            {
+              "nid": 34807,
+              "title": "Panorama des dispositifs zonés d'exonération fiscale",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/les-aides-limplantation-geographique/panorama-des-dispositifs-zones-dexoneration-fiscale"
+            },
+            {
+              "nid": 34988,
+              "title": "Taxe foncière : mode de calcul et réductions",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/impots-et-fiscalite/gerer-mes-impots-locaux/taxe-fonciere-mode-de-calcul-et-reductions"
+            }
+          ]
+        },
+        {
+          "label": "Impôt / Crédit / Crédit impôt",
+          "keywords": [
+            "impôt",
+            "crédit",
+            "crédit impôt",
+            "impôt faveur"
+          ],
+          "count": 14,
+          "content_types": {
+            "article": 14
+          },
+          "groups": {
+            "Particuliers": 8,
+            "Entreprises": 6
+          },
+          "sample_docs": [
+            {
+              "nid": 71241,
+              "title": "Un différend avec un service de l’État ? Pensez à la médiation",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/gerer-un-litige/un-differend-avec-un-service-de-letat-pensez-la-mediation"
+            },
+            {
+              "nid": 37725,
+              "title": "Tout savoir sur le crédit d’impôt en faveur de l’agriculture biologique",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/les-aides-et-financements-pour-developper-son-entreprise/tout-savoir-sur-le-credit-0"
+            },
+            {
+              "nid": 197095,
+              "title": "Comment bénéficier du crédit d'impôt de cotisation syndicale ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/beneficier-daides-et-de-reductions-dimpots/comment-beneficier-du-0"
+            },
+            {
+              "nid": 36758,
+              "title": "CSG et CRDS, comment ça fonctionne ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/impots-et-fiscalite/gerer-mes-autres-impots-et-taxes/csg-et-crds-comment-ca-fonctionne"
+            },
+            {
+              "nid": 37406,
+              "title": "Particuliers, les réductions et crédits d’impôt auxquels vous pouvez prétendre",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/beneficier-daides-et-de-reductions-dimpots/particuliers-les-reductions-et-credits-dimpot-auxquels-vous-pouvez-pretendre"
+            },
+            {
+              "nid": 35451,
+              "title": "Tout savoir sur le crédit d'impôt lié à l'emploi d'un salarié à domicile",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/beneficier-daides-et-de-reductions-dimpots/tout-savoir-sur-le-credit"
+            },
+            {
+              "nid": 35819,
+              "title": "Comment déduire les frais de déplacement du résultat fiscal de votre entreprise ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/limpot-sur-les-benefices-ir-et/comment-deduire-les"
+            },
+            {
+              "nid": 35850,
+              "title": "Crédit d’impôt famille : bénéficiez d’un avantage fiscal en participant aux frais de garde des enfants de vos salariés ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/credit-dimpot-famille-beneficiez-dun-avantage-fiscal-en-participant-aux-frais-de-garde-des"
+            }
+          ]
+        },
+        {
+          "label": "Tva / Entreprises / Entreprises tva",
+          "keywords": [
+            "tva",
+            "entreprises",
+            "entreprises tva",
+            "tva taux"
+          ],
+          "count": 11,
+          "content_types": {
+            "article": 11
+          },
+          "groups": {
+            "Entreprises": 7,
+            "Particuliers": 4
+          },
+          "sample_docs": [
+            {
+              "nid": 93949,
+              "title": "Achat d'un véhicule dans un autre pays de l'UE : comment obtenir un quitus fiscal ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/voyager-et-se-deplacer/achat-dun-vehicule-dans-un-autre-pays-de-lue-comment-obtenir-un"
+            },
+            {
+              "nid": 37841,
+              "title": "Entreprises : ce que vous devez savoir sur la TVA",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/entreprises-ce-que-vous-devez-savoir-sur-la-tva"
+            },
+            {
+              "nid": 36437,
+              "title": "Entreprises, comment utiliser votre créance fiscale ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/limpot-sur-les-benefices-ir-et/entreprises-comment-utiliser-votre-creance-fiscale"
+            },
+            {
+              "nid": 36790,
+              "title": "Qu'est-ce que la taxe sur les conventions d'assurances ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/impots-et-fiscalite/gerer-mes-autres-impots-et-taxes/quest-ce-que-la-taxe-sur-les"
+            },
+            {
+              "nid": 50328,
+              "title": "TVA à taux réduit : pour quels travaux ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/impots-et-fiscalite/gerer-mes-autres-impots-et-taxes/tva-taux-reduit-pour-quels-travaux"
+            },
+            {
+              "nid": 37273,
+              "title": "Comment obtenir un remboursement de crédit de TVA ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/comment-obtenir-un"
+            },
+            {
+              "nid": 37435,
+              "title": "Ce qu'il faut savoir sur le numéro de TVA intracommunautaire",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/importer-et-exporter-linternational/ce-quil-faut-savoir-sur-le-numero-de-tva-intracommunautaire"
+            },
+            {
+              "nid": 35429,
+              "title": "TVA : quels sont les taux de votre quotidien ? ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/impots-et-fiscalite/gerer-mes-autres-impots-et-taxes/tva-quels-sont-les-taux-de-votre-quotidien"
+            }
+          ]
+        },
+        {
+          "label": "Source / Prélèvement / Prélèvement source",
+          "keywords": [
+            "source",
+            "prélèvement",
+            "prélèvement source",
+            "entreprise"
+          ],
+          "count": 8,
+          "content_types": {
+            "article": 8
+          },
+          "groups": {
+            "Entreprises": 6,
+            "Particuliers": 2
+          },
+          "sample_docs": [
+            {
+              "nid": 73755,
+              "title": "Comment calculer le taux et le montant de votre prélèvement à la source ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-impot-sur-le-revenu/comment-calculer-le-taux-et-le-montant-de-votre"
+            },
+            {
+              "nid": 36679,
+              "title": "Micro-entreprise : comment fonctionne le versement libératoire de l’impôt sur le revenu ? ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-micro-entreprise/micro-entreprise-comment-fonctionne-le-versement-liberatoire"
+            },
+            {
+              "nid": 37218,
+              "title": "Quelle fiscalité pour les chefs d'entreprise ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/limpot-sur-les-benefices-ir-et/quelle-fiscalite-pour-les-chefs-dentreprise"
+            },
+            {
+              "nid": 34312,
+              "title": "Comprendre le prélèvement à la source en 10 questions",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/impots-et-fiscalite/gerer-mon-impot-sur-le-revenu/comprendre-le-prelevement-la-source-en-10-questions"
+            },
+            {
+              "nid": 34804,
+              "title": "Entreprises : les modalités du prélèvement à la source",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/limpot-sur-les-benefices-ir-et/entreprises-les-modalites-du-prelevement-la-source"
+            },
+            {
+              "nid": 35130,
+              "title": "Micro-entrepreneurs : comment déclarer vos revenus ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-micro-entreprise/micro-entrepreneurs-comment-declarer-vos-revenus"
+            },
+            {
+              "nid": 35654,
+              "title": "Contrôle fiscal à distance : en quoi consiste l’examen de comptabilité ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/gerer-sa-comptabilite-et-ses-demarches/controle"
+            },
+            {
+              "nid": 35888,
+              "title": "Comment calculer le résultat fiscal de votre entreprise en quatre étapes",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/limpot-sur-les-benefices-ir-et/comment-calculer-le"
+            }
+          ]
+        }
+      ],
+      "id": 3
+    },
+    {
+      "label": "Vos / Assurance / Droits",
+      "keywords": [
+        "vos",
+        "assurance",
+        "droits",
+        "vos droits",
+        "immobilier"
+      ],
+      "count": 72,
+      "content_types": {
+        "article": 71,
+        "page_navigation": 1
+      },
+      "groups": {
+        "Particuliers": 59,
+        "Entreprises": 13
+      },
+      "themes": [
+        {
+          "label": "Immobilier / Crédit immobilier / Crédit",
+          "keywords": [
+            "immobilier",
+            "crédit immobilier",
+            "crédit",
+            "marche"
+          ],
+          "count": 15,
+          "content_types": {
+            "article": 14,
+            "page_navigation": 1
+          },
+          "groups": {
+            "Particuliers": 15
+          },
+          "sample_docs": [
+            {
+              "nid": 37633,
+              "title": "Succession : à quels frais de notaire vous attendre ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/preparer-ma-retraite-et-ma-succession/succession-quels-frais-de-notaire-vous-attendre"
+            },
+            {
+              "nid": 130225,
+              "title": "Difficultés à rembourser votre crédit immobilier : quelles solutions ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/investir-dans-limmobilier/difficultes-rembourser-votre-credit"
+            },
+            {
+              "nid": 197755,
+              "title": "Achat immobilier : quelles sont les cinq étapes clés ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/investir-dans-limmobilier/achat-immobilier-quelles-sont-les-cinq-etapes-cles"
+            },
+            {
+              "nid": 206791,
+              "title": "Crédit immobilier : comment ça marche ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/emprunter-et-sassurer/credit-immobilier-comment-ca-marche"
+            },
+            {
+              "nid": 218845,
+              "title": "Rembourser son crédit immobilier avant le terme : comment ça marche ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/emprunter-et-sassurer/rembourser-son-credit-immobilier-avant-le-terme-comment-ca"
+            },
+            {
+              "nid": 36342,
+              "title": "Découvert bancaire : quels frais peuvent vous être facturés ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/decouvert-bancaire-quels-frais"
+            },
+            {
+              "nid": 51795,
+              "title": "Êtes-vous le bénéficiaire d’un contrat d’assurance-vie en déshérence ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/etes-vous-le-beneficiaire-dun-contrat-dassurance-vie-en-desherence"
+            },
+            {
+              "nid": 53853,
+              "title": "Crédit immobilier : comment le renégocier ou le faire racheter ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/credit-immobilier-comment-le"
+            }
+          ]
+        },
+        {
+          "label": "Préparer / Voyage / Assurance",
+          "keywords": [
+            "préparer",
+            "voyage",
+            "assurance",
+            "séjour"
+          ],
+          "count": 15,
+          "content_types": {
+            "article": 15
+          },
+          "groups": {
+            "Particuliers": 11,
+            "Entreprises": 4
+          },
+          "sample_docs": [
+            {
+              "nid": 198133,
+              "title": "Comment financer votre permis de conduire ? ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/comment-financer-votre-permis-de"
+            },
+            {
+              "nid": 203260,
+              "title": "Comment s’informer sur le cadastre ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/investir-dans-limmobilier/comment-sinformer-sur-le-cadastre"
+            },
+            {
+              "nid": 36243,
+              "title": "Voyage en train : quels sont vos droits en cas d'annulation ou de retard ? ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/voyager-et-se-deplacer/voyage-en-train-quels-sont-vos-droits-en-cas-dannulation-ou-de"
+            },
+            {
+              "nid": 36285,
+              "title": "Séjour en camping : quatre conseils avant de réserver",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/voyager-et-se-deplacer/sejour-en-camping-quatre-conseils-avant-de-reserver"
+            },
+            {
+              "nid": 36940,
+              "title": "Ce qu'il faut savoir avant d'acheter un vélo !",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/ce-quil-faut-savoir-avant-dacheter-un-velo"
+            },
+            {
+              "nid": 34348,
+              "title": "Voyage en autocar : annulation, retard, accident... Quels sont vos droits ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/voyager-et-se-deplacer/voyage-en-autocar-annulation-retard-accident-quels-sont-vos"
+            },
+            {
+              "nid": 34355,
+              "title": "Déposer un brevet : mode d’emploi",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/innover-et-numeriser-son-entreprise/deposer-un-brevet-mode-demploi"
+            },
+            {
+              "nid": 34795,
+              "title": "Ce qu'il faut savoir sur l'assurance scolaire",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/emprunter-et-sassurer/ce-quil-faut-savoir-sur-lassurance-scolaire"
+            }
+          ]
+        },
+        {
+          "label": "Droits / Vos droits / Vos",
+          "keywords": [
+            "droits",
+            "vos droits",
+            "vos",
+            "conseils"
+          ],
+          "count": 13,
+          "content_types": {
+            "article": 13
+          },
+          "groups": {
+            "Particuliers": 12,
+            "Entreprises": 1
+          },
+          "sample_docs": [
+            {
+              "nid": 37890,
+              "title": "Abonnement à une salle de sport : nos conseils avant de vous engager ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/abonnement-une-salle-de-sport-nos-conseils-avant-de"
+            },
+            {
+              "nid": 36297,
+              "title": "Vente à distance : tout savoir sur votre droit de rétractation",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/vente-distance-tout-savoir-sur-votre-droit-de-retractation"
+            },
+            {
+              "nid": 36535,
+              "title": "Dirigeant : dans quels cas votre responsabilité civile ou pénale peut-elle être engagée ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/dirigeant-dans-quels-cas-votre-responsabilite-civile"
+            },
+            {
+              "nid": 37063,
+              "title": "Achats et services en ligne : 6 conseils en cas de litige",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/gerer-un-litige/achats-et-services-en-ligne-6-conseils-en-cas-de-litige"
+            },
+            {
+              "nid": 37153,
+              "title": "Forfait de ski : comment bénéficier d’un dédommagement lorsque vous n’avez pas pu l'utiliser ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-un-litige/forfait-de-ski-comment-beneficier-dun-dedommagement-lorsque-vous-navez"
+            },
+            {
+              "nid": 34393,
+              "title": "Droits du consommateur : les démarches à suivre en cas de litige avec une entreprise",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-un-litige/droits-du-consommateur-les-demarches-suivre-en-cas-de-litige-avec-une"
+            },
+            {
+              "nid": 34471,
+              "title": "Catastrophe naturelle : comment fonctionnent les indemnisations ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/emprunter-et-sassurer/catastrophe-naturelle-comment-fonctionnent-les-indemnisations"
+            },
+            {
+              "nid": 34696,
+              "title": "Vol annulé ou retardé : quels sont vos droits ? ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/voyager-et-se-deplacer/vol-annule-ou-retarde-quels-sont-vos-droits"
+            }
+          ]
+        },
+        {
+          "label": "Garantie / Assurance / Garantie commerciale",
+          "keywords": [
+            "garantie",
+            "assurance",
+            "garantie commerciale",
+            "commerciale"
+          ],
+          "count": 10,
+          "content_types": {
+            "article": 10
+          },
+          "groups": {
+            "Particuliers": 9,
+            "Entreprises": 1
+          },
+          "sample_docs": [
+            {
+              "nid": 87844,
+              "title": "Objets d’occasion, reconditionnés : quelles garanties pour l’acheteur ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/eviter-les-arnaques/objets-doccasion-reconditionnes-quelles-garanties-pour-lacheteur"
+            },
+            {
+              "nid": 37689,
+              "title": "Que devez-vous savoir lorsque vous souscrivez un contrat d'assurance ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/emprunter-et-sassurer/que-devez-vous-savoir-lorsque-vous-souscrivez-un-contrat"
+            },
+            {
+              "nid": 37840,
+              "title": "Assurance d’un véhicule : quelles obligations ? ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/emprunter-et-sassurer/assurance-dun-vehicule-quelles-obligations"
+            },
+            {
+              "nid": 36526,
+              "title": "Conditions générales de vente entre professionnels : quelles mentions obligatoires ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-comptabilite-et-ses-demarches/conditions-generales-de-vente-entre"
+            },
+            {
+              "nid": 34129,
+              "title": "Frais d'auto-écoles : quelle est la réglementation ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/voyager-et-se-deplacer/frais-dauto-ecoles-quelle-est-la-reglementation"
+            },
+            {
+              "nid": 34213,
+              "title": "Soldes : consommateurs, quels sont vos droits ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/soldes-consommateurs-quels-sont-vos-droits"
+            },
+            {
+              "nid": 34310,
+              "title": "Tout savoir sur la garantie légale de conformité",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/tout-savoir-sur-la-garantie-legale-de-conformite"
+            },
+            {
+              "nid": 34364,
+              "title": "Véhicules d'occasion : cinq conseils pour acheter sereinement",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/voyager-et-se-deplacer/vehicules-doccasion-cinq-conseils-pour-acheter-sereinement"
+            }
+          ]
+        },
+        {
+          "label": "Covoiturage / Location / Avant",
+          "keywords": [
+            "covoiturage",
+            "location",
+            "avant",
+            "assurance"
+          ],
+          "count": 10,
+          "content_types": {
+            "article": 10
+          },
+          "groups": {
+            "Particuliers": 10
+          },
+          "sample_docs": [
+            {
+              "nid": 90841,
+              "title": "Qu’est-ce que la location et l’achat d’une voiture en leasing ? ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/quest-ce-que-la-location-et-lachat"
+            },
+            {
+              "nid": 37790,
+              "title": "Quelles charges pouvez-vous récupérer auprès de votre locataire ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/quelles-charges-pouvez-vous-recuperer"
+            },
+            {
+              "nid": 38180,
+              "title": "Ce qu’il faut savoir sur l’assurance habitation",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/emprunter-et-sassurer/ce-quil-faut-savoir-sur-lassurance-habitation"
+            },
+            {
+              "nid": 186886,
+              "title": "Investissement locatif : comment choisir entre la location courte et longue durée ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/investir-dans-limmobilier/investissement-locatif-comment-choisir-entre-la-location"
+            },
+            {
+              "nid": 36280,
+              "title": "Logement étudiant : 6 conseils avant de signer",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/logement-etudiant-6-conseils-avant-de-signer"
+            },
+            {
+              "nid": 50331,
+              "title": "Les aides pour rénover votre logement hors rénovation énergétique",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/beneficier-daides-et-de-reductions-dimpots/les-aides-pour-renover"
+            },
+            {
+              "nid": 107800,
+              "title": "Investir en nue-propriété : quels avantages, quelles limites ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/investir-dans-limmobilier/investir-en-nue-propriete-quels-avantages-quelles-limites"
+            },
+            {
+              "nid": 112387,
+              "title": "Ce que vous devez savoir avant de réserver une chambre d’hôtes ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/voyager-et-se-deplacer/ce-que-vous-devez-savoir-avant-de-reserver-une-chambre-dhotes"
+            }
+          ]
+        },
+        {
+          "label": "Congé / Vos / Salariés",
+          "keywords": [
+            "congé",
+            "vos",
+            "salariés",
+            "maternité"
+          ],
+          "count": 9,
+          "content_types": {
+            "article": 9
+          },
+          "groups": {
+            "Entreprises": 7,
+            "Particuliers": 2
+          },
+          "sample_docs": [
+            {
+              "nid": 197425,
+              "title": "Tout savoir sur les complémentaires santé (mutuelle)",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/emprunter-et-sassurer/tout-savoir-sur-les-complementaires-sante-mutuelle"
+            },
+            {
+              "nid": 36277,
+              "title": "Quels sont les délais de conservation de vos papiers personnels ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/quels-sont-les-delais-de-conservation-de-vos-papiers-personnels"
+            },
+            {
+              "nid": 36475,
+              "title": "Tout savoir sur les congés payés de vos salariés",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/tout-savoir-sur-les-conges-payes-de-vos-salaries"
+            },
+            {
+              "nid": 36829,
+              "title": "Commerçants, êtes-vous autorisés à ouvrir le dimanche ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/gerer-un-commerce/commercants-etes-vous-autorises"
+            },
+            {
+              "nid": 34859,
+              "title": "Congé de maternité : quelles sont vos obligations en tant qu'employeur ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/conge-de-maternite-quelles-sont-vos-obligations-en-tant-quemployeur"
+            },
+            {
+              "nid": 34877,
+              "title": "Entreprises, quelles sont les durées légales à respecter en cas de congé de maternité ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/entreprises-quelles-sont-les-durees"
+            },
+            {
+              "nid": 34973,
+              "title": "Congé de paternité : comment ça fonctionne ? ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/conge-de-paternite-comment-ca-fonctionne"
+            },
+            {
+              "nid": 35319,
+              "title": "Chèques-cadeaux, bons d'achats, cadeaux attribués aux salariés : comment ça marche ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/cheques-cadeaux-bons-dachats-cadeaux-attribues-aux-salaries-comment-ca-marche"
+            }
+          ]
+        }
+      ],
+      "id": 4
+    },
+    {
+      "label": "Protéger / Entreprises / Contre",
+      "keywords": [
+        "protéger",
+        "entreprises",
+        "contre",
+        "données",
+        "vos"
+      ],
+      "count": 62,
+      "content_types": {
+        "article": 58,
+        "page_navigation": 3,
+        "accueil_espace": 1
+      },
+      "groups": {
+        "Particuliers": 41,
+        "Entreprises": 21
+      },
+      "themes": [
+        {
+          "label": "Arnaques / Éviter arnaques / Éviter",
+          "keywords": [
+            "arnaques",
+            "éviter arnaques",
+            "éviter",
+            "protéger"
+          ],
+          "count": 24,
+          "content_types": {
+            "article": 21,
+            "page_navigation": 3
+          },
+          "groups": {
+            "Particuliers": 19,
+            "Entreprises": 5
+          },
+          "sample_docs": [
+            {
+              "nid": 577294,
+              "title": "Crème solaire : comment bien la choisir ? ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/creme-solaire-comment-bien-la-choisir"
+            },
+            {
+              "nid": 2199338,
+              "title": "Comment bien choisir son sapin de Noël ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/comment-bien-choisir-son-sapin-de-noel"
+            },
+            {
+              "nid": 37912,
+              "title": "Offre de crédit, placement d’argent : soyez vigilant ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/eviter-les-arnaques/offre-de-credit-placement-dargent-soyez-vigilant"
+            },
+            {
+              "nid": 2831470,
+              "title": "Arnaques et cybermenaces sur les réseaux sociaux : comment s’en protéger ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/eviter-les-arnaques/arnaques-et-cybermenaces-sur-les-reseaux-sociaux-comment-sen"
+            },
+            {
+              "nid": 199387,
+              "title": "Entreprises, faites attention aux tentatives d'escroqueries !",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/assurer-sa-cybersecurite-et-la-protection-de-ses-donnees/entreprises-faites-attention"
+            },
+            {
+              "nid": 36784,
+              "title": "Protégez-vous de la contrefaçon avec la demande d'intervention de la douane",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/labels-qualite-et-valorisation-du-savoir-faire/protegez-vous"
+            },
+            {
+              "nid": 36806,
+              "title": "Offres d’emploi frauduleuses : comment les repérer ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/eviter-les-arnaques/offres-demploi-frauduleuses-comment-les-reperer"
+            },
+            {
+              "nid": 36824,
+              "title": "Faux courriels et appels de l’administration : les bonnes pratiques à adopter",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/numerique-et-cybersecurite/faux-courriels-et-appels-de-ladministration-les-bonnes"
+            }
+          ]
+        },
+        {
+          "label": "Sécurité / Prémunir / Contre",
+          "keywords": [
+            "sécurité",
+            "prémunir",
+            "contre",
+            "prémunir contre"
+          ],
+          "count": 11,
+          "content_types": {
+            "article": 11
+          },
+          "groups": {
+            "Entreprises": 6,
+            "Particuliers": 5
+          },
+          "sample_docs": [
+            {
+              "nid": 36469,
+              "title": "Sécurité de vos données : qu’est-ce que l’attaque par hameçonnage ciblé (spearphishing) ? ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/assurer-sa-cybersecurite-et-la-protection-de-ses-donnees/securite-de-vos-donnees-quest-ce-que-lattaque"
+            },
+            {
+              "nid": 36746,
+              "title": "Usurpation d’identité, comment s’en protéger ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/numerique-et-cybersecurite/usurpation-didentite-comment-sen-proteger"
+            },
+            {
+              "nid": 34168,
+              "title": "Contrefaçons : comment les repérer et les signaler ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/eviter-les-arnaques/contrefacons-comment-les-reperer-et-les-signaler"
+            },
+            {
+              "nid": 37522,
+              "title": "Que faire en cas d'attaque par déni de service (DDoS) ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/assurer-sa-cybersecurite-et-la-protection-de-ses-donnees/que-faire-en-cas-dattaque-par"
+            },
+            {
+              "nid": 34895,
+              "title": "Comment utiliser les huiles essentielles en toute sécurité ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/comment-utiliser-les-huiles-essentielles-en-toute"
+            },
+            {
+              "nid": 35914,
+              "title": "Garantie des vices cachés : à quoi sert-elle ? Comment la faire jouer ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/investir-dans-limmobilier/garantie-des-vices-caches-quoi-sert-elle-comment-la-faire"
+            },
+            {
+              "nid": 36118,
+              "title": "Cinq conseils pour se prémunir contre les rançongiciels",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/assurer-sa-cybersecurite-et-la-protection-de-ses-donnees/cinq-conseils-pour-se-premunir-contre-les"
+            },
+            {
+              "nid": 36147,
+              "title": "Sécurité de vos données : quelles sont les principales méthodes de piratage ? ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/assurer-sa-cybersecurite-et-la-protection-de-ses-3"
+            }
+          ]
+        },
+        {
+          "label": "Entreprises / Vis / Vos",
+          "keywords": [
+            "entreprises",
+            "vis",
+            "vos",
+            "données"
+          ],
+          "count": 9,
+          "content_types": {
+            "article": 9
+          },
+          "groups": {
+            "Entreprises": 6,
+            "Particuliers": 3
+          },
+          "sample_docs": [
+            {
+              "nid": 37607,
+              "title": "Protection des données personnelles : quels sont vos droits et comment les exercer ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/numerique-et-cybersecurite/protection-des-donnees-personnelles-quels-sont-vos-droits"
+            },
+            {
+              "nid": 36428,
+              "title": "Comment lutter contre les spams ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/assurer-sa-cybersecurite-et-la-protection-de-ses/comment-lutter-contre-les-spams"
+            },
+            {
+              "nid": 36849,
+              "title": "Entreprises, quelles sont vos obligations en matière de courriel commercial ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/innover-et-numeriser-son-entreprise/entreprises-quelles-sont-vos-obligations-en-matiere-de-courriel-commercial"
+            },
+            {
+              "nid": 37582,
+              "title": "Le règlement général sur la protection des données (RGPD), mode d’emploi",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/assurer-sa-cybersecurite-et-la-protection-de-ses/le"
+            },
+            {
+              "nid": 34299,
+              "title": "Entreprises : comment surveiller votre e-réputation ? ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/innover-et-numeriser-son-entreprise/entreprises-comment-surveiller-votre-e-reputation"
+            },
+            {
+              "nid": 34940,
+              "title": "Données personnelles : comment utiliser des modèles de courriers pour faire valoir vos droits ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/numerique-et-cybersecurite/donnees-personnelles-comment-utiliser-des-modeles-de"
+            },
+            {
+              "nid": 35185,
+              "title": "Utilisation de données personnelles : vos obligations vis-à-vis de l'internaute",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/assurer-sa-cybersecurite-et-la-protection-de-ses-0"
+            },
+            {
+              "nid": 105286,
+              "title": "Comparateurs en ligne : quelles sont les obligations d’information vis-à-vis des internautes ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/emprunter-et-sassurer/comparateurs-en-ligne-quelles-sont-les-obligations-dinformation"
+            }
+          ]
+        },
+        {
+          "label": "Démarchage / Black / Black friday",
+          "keywords": [
+            "démarchage",
+            "black",
+            "black friday",
+            "friday"
+          ],
+          "count": 7,
+          "content_types": {
+            "article": 7
+          },
+          "groups": {
+            "Particuliers": 6,
+            "Entreprises": 1
+          },
+          "sample_docs": [
+            {
+              "nid": 34341,
+              "title": "Très haut débit : êtes-vous éligible à la fibre optique ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/numerique-et-cybersecurite/tres-haut-debit-etes-vous-eligible-la-fibre-optique"
+            },
+            {
+              "nid": 34368,
+              "title": "Professionnels  : comment respecter la réglementation sur le démarchage téléphonique ? ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/innover-et-numeriser-son-entreprise/professionnels-comment-respecter-la-reglementation-sur-le-demarchage"
+            },
+            {
+              "nid": 34413,
+              "title": "Bloctel : comment fonctionne la liste d'opposition au démarchage téléphonique ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/numerique-et-cybersecurite/bloctel-comment-fonctionne-la-liste-dopposition-au"
+            },
+            {
+              "nid": 34764,
+              "title": "Comment se protéger du démarchage abusif ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/numerique-et-cybersecurite/comment-se-proteger-du-demarchage-abusif"
+            },
+            {
+              "nid": 35010,
+              "title": "Ondes électromagnétiques : mesurez votre exposition ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/numerique-et-cybersecurite/ondes-electromagnetiques-mesurez-votre-exposition"
+            },
+            {
+              "nid": 3238016,
+              "title": "Tout savoir sur le Black Friday",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/tout-savoir-sur-le-black-friday"
+            },
+            {
+              "nid": 3238554,
+              "title": "Comment sont contrôlés les jeux et paris en ligne ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/eviter-les-arnaques/comment-sont-controles-les-jeux-et-paris-en-ligne"
+            }
+          ]
+        },
+        {
+          "label": "Règles / Vos / Règles cybersécurité",
+          "keywords": [
+            "règles",
+            "vos",
+            "règles cybersécurité",
+            "appliquer"
+          ],
+          "count": 6,
+          "content_types": {
+            "article": 6
+          },
+          "groups": {
+            "Particuliers": 4,
+            "Entreprises": 2
+          },
+          "sample_docs": [
+            {
+              "nid": 36620,
+              "title": "Comment assurer votre sécurité numérique ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/numerique-et-cybersecurite/comment-assurer-votre-securite-numerique"
+            },
+            {
+              "nid": 36631,
+              "title": "Entreprises : quelles règles de cybersécurité appliquer ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/assurer-sa-cybersecurite-et-la-protection-de-ses-donnees/entreprises-quelles-regles-de-cybersecurite"
+            },
+            {
+              "nid": 34277,
+              "title": "Comment sécuriser la classification de vos marchandises grâce au renseignement tarifaire contraignant (RTC) ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/importer-et-exporter-linternational/comment-securiser-la-classification-de-vos-marchandises-grace-au"
+            },
+            {
+              "nid": 34483,
+              "title": "Dix règles pour vous prémunir contre le piratage de vos données personnelles",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/numerique-et-cybersecurite/dix-regles-pour-vous-premunir-contre-le-piratage-de-vos"
+            },
+            {
+              "nid": 35690,
+              "title": "Comment créer un mot de passe sécurisé et simple à retenir ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/numerique-et-cybersecurite/comment-creer-un-mot-de-passe-securise-et-simple-retenir"
+            },
+            {
+              "nid": 35841,
+              "title": "Accidents domestiques : comment protéger les enfants ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/accidents-domestiques-comment-proteger-les-enfants"
+            }
+          ]
+        },
+        {
+          "label": "Produits / Rappels / Rappels produits",
+          "keywords": [
+            "produits",
+            "rappels",
+            "rappels produits",
+            "bercy"
+          ],
+          "count": 5,
+          "content_types": {
+            "article": 4,
+            "accueil_espace": 1
+          },
+          "groups": {
+            "Particuliers": 4,
+            "Entreprises": 1
+          },
+          "sample_docs": [
+            {
+              "nid": 194827,
+              "title": "Retrait en magasin, drive et click & collect : comment ça marche ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/retrait-en-magasin-drive-et-click-collect-comment-ca-marche"
+            },
+            {
+              "nid": 243751,
+              "title": "Rappels de produits : vous devez les déclarer sur le site RappelConso",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/gerer-un-commerce/rappels-de-produits-vous-devez-les"
+            },
+            {
+              "nid": 36459,
+              "title": "Vente dans une brocante, un vide-greniers ou une braderie : quelles règles respecter ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/vente-dans-une-brocante-un-vide-greniers-ou-une"
+            },
+            {
+              "nid": 36657,
+              "title": "Retraits et rappels de produits : comment signaler et s'informer sur les produits à risque ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/retraits-et-rappels-de-produits-comment-signaler-et-sinformer-sur-les-produits-risque"
+            },
+            {
+              "nid": 3235731,
+              "title": "Bercy Infos Particuliers",
+              "type": "accueil_espace",
+              "group": "Particuliers",
+              "alias": "/particuliers"
+            }
+          ]
+        }
+      ],
+      "id": 5
+    },
+    {
+      "label": "Entreprises / Aides / Votre",
+      "keywords": [
+        "entreprises",
+        "aides",
+        "votre",
+        "vos",
+        "entreprise"
+      ],
+      "count": 58,
+      "content_types": {
+        "article": 57,
+        "page_navigation": 1
+      },
+      "groups": {
+        "Entreprises": 46,
+        "Particuliers": 12
+      },
+      "themes": [
+        {
+          "label": "Aides / Avez / Droit",
+          "keywords": [
+            "aides",
+            "avez",
+            "droit",
+            "avez droit"
+          ],
+          "count": 20,
+          "content_types": {
+            "article": 19,
+            "page_navigation": 1
+          },
+          "groups": {
+            "Entreprises": 16,
+            "Particuliers": 4
+          },
+          "sample_docs": [
+            {
+              "nid": 37601,
+              "title": "Employeurs : vous pouvez prétendre à des aides à l’embauche",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/les-aides-et-financements-pour-developper-son-entreprise/employeurs-vous-pouvez"
+            },
+            {
+              "nid": 37817,
+              "title": "Emploi d'une personne handicapée : les aides auxquelles vous avez droit",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/les-aides-et-financements-pour-developper-son-8"
+            },
+            {
+              "nid": 37852,
+              "title": "S'implanter en zones de restructuration de la défense (ZRD), quels avantages ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/les-aides-limplantation-geographique/simplanter"
+            },
+            {
+              "nid": 36466,
+              "title": "Esport : quel encadrement pour les compétitions de jeux vidéo ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/innover-et-numeriser-son-entreprise/esport-quel-encadrement"
+            },
+            {
+              "nid": 36571,
+              "title": "Restauration scolaire et universitaire : quelles aides pouvez-vous obtenir ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/beneficier-daides-et-de-reductions-dimpots/restauration-scolaire-et"
+            },
+            {
+              "nid": 36693,
+              "title": "Accueil d'un stagiaire : quelles sont vos obligations  ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/accueil-dun-stagiaire-quelles-sont-vos"
+            },
+            {
+              "nid": 36863,
+              "title": "Professionnels du tourisme : obtenez le label Tourisme & Handicap",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/labels-qualite-et-valorisation-du-savoir-faire/professionnels"
+            },
+            {
+              "nid": 35004,
+              "title": "Economie sociale et solidaire : qu’est-ce que l’agrément « Entreprise solidaire d’utilité sociale » ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/les-aides-et-financements-pour-developper-son-entreprise/economie-sociale-et-solidaire"
+            }
+          ]
+        },
+        {
+          "label": "Publics / Européens / Numérique",
+          "keywords": [
+            "publics",
+            "européens",
+            "numérique",
+            "votre"
+          ],
+          "count": 12,
+          "content_types": {
+            "article": 12
+          },
+          "groups": {
+            "Entreprises": 7,
+            "Particuliers": 5
+          },
+          "sample_docs": [
+            {
+              "nid": 34132,
+              "title": "Qu'est-ce que le brevet unitaire européen ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/innover-et-numeriser-son-entreprise/quest-ce-que-le-brevet"
+            },
+            {
+              "nid": 34294,
+              "title": "Entreprises : anticipez vos coûts douaniers avec le portail Access2Markets",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/importer-et-exporter-linternational/entreprises-anticipez-vos-couts-douaniers-avec-le-portail-access2markets"
+            },
+            {
+              "nid": 34298,
+              "title": "Comment vous informer sur les financements européens ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/les-aides-et-financements-pour-developper-son-entreprise/comment-vous-informer-sur-les-financements"
+            },
+            {
+              "nid": 35213,
+              "title": "Protection des consommateurs : les centres européens vous accompagnent",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/protection-des-consommateurs-les-centres-europeens-vous-accompagnent"
+            },
+            {
+              "nid": 35285,
+              "title": "« Choose Paris Region » : un guichet unique pour faciliter les démarches des investisseurs étrangers ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/creer-une-entreprise/choose-paris-region-un-guichet-unique-pour-faciliter-les-demarches"
+            },
+            {
+              "nid": 114274,
+              "title": "France services : les services publics près de chez vous",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/beneficier-daides-et-de-reductions-dimpots/france-services-les"
+            },
+            {
+              "nid": 35825,
+              "title": "Touristes : comment bénéficier de la détaxe lors d'un achat ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/voyager-et-se-deplacer/touristes-comment-beneficier-de-la-detaxe-lors-dun-achat"
+            },
+            {
+              "nid": 35968,
+              "title": "Comment identifier la couverture mobile de sa région ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/numerique-et-cybersecurite/comment-identifier-la-couverture-mobile-de-sa-region"
+            }
+          ]
+        },
+        {
+          "label": "Énergétique / Audit / Audit énergétique",
+          "keywords": [
+            "énergétique",
+            "audit",
+            "audit énergétique",
+            "pôles"
+          ],
+          "count": 11,
+          "content_types": {
+            "article": 11
+          },
+          "groups": {
+            "Entreprises": 8,
+            "Particuliers": 3
+          },
+          "sample_docs": [
+            {
+              "nid": 3220535,
+              "title": "Ce qu’il faut savoir sur le diagnostic de performance énergétique (DPE)",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/investir-dans-limmobilier/ce-quil-faut-savoir-sur-le-diagnostic-de-performance-energetique-dpe"
+            },
+            {
+              "nid": 3220758,
+              "title": "Tout savoir sur l’audit énergétique",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/investir-dans-limmobilier/tout-savoir-sur-laudit-energetique"
+            },
+            {
+              "nid": 2881658,
+              "title": "Donner vos invendus non alimentaires : comment ça marche et quelles sont vos obligations ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/donner-vos-invendus-non"
+            },
+            {
+              "nid": 36755,
+              "title": "Intelligence artificielle : des aides et des formations pour l'intégrer dans votre entreprise",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/innover-et-numeriser-son-entreprise/intelligence-artificielle"
+            },
+            {
+              "nid": 34189,
+              "title": "Professionnels du bâtiment : comment obtenir la mention « reconnu garant de l'environnement » (RGE) ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/labels-qualite-et-valorisation-du-savoir-faire-0"
+            },
+            {
+              "nid": 37002,
+              "title": "Un problème de réseau téléphonique, Internet, postal ? Alertez l’Arcep !",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/numerique-et-cybersecurite/un-probleme-de-reseau-telephonique-internet-postal-alertez"
+            },
+            {
+              "nid": 34302,
+              "title": "Tout savoir sur les pôles de compétitivité",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/innover-et-numeriser-son-entreprise/tout-savoir-sur-les-poles"
+            },
+            {
+              "nid": 34323,
+              "title": "Compétitions de jeux vidéo : l'esport français aux manettes",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/innover-et-numeriser-son-entreprise/competitions-de-jeux"
+            }
+          ]
+        },
+        {
+          "label": "Entreprises / Transition / Obligation transition",
+          "keywords": [
+            "entreprises",
+            "transition",
+            "obligation transition",
+            "obligation"
+          ],
+          "count": 10,
+          "content_types": {
+            "article": 10
+          },
+          "groups": {
+            "Entreprises": 10
+          },
+          "sample_docs": [
+            {
+              "nid": 1701269,
+              "title": "Entreprises : quelles aides pour accompagner votre sortie de crise ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/trouver-des-solutions-pour-son-entreprise-en-0"
+            },
+            {
+              "nid": 64800,
+              "title": "Lésé par une pratique commerciale ? Saisissez la CEPC !",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/gerer-sa-comptabilite-et-ses-demarches/lese-par-une"
+            },
+            {
+              "nid": 34354,
+              "title": "Assurance crédit-export : pour exporter en toute sérénité",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/importer-et-exporter-linternational/assurance-credit-export-pour-exporter-en-toute-serenite"
+            },
+            {
+              "nid": 34456,
+              "title": "TPE et PME : bénéficiez du prêt croissance Bpifrance et financez vos projets de développement ! ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/tpe-et-pme-beneficiez-du-pret-croissance-bpifrance-et-financez-vos-projets-de"
+            },
+            {
+              "nid": 34928,
+              "title": "Difficultés de financement : la médiation du crédit aux entreprises en cinq questions ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/trouver-des-solutions-pour-son-entreprise-en-2"
+            },
+            {
+              "nid": 35214,
+              "title": "Relations difficiles avec un fournisseur ou un client, faites appel à la Médiation des entreprises",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/trouver-des-solutions-pour-son-entreprise-en-3"
+            },
+            {
+              "nid": 35765,
+              "title": "Sécurisez votre développement à l’international avec l’assurance prospection de Bpifrance",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/importer-et-exporter-linternational/securisez-votre-developpement-linternational-avec"
+            },
+            {
+              "nid": 40337,
+              "title": "Vous développer à l'export : les aides à disposition des entreprises",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/importer-et-exporter-linternational/vous-developper-lexport-les-aides-disposition-des-entreprises"
+            }
+          ]
+        },
+        {
+          "label": "Entreprise / Données / Entreprises",
+          "keywords": [
+            "entreprise",
+            "données",
+            "entreprises",
+            "vos"
+          ],
+          "count": 5,
+          "content_types": {
+            "article": 5
+          },
+          "groups": {
+            "Entreprises": 5
+          },
+          "sample_docs": [
+            {
+              "nid": 37393,
+              "title": "DATAtourisme, la plateforme dédiée aux professionnels du tourisme",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/innover-et-numeriser-son-entreprise/datatourisme-la-plateforme-dediee-aux"
+            },
+            {
+              "nid": 34693,
+              "title": "Le label  « Entreprise du Patrimoine Vivant » (EPV), quels avantages pour votre entreprise ? ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/labels-qualite-et-valorisation-du-savoir-faire/le-label-entreprise-du-patrimoine-vivant"
+            },
+            {
+              "nid": 35993,
+              "title": "Entreprises : comment protéger vos données sensibles lors de déplacements à l’étranger ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/assurer-sa-cybersecurite-et-la-protection-de-ses/entreprises-comment-proteger-vos-donnees-sensibles"
+            },
+            {
+              "nid": 36042,
+              "title": "Data INPI : l’accès aux données des entreprises et de propriété industrielle",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/gerer-un-commerce/data-inpi-lacces-aux-donnees-des"
+            },
+            {
+              "nid": 40328,
+              "title": "Numéro EORI : l’identifiant indispensable pour vos formalités douanières",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/importer-et-exporter-linternational/numero-eori-lidentifiant-indispensable-pour-vos-formalites-douanieres"
+            }
+          ]
+        }
+      ],
+      "id": 6
+    },
+    {
+      "label": "Assurance / Fonctionne / Marche",
+      "keywords": [
+        "assurance",
+        "fonctionne",
+        "marche",
+        "entreprises",
+        "pensez"
+      ],
+      "count": 47,
+      "content_types": {
+        "article": 47
+      },
+      "groups": {
+        "Particuliers": 30,
+        "Entreprises": 17
+      },
+      "themes": [
+        {
+          "label": "Succession / Indivision / Succession indivision",
+          "keywords": [
+            "succession",
+            "indivision",
+            "succession indivision",
+            "vos"
+          ],
+          "count": 16,
+          "content_types": {
+            "article": 16
+          },
+          "groups": {
+            "Particuliers": 11,
+            "Entreprises": 5
+          },
+          "sample_docs": [
+            {
+              "nid": 3220010,
+              "title": "Comment fonctionne l’actionnariat salarié ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/vie-en-entreprise/comment-fonctionne-lactionnariat-salarie"
+            },
+            {
+              "nid": 72282,
+              "title": "Création d'entreprise : comment publier une annonce légale ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/creer-une-entreprise/creation-dentreprise-comment-publier-une-annonce-legale"
+            },
+            {
+              "nid": 84799,
+              "title": "Société civile immobilière : comment ça marche ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/societe-civile-immobiliere-comment-ca-marche"
+            },
+            {
+              "nid": 88432,
+              "title": "Vacances : ce qu’il faut savoir de l’immobilier en jouissance à temps partagé",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/investir-dans-limmobilier/vacances-ce-quil-faut-savoir-de-limmobilier-en-jouissance"
+            },
+            {
+              "nid": 91075,
+              "title": "Comment acheter des actions ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/comment-acheter-des-actions"
+            },
+            {
+              "nid": 36313,
+              "title": "L'action de groupe expliquée en six questions",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/gerer-un-litige/laction-de-groupe-expliquee-en-six-questions"
+            },
+            {
+              "nid": 37134,
+              "title": "Succession : qu'est-ce que l'indivision ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/preparer-ma-retraite-et-ma-succession/succession-quest-ce-que-lindivision"
+            },
+            {
+              "nid": 37168,
+              "title": "Recouvrement de créances : connaissez-vous l'affacturage ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/gerer-sa-comptabilite-et-ses-demarches/recouvrement"
+            }
+          ]
+        },
+        {
+          "label": "Fonctionne / Épargne / Temps",
+          "keywords": [
+            "fonctionne",
+            "épargne",
+            "temps",
+            "viager"
+          ],
+          "count": 13,
+          "content_types": {
+            "article": 13
+          },
+          "groups": {
+            "Entreprises": 7,
+            "Particuliers": 6
+          },
+          "sample_docs": [
+            {
+              "nid": 90595,
+              "title": "Le viager : comment ça marche ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/investir-dans-limmobilier/le-viager-comment-ca-marche"
+            },
+            {
+              "nid": 37588,
+              "title": "Comment fonctionne le « minimum vieillesse » ou allocation de solidarité aux personnes âgées ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/preparer-ma-retraite-et-ma-succession/comment-fonctionne-le-minimum-vieillesse-ou"
+            },
+            {
+              "nid": 38174,
+              "title": "Le forfait social : quelle part à la charge de l'employeur ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/le-forfait-social-quelle-part-la-charge"
+            },
+            {
+              "nid": 36254,
+              "title": "Crédit : à quoi correspond le taux annuel effectif global (TAEG) ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/emprunter-et-sassurer/credit-quoi-correspond-le-taux-annuel-effectif-global-taeg"
+            },
+            {
+              "nid": 36564,
+              "title": "Le compte épargne-temps : comment le mettre en place dans votre entreprise ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/le-compte-epargne-temps-comment-le-mettre"
+            },
+            {
+              "nid": 34366,
+              "title": "Des difficultés à embaucher ? Pensez au groupement d'employeurs ! ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/des-difficultes-embaucher-pensez-au-groupement-demployeurs"
+            },
+            {
+              "nid": 34800,
+              "title": "Prêt entre particuliers : quelques conseils de prudence",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/emprunter-et-sassurer/pret-entre-particuliers-quelques-conseils-de-prudence"
+            },
+            {
+              "nid": 109708,
+              "title": "Tout savoir sur le travail à temps partagé ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/tout-savoir-sur-le-travail-temps-partage"
+            }
+          ]
+        },
+        {
+          "label": "Assurance / Bénéficiaire / Êtes",
+          "keywords": [
+            "assurance",
+            "bénéficiaire",
+            "êtes",
+            "êtes bénéficiaire"
+          ],
+          "count": 9,
+          "content_types": {
+            "article": 9
+          },
+          "groups": {
+            "Particuliers": 8,
+            "Entreprises": 1
+          },
+          "sample_docs": [
+            {
+              "nid": 3110865,
+              "title": "Assurance emprunteur : questionnaire de santé, quand est-ce obligatoire ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/emprunter-et-sassurer/assurance-emprunteur-questionnaire-de-sante-quand-est-ce-obligatoire"
+            },
+            {
+              "nid": 34198,
+              "title": "Tout savoir sur la mise en place d’une complémentaire santé obligatoire",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/entreprises-vous-avez-lobligation-de-proposer-une-mutuelle-de-sante-vos-salaries"
+            },
+            {
+              "nid": 51789,
+              "title": "Un différend avec un assureur : pensez à la Médiation de l'Assurance",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/emprunter-et-sassurer/un-differend-avec-un-assureur-pensez-la-mediation-de-lassurance"
+            },
+            {
+              "nid": 51798,
+              "title": "Êtes-vous le bénéficiaire d'un contrat d'assurance dépendance ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/etes-vous-le-beneficiaire-dun-0"
+            },
+            {
+              "nid": 51801,
+              "title": "Comment savoir si vous êtes bénéficiaire d’un contrat d’assurance en déshérence ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/comment-savoir-si-vous-etes-beneficiaire-dun-contrat-dassurance-en-desherence"
+            },
+            {
+              "nid": 35494,
+              "title": "S’assurer et emprunter avec un risque aggravé de santé : la convention AERAS peut vous aider",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/emprunter-et-sassurer/sassurer-et-emprunter-avec-un-risque-aggrave-de-sante-la"
+            },
+            {
+              "nid": 3212712,
+              "title": "Êtes-vous bénéficiaire d'un produit d'épargne retraite supplémentaire en déshérence ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/etes-vous-beneficiaire-dun-produit"
+            },
+            {
+              "nid": 3224390,
+              "title": "Assurance vie et assurance décès : quelles différences ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/assurance-vie-et-assurance-deces"
+            }
+          ]
+        },
+        {
+          "label": "Capital / Investir etf / Etf",
+          "keywords": [
+            "capital",
+            "investir etf",
+            "etf",
+            "investir"
+          ],
+          "count": 9,
+          "content_types": {
+            "article": 9
+          },
+          "groups": {
+            "Particuliers": 5,
+            "Entreprises": 4
+          },
+          "sample_docs": [
+            {
+              "nid": 89587,
+              "title": "Tout savoir sur la location d’un fonds de commerce",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-un-commerce/tout-savoir-sur-la-location-dun-fonds-de-commerce"
+            },
+            {
+              "nid": 36406,
+              "title": "Qu'est-ce que le prêt étudiant garanti par l'État ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/emprunter-et-sassurer/quest-ce-que-le-pret-etudiant-garanti-par-letat"
+            },
+            {
+              "nid": 36913,
+              "title": "Le label « Financement participatif pour la croissance verte », comment ça marche ? ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/les-aides-et-financements-pour-developper-son-entreprise/le-label-financement-participatif-pour-la"
+            },
+            {
+              "nid": 117577,
+              "title": "Renforcer son capital : pensez au capital risque !",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/trouver-des-aides-et-des-financements/les-aides-et-financements-pour-developper-son-3"
+            },
+            {
+              "nid": 118927,
+              "title": "SCPI : investissez dans l’immobilier avec un placement collectif",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/investir-dans-limmobilier/scpi-investissez-dans-limmobilier-avec-un-placement"
+            },
+            {
+              "nid": 36003,
+              "title": "Créateurs, repreneurs : faites-vous accompagner grâce au contrat d'appui au projet d'entreprise (Cape)",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/creer-une-entreprise/createurs-repreneurs-faites-vous-accompagner-grace-au-contrat"
+            },
+            {
+              "nid": 3226017,
+              "title": "Label investissement socialement responsable (ISR) : comment ça marche ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/label-investissement-socialement"
+            },
+            {
+              "nid": 3226815,
+              "title": "MaPrimeRénov’ Copropriété : tout savoir sur l’aide à la rénovation des parties communes ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/faire-des-economies-denergie/maprimerenov-copropriete-tout-savoir-sur-laide-la-renovation-des-parties-communes"
+            }
+          ]
+        }
+      ],
+      "id": 7
+    },
+    {
+      "label": "Alimentation / Votre / Choisir",
+      "keywords": [
+        "alimentation",
+        "votre",
+        "choisir",
+        "alimentaires",
+        "produits"
+      ],
+      "count": 33,
+      "content_types": {
+        "article": 31,
+        "page_navigation": 2
+      },
+      "groups": {
+        "Particuliers": 25,
+        "Entreprises": 8
+      },
+      "themes": [
+        {
+          "label": "Alimentation / Alimentaires / Étiquettes",
+          "keywords": [
+            "alimentation",
+            "alimentaires",
+            "étiquettes",
+            "votre"
+          ],
+          "count": 18,
+          "content_types": {
+            "article": 17,
+            "page_navigation": 1
+          },
+          "groups": {
+            "Particuliers": 16,
+            "Entreprises": 2
+          },
+          "sample_docs": [
+            {
+              "nid": 2199896,
+              "title": " Marchés de Noël : quelques conseils pour bien acheter",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/marches-de-noel-quelques-conseils-pour-bien-acheter"
+            },
+            {
+              "nid": 37854,
+              "title": "Quelle réglementation pour l’origine géographique des produits alimentaires ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/alimentation/quelle-reglementation-pour-lorigine-geographique-des"
+            },
+            {
+              "nid": 34149,
+              "title": "Acheter un produit « Fabriqué en France » : quelles garanties ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/acheter-un-produit-fabrique-en-france-quelles-garanties"
+            },
+            {
+              "nid": 69486,
+              "title": "Denrées alimentaires : quelles sont les règles d’étiquetage ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/alimentation/denrees-alimentaires-quelles-sont-les-regles-detiquetage"
+            },
+            {
+              "nid": 34260,
+              "title": "Vêtements : les 6 indications à bien repérer sur les étiquettes",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/vetements-les-6-indications-bien-reperer-sur-les"
+            },
+            {
+              "nid": 34278,
+              "title": "Alimentation : comment lire les étiquettes nutritionnelles ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/alimentation/alimentation-comment-lire-les-etiquettes-nutritionnelles"
+            },
+            {
+              "nid": 34363,
+              "title": "Indication géographique : quels avantages pour votre entreprise ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/labels-qualite-et-valorisation-du-savoir-faire/indication"
+            },
+            {
+              "nid": 35016,
+              "title": "La chaîne du froid, comment ne pas la rompre ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/alimentation/la-chaine-du-froid-comment-ne-pas-la-rompre"
+            }
+          ]
+        },
+        {
+          "label": "Label / Qualité / Labels",
+          "keywords": [
+            "label",
+            "qualité",
+            "labels",
+            "labels qualité"
+          ],
+          "count": 11,
+          "content_types": {
+            "article": 10,
+            "page_navigation": 1
+          },
+          "groups": {
+            "Entreprises": 6,
+            "Particuliers": 5
+          },
+          "sample_docs": [
+            {
+              "nid": 36270,
+              "title": "Cuisiniers : valorisez votre savoir-faire grâce au statut d'artisan",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/labels-qualite-et-valorisation-du-savoir-faire/cuisiniers-valorisez-votre-savoir-faire"
+            },
+            {
+              "nid": 36736,
+              "title": "Adoptez l'étiquetage Nutri-Score afin de rassurer les consommateurs",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/labels-qualite-et-valorisation-du-savoir-faire/adoptez-letiquetage-nutri-score-afin-de"
+            },
+            {
+              "nid": 34173,
+              "title": "Tout savoir sur le titre de Maître restaurateur",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/labels-qualite-et-valorisation-du-savoir-faire/tout-savoir"
+            },
+            {
+              "nid": 51393,
+              "title": "Restauration : qu'est-ce que la mention « fait maison » ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/labels-qualite-et-valorisation-du-savoir-faire/restauration-quest-ce-que-la-mention"
+            },
+            {
+              "nid": 34467,
+              "title": "Pourquoi voyager dans des établissements labellisés Qualité Tourisme™ ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/voyager-et-se-deplacer/pourquoi-voyager-dans-des-etablissements-labellises-qualite"
+            },
+            {
+              "nid": 256858,
+              "title": "Appareils électroménagers, informatiques et électroniques : bien les choisir grâce à l'étiquette énergie",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/appareils-electromenagers-informatiques-et"
+            },
+            {
+              "nid": 283243,
+              "title": "Produit Label Rouge : à quoi vous attendre ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/alimentation/produit-label-rouge-quoi-vous-attendre"
+            },
+            {
+              "nid": 36143,
+              "title": "Qu’est-ce que le label « spécialité traditionnelle garantie » (STG) ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/alimentation/quest-ce-que-le-label-specialite-traditionnelle-garantie-stg"
+            }
+          ]
+        },
+        {
+          "label": "Choisir / Chocolat / Fêtes",
+          "keywords": [
+            "choisir",
+            "chocolat",
+            "fêtes",
+            "vos"
+          ],
+          "count": 4,
+          "content_types": {
+            "article": 4
+          },
+          "groups": {
+            "Particuliers": 4
+          },
+          "sample_docs": [
+            {
+              "nid": 34191,
+              "title": "Comment choisir les jouets de vos enfants en toute sécurité ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/comment-choisir-les-jouets-de-vos-enfants-en-toute-securite"
+            },
+            {
+              "nid": 36926,
+              "title": "Chocolat au lait, gianduja, chocolat noir... comment s’y retrouver ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/alimentation/chocolat-au-lait-gianduja-chocolat-noir-comment-sy"
+            },
+            {
+              "nid": 40315,
+              "title": "Repas de fêtes : comment bien choisir ses produits ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/alimentation/repas-de-fetes-comment-bien-choisir-ses-produits"
+            },
+            {
+              "nid": 2410349,
+              "title": "Nos conseils pour réussir vos fêtes de fin d'année",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/nos-conseils-pour-reussir-vos-fetes-de-fin-dannee"
+            }
+          ]
+        }
+      ],
+      "id": 8
+    },
+    {
+      "label": "Compte / Paiement / Bancaire",
+      "keywords": [
+        "compte",
+        "paiement",
+        "bancaire",
+        "vos",
+        "banque"
+      ],
+      "count": 33,
+      "content_types": {
+        "article": 33
+      },
+      "groups": {
+        "Particuliers": 26,
+        "Entreprises": 7
+      },
+      "themes": [
+        {
+          "label": "Compte / Banque / Bancaire",
+          "keywords": [
+            "compte",
+            "banque",
+            "bancaire",
+            "livret"
+          ],
+          "count": 18,
+          "content_types": {
+            "article": 18
+          },
+          "groups": {
+            "Particuliers": 16,
+            "Entreprises": 2
+          },
+          "sample_docs": [
+            {
+              "nid": 34225,
+              "title": "Avec Ciclade, comment se faire restituer les fonds d'un compte inactif ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/avec-ciclade-comment-se-faire-restituer-les-fonds-dun-compte-inactif"
+            },
+            {
+              "nid": 92743,
+              "title": "Difficultés financières : comment déposer un dossier de surendettement ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/beneficier-daides-et-de-reductions-dimpots/difficultes-financieres-comment-deposer-un-dossier-de-surendettement"
+            },
+            {
+              "nid": 2915117,
+              "title": "Comment utiliser la procédure de droit au compte (DAC) pour ouvrir un compte bancaire ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/comment-utiliser-la-procedure-de"
+            },
+            {
+              "nid": 36296,
+              "title": "Cartes bancaires, chèques, espèces : quels moyens de paiement de vos clients êtes-vous obligé d’accepter ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-un-commerce/cartes-bancaires-cheques-especes-quels-moyens-de-paiement-de-vos"
+            },
+            {
+              "nid": 36329,
+              "title": "Passer les frontières : les règles de la douane",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/voyager-et-se-deplacer/passer-les-frontieres-les-regles-de-la-douane"
+            },
+            {
+              "nid": 36419,
+              "title": "Moyens de paiement : préparez-vous avant de partir en vacances",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/voyager-et-se-deplacer/moyens-de-paiement-preparez-vous-avant-de-partir-en-vacances"
+            },
+            {
+              "nid": 36460,
+              "title": "Que faire en cas de fraude, de perte ou de vol de votre carte bancaire ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/eviter-les-arnaques/que-faire-en-cas-de-fraude-de-perte-ou-de-vol-de-votre-carte-bancaire"
+            },
+            {
+              "nid": 36479,
+              "title": "Fragilité financière : une offre bancaire spécifique pour vous aider",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/fragilite-financiere-une-offre"
+            }
+          ]
+        },
+        {
+          "label": "Crédit / Paiement / Vos",
+          "keywords": [
+            "crédit",
+            "paiement",
+            "vos",
+            "respecter"
+          ],
+          "count": 11,
+          "content_types": {
+            "article": 11
+          },
+          "groups": {
+            "Particuliers": 6,
+            "Entreprises": 5
+          },
+          "sample_docs": [
+            {
+              "nid": 3220788,
+              "title": "Ticket de caisse : professionnels, quelles sont vos obligations ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/gerer-un-commerce/ticket-de-caisse-professionnels-quelles-sont-vos-obligations"
+            },
+            {
+              "nid": 83499,
+              "title": "Utilisateur de VTC : quels sont vos droits ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/gerer-un-litige/utilisateur-de-vtc-quels-sont-vos-droits"
+            },
+            {
+              "nid": 38099,
+              "title": "Testament : quelles sont les règles à respecter ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/preparer-ma-retraite-et-ma-succession/testament-quelles-sont-les-regles-respecter"
+            },
+            {
+              "nid": 38104,
+              "title": "Comment fonctionne le retrait d’espèces à l’achat (cash back) ? ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/comment-fonctionne-le-retrait-despeces-lachat-cash"
+            },
+            {
+              "nid": 36457,
+              "title": "Comment proposer le paiement par carte bancaire à vos clients ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-son-entreprise-au-quotidien/gerer-un-commerce/comment-proposer-le-paiement-par-carte-bancaire-vos-clients"
+            },
+            {
+              "nid": 36565,
+              "title": "Paiement sans contact : comment ça fonctionne ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/paiement-sans-contact-comment-ca-fonctionne"
+            },
+            {
+              "nid": 37287,
+              "title": "Tout savoir sur le crédit à la consommation",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/emprunter-et-sassurer/tout-savoir-sur-le-credit-la-consommation"
+            },
+            {
+              "nid": 34291,
+              "title": "Carnet ATA : comment simplifier vos formalités d’import-export ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/developper-son-entreprise/importer-et-exporter-linternational/carnet-ata-comment"
+            }
+          ]
+        },
+        {
+          "label": "Cryptomonnaies / Investissement cryptomonnaies / Investissement",
+          "keywords": [
+            "cryptomonnaies",
+            "investissement cryptomonnaies",
+            "investissement",
+            "numérique"
+          ],
+          "count": 4,
+          "content_types": {
+            "article": 4
+          },
+          "groups": {
+            "Particuliers": 4
+          },
+          "sample_docs": [
+            {
+              "nid": 37754,
+              "title": "Cryptoactifs, cryptomonnaies : comment s'y retrouver ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/cryptoactifs-cryptomonnaies-comment"
+            },
+            {
+              "nid": 37042,
+              "title": "Savez-vous ce qu'est une monnaie locale ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/mes-droits-conso/bien-consommer/savez-vous-ce-quest-une-monnaie-locale"
+            },
+            {
+              "nid": 36101,
+              "title": "Le chèque numérique, qu’est-ce que c’est ? ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/numerique-et-cybersecurite/le-cheque-numerique-quest-ce-que-cest"
+            },
+            {
+              "nid": 3237430,
+              "title": "Investissement dans les cryptomonnaies : ce qu’il faut savoir",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/investissement-dans-les-cryptomonnaies-ce-quil-faut-savoir"
+            }
+          ]
+        }
+      ],
+      "id": 9
+    },
+    {
+      "label": "Épargne / Plan / Plan épargne",
+      "keywords": [
+        "épargne",
+        "plan",
+        "plan épargne",
+        "marche",
+        "fonctionne"
+      ],
+      "count": 24,
+      "content_types": {
+        "article": 24
+      },
+      "groups": {
+        "Particuliers": 19,
+        "Entreprises": 5
+      },
+      "themes": [
+        {
+          "label": "Épargne / Marche / Plan",
+          "keywords": [
+            "épargne",
+            "marche",
+            "plan",
+            "plan épargne"
+          ],
+          "count": 14,
+          "content_types": {
+            "article": 14
+          },
+          "groups": {
+            "Particuliers": 14
+          },
+          "sample_docs": [
+            {
+              "nid": 3146790,
+              "title": "Financez la rénovation énergétique de votre logement grâce au prêt avance mutation",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/faire-des-economies-denergie/financez-la-renovation-energetique-de-votre-logement-grace-au-pret-avance-mutation"
+            },
+            {
+              "nid": 179926,
+              "title": "Comment fonctionne le plan d’épargne retraite (PER) individuel ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/comment-fonctionne-le-plan-depargne-retraite-individuel"
+            },
+            {
+              "nid": 213118,
+              "title": "Quels produits d'épargne pouvez-vous ouvrir pour votre enfant ? ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/quels-produits-depargne-pouvez-vous-ouvrir-pour-votre-enfant"
+            },
+            {
+              "nid": 36454,
+              "title": "Livret A : comment ça marche ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/livret-comment-ca-marche"
+            },
+            {
+              "nid": 36698,
+              "title": "Prêt à taux zéro (PTZ) : tout ce qu’il faut savoir",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/emprunter-et-sassurer/pret-taux-zero-ptz-tout-ce-quil-faut-savoir"
+            },
+            {
+              "nid": 34179,
+              "title": "L'éco-prêt à taux zéro (éco-PTZ) : pouvez-vous en bénéficier ? ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/emprunter-et-sassurer/leco-pret-taux-zero-eco-ptz-pouvez-vous-en-beneficier"
+            },
+            {
+              "nid": 65106,
+              "title": "Qu'est-ce que le plan d'épargne en actions (PEA) ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/quest-ce-que-le-plan-depargne-en-actions-pea"
+            },
+            {
+              "nid": 37283,
+              "title": "Comment fonctionne le plan épargne retraite populaire (PERP) ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/comment-fonctionne-le-plan-epargne"
+            }
+          ]
+        },
+        {
+          "label": "Bénéficier / Épargne / Entreprise",
+          "keywords": [
+            "bénéficier",
+            "épargne",
+            "entreprise",
+            "partage"
+          ],
+          "count": 10,
+          "content_types": {
+            "article": 10
+          },
+          "groups": {
+            "Particuliers": 5,
+            "Entreprises": 5
+          },
+          "sample_docs": [
+            {
+              "nid": 3218730,
+              "title": "Salariés : pouvez-vous bénéficier de la prime de partage de la valeur ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/vie-en-entreprise/salaries-pouvez-vous-beneficier-de-la-prime-de-partage-de-la-valeur"
+            },
+            {
+              "nid": 76377,
+              "title": "Prime de partage de la valeur  : comment en faire bénéficier vos salariés ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/prime-de-partage-de-la-valeur-comment-en"
+            },
+            {
+              "nid": 38150,
+              "title": "Comment fonctionne le plan d’épargne pour la retraite collectif (Perco) ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/preparer-ma-retraite-et-ma-succession/comment-fonctionne-le-plan-depargne-pour-la"
+            },
+            {
+              "nid": 36638,
+              "title": "Entreprises : quelles sont vos obligations concernant le « 1 % logement » ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/entreprises-quelles-sont-vos"
+            },
+            {
+              "nid": 38259,
+              "title": "Plan d’épargne entreprise (PEE), comment ça marche ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/plan-depargne-entreprise-pee-comment"
+            },
+            {
+              "nid": 49860,
+              "title": "Épargne salariale : comment pouvez-vous bénéficier de la participation ? ",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/epargne-salariale-comment-pouvez-vous"
+            },
+            {
+              "nid": 49863,
+              "title": "Comment mettre en place la participation dans votre entreprise ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/comment-mettre-en-place-la-participation"
+            },
+            {
+              "nid": 49866,
+              "title": "Comment mettre en place l’intéressement dans votre entreprise ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/comment-mettre-en-place-linteressement"
+            }
+          ]
+        }
+      ],
+      "id": 10
+    },
+    {
+      "label": "Micro / Micro entreprise / Entreprise",
+      "keywords": [
+        "micro",
+        "micro entreprise",
+        "entreprise",
+        "entrepreneur",
+        "entreprises"
+      ],
+      "count": 18,
+      "content_types": {
+        "article": 17,
+        "page_navigation": 1
+      },
+      "groups": {
+        "Entreprises": 17,
+        "Particuliers": 1
+      },
+      "themes": [
+        {
+          "label": "Micro entreprise / Entreprise / Entrepreneur",
+          "keywords": [
+            "micro entreprise",
+            "entreprise",
+            "entrepreneur",
+            "peut"
+          ],
+          "count": 12,
+          "content_types": {
+            "article": 11,
+            "page_navigation": 1
+          },
+          "groups": {
+            "Entreprises": 11,
+            "Particuliers": 1
+          },
+          "sample_docs": [
+            {
+              "nid": 38155,
+              "title": "Artisans, commerçants, combien allez-vous payer de cotisations sociales ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/artisans-commercants-combien-allez-vous"
+            },
+            {
+              "nid": 36600,
+              "title": "Micro-entreprise : quelles sont les aides financières auxquelles vous pouvez prétendre ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-micro-entreprise/micro-entreprise-quelles-sont-les-aides-financieres-auxquelles-vous-pouvez-pretendre"
+            },
+            {
+              "nid": 36691,
+              "title": "Micro-entreprise, régime réel et régime de la déclaration contrôlée : les 3 régimes d’imposition des entreprises",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-micro-entreprise/micro-entreprise-regime-reel-et-regime-de-la-declaration"
+            },
+            {
+              "nid": 36819,
+              "title": "Peut-on cumuler un emploi salarié et une micro-entreprise ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-micro-entreprise/peut-cumuler-un-emploi-salarie-et-une-micro-entreprise"
+            },
+            {
+              "nid": 36898,
+              "title": "Cessation d'activité d'une micro-entreprise, mode d'emploi",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-micro-entreprise/cessation-dactivite-dune-micro-entreprise-mode-demploi"
+            },
+            {
+              "nid": 36951,
+              "title": "La cessation temporaire d'activité pour les micro-entreprises, comment ça marche ? ",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-micro-entreprise/la-cessation-temporaire-dactivite-pour-les-micro-entreprises"
+            },
+            {
+              "nid": 37003,
+              "title": "Quelles activités peut-on exercer en micro-entreprise ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-micro-entreprise/quelles-activites-peut-exercer-en-micro-entreprise"
+            },
+            {
+              "nid": 35309,
+              "title": "Comment créer une micro-entreprise ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-micro-entreprise/comment-creer-une-micro-entreprise"
+            }
+          ]
+        },
+        {
+          "label": "Micro / Tva / Entreprises",
+          "keywords": [
+            "micro",
+            "tva",
+            "entreprises",
+            "entreprise"
+          ],
+          "count": 6,
+          "content_types": {
+            "article": 6
+          },
+          "groups": {
+            "Entreprises": 6
+          },
+          "sample_docs": [
+            {
+              "nid": 36470,
+              "title": "Micro-entreprise : dans quels cas changer de régime ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-micro-entreprise/micro-entreprise-dans-quels-cas-changer-de-regime"
+            },
+            {
+              "nid": 37148,
+              "title": "Entrepreneurs : connaissez-vous le microcrédit professionnel ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/les-aides-et-financements-pour-developper-son-entreprise/entrepreneurs-connaissez-vous"
+            },
+            {
+              "nid": 34776,
+              "title": "Micro-entreprise : que se passe-t-il quand le seuil de chiffre d'affaires est dépassé ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-micro-entreprise/micro-entreprise-que-se-passe-t-il-quand-le-seuil-de-chiffre"
+            },
+            {
+              "nid": 35212,
+              "title": "Entreprises : pouvez-vous bénéficier de la franchise de TVA ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/entreprises-pouvez-vous-beneficier-de-la-franchise-de-tva"
+            },
+            {
+              "nid": 35843,
+              "title": "TVA : quels sont les différents régimes d'imposition ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/tva-quels-sont-les-differents"
+            },
+            {
+              "nid": 35960,
+              "title": "Micro-entreprises, quel est le montant de vos cotisations sociales ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-micro-entreprise/micro-entreprises-quel-est-le-montant-de-vos-cotisations-sociales"
+            }
+          ]
+        }
+      ],
+      "id": 11
+    },
+    {
+      "label": "Taxe / Taxe intérieure / Intérieure",
+      "keywords": [
+        "taxe",
+        "taxe intérieure",
+        "intérieure",
+        "commerciales",
+        "énergétiques"
+      ],
+      "count": 12,
+      "content_types": {
+        "article": 12
+      },
+      "groups": {
+        "Entreprises": 11,
+        "Particuliers": 1
+      },
+      "themes": [
+        {
+          "label": "Taxe / Commerciales / Friches commerciales",
+          "keywords": [
+            "taxe",
+            "commerciales",
+            "friches commerciales",
+            "taxe friches"
+          ],
+          "count": 7,
+          "content_types": {
+            "article": 7
+          },
+          "groups": {
+            "Entreprises": 6,
+            "Particuliers": 1
+          },
+          "sample_docs": [
+            {
+              "nid": 37694,
+              "title": "Qu’est-ce que la taxe locale sur la publicité extérieure (TLPE) ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/quest-ce-que-la-taxe-locale-sur"
+            },
+            {
+              "nid": 37819,
+              "title": "Qu'est-ce que l'imposition forfaitaire des entreprises de réseaux (IFER) ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/quest-ce-que-limposition-forfaitaire-des-entreprises-de-reseaux-ifer"
+            },
+            {
+              "nid": 37298,
+              "title": "Pouvez-vous bénéficier du plafonnement de la contribution économique territoriale ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/pouvez-vous-beneficier-du"
+            },
+            {
+              "nid": 37546,
+              "title": "Qui doit payer la taxe sur les surfaces commerciales (TaSCom) ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/qui-doit-payer-la-taxe-sur-les"
+            },
+            {
+              "nid": 40324,
+              "title": "La taxe sur les friches commerciales, comment ça marche ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/la-taxe-sur-les-friches"
+            },
+            {
+              "nid": 40327,
+              "title": "Impôts locaux : lesquels concernent votre entreprise ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/impots-locaux-lesquels"
+            },
+            {
+              "nid": 40333,
+              "title": "Tourisme : comment fonctionne la taxe de séjour ?",
+              "type": "article",
+              "group": "Particuliers",
+              "alias": "/particuliers/voyager-et-se-deplacer/tourisme-comment-fonctionne-la-taxe-de-sejour"
+            }
+          ]
+        },
+        {
+          "label": "Intérieure / Taxe intérieure / Taxe",
+          "keywords": [
+            "intérieure",
+            "taxe intérieure",
+            "taxe",
+            "énergétiques"
+          ],
+          "count": 5,
+          "content_types": {
+            "article": 5
+          },
+          "groups": {
+            "Entreprises": 5
+          },
+          "sample_docs": [
+            {
+              "nid": 36904,
+              "title": "La taxe intérieure de consommation sur le gaz naturel (TICGN)",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/la-taxe-interieure-de"
+            },
+            {
+              "nid": 36877,
+              "title": "Ce qu’il faut savoir sur la taxe intérieure de consommation sur les produits énergétiques (TICPE)",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/ce-quil-faut-savoir-sur-la-taxe"
+            },
+            {
+              "nid": 36912,
+              "title": "La taxe intérieure de consommation sur le charbon (TICC)",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/la-taxe-interieure-de-0"
+            },
+            {
+              "nid": 36985,
+              "title": "La fraction perçue sur l’électricité : qu’est-ce que c’est ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/la-fraction-percue-sur"
+            },
+            {
+              "nid": 37380,
+              "title": "Quelles sont les principales taxes énergétiques et leurs taux ?",
+              "type": "article",
+              "group": "Entreprises",
+              "alias": "/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/quelles-sont-les-principales"
+            }
+          ]
+        }
+      ],
+      "id": 12
+    }
+  ],
+  "filter": {
+    "group_ids": [
+      228,
+      231
+    ]
+  }
+}

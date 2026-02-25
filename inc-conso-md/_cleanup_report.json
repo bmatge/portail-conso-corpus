@@ -1,0 +1,650 @@
+{
+  "date": "2026-02-25T00:24:29.596451",
+  "mode": "SUPPRESSION",
+  "min_length": 800,
+  "total_scanned": 3311,
+  "kept": 3151,
+  "removed": 160,
+  "removed_files": [
+    {
+      "file": "content/achats-sur-internet-en-toute-securite.md",
+      "reason": "trop court (552 car.)"
+    },
+    {
+      "file": "content/adoptez-les-bons-gestes-pour-un-ete-serein-0.md",
+      "reason": "trop court (752 car.)"
+    },
+    {
+      "file": "content/anthocyanes.md",
+      "reason": "trop court (587 car.)"
+    },
+    {
+      "file": "content/apprendre-jouer-avec-leau.md",
+      "reason": "trop court (642 car.)"
+    },
+    {
+      "file": "content/association-atlantique-des-consommateurs-cooperateurs.md",
+      "reason": "trop court (617 car.)"
+    },
+    {
+      "file": "content/association-de-defense-deducation-et-dinformation-du-consommateur-adeic.md",
+      "reason": "trop court (604 car.)"
+    },
+    {
+      "file": "content/association-de-defense-deducation-et-dinformation-du-consommateur-de-lain.md",
+      "reason": "trop court (516 car.)"
+    },
+    {
+      "file": "content/association-force-ouvriere-consommateurs-afoc.md",
+      "reason": "trop court (561 car.)"
+    },
+    {
+      "file": "content/association-pour-linformation-et-la-defense-des-consommateurs-salaries-cgt-de-corse-du-sud.md",
+      "reason": "trop court (523 car.)"
+    },
+    {
+      "file": "content/assurance/intermediaires-en-assurance-banque-ou-finance-ayez-le-reflexe-orias.md",
+      "reason": "trop court (788 car.)"
+    },
+    {
+      "file": "content/banque/calculez-votre-budget.md",
+      "reason": "trop court (759 car.)"
+    },
+    {
+      "file": "content/banque/cryptos-influenceurs-trading-conseils-aux-jeunes-investisseurs.md",
+      "reason": "trop court (795 car.)"
+    },
+    {
+      "file": "content/banque-posez-vos-questions-avec-le-ctrc-bourgogne.md",
+      "reason": "trop court (633 car.)"
+    },
+    {
+      "file": "content/beta-carotene-issu-de-blakeslea-trispora.md",
+      "reason": "trop court (723 car.)"
+    },
+    {
+      "file": "content/beta-carotene.md",
+      "reason": "trop court (592 car.)"
+    },
+    {
+      "file": "content/bleu-brillant-fcf.md",
+      "reason": "trop court (528 car.)"
+    },
+    {
+      "file": "content/bleu-patente-v.md",
+      "reason": "trop court (605 car.)"
+    },
+    {
+      "file": "content/bureau-europeen-des-unions-de-consommateurs-beuc.md",
+      "reason": "trop court (707 car.)"
+    },
+    {
+      "file": "content/bureau-europeen-des-unions-de-consommateurs.md",
+      "reason": "trop court (644 car.)"
+    },
+    {
+      "file": "content/cahier-dactivites-mon-cahier-financier.md",
+      "reason": "trop court (736 car.)"
+    },
+    {
+      "file": "content/caramel-ammoniacal.md",
+      "reason": "trop court (685 car.)"
+    },
+    {
+      "file": "content/caramel-au-sulfite-dammonium.md",
+      "reason": "trop court (634 car.)"
+    },
+    {
+      "file": "content/caramel.md",
+      "reason": "trop court (611 car.)"
+    },
+    {
+      "file": "content/carbonate-de-calcium.md",
+      "reason": "trop court (660 car.)"
+    },
+    {
+      "file": "content/carotenes-vegetaux.md",
+      "reason": "trop court (723 car.)"
+    },
+    {
+      "file": "content/centre-europeens-des-consommateurs-au-luxembourg.md",
+      "reason": "trop court (671 car.)"
+    },
+    {
+      "file": "content/charbon-vegetal.md",
+      "reason": "trop court (613 car.)"
+    },
+    {
+      "file": "content/chlorophylles.md",
+      "reason": "trop court (608 car.)"
+    },
+    {
+      "file": "content/chlorophyllines.md",
+      "reason": "trop court (544 car.)"
+    },
+    {
+      "file": "content/comite-economique-et-social-europeen-cese.md",
+      "reason": "trop court (799 car.)"
+    },
+    {
+      "file": "content/comite-europeen-de-normalisation-cen.md",
+      "reason": "trop court (663 car.)"
+    },
+    {
+      "file": "content/comite-europeen-de-normalisation-pour-lelectrotechnique-cenelec.md",
+      "reason": "trop court (535 car.)"
+    },
+    {
+      "file": "content/comite-europeen-de-normalisation.md",
+      "reason": "trop court (561 car.)"
+    },
+    {
+      "file": "content/comment-bien-choisir-vos-contrats-delectricite-ou-de-gaz-naturel-questions-reponses-en-video.md",
+      "reason": "trop court (582 car.)"
+    },
+    {
+      "file": "content/comment-dejouer-les-arnaques-en-ligne-avec-cybermalveillancegouvfr.md",
+      "reason": "trop court (508 car.)"
+    },
+    {
+      "file": "content/comment-se-calcule-le-delai-pour-donner-son-preavis-dune-location.md",
+      "reason": "trop court (703 car.)"
+    },
+    {
+      "file": "content/complexes-cuivriques-de-chlorophylles.md",
+      "reason": "trop court (738 car.)"
+    },
+    {
+      "file": "content/complexes-cuivriques-de-chlorophyllines.md",
+      "reason": "trop court (712 car.)"
+    },
+    {
+      "file": "content/connaissez-vous-limpact-carbone-des-gestes-et-objets-du-quotidien.md",
+      "reason": "trop court (588 car.)"
+    },
+    {
+      "file": "content/consomacteurs-20.md",
+      "reason": "trop court (537 car.)"
+    },
+    {
+      "file": "content/consommation-collaborative.md",
+      "reason": "trop court (546 car.)"
+    },
+    {
+      "file": "content/consommation-responsable-lallongement-de-la-duree-de-vie-des-produits.md",
+      "reason": "trop court (703 car.)"
+    },
+    {
+      "file": "content/consultation-sur-les-produits-alimentaires.md",
+      "reason": "trop court (568 car.)"
+    },
+    {
+      "file": "content/consumers-international-0.md",
+      "reason": "trop court (664 car.)"
+    },
+    {
+      "file": "content/covid-19-et-annulation-de-voyages.md",
+      "reason": "trop court (680 car.)"
+    },
+    {
+      "file": "content/ctrc-aura-0.md",
+      "reason": "trop court (552 car.)"
+    },
+    {
+      "file": "content/curcumine.md",
+      "reason": "trop court (641 car.)"
+    },
+    {
+      "file": "content/cybersecurite-comment-proteger-son-materiel-informatique-et-ses-donnees-personnelles-0.md",
+      "reason": "trop court (709 car.)"
+    },
+    {
+      "file": "content/cybersecurite-comment-proteger-son-materiel-informatique-et-ses-donnees-personnelles-1.md",
+      "reason": "trop court (675 car.)"
+    },
+    {
+      "file": "content/cybersecurite-comprendre-les-enjeux-et-se-premunir-contre-les-menaces-du-web.md",
+      "reason": "trop court (792 car.)"
+    },
+    {
+      "file": "content/de-leconomie-lineaire-leconomie-circulaire.md",
+      "reason": "trop court (653 car.)"
+    },
+    {
+      "file": "content/de-linfo-scientifique-linfo-grand-public.md",
+      "reason": "trop court (559 car.)"
+    },
+    {
+      "file": "content/demarchage-telephonique-etes-vous-concernee-le-ressentez-vous-normal-abusif.md",
+      "reason": "trop court (756 car.)"
+    },
+    {
+      "file": "content/demenagement-quest-ce-quune-declaration-de-valeur.md",
+      "reason": "trop court (737 car.)"
+    },
+    {
+      "file": "content/dioxyde-de-titane.md",
+      "reason": "trop court (512 car.)"
+    },
+    {
+      "file": "content/direction-departementale-de-la-protection-des-populations-ddpp.md",
+      "reason": "trop court (516 car.)"
+    },
+    {
+      "file": "content/direction-departementale-de-la-protection-des-populations.md",
+      "reason": "trop court (516 car.)"
+    },
+    {
+      "file": "content/direction-generale-de-la-justice-et-des-consommateurs-dg-justice.md",
+      "reason": "trop court (678 car.)"
+    },
+    {
+      "file": "content/direction-generale-sante-et-securite-alimentaire-dg-sante.md",
+      "reason": "contenu réel trop court (799 car. après nettoyage)"
+    },
+    {
+      "file": "content/direction-generale-sante-et-securite-alimentaire.md",
+      "reason": "trop court (752 car.)"
+    },
+    {
+      "file": "content/enquete-sur-leconomie-circulaire.md",
+      "reason": "trop court (598 car.)"
+    },
+    {
+      "file": "content/enquete-vente-dun-appartement-en-copropriete.md",
+      "reason": "trop court (698 car.)"
+    },
+    {
+      "file": "content/etude-sur-les-francais-et-internet.md",
+      "reason": "trop court (665 car.)"
+    },
+    {
+      "file": "content/euro-eco.md",
+      "reason": "trop court (501 car.)"
+    },
+    {
+      "file": "content/extrait-de-paprika.md",
+      "reason": "trop court (610 car.)"
+    },
+    {
+      "file": "content/facebooklive-comment-agir-pour-reduire-notre-impact-numerique-sur-lenvironnement.md",
+      "reason": "trop court (722 car.)"
+    },
+    {
+      "file": "content/facebooklive-comment-bien-organiser-son-epargne.md",
+      "reason": "trop court (513 car.)"
+    },
+    {
+      "file": "content/facebooklive-epargne-salariale.md",
+      "reason": "trop court (718 car.)"
+    },
+    {
+      "file": "content/facebooklive-rappelconso.md",
+      "reason": "trop court (602 car.)"
+    },
+    {
+      "file": "content/faites-les-bons-placements-financiers-en-2023-avec-lamf.md",
+      "reason": "trop court (610 car.)"
+    },
+    {
+      "file": "content/flux-rss.md",
+      "reason": "trop court (519 car.)"
+    },
+    {
+      "file": "content/foire-de-nevers-le-ctrc-bourgogne-repond-vos-questions.md",
+      "reason": "trop court (537 car.)"
+    },
+    {
+      "file": "content/france-victimes-0.md",
+      "reason": "trop court (655 car.)"
+    },
+    {
+      "file": "content/gerer-mes-finances-au-quotidien-avec-la-banque-de-france.md",
+      "reason": "trop court (674 car.)"
+    },
+    {
+      "file": "content/halte-lobsolescence-programmee.md",
+      "reason": "trop court (733 car.)"
+    },
+    {
+      "file": "content/incontinence-urinaire-retrouvez-une-vie-ordinaire.md",
+      "reason": "trop court (625 car.)"
+    },
+    {
+      "file": "content/indigotine.md",
+      "reason": "trop court (575 car.)"
+    },
+    {
+      "file": "content/informer-et-proteger-les-jeunes-des-dangers-des-ecrans.md",
+      "reason": "trop court (634 car.)"
+    },
+    {
+      "file": "content/institut-europeen-interregional-de-la-consommation-ieic.md",
+      "reason": "trop court (559 car.)"
+    },
+    {
+      "file": "content/institut-national-de-la-consommation-inc.md",
+      "reason": "trop court (527 car.)"
+    },
+    {
+      "file": "content/jai-signe-un-bail-de-3-ans-et-mon-proprietaire-veut-le-resilier.md",
+      "reason": "trop court (611 car.)"
+    },
+    {
+      "file": "content/journee-mondiale-des-droits-des-consommateurs-2025.md",
+      "reason": "trop court (634 car.)"
+    },
+    {
+      "file": "content/la-decouverte-de-leau.md",
+      "reason": "trop court (617 car.)"
+    },
+    {
+      "file": "content/la-maison-protegez-vos-enfants.md",
+      "reason": "trop court (518 car.)"
+    },
+    {
+      "file": "content/la-rubrique-trouvez-lassociation-la-plus-proche-de-chez-vous-se-modernise.md",
+      "reason": "trop court (731 car.)"
+    },
+    {
+      "file": "content/labels-alimentaires-en-rayon-gardez-les-yeux-ouverts.md",
+      "reason": "trop court (781 car.)"
+    },
+    {
+      "file": "content/labus-de-faiblesse.md",
+      "reason": "trop court (589 car.)"
+    },
+    {
+      "file": "content/largent-au-coeur-du-quotidien-le-gagner-le-gerer-le-transmettre.md",
+      "reason": "trop court (521 car.)"
+    },
+    {
+      "file": "content/largent-du-beurre.md",
+      "reason": "trop court (533 car.)"
+    },
+    {
+      "file": "content/le-bois-les-forets-et-nous-la-minute-info-une-collection-de-10-podcasts.md",
+      "reason": "trop court (610 car.)"
+    },
+    {
+      "file": "content/le-ctrc-bourgogne-sengage-contre-lillettrisme.md",
+      "reason": "trop court (620 car.)"
+    },
+    {
+      "file": "content/le-site-jeconsommeresponsablefr.md",
+      "reason": "trop court (664 car.)"
+    },
+    {
+      "file": "content/les-consommateurs-beneficieront-de-droits-renforces-par-la-directive-omnibus.md",
+      "reason": "trop court (772 car.)"
+    },
+    {
+      "file": "content/les-salles-de-sport-et-centres-de-remise-en-forme.md",
+      "reason": "trop court (742 car.)"
+    },
+    {
+      "file": "content/les-tutos-de-la-conso.md",
+      "reason": "trop court (673 car.)"
+    },
+    {
+      "file": "content/linc-poursuit-ses-missions-dinformation-en-2022.md",
+      "reason": "trop court (645 car.)"
+    },
+    {
+      "file": "content/logement/guides-de-limmeuble-neuf-et-renover.md",
+      "reason": "trop court (611 car.)"
+    },
+    {
+      "file": "content/logement/renovation-energetique-attention-aux-fraudes-et-arnaques.md",
+      "reason": "trop court (759 car.)"
+    },
+    {
+      "file": "content/logement-les-nouvelles-mesures-applicables-compter-du-1er-janvier-2022.md",
+      "reason": "trop court (778 car.)"
+    },
+    {
+      "file": "content/loi-hamon-tableau-synthetique.md",
+      "reason": "trop court (727 car.)"
+    },
+    {
+      "file": "content/loi-relative-la-transition-energetique-les-principales-dispositions.md",
+      "reason": "trop court (754 car.)"
+    },
+    {
+      "file": "content/luteine.md",
+      "reason": "trop court (641 car.)"
+    },
+    {
+      "file": "content/maison-de-la-justice-et-du-droit.md",
+      "reason": "trop court (569 car.)"
+    },
+    {
+      "file": "content/mediateur-bancaire-0.md",
+      "reason": "trop court (505 car.)"
+    },
+    {
+      "file": "content/mediateur-de-la-sncf-0.md",
+      "reason": "trop court (666 car.)"
+    },
+    {
+      "file": "content/mediateur-de-lassociation-mediation-des-communications-electroniques-0.md",
+      "reason": "trop court (531 car.)"
+    },
+    {
+      "file": "content/mediateur-de-leducation-nationale-et-de-lenseignement-superieur.md",
+      "reason": "trop court (518 car.)"
+    },
+    {
+      "file": "content/mediateur-de-mobilians-anciennement-conseil-national-des-professions-de-lautomobile.md",
+      "reason": "trop court (732 car.)"
+    },
+    {
+      "file": "content/mediateur-du-notariat-0.md",
+      "reason": "trop court (558 car.)"
+    },
+    {
+      "file": "content/mediateur-edf-0.md",
+      "reason": "trop court (559 car.)"
+    },
+    {
+      "file": "content/mediateur-engie-0.md",
+      "reason": "trop court (556 car.)"
+    },
+    {
+      "file": "content/mediateur-france-travail.md",
+      "reason": "trop court (574 car.)"
+    },
+    {
+      "file": "content/mediateur-national-de-la-consommation-de-la-profession-davocat.md",
+      "reason": "trop court (538 car.)"
+    },
+    {
+      "file": "content/mediation-du-tourisme-et-du-voyage-mtv.md",
+      "reason": "trop court (502 car.)"
+    },
+    {
+      "file": "content/mes-questions-dargent-la-minute-info-une-collection-de-10-podcasts-0.md",
+      "reason": "trop court (737 car.)"
+    },
+    {
+      "file": "content/mes-questions-dargent-la-minute-info-une-collection-de-10-podcasts-3.md",
+      "reason": "trop court (731 car.)"
+    },
+    {
+      "file": "content/mes-questions-dargent-la-minute-info-une-collection-de-10-podcasts.md",
+      "reason": "trop court (650 car.)"
+    },
+    {
+      "file": "content/mes-questions-dargent.md",
+      "reason": "trop court (775 car.)"
+    },
+    {
+      "file": "content/mesurez-votre-niveau-daddiction-au-jeu.md",
+      "reason": "trop court (776 car.)"
+    },
+    {
+      "file": "content/ministere-du-partenariat-avec-les-territoires-et-de-la-decentralisation-le-ministere-de-la.md",
+      "reason": "trop court (593 car.)"
+    },
+    {
+      "file": "content/mon-proprietaire-veut-augmenter-la-caution-en-cours-de-bail.md",
+      "reason": "trop court (689 car.)"
+    },
+    {
+      "file": "content/noir-brillant-pn.md",
+      "reason": "trop court (513 car.)"
+    },
+    {
+      "file": "content/ondes-et-communications-electroniques.md",
+      "reason": "trop court (590 car.)"
+    },
+    {
+      "file": "content/organisation-internationale-de-normalisation.md",
+      "reason": "trop court (573 car.)"
+    },
+    {
+      "file": "content/parlement-europeen-commission-pour-lenvironnement-la-sante-publique-et-la-securite-0.md",
+      "reason": "contenu réel trop court (797 car. après nettoyage)"
+    },
+    {
+      "file": "content/placements-financiers-suivez-nos-conseils-avant-dinvestir-avec-lamf.md",
+      "reason": "trop court (596 car.)"
+    },
+    {
+      "file": "content/placer-et-faire-fructifier-ses-economies-mode-demploi-avec-lamf.md",
+      "reason": "trop court (620 car.)"
+    },
+    {
+      "file": "content/pompes-chaleur-informez-vous-avant-de-les-faire-installer.md",
+      "reason": "trop court (718 car.)"
+    },
+    {
+      "file": "content/presse.md",
+      "reason": "trop court (739 car.)"
+    },
+    {
+      "file": "content/prets-entre-particuliers.md",
+      "reason": "trop court (637 car.)"
+    },
+    {
+      "file": "content/problemes-de-voisinage-nos-conseils-pour-vous-defendre.md",
+      "reason": "trop court (523 car.)"
+    },
+    {
+      "file": "content/projet-de-loi-elan-positions-des-associations-nationales-de-consommateurs-agreees.md",
+      "reason": "trop court (578 car.)"
+    },
+    {
+      "file": "content/puis-je-prendre-un-sous-locataire.md",
+      "reason": "trop court (591 car.)"
+    },
+    {
+      "file": "content/puis-je-recuperer-tout-moment-lepargne-investie-sur-un-perp.md",
+      "reason": "trop court (795 car.)"
+    },
+    {
+      "file": "content/quel-est-le-premier-reflexe-avoir-avant-de-debuter-des-travaux-de-renovation-energetique.md",
+      "reason": "trop court (603 car.)"
+    },
+    {
+      "file": "content/quel-est-le-role-du-commissaire-de-justice-avec-le-ctrc-bourgogne.md",
+      "reason": "trop court (790 car.)"
+    },
+    {
+      "file": "content/quiz-carbone-testez-vos-connaissances-0.md",
+      "reason": "trop court (680 car.)"
+    },
+    {
+      "file": "content/quiz-carbone-testez-vos-connaissances-1.md",
+      "reason": "trop court (519 car.)"
+    },
+    {
+      "file": "content/retour-aux-sources-de-linfo.md",
+      "reason": "trop court (567 car.)"
+    },
+    {
+      "file": "content/riboflavine-5-phosphate.md",
+      "reason": "trop court (710 car.)"
+    },
+    {
+      "file": "content/riboflavine.md",
+      "reason": "trop court (667 car.)"
+    },
+    {
+      "file": "content/rien-ne-se-perd-tout-se-composte.md",
+      "reason": "trop court (627 car.)"
+    },
+    {
+      "file": "content/rouge-de-betterave.md",
+      "reason": "trop court (678 car.)"
+    },
+    {
+      "file": "content/sites-de-service-public-transports.md",
+      "reason": "trop court (780 car.)"
+    },
+    {
+      "file": "content/special-education-financiere-les-astuces-pour-faire-des-economies-sur-votre-budget.md",
+      "reason": "trop court (650 car.)"
+    },
+    {
+      "file": "content/special-location-contrats-etat-des-lieux-paiement-du-loyer.md",
+      "reason": "trop court (591 car.)"
+    },
+    {
+      "file": "content/tout-savoir-sur-les-assurances-construction-pour-des-travaux-reussis.md",
+      "reason": "trop court (667 car.)"
+    },
+    {
+      "file": "content/transition-energetique-consommer-mieux-en-economisant-lenergie-avec-le-ctrc-bourgogne.md",
+      "reason": "trop court (554 car.)"
+    },
+    {
+      "file": "content/union-des-ctrce-alpc-en-nouvelle-aquitaine.md",
+      "reason": "trop court (516 car.)"
+    },
+    {
+      "file": "content/union-europeenne-des-consommateurs-ecu.md",
+      "reason": "trop court (514 car.)"
+    },
+    {
+      "file": "content/union-federale-des-consommateurs-que-choisir-de-la-vienne.md",
+      "reason": "trop court (509 car.)"
+    },
+    {
+      "file": "content/union-federale-des-consommateurs-que-choisir-ufc-que-choisir.md",
+      "reason": "trop court (664 car.)"
+    },
+    {
+      "file": "content/vos-droits-dans-les-magasins.md",
+      "reason": "trop court (516 car.)"
+    },
+    {
+      "file": "content/votre-avis-sur-le-site-de-linstitut-national-de-la-consommation.md",
+      "reason": "trop court (759 car.)"
+    },
+    {
+      "file": "content/votre-operateur-de-telephonie-ou-votre-fournisseur-dacces-internet-ne-respecte-pas-ses.md",
+      "reason": "trop court (625 car.)"
+    },
+    {
+      "file": "content/vous-mettez-en-demeure-votre-fournisseur-dacces-internet-de-vous-fournir-le-service-promis.md",
+      "reason": "trop court (625 car.)"
+    },
+    {
+      "file": "content/vous-souhaitez-obtenir-la-verification-de-votre-compteur-deau-en-raison-dune-consommation.md",
+      "reason": "trop court (625 car.)"
+    },
+    {
+      "file": "content/vous-transportez-vos-enfants-velo.md",
+      "reason": "trop court (531 car.)"
+    },
+    {
+      "file": "content/vous-votre-syndic-et-votre-copropriete.md",
+      "reason": "trop court (509 car.)"
+    },
+    {
+      "file": "index.md",
+      "reason": "trop court (625 car.)"
+    }
+  ]
+}

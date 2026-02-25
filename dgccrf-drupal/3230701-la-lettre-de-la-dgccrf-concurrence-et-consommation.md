@@ -1,0 +1,46 @@
+---
+title: "La lettre de la DGCCRF - Concurrence et consommation"
+nid: 3230701
+type: "page_contenu"
+status: 1
+langcode: "fr"
+created: "2024-09-20"
+changed: "2026-01-07"
+alias: "/dgccrf/comprendre-la-dgccrf/publications-et-kits-de-communication/la-lettre-de-la-dgccrf-concurrence-et-consommation"
+menu_path: "Comprendre la DGCCRF > Publications et kits de communication > La lettre de la DGCCRF - Concurrence et consommation"
+source: "dgccrf"
+---
+
+# La lettre de la DGCCRF - Concurrence et consommation
+
+La lettre d’information Concurrence et Consommation est faite pour vous ! Vous y trouverez les comptes rendus de nos enquêtes et contrôles, l’actualité de la réglementation, des conseils pratiques, des points de vue d’experts, nos rendez-vous… traités sous un angle dynamique et pédagogique. Disponible sur abonnement, Concurrence et Consommation est diffusée par courriel tous les mois.
+
+**Les numéros de l'année en cours**
+
+- [Concurrence et consommation, lettre de la DGCCRF n°74](https://eye.dgccrf.lettres-infos.bercy.gouv.fr/m2?r=wAXNCOu4NjdiZWQ3MTUwNTM5ZGY3ZWM0MGI4YTJkxBDQiQINfNC85ktp0LBv0JvQvATQhtCj9tkkMDQ4YjA4ZGQtNzA4NC00ZmVhLTkwYTUtNDQ4ZjAwMDA0YTdk2SVjc19jY19tYWlsaW5nQGRnY2NyZi5maW5hbmNlcy5nb3V2LmZyoJ-2NlF2bzJldXdSM3E0aVVTeWNqdU80d6UwLjg3NapDT05UQUNUX0lEtlhDUTBpdTVNVDNPbUhCYnpUQ1Z0TFGzRU1BSUxfQ09SUkVDVElPTl9JRKCxT1JJR0lOX0NBUFRJT05fSUS2QyZDIDczIC0gIGVudm9pIDEueGxzeK5PUklHSU5fS0lORF9JRKRYTFNYs1BIT05FX0NPUlJFQ1RJT05fSUSgqFNUQVRFX0lEok9rplNvdXJjZb5GaWxlIDogQyZDIC0gYmFzZSBhYm9ubsOpcy5jc3a2ZDhwYUExLUZUNUs5OGRWbGpNWjd4QaC2ZWVVUVRFOWJTbXk5a3FCWWNOY1laQaC2ZXNiZmhRaVBSTTZ1UHFfUzJhSGVyZ7E0NTY3My41NTkwOTcyMjIyMrZ0SllYMlpleVN5NnRyajBmcWwxTVdnoLZ3OE9FclhHX1I4YVZtMmFkR1pjRW5BuERpZmZ1c2lvbiBpbnRlcm5lIGFnZW50c7Z4VWctYnVLcFIyLXRJWjhRV3ZBaDRnoLZ6WnVkM3YyRlFmaW1IeUhPWHFhQU9nsURpZmZ1c2lvbiBpbnRlcm5ltk9ZaTlOQXhKUlhhdTlsMjQtQ3Y5SWeg) - janvier 2026
+
+Directrice de la publication : Sarah Lacoche
+Rédacteur en chef : Cyrille Boitel
+Rédactrice en chef déléguée : Sylvie Picard
+Équipe de rédaction : Louise Beda Akichi, Muriel Bourgeois
+
+Abonnez-vous à notre lettre d'information
+
+Abonnement à notre newsletter CONCURRENCE & CONSOMMATION
+
+Consultez les éditions précédentes
+
+Les numéros de l'année 2025
+
+**Les numéros de l'année en cours**
+
+- [Concurrence et consommation, lettre de la DGCCRF n°73](https://eye.dgccrf.lettres-infos.bercy.gouv.fr/m2?r=wAXNCNK4NjdiZWQ3MTUwNTM5ZGY3ZWM0MGI4YTJkxBDQq-rxdmj1T9CW0IIBUALtXiBp2SQzNzdhMWIzYi04YzhhLTQ2ZjctYTY2OC01NzBlNzIyY2NlZjfZKmxvdWlzZS5iZWRhLWFraWNoaUBkZ2NjcmYuZmluYW5jZXMuZ291di5mcqCftjBQdWIxS2NCUzNhTy1hR1JaNi1JS0GgtjJ2QjdkSnVKUXJpYWlkNXRBSG5NTlGgqkNPTlRBQ1RfSUS2cGlwWjRWQ0xRRXFjOHRJY1ZqWkh3UbNFTUFJTF9DT1JSRUNUSU9OX0lEoLZKNUJPNWpodFNMZVhnOTQ4V1pEeW9BoLFPUklHSU5fQ0FQVElPTl9JRKCuT1JJR0lOX0tJTkRfSUSmTUFOVUFMs1BIT05FX0NPUlJFQ1RJT05fSUSgqFNUQVRFX0lEpk5PUk1BTKZTb3VyY2Wgtlo2eUU4RzdlUU1DUDlsbjdlb2gyTHegtl95dEdVVVJ2VFBhQWJKYlBxcnFxR2egtmVQS3c1VDNUUy1pNEtjQVdJYUluOGegtm5tTmtWMzViU3JHT2hUZVF0WWZZNlGgtnluak4tdW1jUVoyMXM4RV9QSVhUaUGgtlZVWkg0dlJzUU5DQlBCR1U2QjNjcEGg) - décembre 2025
+- [Concurrence et consommation, lettre de la DGCCRF n°72](https://eye.dgccrf.lettres-infos.bercy.gouv.fr/m2?r=wAXNCK24NjdiZWQ3MTUwNTM5ZGY3ZWM0MGI4YTJkxBAtXxUTHTZIX9CgBtCcFdDBVjbo2SQwNDhiMDhkZC03MDg0LTRmZWEtOTBhNS00NDhmMDAwMDRhN2TZJWNzX2NjX21haWxpbmdAZGdjY3JmLmZpbmFuY2VzLmdvdXYuZnKg3AAU2SQyODNhYTk1NC1mNzA2LTQ3YzYtOWIxMy0xNTI5NGEwZGNjMmWxNDU2NzMuNTU5MDk3MjIyMjLZJDU2ZGYzN2M5LTY5NDgtNDM0ZC04ODkwLTQzMDliZDc2ZGUwYaDZJDZiM2VlOTQzLThkZGYtNDJjNi1hOWQ2LWFiZGE2YjYwMGNhMKM0NDPZJDc0Nzg4YjQ2LTQxODUtNGM3NC1hNGIyLWY3M2QzYjcwNzYzOaDZJDc2OTI4MWFlLWZiMGQtNDBhYi04YTkxLWIzZjU4ZjkwMTc4NqCqQ09OVEFDVF9JRNkkMDQ4YjA4ZGQtNzA4NC00ZmVhLTkwYTUtNDQ4ZjAwMDA0YTdks0VNQUlMX0NPUlJFQ1RJT05fSUSgsU9SSUdJTl9DQVBUSU9OX0lE2UA0N2MzNjJkMi05OGE3LTRmNjMtYmNiNC05YTFlMDJlZTM4MjlfMjAyNS0xMS0wNV8xMy00My0wMC01OTMuY3N2rk9SSUdJTl9LSU5EX0lEpExJU1SzUEhPTkVfQ09SUkVDVElPTl9JRKCoU1RBVEVfSUSiT2vZJGI1Yzk5N2I3LWViMGEtNGJhYy04ZGMzLWIxNGUyYmVkZGJiNLFEaWZmdXNpb24gaW50ZXJuZaljcmVhdGVkQXS7MjAyNS0xMS0wNVQxMzozNjo0NS4yMTYzMjJaqWNyZWF0ZWRCebg2NWRmNDc5ZmE1OTk0MTY5ZDQyZDIzNGHZJGQ5MmU0N2U4LTE3ZjQtNDkxOC05NzcxLWJjMDRkYzRjY2I2NKDZJGYwNjg4NmI1LTk2MjUtNGE0NS04NjI4LWZjNDYwNmQ1ZTM1MrhEaWZmdXNpb24gaW50ZXJuZSBhZ2VudHPZJGYxYjBhOTFhLTkyMmMtNDMwNi1iM2I2LTQxZmViYzc4NGQ5N6I4Naptb2RpZmllZEF0uzIwMjUtMTEtMDVUMTM6MzY6NDUuMjE2MzIyWqptb2RpZmllZEJ5uDY1ZGY0NzlmYTU5OTQxNjlkNDJkMjM0YaZzb3VyY2XZIUZpbGUgOiBDJkMgNzIgLSBwcmVtaWVyIGVudm9pLmNzdrZEd1pCYm9KblJoLUFBVV9GSmhWTUxBoA==) - novembre 2025
+- [Concurrence et consommation, lettre de la DGCCRF n°71](https://eye.dgccrf.lettres-infos.bercy.gouv.fr/m2?r=wAXNCIy4NjdiZWQ3MTUwNTM5ZGY3ZWM0MGI4YTJkxBBr0IrQgPR70MRKONCEUfPQkdC7Du_q2SQzNzdhMWIzYi04YzhhLTQ2ZjctYTY2OC01NzBlNzIyY2NlZjfZKmxvdWlzZS5iZWRhLWFraWNoaUBkZ2NjcmYuZmluYW5jZXMuZ291di5mcqDcABTZJDQyNGE5MWNlLWVhNjktNGE0MS1iZGZlLWMxZGEwOGMyYzU0ZKDZJDUxMTE5MWI2LTk3YTAtNDEwNS1iNGM4LWM5NjY2ZmFlZTM1M6DZJDUxNWVmYzA3LTkwNTYtNDkxNC05NGNlLWI4MDUzMGY1YTVjYaDZJDUxYzg3ZTNlLTg4YjktNGNhYi04OTEzLTVmMzQzNjczNTRjYqDZJDYzNjk5ZWNjLWE5NzktNDIwYi1hN2NmLTY5NjUzZDY4YzU5ZKDZJDc5NTU5ZDE3LWY2MTUtNGM4YS04YjE4LTBhMzA2NDU2NDQ1NKCqQ09OVEFDVF9JRLZlck8zc0NEalFWLXlXakdqS2NFa253s0VNQUlMX0NPUlJFQ1RJT05fSUSgsU9SSUdJTl9DQVBUSU9OX0lEoK5PUklHSU5fS0lORF9JRKZNQU5VQUyzUEhPTkVfQ09SUkVDVElPTl9JRKCoU1RBVEVfSUSmTk9STUFMqWNyZWF0ZWRBdKCpY3JlYXRlZEJ5oNkkZGY4MDEwNDAtNzY0NC00ODc1LTk1MTQtNGRkZGRiYmRjMWEyoNkkZjQ0ZTAyYjMtOTZlZi00MjcyLWIwYzQtZjYxYTA3Yjg1YWRjoNkkZmVlZTMzMDktYzhmYi00Nzg2LTg5M2EtM2IxNDhlMzYzNmVjoKptb2RpZmllZEF0oKptb2RpZmllZEJ5oKZzb3VyY2WgtmhVUUllMHFuUmRtbjJ5Q1dpMG1rdEGg) - septembre/octobre 2025
+- [Concurrence et consommation, lettre de la DGCCRF n°70 ](https://hubtr.lettres-infos.bercy.gouv.fr/mirror35/483/27963?k=bf6bb79f783ff27b406f36be31e84886)- juillet 2025
+- [Concurrence et consommation, lettre de la DGCCRF n°69](https://hubtr.lettres-infos.bercy.gouv.fr/mirror35/468/27917?k=9b6b52066932ea8b5db3d3e577a8a9a1) - juin 2025
+- [Concurrence et consommation, lettre de la DGCCRF n°68](https://hubtr.lettres-infos.bercy.gouv.fr/mirror35/463/25554?k=150f30af988ada8e04fc49f4731e4f02) - mai 2025
+- [Concurrence et consommation, lettre de la DGCCRF n°67](https://hubtr.lettres-infos.bercy.gouv.fr/mirror35/455/25554?k=150f30af988ada8e04fc49f4731e4f02) - avril 2025
+- [Concurrence et consommation, lettre de la DGCCRF n°66 ](https://hubtr.lettres-infos.bercy.gouv.fr/mirror35/450/28569?k=7604a80d2db3451840849071109a0794)- mars 2025
+- [Concurrence et consommation, lettre de la DGCCRF n°65](https://lettres-infos.bercy.gouv.fr/campagnes/DGCCRF/email/153) - février 2025
+- [Concurrence et consommation, lettre de la DGCCRF n°64](https://hubtr.lettres-infos.bercy.gouv.fr/mirror35/438/25554?k=150f30af988ada8e04fc49f4731e4f02) - janvier 2025

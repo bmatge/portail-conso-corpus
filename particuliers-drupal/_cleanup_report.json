@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-25T00:25:03.415597",
+  "mode": "SIMULATION",
+  "min_length": 800,
+  "total_scanned": 361,
+  "kept": 357,
+  "removed": 4,
+  "removed_files": [
+    {
+      "file": "21528-suppression-des-cotisations-ch-mage-et-maladie-pour-les-sala.md",
+      "reason": "trop court (0 car.)"
+    },
+    {
+      "file": "3235803-imp-ts-et-fiscalit.md",
+      "reason": "trop court (89 car.)"
+    },
+    {
+      "file": "3235821-g-rer-mon-argent.md",
+      "reason": "trop court (129 car.)"
+    },
+    {
+      "file": "3235824-mes-droits-conso.md",
+      "reason": "trop court (0 car.)"
+    }
+  ]
+}
