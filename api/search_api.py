@@ -7,7 +7,6 @@ import logging
 from typing import Optional
 
 from fastapi import FastAPI, Query, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
 import chromadb
 from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
 
@@ -20,12 +19,8 @@ EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "intfloat/multilingual-e5-small")
 
 app = FastAPI(title="Portail Conso Search API")
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["GET", "OPTIONS"],
-    allow_headers=["*"],
-)
+# CORS is handled by nginx (or serve.py in dev) — no middleware here
+# to avoid duplicate Access-Control-Allow-Origin headers.
 
 # Globals initialised at startup
 collection = None
