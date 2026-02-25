@@ -1,6 +1,21 @@
-/* ── About page — override app.css viewport lock ── */
-html, body { height: auto; overflow: auto; }
-#page { height: auto; min-height: 100vh; display: block; }
+/* ══════════════════════════════════════════════════════════
+   Styles À propos — override app.css viewport lock
+   + layout sidebar/contenu
+   ══════════════════════════════════════════════════════════ */
+
+/* Override full-viewport lock from app.css */
+html, body { height: auto !important; overflow: auto !important; }
+#page { height: auto !important; min-height: 100vh; display: block !important; overflow: visible !important; }
+
+/* Main content area */
+.about-main { padding-top: 1.5rem; padding-bottom: 2rem; }
+
+/* Sidemenu on desktop */
+@media (min-width: 62em) {
+  .about-sidebar {
+    align-self: flex-start;
+  }
+}
 
 /* Article typography */
 .about-article h1 {
@@ -29,4 +44,42 @@ html, body { height: auto; overflow: auto; }
   margin-top: 2rem;
   color: var(--text-mention-grey, #666);
   font-size: .875rem;
+}
+
+/* Code blocks */
+.about-article pre {
+  background: var(--background-alt-grey, #f6f6f6);
+  padding: 1rem;
+  border-radius: .25rem;
+  overflow-x: auto;
+  font-size: .8rem;
+  line-height: 1.5;
+}
+
+/* Mermaid diagrams */
+.mermaid-diagram {
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+}
+.mermaid-diagram svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tables */
+.about-article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: .875rem;
+}
+.about-article th, .about-article td {
+  padding: .5rem .75rem;
+  border: 1px solid var(--border-default-grey, #e0e0e0);
+  text-align: left;
+}
+.about-article th {
+  background: var(--background-alt-grey, #f6f6f6);
+  font-weight: 700;
 }

@@ -25,7 +25,8 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 RUN rm -f /etc/nginx/sites-enabled/default
 
 # Fichiers statiques
-COPY index.html search.html fiches.html sources.html /usr/share/nginx/html/
+COPY index.html search.html fiches.html sources.html about.html /usr/share/nginx/html/
+COPY README.md PRESENTATION.md /usr/share/nginx/html/
 COPY js/  /usr/share/nginx/html/js/
 COPY css/ /usr/share/nginx/html/css/
 COPY taxonomie-dgccrf.json /usr/share/nginx/html/
