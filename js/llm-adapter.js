@@ -52,11 +52,7 @@ export class LLMAdapter {
   }
 
   _proxyUrl(url) {
-    if (typeof location !== 'undefined' &&
-        (location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
-      return '/proxy/' + url;
-    }
-    return url;
+    return '/proxy/' + url;
   }
 
   /**
