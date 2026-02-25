@@ -5,6 +5,7 @@ echo "=== Arrêt du conteneur ==="
 docker compose down
 
 echo "=== Pull des dernières modifications ==="
+git checkout -- corpus/index.json 2>/dev/null || true
 git pull
 git lfs pull
 

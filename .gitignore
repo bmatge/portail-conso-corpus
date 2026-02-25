@@ -12,6 +12,9 @@ particuliers-drupal/
 __pycache__/
 *.pyc
 
+# Fichiers générés
+corpus/index.json
+
 # Divers
 .env
 run.sh
