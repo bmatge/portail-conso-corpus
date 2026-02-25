@@ -1,82 +1,112 @@
 ---
 domaine: secteurs_reglementes
-generated_at: '2026-02-25T02:19:37.398497'
+generated_at: '2026-02-25T22:52:27.993676'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 15
 sous_domaine: sport_loisirs
 taxonomy_id: salle_sport_contrat_abusif
 title: Contrat de salle de sport avec clauses abusives (engagement, résiliation impossible,
   prélèvements après résiliation)
-tokens: 6726
+tokens: 9984
 ---
 
-# Contrat de salle de sport avec clauses abusives : que faire ?
+# Contrat de salle de sport : comment réagir face à des clauses abusives ?
 
 ## En bref
-Votre contrat de salle de sport contient des clauses abusives ? Vous avez le droit de les contester. Relisez votre contrat, contactez votre salle de sport pour demander la modification ou la résiliation. Si aucune solution n'est trouvée, vous pouvez saisir le médiateur de la consommation ou signaler le problème à la DGCCRF.
+Vous avez signé un abonnement à une salle de sport et vous constatez des clauses qui vous désavantagent ? Vous pouvez les contester, demander la résiliation ou le remboursement des prélèvements indus. La démarche passe par la lecture du contrat, la mise en demeure du professionnel, puis le recours au médiateur ou à SignalConso si aucune solution n’est trouvée.
 
 ## De quoi s'agit-il ?
-Un contrat de salle de sport avec clauses abusives est un contrat qui contient des conditions désavantageuses pour vous, le consommateur. Cela peut inclure des engagements trop longs, des résiliations impossibles ou des prélèvements après résiliation. Ces clauses sont souvent cachées dans des petits caractères ou des documents annexes.
+Un contrat de salle de sport est un accord écrit entre vous, consommateur, et le club ou le centre de remise en forme. Il doit préciser le prix, la durée, les modalités de résiliation et les éventuelles conditions particulières.  
 
-**Qui est concerné ?**
-- Tous les consommateurs ayant souscrit un abonnement à une salle de sport.
-- Les contrats avec des clauses abusives, illicites ou trompeuses.
+**Clauses abusives fréquentes**  
+- Obligation de respecter un préavis alors que l’offre était annoncée « sans engagement ».  
+- Paiement d’une indemnité disproportionnée en cas de résiliation anticipée.  
+- Possibilité pour le club de modifier unilatéralement les horaires, les tarifs ou les prestations sans vous en informer.  
+- Prélèvements automatiques qui continuent après votre demande de résiliation.  
 
-**Périmètre couvert**
-- Les clauses abusives dans les contrats de salles de sport.
-- Les difficultés de résiliation ou de suspension de l'abonnement.
-- Les prélèvements après résiliation.
+**Qui est concerné ?**  
+Tous les adhérents qui ont signé un abonnement, que ce soit en magasin ou en ligne, et qui rencontrent l’une des pratiques ci‑dessus.  
 
-**Périmètre non couvert**
-- Les litiges liés à la qualité des services ou des équipements.
-- Les accidents ou blessures survenus dans la salle de sport.
+**Ce qui est couvert**  
+- Analyse des clauses jugées déséquilibrées.  
+- Difficultés à mettre fin à l’abonnement.  
+- Prélèvements post‑résiliation.  
+
+**Ce qui n’est pas couvert**  
+- Litiges relatifs à la qualité des équipements ou des cours.  
+- Accidents ou blessures survenus dans les locaux.  
+- Demandes de remboursement pour services non rendus sans lien avec une clause abusive.
 
 ## Quels sont vos droits ?
-La loi protège les consommateurs contre les clauses abusives. Selon le Code de la consommation, une clause est abusive si elle crée un déséquilibre significatif entre les droits et obligations des parties au contrat. Vous avez le droit de contester ces clauses et de demander leur suppression ou modification.
+La loi protège le consommateur contre les clauses créant un déséquilibre important. Le professionnel doit fournir un contrat lisible, respecter les conditions de résiliation annoncées et ne pas imposer de frais excessifs.  
 
-**Obligations du professionnel**
-- Le professionnel doit vous fournir un contrat clair et lisible.
-- Il doit respecter les conditions de résiliation et de suspension prévues dans le contrat.
-- Il ne peut pas modifier unilatéralement les conditions du contrat sans vous en informer.
+- **Droit à la clarté** : le contrat doit être rédigé en caractères lisibles et sans renvoi à des annexes cachées.  
+- **Droit à la résiliation** : si l’offre était « sans engagement », le club ne peut pas exiger de préavis.  
+- **Droit à la nullité** : toute clause abusive peut être déclarée nulle à tout moment.  
+- **Délais de réponse** : le professionnel doit répondre à votre demande écrite dans les 30 jours suivant la réception.  
+- **Remboursement** : les sommes prélevées indûment doivent être restituées dans les 14 jours suivant la contestation.  
 
-**Délais importants**
-- Vous pouvez résilier votre contrat à tout moment, sous réserve des conditions prévues dans le contrat.
-- En cas de clause abusive, vous pouvez demander la nullité de la clause à tout moment.
+**Exceptions**  
+Si vous avez accepté explicitement une clause claire et équilibrée (par exemple, un engagement de 12 mois avec un préavis de 1 mois), elle reste valable. Les clauses abusives sont celles qui imposent des conditions plus strictes au consommateur qu’au professionnel.
 
 ## Que faire concrètement ?
-1. **Relisez votre contrat** : Identifiez les clauses abusives ou illicites. Vérifiez les conditions de résiliation et de suspension.
-2. **Contactez votre salle de sport** : Envoyez une lettre recommandée avec accusé de réception pour demander la modification ou la résiliation du contrat. Joignez les preuves des clauses abusives.
-3. **Saisissez le médiateur de la consommation** : Si la salle de sport ne répond pas ou refuse votre demande, saisissez le médiateur de la consommation. Vous pouvez trouver plus d'informations sur le site [Médiation de la consommation](https://www.economie.gouv.fr/mediation-conso).
-4. **Signalez le problème à la DGCCRF** : Si aucune solution n'est trouvée, vous pouvez signaler le problème à la DGCCRF via le site [SignalConso](https://signal.conso.gouv.fr/fr/voyage-loisirs/faire-un-signalement).
+1. **Relisez attentivement votre contrat** – repérez les mentions « sans engagement », les frais de résiliation et les modalités de modification. Notez les passages qui vous semblent contradictoires.  
+2. **Constituez un dossier** – rassemblez le contrat, les courriels, les captures d’écran d’offres, et les relevés bancaires montrant les prélèvements.  
+3. **Envoyez une lettre recommandée avec accusé de réception** – indiquez clairement la clause contestée, demandez la résiliation ou la suppression de la clause, et exigez le remboursement des sommes prélevées. Mentionnez que vous invoquez les dispositions du Code de la consommation contre les clauses abusives.  
+4. **Attendez la réponse du club** – le professionnel dispose de 30 jours pour répondre. S’il accepte, conservez le courrier de confirmation.  
+5. **Saisissez le médiateur de la consommation** – si aucune réponse ou un refus injustifié, remplissez le formulaire en ligne du médiateur. Le médiateur dispose de 90 jours pour rendre une décision.  
+6. **Signalez le problème à la DGCCRF via SignalConso** – si le médiateur ne résout pas le litige ou si le club persiste, utilisez le formulaire dédié. Vous recevrez un numéro de suivi et la DGCCRF pourra ouvrir une enquête.  
+7. **Envisagez une action judiciaire** – en dernier recours, vous pouvez porter l’affaire devant le tribunal d’instance. Le juge pourra déclarer la clause nulle et ordonner le remboursement.  
 
-## Exemples / cas concrets
+## Exemples / cas concrets  
 
-**Situation** : "J'ai souscrit un abonnement à une salle de sport avec une offre 'sans engagement'. Après quelques mois, la salle de sport m'a demandé de payer un préavis de trois mois pour résilier mon abonnement."
+**Situation** : « J’ai souscrit une offre « sans engagement » et, trois mois plus tard, on me demande de payer un préavis de trois mois pour résilier. »  
+**Ce que vous pouvez faire** : Relisez le contrat, identifiez la mention « sans engagement », puis adressez une lettre recommandée demandant la résiliation immédiate et le remboursement des prélèvements du préavis.  
+**Résultat attendu** : Le club doit reconnaître l’erreur, annuler le préavis et vous rembourser les trois mois indûment débités.  
 
-**Ce que vous pouvez faire** : Relisez votre contrat pour vérifier si la mention 'sans engagement' est exacte. Si la salle de sport a modifié les conditions unilatéralement, vous pouvez contester cette modification et demander la résiliation sans préavis.
+**Situation** : « Après mon déménagement, le club continue de prélever 50 € chaque mois alors que j’ai envoyé un mail de résiliation. »  
+**Ce que vous pouvez faire** : Conservez le mail, envoyez une mise en demeure par recommandé en joignant le justificatif de déménagement, et réclamez le remboursement des prélèvements depuis la date de votre demande.  
+**Résultat attendu** : Le club arrête les prélèvements, vous rembourse les sommes indûment perçues, et confirme la clôture du contrat.  
 
-**Résultat attendu** : La salle de sport doit respecter les conditions initiales du contrat et ne peut pas imposer un préavis de trois mois si l'offre était 'sans engagement'.
+**Situation** : « Le club a modifié les horaires d’ouverture sans m’avertir, rendant impossible mon entraînement habituel. »  
+**Ce que vous pouvez faire** : Demandez par écrit le respect des horaires initiaux ou la résiliation sans frais, en rappelant que la modification unilatérale est une clause abusive.  
+**Résultat attendu** : Le club doit soit rétablir les horaires annoncés, soit accepter la résiliation sans frais et vous rembourser les mensualités restantes.  
 
-**Situation** : "Je ne peux plus me rendre à la salle de sport à cause d'un déménagement. Le contrat ne prévoit pas de résiliation définitive."
+**Situation** : « Mon abonnement prévoit un paiement annuel, mais le club prélève chaque mois sans mon accord. »  
+**Ce que vous pouvez faire** : Contestez le mode de paiement en rappelant le contrat, demandez le remboursement des prélèvements mensuels et la mise en place du paiement annuel convenu.  
+**Résultat attendu** : Le club corrige le mode de prélèvement, vous rembourse les trop‑perçus et vous informe du nouveau calendrier de paiement.  
 
-**Ce que vous pouvez faire** : Contactez la salle de sport pour demander une résiliation définitive. Si la salle de sport refuse, vous pouvez saisir le médiateur de la consommation ou signaler le problème à la DGCCRF.
+## Où signaler / à qui s'adresser ?  
 
-**Résultat attendu** : La salle de sport doit accepter la résiliation définitive et vous rembourser les mois restants.
+1. **SignalConso – catégorie « Voyage / Loisirs »**  
+   - Formulaire de signalement direct : <https://signal.conso.gouv.fr/fr/voyage-loisirs/faire-un-signalement>  
+   - Vous obtenez un numéro de suivi et la DGCCRF peut ouvrir une enquête.  
 
-**Situation** : "La salle de sport a modifié les horaires d'ouverture sans m'informer. Je ne peux plus me rendre à la salle aux heures qui me conviennent."
+2. **Médiateur de la consommation**  
+   - Plateforme en ligne : <https://www.economie.gouv.fr/mediation-conso>  
+   - Le médiateur examine votre dossier gratuitement et rend une décision contraignante pour le professionnel.  
 
-**Ce que vous pouvez faire** : Contactez la salle de sport pour demander une modification des conditions ou la résiliation du contrat. Si la salle de sport refuse, vous pouvez saisir le médiateur de la consommation ou signaler le problème à la DGCCRF.
+3. **Service client du club**  
+   - Adressez votre demande par courrier recommandé à l’adresse indiquée dans le contrat.  
 
-**Résultat attendu** : La salle de sport doit respecter les conditions initiales du contrat et ne peut pas modifier les horaires d'ouverture sans vous en informer.
+4. **Association de consommateurs** (optionnel)  
+   - Elles peuvent vous accompagner dans la rédaction de la mise en demeure et le suivi du dossier.  
 
-## Où signaler / à qui s'adresser ?
-- **SignalConso** : [https://signal.conso.gouv.fr/fr/voyage-loisirs/faire-un-signalement](https://signal.conso.gouv.fr/fr/voyage-loisirs/faire-un-signalement)
-- **Médiation de la consommation** : [https://www.economie.gouv.fr/mediation-conso](https://www.economie.gouv.fr/mediation-conso)
+## Sujets proches  
+- **[Le contrat impose des conditions de résiliation excessivement contraignantes](../../contrats_garanties/clauses_abusives/clause_resiliation_abusive.md)** — comprend comment identifier et contester des préavis trop longs.  
+- **[Résiliation abusive d’un contrat d’assurance](../assurance/resiliation_assurance_abusive.md)** — explique les similitudes avec les abonnements sport et les recours spécifiques.  
+- **[Clauses abusives dans un contrat](../../contrats_garanties/clauses_abusives/_index.md)** — donne une vue d’ensemble des pratiques interdites dans tous les types de contrats.  
 
-## Pour aller plus loin
-- [Code de la consommation, article L. 212-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032890812/)
-- [Code de la consommation, article R. 212-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032807196/)
-- [Recommandation n° 24-01 relative aux contrats proposés par les clubs de sport à caractère lucratif](https://www.clauses-abusives.fr/recommandation/contrats-de-clubs-de-sport-a-caractere-lucratif/)
-- [Fiche pratique : L'adhésion à une salle de sport ou de remise en forme](https://www.dgccrf.bercy.gouv.fr/Publications/Vie-pratique/Fiches-pratiques/salle-de-sport)
-- [Fiche pratique : Clauses abusives](https://www.dgccrf.bercy.gouv.fr/Publications/Vie-pratique/Fiches-pratiques/Clause-abusive)
+## À ne pas confondre  
+- **Clauses abusives dans un contrat** — porte sur tout type de contrat (téléphonie, assurance, etc.). Le recours se fait souvent via le médiateur sectoriel, pas spécifiquement via le médiateur de la consommation des loisirs.  
+- **Clause limitant abusivement la responsabilité du professionnel** — concerne la responsabilité en cas d’accident ou de vol, alors que notre fiche traite de la résiliation et des prélèvements. Le recours passe par la justice ou la DGCCRF, pas par le médiateur de la consommation.  
+- **Modification unilatérale du contrat** — vise les changements de tarifs ou de prestations, alors que nous nous concentrons sur les clauses de résiliation et les prélèvements post‑résiliation. Le médiateur spécialisé du secteur sportif est alors le bon interlocuteur.  
+
+## Pour aller plus loin  
+- Code de la consommation, article L.212‑1 : définition des clauses abusives.  
+- Code de la consommation, article R.212‑1 : modalités de mise en œuvre de la nullité.  
+- Recommandation n° 24‑01 relative aux contrats proposés par les clubs de sport à caractère lucratif.  
+- Fiche pratique DGCCRF : « L’adhésion à une salle de sport ou de remise en forme ».  
+- Fiche pratique DGCCRF : « Clauses abusives ».

@@ -10,6 +10,9 @@ import logging
 from typing import Optional
 from pathlib import Path
 
+from dotenv import load_dotenv
+load_dotenv(Path(__file__).resolve().parent.parent / ".env")
+
 import frontmatter
 from fastapi import FastAPI, Query, HTTPException
 from pydantic import BaseModel
@@ -685,6 +688,32 @@ def _sse_event(event: str, data: dict) -> str:
     return f"event: {event}\ndata: {json.dumps(data, ensure_ascii=False)}\n\n"
 
 
+def _parse_clarification_options(question: str) -> list[str]:
+    """Extract options from a clarification question like 'X ou Y ?'."""
+    q = re.sub(r"\s*\?\s*$", "", question).strip()
+    if " ou " not in q:
+        return []
+    # Split on last " ou " to handle "A, B ou C"
+    idx = q.rfind(" ou ")
+    left, right = q[:idx], q[idx + 4:]
+    right = right.strip().rstrip(".")
+    if "," in left:
+        # "A, B ou C" → find the comma-separated tail
+        parts = left.rsplit(",", 1)
+        prefix = parts[0]
+        last_comma_part = parts[1].strip()
+        # Only take what's after the last sentence structure
+        options = [last_comma_part, right]
+    else:
+        # "X ou Y" — take just the last few words of each side
+        # E.g. "en ligne ou en magasin" → ["En ligne", "En magasin"]
+        left_words = left.split()
+        # Take at most last 3 words from left side
+        option_left = " ".join(left_words[-3:]) if len(left_words) > 3 else left
+        options = [option_left, right]
+    return [o.strip().capitalize() for o in options if o.strip()]
+
+
 class AgentChatRequest(BaseModel):
     session_id: str | None = None
     messages: list[dict]
@@ -756,10 +785,12 @@ async def agent_chat(req: AgentChatRequest):
             if result.get("question_clarification"):
                 session.phase = Phase.CLARIFY
                 session.candidates = result.get("candidate_situation_ids", [])
+                options = _parse_clarification_options(result["question_clarification"])
                 yield _sse_event("phase", {
                     "phase": "clarify",
                     "question": result["question_clarification"],
                     "candidates": session.candidates,
+                    "options": options,
                 })
                 yield _sse_event("done", {"session_id": session.id})
                 return
@@ -778,11 +809,21 @@ async def agent_chat(req: AgentChatRequest):
                     if sc.get("question_pivot") and not session.pivot_asked:
                         session.pivot_asked = True
                         session.phase = Phase.CLARIFY
+                        # Extract options from url_signalement_alt keys
+                        pivot_options = []
+                        alt = sc.get("url_signalement_alt") or {}
+                        for key in alt:
+                            label = key.replace("url_signalement_", "").replace("_", " ").strip()
+                            if label:
+                                pivot_options.append(label.capitalize())
+                        if not pivot_options:
+                            pivot_options = _parse_clarification_options(sc["question_pivot"])
                         yield _sse_event("phase", {
                             "phase": "clarify",
                             "question": sc["question_pivot"],
                             "type": "pivot",
                             "situation_id": session.situation_id,
+                            "options": pivot_options,
                         })
                         yield _sse_event("done", {"session_id": session.id})
                         return

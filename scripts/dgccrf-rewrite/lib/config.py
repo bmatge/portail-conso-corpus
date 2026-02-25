@@ -71,8 +71,8 @@ class RewriteConfig(BaseModel):
     max_source_chars: int = 40000
     top_k_per_query: int = 10
     sujets_proches_top_k: int = 5
-    sujets_proches_min_score: float = 0.55
-    faux_amis_similarity_range: list[float] = [0.45, 0.80]
+    sujets_proches_min_score: float = 0.88
+    faux_amis_similarity_range: list[float] = [0.86, 0.92]
     faux_amis_top_k: int = 3
     timeout: int = 240
     rate_limit_rpm: int = 20
@@ -94,6 +94,16 @@ def load_config(config_path: str | Path | None = None) -> AppConfig:
         config_path = Path(__file__).resolve().parent.parent / "config.yaml"
     config_path = Path(config_path).resolve()
     config_dir = config_path.parent
+
+    # Load .env file if present (for LLM_API_KEY etc.)
+    # Search in config dir, then parent dirs up to project root
+    from dotenv import load_dotenv
+    for candidate in [config_dir / ".env", config_dir.parent.parent / ".env"]:
+        if candidate.exists():
+            load_dotenv(candidate)
+            break
+    else:
+        load_dotenv()  # fallback: dotenv's own search logic
 
     with open(config_path) as f:
         raw = yaml.safe_load(f)

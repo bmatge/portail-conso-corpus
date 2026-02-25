@@ -1,59 +1,101 @@
 ---
 domaine: contrats_garanties
-generated_at: '2026-02-25T01:55:09.611251'
+generated_at: '2026-02-25T22:24:39.762712'
 level: situation
-model: openweight-medium
+model: openai/gpt-oss-120b
+rewritten: true
 sources_count: 20
 sous_domaine: garanties
 taxonomy_id: garantie_vices_caches
 title: Défaut caché découvert après achat (vice caché)
-tokens: 8214
+tokens: 10437
 ---
 
-# J'ai découvert un défaut caché après mon achat : quels sont mes droits ?
+# Défaut caché découvert après l’achat : comment faire valoir vos droits ?
 
 ## En bref
-Vous avez acheté un produit qui présente un défaut caché ? Vous pouvez agir grâce à la garantie légale des vices cachés. Cette garantie vous permet d'obtenir réparation ou remboursement si le défaut rend le produit impropre à l'usage ou diminue cet usage de manière significative. Vous avez deux ans pour agir à partir de la découverte du défaut.
+Vous avez découvert un défaut qui n’était pas visible lors de l’achat.  
+La garantie légale des vices cachés vous permet d’obtenir réparation ou remboursement.  
+Vous disposez de deux ans à compter de la découverte du défaut pour agir.
 
-## De quoi s'agit-il ?
-Un vice caché est un défaut qui existait au moment de l'achat mais qui n'était pas visible. Ce défaut doit rendre le produit impropre à l'usage auquel il est destiné ou diminuer tellement cet usage que vous ne l'auriez pas acheté ou auriez payé moins cher si vous aviez connu le défaut.
+## De quoi s’agit‑il ?
+Un vice caché est un défaut présent au moment de la vente mais non apparent.  
+Il doit rendre le bien impropre à l’usage prévu ou en diminuer sensiblement l’utilité.  
+Le défaut doit être antérieur à la livraison et rester inconnu de l’acheteur.  
 
-Cette garantie s'applique à tous les produits, neufs ou d'occasion, et concerne aussi bien les achats en magasin que les achats en ligne. Elle est obligatoire et ne peut pas être exclue par le vendeur.
+Cette garantie s’applique à tout bien meuble, neuf ou d’occasion, acheté en magasin ou en ligne.  
+Elle concerne les achats entre particuliers comme entre professionnels.  
 
-## Quels sont vos droits ?
-La garantie légale des vices cachés est prévue par les articles 1641 à 1649 du code civil. Elle impose au vendeur (professionnel ou particulier) de réparer ou rembourser les défauts cachés du produit vendu.
+Ne sont pas couverts les défauts apparents, les dommages causés par une mauvaise utilisation ou l’usure normale.  
+Les défauts esthétiques ou de confort, qui n’affectent pas la fonction du bien, ne sont pas considérés comme des vices cachés.  
 
-- **Délai pour agir** : Vous avez deux ans à partir de la découverte du vice pour agir. Cependant, cette action doit être intentée au plus tard dans les cinq ans suivant l'achat du bien.
-- **Preuve du défaut** : Vous devez prouver que le défaut existait au moment de l'achat et qu'il était caché. La preuve peut être apportée par tout moyen (témoignages, expertises, etc.).
-- **Réparation possible** : Vous pouvez demander la réparation du produit, son remplacement, une réduction du prix ou l'annulation de la vente et le remboursement.
+Dans le cas d’un bien immobilier, la même règle s’applique, mais les procédures sont plus longues et les montants plus élevés.  
 
-## Que faire concrètement ?
-1. **Signalez le problème au vendeur** : Contactez le vendeur par écrit (lettre recommandée avec accusé de réception ou email) en décrivant le défaut et en demandant une réparation ou un remboursement.
-2. **Conservez les preuves** : Gardez toutes les preuves du défaut (photos, vidéos, témoignages, factures, etc.) et de vos échanges avec le vendeur.
-3. **Faites expertiser le produit** : Si nécessaire, faites appel à un expert pour évaluer le défaut. Cette expertise peut être utile pour prouver l'existence du vice caché.
-4. **Saisissez un médiateur ou un tribunal** : Si le vendeur ne répond pas ou refuse de régler le problème, vous pouvez saisir un médiateur de la consommation ou engager une action en justice.
+## Quels sont vos droits ?
+Le vendeur doit réparer le défaut, remplacer le bien, réduire le prix ou annuler la vente.  
+Vous choisissez la solution qui vous convient le mieux, selon la gravité du vice.  
 
-## Exemples / cas concrets
+Le délai d’action est de deux ans à compter de la découverte du défaut.  
+Ce délai ne doit pas dépasser cinq ans après la date d’achat, même si le vice est découvert plus tard.  
 
-**Situation** : Vous avez acheté une voiture d'occasion et découvrez après quelques semaines que le moteur présente un défaut grave qui empêche le véhicule de fonctionner normalement.
+La charge de la preuve repose sur vous.  
+Vous devez démontrer que le défaut existait avant la vente et qu’il était caché.  
 
-**Ce que vous pouvez faire** : Vous pouvez invoquer la garantie des vices cachés pour demander au vendeur de réparer le moteur ou de vous rembourser. Vous avez deux ans à partir de la découverte du défaut pour agir.
+Vous pouvez apporter la preuve par tout moyen : photos, vidéos, témoignages, expertises, factures d’entretien.  
+Si le vendeur conteste le vice, une expertise indépendante peut être demandée.  
 
-**Résultat attendu** : Le vendeur doit réparer le moteur ou vous rembourser le prix d'achat de la voiture.
+Le vendeur ne peut pas exclure ou limiter la garantie légale.  
+Toute clause contractuelle qui tenterait de le faire est nulle.  
 
-**Situation** : Vous avez acheté un lave-linge neuf qui tombe en panne après quelques mois d'utilisation. Le technicien vous informe que le défaut existait déjà au moment de l'achat.
+## Que faire concrètement ?
+1. **Informez le vendeur par écrit** : décrivez le défaut, joignez les preuves, demandez réparation ou remboursement.  
+2. **Conservez toutes les pièces** : factures, courriels, photos, rapports d’expertise, courriers recommandés.  
+3. **Faites réaliser une expertise** : sollicitez un professionnel indépendant pour attester du vice caché.  
+4. **Recourez à un médiateur ou à la justice** : si le vendeur ne répond pas ou refuse, saisissez le médiateur de la consommation, puis, en dernier recours, le tribunal civil.
 
-**Ce que vous pouvez faire** : Vous pouvez demander au vendeur de réparer ou remplacer le lave-linge. Si le vendeur refuse, vous pouvez saisir un médiateur ou engager une action en justice.
+## Exemples / cas concrets  
 
-**Résultat attendu** : Le vendeur doit réparer ou remplacer le lave-linge, ou vous rembourser si le défaut est irréparable.
+**Situation** : Vous avez acheté une machine à café neuve et, deux mois plus tard, elle ne chauffe plus.  
+**Ce que vous pouvez faire** : Envoyez une lettre recommandée au vendeur en exposant le défaut, en joignant la facture et les photos, et demandez le remplacement ou le remboursement.  
+**Résultat attendu** : Le vendeur accepte de remplacer la machine ou vous rembourse le prix d’achat.
 
-## Où signaler / à qui s'adresser ?
-- **SignalConso** : Pour signaler un problème avec un professionnel, utilisez la plateforme [SignalConso](https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement) pour un achat en magasin ou [SignalConso](https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement) pour un achat en ligne.
-- **Médiateur de la consommation** : Vous pouvez saisir un médiateur de la consommation. Pour trouver le médiateur compétent, consultez le site [DGCCRF](https://www.economie.gouv.fr/dgccrf/le-mediateur-de-la-consommation).
-- **Recours judiciaire** : Si le médiateur ne parvient pas à une solution, vous pouvez engager une action en justice. Pour plus d'informations, consultez le site [Service Public](https://www.service-public.fr/particuliers/vosdroits/N19-6).
+**Situation** : Vous avez acquis un canapé d’occasion et, six semaines après la livraison, vous constatez que le cadre en bois est fissuré, rendant le meuble instable.  
+**Ce que vous pouvez faire** : Faites appel à un expert pour confirmer que la fissure était antérieure à la vente, puis adressez une mise en demeure au vendeur en exigeant la réparation ou une réduction du prix.  
+**Résultat attendu** : Le vendeur accepte de réparer le cadre ou vous accorde une remise proportionnelle au défaut.
 
-## Pour aller plus loin
-- [Articles 1641 à 1649 du code civil](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006165624/2021-05-20/)
-- [Article L. 217-4 et suivants du code de la consommation](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000032226941&cidTexte=LEGITEXT000006069565&dateTexte=20191212&oldAction=rechCodeArticle&fastReqId=1936420407&nbResultRech=1)
-- [Fiche pratique DGCCRF sur les vices cachés](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/vice-cache)
-- [Fiche pratique DGCCRF sur les garanties légales](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/les-garanties-legales-de-conformite-et-contre-les-vices-caches)
+**Situation** : Vous avez acheté un smartphone d’occasion et, après un an d’utilisation, l’écran se fissure sans choc apparent.  
+**Ce que vous pouvez faire** : Rassemblez les échanges avec le vendeur, réalisez une expertise technique, puis adressez une réclamation écrite en demandant le remplacement du téléphone.  
+**Résultat attendu** : Le vendeur accepte le remplacement ou vous rembourse le prix d’achat si le défaut est irréparable.
+
+## Où signaler / à qui s’adresser ?  
+
+- **SignalConso – achat en magasin** : [Faire un signalement](https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement)  
+- **SignalConso – achat en ligne** : [Faire un signalement](https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement)  
+
+Ces plateformes enregistrent votre plainte mais ne remplacent pas le recours judiciaire.  
+
+- **Service public – vos droits** : [F11094 – Vices cachés](https://www.service-public.fr/particuliers/vosdroits/F11094)  
+- **Recours judiciaire** : [Procédure civile pour les vices cachés](https://www.service-public.fr/particuliers/vosdroits/N19-6)  
+
+Cette page détaille les étapes pour saisir le tribunal.  
+
+- **Médiateur de la consommation** : consultez le répertoire des médiateurs sur le site de la DGCCRF : [Le médiateur de la consommation](https://www.economie.gouv.fr/dgccrf/le-mediateur-de-la-consommation)  
+
+Le médiateur intervient gratuitement et peut proposer une solution amiable.  
+
+## Sujets proches  
+
+- **[Voiture d’occasion vendue avec des défauts cachés](../../secteurs_reglementes/automobile/voiture_occasion_vices.md)** — Le même principe s’applique, mais les montants et les expertises sont souvent plus importants.  
+- **[Réparation facturée alors qu’elle devrait être couverte par la garantie](../sav/reparation_facturee_garantie.md)** — Vous apprenez comment contester une facture abusive liée à un vice caché.  
+
+## À ne pas confondre  
+
+- **Voiture d’occasion vendue avec des défauts cachés** — Le recours passe souvent par le tribunal de grande instance, alors que pour un bien de consommation courante, le médiateur peut suffire.  
+- **Achat et vente immobilière** — Les vices cachés immobiliers relèvent du droit de la construction et nécessitent souvent une expertise judiciaire plus lourde.  
+
+## Pour aller plus loin  
+
+- Articles 1641 à 1649 du Code civil : <https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006165624/2021-05-20/>  
+- Article L. 217‑4 et suivants du Code de la consommation : <https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000032226941&cidTexte=LEGITEXT000006069565>  
+- Fiche pratique DGCCRF – Vices cachés : <https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/vice-cache>  
+- Fiche pratique DGCCRF – Garanties légales : <https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/les-garanties-legales-de-conformite-et-contre-les-vices-caches>

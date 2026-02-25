@@ -1,68 +1,108 @@
 ---
 domaine: secteurs_reglementes
-generated_at: '2026-02-25T02:15:01.070944'
+generated_at: '2026-02-25T22:44:22.143050'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 25
 sous_domaine: energie
 taxonomy_id: resiliation_energie_bloquee
 title: Résiliation du contrat d'énergie bloquée ou frais abusifs
-tokens: 9138
+tokens: 13639
 ---
 
-# Résiliation du contrat d'énergie bloquée ou frais abusifs : que faire ?
+# Résiliation bloquée d’un contrat d’énergie ou frais de résiliation abusifs ?  
 
-## En bref
-Vous avez le droit de résilier votre contrat d'énergie à tout moment sans frais. Si votre fournisseur bloque la résiliation ou facture des frais abusifs, vous pouvez contester cette décision. Agissez en suivant les étapes recommandées pour faire valoir vos droits.
+## En bref  
+Vous pouvez mettre fin à votre contrat d’électricité ou de gaz à tout moment, sans frais, sauf les coûts justifiés par le gestionnaire de réseau. Si votre fournisseur refuse la résiliation ou vous impose des frais injustifiés, vous avez plusieurs recours : contestation écrite, médiation, puis signalement à la DGCCRF. Suivez les étapes ci‑dessous pour faire valoir vos droits rapidement.
 
-## De quoi s'agit-il ?
-La résiliation d'un contrat d'énergie (électricité ou gaz) est un droit fondamental des consommateurs. Cependant, certains fournisseurs peuvent bloquer cette résiliation ou facturer des frais abusifs. Cette fiche vous explique vos droits et les démarches à suivre pour résoudre ce type de problème.
+## De quoi s’agit‑il ?  
+Il s’agit du droit du consommateur de rompre le contrat d’énergie qui le lie à un fournisseur. Ce droit s’applique à tous les contrats d’électricité et de gaz naturel sous le régime des marchés libéralisés. Le consommateur doit simplement notifier sa volonté de résilier, respecter le préavis prévu (généralement 14 jours) et restituer le compteur le cas échéant.  
 
-**Périmètre couvert** :
-- Résiliation bloquée par le fournisseur
-- Frais de résiliation abusifs
-- Contrats d'électricité et de gaz naturel
+**Ce qui est couvert** :  
+- Demande de résiliation formulée par le consommateur ;  
+- Refus du fournisseur d’accepter la résiliation ;  
+- Facturation de frais de résiliation non prévus par le gestionnaire de réseau (ex. frais de dossier, pénalités).  
 
-**Périmètre non couvert** :
-- Litiges liés à la qualité de l'énergie fournie
-- Problèmes de facturation autres que ceux liés à la résiliation
+**Ce qui n’est pas couvert** :  
+- Litiges relatifs à la qualité ou à la continuité de l’énergie fournie ;  
+- Contestation d’une facture de consommation normale ;  
+- Frais liés à des travaux de raccordement ou d’installation déjà réalisés.  
 
-## Quels sont vos droits ?
-En France, vous avez le droit de résilier votre contrat d'énergie à tout moment sans frais. Le fournisseur doit accepter la résiliation et ne peut pas imposer de frais supplémentaires, sauf ceux justifiés par le gestionnaire de réseau. Si le fournisseur modifie les conditions contractuelles, comme les prix, il doit vous informer au moins un mois avant et vous avez le droit de résilier votre contrat sans frais.
+Certaines clauses contractuelles peuvent être abusives, notamment celles qui imposent un préavis plus long au consommateur que le fournisseur ou qui prévoient des frais de résiliation disproportionnés. Ces clauses sont nulles et doivent être contestées.
 
-## Que faire concrètement ?
-1. **Contacter votre fournisseur** : Envoyez une lettre recommandée avec accusé de réception pour demander la résiliation de votre contrat. Conservez une copie de cette lettre.
-2. **Vérifier les conditions de résiliation** : Consultez vos conditions générales de vente pour confirmer que vous n'avez pas à payer de frais de résiliation.
-3. **Contester les frais abusifs** : Si le fournisseur facture des frais abusifs, envoyez une lettre de réclamation en expliquant pourquoi ces frais sont injustifiés.
-4. **Saisir le médiateur** : Si le fournisseur ne répond pas ou maintient sa position, saisissez le [médiateur national de l'énergie](https://www.energie-mediateur.fr).
-5. **Signaler le problème** : Utilisez la plateforme [SignalConso](https://signal.conso.gouv.fr/fr/eau-gaz-electricite/faire-un-signalement) pour signaler le problème à la DGCCRF.
+## Quels sont vos droits ?  
+- Vous avez le droit de résilier votre contrat à tout moment, sans frais, dès que le préavis de 14 jours est respecté.  
+- Le fournisseur doit répondre à votre demande de résiliation dans un délai de 14 jours calendaires.  
+- Aucun frais de résiliation ne peut être facturé, sauf les coûts réellement supportés par le gestionnaire de réseau (relevé, mise en service du nouveau point).  
+- Si le fournisseur modifie le tarif, il doit vous prévenir au moins un mois avant l’entrée en vigueur. Vous pouvez alors résilier sans frais.  
+- Les clauses qui imposent des frais de résiliation supérieurs aux coûts réels du réseau sont considérées comme abusives et doivent être supprimées.  
 
-## Exemples / cas concrets
-**Situation** : "J'ai demandé la résiliation de mon contrat d'électricité, mais mon fournisseur refuse de la traiter et me facture 50 euros de frais de résiliation."
-**Ce que vous pouvez faire** : Envoyez une lettre recommandée avec accusé de réception pour contester ces frais et demander la résiliation immédiate. Si le fournisseur ne répond pas, saisissez le médiateur national de l'énergie.
-**Résultat attendu** : Le fournisseur doit annuler les frais de résiliation et procéder à la résiliation du contrat.
+## Que faire concrètement ?  
 
-**Situation** : "Mon fournisseur de gaz a augmenté ses tarifs sans m'informer à l'avance. Je veux résilier mon contrat, mais il me demande de payer des frais de résiliation."
-**Ce que vous pouvez faire** : Informez le fournisseur que l'augmentation tarifaire sans préavis est illégale et que vous avez le droit de résilier votre contrat sans frais. Si le fournisseur refuse, saisissez le médiateur national de l'énergie.
-**Résultat attendu** : Le fournisseur doit accepter la résiliation sans frais et annuler les augmentations tarifaires non justifiées.
+1. **Rédiger une lettre de résiliation**  
+   - Indiquez vos coordonnées, le numéro de contrat, la date de résiliation souhaitée et le respect du préavis de 14 jours.  
+   - Mentionnez que vous refusez tout frais de résiliation non justifié.  
+   - Envoyez la lettre en recommandé avec accusé de réception (AR). Conservez l’AR comme preuve.  
 
-## Où signaler / à qui s'adresser ?
-- **SignalConso** : [https://signal.conso.gouv.fr/fr/eau-gaz-electricite/faire-un-signalement](https://signal.conso.gouv.fr/fr/eau-gaz-electricite/faire-un-signalement)
-- **Médiation de la consommation** : [https://www.economie.gouv.fr/mediation-conso](https://www.economie.gouv.fr/mediation-conso)
-- **Médiateur national de l'énergie** : [https://www.energie-mediateur.fr](https://www.energie-mediateur.fr)
+2. **Vérifier les conditions générales du contrat**  
+   - Relisez la partie « résiliation » pour identifier les frais éventuels mentionnés.  
+   - Comparez ces frais avec les coûts réellement supportés par le gestionnaire de réseau (généralement indiqués sur le site du gestionnaire).  
 
-## Pour aller plus loin
-- [Libre choix du fournisseur](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/libre-choix-du-fournisseur)
-- [FAQ sur l'ouverture des marchés de l'électricité et du gaz naturel](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/faq-sur-louverture-des-marches-de-lelectricite-et-du-gaz-naturel)
-- [Raccordement au réseau](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/raccordement-au-reseau)
-- [Traitement des réclamations](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/traitement-des-reclamations)
-- [Représentation des consommateurs](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/representation-des-consommateurs)
-- [Mesures sociales](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/mesures-sociales)
-- [Pratiques commerciales déloyales](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/pratiques-commerciales-deloyales)
-- [Contrats et factures](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/contrats-et-factures)
-- [Obligations d'information](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/obligations-dinformation)
-- [Prix, tarifs et suivi](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/prix-tarifs-et-suivi)
-- [Les contrats de gaz et d’électricité : ce que vous devez savoir](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/les-contrats-de-gaz-et-delectricite-ce-que-vous-devez-savoir)
-- [Deux fournisseurs d’électricité et de gaz naturel contrôlés sur trois insèrent des clauses illicites ou abusives dans leurs contrats](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes/deux-fournisseurs-delectricite-et-de-gaz-naturel-controles)
-- [Démarchages, contrats, ventes, livraisons](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/demarchages-contrats-ventes-livraisons)
-- [Rénovation énergétique : gare aux escrocs !](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/renovation-energetique-gare-aux-escrocs)
+3. **Contester les frais abusifs**  
+   - Si le fournisseur vous facture des frais, adressez une lettre de réclamation dans les 30 jours suivant la réception de la facture.  
+   - Rappelez que la loi interdit les frais de résiliation sauf justification réseau.  
+   - Joignez à votre courrier l’AR de la demande de résiliation et, le cas échéant, le tableau tarifaire du gestionnaire.  
+
+4. **Saisir le médiateur national de l’énergie**  
+   - Si le fournisseur ne répond pas ou maintient les frais, remplissez le formulaire en ligne du médiateur (site indiqué ci‑dessous).  
+   - Le médiateur dispose de 30 jours pour rendre une décision contraignante pour le professionnel.  
+
+5. **Signaler le problème à la DGCCRF**  
+   - Utilisez le formulaire de signalement dédié aux litiges énergie sur SignalConso.  
+   - Le signalement est anonyme si vous le souhaitez et alerte la DGCCRF sur les pratiques abusives.  
+
+## Exemples / cas concrets  
+
+**Situation** : « J’ai envoyé une lettre recommandée le 3 mars pour résilier mon contrat d’électricité, mais le fournisseur m’a répondu le 20 mars en réclamant 45 € de frais de résiliation. »  
+**Ce que vous pouvez faire** : Répondez par courrier recommandé en rappelant que les frais ne sont pas justifiés, joignez l’AR de votre première lettre et le tableau tarifaire du gestionnaire.  
+**Résultat attendu** : Le fournisseur annule les 45 € et confirme la résiliation à la date demandée.  
+
+**Situation** : « Mon fournisseur a augmenté mon tarif gaz de 12 % sans m’avertir. J’ai demandé la résiliation, mais il exige un préavis de 30 jours et 60 € de frais. »  
+**Ce que vous pouvez faire** : Citez l’obligation d’un préavis d’un mois pour les modifications tarifaires et indiquez que vous avez le droit de résilier immédiatement sans frais. Envoyez une réclamation, puis saisissez le médiateur si le fournisseur persiste.  
+**Résultat attendu** : Le fournisseur accepte la résiliation sans frais et vous rembourse les frais déjà perçus.  
+
+**Situation** : « Après avoir changé de fournisseur, mon ancien opérateur refuse de clôturer le contrat et me facture 80 € de frais de dossier. »  
+**Ce que vous pouvez faire** : Vérifiez le contrat du gestionnaire de réseau (Enedis ou GRDF) pour connaître les frais réels. Adressez une lettre de contestation en citant la législation sur les frais abusifs, puis saisissez le médiateur.  
+**Résultat attendu** : Le fournisseur retire les 80 € et procède à la clôture du contrat dans les 14 jours.  
+
+## Où signaler / à qui s’adresser ?  
+
+1. **SignalConso – énergie** : [Faire un signalement énergie](https://signal.conso.gouv.fr/fr/eau-gaz-electricite/faire-un-signalement) (catégorie : EauGazElec).  
+2. **Médiateur national de l’énergie** : [Site du médiateur](https://www.energie-mediateur.fr).  
+3. **Médiation de la consommation** (service général) : [Médiation consommation](https://www.economie.gouv.fr/mediation-conso).  
+
+**Question pivot** : avez‑vous déjà signé un nouveau contrat d’énergie ?  
+- **Oui** : adressez votre réclamation au fournisseur sortant, puis saisissez le médiateur national de l’énergie.  
+- **Non** : commencez par la lettre de résiliation et, en cas de blocage, passez directement à la médiation.  
+
+## Sujets proches  
+
+- **[Résiliation abusive d’un contrat d’assurance](../assurance/resiliation_assurance_abusive.md)** — les mêmes principes de contestation de frais s’appliquent, mais le médiateur concerné est celui de l’assurance.  
+- **[Le contrat impose des conditions de résiliation excessivement contraignantes](../../contrats_garanties/clauses_abusives/clause_resiliation_abusive.md)** — analyse des clauses abusives et recours spécifiques via la justice ou la DGCCRF.  
+
+## À ne pas confondre  
+
+- **Le contrat impose des conditions de résiliation excessivement contraignantes** — il s’agit d’une clause abusive qui doit être déclarée nulle, mais le recours passe par la justice ou la DGCCRF, pas uniquement la médiation énergie. [Lire la fiche](../../contrats_garanties/clauses_abusives/clause_resiliation_abusive.md).  
+- **Démarchage téléphonique non sollicité** — ce problème concerne des appels non autorisés et se règle via le fichier Bloctel ou la plateforme SignalConso démarchage, pas via la résiliation d’un contrat d’énergie. [Lire la fiche](../../pratiques_commerciales/demarchage/demarchage_telephonique.md).  
+
+## Pour aller plus loin  
+
+- Code de la consommation – articles L. 224‑1 à L. 224‑3 (droit de résiliation, frais abusifs).  
+- Directive européenne 2009/72/CE sur les droits des consommateurs d’énergie.  
+- Guide « Libre choix du fournisseur » de la DGCCRF.  
+- Fiche « Obligations d’information » de la DGCCRF.  
+- Fiche « Contrats et factures » de la DGCCRF.  
+- Fiche « Traitement des réclamations » de la DGCCRF.  
+- Site officiel du Médiateur national de l’énergie.  
+- Plateforme SignalConso – catégorie EauGazElec.

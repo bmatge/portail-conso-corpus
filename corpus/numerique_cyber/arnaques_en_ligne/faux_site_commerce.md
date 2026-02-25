@@ -1,79 +1,118 @@
 ---
 domaine: numerique_cyber
-generated_at: '2026-02-25T02:06:11.865381'
+generated_at: '2026-02-25T22:35:28.093175'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 27
 sous_domaine: arnaques_en_ligne
 taxonomy_id: faux_site_commerce
 title: 'Faux site de vente en ligne : j''ai commandé et payé, mais rien reçu et le
   site a disparu'
-tokens: 8728
+tokens: 15228
 ---
 
-# J'ai commandé sur un faux site de vente en ligne : que faire ?
+# J’ai commandé sur un faux site de vente en ligne : que faire ?
 
 ## En bref
-Vous avez acheté sur un site qui a disparu après votre paiement ? C'est une arnaque. Vous pouvez agir pour récupérer votre argent et signaler le site. Les démarches dépendent de votre moyen de paiement et de la localisation du site.
+Vous avez payé un produit, mais le site a disparu et vous n’avez rien reçu.  
+Il s’agit d’une escroquerie : le vendeur n’a jamais l’intention de livrer.  
+Vous pouvez obtenir un remboursement et alerter les autorités ; les démarches varient selon le moyen de paiement et la localisation du site.
 
-## De quoi s'agit-il ?
-Un faux site de vente en ligne est un site créé pour escroquer les consommateurs. Après avoir payé, vous ne recevez pas la commande et le site disparaît. Ces sites peuvent imiter des sites légitimes, avec des faux avis et des offres alléchantes.
+## De quoi s’agit‑il ?
+Un faux site de vente en ligne est une boutique internet créée uniquement pour soutirer de l’argent.  
+Le site imite souvent une enseigne connue, propose des prix très bas et affiche de faux avis.  
+Après le paiement, le site se désactive, l’URL devient inaccessible et aucune commande n’est expédiée.  
 
-**Qui est concerné ?**
-- Tous les consommateurs ayant acheté sur un site frauduleux
-- Les sites basés hors de France ou de l'UE sont plus difficiles à poursuivre
+**Qui est concerné ?**  
+Tous les consommateurs qui ont réglé une commande sur un site frauduleux, quel que soit le produit acheté.  
+Les victimes peuvent être en France ou à l’étranger ; les sites basés hors de l’Union européenne sont plus difficiles à poursuivre.  
 
-**Ce qui n'est pas couvert**
-- Les litiges avec des sites légitimes (retards de livraison, produits non conformes)
-- Les arnaques par email ou téléphone sans passage par un site web
+**Ce qui n’est pas couvert :**  
+- Un retard de livraison d’un site légitime ; le vendeur a bien reçu le paiement et la marchandise est en cours d’expédition.  
+- Une arnaque par email ou téléphone sans passage par un site web ; il s’agit d’une autre forme de fraude.  
 
-## Quels sont vos droits ?
-- Vous avez le droit d'être remboursé si vous avez payé avec une carte bancaire
-- Vous pouvez porter plainte pour escroquerie
-- La DGCCRF peut sanctionner les professionnels frauduleux
+**Cas particuliers :**  
+- Si le site affichait une adresse française mais que le registre WHOIS indique un serveur à l’étranger, il faut considérer le site comme étranger.  
+- Si le paiement a été effectué par virement bancaire, la procédure de contestation diffère de celle par carte bancaire.  
 
-**Obligations du professionnel**
-- Livrer le produit ou exécuter le service payé
-- Respecter les délais de livraison indiqués
+## Quels sont vos droits ?
+Vous avez le droit d’être remboursé lorsque le vendeur ne livre pas.  
+Le professionnel aurait dû vous fournir une confirmation de commande, le détail du produit, le prix total et le délai de livraison.  
+Lorsque ces obligations ne sont pas respectées, vous pouvez agir sans frais.  
 
-**Délais importants**
-- **14 jours** pour contester un paiement par carte bancaire
-- **6 mois** pour déposer plainte (délai de prescription)
+**Obligations du vendeur**  
+- Livrer le bien ou exécuter le service payé.  
+- Respecter le délai indiqué dans les conditions générales.  
 
-## Que faire concrètement ?
+**Délais clés**  
+- Vous disposez de 14 jours à compter de la date de débit pour contester un paiement par carte bancaire.  
+- Le délai de prescription pour déposer une plainte pour escroquerie est de 6 mois.  
+- Le signalement sur la plateforme dédiée doit être fait dès que vous constatez la disparition du site.  
 
-1. **Contactez votre banque** pour contester le paiement (procédure de chargeback)
-2. **Signalez le site** sur [SignalConso](https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement)
-3. **Déposez plainte** en ligne sur [THESEE](https://www.thesee.gouv.fr)
-4. **Signalez l'arnaque** sur [17Cyber](https://www.17cyber.gouv.fr)
+**Exceptions**  
+- Si le paiement a été réalisé par chèque ou virement, la banque ne propose pas de procédure de « chargeback ». Vous devrez alors vous appuyer sur la plainte et le signalement.  
+- Si le site était clairement indiqué comme hors UE, le droit de rétractation français ne s’applique pas, mais vous pouvez toujours réclamer le remboursement via votre établissement bancaire.  
 
-## Exemples / cas concrets
+## Que faire concrètement ?
+1. **Vérifiez votre relevé bancaire** et notez la date, le montant et le libellé de l’opération.  
+2. **Contactez votre banque** : demandez le déclenchement d’une procédure de contestation (chargeback) dans les 14 jours. Fournissez la preuve du paiement et la capture d’écran du site.  
+3. **Conservez toutes les preuves** : captures d’écran du site, e‑mails de confirmation, échanges avec le vendeur, captures du paiement.  
+4. **Signalez le site sur SignalConso** : utilisez le formulaire dédié à l’achat en ligne ([faire‑un‑signalement](https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement)). Indiquez l’URL, la date d’achat et le montant.  
+5. **Déposez une plainte en ligne sur Thésée** : remplissez le formulaire d’escroquerie, joignez les pièces justificatives et décrivez la situation.  
+6. **Alertez 17Cyber** : signalez l’arnaque sur la plateforme dédiée aux cyber‑crimes ([17Cyber](https://www.17cyber.gouv.fr)).  
+7. **Si le site était basé dans l’UE**, contactez le Centre européen des consommateurs pour obtenir une aide supplémentaire.  
 
-**Situation** : "J'ai acheté des baskets sur un site qui proposait -70%. Après paiement, le site n'est plus accessible et je n'ai rien reçu."
-**Ce que vous pouvez faire** :
-- Contester le paiement auprès de votre banque
-- Déposer plainte sur THESEE
-- Signaler le site sur SignalConso
-**Résultat attendu** : Remboursement par votre banque, enquête des autorités
+## Exemples / cas concrets  
 
-**Situation** : "J'ai commandé un téléphone sur un site qui avait l'air officiel. Après paiement, le site a disparu."
-**Ce que vous pouvez faire** :
-- Vérifier si le site était basé hors de France/UE
-- Contacter le Centre européen des consommateurs si le site est européen
-- Signaler l'arnaque sur 17Cyber
-**Résultat attendu** : Remboursement possible si le site était européen, signalement aux autorités
+**Situation** : « J’ai acheté une montre à 49 € sur un site qui affichait –70 %. Après paiement, le site a disparu. »  
+**Ce que vous pouvez faire** :  
+- Relevez le débit sur votre relevé et appelez votre banque dans les 14 jours.  
+- Envoyez à la banque la capture d’écran du site et le mail de confirmation.  
+- Déposez un signalement sur SignalConso en précisant l’URL et le montant.  
+- Remplissez le formulaire Thésée avec les mêmes pièces.  
+**Résultat attendu** : la banque annule le débit, vous êtes remboursé ; les autorités ouvrent une enquête sur le site.  
 
-## Où signaler / à qui s'adresser ?
+**Situation** : « J’ai commandé un smartphone sur un site qui ressemblait à la boutique officielle d’une marque. Le paiement a été effectué par virement bancaire, et le site n’est plus accessible. »  
+**Ce que vous pouvez faire** :  
+- Contactez immédiatement votre banque pour demander le blocage du virement et le rappel de fonds.  
+- Conservez le RIB du bénéficiaire et le justificatif du virement.  
+- Signalez l’arnaque sur SignalConso et sur 17Cyber.  
+- Déposez une plainte sur Thésée en joignant le bordereau de virement.  
+**Résultat attendu** : la banque tente de récupérer les fonds, le dépôt de plainte permet d’engager des poursuites pénales.  
 
-1. **Plateforme THESEE** pour déposer plainte : [www.thesee.gouv.fr](https://www.thesee.gouv.fr)
-2. **SignalConso** pour signaler le site : [signal.conso.gouv.fr](https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement)
-3. **17Cyber** pour les escroqueries en ligne : [www.17cyber.gouv.fr](https://www.17cyber.gouv.fr)
-4. **Centre européen des consommateurs** si le site est basé dans l'UE : [www.europe-consommateurs.eu](http://www.europe-consommateurs.eu/fr/accueil/)
+**Situation** : « J’ai acheté un lot de jeux vidéo à 120 € sur un site qui affichait le drapeau français dans l’en‑tête. Après le paiement, le site a affiché « maintenance permanente » puis a disparu. »  
+**Ce que vous pouvez faire** :  
+- Vérifiez le libellé de l’opération et appelez votre émetteur de carte dans les 14 jours.  
+- Fournissez la preuve du paiement et la capture du message d’erreur.  
+- Déposez un signalement détaillé sur SignalConso, en précisant le texte exact de la page « maintenance permanente ».  
+- Complétez le formulaire Thésée avec les captures d’écran et le relevé bancaire.  
+- Si le site affichait une adresse « . fr », mais le WHOIS indique un serveur à l’étranger, mentionnez ce point dans le signalement.  
+**Résultat attendu** : la procédure de chargeback aboutit, vous êtes remboursé ; les autorités identifient le serveur et peuvent bloquer le domaine.  
 
-## Pour aller plus loin
+## Où signaler / à qui s’adresser ?  
 
-- [Article L221-1](https://www.legifrance.gouv.fr/codes/id/LEGIARTI000032226886/) du code de la consommation
-- [Avis en ligne : attention aux faux commentaires !](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/avis-en-ligne-attention-aux-faux-commentaires)
-- [Démarches administratives : faites attention aux faux sites](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/demarches-administratives-faites-attention-aux-faux-sites)
-- [La fraude aux paiements en ligne](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/la-fraude-aux-paiements-en-ligne)
-- [Pièges sur les sites de commerce en ligne : attention aux dark patterns !](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/pieges-sur-les-sites-de-commerce-en-ligne-attention-aux-dark-patterns)
+1. **Thésée – dépôt de plainte en ligne** : [https://www.thesee.gouv.fr](https://www.thesee.gouv.fr) (priorité 1).  
+2. **SignalConso – signalement d’achat en ligne** : [https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement](https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement) (priorité 2).  
+3. **17Cyber – signalement de cyber‑fraude** : [https://www.17cyber.gouv.fr](https://www.17cyber.gouv.fr) (priorité 3).  
+4. **Centre européen des consommateurs** (si le site était situé dans l’UE) : [https://www.europe-consommateurs.eu/fr/accueil/](https://www.europe-consommateurs.eu/fr/accueil/).  
+
+**Question pivot** :  
+- **Achat effectué par carte bancaire** ? Priorisez la contestation bancaire (étape 2) puis le signalement.  
+- **Achat effectué par virement ou autre moyen** ? Passez directement au dépôt de plainte et au signalement, la banque ne pourra pas intervenir.  
+
+## Sujets proches  
+- **[Faux avis clients — Comment les repérer ?](../../pratiques_commerciales/faux_avis/faux_avis_client.md)** — Les avis truqués peuvent masquer un site frauduleux, comme dans votre cas.  
+- **[Produit non livré et vendeur silencieux — Que faire ?](../../contrats_garanties/livraison/non_livraison.md)** — Ce sujet traite d’un défaut de livraison sans disparition du site, un problème connexe.  
+
+## À ne pas confondre  
+- **Non‑livraison d’un site légitime** — Le vendeur existe, le problème vient d’un retard ou d’un stock épuisé. Vous devez d’abord contacter le service client, puis recourir à la médiation ou à la plateforme de résolution des litiges. Ce n’est pas une escroquerie ; les recours sont différents. [Lire la fiche](../../contrats_garanties/livraison/non_livraison.md)  
+- **Faux avis en ligne** — Les avis mensongers ne signifient pas forcément que le site disparaît. Le recours consiste à signaler les avis trompeurs, pas à déposer plainte pour escroquerie. [Lire la fiche](../../pratiques_commerciales/faux_avis/_index.md)  
+
+## Pour aller plus loin  
+- Article L221‑1 du Code de la consommation – obligations du vendeur.  
+- [Info‑arnaques : achats sur internet – conseils de la DGCCRF](https://www.economie.gouv.fr/dgccrf/arnaques-aux-achats-en-ligne-achat-sur-internet-achetez-serein)  
+- [La fraude aux paiements en ligne – DGCCRF](https://www.economie.gouv.fr/dgccrf/la-fraude-aux-paiements-en-ligne)  
+- [Avis en ligne : attention aux faux commentaires ! – DGCCRF](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/avis-en-ligne-attention-aux-faux-commentaires)  
+- [Démarches administratives : faites attention aux faux sites – DGCCRF](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/demarches-administratives-faites-attention-aux-faux-sites)  
+- [Pièges sur les sites de commerce en ligne – DGCCRF](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/pieges-sur-les-sites-de-commerce-en-ligne-attention-aux-dark-patterns)

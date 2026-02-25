@@ -14,6 +14,9 @@ API_BACKEND = "http://localhost:8000"
 
 
 class Handler(http.server.SimpleHTTPRequestHandler):
+    # HTTP/1.1 required for chunked transfer / SSE streaming
+    protocol_version = "HTTP/1.1"
+
     def do_OPTIONS(self):
         """Handle CORS preflight."""
         if self.path.startswith(PROXY_PREFIX):
@@ -98,16 +101,18 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.send_header("Content-Type", content_type)
 
             if "text/event-stream" in content_type:
-                # Stream SSE responses chunk by chunk
+                # Stream SSE line-by-line, flush on event boundary (empty line)
                 self.send_header("Cache-Control", "no-cache")
                 self.send_header("Connection", "keep-alive")
                 self.end_headers()
                 while True:
-                    chunk = resp.read(1024)
-                    if not chunk:
+                    line = resp.readline()
+                    if not line:
                         break
-                    self.wfile.write(chunk)
-                    self.wfile.flush()
+                    self.wfile.write(line)
+                    # SSE events end with an empty line — flush at each boundary
+                    if line.strip() == b'':
+                        self.wfile.flush()
             else:
                 resp_body = resp.read()
                 self.end_headers()

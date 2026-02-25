@@ -1,65 +1,130 @@
 ---
 domaine: secteurs_reglementes
-generated_at: '2026-02-25T11:06:04.710262'
+generated_at: '2026-02-25T22:54:40.485113'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 14
 sous_domaine: bricolage_btp
 taxonomy_id: artisan_non_assure
 title: Artisan ou entreprise du BTP sans assurance décennale ou responsabilité civile
-tokens: 6749
+tokens: 10337
 ---
 
-# Un artisan ou une entreprise du BTP n'a pas d'assurance décennale ou responsabilité civile : que faire ?
+# L’artisan ou l’entreprise du BTP n’a pas d’assurance décennale ? Que faire ?
 
 ## En bref
-Si un artisan ou une entreprise du BTP n'a pas d'assurance décennale ou responsabilité civile, vous risquez de ne pas être couvert en cas de malfaçon ou de sinistre. Vérifiez toujours les attestations d'assurance avant le début des travaux. En cas de problème, signalez la situation à la DGCCRF via SignalConso.
+Vous avez constaté qu’un professionnel du bâtiment ne vous a pas remis d’attestation d’assurance décennale ou de responsabilité civile. Sans ces garanties, vous n’êtes pas couvert en cas de malfaçon grave. Vous pouvez exiger la preuve d’assurance, vérifier son authenticité, mettre en demeure l’entreprise, et, si besoin, saisir la DGCCRF ou la justice.  
 
-## De quoi s'agit-il ?
-La garantie décennale est une assurance obligatoire pour les professionnels du BTP. Elle couvre les dommages compromettant la solidité de l'ouvrage ou le rendant impropre à sa destination pendant 10 ans. Les artisans et entreprises du BTP doivent également souscrire une assurance responsabilité civile professionnelle. Si un professionnel n'a pas ces assurances, vous n'êtes pas protégé en cas de problème.
+## De quoi s’agit‑il ?
+La garantie décennale est une assurance obligatoire qui couvre les défauts affectant la solidité du bâtiment ou le rendant impropre à sa destination pendant dix ans après la réception des travaux. La responsabilité civile professionnelle, quant à elle, couvre les dommages causés à des tiers pendant l’exécution du chantier.  
 
-**Périmètre :**
-- **Couvre** : Tous les travaux de construction, rénovation ou réparation réalisés par des professionnels du BTP.
-- **Ne couvre pas** : Les travaux réalisés par des particuliers ou des auto-entrepreneurs non soumis à cette obligation.
+**Qui est concerné ?**  
+Tous les artisans, entrepreneurs, sociétés de construction et sous‑traitants qui réalisent des travaux de construction, de rénovation ou de réparation pour le compte d’un client.  
 
-## Quels sont vos droits ?
-Tout professionnel du BTP doit souscrire une assurance décennale avant l'ouverture de tout chantier. Vous avez le droit de demander une attestation d'assurance décennale avant le début des travaux. En cas de malfaçon ou de sinistre, vous pouvez exiger la réparation des dommages par l'entreprise. Si l'entreprise n'a pas d'assurance, vous pouvez engager des actions en justice pour obtenir réparation.
+**Ce qui est couvert**  
+- Les fissures compromettant la structure du bâtiment.  
+- Les infiltrations d’eau dues à une mauvaise étanchéité.  
+- Les défauts rendant le logement inhabitable.  
 
-## Que faire concrètement ?
+**Ce qui n’est pas couvert**  
+- Les travaux réalisés par un particulier qui n’est pas soumis à l’obligation d’assurance.  
+- Les dommages causés par des catastrophes naturelles ou des actes de vandalisme.  
 
-1. **Demandez l'attestation d'assurance décennale** avant le début des travaux. L'entreprise doit vous fournir un document conforme à l'arrêté du 5 janvier 2016.
-2. **Vérifiez l'authenticité de l'attestation** en contactant l'assureur mentionné sur le document.
-3. **Signalez le problème** à la DGCCRF via [SignalConso](https://signal.conso.gouv.fr) si l'entreprise ne fournit pas d'attestation valide.
-4. **Engagez des actions en justice** si des dommages surviennent et que l'entreprise n'a pas d'assurance pour couvrir les réparations.
+**Cas particuliers**  
+- Les auto‑entrepreneurs exerçant une activité de construction sont également tenus de souscrire la garantie décennale dès que le chiffre d’affaires dépasse le seuil légal.  
+- Les sous‑traitants doivent eux‑mêmes être assurés ; l’entreprise principale ne peut pas se substituer à cette obligation.  
 
-## Exemples / cas concrets
+## Quels sont vos droits ?
+- Vous avez le droit d’exiger, avant le démarrage des travaux, une attestation d’assurance décennale et de responsabilité civile.  
+- L’entreprise doit vous remettre un document signé, mentionnant l’assureur, le numéro de police, les dates de validité et le numéro SIRET.  
+- Si l’attestation est absente ou falsifiée, vous pouvez refuser le début des travaux sans pénalité.  
+- En cas de malfaçon, vous pouvez demander la réparation directe à l’entreprise ou, si elle ne possède pas d’assurance, engager une action en justice pour obtenir des dommages et intérêts.  
+- Vous pouvez également déclarer le sinistre à votre assureur dommages‑ouvrage ; celui‑ci intervient en priorité lorsqu’il existe une garantie décennale, même si l’entreprise est non assurée.  
 
-**Situation** : Vous avez engagé un artisan pour des travaux de rénovation et il n'a pas fourni d'attestation d'assurance décennale.
-**Ce que vous pouvez faire** : Demandez-lui immédiatement l'attestation. Si elle n'est pas fournie, signalez-le à la DGCCRF via [SignalConso](https://signal.conso.gouv.fr).
-**Résultat attendu** : L'artisan doit fournir l'attestation ou risquer des sanctions. Vous êtes protégé en cas de malfaçon.
+**Délais importants**  
+- L’attestation doit être fournie avant la signature du contrat ou le premier jour de chantier.  
+- Vous disposez de deux mois après la réception des travaux pour signaler un défaut relevant de la garantie décennale.  
+- La mise en demeure doit être envoyée par lettre recommandée avec accusé de réception et préciser un délai de quinze jours pour répondre.  
 
-**Situation** : Après des travaux de construction, vous constatez des fissures importantes dans les murs.
-**Ce que vous pouvez faire** : Signalez les dommages à l'entreprise par lettre recommandée avec accusé de réception. Si elle ne répond pas, déclarez le sinistre à votre assureur dommages-ouvrage.
-**Résultat attendu** : L'entreprise doit réparer les dommages. Si elle ne le fait pas, votre assureur dommages-ouvrage intervient.
+**Exceptions**  
+- Les travaux d’entretien courants ne sont pas soumis à la garantie décennale.  
+- Si le professionnel est en liquidation judiciaire, la garantie décennale reste valable, mais vous devez vous adresser au liquidateur.  
 
-**Situation** : Un entrepreneur a réalisé des travaux sans assurance décennale et vous ne pouvez pas obtenir réparation des dommages.
-**Ce que vous pouvez faire** : Engagez une action en justice contre l'entrepreneur pour obtenir réparation.
-**Résultat attendu** : Le tribunal peut condamner l'entrepreneur à réparer les dommages.
+## Que faire concrètement ?
+1. **Demandez l’attestation d’assurance** avant de signer le devis.  
+   - Formulez votre demande par écrit : « Merci de me transmettre votre attestation d’assurance décennale et de responsabilité civile, conformément à l’article L. 241‑1 du Code des assurances. »  
+2. **Vérifiez l’authenticité** de l’attestation.  
+   - Contactez l’assureur indiqué, fournissez le numéro de police et demandez confirmation de la couverture.  
+   - Contrôlez que le numéro SIRET de l’entreprise correspond à celui du document.  
+3. **Envoyez une mise en demeure** si l’attestation est manquante ou invalide.  
+   - Rédigez une lettre recommandée avec accusé de réception : indiquez le défaut, le délai de quinze jours pour fournir l’attestation ou cesser les travaux, et précisez que vous saisirez la DGCCRF en cas d’absence de réponse.  
+4. **Saisissez la DGCCRF via SignalConso** si l’entreprise ne réagit pas.  
+   - Remplissez le formulaire en ligne, joignez le devis, la correspondance et, le cas échéant, la copie de la mise en demeure.  
+5. **Déclarez le sinistre à votre assureur dommages‑ouvrage** dès que vous constatez un défaut relevant de la garantie décennale.  
+   - Transmettez‑lui l’attestation (ou son absence) et les photos des dommages.  
+6. **Engagez une action en justice** si aucune réparation n’est proposée.  
+   - Adressez une requête au tribunal judiciaire (ancien tribunal de grande instance) en précisant le montant des réparations estimées.  
+   - Vous pouvez demander une astreinte financière pour contraindre l’entreprise à exécuter les travaux.  
 
-## Où signaler / à qui s'adresser ?
+## Exemples / cas concrets  
 
-- **SignalConso** : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)
-- **Service-public.fr** : [https://www.service-public.fr](https://www.service-public.fr)
+**Situation** : Vous avez signé un devis pour la rénovation d’une salle de bains. L’artisan ne vous a jamais remis d’attestation d’assurance décennale.  
+**Ce que vous pouvez faire** :  
+- Envoyez immédiatement une demande écrite d’attestation.  
+- Si aucune réponse, adressez une mise en demeure de quinze jours.  
+- En l’absence de réponse, signalez le professionnel sur SignalConso.  
+**Résultat attendu** : L’artisan fournit l’attestation sous quinzaine ou le chantier est suspendu. Vous êtes protégé contre les malfaçons.  
 
-## Pour aller plus loin
+**Situation** : Après la construction d’une extension, vous observez d’importantes fissures dans les fondations. L’entreprise ne possède pas d’assurance décennale.  
+**Ce que vous pouvez faire** :  
+- Prenez des photos et rédigez une lettre recommandée décrivant les fissures.  
+- Déclarez le sinistre à votre assureur dommages‑ouvrage, en précisant l’absence d’assurance du constructeur.  
+- Si l’assureur refuse, saisissez le tribunal judiciaire pour obtenir réparation.  
+**Résultat attendu** : Votre assureur intervient rapidement, ou le tribunal condamne l’entreprise à financer les réparations.  
 
-- [Malfaçon : mettez en œuvre les garanties — DGCCRF](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042613787/)
-- [Artisan — DGCCRF](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042613787/)
-- [Assurance de dommages ouvrage : quelle est la réglementation applicable ? — DGCCRF](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042613787/)
-- [Obligations professionnelles des diagnostiqueurs dans le secteur de l’immobilier et du logement — DGCCRF](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042613787/)
-- [Vous demandez à une entreprise son attestation d'assurance décennale — INC](https://www.inc-conso.fr/content/logement/vous-demandez-une-entreprise-son-attestation-dassurance-decennale)
-- [Les attestations d'assurances construction — INC](https://www.inc-conso.fr/content/les-attestations-dassurances-construction)
-- [Travaux de rénovation énergétique : que faire en cas de problèmes ? — INC](https://www.inc-conso.fr/content/travaux-de-renovation-energetique-que-faire-en-cas-de-problemes)
-- [Cuisiniers : valorisez votre savoir-faire grâce au statut d'artisan — Entreprises](https://entreprendre.service-public.fr/vosdroits/F23887)
-- [Travaux : tout savoir sur la mention RGE délivrée aux professionnels du bâtiment — INC](https://www.inc-conso.fr/content/travaux-tout-savoir-sur-la-mention-rge-delivree-aux-professionnels-du-batiment)
-- [Quelles différences entre l'assurance de dommages-ouvrage et l'assurance de responsabilité civile décennale ? — INC](https://www.inc-conso.fr/content/quelles-differences-entre-lassurance-de-dommages-ouvrage-et-lassurance-de-responsabilite)
+**Situation** : Un sous‑traitant intervient sur votre chantier sans être déclaré et sans assurance. Vous découvrez l’absence d’attestation en cours de travaux.  
+**Ce que vous pouvez faire** :  
+- Demandez immédiatement à l’entreprise principale la preuve d’assurance du sous‑traitant.  
+- Si l’attestation n’est pas fournie, mettez en demeure l’entreprise principale de régulariser la situation sous quinze jours.  
+- Signalez le manquement à la DGCCRF via SignalConso et, si besoin, faites appel à un médiateur du bâtiment.  
+**Résultat attendu** : L’entreprise principale remplace le sous‑traitant ou fournit les garanties requises. Vous évitez un risque juridique.  
+
+## Où signaler / à qui s’adresser ?  
+
+1. **SignalConso** – plateforme officielle de la DGCCRF pour signaler les pratiques illégales.  
+   - Accédez directement à la page de signalement : <https://signal.conso.gouv.fr>  
+
+2. **Service‑public.fr** – informations détaillées sur les obligations des artisans et les recours possibles.  
+   - Consultez la fiche : <https://www.service-public.fr>  
+
+3. **Médiateur du bâtiment** – recours amiable avant toute action judiciaire (URL à préciser).  
+   - [À COMPLÉTER]  
+
+**Question pivot** :  
+- **Travaux en ligne** ? Si vous avez conclu le contrat via un site internet, vous pouvez également contacter le service client du site et, le cas échéant, le médiateur du e‑commerce.  
+- **Travaux sur site** ? Adressez-vous d’abord à l’artisan, puis suivez les étapes décrites ci‑dessus.  
+
+## Sujets proches  
+
+- **[L’entreprise refuse d’appliquer la garantie décennale ou n’est pas assurée](../../logement/travaux_renovation/garantie_decennale_non_couverte.md)** — Vous apprenez comment réagir lorsque le professionnel ne veut pas appliquer la garantie décennale malgré votre demande.  
+- **[Travaux et rénovation du logement](../../logement/travaux_renovation/_index.md)** — Panorama des obligations légales et des garanties applicables aux travaux de rénovation.  
+- **[L’artisan ou l’entreprise abandonne le chantier en cours](../../logement/travaux_renovation/abandon_chantier.md)** — Procédures à suivre si le professionnel cesse les travaux sans justification.  
+
+## À ne pas confondre  
+
+- **L’entreprise refuse d’appliquer la garantie décennale ou n’est pas assurée** — Cette situation concerne un professionnel qui possède une assurance mais refuse de la mettre en œuvre. Le recours passe par la mise en demeure et, si nécessaire, le tribunal. Ici, le problème porte sur le refus d’appliquer la garantie, pas sur l’absence d’attestation. [Lire la fiche](../../logement/travaux_renovation/garantie_decennale_non_couverte.md)  
+
+- **L’artisan ou l’entreprise abandonne le chantier en cours** — L’abandon de chantier implique une rupture du contrat, alors que l’absence d’assurance concerne la couverture des dommages. Les recours diffèrent : astreinte judiciaire pour l’abandon, vérification d’assurance pour le problème actuel. [Lire la fiche](../../logement/travaux_renovation/abandon_chantier.md)  
+
+## Pour aller plus loin  
+
+- Code des assurances – article L. 241‑1 (obligation d’assurance décennale).  
+- Code de la construction et de l’habitation – article L. 111‑23 (garantie décennale).  
+- Jurisprudence : *Cour de cassation, 3ᵉ civ., 12 mai 2015* (responsabilité du professionnel non assuré).  
+- DGCCRF – « Malfaçon : mettez en œuvre les garanties ».  
+- Service‑public.fr – « Assurance décennale obligatoire pour les professionnels du bâtiment ».  
+- INC – « Vous demandez à une entreprise son attestation d’assurance décennale ».  
+- INC – « Les attestations d’assurances construction ».  
+- INC – « Travaux de rénovation énergétique : que faire en cas de problèmes ».  
+- DGCCRF – « Assurance de dommages‑ouvrage : réglementation applicable ».

@@ -1,4 +1,4 @@
-"""Client LLM OpenAI-compatible avec rate limiting et retries."""
+"""Client LLM OpenAI-compatible avec rate limiting, retries et rotation de clés."""
 
 from __future__ import annotations
 
@@ -30,7 +30,7 @@ class LLMResponse:
 
 @dataclass
 class LLMClient:
-    """Rate-limited, retry-capable LLM client for OpenAI-compatible APIs."""
+    """Rate-limited, retry-capable LLM client with API key rotation."""
 
     endpoint: str
     api_key: str
@@ -41,17 +41,52 @@ class LLMClient:
     retry_count: int = 3
     retry_delay: int = 5
 
-    _client: OpenAI = field(init=False, repr=False)
+    _clients: list[OpenAI] = field(init=False, repr=False, default_factory=list)
+    _api_keys: list[str] = field(init=False, repr=False, default_factory=list)
+    _current_key_idx: int = field(init=False, default=0)
+    _exhausted_keys: set[int] = field(init=False, default_factory=set)
     _last_call_time: float = field(init=False, default=0)
     _min_interval: float = field(init=False)
 
     def __post_init__(self):
-        self._client = OpenAI(
-            base_url=self.endpoint,
-            api_key=self.api_key,
-            timeout=self.timeout,
-        )
+        # Split api_key on commas to support multiple keys
+        self._api_keys = [k.strip() for k in self.api_key.split(",") if k.strip()]
+        if not self._api_keys:
+            self._api_keys = [self.api_key]
+
+        self._clients = [
+            OpenAI(
+                base_url=self.endpoint,
+                api_key=key,
+                timeout=self.timeout,
+                max_retries=0,
+            )
+            for key in self._api_keys
+        ]
+        self._current_key_idx = 0
+        self._exhausted_keys = set()
         self._min_interval = 60.0 / self.rate_limit_rpm if self.rate_limit_rpm > 0 else 0
+
+        if len(self._api_keys) > 1:
+            log.info(f"Key rotation enabled: {len(self._api_keys)} API keys loaded")
+
+    @property
+    def _client(self) -> OpenAI:
+        return self._clients[self._current_key_idx]
+
+    def _rotate_key(self) -> bool:
+        """Switch to the next available key. Returns False if all exhausted."""
+        self._exhausted_keys.add(self._current_key_idx)
+
+        for i in range(len(self._api_keys)):
+            if i not in self._exhausted_keys:
+                self._current_key_idx = i
+                key_preview = self._api_keys[i][:8] + "..."
+                log.info(f"Rotated to API key {i + 1}/{len(self._api_keys)} ({key_preview})")
+                return True
+
+        log.error("All API keys exhausted (daily limit reached on all keys)")
+        return False
 
     def _rate_limit_wait(self):
         if self._min_interval <= 0:
@@ -60,13 +95,18 @@ class LLMClient:
         if elapsed < self._min_interval:
             time.sleep(self._min_interval - elapsed)
 
+    def _is_daily_limit(self, error: RateLimitError) -> bool:
+        """Check if a 429 error is a daily quota limit (not just RPM)."""
+        msg = str(error).lower()
+        return "per day" in msg or "daily" in msg
+
     def chat(
         self,
         system_prompt: str,
         user_prompt: str,
         max_tokens: int = 4000,
     ) -> LLMResponse:
-        """Send a chat completion request with retry logic."""
+        """Send a chat completion request with retry logic and key rotation."""
         messages = [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},
@@ -100,10 +140,19 @@ class LLMClient:
                 )
 
             except (AuthenticationError, BadRequestError):
-                # No retry for auth or request errors
                 raise
 
-            except (RateLimitError, APITimeoutError, APIConnectionError) as e:
+            except RateLimitError as e:
+                last_error = e
+                if self._is_daily_limit(e) and len(self._api_keys) > 1:
+                    if self._rotate_key():
+                        # Retry immediately with the new key (don't count as attempt)
+                        continue
+                delay = self.retry_delay * (2 ** attempt)
+                log.warning(f"Attempt {attempt + 1}/{self.retry_count} failed: {e}. Retrying in {delay}s...")
+                time.sleep(delay)
+
+            except (APITimeoutError, APIConnectionError) as e:
                 last_error = e
                 delay = self.retry_delay * (2 ** attempt)
                 log.warning(f"Attempt {attempt + 1}/{self.retry_count} failed: {e}. Retrying in {delay}s...")
@@ -127,4 +176,5 @@ class LLMClient:
             "estimated_tokens": (len(system_prompt) + len(user_prompt)) // 4,
             "system_prompt_preview": system_prompt[:500] + "..." if len(system_prompt) > 500 else system_prompt,
             "user_prompt_preview": user_prompt[:2000] + "..." if len(user_prompt) > 2000 else user_prompt,
+            "api_keys_count": len(self._api_keys),
         }

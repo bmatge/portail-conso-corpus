@@ -1,97 +1,101 @@
 ---
 domaine: secteurs_reglementes
-generated_at: '2026-02-25T02:11:40.454355'
+generated_at: '2026-02-25T22:40:38.623610'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 14
 sous_domaine: immobilier
 taxonomy_id: location_logement_non_conforme
 title: Logement loué non conforme (DPE mensonger, surfaces fausses, caractéristiques
   non conformes)
-tokens: 8184
+tokens: 11161
 ---
 
-# Logement loué non conforme : que faire ?
+# Logement loué non conforme : que faire quand le DPE, la surface ou les équipements ne correspondent pas à l’annonce ?
 
 ## En bref
-Si votre logement loué ne correspond pas aux caractéristiques annoncées (DPE mensonger, surfaces fausses, etc.), vous avez des droits. Vous pouvez exiger des réparations ou une réduction de loyer. En cas de non-conformité grave, vous pouvez même résilier le bail. Signalez d'abord le problème à votre propriétaire, puis utilisez les recours disponibles.
+Vous avez découvert que le logement que vous louez ne respecte pas les caractéristiques annoncées : diagnostic de performance énergétique (DPE) mensonger, surface inférieure, équipements manquants ou non conformes.  
+Le propriétaire doit vous fournir un logement conforme aux obligations légales et à la description faite dans le bail.  
+Vous pouvez demander des réparations, une réduction de loyer, voire la résiliation du bail si la non‑conformité est grave.  
 
-## De quoi s'agit-il ?
-Un logement loué non conforme est un logement qui ne respecte pas les caractéristiques annoncées ou les obligations légales en matière de décence, de surface ou de performance énergétique. Cela peut inclure des diagnostics erronés (comme un DPE mensonger), des surfaces inexactes, ou des équipements absents.
+## De quoi s’agit‑il ?
+Un logement loué non conforme désigne tout bien locatif dont les caractéristiques réelles diffèrent de celles présentées dans le contrat ou dans les documents d’information (annonce, DPE, état des lieux, etc.).  
+**Qui est concerné ?** Tous les locataires d’un logement vide ou meublé, qu’ils soient en location longue durée ou en location saisonnière.  
+**Périmètre couvert** :  
+- Diagnostics erronés : DPE, performance énergétique, surface, amiante, plomb, etc.  
+- Surface habitable inférieure au minimum légal (9 m² ou 20 m² selon la composition du logement).  
+- Équipements obligatoires absents ou non fonctionnels (chauffage, ventilation, sanitaires, installations électriques sécurisées).  
+- Logement ne respectant pas les critères de décence (absence d’éclairage, d’isolation, de protection contre les infiltrations).  
 
-**Qui est concerné ?**
-- Tous les locataires en France, qu'il s'agisse de locations vides ou meublées.
-- Les locations saisonnières peuvent également être concernées, mais les recours diffèrent légèrement.
+**Périmètre non couvert** :  
+- Litiges entre colocataires ou entre sous‑locataires.  
+- Contestations portant uniquement sur le montant du loyer sans lien avec la conformité du bien.  
+- Charges locatives non liées à des défauts de conformité (ex. : frais de gestion).  
 
-**Périmètre couvert**
-- Logements avec des diagnostics erronés (DPE, surface, etc.).
-- Logements ne respectant pas les normes de décence.
-- Logements avec des équipements ou caractéristiques non conformes aux annonces.
+## Quels sont vos droits ?
+Le propriétaire a l’obligation de vous remettre un logement conforme aux diagnostics fournis et aux exigences de décence.  
+- **Réparations** : il doit réaliser, à ses frais, les travaux nécessaires pour rendre le logement conforme.  
+- **Réduction de loyer** : si les travaux ne sont pas faits rapidement, vous pouvez demander une remise proportionnelle du loyer.  
+- **Remboursement partiel** : vous pouvez réclamer le remboursement des loyers déjà payés pour la période non conforme.  
+- **Résiliation du bail** : en cas de non‑conformité grave (logement insalubre, DPE très défavorable, surface largement sous‑déclarée), vous pouvez mettre fin au bail sans pénalité.  
 
-**Périmètre non couvert**
-- Litiges liés aux relations entre locataires (colocation, sous-location).
-- Litiges liés aux charges locatives (sauf si liées à des équipements non conformes).
+**Délais importants** :  
+- Vous devez informer le propriétaire dès la découverte du problème, idéalement par courrier recommandé avec accusé de réception.  
+- Le propriétaire dispose d’un « délai raisonnable » pour intervenir ; la jurisprudence considère généralement 30 jours comme un repère, mais le délai exact dépend de la nature du défaut.  
+- Si aucune réponse n’est reçue dans ce délai, vous pouvez passer aux étapes suivantes (médiation, action judiciaire).  
 
-## Quels sont vos droits ?
-Votre propriétaire doit vous fournir un logement conforme aux caractéristiques annoncées et aux normes légales. Si ce n'est pas le cas, vous pouvez exiger des réparations ou une réduction de loyer. En cas de non-conformité grave, vous pouvez même résilier le bail.
+## Que faire concrètement ?
+1. **Constater le problème** – Prenez des photos, conservez le DPE, le bail, l’annonce et tout document attestant de la différence.  
+2. **Informer le propriétaire par écrit** – Rédigez une lettre recommandée avec accusé de réception : décrivez le défaut, joignez les preuves, indiquez la réparation ou la réduction de loyer souhaitée, et fixez un délai de réponse (ex. : 15 jours).  
+3. **Négocier une solution** – Si le propriétaire propose des travaux, vérifiez le planning et la qualité des interventions. Si une réduction de loyer est proposée, assurez‑vous qu’elle soit écrite et signée.  
+4. **Faire appel à la médiation** – En l’absence de réponse ou d’accord, saisissez le médiateur de l’immobilier. Le médiateur examine les pièces, contacte les deux parties et propose une solution amiable.  
+5. **Recourir à la justice** – Si la médiation échoue, saisissez le tribunal judiciaire (section logement). Vous pouvez demander la réalisation des travaux, la réduction ou le remboursement du loyer, ainsi que des dommages‑intérêts.  
 
-**Obligations du propriétaire**
-- Fournir un logement conforme aux diagnostics fournis (DPE, surface, etc.).
-- Respecter les normes de décence (chauffage, ventilation, sécurité, etc.).
-- Effectuer les réparations nécessaires pour remettre le logement en conformité.
+## Exemples / cas concrets  
 
-**Délais importants**
-- Vous devez signaler les problèmes de conformité à votre propriétaire dès que vous les constatez.
-- Votre propriétaire dispose d'un délai raisonnable pour effectuer les réparations, mais ce délai n'est pas fixé par la loi. En cas de désaccord, vous pouvez saisir le médiateur de la consommation ou les tribunaux.
+**Situation** : « J’ai signé un bail pour un appartement de 55 m², mais la mesure réelle fait 42 m². »  
+**Ce que vous pouvez faire** : Envoyez une lettre recommandée au propriétaire, joignez le plan cadastral et les photos, demandez une réduction de loyer de 25 % ou la remise du surplus payé.  
+**Résultat attendu** : Le propriétaire accepte la réduction ou vous rembourse la différence de loyer.  
 
-## Que faire concrètement ?
-1. **Signalez les problèmes à votre propriétaire**
-   - Envoyez une lettre recommandée avec accusé de réception détaillant les problèmes de conformité et exigez des réparations ou une réduction de loyer.
-   - Joignez des preuves (photos, rapports de diagnostic, etc.).
+**Situation** : « Le DPE indique une classe C, alors que le diagnostic officiel montre un F. »  
+**Ce que vous pouvez faire** : Demandez un nouveau DPE aux frais du propriétaire, précisez que le classement F justifie une réduction de loyer ou des travaux d’isolation.  
+**Résultat attendu** : Le propriétaire fait réaliser le nouveau DPE, puis ajuste le loyer ou réalise les travaux d’amélioration énergétique.  
 
-2. **Exigez des réparations ou une réduction de loyer**
-   - Si votre propriétaire ne répond pas ou refuse de faire les réparations, vous pouvez exiger une réduction de loyer proportionnelle à la non-conformité.
-   - Conservez toutes les preuves de vos demandes et des réponses (ou absence de réponse) de votre propriétaire.
+**Situation** : « Le chauffage ne fonctionne pas depuis l’arrivée dans le logement, et le propriétaire refuse d’intervenir. »  
+**Ce que vous pouvez faire** : Adressez une mise en demeure par courrier recommandé, exigez la remise en état du chauffage sous 10 jours, puis saisissez le médiateur de l’immobilier si aucune action n’est prise.  
+**Résultat attendu** : Le propriétaire fait réparer le chauffage ou accepte une réduction de loyer correspondant à la perte de confort.  
 
-3. **Saisissez le médiateur de la consommation**
-   - Si votre propriétaire ne répond pas à vos demandes, vous pouvez saisir le [médiateur de l'immobilier](https://www.mediateur-immobilier.fr).
-   - Le médiateur peut vous aider à trouver une solution à l'amiable.
+**Situation** : « Le propriétaire a fourni un DPE frauduleux pour masquer la présence d’amiante. »  
+**Ce que vous pouvez faire** : Signalez le diagnostic frauduleux à SignalConso, demandez un nouveau diagnostic par un professionnel certifié, puis réclamez la prise en charge des travaux de désamiantage.  
+**Résultat attendu** : Le diagnostiqueur corrige le DPE, le propriétaire finance le désamiantage, et vous obtenez éventuellement une compensation financière.  
 
-4. **Saisissez les tribunaux**
-   - Si la médiation échoue, vous pouvez saisir le tribunal judiciaire pour exiger des réparations, une réduction de loyer, ou même la résiliation du bail.
-   - Vous pouvez également demander des dommages et intérêts pour préjudice subi.
+## Où signaler / à qui s’adresser ?  
 
-## Exemples / cas concrets
+- **SignalConso (priorité 1)** – Signalez le problème directement via le formulaire dédié à l’immobilier : [Faire un signalement](https://signal.conso.gouv.fr/fr/immobilier/faire-un-signalement).  
+- **Médiation de la consommation (priorité 2)** – Vous pouvez déposer une demande de médiation en ligne : [Médiation consommation](https://www.economie.gouv.fr/mediation-conso).  
+- **Médiateur de l’immobilier (secteuriel)** – Pour les litiges locatifs, le médiateur propose une résolution amiable : [Médiateur immobilier](https://www.mediateur-immobilier.fr).  
 
-**Situation** : "J'ai loué un appartement annoncé comme ayant une surface de 50 m², mais en réalité il fait 40 m²."
-**Ce que vous pouvez faire** : Envoyez une lettre recommandée à votre propriétaire pour exiger une réduction de loyer proportionnelle à la différence de surface. Vous pouvez également demander un remboursement partiel du loyer déjà payé.
-**Résultat attendu** : Votre propriétaire doit accepter une réduction de loyer ou effectuer des réparations pour remettre le logement en conformité.
+**Question pivot** : Si le logement a été loué en ligne, privilégiez le service de médiation du site de location (ex. : plateforme de location) avant de saisir le médiateur sectoriel.  
 
-**Situation** : "Mon logement a un DPE classé F, mais le propriétaire m'a assuré qu'il était classé C."
-**Ce que vous pouvez faire** : Exigez un nouveau diagnostic de performance énergétique aux frais du propriétaire. Si le DPE est effectivement classé F, vous pouvez exiger des travaux de rénovation énergétique ou une réduction de loyer.
-**Résultat attendu** : Votre propriétaire doit effectuer les travaux nécessaires pour améliorer la performance énergétique du logement ou accepter une réduction de loyer.
+## Sujets proches  
+- **[Le logement loué est indécent ou insalubre (humidité, chauffage défaillant, nuisibles)](../../logement/location/logement_indecent.md)** — Vous avez un problème d’insalubrité ; les recours sont similaires mais les critères de décence sont plus stricts.  
+- **[Location de vacances frauduleuse (annonce fictive, logement inexistant ou très différent)](../voyages_tourisme/location_vacances_arnaque.md)** — Le cadre juridique diffère (loi sur les locations saisonnières) mais les démarches de signalement restent les mêmes.  
 
-**Situation** : "Mon logement a des problèmes d'humidité et de moisissures, mais le propriétaire refuse de faire les réparations."
-**Ce que vous pouvez faire** : Envoyez une lettre recommandée avec accusé de réception détaillant les problèmes et exigez des réparations. Si le propriétaire ne répond pas, saisissez le [médiateur de l'immobilier](https://www.mediateur-immobilier.fr).
-**Résultat attendu** : Le médiateur peut vous aider à trouver une solution à l'amiable. Si cela échoue, vous pouvez saisir le tribunal judiciaire.
+## À ne pas confondre  
+- **Le logement loué est indécent ou insalubre** — Cette situation porte sur des risques graves pour la santé (moisissures, absence de chauffage) alors que le logement non conforme peut simplement présenter des surfaces ou diagnostics erronés. Les recours incluent souvent une expertise sanitaire et une procédure d’expulsion du propriétaire. [Lire la fiche](../../logement/location/logement_indecent.md)  
 
-## Où signaler / à qui s'adresser ?
-- **SignalConso** : [Signalement direct pour l'immobilier](https://signal.conso.gouv.fr/fr/immobilier/faire-un-signalement)
-- **Médiateur de l'immobilier** : [Site du médiateur de l'immobilier](https://www.mediateur-immobilier.fr)
-- **Médiation de la consommation** : [Site de la médiation de la consommation](https://www.economie.gouv.fr/mediation-conso)
-
-## Pour aller plus loin
-- [Obligations professionnelles des diagnostiqueurs dans le secteur de l’immobilier et du logement](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes/obligations-professionnelles-des-diagnostiqueurs-dans-le)
-- [Contrôle des professionnels de l’immobilier](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes/controle-des-professionnels-de-limmobilier)
-- [Professionnels de l’immobilier : les règles à connaître](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/professionnels-de-limmobilier-les-regles-connaitre)
-- [Location immobilière saisonnière](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/location-immobiliere-saisonniere)
-- [Vente immobilière : les diagnostics obligatoires](https://www.inc-conso.fr/content/logement/vente-immobiliere-les-diagnostics-obligatoires-pour-les-logements-usage-dhabitation)
-- [Encadrement du prix des loyers : comment ça marche ?](https://www.inc-conso.fr/content/encadrement-du-prix-des-loyers-comment-ca-marche)
-- [Logement indécent : que faire ?](https://www.inc-conso.fr/content/logement-indecent-que-faire)
-- [Logement insalubre ou indécent : des exemples jurisprudentiels](https://www.inc-conso.fr/content/logement-insalubre-ou-indecent-des-exemples-jurisprudentiels)
-- [Ce qu’il faut savoir sur le diagnostic de performance énergétique (DPE)](https://www.service-public.fr/particuliers/vosdroits/F1969)
-- [Logement indigne et non décent : comment réagir ?](https://www.inc-conso.fr/content/logement-indigne-et-non-decent-comment-reagir)
-- [Etiquette énergétique du DPE : les obligations qui en découlent !](https://www.inc-conso.fr/content/etiquette-energetique-du-dpe-les-obligations-qui-en-decoulent)
-- [Propriétaire, comment réviser un loyer d’habitation ?](https://www.service-public.fr/particuliers/vosdroits/F14571)
-- [Loc’Avantages : louez abordable et bénéficiez d’une réduction d’impôt](https://www.service-public.fr/particuliers/vosdroits/F35771)
-- [Tout savoir sur les diagnostics immobiliers](https://www.inc-conso.fr/content/tout-savoir-sur-les-diagnostics-immobiliers)
+## Pour aller plus loin  
+- Obligations professionnelles des diagnostiqueurs dans le secteur de l’immobilier et du logement – DGCCRF  
+- Contrôle des professionnels de l’immobilier – DGCCRF  
+- Professionnels de l’immobilier : les règles à connaître – DGCCRF  
+- Location immobilière saisonnière – DGCCRF  
+- Vente immobilière : les diagnostics obligatoires – INC‑Conso  
+- Encadrement du prix des loyers – INC‑Conso  
+- Logement indécent : que faire ? – INC‑Conso  
+- Logement insalubre ou indécent : exemples jurisprudentiels – INC‑Conso  
+- Ce qu’il faut savoir sur le diagnostic de performance énergétique (DPE) – Service‑public.fr  
+- Logement indigne et non décent : comment réagir ? – INC‑Conso  
+- Étiquette énergétique du DPE : les obligations qui en découlent ! – INC‑Conso  
+- Propriétaire, comment réviser un loyer d’habitation ? – Service‑public.fr  
+- Tout savoir sur les diagnostics immobiliers – INC‑Conso

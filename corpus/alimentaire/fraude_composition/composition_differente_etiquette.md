@@ -1,74 +1,109 @@
 ---
 domaine: alimentaire
-generated_at: '2026-02-25T02:00:22.211056'
+generated_at: '2026-02-25T22:29:57.409708'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 12
 sous_domaine: fraude_composition
 taxonomy_id: composition_differente_etiquette
 title: 'La composition réelle du produit ne correspond pas à l''étiquette (ex : viande
   de cheval vendue comme bœuf)'
-tokens: 8799
+tokens: 10201
 ---
 
-# La composition réelle de mon produit alimentaire ne correspond pas à l'étiquette : que faire ?
+# La composition réelle de mon produit alimentaire ne correspond pas à l’étiquette ? Que faire ?
 
 ## En bref
-Si la composition réelle d'un produit alimentaire ne correspond pas à l'étiquette, vous êtes en droit d'agir. La DGCCRF peut intervenir pour sanctionner ces pratiques trompeuses. Voici les démarches à suivre pour faire valoir vos droits.
+Vous avez acheté un produit dont la composition diffère de ce qui est indiqué sur l’étiquette.  
+Le professionnel doit vous rembourser ou échanger le produit.  
+Vous pouvez aussi signaler la fraude à la DGCCRF et au service SignalConso.  
 
-## De quoi s'agit-il ?
-Il s'agit d'une fraude sur la composition des aliments lorsque le produit acheté ne correspond pas à ce qui est indiqué sur l'étiquette. Cela peut concerner :
-- La nature des ingrédients (ex : viande de cheval vendue comme bœuf)
-- Les pourcentages d'ingrédients
-- Les mentions d'origine
-- Les allégations nutritionnelles ou de qualité
+## De quoi s’agit‑il ?
+Il s’agit d’une fraude sur la composition des aliments.  
+Le produit vendu ne correspond pas à la description, à la liste d’ingrédients ou aux allégations présentes sur l’étiquette.  
+Cette situation touche les viandes, les plats préparés, les fromages, les produits transformés et les œufs.  
+Elle peut concerner la nature de la viande (cheval vendu comme bœuf), le pourcentage d’ingrédients, l’origine géographique ou les mentions « bio », « sans gluten », etc.  
+Les consommateurs qui ont des allergies, des convictions religieuses ou un régime alimentaire particulier sont particulièrement exposés.  
+Les fraudes qui ne concernent pas l’alimentation (par exemple les textiles) ne relèvent pas de cette fiche.  
 
-Cette situation est fréquente dans les produits carnés, les plats préparés, les fromages, et les produits transformés. Elle peut avoir des conséquences sur votre santé, votre budget, ou vos convictions (ex : régime végétarien, allergies alimentaires).
+## Quels sont vos droits ?
+La loi impose aux professionnels d’afficher une information exacte, claire et non trompeuse.  
+L’étiquette doit refléter la composition réelle du produit.  
+La liste des ingrédients doit être complète, précise et classée par ordre décroissant de poids.  
+Les allégations comme « sans OGM », « origine France » ou « bio » doivent être vérifiables.  
+Le vendeur est responsable de la conformité du produit mis en rayon.  
+Si l’étiquette est fausse, vous avez droit à un remboursement intégral ou à un échange.  
+Vous pouvez également demander le retrait du produit du marché.  
+Ces droits s’appliquent dès la découverte de la non‑conformité, sans délai imposé.  
+Aucun frais ne doit vous être facturé pour exercer ces recours.  
+Les exceptions concernent les produits vendus en vrac sans emballage, où la conformité repose sur l’information affichée en magasin.  
 
-## Quels sont vos droits ?
-La loi encadre strictement l'étiquetage des denrées alimentaires pour garantir une information loyale et transparente aux consommateurs. Les professionnels doivent respecter plusieurs obligations :
+## Que faire concrètement ?
+1. **Conservez les preuves** : gardez l’emballage, la facture, le ticket de caisse et, si possible, une photo du produit.  
+2. **Vérifiez la date de péremption** : assurez‑vous que le produit n’est pas périmé, ce qui pourrait compliquer la réclamation.  
+3. **Contactez le vendeur** : appelez ou écrivez le magasin en exposant le problème, joignez les preuves et demandez un remboursement ou un échange.  
+4. **Exigez une réponse écrite** : demandez au vendeur de confirmer sa décision par email ou courrier.  
+5. **Si le vendeur refuse ou ne répond pas** : utilisez la plateforme SignalConso pour signaler le problème.  
+   - Si l’achat a eu lieu en magasin, choisissez la catégorie « AchatMagasin » et suivez le lien dédié.  
+   - Si le produit a été consommé au restaurant, choisissez la catégorie « Restauration ».  
+6. **Saisissez la DGAL ou la DDPP** : remplissez le formulaire en ligne ou adressez un courrier détaillé, en joignant toutes les pièces justificatives.  
+7. **Envisagez le recours au médiateur sectoriel** : si le professionnel appartient à une chaîne ou à une franchise, le médiateur peut intervenir gratuitement.  
+8. **Conservez un suivi** : notez les dates de chaque contact, les noms des interlocuteurs et les réponses reçues.  
 
-1. **Exactitude de l'étiquetage** : Les mentions sur l'étiquette doivent correspondre exactement à la composition réelle du produit.
-2. **Liste des ingrédients** : Elle doit être complète, précise et classée par ordre décroissant de poids.
-3. **Allégations** : Toute mention valorisante (ex : "sans OGM", "origine France") doit être vérifiable et exacte.
-4. **Traçabilité** : Les professionnels doivent pouvoir prouver l'origine et la composition de leurs produits.
+## Exemples / cas concrets  
 
-En cas de non-respect de ces obligations, vous pouvez engager des recours.
+**Situation** : Vous avez acheté un steak haché « 100 % bœuf » en grande surface, mais une analyse révèle de la viande de cheval.  
+**Ce que vous pouvez faire** : Conservez l’emballage, le ticket et le rapport d’analyse. Contactez le magasin, demandez un remboursement. Si le magasin refuse, signalez le problème sur SignalConso via le lien « AchatMagasin ».  
+**Résultat attendu** : Le magasin vous rembourse ou échange le produit. La DGCCRF peut ouvrir une enquête et sanctionner le fournisseur.  
 
-## Que faire concrètement ?
+**Situation** : Vous avez commandé un plat « sans gluten » dans un restaurant, mais vous avez développé des symptômes gastro‑intestinaux.  
+**Ce que vous pouvez faire** : Conservez le ticket, le menu et le certificat médical. Informez le restaurateur, demandez le remboursement du repas. En cas de refus, signalez le problème sur SignalConso via la catégorie « Restauration ».  
+**Résultat attendu** : Le restaurateur vous rembourse. Le service de l’État peut contrôler la conformité des plats servis.  
 
-1. **Conservez les preuves** : Gardez l'emballage, la facture, et toute preuve de l'achat (ticket de caisse, photo du produit, etc.).
-2. **Contactez le vendeur** : Exigez un remboursement ou un échange en présentant les preuves. Le vendeur est responsable de la conformité des produits qu'il vend.
-3. **Signalez le problème** : Utilisez la plateforme [SignalConso](https://signal.conso.gouv.fr) pour alerter les autorités compétentes.
-4. **Saisissez la DGCCRF** : Si le problème persiste, contactez la [DGAL / DDPP](https://agriculture.gouv.fr/dgal) pour une enquête approfondie.
+**Situation** : Vous avez acheté des œufs « bio » dans une épicerie, mais un laboratoire détecte des résidus de pesticides.  
+**Ce que vous pouvez faire** : Gardez les œufs, le ticket et le rapport de laboratoire. Retournez au magasin, réclamez le remboursement. Si le magasin ne répond pas, signalez le produit sur SignalConso (catégorie « AchatMagasin »).  
+**Résultat attendu** : Le magasin vous rembourse ou échange les œufs. La DGAL peut demander le retrait du lot du marché.  
 
-## Exemples / cas concrets
+**Situation** : Vous avez acheté un fromage « origine France » dans une fromagerie, mais l’étiquette indique une origine italienne.  
+**Ce que vous pouvez faire** : Conservez l’étiquette, le ticket et prenez une photo du produit. Contactez le commerçant, demandez un échange ou un remboursement. En cas de refus, utilisez SignalConso.  
+**Résultat attendu** : Le commerçant corrige l’erreur et vous rembourse. Une enquête peut être déclenchée pour vérifier les pratiques d’étiquetage.  
 
-**Situation** : Vous avez acheté un steak haché étiqueté "100% bœuf" mais des analyses révèlent la présence de viande de cheval.
-**Ce que vous pouvez faire** : Conservez l'emballage et le ticket de caisse. Contactez le magasin pour un remboursement. Si le magasin refuse, signalez le problème sur [SignalConso](https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement).
-**Résultat attendu** : Le magasin peut vous rembourser ou échanger le produit. La DGCCRF peut mener une enquête et sanctionner le professionnel si la fraude est avérée.
+## Où signaler / à qui s’adresser ?  
 
-**Situation** : Vous avez acheté un plat préparé étiqueté "sans gluten" mais vous avez une réaction allergique.
-**Ce que vous pouvez faire** : Conservez l'emballage et consultez un médecin pour un certificat médical. Signalez le problème sur [SignalConso](https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement).
-**Résultat attendu** : Le produit peut être retiré de la vente et le professionnel sanctionné pour étiquetage trompeur.
+**Question pivot** : Le produit a‑t‑il été acheté en magasin ou consommé au restaurant ?  
 
-**Situation** : Vous avez acheté des œufs étiquetés "bio" mais des analyses révèlent des traces de pesticides.
-**Ce que vous pouvez faire** : Conservez les œufs et le ticket de caisse. Contactez le magasin pour un remboursement. Si le magasin refuse, signalez le problème sur [SignalConso](https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement).
-**Résultat attendu** : Le magasin peut vous rembourser ou échanger les œufs. La DGCCRF peut mener une enquête et sanctionner le professionnel si la fraude est avérée.
+- **Achat en magasin** :  
+  - **SignalConso – faire un signalement** : <https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement>  
+  - **DGAL / DDPP** : <https://agriculture.gouv.fr/dgal> (pour les fraudes agroalimentaires)  
 
-## Où signaler / à qui s'adresser ?
+- **Consommation au restaurant** :  
+  - **SignalConso – faire un signalement** : <https://signal.conso.gouv.fr/fr/cafe-restaurant/faire-un-signalement>  
+  - **DGAL / DDPP** : même lien que ci‑dessus  
 
-- **SignalConso** : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)
-  - **Achat en magasin** : [https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement](https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement)
-  - **Restaurant** : [https://signal.conso.gouv.fr/fr/cafe-restaurant/faire-un-signalement](https://signal.conso.gouv.fr/fr/cafe-restaurant/faire-un-signalement)
+**Médiateur sectoriel** : si le professionnel appartient à une chaîne, consultez le site du médiateur de la distribution ou du secteur alimentaire (lien généralement indiqué sur le site du commerçant).  
 
-- **DGAL / DDPP** : [https://agriculture.gouv.fr/dgal](https://agriculture.gouv.fr/dgal) (Pour les fraudes sur la production agricole et l'industrie agroalimentaire)
+**Autres contacts** :  
+- Service client du fabricant (adresse souvent indiquée sur l’étiquette).  
+- Association de consommateurs locale pour obtenir un accompagnement gratuit.  
 
-## Pour aller plus loin
+## Sujets proches  
 
-- [Règlement (CE) nº 1760/2000 du Parlement européen et du Conseil du 17 juillet 2000 établissant un système d'identification et d'enregistrement des bovins et concernant l'étiquetage de la viande bovine et des produits à base de viande bovine, et abrogeant le règlement (CE) nº 820/97 du Conseil](https://eur-lex.europa.eu/legal-content/FR/ALL/?uri=CELEX%3A32000R1760)
-- [Règlement (CE) nº 1825/2000 de la Commission du 25 août 2000 portant modalités d'application du règlement (CE) nº 1760/2000 du Parlement européen et du Conseil en ce qui concerne l'étiquetage de la viande bovine et des produits à base de viande bovine](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32000R1825&qid=1738851307312)
-- [Décret n°99-260 du 2 avril 1999 relatif à l'étiquetage et à la traçabilité des viandes bovines](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000210507)
-- [Règlement (UE) n°1169/2011 concernant l’information des consommateurs sur les denrées alimentaires](http://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02011R1169-20140219&qid=1466426347189&from=FR)
-- [Règlement européen n°1337/2013](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2013:335:0019:0022:FR:PDF)
-- [Article 7.1.c) du règlement (UE) n°1169/2011](https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32011R1169&from=fr)
+- **[Allergènes non mentionnés ou masqués](../etiquetage_alimentaire/allergenes_absents.md)** — Si un allergène est absent ou caché sur l’étiquette, le risque pour la santé augmente.  
+- **[Origine du produit mensongère](../../prix_etiquetage/etiquetage_produits/etiquette_mensongere_origine.md)** — Une fausse indication d’origine peut tromper les consommateurs soucieux de provenance.  
+- **[Étiquetage incorrect des produits](../../prix_etiquetage/etiquetage_produits/_index.md)** — Regroupe les erreurs d’information générale, au-delà de la composition.  
+
+## À ne pas confondre  
+
+- **Étiquetage incorrect des produits** — Cette situation porte sur des mentions inexactes (date, poids, etc.) mais pas sur la composition réelle. Le recours se fait auprès du médiateur ou du service client, pas nécessairement via la DGAL.  
+- **Composition textile fausse** — Un vêtement indiqué « 100 % coton » alors qu’il contient du polyester relève du droit de la consommation textile, pas de la sécurité alimentaire. Le signalement se fait auprès de la DGCCRF via la rubrique « Textile », pas via la DGAL.  
+- **Non‑livraison du produit commandé** — Si le produit n’est jamais arrivé, le litige concerne le contrat de vente, pas l’étiquetage. Vous devez d’abord contacter le vendeur, puis recourir à la plateforme de résolution des litiges ou à la justice.  
+
+## Pour aller plus loin  
+
+- [Règlement (CE) n° 1760/2000 du Parlement européen et du Conseil du 17 juillet 2000 – identification et enregistrement des bovins et étiquetage de la viande bovine](https://eur-lex.europa.eu/legal-content/FR/ALL/?uri=CELEX%3A32000R1760)  
+- [Règlement (CE) n° 1825/2000 de la Commission du 25 août 2000 – modalités d’application du règlement n° 1760/2000](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32000R1825&qid=1738851307312)  
+- [Décret n° 99‑260 du 2 avril 1999 – étiquetage et traçabilité des viandes bovines](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000210507)  
+- [Règlement (UE) n° 1169/2011 – information des consommateurs sur les denrées alimentaires](http://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02011R1169-20140219&qid=1466426347189&from=FR)  
+- [Règlement européen n° 1337/2013 – exigences d’étiquetage des produits alimentaires](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2013:335:0019:0022:FR:PDF)  
+- [Article 7.1.c) du règlement (UE) n° 1169/2011 – obligations relatives à la composition des denrées alimentaires](https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32011R1169&from=fr)

@@ -1,55 +1,102 @@
 ---
 domaine: prix_etiquetage
-generated_at: '2026-02-25T10:55:28.621517'
+generated_at: '2026-02-25T22:28:17.568802'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 26
 sous_domaine: affichage_prix
 taxonomy_id: prix_unite_absent
 title: Prix à l'unité de mesure (au kg, au litre) absent ou illisible en rayon
-tokens: 6315
+tokens: 13295
 ---
 
-# Prix à l'unité absent ou illisible : comment réagir ?
+# Prix à l’unité absent ou illisible : comment réagir ?
 
 ## En bref
-L'affichage du prix à l'unité (au kg, au litre) est obligatoire pour certains produits. Si ce prix est absent ou illisible, vous pouvez agir. Voici vos droits et les démarches à suivre.
+L’affichage du prix au kilogramme ou au litre est obligatoire pour la plupart des produits alimentaires et d’hygiène.  
+Si l’étiquette ne montre pas ce prix ou si elle est illisible, vous pouvez exiger la correction.  
+Vous avez le droit d’obtenir une information claire, de signaler le manquement et, le cas échéant, de saisir la DGCCRF.
 
-## De quoi s'agit-il ?
-L'affichage du prix à l'unité de mesure (prix au kilogramme, au litre) est obligatoire pour certains produits préemballés, notamment la majorité des produits alimentaires et certains produits d'hygiène et d'entretien. Cela concerne les produits en rayon, mais aussi les fruits et légumes en vrac.
+## De quoi s’agit‑il ?
+Il s’agit de l’obligation d’indiquer, à côté du prix de vente, le prix à l’unité de mesure (kg, g, litre, cl, ml).  
+Cette règle concerne les produits préemballés et les denrées vendues en vrac, comme les fruits, les légumes, les boissons ou la lessive.  
+Les unités doivent être les unités légales : kilogramme, gramme, litre, centilitre, millilitre, etc.  
 
-Cette obligation ne s'applique pas à certains produits comme les sachets de plantes aromatiques de moins de 30 g, certains sucres, confitures de moins de 50 g, ou certains fromages vendus à la pièce.
+**Ce qui est couvert**  
+- Tous les produits alimentaires emballés (pâtes, biscuits, boissons, etc.).  
+- Les produits d’hygiène et d’entretien (lessive, shampoing, etc.).  
+- Les produits vendus en vrac (fruits, légumes, céréales, boissons en fontaine).  
 
-## Quels sont vos droits ?
-Le professionnel a l'obligation d'afficher le prix à l'unité de mesure pour les produits concernés. Cette information doit être claire et lisible. Si le prix à l'unité est absent ou illisible, le professionnel manque à son obligation d'information envers le consommateur.
+**Ce qui n’est pas couvert**  
+- Sachets de plantes aromatiques de moins de 30 g.  
+- Certains sucres ou confitures de moins de 50 g.  
+- Fromages vendus à la pièce sans emballage.  
 
-Le non-respect de cette obligation peut être sanctionné par une amende administrative pouvant atteindre 15 000 euros pour une personne morale.
+## Quels sont vos droits ?
+Le professionnel doit afficher le prix à l’unité de façon lisible et compréhensible.  
+Si l’information manque ou est illisible, le consommateur peut demander la mise en conformité immédiatement.  
+Le magasin doit corriger l’étiquette dans un délai raisonnable, généralement 48 heures.  
+En cas de refus ou d’inaction, la DGCCRF peut infliger une amende pouvant atteindre 15 000 € à l’entreprise.  
 
-## Que faire concrètement ?
-1. **Vérifiez** si le produit est concerné par l'obligation d'affichage du prix à l'unité.
-2. **Signalez** le problème au responsable du magasin ou au service client.
-3. **Documentez** le problème avec des photos si possible.
-4. **Signalez** le problème sur [SignalConso](https://signal.conso.gouv.fr).
+## Que faire concrètement ?
+1. **Vérifiez** si le produit relève de l’obligation d’affichage du prix à l’unité.  
+   - Consultez l’étiquette du produit ou le présentoir.  
+   - Si le produit est vendu au poids ou au volume, il doit porter le prix au kg ou au litre.  
 
-## Exemples / cas concrets
-**Situation** : Vous achetez des pommes en vrac et le prix au kilo n'est pas affiché.
-**Ce que vous pouvez faire** : Signalez le problème au responsable du rayon ou au service client du magasin. Prenez une photo du rayon sans affichage du prix au kilo.
-**Résultat attendu** : Le magasin corrige l'affichage pour se conformer à la réglementation.
+2. **Informez** le responsable du rayon ou le service client du magasin.  
+   - Dites clairement que le prix à l’unité est absent ou illisible.  
+   - Demandez la mise à jour de l’étiquette dans les plus brefs délais.  
 
-**Situation** : Vous souhaitez acheter une boisson et le prix au litre n'est pas indiqué sur l'étiquette.
-**Ce que vous pouvez faire** : Informez le responsable du magasin de l'absence d'affichage du prix au litre. Signalez le problème sur [SignalConso](https://signal.conso.gouv.fr).
-**Résultat attendu** : Le magasin met à jour l'étiquette pour inclure le prix au litre.
+3. **Documentez** la situation.  
+   - Prenez une photo nette du produit ou du présentoir.  
+   - Notez la date, l’heure et le nom du responsable à qui vous avez parlé.  
 
-**Situation** : Vous remarquez que le prix au kilo est illisible sur un produit de lessive en rayon.
-**Ce que vous pouvez faire** : Prenez une photo de l'étiquette illisible et signalez le problème au service client du magasin. Vous pouvez également signaler le problème sur [SignalConso](https://signal.conso.gouv.fr).
-**Résultat attendu** : Le magasin remplace l'étiquette pour la rendre lisible et conforme à la réglementation.
+4. **Signalez** le problème sur la plateforme officielle.  
+   - Rendez‑vous sur [SignalConso](https://signal.conso.gouv.fr) et remplissez le formulaire.  
+   - Joignez les photos et le descriptif de votre échange avec le magasin.  
 
-## Où signaler / à qui s'adresser ?
-- **SignalConso** : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)
+5. **Envisagez** une réclamation écrite si le magasin ne réagit pas sous 48 heures.  
+   - Adressez une lettre recommandée avec accusé de réception au responsable du magasin.  
+   - Rappelez l’obligation légale et la sanction possible.  
+
+## Exemples / cas concrets  
+
+**Situation** : Vous choisissez des pommes en vrac, mais aucun prix au kilo n’est indiqué.  
+**Ce que vous pouvez faire** : Signalez l’absence au responsable du rayon, prenez une photo du présentoir et envoyez‑la via SignalConso.  
+**Résultat attendu** : Le magasin appose un sticker « 2,99 €/kg » et vous informe que l’étiquette a été mise à jour.  
+
+**Situation** : Vous achetez une bouteille d’eau minérale, mais le prix au litre est flou et partiellement effacé.  
+**Ce que vous pouvez faire** : Demandez au vendeur de vous montrer le prix au litre sur le terminal, puis prenez une photo de l’étiquette illisible.  
+**Résultat attendu** : Le vendeur remplace l’étiquette et vous indique le prix exact : 0,45 €/L.  
+
+**Situation** : Vous repérez une lessive en rayon dont le prix au kilogramme est illisible à cause d’une étiquette déchirée.  
+**Ce que vous pouvez faire** : Signalez le problème au service client, capturez l’image de l’étiquette et remplissez le formulaire SignalConso.  
+**Résultat attendu** : Le magasin réimprime l’étiquette, vous remercie et vous propose un petit geste commercial.  
+
+**Situation** : Vous constatez que le prix au litre d’un soda en fontaine n’apparaît pas sur le tableau d’affichage.  
+**Ce que vous pouvez faire** : Interrogez le personnel, notez le nom du responsable, puis signalez le manquement en ligne.  
+**Résultat attendu** : Le tableau est mis à jour, le prix affiché devient visible pour tous les clients.  
+
+## Où signaler / à qui s’adresser ?
+- **SignalConso** – plateforme officielle de signalement : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)  
+- **Service client du magasin** – adressez‑lui votre demande par écrit ou en personne.  
+- **Médiateur du commerce** – si le magasin ne répond pas, vous pouvez saisir le médiateur du secteur : [Médiateur du commerce](https://www.mediateur-du-commerce.fr) (à utiliser en dernier recours).  
+
+**Question pivot** : le problème concerne‑il un produit en ligne ?  
+- **Oui** : contactez d’abord le service client du site, puis signalez sur SignalConso.  
+- **Non** : suivez les étapes décrites ci‑dessus en magasin.  
+
+## Sujets proches
+- **[Le prix réel est supérieur au prix annoncé (frais cachés, conditions non affichées)](../../pratiques_commerciales/publicite_trompeuse/pub_prix_mensonger.md)** — Vous avez remarqué un écart entre le prix affiché et le prix facturé ? Ce sujet explique comment vérifier et contester les frais cachés.  
+- **[Retard de livraison significatif sans information ni solution proposée](../../contrats_garanties/livraison/retard_livraison.md)** — Si votre commande arrive en retard, découvrez les recours possibles et les délais de réclamation.  
+
+## À ne pas confondre
+- **Le prix réel est supérieur au prix annoncé (frais cachés, conditions non affichées)** — Cette situation porte sur des coûts additionnels non indiqués dès le départ. Le recours passe par la médiation ou le service client, pas par le signalement d’un prix à l’unité manquant.  
+- **Retard de livraison significatif sans information ni solution proposée** — Ici, le problème concerne le respect des délais de livraison, pas l’affichage du prix. Vous devez contacter le transporteur ou le vendeur, puis éventuellement le médiateur du commerce.  
 
 ## Pour aller plus loin
-- [L'information sur les prix](https://www.dgccrf.bercy.gouv.fr/dgccrf/les-fiches-pratiques/linformation-sur-les-prix)
-- [Contrôle des quantités vendues : payer seulement ce que l’on achète](https://www.dgccrf.bercy.gouv.fr/dgccrf/les-fiches-pratiques/controle-des-quantites-vendues-payer-seulement-ce-que-lon-achete)
-- [Présentation et étiquetage en linéaires des vins et spiritueux](https://www.dgccrf.bercy.gouv.fr/dgccrf/les-fiches-pratiques/presentation-et-etiquetage-en-lineaires-des-vins-et-spiritueux)
-- [Article L. 131-5 du code de la consommation](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=8F1374751865BBC96E69EFC5746BD611.tpdila08v_2?cidTexte=LEGITEXT000006069565&idArticle=LEGIARTI000032227132&dateTexte=20160725&categorieLien=id#LEGIARTI000032227132)
-- [Arrêté du 16 novembre 1999](http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000212306&fastPos=31&fastReqId=341588161&categorieLien=id&oldAction=rechTexte)
+- L’information sur les prix – DGCCRF  
+- Contrôle des quantités vendues : payer seulement ce que l’on achète – DGCCRF  
+- Article L. 131‑5 du Code de la consommation (sanction amende) – Légifrance  
+- Arrêté du 16 novembre 1999 (liste des produits soumis à l’obligation d’affichage) – Légifrance

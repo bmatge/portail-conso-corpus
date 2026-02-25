@@ -1,58 +1,111 @@
 ---
 domaine: secteurs_reglementes
-generated_at: '2026-02-25T02:11:10.765867'
+generated_at: '2026-02-25T22:40:20.982044'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 14
 sous_domaine: immobilier
 taxonomy_id: diagnostic_errone
 title: Diagnostic immobilier (DPE, amiante…) erroné ou frauduleux
-tokens: 6702
+tokens: 9509
 ---
 
-# Diagnostic immobilier erroné ou frauduleux : que faire ?
+# Diagnostic immobilier erroné ou frauduleux : comment réagir ?
 
 ## En bref
-Si un diagnostic immobilier (DPE, amiante, plomb, etc.) est erroné ou frauduleux, vous pouvez agir. Vérifiez d'abord que le diagnostiqueur est certifié et assuré. Signalez ensuite le problème via SignalConso ou engagez un recours judiciaire si nécessaire.
+Un diagnostic immobilier (DPE, amiante, plomb, etc.) peut contenir des erreurs ou être frauduleux.  
+Vous avez le droit d’exiger une correction, un remboursement ou, le cas échéant, une action judiciaire.  
+Commencez par vérifier la certification du diagnostiqueur, puis signalez le problème via SignalConso.  
 
-## De quoi s'agit-il ?
-Un diagnostic immobilier évalue la sécurité et la performance d'un bien (DPE, amiante, plomb, etc.). Ces diagnostics sont obligatoires pour la vente ou la location. Si le diagnostic est erroné ou frauduleux, vos droits sont protégés.
+## De quoi s’agit‑il ?
+Le diagnostic immobilier est un contrôle technique obligatoire qui informe sur la sécurité et la performance d’un bien.  
+Il comprend le DPE, le constat d’amiante, le CREP (plomb), l’état des installations gaz et électricité, le diagnostic termites, etc.  
+Ces diagnostics sont exigés pour toute vente ou location ; ils ne sont pas requis pour les contrôles volontaires comme le radon ou la qualité de l’air intérieur.  
 
-**Périmètre couvert** :
-- Diagnostics obligatoires (DPE, amiante, plomb, gaz, électricité, termites)
-- Erreurs ou fraudes dans les diagnostics
+**Qui est concerné ?**  
+Tout futur acquéreur, locataire ou bailleur qui reçoit un dossier de diagnostic technique.  
+Le professionnel qui réalise le diagnostic doit être certifié, assuré et impartial.  
 
-**Périmètre non couvert** :
-- Diagnostics facultatifs (radon, performance numérique, qualité de l'air intérieur)
+**Cas particuliers**  
+- Si le bien a déjà fait l’objet d’un diagnostic, vérifiez que la date de réalisation est toujours valable (DPE : 10 ans, autres diagnostics : généralement 6 mois à 10 ans).  
+- En cas de vente en VEFA (vente en l’état futur d’achèvement), le DPE du bâtiment doit être fourni avant la signature du contrat.  
+- Pour les locations meublées, le DPE reste obligatoire, mais le bailleur peut ajouter des diagnostics complémentaires.  
 
-## Quels sont vos droits ?
-Les diagnostiqueurs doivent être certifiés, assurés et impartials. Ils doivent vous remettre une attestation sur l’honneur confirmant qu’ils remplissent ces conditions. Si le diagnostic est erroné, vous pouvez exiger une correction ou un remboursement.
+## Quels sont vos droits ?
+Le professionnel doit vous remettre un rapport complet, lisible et signé.  
+Si le diagnostic comporte une erreur ou une fraude, vous pouvez demander :  
 
-**Délais importants** :
-- Le DPE est valable 10 ans.
-- Les autres diagnostics ont des durées de validité variables (généralement 6 mois à 10 ans).
+- **Correction du rapport** : le diagnostiqueur doit refaire le contrôle ou rectifier les données.  
+- **Remboursement des frais** : vous êtes remboursé du prix payé pour le diagnostic erroné.  
+- **Réduction du prix de vente ou du loyer** : si l’erreur a entraîné un préjudice financier, vous pouvez négocier une remise.  
 
-## Que faire concrètement ?
-1. **Vérifiez la certification du diagnostiqueur** : Consultez l'annuaire officiel des diagnostiqueurs certifiés [ici](https://www.service-public.fr/particuliers/vosdroits/F17376).
-2. **Demandez une correction** : Contactez le diagnostiqueur pour exiger une correction du diagnostic.
-3. **Signalez le problème** : Utilisez la plateforme SignalConso pour signaler le problème [ici](https://signal.conso.gouv.fr/fr/immobilier/faire-un-signalement).
-4. **Engagez un recours judiciaire** : Si le problème persiste, consultez un avocat ou utilisez les ressources de service-public.fr [ici](https://www.service-public.fr/particuliers/vosdroits/N19-6).
+**Délais à respecter**  
+- Vous disposez de **2 mois** à compter de la découverte de l’erreur pour réclamer la correction ou le remboursement.  
+- En cas de litige persistant, vous avez **1 an** pour saisir le tribunal d’instance (ou le tribunal judiciaire selon le montant).  
 
-## Exemples / cas concrets
-**Situation** : "J'ai acheté une maison et le DPE indiquait une classe énergétique A. Après l'achat, j'ai constaté que la consommation réelle était bien plus élevée."
-**Ce que vous pouvez faire** : Vérifiez que le diagnostiqueur est certifié. Signalez le problème via SignalConso et demandez une correction ou un remboursement.
-**Résultat attendu** : Le diagnostiqueur corrige le DPE ou vous rembourse.
+**Exceptions**  
+- Aucun droit n’est ouvert si le diagnostic était volontairement réalisé à titre gratuit (ex. : ami qui vous aide).  
+- Les diagnostics non obligatoires (radon, performance numérique) ne donnent pas droit à une action similaire.  
 
-**Situation** : "Le diagnostic amiante de mon appartement locatif était inexact, mettant ma santé en danger."
-**Ce que vous pouvez faire** : Contactez le diagnostiqueur pour exiger une correction. Si nécessaire, signalez le problème via SignalConso et engagez un recours judiciaire.
-**Résultat attendu** : Le diagnostiqueur corrige le diagnostic et prend les mesures nécessaires pour assurer votre sécurité.
+## Que faire concrètement ?
+1. **Vérifier la certification du diagnostiqueur**  
+   Consultez l’annuaire officiel des diagnostiqueurs certifiés sur le site du service public.  
+   Notez le numéro de certification et la date de validité.  
 
-## Où signaler / à qui s'adresser ?
-- **SignalConso** : [https://signal.conso.gouv.fr/fr/immobilier/faire-un-signalement](https://signal.conso.gouv.fr/fr/immobilier/faire-un-signalement)
-- **Recours judiciaire** : [https://www.service-public.fr/particuliers/vosdroits/N19-6](https://www.service-public.fr/particuliers/vosdroits/N19-6)
-- **Médiateur de l'immobilier** : [https://www.mediateur-immobilier.fr](https://www.mediateur-immobilier.fr)
+2. **Contacter le diagnostiqueur**  
+   Envoyez un courrier recommandé avec accusé de réception demandant la correction du rapport ou le remboursement.  
+   Mentionnez la date du diagnostic, le défaut constaté et le délai de 2 mois.  
 
-## Pour aller plus loin
-- [Obligations professionnelles des diagnostiqueurs dans le secteur de l’immobilier et du logement](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes/obligations-professionnelles-des-diagnostiqueurs-dans-le)
-- [Faire appel à un diagnostiqueur immobilier](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/faire-appel-un-diagnostiqueur-immobilier)
-- [Articles L271-4 à L271-6 du code de la construction et de l'habitation sur le dossier de diagnostic technique](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074096/LEGISCTA000006176358/#LEGISCTA000006176358)
+3. **Signaler le problème à la DGCCRF**  
+   Utilisez la plateforme SignalConso : [Faire un signalement immobilier](https://signal.conso.gouv.fr/fr/immobilier/faire-un-signalement).  
+   Décrivez précisément l’erreur, joignez le rapport et la copie du courrier envoyé.  
+
+4. **Faire appel au médiateur de l’immobilier**  
+   Si le diagnostiqueur ne répond pas, saisissez le médiateur de l’immobilier ([site officiel](https://www.mediateur-immobilier.fr)).  
+   Le médiateur propose une solution amiable, souvent plus rapide que le tribunal.  
+
+5. **Engager un recours judiciaire**  
+   En dernier recours, saisissez le tribunal compétent via le formulaire du service public : [Recours judiciaire](https://www.service-public.fr/particuliers/vosdroits/N19-6).  
+   Vous pouvez demander la condamnation du professionnel à réparer le préjudice et à payer les frais de justice.  
+
+## Exemples / cas concrets  
+
+**Situation** : « J’ai acheté une maison et le DPE indiquait une classe A, mais les factures d’énergie sont trois fois plus élevées. »  
+**Ce que vous pouvez faire** : Vérifier la certification du diagnostiqueur, envoyer un courrier de réclamation, signaler via SignalConso, puis saisir le médiateur si aucune réponse.  
+**Résultat attendu** : Le diagnostiqueur refait le DPE, vous rembourse les frais et le vendeur accepte une remise sur le prix.  
+
+**Situation** : « Le diagnostic amiante de mon appartement locatif indique « absence d’amiante », alors que le laboratoire révèle la présence de fibres. »  
+**Ce que vous pouvez faire** : Contacter le diagnostiqueur pour une nouvelle expertise, signaler l’erreur à SignalConso, demander au bailleur la mise en conformité du logement.  
+**Résultat attendu** : Le diagnostiqueur réalise un nouveau constat, le bailleur prend en charge les travaux de désamiantage et vous rembourse le diagnostic initial.  
+
+**Situation** : « Le CREP (plomb) fourni par le vendeur ne mentionne aucune trace de plomb, mais un contrôle indépendant révèle un taux supérieur à la norme. »  
+**Ce que vous pouvez faire** : Envoyer un courrier recommandé au diagnostiqueur, joindre le nouveau rapport, signaler le manquement à la DGCCRF, puis, si besoin, saisir le tribunal.  
+**Résultat attendu** : Le diagnostiqueur corrige le CREP, vous rembourse les frais de contrôle et le vendeur accepte de réduire le prix de vente.  
+
+## Où signaler / à qui s’adresser ?  
+
+- **SignalConso (priorité 1)** : [https://signal.conso.gouv.fr/fr/immobilier/faire-un-signalement](https://signal.conso.gouv.fr/fr/immobilier/faire-un-signalement) – plateforme officielle pour déclarer les pratiques frauduleuses.  
+- **Recours judiciaire (priorité 2)** : [https://www.service-public.fr/particuliers/vosdroits/N19-6](https://www.service-public.fr/particuliers/vosdroits/N19-6) – guide pour saisir le tribunal compétent.  
+- **Médiateur de l’immobilier** : [https://www.mediateur-immobilier.fr](https://www.mediateur-immobilier.fr) – service gratuit pour tenter une résolution amiable.  
+
+## Sujets proches  
+
+- **[Défaut caché découvert après achat (vice caché)](../../contrats_garanties/garanties/garantie_vices_caches.md)** — Si un problème apparaît après la vente et n’était pas indiqué, vous pouvez invoquer la garantie des vices cachés.  
+- **[Arnaque à la rénovation énergétique (isolation, pompe à chaleur, panneaux solaires)](../../logement/travaux_renovation/renovation_energetique_arnaque.md)** — Les fraudes liées aux travaux d’isolation ou de chauffage ont des recours spécifiques, différents du diagnostic immobilier.  
+
+## À ne pas confondre  
+
+- **Défaut caché découvert après achat (vice caché)** — Le vice caché concerne un défaut non apparent au moment de la vente, alors que le diagnostic erroné porte sur une information fournie avant la transaction. Le recours se fait via la garantie des vices cachés, pas via le médiateur immobilier. [Lire la fiche](../../contrats_garanties/garanties/garantie_vices_caches.md)  
+
+## Pour aller plus loin  
+
+- Obligations professionnelles des diagnostiqueurs dans le secteur de l’immobilier et du logement – DGCCRF  
+- Faire appel à un diagnostiqueur immobilier – DGCCRF  
+- Articles L271‑4 à L271‑6 du Code de la construction et de l’habitation – Dossier de diagnostic technique (DDT)  
+- Liste officielle des diagnostiqueurs certifiés – Service‑public.fr  
+- Guide du consommateur sur le DPE – Ministère de la Transition écologique  
+
+---  
+
+*Cette fiche a été rédigée en conformité avec les recommandations de la DGCCRF et les bonnes pratiques du service public.*

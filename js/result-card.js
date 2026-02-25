@@ -174,14 +174,18 @@ export function buildClarifyCard(data) {
       <p class="fr-badge fr-badge--info fr-badge--sm fr-badge--no-icon">Question de clarification</p>
       <p class="fr-card__desc" style="margin-top:.5rem;font-weight:600">${question}</p>`;
 
-  if (isPivot) {
-    html += `<p class="fr-text--xs" style="margin-top:.5rem;color:var(--text-mention-grey,#666)">
-      Repondez en quelques mots pour que je puisse vous orienter plus precisement.</p>`;
+  // Quick-reply buttons
+  if (data.options && data.options.length > 0) {
+    html += `<div class="quick-reply-btns" style="margin-top:.65rem;display:flex;flex-wrap:wrap;gap:.4rem">`;
+    for (const opt of data.options) {
+      html += `<button class="fr-btn fr-btn--sm fr-btn--secondary quick-reply-btn">${escHtml(opt)}</button>`;
+    }
+    html += `</div>`;
   }
 
   if (data.candidates && data.candidates.length > 0) {
     html += `<p class="fr-text--xs" style="margin-top:.5rem;color:var(--text-mention-grey,#666)">
-      Situations possibles : ${data.candidates.length} candidat(s) — consultez l'arbre a droite.</p>`;
+      ${data.candidates.length} situation(s) possible(s) — consultez l'arbre a droite.</p>`;
   }
 
   html += `</div></div></div>`;

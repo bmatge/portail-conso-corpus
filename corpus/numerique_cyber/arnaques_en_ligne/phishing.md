@@ -1,94 +1,108 @@
 ---
 domaine: numerique_cyber
-generated_at: '2026-02-25T02:06:34.254686'
+generated_at: '2026-02-25T22:14:52.959602'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 16
 sous_domaine: arnaques_en_ligne
 taxonomy_id: phishing
 title: 'Hameçonnage (phishing) : j''ai reçu un faux email/SMS imitant un organisme
   officiel'
-tokens: 7193
+tokens: 10240
 ---
 
-# J'ai reçu un faux email/SMS imitant un organisme officiel : que faire ?
+# J’ai reçu un faux e‑mail ou SMS qui se fait passer pour un organisme officiel : que faire ?
 
 ## En bref
-Vous avez reçu un message suspect imitant un organisme officiel ? Il s'agit probablement d'une tentative de phishing. Ne répondez pas, ne cliquez sur aucun lien et signalez-le immédiatement. Protégez vos données personnelles et contactez directement l'organisme concerné pour vérifier l'authenticité du message.
+Vous avez reçu un message suspect qui imite une administration, une banque ou tout autre organisme ?  
+Il s’agit très probablement d’une tentative de phishing.  
+Ne répondez pas, ne cliquez sur aucun lien, supprimez le message et signalez‑le rapidement.
 
-## De quoi s'agit-il ?
-Le phishing (ou hameçonnage) est une technique frauduleuse utilisée pour obtenir des informations personnelles ou bancaires en se faisant passer pour un organisme de confiance. Ces messages peuvent prendre la forme d'emails, de SMS ou même d'appels téléphoniques. Ils incitent souvent à cliquer sur un lien ou à fournir des informations sensibles.
+## De quoi s’agit‑il ?
+Le phishing, ou hameçonnage, désigne l’envoi d’un e‑mail, d’un SMS ou d’un message instantané qui se fait passer pour un tiers de confiance.  
+Le but est de vous pousser à communiquer des informations personnelles (identifiants, mots de passe, coordonnées bancaires) ou à cliquer sur un lien menant à un site frauduleux.
 
-**Qui est concerné ?**
-Tous les utilisateurs de services en ligne, particuliers comme professionnels, peuvent être victimes de phishing. Les fraudeurs ciblent souvent les banques, les administrations publiques et les services de paiement en ligne.
+**Qui est concerné ?**  
+Tous les usagers d’Internet, que vous soyez particulier ou professionnel, pouvez être ciblés.  
+Les fraudeurs visent le plus souvent les banques, les services fiscaux, les assurances, les opérateurs télécoms et les plateformes de paiement.
 
-**Périmètre couvert**
-- Faux emails ou SMS imitant des organismes officiels
-- Demandes d'informations personnelles ou bancaires
-- Liens vers des sites frauduleux
+**Périmètre couvert**  
+- E‑mails ou SMS qui imitent un organisme officiel.  
+- Demandes d’informations personnelles, bancaires ou de connexion.  
+- Liens qui redirigent vers des sites imitant l’URL officielle.
 
-**Périmètre non couvert**
-- Arnaques par téléphone sans envoi de message écrit
-- Fraudes ne concernant pas des organismes officiels
+**Périmètre non couvert**  
+- Arnaques téléphoniques sans message écrit.  
+- Phishing qui ne cible pas un organisme public ou reconnu (ex. : faux messages d’un ami sans usurpation d’institution).  
+- Tentatives de fraude qui n’impliquent pas de demande d’informations sensibles.
 
-## Quels sont vos droits ?
-En cas de phishing, vous avez le droit de :
-- Signaler le message frauduleux aux autorités compétentes
-- Faire opposition sur vos moyens de paiement en cas de débit frauduleux
-- Porter plainte pour usurpation d'identité ou escroquerie
-- Exiger des mesures de sécurité renforcées de la part des organismes concernés
+## Quels sont vos droits ?
+- Vous avez le droit d’être informé : aucun organisme ne doit vous demander vos codes bancaires ou mots de passe par e‑mail ou SMS.  
+- Vous pouvez exiger la suppression du message frauduleux des serveurs du site qui l’a diffusé (Signal Spam le retire rapidement).  
+- Vous avez le droit de faire opposition immédiatement auprès de votre banque si vous avez communiqué un moyen de paiement.  
+- Vous pouvez porter plainte pour usurpation d’identité ou escroquerie auprès des forces de l’ordre.  
+- Vous pouvez demander à l’organisme usurpé de prendre des mesures de sécurité supplémentaires (ex. : authentification renforcée).
 
-## Que faire concrètement ?
-1. **Ne répondez pas** au message et ne cliquez sur aucun lien
-2. **Supprimez le message** et videz votre corbeille
-3. **Contactez directement** l'organisme imité pour vérifier l'authenticité du message
-4. **Changez vos mots de passe** si vous avez fourni des informations sensibles
-5. **Faites opposition** auprès de votre banque en cas de débit frauduleux
-6. **Déposez plainte** au commissariat ou à la gendarmerie
-7. **Signalez le message** sur les plateformes dédiées
+## Que faire concrètement ?
+1. **Ne répondez pas** au message et n’installez aucune pièce jointe.  
+2. **Ne cliquez sur aucun lien** ; passez votre souris dessus pour vérifier l’adresse affichée.  
+3. **Supprimez le message** puis videz la corbeille ou le dossier « Messages supprimés ».  
+4. **Contactez l’organisme** en utilisant les coordonnées officielles (site web, numéro indiqué sur vos documents).  
+5. **Changez immédiatement vos mots de passe** si vous avez saisi des identifiants sur le faux site.  
+6. **Faites opposition** auprès de votre banque ou de l’émetteur de votre carte dès que possible.  
+7. **Déposez une plainte** en ligne ou au commissariat le plus proche.  
+8. **Signalez le message** aux plateformes spécialisées (voir section « Où signaler »).  
 
-## Exemples / cas concrets
+## Exemples / cas concrets  
 
-**Situation** : Vous recevez un email prétendant provenir de votre banque, vous demandant de mettre à jour vos informations personnelles en cliquant sur un lien.
-**Ce que vous pouvez faire** :
-- Ne cliquez pas sur le lien
-- Contactez votre banque via les coordonnées officielles figurant sur votre contrat
-- Signalez le message sur [Signal Spam](https://www.signal-spam.fr)
-**Résultat attendu** : Votre banque confirmera qu'il s'agit d'une tentative de phishing et vous conseillera sur les mesures à prendre. Le message sera retiré des serveurs de Signal Spam.
+**Situation** : Vous recevez un e‑mail prétendant provenir de votre banque, vous demandant de « valider une opération urgente » via un bouton.  
+**Ce que vous pouvez faire** :  
+- Ne cliquez pas sur le bouton.  
+- Vérifiez l’adresse du lien en la survolant ; elle ne comporte pas le nom exact de votre banque.  
+- Appelez le service client au numéro indiqué sur votre carte bancaire.  
+- Signalez le mail sur [Signal Spam](https://www.signal-spam.fr).  
+**Résultat attendu** : La banque confirme qu’il s’agit d’une tentative de phishing et vous conseille de surveiller vos comptes.
 
-**Situation** : Vous recevez un SMS vous informant d'un problème avec votre compte impots.gouv.fr et vous demandant de cliquer sur un lien pour le résoudre.
-**Ce que vous pouvez faire** :
-- Ne répondez pas au SMS
-- Supprimez le message
-- Contactez directement les impôts via leur numéro officiel : 0 809 401 401
-- Signalez le message sur [Cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr)
-**Résultat attendu** : Les impôts confirmeront qu'il s'agit d'une tentative de phishing. Le message sera signalé aux autorités compétentes.
+**Situation** : Un SMS vous informe que votre dossier fiscal a été bloqué et vous invite à cliquer sur un lien pour le débloquer.  
+**Ce que vous pouvez faire** :  
+- Ne cliquez pas sur le lien.  
+- Supprimez le SMS et videz la corbeille.  
+- Composez le numéro officiel des impôts : 0 809 401 401.  
+- Signalez le SMS sur [Cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr).  
+**Résultat attendu** : Les services fiscaux vous assurent que votre dossier est en règle et vous indiquent les bonnes démarches.
 
-## Où signaler / à qui s'adresser ?
+**Situation** : Vous recevez un message instantané d’un « ami » qui vous demande de récupérer son compte en vous donnant un lien de connexion.  
+**Ce que vous pouvez faire** :  
+- Contactez votre ami par téléphone ou via un autre canal pour vérifier la demande.  
+- Ne saisissez aucune information sur le site proposé.  
+- Transférez le message au service informatique si vous êtes en entreprise.  
+- Signalez le message sur [17Cyber](https://www.17cyber.gouv.fr).  
+**Résultat attendu** : Votre ami confirme qu’il n’a pas envoyé le message et vous évitez une compromission de vos identifiants.
 
-1. **Signal Spam** : [https://www.signal-spam.fr](https://www.signal-spam.fr) (priorité 1)
-2. **Cybermalveillance.gouv.fr** : [https://www.cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr) (priorité 2)
-3. **17Cyber** : [https://www.17cyber.gouv.fr](https://www.17cyber.gouv.fr) (priorité 2)
-4. **PHAROS** : [https://www.internet-signalement.gouv.fr/PortailWeb/planets/Accueil!input.action](https://www.internet-signalement.gouv.fr/PortailWeb/planets/Accueil!input.action)
-5. **Phishing Initiative** : [https://phishing-initiative.fr/contrib/](https://phishing-initiative.fr/contrib/)
-6. **Info Escroqueries** : 0 805 805 817 (numéro gratuit)
+## Où signaler / à qui s’adresser ?
+
+| Priorité | Service | Lien |
+|---|---|---|
+| 1 | **Signal Spam** – plateforme officielle de signalement des spams et phishing | <https://www.signal-spam.fr> |
+| 2 | **Cybermalveillance.gouv.fr** – aide aux victimes de cyber‑attaques | <https://www.cybermalveillance.gouv.fr> |
+| 2 | **17Cyber** – service d’assistance aux particuliers et entreprises | <https://www.17cyber.gouv.fr> |
+
+*Le phishing ne concerne pas un professionnel identifié, donc SignalConso n’est pas applicable directement.*  
+En complément, vous pouvez déposer une plainte en ligne via le site du ministère de l’Intérieur : <https://www.internet-signalement.gouv.fr> (plateforme PHAROS).  
+
+## Sujets proches
+- **[Des avis clients semblent faux ou achetés](../../pratiques_commerciales/faux_avis/faux_avis_client.md)** — Vous avez repéré des avis qui ne sont pas authentiques, un problème de confiance en ligne différent du phishing.  
+- **[Je pense avoir acheté un produit faisant l’objet d’un rappel](../../securite_produits/produit_dangereux/produit_sous_rappel.md)** — Le rappel d’un produit dangereux relève de la sécurité des biens, pas de la fraude numérique.  
+
+## À ne pas confondre
+- **Des avis clients semblent faux ou achetés** — Ici, le problème porte sur la véracité des témoignages en ligne, pas sur une tentative d’obtenir vos données personnelles. Le recours se fait auprès du médiateur des plateformes ou via la plateforme 17Cyber, pas via les services de cybersécurité.  
+- **Produit rappelé** — Un rappel de produit implique le fabricant et les autorités de santé, alors que le phishing vise à usurper l’identité d’un organisme. Les démarches sont donc distinctes.  
 
 ## Pour aller plus loin
-
-**Code pénal :**
-- Usurpation d'identité (article 226-4-1)
-- Collecte de données à caractère personnel par un moyen frauduleux (article 226-18)
-- Escroquerie (article 313-1)
-
-**Code monétaire et financier :**
-- Contrefaçon et usage frauduleux de moyen de paiement (articles L163-3 et L163-4)
-
-**Code de la propriété intellectuelle :**
-- Contrefaçon des marques (articles L.713-2 et L.713-3)
-
-**Ressources utiles :**
-- [Guide de prévention contre les arnaques](https://www.douane.gouv.fr/sites/default/files/2021-03/25/guide-de-prevention-contre-les-arnaques-sur-internet.pdf)
-- [www.cybermalveillance.fr](https://www.cybermalveillance.gouv.fr/)
-- [Phishing-initiative.fr](https://phishing-initiative.fr/contrib/)
-- [Signal-spam.fr](https://www.signal-spam.fr/)
-- [Info escroqueries](https://www.police-nationale.interieur.gouv.fr/Actualites/Dossiers/Info-Escroqueries) au 0 805 805 817 (numéro gratuit)
+- **Code pénal** : articles 226‑4‑1 (usurpation d’identité), 226‑18 (collecte frauduleuse de données), 313‑1 (escroquerie).  
+- **Code monétaire et financier** : articles L163‑3 et L163‑4 (usage frauduleux de moyens de paiement).  
+- **Guide de prévention contre les arnaques sur internet** : <https://www.douane.gouv.fr/sites/default/files/2021-03/25/guide-de-prevention-contre-les-arnaques-sur-internet.pdf>  
+- **Cybermalveillance.gouv.fr – fiches pratiques** : <https://www.cybermalveillance.gouv.fr>  
+- **Signal Spam – procédure de retrait** : <https://www.signal-spam.fr>  
+- **PHAROS – plateforme de signalement** : <https://www.internet-signalement.gouv.fr>

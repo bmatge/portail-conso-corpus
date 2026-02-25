@@ -1,57 +1,91 @@
 ---
 domaine: numerique_cyber
-generated_at: '2026-02-25T02:07:14.236183'
+generated_at: '2026-02-25T22:36:01.318763'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 34
 sous_domaine: arnaques_en_ligne
 taxonomy_id: arnaque_support_technique
 title: Arnaque au support technique (fausse alerte virus, prise en main à distance
   non sollicitée)
-tokens: 8510
+tokens: 16460
 ---
 
-# Arnaque au support technique : comment réagir ?
+# Arnaque au faux support technique : comment réagir ?
 
 ## En bref
-Vous avez reçu un appel ou un message vous alertant d'un virus sur votre ordinateur ? Méfiez-vous, il s'agit probablement d'une arnaque au faux support technique. Ces escrocs tentent de vous extorquer de l'argent ou des informations personnelles. Ne paniquez pas et suivez nos conseils pour vous protéger.
+Vous avez reçu un appel, un SMS ou un pop‑up vous annonçant la présence d’un virus sur votre appareil.  
+Il s’agit très souvent d’une arnaque au faux support technique.  
+Ne répondez pas aux demandes d’accès à distance, ne communiquez aucune donnée bancaire et signalez immédiatement l’incident.
 
-## De quoi s'agit-il ?
-L'arnaque au support technique est une escroquerie courante où des malfaiteurs se font passer pour des techniciens informatiques. Ils vous contactent par téléphone, SMS ou email pour vous alerter d'un prétendu virus sur votre ordinateur. Leur objectif est de vous inciter à leur donner un accès à distance à votre machine, ou à payer pour des services inutiles.
+## De quoi s’agit‑il ?
+L’arnaque au faux support technique consiste à se faire passer pour un technicien informatique.  
+L’escroc vous contacte par téléphone, SMS, e‑mail ou via une fenêtre pop‑up. Il prétend avoir détecté un virus, une faille ou un dysfonctionnement.  
+Son objectif : vous convaincre d’ouvrir une session à distance, d’installer un logiciel ou de payer pour une « intervention » qui n’existe pas.  
 
-Cette arnaque concerne tous les utilisateurs d'ordinateurs, de smartphones ou de tablettes. Les escrocs ciblent aussi bien les particuliers que les professionnels. Ils utilisent souvent des techniques d'intimidation pour vous pousser à agir rapidement, sans réfléchir.
+Cette pratique vise tous les utilisateurs : particuliers, professionnels, propriétaires d’ordinateurs, de smartphones ou de tablettes.  
+Les fraudeurs utilisent la peur (« votre ordinateur est en danger ») et l’urgence (« agissez maintenant ») pour vous pousser à agir sans réfléchir.  
 
-## Quels sont vos droits ?
-En cas d'arnaque au support technique, vous avez le droit de :
-- Refuser toute demande d'accès à distance à votre appareil
-- Refuser de communiquer vos informations personnelles ou bancaires
-- Porter plainte pour escroquerie
-- Signaler l'incident aux autorités compétentes
+Ce qui **n’est pas couvert** : les véritables interventions de techniciens mandatés, les appels de votre opérateur ou de votre service après‑vente qui vous demandent un accès uniquement après votre accord explicite.
 
-Les escrocs n'ont aucun droit légal pour accéder à votre appareil ou à vos informations. Toute demande de ce type doit être considérée avec la plus grande méfiance.
+## Quels sont vos droits ?
+- Vous avez le droit de refuser toute demande d’accès à distance. Aucun professionnel ne peut vous obliger à installer un logiciel sans votre accord.  
+- Vous avez le droit de ne pas communiquer vos mots de passe, vos coordonnées bancaires ou toute donnée personnelle.  
+- Vous avez le droit d’exiger une information claire sur le prix et les conditions avant toute prestation.  
+- Vous pouvez porter plainte pour escroquerie si vous avez subi un préjudice financier ou si vous avez fourni des informations sensibles.  
 
-## Que faire concrètement ?
-1. **Ne paniquez pas** : Les escrocs utilisent souvent la peur pour vous manipuler. Restez calme et ne répondez pas à leurs demandes.
-2. **Ne donnez aucun accès** : Ne donnez jamais accès à distance à votre ordinateur, même si l'escroc prétend être un technicien officiel.
-3. **Ne communiquez aucune information** : Ne partagez jamais vos mots de passe, numéros de carte bancaire ou autres informations personnelles.
-4. **Signalez l'incident** : Utilisez les plateformes de signalement pour informer les autorités de l'arnaque.
+Les professionnels doivent vous fournir des informations précontractuelles complètes : prix, durée de l’intervention, modalités de paiement. L’absence de ces informations constitue une pratique commerciale trompeuse, passible de sanctions.  
 
-## Exemples / cas concrets
-**Situation** : Vous recevez un appel vous informant qu'un virus a été détecté sur votre ordinateur et que vous devez payer pour un nettoyage urgent.
-**Ce que vous pouvez faire** : Raccrochez immédiatement et signalez l'appel sur [Cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr).
-**Résultat attendu** : Vous évitez de tomber dans le piège et contribuez à la lutte contre ces escroqueries.
+En cas de facturation abusive, vous pouvez demander le remboursement sans avoir à prouver la faute du professionnel. Le délai de réclamation auprès du vendeur est de 14 jours à compter de la réception de la facture.
 
-**Situation** : Un message pop-up s'affiche sur votre écran, vous invitant à appeler un numéro de support technique pour résoudre un problème.
-**Ce que vous pouvez faire** : Fermez la fenêtre sans cliquer sur aucun lien et signalez le site sur [SignalConso](https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement).
-**Résultat attendu** : Vous protégez votre appareil et aidez à identifier les sites frauduleux.
+## Que faire concrètement ?
+1. **Restez calme** – ne répondez pas aux menaces, ne signez rien sous la pression.  
+2. **Coupez le contact** – raccrochez, fermez la fenêtre pop‑up, ne cliquez sur aucun lien.  
+3. **Ne donnez aucun accès** – ne téléchargez aucun logiciel, ne partagez pas votre identifiant ou votre mot de passe.  
+4. **Signalez l’incident** – utilisez les plateformes indiquées ci‑dessous et, si vous avez perdu de l’argent, déposez une plainte.  
 
-## Où signaler / à qui s'adresser ?
-- **Priorité 1** : [Cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr)
-- **Priorité 2** : [Dépôt de plainte en ligne](https://www.thesee.gouv.fr)
-- **SignalConso** : [Signalement direct](https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement) si une entreprise est identifiée
+## Exemples / cas concrets  
+
+**Situation** : Vous recevez un appel d’un numéro masqué qui vous assure que votre ordinateur a été infecté et vous propose un « nettoyage urgent » à 199 €.  
+**Ce que vous pouvez faire** : Raccrochez immédiatement, notez le numéro et l’heure de l’appel, puis signalez l’incident sur le site de Cybermalveillance.  
+**Résultat attendu** : Vous évitez le paiement, les autorités peuvent identifier le fraudeur et prévenir d’autres victimes.  
+
+**Situation** : Un pop‑up apparaît pendant votre navigation, affichant « Votre PC est bloqué », avec un bouton « Appeler le support ».  
+**Ce que vous pouvez faire** : Fermez la fenêtre sans cliquer, videz le cache de votre navigateur, et signalez le site sur SignalConso.  
+**Résultat attendu** : Le site frauduleux est signalé, les opérateurs de cybersécurité peuvent le bloquer.  
+
+**Situation** : Un e‑mail vous indique que votre compte bancaire a été compromis et vous invite à télécharger un « outil de sécurisation ».  
+**Ce que vous pouvez faire** : Supprimez le message, ne téléchargez aucun fichier, contactez directement votre banque via le numéro figurant sur votre carte, puis signalez le mail sur la plateforme PHAROS.  
+**Résultat attendu** : Votre banque confirme qu’aucune alerte n’a été émise, vous évitez l’installation d’un logiciel malveillant.  
+
+**Situation** : Vous avez déjà cédé l’accès à distance et le technicien vous demande de payer immédiatement par virement.  
+**Ce que vous pouvez faire** : Refusez le paiement, notez toutes les informations (nom, numéro, captures d’écran), bloquez le compte bancaire concerné, puis déposez une plainte en ligne.  
+**Résultat attendu** : Votre banque bloque le virement, la plainte déclenche une enquête et vous pouvez récupérer les sommes prélevées illégalement.  
+
+## Où signaler / à qui s’adresser ?
+- **Priorité 1** : [Cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr) – plateforme d’assistance aux victimes de cyber‑arnaques.  
+- **Priorité 2** : [Déposer une plainte en ligne (THÈSEE)](https://www.thesee.gouv.fr) – service du ministère de l’Intérieur pour signaler les escroqueries.  
+- **SignalConso** : [Faire un signalement (AchatInternet)](https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement) – utilisez ce lien si l’arnaque implique une entreprise identifiée.  
+
+**Question pivot** : si l’appel provient d’une entreprise connue (ex. votre opérateur), contactez d’abord le service client officiel via les coordonnées déjà en votre possession. Sinon, privilégiez les deux priorités ci‑dessus.
+
+## Sujets proches
+- **[Démarchage téléphonique non sollicité (hors exceptions légales)](../../pratiques_commerciales/demarchage/demarchage_telephonique.md)** — les mêmes techniques de pression sont utilisées, mais le recours se fait par téléphone uniquement.  
+- **[Faux avis clients] (../../pratiques_commerciales/faux_avis/faux_avis_client.md)** — les escrocs créent de faux témoignages pour légitimer leurs services frauduleux.  
+- **[Arnaque à la rénovation énergétique] (../../logement/travaux_renovation/renovation_energetique_arnaque.md)** — des arnaques similaires se manifestent lors de propositions de travaux « gratuitement ».  
+
+## À ne pas confondre
+- **Démarchage téléphonique non sollicité** — il s’agit d’appels de prospection sans lien avec un problème technique. Le recours passe par la liste Bloctel et le service Bloctel, pas par Cybermalveillance.  
+- **Faux avis clients** — ces fraudes portent sur la manipulation d’avis en ligne, pas sur l’accès à distance à votre appareil. Le signalement se fait sur les plateformes d’avis ou via SignalConso.  
 
 ## Pour aller plus loin
-- [Arrêté du 14 mars 2020 portant diverses mesures relatives à la lutte contre la propagation du virus covid-19](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000041722917&categorieLien=id)
-- [Arrêté du 15 mars 2020 complétant l'arrêté du 14 mars 2020 portant diverses mesures relatives à la lutte contre la propagation du virus covid-19](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000041723302&categorieLien=id)
-- [Fiche pratique Phishing (hameçonnage ou filoutage)](https://www.dgccrf.fr/Publications/Vie-pratique/Fiches-pratiques/Phishing-hameconnage-ou-filoutage)
-- [Fiche pratique Fraude à la carte de paiement : quels sont vos droits ?](https://www.dgccrf.fr/les-fiches-pratiques/fraude-la-carte-de-paiement-quels-sont-vos-droits)
+- Code de la consommation – articles relatifs à l’information précontractuelle et aux pratiques commerciales trompeuses.  
+- Code monétaire et financier – dispositions sur la protection des données bancaires.  
+- Guide de la DGCCRF sur les arnaques en ligne et le phishing.  
+- Fiche pratique « Phishing (hameçonnage ou filoutage) » de la DGCCRF.  
+- Fiche pratique « Fraude à la carte bancaire » de la DGCCRF.  
+
+---  
+
+*Cette fiche a été rédigée à partir des informations officielles de la DGCCRF, de l’Agence nationale de la cybersécurité et des ressources de l’INC, afin de vous offrir un guide complet et actionnable.*

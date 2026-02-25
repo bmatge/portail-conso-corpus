@@ -192,6 +192,14 @@ window.addEventListener('DOMContentLoaded', async () => {
 
   // Delegation pour les boutons dans les result cards
   document.getElementById('conversation').addEventListener('click', e => {
+    // Quick-reply buttons (agent clarification)
+    const quickBtn = e.target.closest('.quick-reply-btn');
+    if (quickBtn) {
+      const input = document.getElementById('user-input');
+      input.value = quickBtn.textContent;
+      sendMessage(state);
+      return;
+    }
     const pivotBtn = e.target.closest('.pivot-btn[data-url]');
     if (pivotBtn) {
       window.open(pivotBtn.dataset.url, '_blank');

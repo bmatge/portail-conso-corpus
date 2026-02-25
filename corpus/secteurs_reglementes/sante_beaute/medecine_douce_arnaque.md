@@ -1,80 +1,110 @@
 ---
 domaine: secteurs_reglementes
-generated_at: '2026-02-25T02:19:14.051359'
+generated_at: '2026-02-25T22:51:38.196810'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 18
 sous_domaine: sante_beaute
 taxonomy_id: medecine_douce_arnaque
 title: Praticien de médecine alternative facturant des soins inefficaces présentés
   comme curatifs
-tokens: 8641
+tokens: 13525
 ---
 
-# Un praticien de médecine alternative vous facture des soins inefficaces présentés comme curatifs : que faire ?
+# Praticien de médecine alternative : il vous facture des soins inefficaces présentés comme curatifs – que faire ?
 
 ## En bref
+Vous avez payé des séances de médecine douce qui ne guérissent pas la maladie annoncée.  
+Le professionnel a manqué à son obligation d’information claire et a fait des allégations thérapeutiques interdites.  
+Vous pouvez contester la facture, demander un remboursement et signaler l’infraction à la DGCCRF.
 
-Si un praticien de médecine alternative vous facture des soins inefficaces présentés comme curatifs, vous êtes en droit de contester ces pratiques. Les professionnels doivent respecter des règles strictes en matière d'information et de publicité. Vous pouvez agir pour faire valoir vos droits et signaler les abus.
+## De quoi s'agit‑il ?
+Il s’agit de prestations proposées par des praticiens de médecines non conventionnelles (naturopathie, acupuncture, homéopathie, sophrologie, etc.) qui ne sont pas reconnues comme soins médicaux classiques.  
+Ces praticiens ne sont pas soumis à l’obligation de diplôme d’État, mais ils restent soumis aux règles de protection du consommateur.
 
-## De quoi s'agit-il ?
+**Qui est concerné ?**  
+- Vous, consommateur qui a reçu une prestation de médecine alternative.  
+- Le praticien ou le centre qui propose ces soins.  
 
-Les pratiques de soins non conventionnelles, souvent appelées « médecines douces » ou « alternatives », incluent des disciplines comme la naturopathie, l'acupuncture, l'homéopathie, etc. Ces pratiques ne sont pas reconnues comme des soins médicaux conventionnels et ne peuvent pas être présentées comme telles.
+**Périmètre couvert :**  
+- Publicité ou promesse de guérison de maladies graves (cancer, Parkinson, Alzheimer…).  
+- Facturation de prestations présentées comme curatives alors qu’elles ne le sont pas.  
+- Clauses abusives dans les conditions générales de vente (ex. : interdiction de demander un remboursement).  
 
-**Qui est concerné ?**
-- Tous les consommateurs ayant recours à des praticiens de médecine alternative.
-- Les professionnels proposant des soins non conventionnels.
+**Périmètre non couvert :**  
+- Conseils informels entre particuliers sans échange d’argent.  
+- Soins purement esthétiques ou de bien‑être qui ne prétendent pas guérir.  
 
-**Périmètre couvert**
-- Les pratiques commerciales trompeuses (allégations thérapeutiques non justifiées).
-- L'exercice illégal de la médecine.
-- Les clauses abusives dans les conditions générales de vente.
+## Quels sont vos droits ?
+- **Information précontractuelle** : le professionnel doit vous indiquer clairement que la prestation n’est pas médicale et vous communiquer le prix avant la séance.  
+- **Interdiction des allégations thérapeutiques** : il ne peut pas dire que son traitement « guérit » une maladie reconnue.  
+- **Affichage des tarifs** : les prix doivent être visibles, lisibles et ne pas dépasser le montant annoncé.  
+- **Facture ou ticket** : dès que le montant dépasse 25 €, vous avez droit à une facture détaillée.  
+- **Absence de clauses abusives** : aucune clause ne peut vous priver du droit de réclamation ou de remboursement.  
+- **Délai de réclamation** : vous disposez de deux mois à compter de la réception de la facture pour contester le montant ou la nature de la prestation.  
+- **Recours gratuit** : vous pouvez saisir la DGCCRF via SignalConso sans frais.  
 
-**Périmètre non couvert**
-- Les pratiques non commerciales entre particuliers.
-- Les conseils non thérapeutiques.
+## Que faire concrètement ?
+1. **Vérifiez les promesses** – relevez chaque phrase où le praticien affirme guérir ou soulager une pathologie précise.  
+2. **Collectez les preuves** – conservez devis, factures, courriels, captures d’écran du site ou des publicités, et tout échange écrit.  
+3. **Comparez les tarifs** – assurez‑vous que le prix facturé correspond à celui indiqué avant la séance.  
+4. **Contactez le praticien** – envoyez une lettre recommandée avec accusé de réception demandant le remboursement ou la remise en conformité du contrat, en citant le manquement à l’obligation d’information.  
+5. **Saisissez la DGCCRF** – si aucune réponse satisfaisante n’est reçue sous 15 jours, remplissez le formulaire de signalement sur SignalConso (lien direct ci‑dessous).  
+6. **Envisagez un médiateur** – si le praticien appartient à une fédération reconnue, vous pouvez recourir à son médiateur de la consommation (adresse à demander au praticien).  
+7. **Recours judiciaire** – en dernier recours, saisissez le tribunal d’instance pour obtenir le remboursement et, le cas échéant, des dommages‑intérêts.  
 
-## Quels sont vos droits ?
+## Exemples / cas concrets  
 
-Les professionnels de médecine alternative doivent respecter plusieurs obligations légales :
+**Situation 1** : Vous avez suivi 10 séances d’acupuncture pour « guérir votre arthrite » après que le praticien vous ait promis une amélioration complète en un mois.  
+**Ce que vous pouvez faire** :  
+- Rassembler les factures, le programme de traitement et les messages où la guérison était annoncée.  
+- Envoyer une lettre recommandée demandant le remboursement intégral, car la prestation ne correspond pas à une cure reconnue.  
+- Signaler le praticien sur SignalConso en joignant les pièces.  
+**Résultat attendu** : Le praticien propose un remboursement ou un geste commercial ; la DGCCRF ouvre une enquête et peut infliger une sanction.  
 
-1. **Information claire et précise** : Les praticiens doivent informer clairement sur la nature non médicale de leurs prestations et leurs tarifs.
-2. **Interdiction des allégations thérapeutiques** : Ils ne peuvent pas affirmer que leurs soins guérissent des maladies ou des pathologies graves.
-3. **Affichage des prix** : Les tarifs des prestations doivent être affichés de manière visible et compréhensible.
-4. **Interdiction des clauses abusives** : Les conditions générales de vente ne doivent pas contenir de clauses abusives ou illicites.
+**Situation 2** : Une naturopathe vous a facturé 800 € pour un « programme de désintoxication du corps » censé éliminer le cancer. Aucun diagnostic médical n’a été fourni.  
+**Ce que vous pouvez faire** :  
+- Conserver le devis, le reçu et les emails où le cancer était mentionné.  
+- Exiger, par courrier recommandé, la restitution de la somme sous 15 jours, en rappelant l’interdiction de faire des allégations thérapeutiques.  
+- Déposer un signalement sur SignalConso avec les pièces jointes.  
+**Résultat attendu** : Vous récupérez tout ou partie des 800 €, le praticien est mis en demeure de cesser ces pratiques, et une procédure pénale peut être engagée.  
 
-## Que faire concrètement ?
+**Situation 3** : Un sophrologue vous a facturé 120 € pour une « cure de guérison du stress post‑traumatique » sans vous informer que la séance était purement relaxante.  
+**Ce que vous pouvez faire** :  
+- Vérifier que le prix indiqué sur le site était de 80 € et que la facture dépasse ce montant.  
+- Demander la différence de 40 € et la rectification du contrat, car le prix n’a pas été affiché clairement.  
+- Si le sophrologue ne répond pas, signaler l’anomalie sur SignalConso.  
+**Résultat attendu** : Le professionnel ajuste la facture, vous rembourse la différence et met à jour son affichage des tarifs.  
 
-1. **Vérifiez les allégations** : Assurez-vous que le praticien ne fait pas de promesses de guérison pour des maladies graves.
-2. **Consultez les tarifs** : Vérifiez que les prix sont affichés et conformes à ce qui vous a été annoncé.
-3. **Conservez les preuves** : Gardez toutes les preuves de vos échanges avec le praticien (devis, factures, emails, etc.).
-4. **Contactez le praticien** : Exigez un remboursement ou une réduction des frais si les prestations ne correspondent pas à ce qui a été annoncé.
-5. **Signalez le professionnel** : Si le praticien ne répond pas à vos demandes, signalez-le à la DGCCRF via [SignalConso](https://signal.conso.gouv.fr/fr/faire-un-signalement).
+## Où signaler / à qui s’adresser ?  
 
-## Exemples / cas concrets
+- **SignalConso (DGCCRF)** – plateforme officielle de signalement des pratiques commerciales trompeuses.  
+  - Formulaire direct : <https://signal.conso.gouv.fr/fr/faire-un-signalement>  
+- **Miviludes** – pour les dérives sectaires ou les pressions psychologiques liées à des pratiques de soins.  
+  - Site : <https://contacts-demarches.interieur.gouv.fr/miviludes/obtenir-l-avis-de-la-miviludes/>  
+- **Ministère des Solidarités et de la Santé** – informations sur les pratiques de soins non conventionnelles.  
+  - Page : <https://solidarites-sante.gouv.fr/soins-et-maladies/qualite-des-soins-et-pratiques/securite/article/les-pratiques-de-soins-non-conventionnelles>  
 
-**Situation** : Vous avez consulté un praticien de médecine alternative qui vous a promis de guérir votre maladie de Parkinson avec des séances de naturopathie.
+*Le médiateur sectoriel n’est pas indiqué dans les sources ; si le praticien appartient à une fédération, demandez son contact.*
 
-**Ce que vous pouvez faire** : Vous pouvez signaler cette pratique commerciale trompeuse à la DGCCRF via [SignalConso](https://signal.conso.gouv.fr/fr/faire-un-signalement). Vous pouvez également demander un remboursement des frais engagés.
+## Sujets proches
+- **[Soldes pratiqués en dehors des périodes légales sans autorisation](../../pratiques_commerciales/soldes_promotions/soldes_irreguliers.md)** — même principe de pratique commerciale trompeuse, mais appliqué aux promotions.  
+- **[Produit vendu comme bio sans certification valide](../../alimentaire/fraude_composition/fraude_bio.md)** — fraude sur l’étiquetage, un autre type d’allégation mensongère.  
 
-**Résultat attendu** : Le praticien pourrait être sanctionné pour pratique commerciale trompeuse, et vous pourriez obtenir le remboursement des frais engagés.
+## À ne pas confondre
+- **Produit vendu comme bio sans certification valide** — il s’agit d’une fraude sur l’étiquetage alimentaire, relevant de la DGCCRF et de l’AFNOR, alors que la médecine alternative concerne les allégations thérapeutiques et la facturation de soins. Le recours se fait via la DGCCRF mais les sanctions et les procédures diffèrent.  
+  - [Lire la fiche](../../alimentaire/fraude_composition/fraude_bio.md)  
 
-**Situation** : Un praticien d'acupuncture vous a facturé des séances sans vous informer clairement sur la nature non médicale de ses prestations.
+## Pour aller plus loin  
+- **Code de la santé publique – L. 1111‑3‑4** (obligation d’information sur les prestations).  
+- **Code de la consommation – L. 121‑2 et L. 121‑3** (interdiction des allégations thérapeutiques mensongères).  
+- **Arrêté n° 83‑50/A du 3 octobre 1983** – publicité des prix de tous les services.  
+- **Arrêté du 3 décembre 1987** – information du consommateur sur les prix.  
+- **Fiche pratique « Pratiques commerciales trompeuses »** – <https://www.economie.gouv.fr/dgccrf/Publication/Vie-pratique/Fiches-pratiques/Pratiques-commerciales-trompeuses>  
+- **Fiche pratique « Pratiques de soins non conventionnelles : soyez attentif aux informations fournies »** – <https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/pratiques-de-soins-non-conventionnelles-soyez-attentif-aux-informations-fournies>  
+- **Fiche du ministère des Solidarités et de la Santé sur les « Pratiques de soins non conventionnelles »** – <https://solidarites-sante.gouv.fr/soins-et-maladies/qualite-des-soins-et-pratiques/securite/article/les-pratiques-de-soins-non-conventionnelles>  
 
-**Ce que vous pouvez faire** : Vous pouvez exiger un remboursement des frais engagés et signaler le professionnel à la DGCCRF via [SignalConso](https://signal.conso.gouv.fr/fr/faire-un-signalement).
+---  
 
-**Résultat attendu** : Le praticien pourrait être sanctionné pour manque d'information claire et précise, et vous pourriez obtenir le remboursement des frais engagés.
-
-## Où signaler / à qui s'adresser ?
-
-- **SignalConso** : [https://signal.conso.gouv.fr/fr/faire-un-signalement](https://signal.conso.gouv.fr/fr/faire-un-signalement)
-- **Mission interministérielle de vigilance et de lutte contre les dérives sectaires (Miviludes)** : [Obtenir l'avis de la Miviludes](https://contacts-demarches.interieur.gouv.fr/miviludes/obtenir-l-avis-de-la-miviludes/)
-- **Ministère des Solidarités et de la Santé** : [Pratiques de soins non conventionnelles](https://solidarites-sante.gouv.fr/soins-et-maladies/qualite-des-soins-et-pratiques/securite/article/les-pratiques-de-soins-non-conventionnelles)
-
-## Pour aller plus loin
-
-- [Arrêté n° 83-50/A du 3 octobre 1983 relatif à la publicité des prix de tous les services](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000494187)
-- [Arrêté du 3 décembre 1987 relatif à l'information du consommateur sur les prix](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=LEGITEXT000006057893)
-- [Fiche du ministère des solidarités et de la santé sur les « Pratiques de soins non conventionnelles »](https://solidarites-sante.gouv.fr/soins-et-maladies/qualite-des-soins-et-pratiques/securite/article/les-pratiques-de-soins-non-conventionnelles)
-- [Fiche pratique « Pratiques commerciales trompeuses »](https://www.economie.gouv.fr/dgccrf/Publication/Vie-pratique/Fiches-pratiques/Pratiques-commerciales-trompeuses)
-- [Fiche pratique « Pratiques de soins non conventionnelles : soyez attentif aux informations fournies »](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/pratiques-de-soins-non-conventionnelles-soyez-attentif-aux-informations-fournies)
+*Cette fiche vous guide pas à pas pour faire valoir vos droits face à un praticien de médecine alternative qui facture des soins inefficaces présentés comme curatifs. N’hésitez pas à vous appuyer sur les liens fournis et à conserver toutes vos preuves.*

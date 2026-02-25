@@ -134,7 +134,7 @@ export class TaxonomyTree {
               label: this._short(ss.label, 22),
               fullLabel: ss.label,
             };
-            if (state === 'found') {
+            if (state === 'found' || state === 'narrowing') {
               const relSits = ss.situations.filter(s => relSitIds.has(s.id));
               if (relSits.length) {
                 ssNode.children = relSits.map(sit => ({
@@ -142,6 +142,7 @@ export class TaxonomyTree {
                   label: this._short(sit.label, 28),
                   fullLabel: sit.label,
                   active: sit.id === foundId,
+                  candidate: state === 'narrowing',
                 }));
               }
             }
@@ -297,6 +298,15 @@ export class TaxonomyTree {
             .attr('pointer-events', 'none')
             .text('✓ TROUVE');
 
+          ng.filter(d => d.data.candidate)
+            .append('text').attr('class', 'tnode-badge')
+            .attr('text-anchor', 'middle')
+            .attr('y', d => -(self._r(d) + 6))
+            .attr('font-size', '8px').attr('font-weight', '600')
+            .attr('fill', d => self.COLORS[d.data.di] || '#666')
+            .attr('pointer-events', 'none')
+            .text('?');
+
           ng.transition().duration(self.dur)
             .attr('transform', d => `translate(${self._sx(d)},${self._sy(d)})`);
           ng.select('circle').transition().duration(self.dur)
@@ -336,13 +346,16 @@ export class TaxonomyTree {
     if (d.data.type === 'root')         return 22;
     if (d.data.type === 'domaine')      return d.data.dimmed ? 10 : 15;
     if (d.data.type === 'sous_domaine') return 10;
-    return d.data.active ? 11 : 8;
+    if (d.data.active) return 11;
+    if (d.data.candidate) return 10;
+    return 8;
   }
   _fill(d) {
     if (d.data.dimmed) return '#e0e0e0';
     if (d.data.type === 'root') return '#000091';
     const c = this.COLORS[d.data.di] || '#888';
     if (d.data.active) return c;
+    if (d.data.candidate) return c + 'cc';
     if (d.data.type === 'domaine') return c;
     if (d.data.type === 'sous_domaine') return c + 'bb';
     return c + '77';

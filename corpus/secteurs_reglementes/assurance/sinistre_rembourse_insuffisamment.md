@@ -1,56 +1,122 @@
 ---
 domaine: secteurs_reglementes
-generated_at: '2026-02-25T02:17:29.590005'
+generated_at: '2026-02-25T22:48:58.315275'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 16
 sous_domaine: assurance
 taxonomy_id: sinistre_rembourse_insuffisamment
 title: Indemnisation suite à un sinistre refusée ou sous-évaluée
-tokens: 6029
+tokens: 10428
 ---
 
-# Mon assureur refuse ou sous-évalue mon indemnisation suite à un sinistre : que faire ?
+# Mon assureur refuse ou sous‑évalue mon indemnisation après un sinistre – que faire ?
 
 ## En bref
-Si votre assureur refuse ou sous-évalue votre indemnisation suite à un sinistre, vous avez des recours. Vous pouvez contester sa décision par courrier recommandé, saisir le médiateur de l'assurance, ou engager des actions en justice. Agissez rapidement, car des délais légaux s'appliquent.
+Vous avez déclaré un sinistre (dégât des eaux, incendie, vol, accident…) et votre assureur vous propose une indemnité trop faible ou refuse de vous indemniser. Vous pouvez contester cette décision par écrit, saisir le médiateur de l’assurance, puis, si nécessaire, engager une procédure judiciaire. Les délais sont stricts : vous devez agir rapidement, généralement dans les deux ans qui suivent le sinistre.
 
-## De quoi s'agit-il ?
-Vous avez subi un sinistre (incendie, dégât des eaux, vol, etc.) et votre assureur refuse de vous indemniser ou propose une somme insuffisante. Cette situation peut arriver pour plusieurs raisons : exclusion de garantie, retard dans la déclaration du sinistre, ou désaccord sur le montant de l'indemnisation. Cette fiche vous explique vos droits et les démarches à suivre pour obtenir une indemnisation juste.
+## De quoi s'agit‑il ?
+Il s’agit de la situation où, après la survenue d’un événement couvert par votre contrat d’assurance, l’assureur ne vous verse pas le montant que vous estimez dû.  
+- **Qui est concerné ?** Tout assuré (habitation, automobile, multirisque, etc.) qui a déclaré un sinistre et qui estime que la proposition d’indemnisation est insuffisante ou que le refus est injustifié.  
+- **Ce qui est couvert :** les garanties prévues dans votre contrat (incendie, dégât des eaux, vol, responsabilité civile, etc.).  
+- **Ce qui n’est pas couvert :** les dommages exclus par une clause d’exclusion clairement mentionnée dans le contrat (par exemple, les sinistres résultant d’un défaut d’entretien grave, d’une activité illégale ou d’un usage non déclaré).  
+- **Cas particuliers :**  
+  * Si le sinistre a eu lieu pendant la période de garantie de parfait achèvement, l’assureur doit encore respecter les mêmes délais d’indemnisation.  
+  * En cas de sinistre déclaré tardivement (au‑delà du délai contractuel de déclaration), l’assureur peut invoquer le retard, mais il doit tout de même examiner votre dossier et vous répondre dans les délais légaux.  
+  * Certaines assurances offrent une « garantie subséquente » qui couvre les sinistres survenus pendant la période de validité du contrat même s’il a été résilié ; cela dépend de votre police.
 
-## Quels sont vos droits ?
-Votre contrat d'assurance vous donne des droits, mais ceux-ci doivent être revendiqués dans un certain délai. Les actions nées de l’application de votre police se prescrivent par deux ans à compter de l’événement qui leur donne naissance [Source INC 1].
+## Quels sont vos droits ?
+- **Prescription :** vous disposez de deux ans à compter du jour où vous avez eu connaissance du refus ou du montant contesté pour agir (article L.114‑1 du Code des assurances). Passé ce délai, votre action se prescrit.  
+- **Délais d’information de l’assureur :** dès la réception de votre déclaration, l’assureur doit vous accuser réception dans les 10 jours et vous indiquer les pièces manquantes.  
+- **Délais d’expertise :** l’assureur a 60 jours pour désigner un expert et vous communiquer le rapport préliminaire.  
+- **Délais d’offre d’indemnité :** une fois l’expertise terminée, il doit vous proposer une indemnité dans les 90 jours. En cas de difficultés exceptionnelles, ce délai peut être prolongé, mais jamais au‑delà de 135 jours, et vous devez accepter cette prolongation par écrit.  
+- **Obligation de transparence :** les clauses d’exclusion doivent être rédigées de façon claire et non ambiguë. Si une clause est vague, elle est réputée non applicable.  
+- **Recours gratuit :** la médiation de l’assurance est gratuite pour vous et ne nécessite pas d’avocat.  
 
-Votre assureur doit respecter les délais légaux pour vous indemniser. Si ce n'est pas le cas, vous pouvez engager des dépenses nécessaires à la réparation des dommages après l'avoir notifié à l'assureur [Source INC 14].
+## Que faire concrètement ?
+1. **Contester par courrier recommandé**  
+   - Rédigez une lettre en expliquant pourquoi le montant proposé ne correspond pas aux dommages réels.  
+   - Joignez : devis de réparation, factures, photos avant/après, rapport d’expertise, copie du contrat et des garanties.  
+   - Mentionnez le délai de deux ans qui commence à courir dès la réception de la décision de l’assureur.  
+   - Envoyez la lettre en recommandé avec avis de réception et conservez le reçu.  
 
-Si votre assureur refuse de vous indemniser en invoquant une exclusion de garantie, vous pouvez contester cette décision. Les clauses d'exclusion doivent être précises et ne pas être sujettes à interprétation [Source INC 10].
+2. **Relancer l’assureur**  
+   - Si vous ne recevez pas de réponse sous 15 jours, renvoyez un rappel en rappelant les obligations légales (accusé de réception sous 10 jours, proposition d’indemnité sous 90 jours).  
 
-## Que faire concrètement ?
-1. **Contester par courrier recommandé** : Envoyez une lettre recommandée avec avis de réception à votre assureur pour contester le refus ou le montant de l'indemnisation. Expliquez pourquoi vous estimez que l'indemnisation est insuffisante ou injustifiée. Joignez toutes les pièces justificatives nécessaires (factures, devis, etc.) [Source INC 10, 12, 14].
-2. **Saisir le médiateur de l'assurance** : Si votre assureur ne répond pas à votre courrier ou maintient sa décision, vous pouvez saisir le médiateur de l'assurance. Le médiateur est un interlocuteur neutre et indépendant qui peut vous aider à trouver une solution amiable [Source DGCCRF 1, 2].
-3. **Engager des actions en justice** : Si la médiation échoue, vous pouvez engager des actions en justice pour obtenir l'indemnisation à laquelle vous avez droit. Consultez un avocat spécialisé en droit des assurances pour vous accompagner dans cette démarche [Source INC 1, 14].
-4. **Saisir l'ACPR** : En dernier recours, si aucune solution n'a été trouvée, vous pouvez saisir l'Autorité de Contrôle Prudentiel et de Résolution (ACPR) pour signaler les pratiques de votre assureur [Source ACPR].
+3. **Saisir le médiateur de l’assurance**  
+   - Si l’assureur maintient sa position ou ne répond pas, adressez votre dossier au médiateur.  
+   - Le médiateur examine les pièces, peut proposer une solution amiable et rend une décision qui, bien que non contraignante, est généralement respectée par les assureurs.  
 
-## Exemples / cas concrets
-**Situation** : Vous avez subi un dégât des eaux dans votre logement et votre assureur refuse de vous indemniser en invoquant un défaut d’entretien.
-**Ce que vous pouvez faire** : Envoyez une lettre recommandée avec avis de réception à votre assureur pour contester cette décision. Expliquez que le défaut d’entretien n’est pas la cause du sinistre et joignez des preuves de l’état de votre logement avant le sinistre [Source INC 11].
-**Résultat attendu** : Votre assureur peut revoir sa position et vous proposer une indemnisation. Si ce n'est pas le cas, vous pouvez saisir le médiateur de l'assurance ou engager des actions en justice.
+4. **Engager une action judiciaire**  
+   - En dernier recours, saisissez le tribunal compétent (tribunal judiciaire ou tribunal de commerce selon la nature du contrat).  
+   - Vous pouvez vous faire assister d’un avocat spécialisé en droit des assurances.  
+   - La procédure judiciaire doit être engagée avant l’expiration du délai de deux ans.  
 
-**Situation** : Votre véhicule a été endommagé dans un accident et votre assureur propose une indemnisation insuffisante.
-**Ce que vous pouvez faire** : Envoyez une lettre recommandée avec avis de réception à votre assureur pour contester le montant de l'indemnisation. Joignez des devis de réparation et des preuves de l’état de votre véhicule avant l’accident [Source INC 12].
-**Résultat attendu** : Votre assureur peut revoir son offre et vous proposer une indemnisation plus juste. Si ce n'est pas le cas, vous pouvez saisir le médiateur de l'assurance ou engager des actions en justice.
+5. **Saisir l’ACPR** (Autorité de Contrôle Prudentiel et de Résolution)  
+   - Si vous estimez que l’assureur ne respecte pas les règles du Code des assurances, vous pouvez déposer une plainte auprès de l’ACPR.  
+   - Cette démarche ne remplace pas la médiation ou la justice, mais elle permet à l’autorité de contrôler les pratiques de l’assureur.  
 
-## Où signaler / à qui s'adresser ?
-- **Médiateur de l'assurance** : https://www.economie.gouv.fr/mediation-conso
-- **Saisine ACPR** : https://acpr.banque-france.fr
-- **SignalConso** : https://signal.conso.gouv.fr/fr/banque-assurance/faire-un-signalement
+## Exemples / cas concrets  
+
+**Situation :** Vous avez subi un dégât des eaux dans votre salle de bain. L’assureur vous propose 1 200 € alors que les devis de réparation s’élèvent à 3 500 €.  
+
+**Ce que vous pouvez faire :**  
+- Envoyez une lettre recommandée détaillant les travaux à réaliser, en joignant les trois devis, les factures d’achat des matériaux déjà remplacés et des photos de l’état avant le sinistre.  
+- Relancez l’assureur si aucune réponse n’arrive sous 15 jours.  
+- Saisissez le médiateur de l’assurance en transmettant l’ensemble du dossier.  
+
+**Résultat attendu :** L’assureur revoit son offre à 3 400 € (déduction d’une franchise éventuelle) ou accepte de négocier un accord amiable.  
+
+---
+
+**Situation :** Votre véhicule a été endommagé lors d’un accident responsable. L’assureur vous propose une indemnité basée sur la valeur à neuf, alors que votre contrat prévoit la valeur de remplacement à l’état d’usage.  
+
+**Ce que vous pouvez faire :**  
+- Rédigez une lettre recommandée en rappelant la clause du contrat qui prévoit la valeur de remplacement, et joignez le contrat, le constat amiable, le rapport d’expertise et les factures d’entretien.  
+- Si l’assureur persiste, adressez le dossier au médiateur de l’assurance.  
+
+**Résultat attendu :** L’assureur applique la valeur de remplacement, vous verse une indemnité plus élevée, ou accepte de financer les réparations chez le garagiste de votre choix.  
+
+---
+
+**Situation :** Un incendie a détruit votre logement. L’assureur invoque une exclusion « défaut d’entretien du système électrique » et refuse toute indemnisation. Vous avez pourtant fait vérifier le tableau électrique deux mois avant le sinistre par un professionnel certifié.  
+
+**Ce que vous pouvez faire :**  
+- Rédigez une lettre recommandée en joignant le rapport de contrôle du professionnel, les factures d’entretien, le contrat d’assurance et le constat de sinistre.  
+- Demandez à l’assureur de justifier l’application de l’exclusion et de vous fournir les références légales précises.  
+- En cas de refus persistant, saisissez le médiateur, puis, si nécessaire, le tribunal.  
+
+**Résultat attendu :** L’assureur reconnaît que le défaut d’entretien n’est pas à l’origine du sinistre, retire l’exclusion et vous propose une indemnité conforme à la valeur de reconstruction.  
+
+## Où signaler / à qui s'adresser ?
+1. **Médiateur de l’assurance** – première étape de résolution amiable.  
+   - Site officiel : <https://www.economie.gouv.fr/mediation-conso>  
+2. **Médiateur sectoriel de l’assurance** – spécialisé dans les litiges d’assurance.  
+   - Site : <https://www.mediation-assurance.org>  
+3. **Saisine de l’ACPR** – pour signaler un manquement aux obligations légales.  
+   - Site : <https://acpr.banque-france.fr>  
+4. **SignalConso** – plateforme de signalement en ligne.  
+   - Formulaire direct : <https://signal.conso.gouv.fr/fr/banque-assurance/faire-un-signalement>  
+
+> **Question pivot** : Si votre sinistre concerne un bien immobilier, privilégiez le médiateur de l’assurance habitation ; si le sinistre porte sur un véhicule, choisissez le médiateur automobile. Les deux utilisent les mêmes coordonnées, mais les dossiers sont traités par des équipes spécialisées.
+
+## Sujets proches
+- **[Refus illégal de substitution d’assurance emprunteur](../credit/assurance_emprunteur_refus.md)** — le refus de changer d’assureur pour un prêt immobilier suit une procédure différente, mais les recours (médiation, ACPR) restent similaires.  
+- **[Vol annulé et la compagnie refuse le remboursement ou l’indemnisation (règlement CE 261/2004)](../voyages_tourisme/vol_annule_remboursement_refuse.md)** — bien que le cadre juridique soit celui du transport aérien, les étapes de contestation et de médiation sont comparables.  
+
+## À ne pas confondre
+- **Produit reçu endommagé** – il s’agit d’un litige de consommation lié à la livraison d’un bien, relevant du service public de la concurrence et non du droit des assurances. Le recours se fait auprès du médiateur de la consommation ou du service public, pas auprès du médiateur de l’assurance.  
+  - [Lire la fiche](../../contrats_garanties/livraison/produit_endommage_livraison.md)  
 
 ## Pour aller plus loin
-- [Article L. 114-1 du code des assurances](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006824393/)
-- [Source DGCCRF 1](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/assurance-les-details-connaitre-avant-de-sengager)
-- [Source DGCCRF 2](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/assurance-les-details-connaitre-avant-de-sengager)
-- [Source INC 1](https://www.inc-conso.fr/content/assurance/la-suite-dun-sinistre-votre-assureur-tarde-vous-indemniser)
-- [Source INC 10](https://www.inc-conso.fr/content/vous-contestez-aupres-de-votre-assureur-lapplication-dune-exclusion-de-garantie)
-- [Source INC 11](https://www.inc-conso.fr/content/assurance-habitation-que-faire-en-cas-de-refus-dindemnisation-de-votre-assureur-avec-lufc)
-- [Source INC 12](https://www.inc-conso.fr/content/vous-contestez-loffre-dindemnisation-de-votre-assureur-pour-votre-vehicule-accidente)
-- [Source INC 14](https://www.inc-conso.fr/content/la-suite-dimportantes-malfacons-vous-avez-percu-une-indemnisation-mais-elle-est)
+- **Article L.114‑1 du Code des assurances** – prescription de deux ans pour les actions relatives à un contrat d’assurance.  
+  <https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006824393/>  
+- **Délais de gestion des sinistres** – 10 jours pour accuser réception, 60 jours pour désigner un expert, 90 jours pour proposer une indemnité (ou 135 jours en cas de prolongation justifiée).  
+  <https://www.inc-conso.fr/content/assurance-dommages-ouvrage-la-procedure-suivre-en-cas-de-sinistre>  
+- **Guide de la médiation de l’assurance** – procédure détaillée, rôle du médiateur et modalités de dépôt du dossier.  
+  <https://www.economie.gouv.fr/mediation-conso>  
+- **Rôle de l’ACPR** – missions de contrôle et de sanction des assureurs.  
+  <https://acpr.banque-france.fr>  
+- **Modèle de lettre de contestation** – exemple de rédaction pour contester une indemnisation.  
+  <https://www.inc-conso.fr/content/vous-contestez-loffre-dindemnisation-de-votre-assureur-pour-votre-vehicule-accidente>

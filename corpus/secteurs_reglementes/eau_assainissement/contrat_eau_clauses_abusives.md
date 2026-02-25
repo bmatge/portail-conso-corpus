@@ -1,61 +1,90 @@
 ---
 domaine: secteurs_reglementes
-generated_at: '2026-02-25T11:07:04.775733'
+generated_at: '2026-02-25T22:55:29.263847'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 15
 sous_domaine: eau_assainissement
 taxonomy_id: contrat_eau_clauses_abusives
 title: Clauses abusives dans un contrat de fourniture d'eau potable
-tokens: 5767
+tokens: 9028
 ---
 
-# Clauses abusives dans mon contrat d'eau potable : que faire ?
+# Clauses abusives dans mon contrat d’eau potable – que faire ?
 
 ## En bref
-Votre contrat d'eau potable contient peut-être des clauses abusives ou illicites. La loi protège vos droits : vous pouvez contester ces clauses et demander leur suppression. Agissez en suivant les étapes concrètes ci-dessous.
+Vous avez repéré une clause qui vous semble injuste dans votre contrat d’eau.  
+La loi interdit les clauses qui déséquilibrent vos droits et obligations.  
+Vous pouvez contester la clause, demander sa suppression et, si besoin, saisir la justice.  
 
-## De quoi s'agit-il ?
-Un contrat d'eau potable est le document qui lie votre fournisseur d'eau et vous. Certaines clauses de ces contrats peuvent être abusives ou illicites. Une clause est abusive si elle crée un déséquilibre significatif entre vos droits et ceux du fournisseur. Une clause est illicite si elle est interdite par la loi.
+## De quoi s’agit‑il ?
+Un contrat d’eau potable lie le fournisseur d’eau et le consommateur.  
+Il précise le prix, les modalités de paiement, la durée du service et les obligations de chaque partie.  
+Certaines mentions peuvent être interdites parce qu’elles créent un déséquilibre important au détriment du consommateur.  
 
-### Qui est concerné ?
-Tous les consommateurs ayant un contrat d'eau potable, que vous soyez propriétaire ou locataire.
+### Clauses interdites ou présumées abusives
+- Interdiction de résilier le contrat ou délai de résiliation supérieur à 15 jours.  
+- Exigence d’une caution ou d’un dépôt de garantie.  
+- Clause limitant la responsabilité du fournisseur en cas de coupure ou de mauvaise fourniture.  
+- Clause imposant un mode de paiement unique (ex. prélèvement obligatoire).  
+- Clause autorisant le fournisseur à retenir les sommes versées sans prestation.  
+- Clause prévoyant des coupures d’eau pour les résidences principales, même en cas d’impayés.  
 
-### Périmètre
-Cette fiche couvre les clauses abusives ou illicites dans les contrats d'eau potable. Elle ne traite pas des litiges liés à la qualité de l'eau ou aux impayés.
+### Cas particuliers
+- Les petites communes (moins de 1 000 habitants) peuvent proposer une consommation forfaitaire si l’eau est abondante.  
+- Les collectivités doivent mettre à jour régulièrement leur règlement de service pour supprimer les clauses illicites.  
+- La Commission des clauses abusives (CCA) publie une liste de modèles à proscrire.  
 
 ## Quels sont vos droits ?
-La loi interdit certaines clauses dans les contrats d'eau potable. Vous avez le droit de contester ces clauses et de demander leur suppression. Le juge civil peut confirmer le caractère abusif d'une clause. La Commission des clauses abusives (CCA) examine les modèles de contrats et recommande la suppression des clauses abusives.
-
-### Obligations du professionnel
-Le fournisseur d'eau doit :
-- Respecter les règles de la distribution d'eau potable
-- Ne pas inclure de clauses abusives ou illicites dans le contrat
-- Informer les consommateurs de la possibilité de recourir à une médiation en cas de litige
-
-### Délais importants
-- Vous avez 15 jours pour résilier votre contrat de fourniture d'eau potable
-- Le fournisseur ne peut pas imposer un délai supérieur à 15 jours pour la résiliation
+La loi protège votre droit à un contrat équilibré.  
+Le professionnel doit respecter le règlement de service et ne peut insérer de clause illicite.  
+Vous avez le droit de demander la suppression d’une clause que vous estimez abusive.  
+Le juge civil peut, à votre demande, déclarer la clause abusive et l’annuler.  
+La charge de la preuve incombe au professionnel pour les clauses présumées abusives.  
+Vous disposez de 15 jours pour résilier votre contrat si le fournisseur impose un délai plus long.  
 
 ## Que faire concrètement ?
-1. **Identifier les clauses abusives ou illicites** : Lisez attentivement votre contrat et repérez les clauses qui semblent abusives ou illicites. Consultez la liste des clauses interdites ou présumées abusives dans la section "Pour aller plus loin".
-2. **Contacter votre fournisseur d'eau** : Envoyez une lettre recommandée avec accusé de réception à votre fournisseur pour lui signaler les clauses abusives ou illicites et demander leur suppression. Conservez une copie de cette lettre.
-3. **Recourir à la médiation** : Si votre fournisseur ne répond pas ou ne supprime pas les clauses abusives, vous pouvez saisir le médiateur de l'eau. La médiation est gratuite et facultative. Le médiateur de l'eau peut être saisi en ligne sur [le site du médiateur de l'eau](https://www.mediateur-eau.fr/).
-4. **Saisir le juge civil** : Si la médiation échoue, vous pouvez saisir le juge civil pour faire valoir vos droits. Vous pouvez également saisir la Commission des clauses abusives pour obtenir son avis sur le caractère abusif d'une clause contractuelle.
+1. **Identifier la clause litigieuse** – Relisez votre contrat, repérez les mentions listées comme interdites ou suspectes.  
+2. **Collecter les preuves** – Conservez votre contrat, factures, courriels et tout échange avec le fournisseur.  
+3. **Contacter le fournisseur** – Envoyez une lettre recommandée avec accusé de réception demandant la suppression de la clause et rappelant les textes applicables.  
+4. **Saisir la médiation** – Si le fournisseur ne répond pas ou refuse, adressez‑vous au médiateur de l’eau (site : https://www.mediateur-eau.fr).  
+5. **Engager une action judiciaire** – En dernier recours, saisissez le juge civil du tribunal d’instance du lieu de consommation.  
 
-## Exemples / cas concrets
+## Exemples / cas concrets  
 
-**Situation** : "J'ai acheté X et..."
-**Ce que vous pouvez faire** : ...
-**Résultat attendu** : ...
+**Situation** : Vous avez signé un contrat qui impose un paiement uniquement par chèque.  
+**Ce que vous pouvez faire** : Citez la clause interdite, envoyez une lettre recommandée demandant l’ajout du prélèvement automatique.  
+**Résultat attendu** : Le fournisseur accepte le prélèvement ou supprime la clause ; sinon vous pouvez saisir le médiateur.  
 
-[À COMPLÉTER]
+**Situation** : Votre contrat prévoit une caution de 200 €, alors que la loi l’interdit.  
+**Ce que vous pouvez faire** : Rédigez une réclamation en rappelant l’interdiction des cautions, joignez le contrat et la facture.  
+**Résultat attendu** : Le fournisseur rembourse la caution et modifie le contrat.  
 
-## Où signaler / à qui s'adresser ?
-1. **SignalConso** : Signalez en ligne sur [SignalConso](https://signal.conso.gouv.fr)
-2. **Fiche service-public.fr** : Consultez la fiche sur [service-public.fr](https://www.service-public.fr)
+**Situation** : Une clause indique que le fournisseur peut couper l’eau de votre résidence principale dès le premier impayé.  
+**Ce que vous pouvez faire** : Mentionnez l’interdiction des coupures pour les résidences principales, demandez la suppression de la clause.  
+**Résultat attendu** : Le fournisseur retire la clause et vous informe des procédures de recouvrement conformes à la loi.  
 
-## Pour aller plus loin
-- [Arrêté du 10 juillet 1996 modifié relatif aux factures de distribution de l’eau et de collecte et de traitement des eaux usées](http://www.legifrance.gouv.fr/affichTexte.do;=?cidTexte=LEGITEXT000005621424&dateTexte=vig)
-- [Le site de la Commission des clauses abusives](http://www.clauses-abusives.fr/)
-- [Ordonnance n°2015-1033 du 20 août 2015 relative au règlement extrajudiciaire des litiges de consommation](https://www.legifrance.gouv.fr/affichTexte.do;jsessionid=5A1C32A5A6A5A5A5A5A5A5A5A5A5A5A5.tplgfr24s_3?cidTexte=JORFTEXT000031048577&dateTexte=20150821)
+**Situation** : Le contrat fixe une durée minimale de 3 ans sans possibilité de résiliation anticipée.  
+**Ce que vous pouvez faire** : Rappelez le droit de résilier sous 15 jours, réclamez la modification du contrat.  
+**Résultat attendu** : Le fournisseur accepte la résiliation ou ajuste la durée minimale.  
+
+## Où signaler / à qui s’adresser ?  
+1. **SignalConso** – Signalez le contrat abusif en ligne sur [SignalConso](https://signal.conso.gouv.fr).  
+2. **Service public** – Consultez la fiche explicative sur [service-public.fr](https://www.service-public.fr) pour connaître vos droits et les démarches.  
+3. **Médiateur de l’eau** – Saisissez le médiateur gratuitement via son site officiel (https://www.mediateur-eau.fr).  
+4. **Tribunal d’instance** – En cas d’échec de la médiation, déposez votre requête auprès du tribunal compétent.  
+
+## Sujets proches  
+- **[Clause de résiliation abusive](../../contrats_garanties/clauses_abusives/clause_resiliation_abusive.md)** — Découvrez comment contester un délai de résiliation excessif.  
+- **[Clauses abusives dans les contrats](../../contrats_garanties/clauses_abusives/_index.md)** — Vue d’ensemble des clauses interdites dans tous les types de contrats.  
+- **[Responsabilité limitée du professionnel](../../contrats_garanties/clauses_abusives/clause_responsabilite_limitee.md)** — Apprenez à réagir face à une clause qui exclut la responsabilité du fournisseur.  
+
+## À ne pas confondre  
+- **Clause de résiliation abusive** — Cette situation porte uniquement sur le délai ou les conditions de résiliation, alors que la présente fiche traite de toutes les clauses illicites du contrat d’eau.  
+- **Clauses abusives dans un contrat général** — Le cadre juridique est similaire, mais les recours spécifiques (médiateur de l’eau, réglementation de la distribution) diffèrent.  
+
+## Pour aller plus loin  
+- Arrêté du 10 juillet 1996 modifié relatif aux factures de distribution de l’eau et de collecte et de traitement des eaux usées : <http://www.legifrance.gouv.fr/affichTexte.do;=?cidTexte=LEGITEXT000005621424&dateTexte=vig>  
+- Site de la Commission des clauses abusives : <http://www.clauses-abusives.fr/>  
+- Ordonnance n° 2015‑1033 du 20 août 2015 relative au règlement extrajudiciaire des litiges de consommation : <https://www.legifrance.gouv.fr/affichTexte.do;jsessionid=5A1C32A5A6A5A5A5A5A5A5A5A5A5A5A5.tplgfr24s_3?cidTexte=JORFTEXT000031048577&dateTexte=20150821>

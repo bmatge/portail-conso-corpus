@@ -1,69 +1,124 @@
 ---
 domaine: pratiques_commerciales
-generated_at: '2026-02-25T01:49:29.967716'
+generated_at: '2026-02-25T22:19:11.871569'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 26
 sous_domaine: demarchage
 taxonomy_id: demarchage_telephonique
 title: Démarchage téléphonique non sollicité (hors exceptions légales)
-tokens: 7359
+tokens: 15058
 ---
 
-# Que faire face au démarchage téléphonique non sollicité ?
+# Démarchage téléphonique non sollicité : comment réagir ?
 
 ## En bref
-Le démarchage téléphonique non sollicité est strictement encadré par la loi. Vous pouvez vous y opposer via Bloctel et signaler les abus sur SignalConso. Les professionnels ont des obligations légales strictes qu'ils doivent respecter sous peine de sanctions.
+Le démarchage téléphonique non sollicité est interdit par la loi. Vous pouvez vous opposer en vous inscrivant sur Bloctel et en signalant chaque appel abusif sur SignalConso. Le professionnel qui ne respecte pas ces règles s’expose à des sanctions et le contrat conclu peut être annulé.
 
-## De quoi s'agit-il ?
-Le démarchage téléphonique non sollicité concerne les appels commerciaux reçus sans votre accord préalable. Cela inclut les appels masqués ou provenant de numéros commençant par 09xx. La loi interdit ces pratiques, sauf exceptions spécifiques.
+## De quoi s'agit‑il ?
+Le démarchage téléphonique non sollicité désigne tout appel commercial reçu sans votre accord préalable.  
+Il comprend :  
 
-**Périmètre couvert :**
-- Appels commerciaux non sollicités
-- Appels masqués ou provenant de numéros 09xx
-- Démarchage pour des travaux de rénovation énergétique ou d'adaptation des logements
+* les appels masqués ou provenant de numéros commençant par 09 xx,  
+* les appels proposant des produits, services ou travaux (rénovation énergétique, adaptation du logement, etc.) sans que vous ayez donné votre consentement,  
+* les appels effectués en dehors des créneaux autorisés (lundi‑vendredi : 10 h‑13 h et 14 h‑20 h).  
 
-**Périmètre non couvert :**
-- Appels liés à un contrat en cours
-- Appels provenant de professionnels avec lesquels vous avez une relation contractuelle préexistante
+**Qui est concerné ?** Tous les consommateurs disposant d’un numéro de téléphone fixe ou mobile.  
 
-## Quels sont vos droits ?
-La loi interdit le démarchage téléphonique non sollicité. Les professionnels doivent respecter plusieurs obligations :
-- S'identifier clairement dès le début de l'appel
-- Vous informer de votre droit de vous inscrire sur la liste d'opposition Bloctel
-- Respecter les jours et horaires autorisés pour le démarchage
-- Enregistrer les appels de démarchage
+**Ce qui est couvert :**  
 
-En cas de non-respect de ces obligations, vous pouvez exiger des sanctions contre le professionnel. Les contrats conclus à la suite d'un démarchage illicite peuvent être annulés.
+* appels commerciaux non sollicités,  
+* appels masqués ou 09 xx,  
+* démarchage pour des travaux de rénovation énergétique ou d’adaptation du logement.  
 
-## Que faire concrètement ?
-1. **Inscrire votre numéro sur Bloctel** : Rendez-vous sur [Bloctel](https://www.bloctel.gouv.fr) pour vous inscrire gratuitement. Cela bloque les appels des professionnels respectueux de la loi.
-2. **Refuser clairement l'offre** : Si vous recevez un appel non sollicité, exprimez clairement votre refus de recevoir des offres commerciales.
-3. **Demander l'identification du professionnel** : Exigez que l'appelant se présente et notez son nom, son entreprise et le motif de l'appel.
-4. **Signaler l'appel abusif** : Utilisez la plateforme [SignalConso](https://signal.conso.gouv.fr/fr/demarchage-abusif/faire-un-signalement) pour signaler l'appel. Fournissez autant de détails que possible.
+**Ce qui n’est pas couvert :**  
 
-## Exemples / cas concrets
+* appels liés à un contrat déjà en cours (ex. : suivi de votre abonnement internet),  
+* appels d’un professionnel avec qui vous avez déjà une relation contractuelle et dont la proposition concerne le même objet de contrat,  
+* sollicitations autorisées par la loi (ex. : enquêtes de satisfaction, appels d’urgence).  
 
-**Situation** : "J'ai reçu un appel d'un numéro masqué me proposant une offre d'assurance."
-**Ce que vous pouvez faire** : Refusez l'offre et demandez à l'appelant de s'identifier. Notez les informations et signalez l'appel sur SignalConso.
-**Résultat attendu** : Le professionnel sera contacté par la DGCCRF pour vérification. Si l'appel est illicite, des sanctions pourront être prises.
+## Quels sont vos droits ?
+Vous avez le droit de ne pas être dérangé par des appels commerciaux non sollicités.  
 
-**Situation** : "Un professionnel m'a appelé pour des travaux de rénovation énergétique alors que je suis inscrit sur Bloctel."
-**Ce que vous pouvez faire** : Signalez l'appel sur [SignalConso](https://signal.conso.gouv.fr/fr/demarchage-abusif/faire-un-signalement) et dans votre espace consommateur Bloctel.
-**Résultat attendu** : Le professionnel sera sanctionné pour non-respect de la liste d'opposition.
+* Le professionnel doit s’identifier dès le début de l’appel.  
+* Il doit vous informer de votre possibilité de vous inscrire sur la liste d’opposition Bloctel.  
+* Il doit respecter les jours et horaires autorisés.  
+* Il ne peut pas appeler les numéros inscrits sur Bloctel, sauf si vous avez un contrat en cours avec lui.  
 
-**Situation** : "J'ai souscrit à un contrat d'assurance après un appel non sollicité."
-**Ce que vous pouvez faire** : Vous pouvez demander l'annulation du contrat en signalant l'appel abusif sur SignalConso.
-**Résultat attendu** : Le contrat peut être annulé si le démarchage était illicite.
+Si le professionnel ne respecte pas ces obligations, vous pouvez :  
 
-## Où signaler / à qui s'adresser ?
-- **SignalConso** : [https://signal.conso.gouv.fr/fr/demarchage-abusif/faire-un-signalement](https://signal.conso.gouv.fr/fr/demarchage-abusif/faire-un-signalement) — Plateforme officielle pour signaler les appels abusifs.
-- **Bloctel** : [https://www.bloctel.gouv.fr](https://www.bloctel.gouv.fr) — Inscription gratuite pour bloquer les appels de démarchage.
-- **Espace consommateur Bloctel** : [https://www.bloctel.gouv.fr/auth/realms/PUBLIC/protocol/openid-connect/auth?response_type=code&client_id=front-public&state=ZjVyYTRwSXlrMDg3T2t-d1UxbzdCLlgtR3V4QU4tbkpmekJ0RzNkcUtvczJQ&redirect_uri=https%3A%2F%2Fwww.bloctel.gouv.fr%2Faccueil&scope=openid%20profile%20email%20offline_access&code_challenge=GUSOD-qvhSZI_Bu81h_yzqGJbrc3hkByphwxgWCQmfw&code_challenge_method=S256&nonce=ZjVyYTRwSXlrMDg3T2t-d1UxbzdCLlgtR3V4QU4tbkpmekJ0RzNkcUtvczJQ](https://www.bloctel.gouv.fr/auth/realms/PUBLIC/protocol/openid-connect/auth?response_type=code&client_id=front-public&state=ZjVyYTRwSXlrMDg3T2t-d1UxbzdCLlgtR3V4QU4tbkpmekJ0RzNkcUtvczJQ&redirect_uri=https%3A%2F%2Fwww.bloctel.gouv.fr%2Faccueil&scope=openid%20profile%20email%20offline_access&code_challenge=GUSOD-qvhSZI_Bu81h_yzqGJbrc3hkByphwxgWCQmfw&code_challenge_method=S256&nonce=ZjVyYTRwSXlrMDg3T2t-d1UxbzdCLlgtR3V4QU4tbkpmekJ0RzNkcUtvczJQ) — Pour signaler les appels reçus alors que vous êtes inscrit sur Bloctel.
+* demander l’annulation du contrat conclu à la suite de l’appel,  
+* exiger que le professionnel soit sanctionné (amende, interdiction d’appeler).  
 
-## Pour aller plus loin
-- [LOI n° 2020-901 du 24 juillet 2020 visant à encadrer le démarchage téléphonique et à lutter contre les appels frauduleux](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042148119)
-- [Article C&C démarchage](/dgccrf/renforcement-des-mesures-pour-lutter-contre-le-demarchage-abusif)
-- [décret n° 2022-1313](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000046421823)
-- [FAQ PRO](https://pro.bloctel.gouv.fr/faq)
-- [FAQ CONSO](https://www.bloctel.gouv.fr/faq)
+Les sanctions sont prévues par le Code de la consommation : le professionnel encourt une amende et la nullité du contrat lorsqu’il a tiré profit d’un appel illicite.
+
+## Que faire concrètement ?
+1. **Inscrivez votre numéro sur Bloctel**.  
+   Rendez‑vous sur le site officiel, créez votre compte gratuit et indiquez votre numéro. L’inscription bloque les appels de prospection légale.  
+
+2. **Refusez clairement l’offre dès le premier appel**.  
+   Dites « Je ne souhaite pas recevoir d’appels commerciaux », puis demandez la fin de l’appel.  
+
+3. **Demandez l’identification du professionnel**.  
+   Notez le nom de l’entreprise, le nom de l’appelant, le numéro affiché et le motif de l’appel. Cette trace vous servira pour le signalement.  
+
+4. **Conservez les preuves**.  
+   Enregistrez l’appel (si votre téléphone le permet), sauvegardez les SMS, notez la date, l’heure et la durée.  
+
+5. **Signalez l’appel sur SignalConso**.  
+   Accédez à la page dédiée : <https://signal.conso.gouv.fr/fr/demarchage-abusif/faire-un-signalement>.  
+   Remplissez le formulaire en indiquant toutes les informations collectées. Le signalement est anonyme et gratuit.  
+
+6. **Contactez le service client du professionnel** (optionnel).  
+   Envoyez un courrier recommandé avec accusé de réception demandant la suppression de vos coordonnées et l’annulation éventuelle du contrat.  
+
+7. **Recours ultime**.  
+   Si le professionnel ne répond pas ou persiste, saisissez la DGCCRF via le formulaire « Je signale un problème » ou déposez une plainte auprès du tribunal d’instance. Vous pouvez également solliciter le médiateur sectoriel du secteur concerné (ex. : médiateur des télécoms).  
+
+## Exemples / cas concrets  
+
+**Situation** : « Un numéro masqué m’a proposé une assurance habitation à 12 h 30 un dimanche. »  
+**Ce que vous pouvez faire** : refusez immédiatement, notez le numéro affiché, enregistrez l’appel si possible, puis signalez l’incident sur SignalConso en précisant le jour, l’heure et le contenu.  
+**Résultat attendu** : le professionnel sera identifié, la DGCCRF pourra ouvrir une enquête et, le cas échéant, prononcer une sanction.  
+
+**Situation** : « Je suis inscrit sur Bloctel, mais je reçois un appel d’une société de travaux d’isolation le mardi à 15 h. »  
+**Ce que vous pouvez faire** : indiquez clairement que vous êtes inscrit sur Bloctel, demandez la fin de l’appel, notez les coordonnées, puis signalez l’appel sur SignalConso et connectez‑vous à votre espace consommateur Bloctel pour déclarer l’infraction.  
+**Résultat attendu** : le professionnel sera mis en demeure de cesser les appels et pourra être sanctionné pour violation de la liste d’opposition.  
+
+**Situation** : « Après un appel non sollicité, j’ai signé un contrat d’assurance auto sans le lire. »  
+**Ce que vous pouvez faire** : contactez le service client par écrit (courrier recommandé) en invoquant le droit de rétractation et le caractère illicite de l’appel. Joignez le numéro de l’appel et le formulaire de signalement SignalConso.  
+**Résultat attendu** : le contrat pourra être annulé sans frais, le professionnel pourra être sanctionné et vous serez retiré de sa base de données.  
+
+**Situation** : « Un appel automatisé (robot) a sonné mon portable à 08 h 45, proposant un crédit à la consommation. »  
+**Ce que vous pouvez faire** : raccrochez, notez le numéro, signalez immédiatement sur SignalConso (catégorie « DemarchageAbusif ») et indiquez que l’appel provient d’un robot et hors des horaires autorisés.  
+**Résultat attendu** : le professionnel sera reconnu coupable d’appel automatisé illégal et pourra être condamné à une amende.  
+
+## Où signaler / à qui s'adresser ?  
+
+1. **SignalConso** – plateforme officielle de signalement des pratiques abusives.  
+   - Formulaire dédié : <https://signal.conso.gouv.fr/fr/demarchage-abusif/faire-un-signalement>  
+   - Vous y indiquez le numéro, la date, l’heure, le contenu et les éventuelles pièces jointes.  
+
+2. **Bloctel** – inscription et gestion de votre opposition au démarchage.  
+   - Site d’inscription : <https://www.bloctel.gouv.fr>  
+   - Espace consommateur pour déclarer un appel reçu alors que vous êtes inscrit : <https://www.bloctel.gouv.fr/auth/realms/PUBLIC/protocol/openid-connect/auth?response_type=code&client_id=front-public&state=ZjVyYTRwSXlrMDg3T2t-d1UxbzdCLlgtR3V4QU4tbkpmekJ0RzNkcUtvczJQ&redirect_uri=https%3A%2F%2Fwww.bloctel.gouv.fr%2Faccueil&scope=openid%20profile%20email%20offline_access&code_challenge=GUSOD-qvhSZI_Bu81h_yzqGJbrc3hkByphwxgWCQmfw&code_challenge_method=S256&nonce=ZjVyYTRwSXlrMDg3T2t-d1UxbzdCLlgtR3V4QU4tbkpmekJ0RzNkcUtvczJQ>  
+
+3. **Médiateur sectoriel** (si le professionnel appartient à un secteur réglementé, ex. : télécoms, énergie).  
+   - Consultez le site du médiateur concerné pour connaître l’adresse de dépôt des réclamations.  
+
+4. **DGCCRF** – pour toute plainte ou demande d’information supplémentaire.  
+   - Page « Je signale un problème » : <https://www.economie.gouv.fr/dgccrf/les-demarches-et-les-services/demarches-et-services-en-tant-que-consommateur>  
+
+## Pour aller plus loin  
+
+* Loi n° 2020‑901 du 24 juillet 2020 encadrant le démarchage téléphonique et les appels frauduleux – texte officiel sur Légifrance.  
+* Code de la consommation, articles L. 223‑1 à L. 223‑7 – obligations des professionnels et sanctions.  
+* Décret n° 2022‑1313 du 13 octobre 2022 précisant les jours, horaires et fréquences autorisés.  
+* Article L. 223‑3 du Code de la consommation – interdiction de vendre ou de louer des fichiers contenant les coordonnées des inscrits Bloctel.  
+* FAQ professionnelle sur le démarchage téléphonique – <https://www.economie.gouv.fr/dgccrf/faq-pour-les-professionnels-sur-lencadrement-des-jours-horaires-et-frequence-du-demarchage>  
+* Guide pratique Bloctel – <https://www.bloctel.gouv.fr/faq>  
+
+---  
+
+*Cette fiche a été rédigée en conformité avec les informations diffusées par la DGCCRF et les sources complémentaires disponibles.*

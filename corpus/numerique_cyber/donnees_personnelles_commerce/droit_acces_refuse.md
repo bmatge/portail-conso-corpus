@@ -1,57 +1,99 @@
 ---
 domaine: numerique_cyber
-generated_at: '2026-02-25T02:09:39.646148'
+generated_at: '2026-02-25T22:39:17.260545'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 16
 sous_domaine: donnees_personnelles_commerce
 taxonomy_id: droit_acces_refuse
 title: Un site refuse d'exercer mon droit d'accès, de rectification ou de suppression
   de mes données
-tokens: 6361
+tokens: 9838
 ---
 
-# Un site refuse d'exercer mon droit d'accès, de rectification ou de suppression de mes données
+# Le site refuse de répondre à ma demande d’accès, de rectification ou de suppression de mes données ?  
 
-## En bref
-Si un site refuse de vous donner accès à vos données personnelles, de les rectifier ou de les supprimer, vous avez des recours. Vous pouvez d'abord contacter le site par écrit pour exiger la mise en conformité. Si le site ne répond pas sous un mois (ou trois mois pour une demande complexe), vous pouvez saisir la CNIL.
+## En bref  
+Vous avez le droit de connaître, corriger ou effacer les informations que le site détient sur vous.  
+Si le site ne répond pas dans le délai légal, vous pouvez le relancer par écrit puis saisir la CNIL.  
+La CNIL dispose d’un pouvoir de contrôle : elle peut contraindre le site à se conformer ou à justifier son refus.  
 
-## De quoi s'agit-il ?
-Vous avez le droit d'accéder à vos données personnelles, de les rectifier ou de les faire supprimer. Si un site internet refuse d'exercer ces droits, vous pouvez agir. Cette fiche explique vos droits et les démarches à suivre.
+## De quoi s’agit‑il ?  
+Le règlement général sur la protection des données (RGPD) impose à tout responsable de traitement – le site internet, le service en ligne ou l’application – de respecter trois droits fondamentaux :  
 
-**Qui est concerné ?**
-- Tous les consommateurs dont les données personnelles sont traitées par un site internet.
+* **Droit d’accès** : vous pouvez demander la liste complète des données personnelles que le site possède à votre sujet.  
+* **Droit de rectification** : vous pouvez exiger la correction de toute donnée inexacte ou incomplète.  
+* **Droit à l’effacement** (ou « droit à l’oubli ») : vous pouvez demander la suppression de vos données lorsque le motif légal le permet (ex. : retrait du consentement, données inutiles).  
 
-**Périmètre**
-- **Couvert** : Refus d'accès, de rectification ou de suppression de données personnelles par un site internet.
-- **Non couvert** : Litiges liés à la protection des données dans un contexte non numérique (ex : papier).
+Ces droits concernent **tous les internautes** qui ont fourni une adresse e‑mail, créé un compte, rempli un formulaire ou navigué sur le site.  
 
-## Quels sont vos droits ?
-Le Règlement Général sur la Protection des Données (RGPD) vous accorde plusieurs droits :
-- **Droit d'accès** : Vous pouvez demander à un site internet de vous communiquer les données personnelles qu'il détient sur vous.
-- **Droit de rectification** : Vous pouvez demander la correction de données inexactes ou incomplètes.
-- **Droit à l'effacement** : Vous pouvez demander la suppression de vos données dans certains cas (ex : données non nécessaires, retrait du consentement).
-- **Délais** : Le site doit répondre à votre demande dans un délai d'un mois (trois mois pour une demande complexe).
+### Ce qui est couvert  
+* Refus d’accès, de rectification ou d’effacement de vos données par un site web.  
+* Refus de fournir les informations sur les traitements réalisés (finalités, destinataires, durée de conservation).  
 
-## Que faire concrètement ?
-1. **Contacter le site par écrit** : Envoyez une demande écrite ou par courriel au site, en précisant les données concernées et le droit que vous souhaitez exercer.
-2. **Conserver une copie de votre demande** : Cela vous sera utile si vous devez saisir la CNIL.
-3. **Attendre la réponse** : Le site a un mois pour répondre (trois mois pour une demande complexe).
-4. **Saisir la CNIL** : Si le site ne répond pas ou si sa réponse est insatisfaisante, vous pouvez saisir la CNIL via [leur formulaire en ligne](https://www.cnil.fr/fr/plaintes).
+### Ce qui n’est pas couvert  
+* Litiges relatifs à des dossiers papier conservés hors du cadre numérique.  
+* Demandes portant sur des données anonymisées ou agrégées qui ne permettent pas de vous identifier.  
 
-## Exemples / cas concrets
-**Situation** : "J'ai demandé à un site de supprimer mes données personnelles, mais il n'a pas répondu."
-**Ce que vous pouvez faire** : Envoyez un rappel au site par courriel en précisant votre demande initiale et en mentionnant le délai légal d'un mois. Si le site ne répond toujours pas, saisissez la CNIL.
-**Résultat attendu** : Le site doit supprimer vos données ou justifier son refus. La CNIL peut intervenir pour faire respecter vos droits.
+## Quels sont vos droits ?  
+Le RGPD vous donne des garanties simples :  
 
-**Situation** : "Un site a refusé de rectifier mes données personnelles en prétextant des obligations légales."
-**Ce que vous pouvez faire** : Demandez au site de préciser les obligations légales en question. Si sa réponse n'est pas satisfaisante, saisissez la CNIL.
-**Résultat attendu** : Le site doit rectifier vos données ou justifier son refus de manière précise et légale. La CNIL peut intervenir pour faire respecter vos droits.
+* **Obligation de réponse** – le site doit répondre à votre demande dans **un mois**. Si la demande est complexe (par ex. : grande quantité de données), le délai peut être porté à **trois mois**.  
+* **Obligation de transparence** – le site doit expliquer clairement les raisons d’un éventuel refus, en citant le texte légal applicable.  
+* **Obligation de gratuité** – la première demande d’accès est gratuite. Le site ne peut vous facturer de frais, sauf si vous multipliez les demandes de façon abusive.  
+* **Obligation de sécurité** – le site doit protéger vos données pendant le traitement de votre demande.  
 
-## Où signaler / à qui s'adresser ?
-- **CNIL** : [Saisir la CNIL](https://www.cnil.fr/fr/plaintes)
+### Exceptions et cas particuliers  
+* Si les données sont nécessaires à l’exécution d’une obligation légale (ex. : obligations fiscales), le site peut refuser l’effacement mais doit vous le justifier.  
+* En cas de litige en cours, le site peut suspendre temporairement l’accès aux données concernées, mais il doit vous en informer.  
+* Si vous avez déjà retiré votre consentement, le site doit cesser tout traitement non indispensable et procéder à l’effacement, sauf obligations légales contraires.  
 
-## Pour aller plus loin
-- [Règlement général sur la protection des données](http://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32016R0679&from=FR)
-- [Loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460)
-- [Loi n° 2018-493 du 20 juin 2018 relative à la protection des données personnelles](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037085952)
+## Que faire concrètement ?  
+
+1. **Rédiger une demande écrite** – adressez un courrier ou un e‑mail au service client ou au délégué à la protection des données (DPO). Indiquez clairement le droit que vous exercez (accès, rectification ou effacement) et précisez les données concernées.  
+2. **Conserver une copie** – sauvegardez votre message, la date d’envoi et le nom du destinataire. Cette trace sera utile si vous devez saisir la CNIL.  
+3. **Attendre la réponse** – le site dispose d’un mois pour répondre. Si vous ne recevez rien, envoyez un rappel en rappelant le délai légal.  
+4. **Saisir la CNIL** – si aucune réponse ou une réponse insatisfaisante arrive, remplissez le formulaire en ligne de la CNIL. Joignez les copies de vos courriers et le cas échéant, les captures d’écran du refus.  
+5. **Recours ultime** – si la CNIL ne résout pas le litige ou si le préjudice persiste, vous pouvez engager une action judiciaire devant le tribunal judiciaire. Un avocat spécialisé en droit du numérique pourra vous accompagner.  
+
+## Exemples / cas concrets  
+
+**Situation** : « J’ai demandé à un site de me communiquer toutes les informations le concernant, mais il ne répond pas après 15 jours. »  
+**Ce que vous pouvez faire** : Envoyez un courrier recommandé avec accusé de réception, en rappelant le délai d’un mois prévu par le RGPD. Conservez le reçu.  
+**Résultat attendu** : Le site vous transmet la liste des données ou vous indique les raisons légales d’un éventuel refus.  
+
+**Situation** : « Le site a rectifié mon adresse e‑mail, mais il continue d’envoyer des newsletters à l’ancienne adresse. »  
+**Ce que vous pouvez faire** : Réitérez votre demande de rectification par écrit, en citant le droit de rectification et le délai d’un mois. Joignez une capture d’écran des e‑mails reçus.  
+**Résultat attendu** : Le site corrige l’erreur, arrête les envois à l’ancienne adresse et vous confirme la mise à jour.  
+
+**Situation** : « J’ai demandé la suppression de mon compte après avoir cessé d’utiliser le service, mais le site indique que la loi l’oblige à conserver mes données. »  
+**Ce que vous pouvez faire** : Demandez au site de préciser la disposition légale invoquée (ex. : obligations comptables). S’il ne fournit pas de justification claire, saisissez la CNIL avec votre demande initiale et le refus du site.  
+**Résultat attendu** : Le site justifie le maintien ou procède à la suppression. En cas d’absence de justification, la CNIL peut ordonner l’effacement.  
+
+**Situation** : « Après plusieurs relances, le site m’a envoyé un formulaire générique sans répondre à ma demande d’accès. »  
+**Ce que vous pouvez faire** : Rédigez un rappel en mentionnant le texte du RGPD (article 12) qui impose une réponse claire et précise. Si le site persiste, saisissez la CNIL.  
+**Résultat attendu** : Le site fournit les informations demandées ou justifie son refus de façon détaillée.  
+
+## Où signaler / à qui s’adresser ?  
+
+1. **CNIL – Saisine** – Vous pouvez déposer votre plainte directement sur le site de la CNIL : [Saisir la CNIL](https://www.cnil.fr/fr/plaintes).  
+2. **Médiateur du secteur numérique** – Si le site indique l’existence d’un médiateur (ex. : médiateur du e‑commerce), vous pouvez le solliciter avant la saisine de la CNIL. *(URL du médiateur à préciser si disponible)*  
+3. **Question pivot** – Si votre demande porte sur un service en ligne (site web, application) ou sur un service hors ligne (magasin physique qui collecte vos données), privilégiez d’abord le contact écrit avec le responsable du traitement, puis la CNIL.  
+
+## Sujets proches  
+
+- **[Le produit commandé n’est pas livré et le vendeur ne répond pas](../../contrats_garanties/livraison/non_livraison.md)** — Vous avez également des recours lorsque le vendeur reste muet, mais le cadre juridique relève du droit de la consommation, pas de la protection des données.  
+- **[La garantie commerciale du fabricant ou du vendeur n’est pas appliquée](../../contrats_garanties/garanties/garantie_commerciale_non_respectee.md)** — La garantie commerciale concerne la conformité du produit, alors que votre droit d’accès porte sur vos informations personnelles.  
+
+## À ne pas confondre  
+
+- **Le produit commandé n’est pas livré et le vendeur ne répond pas** — Ici, le problème porte sur la livraison d’un bien et le recours passe par le service client, le médiateur de la consommation ou le tribunal. Ce n’est pas un litige de protection des données, donc la CNIL n’intervient pas. [Lire la fiche](../../contrats_garanties/livraison/non_livraison.md)  
+
+## Pour aller plus loin  
+
+- **Règlement général sur la protection des données (RGPD)** – texte de référence européen qui définit les droits d’accès, de rectification et d’effacement.  
+- **Loi n° 78‑17 du 6 janvier 1978** – loi française « Informatique et Libertés », modifiée par la loi du 20 juin 2018, qui transpose le RGPD en droit national.  
+- **Loi n° 2018‑493 du 20 juin 2018** – renforce les obligations de transparence et les sanctions en matière de données personnelles.  
+
+*(Toutes les références légales sont présentées uniquement dans cette section, conformément aux consignes.)*

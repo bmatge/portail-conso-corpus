@@ -65,8 +65,8 @@ rewrite:
   max_source_chars: 40000
   top_k_per_query: 10
   sujets_proches_top_k: 5
-  sujets_proches_min_score: 0.55
-  faux_amis_similarity_range: [0.45, 0.80]
+  sujets_proches_min_score: 0.88
+  faux_amis_similarity_range: [0.86, 0.92]
   faux_amis_top_k: 3
   timeout: 240
-  rate_limit_rpm: 20
+  rate_limit_rpm: 8

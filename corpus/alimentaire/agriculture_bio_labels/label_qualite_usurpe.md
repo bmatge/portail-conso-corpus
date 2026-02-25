@@ -1,77 +1,110 @@
 ---
 domaine: alimentaire
-generated_at: '2026-02-25T02:05:53.126420'
+generated_at: '2026-02-25T22:35:09.060643'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 13
 sous_domaine: agriculture_bio_labels
 taxonomy_id: label_qualite_usurpe
 title: Usage frauduleux d'un signe de qualité (Label Rouge, IGP, STG) ou d'une mention
   valorisante (« fermier », « artisanal »)
-tokens: 8087
+tokens: 10263
 ---
 
-# Un produit utilise un label de qualité ou une mention valorisante sans justification : que faire ?
+# Un produit affiche un label ou une mention valorisante sans justification : que faire ?
 
 ## En bref
-Si un produit affiche un label de qualité (Label Rouge, AOP, IGP, STG) ou une mention valorisante ("fermier", "artisanal") sans respecter les règles, vous pouvez agir. Ces mentions sont strictement encadrées par la loi. Vous avez le droit d'exiger des preuves et de signaler les abus.
+Un produit ne doit pas porter de label officiel (Label Rouge, AOP, IGP, STG, bio) ni de mention valorisante (« fermier », « artisanal ») sans respecter les règles.  
+Si vous doutez de la légitimité de ces indications, vous pouvez demander des preuves, conserver vos justificatifs et signaler l’abus.  
+Les autorités compétentes peuvent retirer le produit du marché ou sanctionner le professionnel.
 
-## De quoi s'agit-il ?
-Un produit alimentaire ne peut pas afficher un label de qualité ou une mention valorisante sans respecter les règles strictes qui les encadrent. Par exemple, un produit ne peut pas porter le logo "Agriculture biologique" sans certification. De même, des mentions comme "fermier" ou "artisanal" doivent correspondre à des modes de production spécifiques.
+## De quoi s'agit‑il ?
+Un label officiel garantit que le produit suit un cahier des charges précis, contrôlé par un organisme certificateur agréé.  
+Les mentions valorisantes, comme « fermier » ou « produit de montagne », sont également encadrées par la loi et ne peuvent être utilisées que si les conditions sont remplies.  
 
-**Qui est concerné ?**
-- Les consommateurs qui achètent des produits alimentaires
-- Les professionnels qui utilisent ces labels ou mentions de manière abusive
+**Qui est concerné ?**  
+- Vous, consommateur qui achète un produit alimentaire.  
+- Le vendeur, le producteur ou le distributeur qui utilise le label ou la mention.  
 
-**Périmètre**
-- Labels de qualité : Label Rouge, AOP, IGP, STG
-- Mentions valorisantes : "fermier", "artisanal", "produit de la ferme", "produit de montagne", "issus d'une exploitation de haute valeur environnementale"
-- Produits concernés : tous les produits alimentaires
+**Périmètre couvert :**  
+- Labels de qualité : Label Rouge, AOP, IGP, STG, agriculture biologique.  
+- Mentions valorisantes : « fermier », « artisanal », « produit de la ferme », « produit de montagne », « issus d’une exploitation de haute valeur environnementale ».  
+- Tous les produits alimentaires vendus en magasin, en ligne ou sur les marchés.  
 
-**Non couvert**
-- Les mentions non réglementées (ex: "fait maison")
-- Les produits non alimentaires
+**Ce qui n’est pas couvert :**  
+- Mentions non réglementées comme « fait maison » ou « traditionnel ».  
+- Produits non alimentaires (cosmétiques, textiles, etc.).  
 
-## Quels sont vos droits ?
-Les labels de qualité et les mentions valorisantes sont strictement encadrés par la loi. Un produit ne peut pas afficher un label ou une mention sans respecter les règles de production et de certification correspondantes.
+## Quels sont vos droits ?
+La loi interdit toute utilisation abusive d’un label officiel ou d’une mention valorisante.  
+Le professionnel doit disposer d’une certification valide et pouvoir la présenter à tout moment.  
+Vous avez le droit d’exiger la preuve de la certification et de signaler toute suspicion d’abus.  
 
-**Obligations du professionnel**
-- Respecter les règles de production et de certification pour chaque label ou mention
-- Avoir une certification valide pour les labels (AOP, IGP, STG, Agriculture biologique)
-- Ne pas utiliser de mentions trompeuses
+**Obligations du professionnel**  
+- Respecter le cahier des charges du label ou de la mention.  
+- Conserver une copie du certificat délivré par l’organisme certificateur.  
+- Ne pas utiliser de mentions trompeuses qui induisent le consommateur en erreur.  
 
-**Délais importants**
-- Aucun délai spécifique pour signaler un abus
-- Les contrôles sont effectués régulièrement par les autorités compétentes
+**Délais et modalités**  
+- Vous pouvez demander la preuve dès la découverte du doute, sans délai imposé.  
+- Le professionnel doit répondre dans un délai raisonnable, généralement sous 15 jours ouvrés.  
+- Si aucune réponse satisfaisante n’est fournie, vous pouvez saisir les autorités immédiatement.  
 
-## Que faire concrètement ?
-1. **Vérifiez la certification** : Cherchez le numéro de l'organisme certificateur sur l'étiquette. Vous pouvez vérifier sa validité sur le site de l'[INAO](https://www.inao.gouv.fr/).
-2. **Conservez la preuve** : Gardez l'étiquette, la facture et toute preuve de l'achat.
-3. **Contactez le professionnel** : Informez le vendeur ou le fabricant de votre constat. Demandez des explications et des preuves de la certification.
-4. **Signalez le problème** : Si le professionnel ne réagit pas, signalez le problème aux autorités compétentes.
+## Que faire concrètement ?
+1. **Vérifiez la certification** – Repérez le numéro de l’organisme certificateur sur l’étiquette et notez‑le.  
+2. **Contrôlez la validité** – Consultez le site de l’INAO ou de l’organisme concerné pour confirmer que le certificat est en cours de validité.  
+3. **Conservez vos preuves** – Gardez l’étiquette, la facture et tout échange écrit avec le vendeur.  
+4. **Interrogez le professionnel** – Contactez le magasin ou le producteur par écrit, demandez le certificat et précisez le délai de réponse souhaité (15 jours).  
+5. **Signalez l’abus** – Si aucune réponse ou si la réponse est négative, remplissez le formulaire de signalement sur SignalConso (lien direct fourni).  
+6. **Suivez le traitement** – Vous recevrez un accusé de réception et, le cas échéant, les autorités mèneront une enquête.  
 
-## Exemples / cas concrets
-**Situation** : "J'ai acheté des œufs avec la mention 'fermier' mais ils viennent d'un grand élevage industriel."
-**Ce que vous pouvez faire** : Vérifiez si le producteur a une certification "fermier". Si ce n'est pas le cas, signalez l'abus.
-**Résultat attendu** : Le produit sera retiré de la vente ou la mention sera retirée.
+## Exemples / cas concrets  
 
-**Situation** : "Un produit porte le logo 'Agriculture biologique' mais je doute de sa provenance."
-**Ce que vous pouvez faire** : Vérifiez le numéro de l'organisme certificateur. Si vous ne trouvez pas de certification valide, signalez le problème.
-**Résultat attendu** : Le produit sera retiré de la vente ou le logo sera retiré.
+**Situation** : « J’ai acheté des œufs portant la mention « fermier », mais ils proviennent d’un grand élevage industriel. »  
+**Ce que vous pouvez faire** : cherchez le numéro de certification sur l’emballage, vérifiez‑le sur le site de l’INAO, puis écrivez au vendeur en demandant le certificat.  
+**Résultat attendu** : le vendeur retire le produit ou vous fournit la preuve. En cas de fraude, le produit est retiré du marché.  
 
-**Situation** : "Un fromage porte la mention 'produit de montagne' mais il est fabriqué en plaine."
-**Ce que vous pouvez faire** : Vérifiez les règles de la mention "produit de montagne". Si le fromage ne respecte pas ces règles, signalez l'abus.
-**Résultat attendu** : Le produit sera retiré de la vente ou la mention sera retirée.
+**Situation** : « Le fromage indique « produit de montagne », mais il a été fabriqué en plaine selon le fabricant. »  
+**Ce que vous pouvez faire** : consultez les critères de la mention « produit de montagne » sur le site du ministère de l’Agriculture, puis demandez au producteur les documents attestant le respect de ces critères.  
+**Résultat attendu** : le producteur justifie ou le fromage est retiré, et une sanction peut être appliquée.  
 
-## Où signaler / à qui s'adresser ?
-- **SignalConso** : [Signalement direct](https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement)
-- **INAO** : [Institut national de l'origine et de la qualité](https://www.inao.gouv.fr/)
-- **DGCCRF** : Bureau A- « Information du consommateur et valorisation des denrées alimentaires » - Télédoc 223 - 59, boulevard Vincent Auriol - 75703 PARIS CEDEX 13
+**Situation** : « Un paquet de céréales arbore le logo « Agriculture biologique », mais aucune référence à un organisme certificateur n’est visible. »  
+**Ce que vous pouvez faire** : notez le lot et le code-barres, cherchez le numéro d’organisme sur le site du ministère de l’Agriculture, puis contactez le magasin pour obtenir le certificat.  
+**Résultat attendu** : le magasin fournit le certificat ou retire le produit ; les autorités peuvent ouvrir une enquête.  
 
-## Pour aller plus loin
-- [Règlement (UE) n°2024/1143 du 11 avril 2024](https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:02018R0848-20250325) - pour l’appellation d’origine protégée ; l’indication géographique protégée ; la spécialité traditionnelle garantie ; la mention européenne « produit de montagne »
-- [Règlement (UE) n° 2018/848 du 30 mai 2018](https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32008R0543&from=FR) pour la définition de l’agriculture biologique
-- [Règlement (CE) n° 543/2008 du 16 juin 2008](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:157:0046:0087:FR:PDF) – pour les normes de commercialisation pour la viande de volaille
-- Code rural - [article L640-2 à](http://www.legifrance.gouv.fr/affichCode.do?cidTexte=LEGITEXT000006071367&dateTexte=20080505) - liste des modes de valorisation des produits agricoles, forestiers ou alimentaires et de la mer, : signes officiels de la qualité et de l’origine (label rouge, AOP, IGP, STG, agriculture biologique), mentions valorisantes (dont mentions « montagne », « produit de la ferme » « produits pays », « issus d'une exploitation de haute valeur environnementale »
-- Code de la consommation : articles L.121-1 et suivants (pratiques commerciales déloyales), L.454-1 (fraudes) ; article L.431-2 et suivants (sanctions spécifiques) ; article R.412-33
-- [Décret 2007-628 du 27 avril 2007](http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=LEGITEXT000006056036) relatif aux fromages et spécialités fromagères
+**Situation** : « Le miel porte la mention « artisanal », mais il provient d’une grande coopérative industrielle. »  
+**Ce que vous pouvez faire** : demandez au vendeur la preuve que le miel répond aux critères de l’artisanat (production à petite échelle, transformation locale).  
+**Résultat attendu** : le vendeur justifie ou le miel est retiré, et le professionnel peut être sanctionné.  
+
+## Où signaler / à qui s’adresser ?  
+
+1. **SignalConso** – Vous pouvez signaler directement en ligne : [Faire un signalement](https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement).  
+2. **INAO** – Pour vérifier la validité d’un label AOP, IGP, STG ou d’une mention valorisante : [Institut national de l’origine et de la qualité](https://www.inao.gouv.fr/).  
+3. **DGCCRF** – Service « Information du consommateur et valorisation des denrées alimentaires », 59 boulevard Vincent Auriol, 75703 Paris CEDEX 13. Vous pouvez les joindre par courrier ou par le formulaire de contact du site officiel.  
+
+*Si le produit a été acheté en ligne, privilégiez le service client du site marchand avant de passer à la signalisation.*  
+
+## Sujets proches  
+
+- **[Usage abusif d’une AOP/IGP/Label Rouge](../fraude_composition/fraude_aoc_igp.md)** — Le même principe s’applique lorsqu’un label d’appellation d’origine protégée est utilisé sans autorisation.  
+- **[Fraude sur la composition des aliments](../fraude_composition/_index.md)** — Cette fiche traite des cas où la composition réelle du produit diffère de ce qui est indiqué sur l’étiquette.  
+- **[Produit vendu comme bio sans certification valide](../fraude_composition/fraude_bio.md)** — Focus sur les produits affichant le label « bio » sans être certifiés.  
+
+## À ne pas confondre  
+
+- **Conditions de détention non conformes en animalerie** – Il s’agit d’un manquement aux règles sanitaires des animaux, pas d’un abus de label alimentaire. Le recours se fait auprès de la DGAL, pas de la DGCCRF. [Lire la fiche](../../secteurs_reglementes/animaux_compagnie/animalerie_conditions_detention.md)  
+- **Allégations environnementales mensongères (greenwashing)** – Le problème porte sur des messages publicitaires trompeurs, pas sur des labels officiels. Le service public de la consommation gère ces cas. [Lire la fiche](../../pratiques_commerciales/publicite_trompeuse/pub_greenwashing.md)  
+- **Publicité trompeuse ou mensongère** – La publicité mensongère vise le contenu de la communication, alors que l’usage frauduleux d’un label concerne l’étiquetage du produit. Le recours passe par l’ARCOM ou la DGCCRF. [Lire la fiche](../../pratiques_commerciales/publicite_trompeuse/_index.md)  
+
+## Pour aller plus loin  
+
+- Règlement (UE) n° 2024/1143 du 11 avril 2024 – Appellation d’origine protégée, indication géographique protégée, spécialité traditionnelle garantie, mention « produit de montagne ».  
+- Règlement (UE) n° 2018/848 du 30 mai 2018 – Définition et exigences de l’agriculture biologique.  
+- Code rural – article L640‑2 et suivants – Liste des signes officiels de qualité et des mentions valorisantes.  
+- Code de la consommation – articles L.121‑1 et suivants (pratiques commerciales déloyales), L.454‑1 (fraudes), L.431‑2 et suivants (sanctions).  
+- Décret 2007‑628 du 27 avril 2007 – Règles spécifiques aux fromages et spécialités fromagères.  
+
+---  
+
+*Cette fiche vous guide pas à pas pour faire valoir vos droits face à un usage frauduleux de label ou de mention valorisante. N’hésitez pas à conserver toutes vos preuves et à signaler rapidement toute suspicion d’abus.*

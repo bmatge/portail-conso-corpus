@@ -1,81 +1,111 @@
 ---
 domaine: pratiques_commerciales
-generated_at: '2026-02-25T01:52:04.676298'
+generated_at: '2026-02-25T22:21:35.694005'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 27
 sous_domaine: ventes_abusives
 taxonomy_id: renouvellement_tacite_sans_preavis
 title: Renouvellement automatique d'un contrat sans information préalable
-tokens: 7796
+tokens: 14164
 ---
 
-# Votre contrat se renouvelle automatiquement sans information préalable : que faire ?
+# Mon contrat se renouvelle automatiquement sans que je sois prévenu ? Que faire ?
 
 ## En bref
-Votre contrat peut se renouveler automatiquement sans que vous soyez informé à l'avance. Cette pratique, appelée renouvellement tacite, est encadrée par la loi. Vous avez des droits pour éviter ou contester ce renouvellement. Agissez rapidement pour faire valoir vos droits.
+Un contrat à durée déterminée peut se prolonger sans votre accord explicite.  
+La loi impose au professionnel de vous informer au moins un mois avant l’échéance.  
+Si cette information n’est pas donnée, vous pouvez demander la résiliation sans frais et, le cas échéant, contester le renouvellement.
 
-## De quoi s'agit-il ?
-Le renouvellement tacite d'un contrat signifie que votre contrat est prolongé automatiquement à son échéance sans que vous ayez à donner votre accord explicite. Cette pratique est courante dans les contrats d'abonnement (téléphonie, internet, assurance, etc.).
+## De quoi s'agit‑il ?
+Le **renouvellement tacite** désigne la reconduction automatique d’un contrat à son terme.  
+Il concerne les abonnements (téléphonie, internet, énergie, assurance, services en ligne, etc.) conclus **après le 1 juin 2014**.  
 
-**Qui est concerné ?**
-- Tous les consommateurs ayant souscrit un contrat avec une clause de renouvellement tacite.
-- Les contrats d'abonnement (téléphonie, internet, assurance, etc.).
+### Qui est concerné ?
+- Tout consommateur qui a signé un contrat contenant une clause de reconduction automatique.  
+- Les fournisseurs d’énergie, d’accès internet, de téléphonie, les assureurs, les opérateurs de services numériques.  
 
-**Périmètre couvert**
-- Les contrats conclus après le 1er juin 2014.
-- Les contrats de fourniture d'électricité ou de gaz naturel.
+### Ce qui est couvert
+- Les contrats d’abonnement à durée déterminée.  
+- Les prestations de service où la fourniture se poursuit de façon périodique (ex. : forfait mobile, abonnement TV).  
 
-**Périmètre non couvert**
-- Les contrats conclus avant le 1er juin 2014.
-- Les contrats de vente de biens (hors abonnement).
+### Ce qui n’est pas couvert
+- Les contrats conclus **avant le 1 juin 2014**.  
+- Les ventes de biens ponctuels (ex. : achat d’un ordinateur).  
+- Les contrats de location‑vente ou de crédit‑renouvelable (qui relèvent d’autres règles).  
 
-## Quels sont vos droits ?
-La loi encadre strictement le renouvellement tacite des contrats. Le professionnel doit vous informer de la date limite de non-renouvellement au moins **1 mois avant** la date d'échéance du contrat. Cette information doit être claire et précise.
+## Quels sont vos droits ?
+1. **Information préalable** – Le professionnel doit vous indiquer, **au moins un mois avant la date d’échéance**, la date limite à laquelle vous pouvez vous opposer au renouvellement.  
+2. **Clarté de l’information** – L’avis doit être lisible, compréhensible et contenir les modalités exactes pour ne pas reconduire (ex. : adresse mail, formulaire en ligne, courrier).  
+3. **Délai de rétractation** – Pour les contrats conclus à distance ou hors établissement, vous disposez de **14 jours** pour vous rétracter sans justification.  
+4. **Prolongation du délai de rétractation** – Si le professionnel ne vous a pas informé de votre droit de rétractation, le délai passe à **12 mois** à compter de la réception du bien ou de la conclusion du contrat.  
+5. **Absence de frais** – En cas de contestation fondée, le professionnel ne peut pas vous facturer de frais de résiliation, de pénalités ou de frais de remise en service.  
 
-**Obligations du professionnel**
-- Informer le consommateur de la date limite de non-renouvellement.
-- Respecter un délai d'information d'au moins 1 mois avant la date d'échéance.
-- Fournir une information claire et précise sur les modalités de non-renouvellement.
+## Que faire concrètement ?
+1. **Relisez votre contrat** – Cherchez la clause « renouvellement tacite », la date d’échéance et la procédure de non‑renouvellement.  
+2. **Vérifiez les communications reçues** – Recherchez tout courrier, email ou SMS envoyé au moins un mois avant l’échéance.  
+3. **Exercez votre droit de non‑renouvellement** – Envoyez, **dans le délai indiqué**, une lettre recommandée avec accusé de réception (LRAR) au service client. Indiquez clairement : « Je ne souhaite pas renouveler le contrat ».  
+4. **Demandez la confirmation écrite** – Conservez le courrier de réponse du professionnel qui confirme la résiliation.  
+5. **Contestez le renouvellement illégal** – Si aucune information n’a été fournie, adressez une LRAR en invoquant le manquement à l’obligation d’information et le droit de rétractation prolongé à 12 mois.  
+6. **Recours ultime** – En cas de refus persistant, saisissez le médiateur de la consommation (voir section « Où signaler ») ou, en dernier ressort, engagez une procédure judiciaire.  
 
-**Délais importants**
-- **1 mois avant la date d'échéance** : le professionnel doit vous informer de la date limite de non-renouvellement.
-- **14 jours** : délai de rétractation pour les contrats conclus à distance ou hors établissement.
+## Exemples / cas concrets  
 
-## Que faire concrètement ?
-1. **Vérifiez votre contrat** : Consultez les conditions générales de votre contrat pour connaître les modalités de renouvellement tacite.
-2. **Surveillez les communications du professionnel** : Le professionnel doit vous informer de la date limite de non-renouvellement au moins 1 mois avant la date d'échéance.
-3. **Exercez votre droit de non-renouvellement** : Si vous ne souhaitez pas renouveler votre contrat, informez le professionnel avant la date limite de non-renouvellement.
-4. **Contestez le renouvellement automatique** : Si le professionnel n'a pas respecté ses obligations d'information, vous pouvez contester le renouvellement automatique. Envoyez une lettre recommandée avec accusé de réception pour exiger la résiliation du contrat.
+**Situation :** Vous avez souscrit un abonnement internet le 15 janvier 2023. Le contrat prévoit un renouvellement tacite chaque 15 janvier. Aucun courrier n’est arrivé en décembre 2023.  
 
-## Exemples / cas concrets
+**Ce que vous pouvez faire :**  
+- Rédigez une LRAR le 5 janvier 2024 : « Je ne souhaite pas reconduire mon abonnement ».  
+- Joignez une copie du contrat et indiquez le manquement à l’obligation d’information.  
 
-**Situation** : Vous avez souscrit un abonnement internet il y a un an. Le contrat prévoit un renouvellement tacite. Le fournisseur ne vous a pas informé de la date limite de non-renouvellement.
+**Résultat attendu :** Le fournisseur accepte la résiliation sans frais et vous envoie une confirmation écrite.  
 
-**Ce que vous pouvez faire** : Vous pouvez contester le renouvellement automatique en envoyant une lettre recommandée avec accusé de réception pour exiger la résiliation du contrat.
+---
 
-**Résultat attendu** : Le fournisseur doit résilier votre contrat sans frais supplémentaires.
+**Situation :** Vous avez une assurance habitation qui se renouvelle chaque 1 mai. Le professionnel vous a envoyé un email le 20 avril, mais le texte ne mentionne pas la date limite de non‑renouvellement.  
 
-**Situation** : Vous avez souscrit un contrat d'assurance habitation. Le contrat prévoit un renouvellement tacite. Le professionnel vous a informé de la date limite de non-renouvellement, mais vous avez oublié de résilier à temps.
+**Ce que vous pouvez faire :**  
+- Envoyez une LRAR le 25 avril : « Je ne renouvelle pas mon contrat, faute d’information claire ».  
+- Citez le délai d’un mois prévu par la loi.  
 
-**Ce que vous pouvez faire** : Vous pouvez contester le renouvellement automatique en envoyant une lettre recommandée avec accusé de réception pour exiger la résiliation du contrat.
+**Résultat attendu :** L’assureur annule le renouvellement et vous rembourse les éventuels prélèvements déjà effectués.  
 
-**Résultat attendu** : Le professionnel doit résilier votre contrat sans frais supplémentaires.
+---
 
-## Où signaler / à qui s'adresser ?
+**Situation :** Vous avez un abonnement mobile qui se renouvelle le 30 septembre. Vous avez reçu un SMS le 5 septembre indiquant la date de fin, mais aucune modalité pour refuser le renouvellement.  
 
-- **SignalConso** : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)
-- **Médiation de la consommation** : [https://www.economie.gouv.fr/mediation-conso](https://www.economie.gouv.fr/mediation-conso)
+**Ce que vous pouvez faire :**  
+- Répondez par écrit (email recommandé) avant le 30 septembre, en demandant la résiliation et en rappelant le manque de précision sur la procédure.  
+- Conservez le SMS comme preuve d’une information tardive.  
 
-**Question pivot** : Le renouvellement concerne-t-il un abonnement téléphonique/internet ou un autre service ?
+**Résultat attendu :** Le mobile opérateur procède à la résiliation sans frais de résiliation anticipée.  
 
-- **Oui** : [https://signal.conso.gouv.fr/fr/tel-internet-media/faire-un-signalement](https://signal.conso.gouv.fr/fr/tel-internet-media/faire-un-signalement)
-- **Non** : [https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement](https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement)
+## Où signaler / à qui s'adresser ?  
 
-## Pour aller plus loin
+| Priorité | Destination | Lien |
+|----------|-------------|------|
+| 1 | **SignalConso** – plateforme officielle de signalement | [SignalConso – achats en ligne](https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement) |
+| 2 | **Médiation de la consommation** – service gratuit et impartial | [Médiation de la consommation](https://www.economie.gouv.fr/mediation-conso) |
 
-- [Article L. 121-12 du code de la consommation](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=76F328D87A776B6966C9E085AB5624F2.tpdila21v_3?idArticle=LEGIARTI000032227266&cidTexte=LEGITEXT000006069565)
-- [Article L. 132-17 du code de la consommation](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=5887CDD14928398B268656BE7D4E66A6.tpdila08v_2?idArticle=LEGIARTI000032227071&cidTexte=LEGITEXT000006069565)
-- [Article L. 132-18 du code de la consommation](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=5887CDD14928398B268656BE7D4E66A6.tpdila08v_2?idArticle=LEGIARTI000032227069&cidTexte=LEGITEXT000006069565)
-- [Article L. 224-59 du code de la consommation](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=347D06E10FFCFC1C865C6461CDD9EFE4.tplgfr35s_3?idArticle=LEGIARTI000032226591&cidTexte=LEGITEXT000006069565)
-- [Article L. 242-3 du code de la consommation](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=EF7A0C29AA5645B22D71269D3829F9BB.tpdila11v_3?idArticle=LEGIARTI000032226380&cidTexte=LEGITEXT000006069565&dateTexte=20170509)
+### Question pivot  
+Le renouvellement concerne‑t‑il un **abonnement téléphonique / internet** ou **un autre service** ?  
+
+- **Oui** : utilisez le formulaire dédié aux télécoms : [SignalConso – téléphonie / internet](https://signal.conso.gouv.fr/fr/tel-internet-media/faire-un-signalement)  
+- **Non** : utilisez le formulaire général : [SignalConso – achats en ligne / site marchand](https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement)  
+
+## Sujets proches  
+- **[Vente à domicile avec pression ou sans remise du bon de rétractation](../demarchage/demarchage_domicile.md)** — Même principe de droit de rétractation, mais appliqué aux ventes conclues à domicile.  
+- **[Résiliation du contrat d’énergie bloquée ou frais abusifs](../../secteurs_reglementes/energie/resiliation_energie_bloquee.md)** — Vous y trouverez les recours spécifiques lorsqu’un fournisseur d’énergie refuse de résilier un abonnement.  
+
+## À ne pas confondre  
+- **Crédit renouvelable proposé de façon agressive** — Il s’agit d’un produit de crédit soumis à l’Autorité de contrôle prudentiel et de résolution (ACPR). Le recours passe par la médiation bancaire, pas par la procédure de résiliation d’un abonnement. [Lire la fiche](../../secteurs_reglementes/credit/credit_revolving_abusif.md)  
+- **Transmission de vos données personnelles à des tiers** — Ce problème relève de la protection des données et implique la CNIL. Les démarches sont différentes de celles relatives au renouvellement tacite. [Lire la fiche](../../numerique_cyber/donnees_personnelles_commerce/donnees_vendues_tiers.md)  
+
+## Pour aller plus loin  
+- **Code de la consommation – article L.121‑12** (information précontractuelle)  
+- **Code de la consommation – article L.132‑17** (modalités de reconduction)  
+- **Code de la consommation – article L.132‑18** (droit de rétractation)  
+- **Code de la consommation – article L.224‑59** (sanctions en cas de non‑respect des obligations d’information)  
+- **Code de la consommation – article L.242‑3** (pratiques commerciales déloyales)  
+
+*(Toutes les références légales sont disponibles sur Legifrance.)*

@@ -1,67 +1,83 @@
 ---
 domaine: contrats_garanties
-generated_at: '2026-02-25T10:54:16.687556'
+generated_at: '2026-02-25T22:25:10.687244'
 level: situation
-model: openweight-medium
-sources_count: 20
+model: openai/gpt-oss-120b
+rewritten: true
+sources_count: 31
 sous_domaine: garanties
 taxonomy_id: indice_reparabilite_absent
 title: Indice de réparabilité ou de durabilité absent ou trompeur
-tokens: 6304
+tokens: 12264
 ---
 
-# Indice de réparabilité absent ou trompeur : que faire ?
+# Indice de réparabilité absent ou trompeur : que faire ?
 
 ## En bref
-L'indice de réparabilité est obligatoire pour certains produits électroniques. S'il est absent ou trompeur, vous pouvez agir. Les vendeurs doivent l'afficher et fournir les détails sur son calcul. Vous avez des recours si cette information manque.
+L’indice de réparabilité doit être affiché pour certains appareils neufs.  
+S’il manque ou s’il est mensonger, vous pouvez exiger des explications.  
+Vous avez le droit de signaler le manquement à la DGCCRF.  
+Des recours supplémentaires existent si le vendeur ne corrige pas la situation.
 
-## De quoi s'agit-il ?
-L'indice de réparabilité est une note sur 10 qui informe sur la facilité de réparer un produit. Il est obligatoire pour les aspirateurs, lave-vaisselle, nettoyeurs haute pression, ordinateurs portables et tondeuses à gazon électriques.
+## De quoi s’agit‑il ?
+L’indice de réparabilité est une note de 0 à 10 qui indique la facilité de réparer un produit.  
+Il s’applique aux appareils neufs suivants : aspirateurs, lave‑vaisselle, nettoyeurs haute pression, ordinateurs portables et tondeuses à gazon électriques.  
+Le fabricant calcule la note à partir de cinq critères : documentation, démontabilité, disponibilité des pièces détachées, prix des pièces détachées et critères spécifiques à chaque catégorie.  
+Le vendeur doit afficher la note sur l’étiquette, l’emballage ou la fiche produit en ligne.  
+En magasin, le vendeur doit mettre les paramètres de calcul à disposition du consommateur sur simple demande.  
+En ligne, les informations doivent être visibles à proximité du prix, dans la même page que la note.  
+Les produits d’occasion ou reconditionnés ne sont pas concernés par cette obligation.  
+Les produits qui ne figurent pas dans la liste officielle ne sont pas soumis à l’affichage.  
 
-**Qui est concerné ?**
-- Les consommateurs achetant ces produits
-- Les vendeurs et fabricants de ces produits
+## Quels sont vos droits ?
+Vous avez le droit d’obtenir l’indice de réparabilité avant d’acheter.  
+Vous pouvez demander au vendeur de vous présenter le tableau détaillant les critères de calcul.  
+Si le vendeur refuse ou fournit une information incomplète, il ne respecte pas la réglementation.  
+Vous pouvez exiger la mise à jour de l’affichage dans un délai raisonnable, généralement quinze jours.  
+En cas de non‑conformité, vous pouvez saisir la plateforme SignalConso.  
+La DGCCRF peut alors contrôler le professionnel et imposer des sanctions administratives.  
+Vous pouvez également recourir à un médiateur sectoriel si le vendeur en propose un.  
+Si aucune solution amiable n’est trouvée, vous pouvez engager une action judiciaire pour obtenir réparation.  
 
-**Périmètre**
-- **Couvert** : Produits neufs des catégories mentionnées
-- **Non couvert** : Produits d'occasion ou reconditionnés
+## Que faire concrètement ?
+1. **Vérifiez l’affichage** – cherchez la note sur l’étiquette, l’emballage ou la page produit.  
+2. **Demandez les détails** – réclamez le tableau des critères de calcul au vendeur, en magasin ou par écrit en ligne.  
+3. **Mettez en demeure** – si le vendeur ne répond pas sous quinze jours, envoyez une lettre recommandée rappelant l’obligation légale.  
+4. **Signalez le manquement** – utilisez la plateforme SignalConso pour déclarer le problème à la DGCCRF.  
+5. **Recourez à la médiation** – si le vendeur propose un médiateur, soumettez‑lui votre dossier avec les preuves d’affichage manquant.  
+6. **Envisagez l’action judiciaire** – en dernier recours, saisissez le tribunal d’instance avec votre courrier et les captures d’écran.  
 
-## Quels sont vos droits ?
-Les vendeurs doivent afficher l'indice de réparabilité et fournir les détails de son calcul. Cet indice repose sur quatre critères :
-1. Documentation (disponibilité et durée)
-2. Démontabilité (facilité et outils nécessaires)
-3. Disponibilité des pièces détachées
-4. Prix des pièces détachées
+## Exemples / cas concrets  
 
-Les vendeurs doivent mettre cette information à disposition en magasin et en ligne. En cas d'absence ou de tromperie, vous pouvez exiger des explications et signaler le problème.
+**Situation** : Vous achetez un ordinateur portable en boutique et aucune note de réparabilité n’est visible.  
+**Ce que vous pouvez faire** : demandez immédiatement au vendeur le tableau de calcul. S’il refuse, notez le nom du vendeur et la date, puis envoyez une lettre recommandée.  
+**Résultat attendu** : le vendeur doit afficher la note ou corriger l’absence dans les quinze jours suivant votre demande.  
 
-## Que faire concrètement ?
-1. **Vérifiez l'affichage** : Cherchez l'indice de réparabilité sur l'emballage, l'étiquette ou la fiche produit en ligne.
-2. **Demandez les détails** : Si l'indice est affiché, demandez les paramètres de calcul au vendeur.
-3. **Signalez le problème** : Si l'indice est absent ou trompeur, utilisez [SignalConso](https://signal.conso.gouv.fr).
-4. **Engagez un recours** : Si le problème persiste, contactez un médiateur ou un avocat spécialisé.
+**Situation** : Un lave‑vaisselle affiché avec une note 7/10 indique que les pièces détachées sont disponibles, mais le site du fabricant ne propose aucune pièce.  
+**Ce que vous pouvez faire** : contactez le service client, conservez l’échange, puis signalez le problème sur SignalConso en joignant la capture d’écran du site.  
+**Résultat attendu** : le vendeur doit justifier la disponibilité des pièces ou réviser la note de réparabilité.  
 
-## Exemples / cas concrets
+**Situation** : Vous commandez en ligne un aspirateur dont la note de réparabilité est indiquée 8/10, mais la documentation technique est introuvable.  
+**Ce que vous pouvez faire** : réclamez la documentation par mail, en citant l’obligation d’accès à l’information. Si aucune réponse, signalez le manquement sur SignalConso.  
+**Résultat attendu** : le vendeur doit fournir la documentation ou mettre à jour l’affichage pour refléter la réalité.  
 
-**Situation** : Vous achetez un ordinateur portable sans voir l'indice de réparabilité affiché.
-**Ce que vous pouvez faire** : Demandez au vendeur de vous montrer l'indice et ses détails. Si le vendeur ne peut pas, signalez-le sur [SignalConso](https://signal.conso.gouv.fr).
-**Résultat attendu** : Le vendeur doit afficher l'indice ou corriger l'information.
+## Où signaler / à qui s’adresser ?  
+- **Priorité 1** : la plateforme officielle **[SignalConso](https://signal.conso.gouv.fr)**. Vous y déposez votre plainte en décrivant le produit, le vendeur et le problème constaté.  
+- **Priorité 2** : le site d’information publique **[Service‑public.fr](https://www.service-public.fr)**, qui détaille les démarches à suivre et les recours possibles.  
+- **Médiateur sectoriel** : si le vendeur indique un médiateur dédié (ex. médiateur du commerce électronique), contactez‑le en suivant les coordonnées indiquées sur le site du vendeur.  
+- **Service client du vendeur** : adressez‑lui un courrier recommandé avec accusé de réception, en rappelant l’obligation d’affichage de l’indice.  
 
-**Situation** : L'indice de réparabilité d'un lave-vaisselle est affiché, mais les pièces détachées annoncées comme disponibles sont introuvables.
-**Ce que vous pouvez faire** : Signalez le problème sur [SignalConso](https://signal.conso.gouv.fr) et demandez des explications au vendeur.
-**Résultat attendu** : Le vendeur doit fournir les pièces détachées ou corriger l'indice.
+## Sujets proches  
+- **[Droit à la réparation refusé](../sav/droit_reparation_refuse.md)** — le fabricant ne fournit pas les pièces ou la documentation demandée.  
+- **[Caractéristiques du produit annoncées fausses](../../pratiques_commerciales/publicite_trompeuse/pub_caracteristiques_fausses.md)** — la description du produit ne correspond pas à la réalité.  
 
-**Situation** : Un aspirateur a une note de réparabilité de 8/10, mais la documentation technique est difficile à trouver.
-**Ce que vous pouvez faire** : Demandez au vendeur de fournir la documentation. Si elle n'est pas disponible, signalez-le sur [SignalConso](https://signal.conso.gouv.fr).
-**Résultat attendu** : Le vendeur doit fournir la documentation ou corriger l'indice.
+## À ne pas confondre  
+- **Produit dangereux ou non conforme** — il s’agit d’un défaut de sécurité ou de conformité, pas d’un problème d’affichage de l’indice. Le recours passe par le service de rappel consulaire ou la justice, pas par SignalConso.  
+- **Étiquetage incorrect des produits** — concerne les mentions obligatoires de prix, poids ou origine, alors que l’indice de réparabilité relève d’une information environnementale distincte.  
 
-## Où signaler / à qui s'adresser ?
-- **Priorité 1** : [SignalConso](https://signal.conso.gouv.fr)
-- **Priorité 2** : [Service-public.fr](https://www.service-public.fr)
-
-## Pour aller plus loin
-- [Code de commerce (article L. 321-1)](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000005634379&idArticle=LEGIARTI000006231385&dateTexte=&categorieLien=cid)
-- [Code de la consommation (articles L. 111-1 1° et L. 221-5 l 1°)](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044142438)
-- [Code de la consommation (articles R. 122-4 à R 122-6)](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045186126)
-- [Objets d’occasion, reconditionnés : quelles garanties pour l’acheteur ?](https://www.economie.gouv.fr/particuliers/objet-occasion-reconditionne-garantie)
-- [Tout savoir sur l’indice de réparabilité](https://www.economie.gouv.fr/particuliers/tout-savoir-indice-reparabilite)
+## Pour aller plus loin  
+- Code de la consommation, articles L. 111‑1 1° et L. 221‑5 1° (obligation d’information).  
+- Code de la consommation, articles R. 122‑4 à R. 122‑6 (règles d’affichage en magasin et en ligne).  
+- DGCCRF – « Indice de réparabilité de vos produits d’équipements électriques et électroniques », disponible sur le site officiel de la DGCCRF.  
+- Guide pratique de la DGCCRF sur le signalement d’un problème : [/dgccrf/signaler-un-probleme](/dgccrf/signaler-un-probleme).  
+- Service public – « Comment signaler un problème de consommation », accessible via Service‑public.fr.
