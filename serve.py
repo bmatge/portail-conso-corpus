@@ -77,25 +77,46 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.wfile.write(resp_body)
 
     def _proxy_api(self):
-        """Proxy /api/* requests to FastAPI backend."""
+        """Proxy /api/* requests to FastAPI backend (with SSE streaming support)."""
         target_url = API_BACKEND + self.path
         content_length = int(self.headers.get("Content-Length", 0))
         body = self.rfile.read(content_length) if content_length else None
 
+        fwd_headers = {"Content-Type": self.headers.get("Content-Type", "application/json")}
+        accept = self.headers.get("Accept", "")
+        if accept:
+            fwd_headers["Accept"] = accept
+
         req = urllib.request.Request(
-            target_url, data=body, method=self.command,
-            headers={"Content-Type": self.headers.get("Content-Type", "application/json")},
+            target_url, data=body, method=self.command, headers=fwd_headers,
         )
         try:
-            with urllib.request.urlopen(req) as resp:
+            resp = urllib.request.urlopen(req, timeout=120)
+            content_type = resp.headers.get("Content-Type", "application/json")
+            self.send_response(resp.status)
+            self._cors_headers()
+            self.send_header("Content-Type", content_type)
+
+            if "text/event-stream" in content_type:
+                # Stream SSE responses chunk by chunk
+                self.send_header("Cache-Control", "no-cache")
+                self.send_header("Connection", "keep-alive")
+                self.end_headers()
+                while True:
+                    chunk = resp.read(1024)
+                    if not chunk:
+                        break
+                    self.wfile.write(chunk)
+                    self.wfile.flush()
+            else:
                 resp_body = resp.read()
-                self.send_response(resp.status)
-                self.send_header("Content-Type", resp.headers.get("Content-Type", "application/json"))
                 self.end_headers()
                 self.wfile.write(resp_body)
+            resp.close()
         except urllib.error.HTTPError as e:
             resp_body = e.read()
             self.send_response(e.code)
+            self._cors_headers()
             self.send_header("Content-Type", "application/json")
             self.end_headers()
             self.wfile.write(resp_body)

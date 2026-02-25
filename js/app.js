@@ -14,6 +14,7 @@ const state = {
   adapter: null,
   treeViz: null,
   conversation: [],
+  sessionId: null,
   currentConfig: { ...DEFAULT_CONFIG },
   corpusIndex: null,
   corpusLookup: null,

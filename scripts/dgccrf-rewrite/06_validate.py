@@ -96,8 +96,9 @@ def validate_fiche(
     expected = EXPECTED_SECTIONS.get(level, [])
     missing_sections = []
     for exp in expected:
-        # Fuzzy match: check if any actual section contains the expected text
-        if not any(exp in s for s in actual_sections):
+        # Fuzzy match: normalize expected too before substring check
+        norm_exp = normalize(exp)
+        if not any(norm_exp in s for s in actual_sections):
             missing_sections.append(exp)
 
     result["checks"].append({
@@ -243,7 +244,7 @@ def main():
         path = None
 
         if level == "domaine":
-            path = fiches_dir / "domaines" / f"{item.id}.md"
+            path = fiches_dir / item.id / "_index.md"
         elif level == "sous_domaine":
             domaine = taxonomy.get_domaine_for(item)
             d_id = domaine.id if domaine else "unknown"

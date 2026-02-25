@@ -155,3 +155,112 @@ export function buildFicheResultCard(taxonomy, situationId, classifyResult, enBr
       <div style="margin-top:.75rem">${voirFicheBtn}</div>
     </div></div></div>`;
 }
+
+
+// ── Agent Phase Cards ───────────────────────────────────
+
+
+/**
+ * Carte de question de clarification (phase CLARIFY).
+ * @param {object} data - { question, type?, candidates?, situation_id? }
+ * @returns {string} HTML
+ */
+export function buildClarifyCard(data) {
+  const question = escHtml(data.question || '');
+  const isPivot = data.type === 'pivot';
+
+  let html = `<div class="fr-card fr-card--no-arrow clarify-card">
+    <div class="fr-card__body"><div class="fr-card__content">
+      <p class="fr-badge fr-badge--info fr-badge--sm fr-badge--no-icon">Question de clarification</p>
+      <p class="fr-card__desc" style="margin-top:.5rem;font-weight:600">${question}</p>`;
+
+  if (isPivot) {
+    html += `<p class="fr-text--xs" style="margin-top:.5rem;color:var(--text-mention-grey,#666)">
+      Repondez en quelques mots pour que je puisse vous orienter plus precisement.</p>`;
+  }
+
+  if (data.candidates && data.candidates.length > 0) {
+    html += `<p class="fr-text--xs" style="margin-top:.5rem;color:var(--text-mention-grey,#666)">
+      Situations possibles : ${data.candidates.length} candidat(s) — consultez l'arbre a droite.</p>`;
+  }
+
+  html += `</div></div></div>`;
+  return html;
+}
+
+
+/**
+ * Carte d'actions concretes (phase ACTION).
+ * @param {object} data - { actions[], signalconso?, mediateur? }
+ * @returns {string} HTML
+ */
+export function buildActionCard(data) {
+  const actions = data.actions || [];
+  const sc = data.signalconso;
+  const med = data.mediateur;
+
+  let html = `<div class="fr-card fr-card--no-arrow action-card">
+    <div class="fr-card__body"><div class="fr-card__content">
+      <p class="fr-badge fr-badge--success fr-badge--sm fr-badge--no-icon">Vos recours</p>`;
+
+  if (sc && sc.url) {
+    html += `<div class="action-primary" style="margin-top:.65rem">
+      <a class="fr-btn fr-btn--sm" href="${escHtml(sc.url)}" target="_blank" rel="noopener">
+        Signaler sur SignalConso
+      </a>
+      ${sc.urgence ? '<span class="fr-badge fr-badge--error fr-badge--sm" style="margin-left:.5rem">Urgent</span>' : ''}
+      ${sc.note ? `<p class="fr-text--xs" style="margin-top:.25rem;color:var(--text-mention-grey,#666)">${escHtml(sc.note)}</p>` : ''}
+    </div>`;
+  }
+
+  if (actions.length > 0) {
+    html += `<div style="margin-top:.65rem">`;
+    for (const a of actions) {
+      const icon = SORTIE_ICONS[a.type] || '';
+      const url = a.url || '#';
+      html += `<div class="sortie-item priorite-${a.priorite || 2}">
+        <span class="sortie-icon">${icon}</span>
+        <div class="sortie-content">
+          <div class="sortie-title">${escHtml(a.label)}</div>
+          ${url !== '#' ? `<div class="sortie-url"><a href="${escHtml(url)}" target="_blank" rel="noopener">${escHtml(url)}</a></div>` : ''}
+          ${a.note ? `<div class="sortie-note">${escHtml(a.note)}</div>` : ''}
+          ${a.condition ? `<div class="sortie-note">Condition : ${escHtml(a.condition)}</div>` : ''}
+        </div></div>`;
+    }
+    html += `</div>`;
+  }
+
+  if (med && med.url) {
+    html += `<div class="mediateur-block" style="margin-top:.65rem">
+      <strong>Mediateur sectoriel</strong>
+      <a href="${escHtml(med.url)}" target="_blank" rel="noopener">${escHtml(med.label)}</a>
+    </div>`;
+  }
+
+  html += `</div></div></div>`;
+  return html;
+}
+
+
+/**
+ * Citations des sources utilisees dans la reponse.
+ * @param {Array} sources - [{source, title, score}]
+ * @returns {string} HTML
+ */
+export function buildSourceCitations(sources) {
+  if (!sources || sources.length === 0) return '';
+
+  let html = `<details class="source-citations" style="margin-top:.5rem">
+    <summary class="fr-text--xs" style="cursor:pointer;color:var(--text-action-high-blue-france,#000091)">
+      Sources utilisees (${sources.length})
+    </summary>
+    <ul class="fr-text--xs" style="margin-top:.25rem;padding-left:1.2rem;color:var(--text-mention-grey,#666)">`;
+
+  for (const [i, s] of sources.entries()) {
+    const score = Math.round((s.score || 0) * 100);
+    html += `<li>[${i + 1}] ${escHtml(s.source.toUpperCase())} — ${escHtml(s.title)} (${score}%)</li>`;
+  }
+
+  html += `</ul></details>`;
+  return html;
+}

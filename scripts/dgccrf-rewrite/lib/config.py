@@ -62,6 +62,22 @@ class LLMConfig(BaseModel):
     retry_delay: int = 5
 
 
+class RewriteConfig(BaseModel):
+    model: str = "openai/gpt-oss-120b"
+    temperature: float = 0.3
+    max_tokens_situation: int = 8000
+    max_tokens_sous_domaine: int = 10000
+    max_tokens_domaine: int = 8000
+    max_source_chars: int = 40000
+    top_k_per_query: int = 10
+    sujets_proches_top_k: int = 5
+    sujets_proches_min_score: float = 0.55
+    faux_amis_similarity_range: list[float] = [0.45, 0.80]
+    faux_amis_top_k: int = 3
+    timeout: int = 240
+    rate_limit_rpm: int = 20
+
+
 class AppConfig(BaseModel):
     paths: PathsConfig
     inc_cleaning: IncCleaningConfig = IncCleaningConfig()
@@ -69,6 +85,7 @@ class AppConfig(BaseModel):
     chunking: ChunkingConfig = ChunkingConfig()
     retrieval: RetrievalConfig = RetrievalConfig()
     llm: LLMConfig = LLMConfig()
+    rewrite: RewriteConfig = RewriteConfig()
 
 
 def load_config(config_path: str | Path | None = None) -> AppConfig:

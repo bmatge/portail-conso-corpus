@@ -1,5 +1,6 @@
-import { buildResultCard, buildFicheResultCard } from './result-card.js';
+import { buildResultCard, buildFicheResultCard, buildClarifyCard, buildActionCard, buildSourceCitations } from './result-card.js';
 import { extractEnBref } from './fiche-panel.js';
+import { LLMAdapter } from './llm-adapter.js';
 
 /**
  * Ajoute un message dans le DOM de conversation.
@@ -52,8 +53,47 @@ export function hideThinking(treeViz) {
 }
 
 /**
+ * Cree une bulle de message streaming (curseur anime).
+ * @param {string} role - 'bot' | 'user'
+ * @returns {{ bubble: HTMLElement, append(text: string): void, finish(): void }}
+ */
+export function appendStreamingMessage(role = 'bot') {
+  const conv = document.getElementById('conversation');
+  const div = document.createElement('div');
+  div.className = `msg ${role}`;
+  const avatar = role === 'bot'
+    ? '<div class="msg-avatar"><span class="fr-icon-france-line" aria-hidden="true"></span></div>'
+    : '<div class="msg-avatar"><span class="fr-icon-user-line" aria-hidden="true"></span></div>';
+  const bubble = document.createElement('div');
+  bubble.className = 'msg-bubble streaming';
+  div.innerHTML = avatar;
+  div.appendChild(bubble);
+  conv.appendChild(div);
+
+  let fullText = '';
+
+  return {
+    bubble,
+    append(text) {
+      fullText += text;
+      bubble.textContent = fullText;
+      if (typeof div.scrollIntoView === 'function') {
+        div.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      }
+    },
+    finish() {
+      bubble.classList.remove('streaming');
+      // Render markdown if marked.js is available
+      if (window.marked && fullText) {
+        bubble.innerHTML = marked.parse(fullText);
+      }
+    },
+  };
+}
+
+/**
  * Envoie un message et traite la reponse LLM.
- * @param {object} state - { adapter, conversation, treeViz, taxonomy }
+ * @param {object} state - { adapter, conversation, treeViz, taxonomy, sessionId, ... }
  */
 export async function sendMessage(state) {
   const input = document.getElementById('user-input');
@@ -72,6 +112,88 @@ export async function sendMessage(state) {
 
   appendMessage('user', text);
   state.conversation.push({ role: 'user', content: text });
+
+  // Agent mode for builtin, classic classify for custom
+  if (state.adapter.config.mode === 'builtin') {
+    return _sendAgentMessage(state);
+  }
+  return _sendClassifyMessage(state);
+}
+
+
+/**
+ * Agent multi-etapes : classify → clarify → answer → action (builtin mode).
+ */
+async function _sendAgentMessage(state) {
+  showThinking(state.treeViz);
+
+  let streamBubble = null;
+
+  try {
+    const response = await state.adapter.agentChat(
+      state.conversation, state.sessionId,
+      {
+        onPhase(phase, data) {
+          if (phase === 'classify') {
+            hideThinking(state.treeViz);
+            // Update tree
+            if (state.treeViz) {
+              if (data.situation_id) state.treeViz.showResult(data.situation_id);
+              else if (data.candidate_situation_ids?.length) state.treeViz.showCandidates(data.candidate_situation_ids);
+            }
+            // Hors perimetre
+            if (data.hors_perimetre) {
+              appendMessage('bot',
+                'Ce probleme semble hors du perimetre DGCCRF. Quelques pistes :\n\n' +
+                '- Litige entre particuliers \u2192 tribunal judiciaire\n' +
+                '- Probleme avec une administration \u2192 Defenseur des droits (defenseurdesdroits.fr)\n' +
+                '- Probleme international \u2192 Centre Europeen des Consommateurs (europe-consommateurs.eu)\n\n' +
+                'Si vous pensez que je me suis trompe, reformulez votre situation.');
+            }
+          }
+          else if (phase === 'clarify') {
+            hideThinking(state.treeViz);
+            appendMessage('bot', buildClarifyCard(data), true);
+          }
+          else if (phase === 'answer') {
+            hideThinking(state.treeViz);
+            streamBubble = appendStreamingMessage('bot');
+          }
+          else if (phase === 'action') {
+            if (streamBubble) { streamBubble.finish(); streamBubble = null; }
+            appendMessage('bot', buildActionCard(data), true);
+          }
+        },
+        onChunk(text) {
+          if (streamBubble) streamBubble.append(text);
+        },
+        onSources(sources) {
+          if (sources?.length) {
+            appendMessage('bot', buildSourceCitations(sources), true);
+          }
+        },
+        onDone() {
+          if (streamBubble) { streamBubble.finish(); streamBubble = null; }
+        },
+      }
+    );
+
+    state.sessionId = response.sessionId;
+    state.conversation.push({ role: 'assistant', content: '[agent_response]' });
+
+  } catch (err) {
+    hideThinking(state.treeViz);
+    if (streamBubble) streamBubble.finish();
+    appendMessage('bot', `Erreur : ${err.message}\n\nVerifiez la configuration LLM.`);
+    console.error('[Agent]', err);
+  }
+}
+
+
+/**
+ * Classification simple (mode custom avec cle API client).
+ */
+async function _sendClassifyMessage(state) {
   showThinking(state.treeViz);
 
   try {
@@ -92,9 +214,9 @@ export async function sendMessage(state) {
     if (result.hors_perimetre) {
       appendMessage('bot',
         'Ce probleme semble hors du perimetre DGCCRF. Quelques pistes :\n\n' +
-        '- Litige entre particuliers → tribunal judiciaire\n' +
-        '- Probleme avec une administration → Defenseur des droits (defenseurdesdroits.fr)\n' +
-        '- Probleme international → Centre Europeen des Consommateurs (europe-consommateurs.eu)\n\n' +
+        '- Litige entre particuliers \u2192 tribunal judiciaire\n' +
+        '- Probleme avec une administration \u2192 Defenseur des droits (defenseurdesdroits.fr)\n' +
+        '- Probleme international \u2192 Centre Europeen des Consommateurs (europe-consommateurs.eu)\n\n' +
         'Si vous pensez que je me suis trompe, reformulez votre situation.');
       return;
     }
@@ -137,12 +259,14 @@ export async function sendMessage(state) {
   }
 }
 
+
 /**
  * Reinitialise la conversation.
- * @param {object} state - { conversation, treeViz }
+ * @param {object} state - { conversation, treeViz, sessionId }
  */
 export function resetConversation(state) {
   state.conversation.length = 0;
+  state.sessionId = null;
   document.getElementById('conversation').innerHTML = '';
   appendMessage('bot', 'Conversation reinitialisee. Decrivez votre probleme de consommation.');
   if (state.treeViz) state.treeViz.reset();

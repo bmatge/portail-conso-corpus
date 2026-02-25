@@ -145,6 +145,67 @@ class ChromaManager:
 
         return dgccrf_results, other_results
 
+    def multi_query(
+        self,
+        queries: dict[str, str],
+        top_k_per_query: int = 10,
+        min_score: float = 0.3,
+        boost_source: str = "dgccrf",
+        boost_factor: float = 1.5,
+        max_chars: int = 40000,
+    ) -> tuple[list[dict], list[dict]]:
+        """Execute multiple queries, merge, deduplicate, and return split results.
+
+        Each query targets a different facet (droits, procédures, exemples, etc.).
+        Results are deduplicated by (source, title, chunk_index), boosted, and
+        truncated to max_chars.
+
+        Returns: (dgccrf_results, other_results)
+        """
+        # Collect all results across queries
+        seen: set[tuple] = set()
+        all_results: list[dict] = []
+
+        for query_name, query_text in queries.items():
+            results = self.query(
+                query_text, top_k=top_k_per_query, min_score=min_score
+            )
+            for r in results:
+                key = (r["source"], r["title"], r.get("chunk_index", 0))
+                if key in seen:
+                    continue
+                seen.add(key)
+                r["query_origin"] = query_name
+                all_results.append(r)
+
+        # Apply boost
+        for r in all_results:
+            if r["source"] == boost_source:
+                r["adjusted_score"] = r["score"] * boost_factor
+            else:
+                r["adjusted_score"] = r["score"]
+
+        # Sort by adjusted score
+        all_results.sort(key=lambda r: r["adjusted_score"], reverse=True)
+
+        # Split and truncate to max_chars
+        dgccrf_results: list[dict] = []
+        other_results: list[dict] = []
+        total_chars = 0
+
+        for r in all_results:
+            text_len = len(r["text"])
+            if total_chars + text_len > max_chars:
+                continue
+            total_chars += text_len
+
+            if r["source"] == boost_source:
+                dgccrf_results.append(r)
+            else:
+                other_results.append(r)
+
+        return dgccrf_results, other_results
+
     def count(self) -> int:
         return self.collection.count()
 
