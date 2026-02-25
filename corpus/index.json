@@ -1,0 +1,425 @@
+{
+  "generated_at": "2026-02-25T01:06:58.987056+00:00",
+  "domaines": [
+    {
+      "id": "alimentaire",
+      "label": "Fraude et sécurité alimentaire",
+      "sous_domaines": [
+        {
+          "id": "agriculture_bio_labels",
+          "label": "Agriculture biologique et labels de qualité",
+          "fiches": [
+            {
+              "taxonomy_id": "faux_label_bio",
+              "title": "Produit vendu comme « bio » sans certification officielle (logo AB ou Eurofeuille absent)",
+              "path": "alimentaire/agriculture_bio_labels/faux_label_bio.md"
+            },
+            {
+              "taxonomy_id": "label_qualite_usurpe",
+              "title": "Usage frauduleux d'un signe de qualité (Label Rouge, IGP, STG) ou d'une mention valorisante (« fermier », « artisanal »)",
+              "path": "alimentaire/agriculture_bio_labels/label_qualite_usurpe.md"
+            }
+          ]
+        },
+        {
+          "id": "complements_alimentaires",
+          "label": "Compléments alimentaires",
+          "fiches": [
+            {
+              "taxonomy_id": "complement_substance_interdite",
+              "title": "Présence suspectée d'une substance interdite dans un complément alimentaire",
+              "path": "alimentaire/complements_alimentaires/complement_substance_interdite.md"
+            },
+            {
+              "taxonomy_id": "complement_allegations_medicales",
+              "title": "Un complément alimentaire est présenté comme un médicament (guérit, soigne une maladie)",
+              "path": "alimentaire/complements_alimentaires/complement_allegations_medicales.md"
+            }
+          ]
+        },
+        {
+          "id": "etiquetage_alimentaire",
+          "label": "Étiquetage alimentaire non conforme",
+          "fiches": [
+            {
+              "taxonomy_id": "allegations_nutritionnelles_fausses",
+              "title": "Allégations nutritionnelles ou de santé fausses ou non autorisées (ex : 'réduit le cholestérol' sans preuve)",
+              "path": "alimentaire/etiquetage_alimentaire/allegations_nutritionnelles_fausses.md"
+            },
+            {
+              "taxonomy_id": "date_peremption_manquante",
+              "title": "Date de péremption (DLC/DDM) absente ou illisible",
+              "path": "alimentaire/etiquetage_alimentaire/date_peremption_manquante.md"
+            },
+            {
+              "taxonomy_id": "produit_perime_vendu",
+              "title": "Des produits périmés sont en vente",
+              "path": "alimentaire/etiquetage_alimentaire/produit_perime_vendu.md"
+            },
+            {
+              "taxonomy_id": "allergenes_absents",
+              "title": "Les allergènes ne sont pas mentionnés ou sont masqués sur l'étiquette",
+              "path": "alimentaire/etiquetage_alimentaire/allergenes_absents.md"
+            }
+          ]
+        },
+        {
+          "id": "fraude_composition",
+          "label": "Fraude sur la composition des aliments",
+          "fiches": [
+            {
+              "taxonomy_id": "origine_geographique_fausse",
+              "title": "L'origine géographique annoncée est fausse (ex : fromage présenté comme provençal, fabriqué en Pologne)",
+              "path": "alimentaire/fraude_composition/origine_geographique_fausse.md"
+            },
+            {
+              "taxonomy_id": "composition_differente_etiquette",
+              "title": "La composition réelle du produit ne correspond pas à l'étiquette (ex : viande de cheval vendue comme bœuf)",
+              "path": "alimentaire/fraude_composition/composition_differente_etiquette.md"
+            },
+            {
+              "taxonomy_id": "fraude_bio",
+              "title": "Produit vendu comme bio sans certification valide",
+              "path": "alimentaire/fraude_composition/fraude_bio.md"
+            },
+            {
+              "taxonomy_id": "fraude_aoc_igp",
+              "title": "Usage abusif d'une AOP/IGP/Label Rouge",
+              "path": "alimentaire/fraude_composition/fraude_aoc_igp.md"
+            }
+          ]
+        },
+        {
+          "id": "restauration",
+          "label": "Restauration",
+          "fiches": [
+            {
+              "taxonomy_id": "intoxication_alimentaire",
+              "title": "Intoxication alimentaire (toxi-infection alimentaire collective suspectée)",
+              "path": "alimentaire/restauration/intoxication_alimentaire.md"
+            },
+            {
+              "taxonomy_id": "hygiene_restauration",
+              "title": "Problème d'hygiène grave dans un restaurant (rongeurs, cafards, cuisine insalubre…)",
+              "path": "alimentaire/restauration/hygiene_restauration.md"
+            },
+            {
+              "taxonomy_id": "tromperie_carte_restaurant",
+              "title": "Produits du menu différents de ce qui est servi (surgelé annoncé comme frais, composition différente)",
+              "path": "alimentaire/restauration/tromperie_carte_restaurant.md"
+            }
+          ]
+        },
+        {
+          "id": "vins_spiritueux",
+          "label": "Vins et spiritueux",
+          "fiches": [
+            {
+              "taxonomy_id": "vin_appellation_frauduleuse",
+              "title": "Vin vendu sous une appellation d'origine (AOC/AOP) sans y avoir droit",
+              "path": "alimentaire/vins_spiritueux/vin_appellation_frauduleuse.md"
+            },
+            {
+              "taxonomy_id": "spiritueux_etiquetage",
+              "title": "Étiquetage non conforme sur une bouteille de vin ou spiritueux (degré, origine, cépage)",
+              "path": "alimentaire/vins_spiritueux/spiritueux_etiquetage.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contrats_garanties",
+      "label": "Contrats, garanties et droits du consommateur",
+      "sous_domaines": [
+        {
+          "id": "clauses_abusives",
+          "label": "Clauses abusives dans un contrat",
+          "fiches": [
+            {
+              "taxonomy_id": "clause_resiliation_abusive",
+              "title": "Le contrat impose des conditions de résiliation excessivement contraignantes",
+              "path": "contrats_garanties/clauses_abusives/clause_resiliation_abusive.md"
+            },
+            {
+              "taxonomy_id": "clause_unilaterale_modification",
+              "title": "Le professionnel se réserve le droit de modifier unilatéralement le contrat",
+              "path": "contrats_garanties/clauses_abusives/clause_unilaterale_modification.md"
+            },
+            {
+              "taxonomy_id": "clause_responsabilite_limitee",
+              "title": "Une clause exclut ou limite abusivement la responsabilité du professionnel",
+              "path": "contrats_garanties/clauses_abusives/clause_responsabilite_limitee.md"
+            }
+          ]
+        },
+        {
+          "id": "garanties",
+          "label": "Garanties légales et commerciales",
+          "fiches": [
+            {
+              "taxonomy_id": "garantie_vices_caches",
+              "title": "Défaut caché découvert après achat (vice caché)",
+              "path": "contrats_garanties/garanties/garantie_vices_caches.md"
+            },
+            {
+              "taxonomy_id": "garantie_commerciale_non_respectee",
+              "title": "La garantie commerciale du fabricant ou du vendeur n'est pas appliquée",
+              "path": "contrats_garanties/garanties/garantie_commerciale_non_respectee.md"
+            },
+            {
+              "taxonomy_id": "garantie_conformite_refusee",
+              "title": "Le vendeur refuse la garantie légale de conformité (2 ans pour produits neufs, 1 an pour occasion)",
+              "path": "contrats_garanties/garanties/garantie_conformite_refusee.md"
+            }
+          ]
+        },
+        {
+          "id": "livraison",
+          "label": "Livraison et non-délivrance",
+          "fiches": [
+            {
+              "taxonomy_id": "non_livraison",
+              "title": "Le produit commandé n'est pas livré et le vendeur ne répond pas",
+              "path": "contrats_garanties/livraison/non_livraison.md"
+            },
+            {
+              "taxonomy_id": "produit_endommage_livraison",
+              "title": "Produit reçu endommagé",
+              "path": "contrats_garanties/livraison/produit_endommage_livraison.md"
+            },
+            {
+              "taxonomy_id": "retard_livraison",
+              "title": "Retard de livraison significatif sans information ni solution proposée",
+              "path": "contrats_garanties/livraison/retard_livraison.md"
+            }
+          ]
+        },
+        {
+          "id": "retractation",
+          "label": "Droit de rétractation",
+          "fiches": [
+            {
+              "taxonomy_id": "retractation_refuse",
+              "title": "Le professionnel refuse d'appliquer le droit de rétractation de 14 jours (achat en ligne ou à distance)",
+              "path": "contrats_garanties/retractation/retractation_refuse.md"
+            },
+            {
+              "taxonomy_id": "retractation_domicile",
+              "title": "Le professionnel refuse le droit de rétractation pour une vente à domicile",
+              "path": "contrats_garanties/retractation/retractation_domicile.md"
+            }
+          ]
+        },
+        {
+          "id": "sav",
+          "label": "Service après-vente (SAV) défaillant",
+          "fiches": [
+            {
+              "taxonomy_id": "sav_non_reponse",
+              "title": "Le SAV ne répond pas ou refuse de traiter la demande",
+              "path": "contrats_garanties/sav/sav_non_reponse.md"
+            },
+            {
+              "taxonomy_id": "reparation_facturee_garantie",
+              "title": "Une réparation est facturée alors qu'elle devrait être couverte par la garantie",
+              "path": "contrats_garanties/sav/reparation_facturee_garantie.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "numerique_cyber",
+      "label": "Numérique, cyber et commerce en ligne",
+      "sous_domaines": [
+        {
+          "id": "arnaques_en_ligne",
+          "label": "Arnaques en ligne",
+          "fiches": [
+            {
+              "taxonomy_id": "faux_site_commerce",
+              "title": "Faux site de vente en ligne : j'ai commandé et payé, mais rien reçu et le site a disparu",
+              "path": "numerique_cyber/arnaques_en_ligne/faux_site_commerce.md"
+            },
+            {
+              "taxonomy_id": "faux_site_gouvernemental",
+              "title": "Faux site imitant un service public pour obtenir des paiements indus (faux permis de conduire, faux timbres fiscaux…)",
+              "path": "numerique_cyber/arnaques_en_ligne/faux_site_gouvernemental.md"
+            },
+            {
+              "taxonomy_id": "phishing",
+              "title": "Hameçonnage (phishing) : j'ai reçu un faux email/SMS imitant un organisme officiel",
+              "path": "numerique_cyber/arnaques_en_ligne/phishing.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pratiques_commerciales",
+      "label": "Pratiques commerciales déloyales",
+      "sous_domaines": [
+        {
+          "id": "demarchage",
+          "label": "Démarchage abusif",
+          "fiches": [
+            {
+              "taxonomy_id": "abus_faiblesse",
+              "title": "Abus de faiblesse ou de vulnérabilité (personne âgée, état de détresse…)",
+              "path": "pratiques_commerciales/demarchage/abus_faiblesse.md"
+            },
+            {
+              "taxonomy_id": "demarchage_telephonique",
+              "title": "Démarchage téléphonique non sollicité (hors exceptions légales)",
+              "path": "pratiques_commerciales/demarchage/demarchage_telephonique.md"
+            },
+            {
+              "taxonomy_id": "demarchage_domicile",
+              "title": "Vente à domicile avec pression ou sans remise du bon de rétractation",
+              "path": "pratiques_commerciales/demarchage/demarchage_domicile.md"
+            }
+          ]
+        },
+        {
+          "id": "faux_avis",
+          "label": "Faux avis en ligne",
+          "fiches": [
+            {
+              "taxonomy_id": "faux_avis_client",
+              "title": "Des avis clients semblent faux ou achetés",
+              "path": "pratiques_commerciales/faux_avis/faux_avis_client.md"
+            },
+            {
+              "taxonomy_id": "suppression_avis_negatifs",
+              "title": "Un professionnel fait supprimer des avis négatifs légitimes",
+              "path": "pratiques_commerciales/faux_avis/suppression_avis_negatifs.md"
+            }
+          ]
+        },
+        {
+          "id": "publicite_trompeuse",
+          "label": "Publicité trompeuse ou mensongère",
+          "fiches": [
+            {
+              "taxonomy_id": "pub_greenwashing",
+              "title": "Allégations environnementales mensongères (greenwashing, faux écolabel)",
+              "path": "pratiques_commerciales/publicite_trompeuse/pub_greenwashing.md"
+            },
+            {
+              "taxonomy_id": "pub_influenceur_dissimule",
+              "title": "Contenu sponsorisé d'un influenceur non identifié comme publicité",
+              "path": "pratiques_commerciales/publicite_trompeuse/pub_influenceur_dissimule.md"
+            },
+            {
+              "taxonomy_id": "pub_prix_mensonger",
+              "title": "Le prix réel est supérieur au prix annoncé (frais cachés, conditions non affichées)",
+              "path": "pratiques_commerciales/publicite_trompeuse/pub_prix_mensonger.md"
+            },
+            {
+              "taxonomy_id": "pub_caracteristiques_fausses",
+              "title": "Les caractéristiques du produit/service annoncées ne correspondent pas à la réalité",
+              "path": "pratiques_commerciales/publicite_trompeuse/pub_caracteristiques_fausses.md"
+            }
+          ]
+        },
+        {
+          "id": "soldes_promotions",
+          "label": "Soldes et promotions mensongères",
+          "fiches": [
+            {
+              "taxonomy_id": "prix_reference_fictif",
+              "title": "Le prix barré (prix de référence) n'a jamais été pratiqué ou est fictif",
+              "path": "pratiques_commerciales/soldes_promotions/prix_reference_fictif.md"
+            },
+            {
+              "taxonomy_id": "soldes_irreguliers",
+              "title": "Soldes pratiqués en dehors des périodes légales sans autorisation",
+              "path": "pratiques_commerciales/soldes_promotions/soldes_irreguliers.md"
+            }
+          ]
+        },
+        {
+          "id": "ventes_abusives",
+          "label": "Ventes liées, forcées ou abusives",
+          "fiches": [
+            {
+              "taxonomy_id": "vente_liee",
+              "title": "Obligation d'acheter un produit pour en obtenir un autre (vente liée illégale)",
+              "path": "pratiques_commerciales/ventes_abusives/vente_liee.md"
+            },
+            {
+              "taxonomy_id": "renouvellement_tacite_sans_preavis",
+              "title": "Renouvellement automatique d'un contrat sans information préalable",
+              "path": "pratiques_commerciales/ventes_abusives/renouvellement_tacite_sans_preavis.md"
+            },
+            {
+              "taxonomy_id": "abonnement_cache",
+              "title": "Souscription à un abonnement sans consentement explicite (case précochée, option par défaut)",
+              "path": "pratiques_commerciales/ventes_abusives/abonnement_cache.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prix_etiquetage",
+      "label": "Prix et étiquetage",
+      "sous_domaines": [
+        {
+          "id": "affichage_prix",
+          "label": "Affichage des prix non conforme",
+          "fiches": [
+            {
+              "taxonomy_id": "frais_caches_commande",
+              "title": "Des frais (livraison, service) apparaissent seulement au moment du paiement",
+              "path": "prix_etiquetage/affichage_prix/frais_caches_commande.md"
+            },
+            {
+              "taxonomy_id": "prix_ttc_non_mentionne",
+              "title": "Le prix TTC n'est pas clairement indiqué (uniquement HT sans mention)",
+              "path": "prix_etiquetage/affichage_prix/prix_ttc_non_mentionne.md"
+            },
+            {
+              "taxonomy_id": "prix_non_affiche",
+              "title": "Les prix ne sont pas affichés en magasin ou sur le site",
+              "path": "prix_etiquetage/affichage_prix/prix_non_affiche.md"
+            }
+          ]
+        },
+        {
+          "id": "etiquetage_produits",
+          "label": "Étiquetage incorrect des produits",
+          "fiches": [
+            {
+              "taxonomy_id": "etiquette_double",
+              "title": "Double étiquetage (nouveau prix sur ancien, l'original reste lisible et est différent)",
+              "path": "prix_etiquetage/etiquetage_produits/etiquette_double.md"
+            },
+            {
+              "taxonomy_id": "etiquette_mensongere_origine",
+              "title": "L'origine du produit indiquée est fausse ou trompeuse",
+              "path": "prix_etiquetage/etiquetage_produits/etiquette_mensongere_origine.md"
+            }
+          ]
+        },
+        {
+          "id": "etiquetage_textile_cuir",
+          "label": "Étiquetage des textiles, cuir et chaussures",
+          "fiches": [
+            {
+              "taxonomy_id": "composition_textile_fausse",
+              "title": "La composition textile indiquée sur l'étiquette est fausse (ex. : « 100% coton » alors que c'est du polyester)",
+              "path": "prix_etiquetage/etiquetage_textile_cuir/composition_textile_fausse.md"
+            },
+            {
+              "taxonomy_id": "faux_cuir",
+              "title": "Produit vendu comme « cuir » alors qu'il s'agit de simili-cuir ou matière synthétique",
+              "path": "prix_etiquetage/etiquetage_textile_cuir/faux_cuir.md"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
