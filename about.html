@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Recherche — Assistant Consommateur DGCCRF</title>
+  <title>À propos — Assistant Consommateur DGCCRF</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/dsfr/dsfr.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/utility/icons/icons.min.css">
   <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
 <div id="page">
@@ -34,7 +34,7 @@
               <a href="/" title="Accueil - Assistant Consommateur DGCCRF">
                 <p class="fr-header__service-title">Assistant Consommateur — DGCCRF</p>
               </a>
-              <p class="fr-header__service-tagline">Recherche s&eacute;mantique dans la base de connaissances</p>
+              <p class="fr-header__service-tagline">&Agrave; propos du projet</p>
             </div>
           </div>
           <div class="fr-header__tools">
@@ -74,7 +74,7 @@
               <a class="fr-nav__link" href="fiches.html">Fiches pratiques</a>
             </li>
             <li class="fr-nav__item">
-              <a class="fr-nav__link" href="about.html">&Agrave; propos</a>
+              <a class="fr-nav__link" href="about.html" aria-current="page">&Agrave; propos</a>
             </li>
           </ul>
         </nav>
@@ -84,67 +84,32 @@
 
   <!-- ── Contenu principal ── -->
   <main class="fr-container fr-mt-4w fr-mb-8w">
-
-    <!-- Barre de recherche -->
-    <div class="search-bar-wrap">
-      <div class="fr-search-bar fr-search-bar--lg" role="search">
-        <label class="fr-label" for="search-input">Rechercher dans la base de connaissances</label>
-        <input class="fr-input" placeholder="Ex : garantie l&eacute;gale, signaler une arnaque…"
-               type="search" id="search-input">
-        <button class="fr-btn" title="Rechercher" id="search-submit">Rechercher</button>
+    <div class="fr-grid-row fr-grid-row--center">
+      <div class="fr-col-12 fr-col-md-10 fr-col-lg-8">
+        <article class="fr-text about-article" id="about-content">
+          <div class="fr-alert fr-alert--info fr-alert--sm">
+            <p>Chargement&hellip;</p>
+          </div>
+        </article>
       </div>
     </div>
-
-    <!-- En-tête résultats -->
-    <div id="results-header" class="fr-mt-3w" hidden>
-      <p class="fr-text--sm fr-text--mention-grey">
-        <span id="results-count"></span> r&eacute;sultats pour
-        <strong id="results-query"></strong>
-        <span id="results-time" class="fr-ml-1w"></span>
-      </p>
-    </div>
-
-    <!-- Loading -->
-    <div id="search-loading" class="search-loading" hidden>
-      <div class="fr-spinner" aria-label="Recherche en cours…"></div>
-      <p class="fr-mt-1w">Recherche en cours…</p>
-    </div>
-
-    <!-- Erreur -->
-    <div id="search-error" hidden>
-      <div class="fr-alert fr-alert--error fr-mt-3w">
-        <p class="fr-alert__title">Erreur</p>
-        <p id="error-message"></p>
-      </div>
-    </div>
-
-    <!-- Grille de résultats -->
-    <div class="fr-grid-row fr-grid-row--gutters fr-mt-2w" id="results-container"></div>
-
-    <!-- État vide -->
-    <div id="empty-state" class="empty-state" hidden>
-      <span class="fr-icon-search-line" aria-hidden="true" style="font-size:3rem"></span>
-      <p class="fr-text--lg fr-mt-2w">Aucun r&eacute;sultat trouv&eacute;</p>
-      <p class="fr-text--sm fr-text--mention-grey">Essayez avec d'autres mots-cl&eacute;s</p>
-    </div>
-
-    <!-- Fiche viewer drawer -->
-    <div id="fiche-drawer" class="fiche-drawer" hidden>
-      <div class="fiche-drawer__header">
-        <button class="fr-btn fr-btn--sm fr-btn--tertiary" id="fiche-drawer-close">
-          <span class="fr-icon-close-line" aria-hidden="true"></span> Fermer
-        </button>
-      </div>
-      <div class="fiche-drawer__body fr-text" id="fiche-drawer-body"></div>
-    </div>
-
   </main>
 
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/dsfr/dsfr.module.min.js" type="module"></script>
-<script type="module" src="js/search-page.js"></script>
+<script type="module">
+  const el = document.getElementById('about-content');
+  try {
+    const res = await fetch('./PRESENTATION.md');
+    if (!res.ok) throw new Error(res.status);
+    const md = await res.text();
+    el.innerHTML = marked.parse(md);
+  } catch (e) {
+    el.innerHTML = '<div class="fr-alert fr-alert--error"><p>Impossible de charger la présentation.</p></div>';
+  }
+</script>
 <script type="module" src="js/header-search.js"></script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+/* ── About page — override app.css viewport lock ── */
+html, body { height: auto; overflow: auto; }
+#page { height: auto; min-height: 100vh; display: block; }
+
+/* Article typography */
+.about-article h1 {
+  font-size: 1.75rem;
+  color: var(--text-action-high-blue-france, #000091);
+  margin-bottom: 1.5rem;
+}
+.about-article h2 {
+  font-size: 1.25rem;
+  margin-top: 2.5rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid var(--border-default-grey, #e0e0e0);
+}
+.about-article h3 {
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+}
+.about-article ul, .about-article ol { padding-left: 1.5rem; }
+.about-article hr {
+  margin: 2.5rem 0;
+  border: none;
+  border-top: 1px solid var(--border-default-grey, #e0e0e0);
+}
+.about-article em:last-child {
+  display: block;
+  margin-top: 2rem;
+  color: var(--text-mention-grey, #666);
+  font-size: .875rem;
+}
