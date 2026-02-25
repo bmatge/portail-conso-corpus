@@ -74,7 +74,7 @@ function buildCard(r) {
     ? `<span class="fr-text--xs fr-text--mention-grey">${r.chunks_matched} passages</span>`
     : '';
 
-  // Title link: fiches → fiches.html, source docs → sources.html, fallback → external URL
+  // Title link: always points to on-site content (sources.html or fiches.html)
   let titleHtml;
   if (isFiche) {
     const taxId = r.taxonomy_id || '';
@@ -92,17 +92,18 @@ function buildCard(r) {
     ? `<span class="source-badge source-badge--fiches">fiche</span>`
     : `<span class="source-badge source-badge--${src}">${escapeHtml(src)}</span>`;
 
-  // "Voir la fiche" button for fiches pratiques
+  // Bottom action: external link to original source site
   let actionBtn = '';
   if (isFiche) {
     actionBtn = `<button class="fr-btn fr-btn--sm fr-btn--secondary fr-mt-1w fiche-link"
                data-fiche-path="${escapeHtml(r.fiche_path)}">
          Voir la fiche
        </button>`;
-  } else if (r.source_file) {
-    actionBtn = `<a class="fr-btn fr-btn--sm fr-btn--tertiary fr-mt-1w"
-               href="sources.html#${escapeHtml(src)}/${escapeHtml(r.source_file)}">
-         Voir le document source
+  } else if (r.url) {
+    actionBtn = `<a class="fr-btn fr-btn--sm fr-btn--tertiary-no-outline fr-mt-1w"
+               href="${escapeHtml(r.url)}" target="_blank" rel="noopener">
+         <span class="fr-icon-external-link-line fr-icon--sm" aria-hidden="true"></span>
+         Voir la page sur le site source
        </a>`;
   }
 
