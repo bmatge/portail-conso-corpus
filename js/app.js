@@ -4,6 +4,7 @@ import { TaxonomyTree } from './taxonomy-tree.js';
 import { loadSavedConfig, applyPreset, saveConfig, testConfig } from './config-manager.js';
 import { appendMessage, showThinking, hideThinking, sendMessage, resetConversation } from './conversation-ui.js';
 import { handleKey, autoResize } from './utils.js';
+import { showFicheInPanel, hideFicheViewer } from './fiche-panel.js';
 
 // ════════════════════════════════════════════════════════════
 // ETAT APPLICATION
@@ -14,6 +15,9 @@ const state = {
   treeViz: null,
   conversation: [],
   currentConfig: { ...DEFAULT_CONFIG },
+  corpusIndex: null,
+  corpusLookup: null,
+  ficheCache: {},
 };
 
 // ════════════════════════════════════════════════════════════
@@ -32,6 +36,33 @@ async function loadTaxonomy() {
     console.warn('[Taxonomie] Chargement echoue :', e.message);
     const ph = document.getElementById('tree-placeholder');
     if (ph) ph.querySelector('div:last-child').textContent = 'Taxonomie non disponible (mode degrade)';
+  }
+}
+
+// ════════════════════════════════════════════════════════════
+// CHARGEMENT CORPUS INDEX
+// ════════════════════════════════════════════════════════════
+async function loadCorpusIndex() {
+  try {
+    const res = await fetch('./corpus/index.json');
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    state.corpusIndex = await res.json();
+    state.corpusLookup = {};
+    for (const d of state.corpusIndex.domaines) {
+      for (const ss of d.sous_domaines) {
+        for (const fiche of ss.fiches) {
+          state.corpusLookup[fiche.taxonomy_id] = {
+            path: fiche.path,
+            title: fiche.title,
+            domaine_label: d.label,
+            ss_label: ss.label,
+          };
+        }
+      }
+    }
+    console.log(`[Corpus] ${Object.keys(state.corpusLookup).length} fiches indexees`);
+  } catch (e) {
+    console.warn('[Corpus] Index non disponible:', e.message);
   }
 }
 
@@ -120,6 +151,7 @@ function onTreeFit() {
 // ════════════════════════════════════════════════════════════
 window.addEventListener('DOMContentLoaded', async () => {
   await loadTaxonomy();
+  await loadCorpusIndex();
 
   appendMessage('bot',
     'Bonjour, je suis l\'assistant consommateur de la DGCCRF.\n\n' +
@@ -153,13 +185,21 @@ window.addEventListener('DOMContentLoaded', async () => {
     btn.addEventListener('click', onPresetClick);
   });
 
-  // Delegation pour les boutons pivot dans les result cards
+  // Delegation pour les boutons dans les result cards
   document.getElementById('conversation').addEventListener('click', e => {
     const pivotBtn = e.target.closest('.pivot-btn[data-url]');
     if (pivotBtn) {
       window.open(pivotBtn.dataset.url, '_blank');
+      return;
+    }
+    const ficheBtn = e.target.closest('.voir-fiche-btn[data-taxonomy-id]');
+    if (ficheBtn) {
+      showFicheInPanel(ficheBtn.dataset.taxonomyId, state);
     }
   });
+
+  // Bouton retour a l'arbre
+  document.getElementById('tree-back-btn')?.addEventListener('click', hideFicheViewer);
 
   // Resize observer pour l'arbre
   if (state.treeViz && window.ResizeObserver) {

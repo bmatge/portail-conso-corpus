@@ -158,6 +158,9 @@
           <span class="tree-state-label" id="tree-state-label">Vue d'ensemble — 8 domaines</span>
         </div>
         <div class="tree-toolbar-actions">
+          <button class="fr-btn fr-btn--sm fr-btn--tertiary" id="tree-back-btn" hidden>
+            <span class="fr-icon-arrow-left-line" aria-hidden="true"></span> Retour &agrave; l'arbre
+          </button>
           <button class="fr-btn fr-btn--sm fr-btn--tertiary" id="tree-fit-btn">Ajuster</button>
         </div>
       </div>
@@ -166,6 +169,9 @@
           <div class="tree-placeholder-icon"><span class="fr-icon-tree-line" aria-hidden="true" style="font-size:2.5rem"></span></div>
           <div>Chargement de la taxonomie…</div>
         </div>
+      </div>
+      <div id="fiche-viewer" class="fiche-viewer" hidden>
+        <div id="fiche-viewer-content"></div>
       </div>
       <div id="tree-footer">
         <div class="tree-legend" id="tree-legend"></div>
@@ -181,6 +187,7 @@
 </div><!-- /#page -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/dsfr/dsfr.module.min.js" type="module"></script>
 <script type="module" src="js/app.js"></script>
 <script type="module" src="js/header-search.js"></script>

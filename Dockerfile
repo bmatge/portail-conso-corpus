@@ -25,10 +25,11 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 RUN rm -f /etc/nginx/sites-enabled/default
 
 # Fichiers statiques
-COPY index.html search.html /usr/share/nginx/html/
+COPY index.html search.html fiches.html /usr/share/nginx/html/
 COPY js/  /usr/share/nginx/html/js/
 COPY css/ /usr/share/nginx/html/css/
 COPY taxonomie-dgccrf.json /usr/share/nginx/html/
+COPY corpus/ /usr/share/nginx/html/corpus/
 
 # API Python
 COPY api/ /app/api/

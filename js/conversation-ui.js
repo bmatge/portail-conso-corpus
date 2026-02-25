@@ -1,4 +1,5 @@
-import { buildResultCard } from './result-card.js';
+import { buildResultCard, buildFicheResultCard } from './result-card.js';
+import { extractEnBref } from './fiche-panel.js';
 
 /**
  * Ajoute un message dans le DOM de conversation.
@@ -106,7 +107,25 @@ export async function sendMessage(state) {
     }
 
     if (result.situation_id) {
-      appendMessage('bot', buildResultCard(state.taxonomy, result.situation_id, result), true);
+      let usedFicheCard = false;
+      const ficheInfo = state.corpusLookup?.[result.situation_id];
+      if (ficheInfo) {
+        try {
+          if (!state.ficheCache[result.situation_id]) {
+            const res = await fetch('./corpus/' + ficheInfo.path);
+            if (res.ok) state.ficheCache[result.situation_id] = await res.text();
+          }
+          const md = state.ficheCache[result.situation_id];
+          const enBref = md ? extractEnBref(md) : null;
+          if (enBref) {
+            appendMessage('bot', buildFicheResultCard(state.taxonomy, result.situation_id, result, enBref), true);
+            usedFicheCard = true;
+          }
+        } catch { /* fallback ci-dessous */ }
+      }
+      if (!usedFicheCard) {
+        appendMessage('bot', buildResultCard(state.taxonomy, result.situation_id, result), true);
+      }
     } else {
       appendMessage('bot', 'Je n\'ai pas pu identifier clairement votre situation. Pouvez-vous preciser le type de professionnel et ce qui s\'est passe exactement ?');
     }

@@ -18,3 +18,8 @@ deploy.sh
 vitest.config.js
 package*.json
 __pycache__/
+
+# Exceptions : corpus et script de build
+!corpus/
+!corpus/**
+!scripts/build_corpus_index.py
