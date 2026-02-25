@@ -194,7 +194,7 @@ export class LLMAdapter {
             }
           } catch (e) {
             if (e.message?.includes('Agent error') || e.message?.includes('API ')) throw e;
-            /* skip malformed data */
+            console.warn('[SSE] Event processing error:', currentEvent, e);
           }
           currentEvent = 'chunk';
         }

@@ -869,31 +869,34 @@ async def agent_chat(req: AgentChatRequest):
                 "messages": [{"role": "system", "content": answer_prompt}, *req.messages],
             }
 
-            async with httpx.AsyncClient(timeout=120) as client:
-                async with client.stream(
-                    "POST", LLM_ENDPOINT, json=payload,
-                    headers={"Content-Type": "application/json", "Authorization": f"Bearer {LLM_API_KEY}"},
-                ) as resp:
-                    if resp.status_code != 200:
-                        body = await resp.aread()
-                        yield _sse_event("error", {"error": body.decode()[:500]})
-                        yield _sse_event("done", {"session_id": session.id})
-                        return
+            try:
+                async with httpx.AsyncClient(timeout=120) as client:
+                    async with client.stream(
+                        "POST", LLM_ENDPOINT, json=payload,
+                        headers={"Content-Type": "application/json", "Authorization": f"Bearer {LLM_API_KEY}"},
+                    ) as resp:
+                        if resp.status_code != 200:
+                            body = await resp.aread()
+                            yield _sse_event("error", {"error": body.decode()[:500]})
+                            yield _sse_event("done", {"session_id": session.id})
+                            return
 
-                    async for line in resp.aiter_lines():
-                        if not line.startswith("data: "):
-                            continue
-                        data_str = line[6:]
-                        if data_str.strip() == "[DONE]":
-                            break
-                        try:
-                            chunk = json.loads(data_str)
-                            delta = chunk.get("choices", [{}])[0].get("delta", {})
-                            content = delta.get("content", "")
-                            if content:
-                                yield _sse_event("chunk", {"text": content})
-                        except json.JSONDecodeError:
-                            continue
+                        async for line in resp.aiter_lines():
+                            if not line.startswith("data: "):
+                                continue
+                            data_str = line[6:]
+                            if data_str.strip() == "[DONE]":
+                                break
+                            try:
+                                chunk = json.loads(data_str)
+                                delta = chunk.get("choices", [{}])[0].get("delta", {})
+                                content = delta.get("content", "")
+                                if content:
+                                    yield _sse_event("chunk", {"text": content})
+                            except json.JSONDecodeError:
+                                continue
+            except Exception as e:
+                log.warning("ANSWER streaming error (continuing to ACTION): %s", e)
 
             # Send source citations
             sources = [
@@ -901,12 +904,16 @@ async def agent_chat(req: AgentChatRequest):
                 for r in answer_rag
             ]
             yield _sse_event("sources", {"sources": sources})
+            log.info("ANSWER done for %s — proceeding to ACTION", session.situation_id)
 
             session.phase = Phase.ACTION
 
         # ── ACTION phase ─────────────────────────────────
         if session.phase == Phase.ACTION and session.situation_id:
             actions = build_actions(taxonomy_data, session.situation_id)
+            log.info("ACTION: %s — %d actions, sc=%s, med=%s",
+                     session.situation_id, len(actions.get("actions", [])),
+                     bool(actions.get("signalconso")), bool(actions.get("mediateur")))
             yield _sse_event("phase", {"phase": "action", **actions})
 
         yield _sse_event("done", {"session_id": session.id})
