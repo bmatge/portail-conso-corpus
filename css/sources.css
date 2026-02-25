@@ -1,0 +1,59 @@
+/* ══════════════════════════════════════════════════════════
+   Styles corpus source — override app.css viewport lock
+   + layout sidebar/contenu
+   ══════════════════════════════════════════════════════════ */
+
+/* Override full-viewport lock from app.css */
+html, body { height: auto !important; overflow: auto !important; }
+#page { height: auto !important; min-height: 100vh; display: block !important; overflow: visible !important; }
+
+/* Main content area */
+.sources-main { padding-top: 1.5rem; padding-bottom: 2rem; }
+
+/* Sidemenu on desktop */
+@media (min-width: 62em) {
+  .sources-sidebar {
+    align-self: flex-start;
+  }
+}
+
+/* Source count badge in sidebar */
+.source-count {
+  font-size: .75rem;
+  color: var(--text-mention-grey, #666);
+  font-weight: 400;
+}
+
+/* Article content typography */
+#source-content article h1 { margin-top: 0; }
+#source-content article h2 {
+  margin-top: 2rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid var(--border-default-grey, #e0e0e0);
+}
+#source-content article h3 { margin-top: 1.5rem; }
+#source-content article ul,
+#source-content article ol { padding-left: 1.5rem; }
+
+/* Landing page */
+.sources-landing h1 { margin-bottom: .5rem; }
+.sources-landing .fr-text--lead { margin-bottom: 2rem; }
+
+/* File list */
+.sources-file-list { margin-top: 1rem; }
+.sources-file-list .fr-card__title { font-size: .9rem; }
+
+/* Pagination */
+.sources-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Search within source */
+.sources-filter {
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+}

@@ -70,11 +70,17 @@ function buildCard(r) {
   const pct = Math.round(r.score * 100);
   const src = r.source || 'inc';
   const isFiche = !!r.fiche_path;
+  const chunksInfo = r.chunks_matched > 1
+    ? `<span class="fr-text--xs fr-text--mention-grey">${r.chunks_matched} passages</span>`
+    : '';
 
-  // Title: link to fiche viewer if available, otherwise external URL
+  // Title link: fiches → fiches.html, source docs → sources.html, fallback → external URL
   let titleHtml;
   if (isFiche) {
-    titleHtml = `<a href="#" class="fiche-link" data-fiche-path="${escapeHtml(r.fiche_path)}">${escapeHtml(r.title)}</a>`;
+    const taxId = r.taxonomy_id || '';
+    titleHtml = `<a href="fiches.html#${escapeHtml(taxId)}">${escapeHtml(r.title)}</a>`;
+  } else if (r.source_file) {
+    titleHtml = `<a href="sources.html#${escapeHtml(src)}/${escapeHtml(r.source_file)}">${escapeHtml(r.title)}</a>`;
   } else if (r.url) {
     titleHtml = `<a href="${escapeHtml(r.url)}" target="_blank" rel="noopener">${escapeHtml(r.title)}</a>`;
   } else {
@@ -86,13 +92,19 @@ function buildCard(r) {
     ? `<span class="source-badge source-badge--fiches">fiche</span>`
     : `<span class="source-badge source-badge--${src}">${escapeHtml(src)}</span>`;
 
-  // "Voir la fiche" button for fiche results
-  const ficheBtn = isFiche
-    ? `<button class="fr-btn fr-btn--sm fr-btn--secondary fr-mt-1w fiche-link"
+  // "Voir la fiche" button for fiches pratiques
+  let actionBtn = '';
+  if (isFiche) {
+    actionBtn = `<button class="fr-btn fr-btn--sm fr-btn--secondary fr-mt-1w fiche-link"
                data-fiche-path="${escapeHtml(r.fiche_path)}">
          Voir la fiche
-       </button>`
-    : '';
+       </button>`;
+  } else if (r.source_file) {
+    actionBtn = `<a class="fr-btn fr-btn--sm fr-btn--tertiary fr-mt-1w"
+               href="sources.html#${escapeHtml(src)}/${escapeHtml(r.source_file)}">
+         Voir le document source
+       </a>`;
+  }
 
   return `
     <div class="fr-col-12 fr-col-md-6">
@@ -106,8 +118,9 @@ function buildCard(r) {
               <span>Pertinence :</span>
               <span class="score-bar"><span class="score-bar__fill" style="width:${pct}%"></span></span>
               <strong>${pct}\u202f%</strong>
+              ${chunksInfo}
             </div>
-            ${ficheBtn}
+            ${actionBtn}
           </div>
         </div>
       </div>

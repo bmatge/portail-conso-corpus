@@ -36,11 +36,67 @@ app = FastAPI(title="Portail Conso Search API")
 # Globals initialised at startup
 collection = None
 system_prompt = ""
+source_index: dict[str, list[dict]] = {}  # source_id -> [{filename, title, nid}]
+nid_to_file: dict[str, str] = {}  # "source:nid" -> filename
 
+
+# ── Source directory discovery ────────────────────────────
+
+SOURCE_DIRS_CONFIG = [
+    ("dgccrf", "dgccrf-drupal", "sources/dgccrf"),
+    ("particuliers", "particuliers-drupal", "sources/particuliers"),
+    ("entreprises", "entreprises-drupal", "sources/entreprises"),
+    ("inc", "inc-conso-md/content", "sources/inc"),
+]
+
+SOURCE_LABELS = {
+    "dgccrf": "DGCCRF",
+    "particuliers": "Service-Public Particuliers",
+    "entreprises": "Service-Public Entreprises",
+    "inc": "INC (Institut National de la Consommation)",
+}
+
+SOURCES_DIRS: dict[str, Path] = {}
+for _src, _dev, _docker in SOURCE_DIRS_CONFIG:
+    for _p in [
+        Path(__file__).resolve().parent.parent / _dev,
+        Path(f"/usr/share/nginx/html/{_docker}"),
+    ]:
+        if _p.is_dir():
+            SOURCES_DIRS[_src] = _p
+            break
+
+
+def _build_source_index() -> tuple[dict, dict]:
+    """Scan source directories and build lookup indexes."""
+    idx: dict[str, list[dict]] = {}
+    nid_map: dict[str, str] = {}
+
+    for src, dirpath in SOURCES_DIRS.items():
+        files = sorted(f for f in dirpath.glob("*.md") if not f.name.startswith("_"))
+        entries = []
+        for f in files:
+            try:
+                post = frontmatter.loads(f.read_text(encoding="utf-8"))
+                meta = dict(post.metadata)
+            except Exception:
+                meta = {}
+            title = meta.get("title", f.stem)
+            nid = str(meta.get("nid", ""))
+            entry = {"filename": f.name, "title": title, "nid": nid}
+            entries.append(entry)
+            if nid:
+                nid_map[f"{src}:{nid}"] = f.name
+        idx[src] = entries
+        log.info("Source index: %s — %d files", src, len(entries))
+
+    return idx, nid_map
+
+
+# ── System prompt ─────────────────────────────────────────
 
 def _build_system_prompt() -> str:
     """Build system prompt from taxonomie-dgccrf.json."""
-    # Try several paths (dev vs Docker)
     for p in [
         Path(__file__).resolve().parent.parent / "taxonomie-dgccrf.json",
         Path("/usr/share/nginx/html/taxonomie-dgccrf.json"),
@@ -165,9 +221,61 @@ def _index_fiches(coll) -> int:
     return len(all_chunks)
 
 
+# ── Dedup helper ──────────────────────────────────────────
+
+def _dedup_key(meta: dict) -> str:
+    """Build a deduplication key from chunk metadata."""
+    src = meta.get("source", "")
+    if meta.get("fiche_path"):
+        return f"fiches:{meta['fiche_path']}"
+    nid = meta.get("nid", "")
+    if nid:
+        return f"{src}:{nid}"
+    return f"{src}:{meta.get('title', '')}"
+
+
+def _resolve_source_file(meta: dict) -> str:
+    """Resolve a source filename from chunk metadata."""
+    src = meta.get("source", "")
+    if src == "fiches":
+        return ""
+    nid = meta.get("nid", "")
+    if nid:
+        filename = nid_to_file.get(f"{src}:{nid}", "")
+        if filename:
+            return filename
+    # Fallback: try to find by title match
+    for entry in source_index.get(src, []):
+        if entry["title"] == meta.get("title", ""):
+            return entry["filename"]
+    return ""
+
+
+def _deduplicate(results: list[dict]) -> list[dict]:
+    """Group results by document, keep best chunk per doc, compute boosted score."""
+    groups: dict[str, dict] = {}
+    for r in results:
+        key = r.get("_dedup_key", "")
+        if key not in groups:
+            groups[key] = {**r, "chunks_matched": 1}
+        else:
+            groups[key]["chunks_matched"] += 1
+
+    deduped = list(groups.values())
+    # Boost score: slight increase for multiple matching chunks
+    for r in deduped:
+        n = r["chunks_matched"]
+        if n > 1:
+            r["score"] = round(min(1.0, r["score"] + 0.02 * (n - 1)), 4)
+    deduped.sort(key=lambda x: x["score"], reverse=True)
+    return deduped
+
+
+# ── Startup ───────────────────────────────────────────────
+
 @app.on_event("startup")
 async def startup():
-    global collection, system_prompt
+    global collection, system_prompt, source_index, nid_to_file
     log.info("Loading ChromaDB from %s", CHROMA_DB_PATH)
     client = chromadb.PersistentClient(path=CHROMA_DB_PATH)
     embed_fn = SentenceTransformerEmbeddingFunction(model_name=EMBEDDING_MODEL)
@@ -185,6 +293,11 @@ async def startup():
         n = _index_fiches(collection)
         log.info("Indexed %d fiche chunks", n)
 
+    # Build source file index for linking
+    source_index, nid_to_file = _build_source_index()
+    log.info("Source index built — %d sources, %d nid mappings",
+             len(source_index), len(nid_to_file))
+
     system_prompt = _build_system_prompt()
     log.info("System prompt built (%d chars)", len(system_prompt))
     if LLM_API_KEY:
@@ -193,19 +306,25 @@ async def startup():
         log.warning("LLM_API_KEY not set — /api/chat will return 503")
 
 
+# ── Search endpoint ───────────────────────────────────────
+
 @app.get("/api/search")
 async def search(
     q: str = Query(..., min_length=2),
     top_k: int = Query(20, ge=1, le=100),
     min_score: float = Query(0.3, ge=0.0, le=1.0),
     source: Optional[str] = Query(None, pattern=r"^(dgccrf|particuliers|entreprises|inc|fiches)$"),
+    dedupe: bool = Query(True),
 ):
     if not collection:
         raise HTTPException(503, "ChromaDB not initialised")
 
     start = time.time()
 
-    kwargs = {"query_texts": [q], "n_results": top_k}
+    # Fetch more chunks when deduplicating so we get enough unique documents
+    fetch_k = min(top_k * 3, 100) if dedupe else top_k
+
+    kwargs = {"query_texts": [q], "n_results": fetch_k}
     if source:
         kwargs["where"] = {"source": source}
 
@@ -225,13 +344,26 @@ async def search(
                 "source": meta.get("source", ""),
                 "title": meta.get("title", ""),
                 "url": meta.get("url", ""),
+                "_dedup_key": _dedup_key(meta),
             }
             # Include fiche metadata when available
             if meta.get("taxonomy_id"):
                 entry["taxonomy_id"] = meta["taxonomy_id"]
             if meta.get("fiche_path"):
                 entry["fiche_path"] = meta["fiche_path"]
+            # Resolve source file for linking to sources page
+            source_file = _resolve_source_file(meta)
+            if source_file:
+                entry["source_file"] = source_file
             results.append(entry)
+
+    if dedupe:
+        results = _deduplicate(results)
+        results = results[:top_k]
+
+    # Remove internal dedup key from output
+    for r in results:
+        r.pop("_dedup_key", None)
 
     return {
         "query": q,
@@ -247,6 +379,56 @@ async def health():
         "status": "ok",
         "collection": COLLECTION_NAME,
         "chunks": collection.count() if collection else 0,
+    }
+
+
+# ── Sources browsing API ─────────────────────────────────
+
+@app.get("/api/sources")
+async def list_sources():
+    """List available source corpora with file counts."""
+    return {
+        "sources": [
+            {
+                "id": src,
+                "label": SOURCE_LABELS.get(src, src),
+                "count": len(source_index.get(src, [])),
+            }
+            for src in SOURCE_LABELS
+            if src in source_index
+        ]
+    }
+
+
+@app.get("/api/sources/{source_id}")
+async def list_source_files(
+    source_id: str,
+    page: int = Query(1, ge=1),
+    page_size: int = Query(50, ge=1, le=200),
+    q: Optional[str] = Query(None, min_length=2),
+):
+    """List files in a source corpus (paginated, searchable)."""
+    if source_id not in source_index:
+        raise HTTPException(404, f"Source '{source_id}' not found")
+
+    entries = source_index[source_id]
+
+    # Optional text filter
+    if q:
+        q_lower = q.lower()
+        entries = [e for e in entries if q_lower in e["title"].lower()]
+
+    total = len(entries)
+    start_idx = (page - 1) * page_size
+    page_entries = entries[start_idx:start_idx + page_size]
+
+    return {
+        "source": source_id,
+        "label": SOURCE_LABELS.get(source_id, source_id),
+        "total": total,
+        "page": page,
+        "page_size": page_size,
+        "files": page_entries,
     }
 
 

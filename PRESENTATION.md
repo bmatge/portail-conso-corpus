@@ -55,7 +55,7 @@ Le prototype utilise **Albert**, le modèle de langage de la DINUM, hébergé su
 ### À court terme
 
 - **Mise à disposition en interne** — Un outil d'aide aux agents DGCCRF (DD, DDPP) pour répondre plus rapidement aux sollicitations des consommateurs, avec des réponses normalisées et sourcées.
-- **Complément à SignalConso** — Un pré-diagnostic qui oriente le consommateur vers la bonne catégorie de signalement *avant* qu'il ne remplisse le formulaire, réduisant les signalements mal orientés.
+- **Complément à SignalConso** — Un pré-diagnostic qui oriente le consommateur vers la bonne catégorie de signalement avant qu'il ne remplisse le formulaire, réduisant les signalements mal orientés.
 - **Base de connaissances actualisable** — Le pipeline de génération peut être relancé à chaque évolution réglementaire ou enrichissement des sources. La mise à jour du corpus complet prend moins d'une heure.
 
 ### À moyen terme

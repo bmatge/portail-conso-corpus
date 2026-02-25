@@ -25,11 +25,17 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 RUN rm -f /etc/nginx/sites-enabled/default
 
 # Fichiers statiques
-COPY index.html search.html fiches.html /usr/share/nginx/html/
+COPY index.html search.html fiches.html sources.html /usr/share/nginx/html/
 COPY js/  /usr/share/nginx/html/js/
 COPY css/ /usr/share/nginx/html/css/
 COPY taxonomie-dgccrf.json /usr/share/nginx/html/
 COPY corpus/ /usr/share/nginx/html/corpus/
+
+# Source corpora (ancien corpus)
+COPY dgccrf-drupal/ /usr/share/nginx/html/sources/dgccrf/
+COPY particuliers-drupal/ /usr/share/nginx/html/sources/particuliers/
+COPY entreprises-drupal/ /usr/share/nginx/html/sources/entreprises/
+COPY inc-conso-md/content/ /usr/share/nginx/html/sources/inc/
 
 # API Python
 COPY api/ /app/api/

@@ -1,6 +1,6 @@
 /* ── Search page — override app.css viewport lock ── */
-html, body { height: auto; overflow: auto; }
-#page { height: auto; min-height: 100vh; display: block; }
+html, body { height: auto !important; overflow: auto !important; }
+#page { height: auto !important; min-height: 100vh; display: block !important; overflow: visible !important; }
 
 .search-bar-wrap {
   max-width: 800px;
