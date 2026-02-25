@@ -8,7 +8,7 @@ import urllib.error
 import sys
 
 PORT = 8888
-PROXY_PATH = "/proxy/"
+PROXY_PREFIX = "/proxy-"
 API_PATH = "/api/"
 API_BACKEND = "http://localhost:8000"
 
@@ -16,7 +16,7 @@ API_BACKEND = "http://localhost:8000"
 class Handler(http.server.SimpleHTTPRequestHandler):
     def do_OPTIONS(self):
         """Handle CORS preflight."""
-        if self.path.startswith(PROXY_PATH):
+        if self.path.startswith(PROXY_PREFIX):
             self.send_response(204)
             self._cors_headers()
             self.end_headers()
@@ -35,15 +35,18 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self._proxy_api()
             return
 
-        if not self.path.startswith(PROXY_PATH):
+        if not self.path.startswith(PROXY_PREFIX):
             self.send_error(404)
             return
 
-        # Extract target URL: /proxy/https://albert.api.etalab.gouv.fr/v1/...
-        target_url = self.path[len(PROXY_PATH):]
-        if not target_url.startswith("http"):
+        # Extract target URL: /proxy-https/albert.api.etalab.gouv.fr/v1/...
+        rest = self.path[len(PROXY_PREFIX):]  # "https/host/path" or "http/host/path"
+        slash = rest.find("/")
+        if slash < 0:
             self.send_error(400, "URL cible invalide")
             return
+        scheme = rest[:slash]   # "https" or "http"
+        target_url = f"{scheme}://{rest[slash + 1:]}"
 
         content_length = int(self.headers.get("Content-Length", 0))
         body = self.rfile.read(content_length)
@@ -111,6 +114,6 @@ if __name__ == "__main__":
     port = int(sys.argv[1]) if len(sys.argv) > 1 else PORT
     with http.server.HTTPServer(("", port), Handler) as srv:
         print(f"Serveur: http://localhost:{port}")
-        print(f"Proxy:   http://localhost:{port}/proxy/<URL_API>")
+        print(f"Proxy:   http://localhost:{port}/proxy-https/<host>/<path>")
         print("Ctrl+C pour arrêter")
         srv.serve_forever()

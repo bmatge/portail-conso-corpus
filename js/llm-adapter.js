@@ -52,7 +52,8 @@ export class LLMAdapter {
   }
 
   _proxyUrl(url) {
-    return '/proxy/' + url;
+    // /proxy-https/host/path — avoids :// in URL path (Traefik merges //)
+    return url.replace(/^(https?):\/\//, '/proxy-$1/');
   }
 
   /**
