@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 """FastAPI search service — semantic search over ChromaDB corpus + LLM chat proxy."""
 
+import hashlib
 import os
+import re
 import time
 import json
 import logging
 from typing import Optional
 from pathlib import Path
 
+import frontmatter
 from fastapi import FastAPI, Query, HTTPException
 from pydantic import BaseModel
 import chromadb
@@ -81,6 +84,87 @@ FORMAT DE REPONSE OBLIGATOIRE (JSON strict) :
 }}"""
 
 
+# ── Auto-indexing fiches at startup ───────────────────────
+
+CORPUS_DIR = None
+for _p in [
+    Path(__file__).resolve().parent.parent / "corpus",
+    Path("/usr/share/nginx/html/corpus"),
+]:
+    if _p.is_dir():
+        CORPUS_DIR = _p
+        break
+
+CHUNK_SIZE = 500
+CHUNK_OVERLAP = 100
+MIN_CHUNK_LENGTH = 50
+
+_SENTENCE_RE = re.compile(r"(?<=[.!?…])\s+(?=[A-ZÀ-ÜÉÈÊËÎÏÔÙÛÜŸÇŒÆa-zà-ü])")
+
+
+def _chunk_text(text: str, title: str) -> list[str]:
+    """Split text into overlapping chunks at sentence boundaries."""
+    sentences = [s.strip() for s in _SENTENCE_RE.split(text) if s.strip()]
+    if not sentences:
+        return []
+    chunks, cur, cur_len = [], [], 0
+    for s in sentences:
+        if cur_len + len(s) > CHUNK_SIZE and cur:
+            chunks.append(f"{title} — {' '.join(cur)}")
+            overlap, ol = [], 0
+            for x in reversed(cur):
+                if ol + len(x) > CHUNK_OVERLAP:
+                    break
+                overlap.insert(0, x)
+                ol += len(x)
+            cur, cur_len = overlap, ol
+        cur.append(s)
+        cur_len += len(s)
+    if cur and len(" ".join(cur)) >= MIN_CHUNK_LENGTH:
+        chunks.append(f"{title} — {' '.join(cur)}")
+    return chunks
+
+
+def _index_fiches(coll) -> int:
+    """Index corpus/ fiches into ChromaDB. Returns number of chunks added."""
+    if not CORPUS_DIR:
+        return 0
+    files = sorted(CORPUS_DIR.rglob("*.md"))
+    files = [f for f in files if not f.name.startswith("_")]
+    all_chunks, all_metas, all_ids = [], [], []
+    for path in files:
+        try:
+            post = frontmatter.loads(path.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        meta = dict(post.metadata)
+        body = post.content.strip()
+        if len(body) < 100:
+            continue
+        taxonomy_id = meta.get("taxonomy_id", path.stem)
+        title = meta.get("title", path.stem)
+        fiche_path = str(path.relative_to(CORPUS_DIR))
+        chunks = _chunk_text(body, title)
+        doc_id = hashlib.md5(fiche_path.encode()).hexdigest()[:12]
+        for i, chunk in enumerate(chunks):
+            all_chunks.append(chunk)
+            all_metas.append({
+                "source": "fiches",
+                "title": title,
+                "taxonomy_id": taxonomy_id,
+                "fiche_path": fiche_path,
+                "chunk_index": i,
+                "nid": "",
+                "url": "",
+                "content_type": "fiche",
+                "date": meta.get("generated_at", ""),
+            })
+            all_ids.append(f"fiches_{doc_id}_{i}")
+    if all_chunks:
+        coll.add(documents=all_chunks, metadatas=all_metas, ids=all_ids)
+    return len(all_chunks)
+
+
 @app.on_event("startup")
 async def startup():
     global collection, system_prompt
@@ -89,6 +173,17 @@ async def startup():
     embed_fn = SentenceTransformerEmbeddingFunction(model_name=EMBEDDING_MODEL)
     collection = client.get_collection(name=COLLECTION_NAME, embedding_function=embed_fn)
     log.info("Collection '%s' ready — %d chunks", COLLECTION_NAME, collection.count())
+
+    # Auto-index fiches if not already present
+    try:
+        fiches_check = collection.get(where={"source": "fiches"}, limit=1)
+        has_fiches = bool(fiches_check and fiches_check["ids"])
+    except Exception:
+        has_fiches = False
+    if not has_fiches and CORPUS_DIR:
+        log.info("No fiches in ChromaDB — indexing corpus/ ...")
+        n = _index_fiches(collection)
+        log.info("Indexed %d fiche chunks", n)
 
     system_prompt = _build_system_prompt()
     log.info("System prompt built (%d chars)", len(system_prompt))
