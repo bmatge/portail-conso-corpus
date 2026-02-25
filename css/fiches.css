@@ -10,13 +10,10 @@ html, body { height: auto; overflow: auto; }
 /* Main content area */
 .fiches-main { padding-top: 1.5rem; padding-bottom: 2rem; }
 
-/* Sidemenu sticky on desktop */
+/* Sidemenu on desktop — no internal scroll, flows with page */
 @media (min-width: 62em) {
   .fiches-sidebar {
-    position: sticky;
-    top: 1rem;
-    max-height: calc(100vh - 6rem);
-    overflow-y: auto;
+    align-self: flex-start;
   }
 }
 

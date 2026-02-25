@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Phase 3 : Indexation des 4 corpus dans ChromaDB."""
+"""Phase 3 : Indexation des 4 corpus + fiches générées dans ChromaDB."""
 
 import argparse
 import hashlib
@@ -126,11 +126,88 @@ def index_source(
     return stats
 
 
+def index_fiches(
+    chroma: ChromaManager,
+    fiches_dir: Path,
+    cfg,
+    dry_run: bool = False,
+) -> dict:
+    """Index generated fiches from corpus/ directory. Returns stats dict."""
+    files = sorted(fiches_dir.rglob("*.md"))
+    files = [f for f in files if not f.name.startswith("_")]
+
+    stats = {"files": 0, "chunks": 0, "skipped": 0}
+    all_chunks = []
+    all_metadatas = []
+    all_ids = []
+
+    for path in tqdm(files, desc="  fiches", leave=False):
+        try:
+            meta, body = parse_md_file(path)
+        except Exception as e:
+            log.warning(f"Skipping {path.name}: {e}")
+            stats["skipped"] += 1
+            continue
+
+        taxonomy_id = meta.get("taxonomy_id", path.stem)
+        title = meta.get("title", path.stem)
+        fiche_path = str(path.relative_to(fiches_dir))
+
+        if len(body) < 100:
+            stats["skipped"] += 1
+            continue
+
+        chunks = chunk_text(
+            body, title,
+            chunk_size=cfg.chunking.chunk_size,
+            chunk_overlap=cfg.chunking.chunk_overlap,
+            min_chunk_length=cfg.chunking.min_chunk_length,
+        )
+
+        if not chunks:
+            stats["skipped"] += 1
+            continue
+
+        doc_id = hashlib.md5(fiche_path.encode()).hexdigest()[:12]
+        for i, chunk in enumerate(chunks):
+            chunk_id = f"fiches_{doc_id}_{i}"
+            chunk_meta = {
+                "source": "fiches",
+                "title": title,
+                "taxonomy_id": taxonomy_id,
+                "fiche_path": fiche_path,
+                "chunk_index": i,
+                "nid": "",
+                "url": "",
+                "content_type": "fiche",
+                "date": meta.get("generated_at", ""),
+            }
+            all_chunks.append(chunk)
+            all_metadatas.append(chunk_meta)
+            all_ids.append(chunk_id)
+
+        stats["files"] += 1
+
+    stats["chunks"] = len(all_chunks)
+
+    if dry_run:
+        log.info(f"  [DRY-RUN] fiches: {stats['files']} files, {stats['chunks']} chunks")
+        return stats
+
+    if all_chunks:
+        chroma.add_documents(all_chunks, all_metadatas, all_ids)
+
+    return stats
+
+
+ALL_SOURCES = list(SOURCES.keys()) + ["fiches"]
+
+
 def main():
     parser = argparse.ArgumentParser(description="Phase 3 : Indexation ChromaDB")
     parser.add_argument("--config", default=None, help="Path to config.yaml")
     parser.add_argument("--reset", action="store_true", help="Supprimer et recréer la collection")
-    parser.add_argument("--source", choices=list(SOURCES.keys()), help="Indexer une seule source")
+    parser.add_argument("--source", choices=ALL_SOURCES, help="Indexer une seule source")
     parser.add_argument("--dry-run", action="store_true", help="Compter sans indexer")
     args = parser.parse_args()
 
@@ -153,7 +230,15 @@ def main():
         chroma.reset_collection(cfg.retrieval.collection_name)
 
     # Determine sources to index
-    sources_to_index = {args.source: SOURCES[args.source]} if args.source else SOURCES
+    if args.source == "fiches":
+        sources_to_index = {}
+        do_fiches = True
+    elif args.source:
+        sources_to_index = {args.source: SOURCES[args.source]}
+        do_fiches = False
+    else:
+        sources_to_index = SOURCES
+        do_fiches = True
 
     total_stats = {"files": 0, "chunks": 0, "skipped": 0}
 
@@ -169,6 +254,18 @@ def main():
 
         for k in total_stats:
             total_stats[k] += stats[k]
+
+    # Index generated fiches
+    if do_fiches:
+        fiches_dir = cfg.paths.fiches_dir
+        if fiches_dir.exists():
+            log.info(f"Indexation fiches depuis {fiches_dir}...")
+            stats = index_fiches(chroma, fiches_dir, cfg, dry_run=args.dry_run)
+            log.info(f"  → {stats['files']} fichiers, {stats['chunks']} chunks, {stats['skipped']} skipped")
+            for k in total_stats:
+                total_stats[k] += stats[k]
+        else:
+            log.warning(f"Répertoire fiches introuvable: {fiches_dir}")
 
     print(f"\n{'='*60}")
     print(f"Total: {total_stats['files']} fichiers, {total_stats['chunks']} chunks")

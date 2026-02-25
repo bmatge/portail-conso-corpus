@@ -1,6 +1,7 @@
 /**
- * Search page controller — API calls, result rendering, URL state.
+ * Search page controller — API calls, result rendering, fiche display.
  */
+import { stripFrontmatter } from './fiches-renderer.js';
 
 // ── API ──
 
@@ -13,6 +14,10 @@ async function searchAPI(query, topK = 20, minScore = 0.3) {
   }
   return resp.json();
 }
+
+// ── State ──
+
+const ficheCache = {};
 
 // ── UI helpers ──
 
@@ -28,6 +33,7 @@ function showLoading() {
   setVisible('search-error', false);
   setVisible('empty-state', false);
   setVisible('results-header', false);
+  closeFicheDrawer();
   $('results-container').innerHTML = '';
 }
 
@@ -63,26 +69,81 @@ function buildCard(r) {
   const snippet = r.text.length > 300 ? r.text.slice(0, 300) + '\u2026' : r.text;
   const pct = Math.round(r.score * 100);
   const src = r.source || 'inc';
+  const isFiche = !!r.fiche_path;
+
+  // Title: link to fiche viewer if available, otherwise external URL
+  let titleHtml;
+  if (isFiche) {
+    titleHtml = `<a href="#" class="fiche-link" data-fiche-path="${escapeHtml(r.fiche_path)}">${escapeHtml(r.title)}</a>`;
+  } else if (r.url) {
+    titleHtml = `<a href="${escapeHtml(r.url)}" target="_blank" rel="noopener">${escapeHtml(r.title)}</a>`;
+  } else {
+    titleHtml = escapeHtml(r.title);
+  }
+
+  // Badge
+  const badgeHtml = isFiche
+    ? `<span class="source-badge source-badge--fiches">fiche</span>`
+    : `<span class="source-badge source-badge--${src}">${escapeHtml(src)}</span>`;
+
+  // "Voir la fiche" button for fiche results
+  const ficheBtn = isFiche
+    ? `<button class="fr-btn fr-btn--sm fr-btn--secondary fr-mt-1w fiche-link"
+               data-fiche-path="${escapeHtml(r.fiche_path)}">
+         Voir la fiche
+       </button>`
+    : '';
 
   return `
     <div class="fr-col-12 fr-col-md-6">
-      <div class="fr-card fr-card--sm fr-card--shadow">
+      <div class="fr-card fr-card--sm fr-card--shadow${isFiche ? ' fr-card--fiche' : ''}">
         <div class="fr-card__body">
           <div class="fr-card__content">
-            <h3 class="fr-card__title">
-              <a href="${escapeHtml(r.url)}" target="_blank" rel="noopener">${escapeHtml(r.title)}</a>
-            </h3>
+            <h3 class="fr-card__title">${titleHtml}</h3>
             <p class="fr-card__desc result-snippet">${escapeHtml(snippet)}</p>
             <div class="result-meta">
-              <span class="source-badge source-badge--${src}">${escapeHtml(src)}</span>
+              ${badgeHtml}
               <span>Pertinence :</span>
               <span class="score-bar"><span class="score-bar__fill" style="width:${pct}%"></span></span>
               <strong>${pct}\u202f%</strong>
             </div>
+            ${ficheBtn}
           </div>
         </div>
       </div>
     </div>`;
+}
+
+// ── Fiche drawer ──
+
+async function openFicheDrawer(fichePath) {
+  const drawer = $('fiche-drawer');
+  const body = $('fiche-drawer-body');
+  if (!drawer || !body) return;
+
+  body.innerHTML = '<div class="search-loading"><div class="fr-spinner"></div></div>';
+  drawer.hidden = false;
+  drawer.scrollIntoView({ behavior: 'smooth' });
+
+  if (!ficheCache[fichePath]) {
+    try {
+      const res = await fetch('./corpus/' + fichePath);
+      if (!res.ok) { body.innerHTML = '<p>Fiche non disponible.</p>'; return; }
+      ficheCache[fichePath] = await res.text();
+    } catch {
+      body.innerHTML = '<p>Erreur de chargement.</p>';
+      return;
+    }
+  }
+
+  const md = ficheCache[fichePath];
+  const content = stripFrontmatter(md);
+  body.innerHTML = `<article class="fr-text fiche-article">${window.marked.parse(content)}</article>`;
+}
+
+function closeFicheDrawer() {
+  const drawer = $('fiche-drawer');
+  if (drawer) drawer.hidden = true;
 }
 
 // ── Search handler ──
@@ -91,7 +152,6 @@ async function performSearch(query) {
   query = (query || '').trim();
   if (query.length < 2) return;
 
-  // Update URL
   const url = new URL(window.location);
   url.searchParams.set('q', query);
   history.pushState({}, '', url);
@@ -119,7 +179,19 @@ window.addEventListener('DOMContentLoaded', () => {
   btn.addEventListener('click', (e) => { e.preventDefault(); performSearch(input.value); });
   input.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); performSearch(input.value); } });
 
-  // Support ?q= param for direct links / header redirect
+  // Event delegation for fiche links
+  $('results-container').addEventListener('click', (e) => {
+    const ficheLink = e.target.closest('.fiche-link[data-fiche-path]');
+    if (ficheLink) {
+      e.preventDefault();
+      openFicheDrawer(ficheLink.dataset.fichePath);
+    }
+  });
+
+  // Close drawer
+  $('fiche-drawer-close')?.addEventListener('click', closeFicheDrawer);
+
+  // Support ?q= param
   const q = new URLSearchParams(location.search).get('q');
   if (q) {
     input.value = q;

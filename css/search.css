@@ -1,4 +1,6 @@
-/* ── Search page ── */
+/* ── Search page — override app.css viewport lock ── */
+html, body { height: auto; overflow: auto; }
+#page { height: auto; min-height: 100vh; display: block; }
 
 .search-bar-wrap {
   max-width: 800px;
@@ -55,6 +57,7 @@
 .source-badge--particuliers  { background: var(--background-flat-info, #0063cb); }
 .source-badge--entreprises   { background: var(--background-flat-success, #18753c); }
 .source-badge--inc           { background: var(--background-contrast-grey, #eee); color: var(--text-default-grey, #3a3a3a); }
+.source-badge--fiches        { background: var(--background-flat-warning, #b34000); }
 
 /* ── Score bar ── */
 
@@ -71,4 +74,41 @@
 .score-bar__fill {
   height: 100%;
   background: var(--background-action-high-blue-france, #000091);
+}
+
+/* ── Fiche card highlight ── */
+
+.fr-card--fiche {
+  border-left: 3px solid var(--border-action-high-blue-france, #000091);
+}
+
+/* ── Fiche drawer ── */
+
+.fiche-drawer {
+  margin-top: 2rem;
+  border: 1px solid var(--border-default-grey, #e5e5e5);
+  border-radius: .25rem;
+  background: var(--background-default-grey, #fff);
+}
+
+.fiche-drawer__header {
+  display: flex;
+  justify-content: flex-end;
+  padding: .75rem 1rem;
+  border-bottom: 1px solid var(--border-default-grey, #e5e5e5);
+  background: var(--background-alt-grey, #f6f6f6);
+}
+
+.fiche-drawer__body {
+  padding: 1.5rem 2rem;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.fiche-drawer__body .fiche-article h1 { font-size: 1.5rem; margin-bottom: 1rem; }
+.fiche-drawer__body .fiche-article h2 { font-size: 1.2rem; margin-top: 1.5rem; }
+.fiche-drawer__body .fiche-article h3 { font-size: 1.05rem; }
+
+@media (max-width: 768px) {
+  .fiche-drawer__body { padding: 1rem; }
 }

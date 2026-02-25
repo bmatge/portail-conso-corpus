@@ -103,7 +103,7 @@ async def search(
     q: str = Query(..., min_length=2),
     top_k: int = Query(20, ge=1, le=100),
     min_score: float = Query(0.3, ge=0.0, le=1.0),
-    source: Optional[str] = Query(None, pattern=r"^(dgccrf|particuliers|entreprises|inc)$"),
+    source: Optional[str] = Query(None, pattern=r"^(dgccrf|particuliers|entreprises|inc|fiches)$"),
 ):
     if not collection:
         raise HTTPException(503, "ChromaDB not initialised")
@@ -124,13 +124,19 @@ async def search(
             score = 1.0 - (dist / 2.0)
             if score < min_score:
                 continue
-            results.append({
+            entry = {
                 "text": doc,
                 "score": round(score, 4),
                 "source": meta.get("source", ""),
                 "title": meta.get("title", ""),
                 "url": meta.get("url", ""),
-            })
+            }
+            # Include fiche metadata when available
+            if meta.get("taxonomy_id"):
+                entry["taxonomy_id"] = meta["taxonomy_id"]
+            if meta.get("fiche_path"):
+                entry["fiche_path"] = meta["fiche_path"]
+            results.append(entry)
 
     return {
         "query": q,

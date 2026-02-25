@@ -6,6 +6,7 @@
   <title>Recherche — Assistant Consommateur DGCCRF</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/dsfr/dsfr.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/utility/icons/icons.min.css">
+  <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/search.css">
 </head>
 <body>
@@ -21,6 +22,13 @@
               <div class="fr-header__logo">
                 <p class="fr-logo">R&eacute;publique<br>Fran&ccedil;aise</p>
               </div>
+              <div class="fr-header__navbar">
+                <button class="fr-btn--menu fr-btn" data-fr-opened="false"
+                        aria-controls="modal-menu" aria-haspopup="menu"
+                        id="btn-menu" title="Menu">Menu</button>
+                <button class="fr-btn--search fr-btn" data-fr-opened="false"
+                        aria-controls="header-search-modal" title="Rechercher">Rechercher</button>
+              </div>
             </div>
             <div class="fr-header__service">
               <a href="/" title="Accueil - Assistant Consommateur DGCCRF">
@@ -29,7 +37,44 @@
               <p class="fr-header__service-tagline">Recherche s&eacute;mantique dans la base de connaissances</p>
             </div>
           </div>
+          <div class="fr-header__tools">
+            <div class="fr-header__tools-links">
+              <ul class="fr-btns-group">
+                <li>
+                  <button class="fr-btn fr-icon-search-line" data-fr-opened="false"
+                          aria-controls="header-search-modal" title="Rechercher">Rechercher</button>
+                </li>
+              </ul>
+            </div>
+            <div class="fr-header__search fr-modal" id="header-search-modal">
+              <div class="fr-container fr-container-lg--fluid">
+                <button class="fr-btn--close fr-btn" aria-controls="header-search-modal" title="Fermer">Fermer</button>
+                <div class="fr-search-bar" role="search">
+                  <label class="fr-label" for="header-search-input">Rechercher</label>
+                  <input class="fr-input" placeholder="Ex : garantie l&eacute;gale, signaler une arnaque…"
+                         type="search" id="header-search-input">
+                  <button class="fr-btn" title="Rechercher" id="header-search-submit">Rechercher</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="fr-header__menu fr-modal" id="modal-menu">
+      <div class="fr-container">
+        <button class="fr-btn--close fr-btn" aria-controls="modal-menu" title="Fermer">Fermer</button>
+        <div class="fr-header__menu-links"></div>
+        <nav class="fr-nav" role="navigation" aria-label="Menu principal">
+          <ul class="fr-nav__list">
+            <li class="fr-nav__item">
+              <a class="fr-nav__link" href="index.html">Assistant</a>
+            </li>
+            <li class="fr-nav__item">
+              <a class="fr-nav__link" href="fiches.html">Fiches pratiques</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
@@ -80,11 +125,23 @@
       <p class="fr-text--sm fr-text--mention-grey">Essayez avec d'autres mots-cl&eacute;s</p>
     </div>
 
+    <!-- Fiche viewer drawer -->
+    <div id="fiche-drawer" class="fiche-drawer" hidden>
+      <div class="fiche-drawer__header">
+        <button class="fr-btn fr-btn--sm fr-btn--tertiary" id="fiche-drawer-close">
+          <span class="fr-icon-close-line" aria-hidden="true"></span> Fermer
+        </button>
+      </div>
+      <div class="fiche-drawer__body fr-text" id="fiche-drawer-body"></div>
+    </div>
+
   </main>
 
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/dsfr/dsfr.module.min.js" type="module"></script>
 <script type="module" src="js/search-page.js"></script>
+<script type="module" src="js/header-search.js"></script>
 </body>
 </html>
