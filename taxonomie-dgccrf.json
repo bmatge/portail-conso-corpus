@@ -1,14 +1,14 @@
 {
   "meta": {
     "titre": "Taxonomie DGCCRF — Référentiel unifié consommation / concurrence / alimentaire / cyber",
-    "version": "2.1",
+    "version": "3.0",
     "date": "2026-02",
-    "description": "Fichier de référence unique combinant la taxonomie des problèmes de consommation DGCCRF et le mapping complet vers SignalConso. Pour chaque situation : libellé usager, exemples, sorties de fléchage priorisées, catégorie SignalConso avec URL de signalement direct et hints de sous-catégories. v2.1 : enrichi par analyse vectorielle (KMeans sur embeddings E5 du corpus DGCCRF, 1754 contenus).",
+    "description": "Fichier de référence unique combinant la taxonomie des problèmes de consommation DGCCRF et le mapping complet vers SignalConso. Pour chaque situation : libellé usager, exemples, sorties de fléchage priorisées, catégorie SignalConso avec URL de signalement direct et hints de sous-catégories. v2.1 : enrichi par analyse vectorielle (KMeans sur embeddings E5 du corpus DGCCRF, 1754 contenus). v3.0 : extension majeure — ajout de 4 domaines (logement, banque/finance, droits du consommateur, services funéraires), 16 sous-domaines et 80 situations pour couvrir les articles orphelins identifiés par l'analyse de couverture.",
     "contenu": {
-      "domaines": 8,
-      "sous_domaines": 44,
-      "situations": 112,
-      "types_sortie": 16,
+      "domaines": 12,
+      "sous_domaines": 60,
+      "situations": 192,
+      "types_sortie": 17,
       "categories_signalconso": 18,
       "sous_domaines_vectoriels": 10,
       "situations_vectorielles": 20
@@ -96,6 +96,11 @@
       "label": "Médiation de la consommation — liste des médiateurs",
       "description": "Trouver le médiateur compétent selon le secteur",
       "url": "https://www.economie.gouv.fr/mediation-conso/trouver-un-mediateur"
+    },
+    "information": {
+      "label": "Fiche d'information consommateur",
+      "description": "Information générale sur les droits, démarches ou bonnes pratiques du consommateur — pas de signalement ni de recours spécifique, mais un contenu pédagogique structuré",
+      "url": "https://www.economie.gouv.fr/dgccrf/consommation"
     }
   },
   "signalconso_categories": {
@@ -475,6 +480,25 @@
                 "url_signalement": "https://signal.conso.gouv.fr/fr/demarchage-abusif/faire-un-signalement",
                 "note": "Signaler sur SignalConso ET déposer plainte en gendarmerie / commissariat. SignalConso seul est insuffisant pour l'abus de faiblesse (infraction pénale)."
               }
+            },
+            {
+              "id": "demarchage_renovation_energetique",
+              "label": "Démarchage agressif spécifique à la rénovation énergétique (isolation, pompe à chaleur)",
+              "exemples": [
+                "Appels téléphoniques prétendant une aide gouvernementale urgente",
+                "Faux auditeurs énergétiques à domicile",
+                "Signature de contrat couplé avec crédit sous pression"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "police_gendarmerie",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         },
@@ -644,6 +668,25 @@
                 ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
               }
+            },
+            {
+              "id": "black_friday_pratiques",
+              "label": "Pratiques trompeuses lors du Black Friday ou d'opérations promotionnelles en ligne",
+              "exemples": [
+                "Prix gonflé avant l'opération pour afficher une fausse réduction",
+                "Stock insuffisant à dessein (appât)",
+                "Compte à rebours artificiel créant une urgence fictive"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         }
@@ -707,6 +750,25 @@
                 ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/demarchage-abusif/faire-un-signalement"
               }
+            },
+            {
+              "id": "retractation_exceptions_info",
+              "label": "Je ne sais pas si mon achat bénéficie du droit de rétractation (exceptions légales)",
+              "exemples": [
+                "Billet d'avion, de train ou de spectacle acheté en ligne",
+                "Produit personnalisé ou périssable commandé à distance",
+                "Logiciel ou contenu numérique téléchargé"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "information",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         },
@@ -875,6 +937,44 @@
                   "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
                 }
               }
+            },
+            {
+              "id": "indice_reparabilite_absent",
+              "label": "Indice de réparabilité ou de durabilité absent ou trompeur",
+              "exemples": [
+                "Appareil électronique vendu sans affichage de l'indice de réparabilité obligatoire",
+                "Note de réparabilité manifestement surévaluée",
+                "Pièces détachées annoncées disponibles mais introuvables"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "obsolescence_programmee",
+              "label": "Obsolescence programmée suspectée (produit conçu pour durer moins longtemps)",
+              "exemples": [
+                "Mise à jour logicielle ralentissant volontairement l'appareil",
+                "Pièce d'usure non remplaçable (batterie soudée, etc.)",
+                "Arrêt des mises à jour de sécurité rendant l'appareil inutilisable"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         },
@@ -1000,6 +1100,25 @@
                 ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
               }
+            },
+            {
+              "id": "droit_reparation_refuse",
+              "label": "Droit à la réparation refusé (le fabricant ne fournit pas les pièces détachées ou la documentation)",
+              "exemples": [
+                "Pièces détachées indisponibles dans les délais légaux",
+                "Prix de la réparation volontairement prohibitif par rapport au neuf",
+                "Refus de fournir les schémas ou manuels de réparation aux réparateurs indépendants"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         }
@@ -1076,6 +1195,40 @@
                 ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
               }
+            },
+            {
+              "id": "prix_unite_absent",
+              "label": "Prix à l'unité de mesure (au kg, au litre) absent ou illisible en rayon",
+              "exemples": [
+                "Pas de prix au kilo pour les fruits et légumes en vrac",
+                "Prix au litre absent sur les boissons",
+                "Comparaison rendue impossible par des unités différentes (100g vs kg)"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
+              ]
+            },
+            {
+              "id": "shrinkflation",
+              "label": "Réduflation (shrinkflation) : réduction de la quantité sans baisse de prix ni information",
+              "exemples": [
+                "Paquet de gâteaux passé de 200g à 175g au même prix",
+                "Absence d'information sur la réduction de contenu",
+                "Non-respect de l'obligation d'information sur la réduflation (loi 2024)"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         },
@@ -1134,12 +1287,18 @@
               "id": "composition_textile_fausse",
               "label": "La composition textile indiquée sur l'étiquette est fausse (ex. : « 100% coton » alors que c'est du polyester)",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
               ],
               "signalconso": {
                 "category": "AchatMagasin",
                 "category_alt": "AchatInternet",
-                "subcategory_hints": ["Etiquetage_textile_non_conforme", "Composition_fausse"],
+                "subcategory_hints": [
+                  "Etiquetage_textile_non_conforme",
+                  "Composition_fausse"
+                ],
                 "url_signalement_alt": {
                   "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
                   "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
@@ -1150,12 +1309,18 @@
               "id": "faux_cuir",
               "label": "Produit vendu comme « cuir » alors qu'il s'agit de simili-cuir ou matière synthétique",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
               ],
               "signalconso": {
                 "category": "AchatMagasin",
                 "category_alt": "AchatInternet",
-                "subcategory_hints": ["Denomination_cuir_abusive", "Tromperie_matiere"],
+                "subcategory_hints": [
+                  "Denomination_cuir_abusive",
+                  "Tromperie_matiere"
+                ],
                 "url_signalement_alt": {
                   "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
                   "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
@@ -1359,6 +1524,25 @@
                   "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
                 }
               }
+            },
+            {
+              "id": "nutriscore_trompeur",
+              "label": "Utilisation trompeuse du Nutri-Score (affichage erroné ou manipulé)",
+              "exemples": [
+                "Nutri-Score affiché ne correspondant pas au calcul officiel",
+                "Produit reformulé pour améliorer le Nutri-Score sans réel bénéfice nutritionnel",
+                "Nutri-Score utilisé sur un produit non concerné (ex : boissons alcoolisées)"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_dgal",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         },
@@ -1492,6 +1676,25 @@
                   "url_thematique": "https://signal.conso.gouv.fr/fr/intoxication-alimentaire"
                 }
               }
+            },
+            {
+              "id": "dark_kitchen_transparence",
+              "label": "Dark kitchen / restaurant virtuel : manque de transparence sur l'identité ou l'origine des plats",
+              "exemples": [
+                "Même cuisine opérant sous plusieurs noms de restaurants fictifs",
+                "Absence d'identification du responsable sur les plateformes de livraison",
+                "Origine des ingrédients introuvable"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "information",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         },
@@ -1504,12 +1707,22 @@
               "id": "vin_appellation_frauduleuse",
               "label": "Vin vendu sous une appellation d'origine (AOC/AOP) sans y avoir droit",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 },
-                { "type": "autorite_dgal", "priorite": 2, "note": "La DGAL/FranceAgriMer contrôle les appellations viticoles" }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_dgal",
+                  "priorite": 2,
+                  "note": "La DGAL/FranceAgriMer contrôle les appellations viticoles"
+                }
               ],
               "signalconso": {
                 "category": "AchatMagasin",
-                "subcategory_hints": ["Fraude_appellation_origine", "Vin_non_conforme"],
+                "subcategory_hints": [
+                  "Fraude_appellation_origine",
+                  "Vin_non_conforme"
+                ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
               }
             },
@@ -1517,11 +1730,17 @@
               "id": "spiritueux_etiquetage",
               "label": "Étiquetage non conforme sur une bouteille de vin ou spiritueux (degré, origine, cépage)",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
               ],
               "signalconso": {
                 "category": "AchatMagasin",
-                "subcategory_hints": ["Etiquetage_vin_non_conforme", "Mention_obligatoire_absente"],
+                "subcategory_hints": [
+                  "Etiquetage_vin_non_conforme",
+                  "Mention_obligatoire_absente"
+                ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
               }
             }
@@ -1536,12 +1755,18 @@
               "id": "faux_label_bio",
               "label": "Produit vendu comme « bio » sans certification officielle (logo AB ou Eurofeuille absent)",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
               ],
               "signalconso": {
                 "category": "AchatMagasin",
                 "category_alt": "AchatInternet",
-                "subcategory_hints": ["Faux_label_bio", "Usage_abusif_mention_bio"],
+                "subcategory_hints": [
+                  "Faux_label_bio",
+                  "Usage_abusif_mention_bio"
+                ],
                 "url_signalement_alt": {
                   "url_signalement_magasin": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement",
                   "url_signalement_internet": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
@@ -1552,11 +1777,17 @@
               "id": "label_qualite_usurpe",
               "label": "Usage frauduleux d'un signe de qualité (Label Rouge, IGP, STG) ou d'une mention valorisante (« fermier », « artisanal »)",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
               ],
               "signalconso": {
                 "category": "AchatMagasin",
-                "subcategory_hints": ["Label_qualite_usurpe", "Mention_valorisante_trompeuse"],
+                "subcategory_hints": [
+                  "Label_qualite_usurpe",
+                  "Mention_valorisante_trompeuse"
+                ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
               }
             }
@@ -1707,6 +1938,48 @@
                 "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement",
                 "note": "Compléter impérativement avec un signalement AMF (Autorité des Marchés Financiers) et un dépôt de plainte"
               }
+            },
+            {
+              "id": "arnaque_crypto",
+              "label": "Arnaque aux cryptomonnaies (faux exchanges, tokens frauduleux, rug pulls)",
+              "exemples": [
+                "Plateforme d'échange de crypto non enregistrée auprès de l'AMF",
+                "Promesse de rendement garanti sur des cryptoactifs",
+                "Investissement dans un token qui disparaît (rug pull)"
+              ],
+              "sorties": [
+                {
+                  "type": "autorite_amf",
+                  "priorite": 1
+                },
+                {
+                  "type": "police_gendarmerie",
+                  "priorite": 2
+                },
+                {
+                  "type": "cybermalveillance",
+                  "priorite": 3
+                }
+              ]
+            },
+            {
+              "id": "dropshipping_trompeur",
+              "label": "Dropshipping trompeur (produit annoncé comme local, en réalité expédié de Chine à prix majoré)",
+              "exemples": [
+                "Produit vendu 50€ sur un site français, disponible à 5€ sur AliExpress",
+                "Délai de livraison réel de 3-6 semaines non annoncé",
+                "Pas de service après-vente ni de retour possible"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         },
@@ -1756,6 +2029,25 @@
                 ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/achat-site/faire-un-signalement"
               }
+            },
+            {
+              "id": "marketplace_responsabilite",
+              "label": "La marketplace refuse d'assumer sa responsabilité (DSA) pour un produit dangereux ou contrefait",
+              "exemples": [
+                "Produit contrefait acheté sur une marketplace, la plateforme refuse tout recours",
+                "Produit dangereux toujours en vente malgré signalement",
+                "Absence de point de contact pour les réclamations"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "rappelconso",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         },
@@ -2158,6 +2450,82 @@
                 ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/voyage-loisirs/faire-un-signalement"
               }
+            },
+            {
+              "id": "hotel_non_conforme",
+              "label": "Hôtel non conforme à la description (classement, prestations, hygiène)",
+              "exemples": [
+                "Nombre d'étoiles affiché ne correspondant pas au classement officiel",
+                "Prestations annoncées non disponibles (piscine, wifi, parking)",
+                "Problèmes d'hygiène graves"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "location_vacances_arnaque",
+              "label": "Location de vacances frauduleuse (annonce fictive, logement inexistant ou très différent)",
+              "exemples": [
+                "Logement réservé n'existe pas ou est déjà loué",
+                "Photos de l'annonce ne correspondent pas à la réalité",
+                "Propriétaire injoignable après encaissement"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "police_gendarmerie",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "camping_regles",
+              "label": "Camping : pratiques abusives (surfacturation, hygiène, résiliation)",
+              "exemples": [
+                "Frais de réservation ou d'annulation abusifs",
+                "Emplacement ne correspondant pas à la description",
+                "Problèmes d'hygiène ou de sécurité sur le camping"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "train_indemnisation",
+              "label": "Retard ou annulation de train : difficultés d'indemnisation",
+              "exemples": [
+                "Retard SNCF de plus de 30 minutes sans proposition d'indemnisation",
+                "Remboursement de billet annulé refusé ou retardé",
+                "Conditions d'échange de billets non conformes au règlement européen"
+              ],
+              "sorties": [
+                {
+                  "type": "mediation",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         },
@@ -2242,6 +2610,48 @@
                 ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/eau-gaz-electricite/faire-un-signalement"
               }
+            },
+            {
+              "id": "cheque_energie_difficultes",
+              "label": "Difficultés d'utilisation du chèque énergie ou refus d'un fournisseur",
+              "exemples": [
+                "Le fournisseur refuse d'accepter le chèque énergie",
+                "Chèque énergie non reçu malgré l'éligibilité",
+                "Impossibilité d'utiliser le chèque en ligne"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "information",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "compteur_linky_litige",
+              "label": "Litige lié au compteur Linky (installation forcée, données, surfacturation post-pose)",
+              "exemples": [
+                "Refus d'installation du compteur Linky et ses conséquences",
+                "Hausse inexpliquée de la facture après installation de Linky",
+                "Préoccupations sur la collecte de données de consommation"
+              ],
+              "sorties": [
+                {
+                  "type": "mediation",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                },
+                {
+                  "type": "autorite_cnil",
+                  "priorite": 3
+                }
+              ]
             }
           ]
         },
@@ -2320,6 +2730,63 @@
                 "url_signalement": "https://signal.conso.gouv.fr/fr/voiture-vehicule/faire-un-signalement",
                 "note": "Infraction pénale : orienter aussi vers dépôt de plainte"
               }
+            },
+            {
+              "id": "controle_technique_litige",
+              "label": "Litige avec un centre de contrôle technique (résultat contesté, surfacturation)",
+              "exemples": [
+                "Contre-visite injustifiée",
+                "Tarifs non affichés ou surfacturation",
+                "Contrôle technique complaisant (véhicule dangereux passé)"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "location_vehicule_litige",
+              "label": "Litige avec un loueur de véhicules (frais cachés, franchise, état des lieux)",
+              "exemples": [
+                "Franchise excessive prélevée pour des dommages contestés",
+                "Frais de restitution (nettoyage, carburant) abusifs",
+                "Assurances complémentaires imposées"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "borne_recharge_electrique",
+              "label": "Problèmes avec les bornes de recharge électrique (tarification, disponibilité, installation)",
+              "exemples": [
+                "Tarification au kWh non transparente sur les bornes publiques",
+                "Borne hors service sans alternative ou remboursement",
+                "Arnaque à l'installation de bornes en copropriété"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         },
@@ -2403,6 +2870,67 @@
                 ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/tel-internet-media/faire-un-signalement"
               }
+            },
+            {
+              "id": "fibre_installation_probleme",
+              "label": "Problème d'installation de la fibre optique (retard, dommages, raccordement défaillant)",
+              "exemples": [
+                "Installation promise mais reportée indéfiniment",
+                "Dommages causés à l'installation existante lors du raccordement",
+                "Fibre posée mais service non fonctionnel"
+              ],
+              "sorties": [
+                {
+                  "type": "autorite_arcep",
+                  "priorite": 1
+                },
+                {
+                  "type": "signal_conso",
+                  "priorite": 2
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 3
+                }
+              ]
+            },
+            {
+              "id": "numero_surtaxe_arnaque",
+              "label": "Arnaque aux numéros surtaxés (SVA) ou spam vocal/SMS",
+              "exemples": [
+                "Appel piège vers un numéro surtaxé (ping call)",
+                "SMS frauduleux incitant à rappeler un numéro payant",
+                "Facturation de services SVA non sollicités"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "portabilite_numero_bloquee",
+              "label": "Portabilité du numéro bloquée par l'ancien opérateur",
+              "exemples": [
+                "L'ancien opérateur retarde le transfert du numéro",
+                "Perte du numéro pendant la portabilité",
+                "Facturation simultanée par les deux opérateurs"
+              ],
+              "sorties": [
+                {
+                  "type": "autorite_arcep",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         },
@@ -2457,6 +2985,63 @@
                 ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/banque-assurance/faire-un-signalement"
               }
+            },
+            {
+              "id": "assurance_habitation_litige",
+              "label": "Litige avec l'assurance habitation (refus d'indemnisation, expertise contestée)",
+              "exemples": [
+                "Refus d'indemnisation pour un dégât des eaux",
+                "Expertise sous-évaluant les dommages",
+                "Franchise abusive ou non communiquée"
+              ],
+              "sorties": [
+                {
+                  "type": "mediation",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_acpr",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "mutuelle_remboursement_insuffisant",
+              "label": "Mutuelle santé : remboursements inférieurs aux garanties annoncées",
+              "exemples": [
+                "Reste à charge supérieur à ce qui était prévu au contrat",
+                "Délais de remboursement anormalement longs",
+                "Refus de prise en charge d'un soin couvert par le contrat"
+              ],
+              "sorties": [
+                {
+                  "type": "mediation",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_acpr",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "assurance_auto_malus_conteste",
+              "label": "Coefficient bonus-malus contesté ou erreur dans le relevé d'information",
+              "exemples": [
+                "Malus appliqué alors que le conducteur n'est pas responsable",
+                "Relevé d'information erroné transmis au nouvel assureur",
+                "Refus d'assurance pour un malus élevé (bureau central de tarification)"
+              ],
+              "sorties": [
+                {
+                  "type": "mediation",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         },
@@ -2510,6 +3095,25 @@
                 ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/cpf-formation/faire-un-signalement"
               }
+            },
+            {
+              "id": "auto_ecole_litige",
+              "label": "Auto-école : surfacturation, heures de conduite non effectuées, transfert de dossier",
+              "exemples": [
+                "Heures de conduite facturées mais non effectuées",
+                "Refus de restituer le dossier d'inscription (dossier ANTS)",
+                "Forfait initial dépassé avec facturation d'heures supplémentaires non prévues"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         },
@@ -2556,6 +3160,48 @@
                 ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
               }
+            },
+            {
+              "id": "depassement_honoraires_sante",
+              "label": "Dépassements d'honoraires médicaux excessifs ou non annoncés",
+              "exemples": [
+                "Dépassement d'honoraires non communiqué avant la consultation",
+                "Devis préalable non remis pour un acte supérieur à un seuil",
+                "Reste à charge inattendu pour des soins dentaires ou optiques"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                },
+                {
+                  "type": "information",
+                  "priorite": 3
+                }
+              ]
+            },
+            {
+              "id": "chirurgie_esthetique_litige",
+              "label": "Chirurgie esthétique : résultat non conforme, complication, absence de consentement éclairé",
+              "exemples": [
+                "Résultat très différent de ce qui était convenu",
+                "Absence de délai de réflexion de 15 jours",
+                "Complications non mentionnées dans l'information préalable"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "juridiction",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         },
@@ -2568,12 +3214,21 @@
               "id": "salle_sport_contrat_abusif",
               "label": "Contrat de salle de sport avec clauses abusives (engagement, résiliation impossible, prélèvements après résiliation)",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 },
-                { "type": "mediation", "priorite": 2 }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
               ],
               "signalconso": {
                 "category": "VoyageLoisirs",
-                "subcategory_hints": ["Salle_sport_contrat_abusif", "Clause_abusive_resiliation"],
+                "subcategory_hints": [
+                  "Salle_sport_contrat_abusif",
+                  "Clause_abusive_resiliation"
+                ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/voyage-loisirs/faire-un-signalement"
               }
             },
@@ -2581,13 +3236,76 @@
               "id": "salle_sport_hygiene",
               "label": "Problème d'hygiène ou de sécurité dans une salle de sport (équipements défectueux, propreté)",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
               ],
               "signalconso": {
                 "category": "VoyageLoisirs",
-                "subcategory_hints": ["Salle_sport_hygiene", "Securite_equipement"],
+                "subcategory_hints": [
+                  "Salle_sport_hygiene",
+                  "Securite_equipement"
+                ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/voyage-loisirs/faire-un-signalement"
               }
+            },
+            {
+              "id": "spectacle_annule_remboursement",
+              "label": "Spectacle, concert ou événement annulé sans remboursement",
+              "exemples": [
+                "Événement annulé mais le vendeur ne propose qu'un avoir",
+                "Festival annulé partiellement sans compensation",
+                "Billet revendu sur un site non autorisé (revente illégale)"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "parc_loisirs_securite",
+              "label": "Problème de sécurité ou de conformité dans un parc de loisirs ou d'attraction",
+              "exemples": [
+                "Manège ou attraction présentant un danger",
+                "Trampoline park sans surveillance ou équipement défectueux",
+                "Absence d'affichage des règles de sécurité ou restrictions d'âge"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "abonnement_streaming_litige",
+              "label": "Abonnement de streaming ou jeux vidéo : résiliation difficile, prélèvements abusifs",
+              "exemples": [
+                "Abonnement d'essai transformé en abonnement payant sans consentement clair",
+                "Résiliation du service impossible ou trop complexe",
+                "Achat in-app non autorisé (enfant, erreur de manipulation)"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         },
@@ -2600,11 +3318,17 @@
               "id": "materiau_construction_non_conforme",
               "label": "Matériaux de construction vendus sans les certifications obligatoires ou avec des caractéristiques trompeuses",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
               ],
               "signalconso": {
                 "category": "TravauxRenovation",
-                "subcategory_hints": ["Materiau_non_conforme", "Certification_absente"],
+                "subcategory_hints": [
+                  "Materiau_non_conforme",
+                  "Certification_absente"
+                ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/travaux-renovation/faire-un-signalement"
               }
             },
@@ -2612,14 +3336,200 @@
               "id": "outillage_dangereux",
               "label": "Outil de bricolage ou de jardin dangereux (débroussailleuse, tronçonneuse, perceuse sans protections)",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 },
-                { "type": "rappelconso", "priorite": 2 }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "rappelconso",
+                  "priorite": 2
+                }
               ],
               "signalconso": {
                 "category": "ProduitDangereux",
-                "subcategory_hints": ["Outillage_dangereux", "Protection_absente"],
+                "subcategory_hints": [
+                  "Outillage_dangereux",
+                  "Protection_absente"
+                ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
               }
+            },
+            {
+              "id": "artisan_non_assure",
+              "label": "Artisan ou entreprise du BTP sans assurance décennale ou responsabilité civile",
+              "exemples": [
+                "Pas d'attestation de garantie décennale malgré l'obligation",
+                "Numéro SIRET invalide ou entreprise non immatriculée",
+                "Sous-traitance à des travailleurs non déclarés"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "eau_assainissement",
+          "label": "Eau et assainissement",
+          "situations": [
+            {
+              "id": "facture_eau_anormale",
+              "label": "Facture d'eau anormalement élevée (fuite après compteur, estimation incorrecte)",
+              "exemples": [
+                "Surconsommation due à une fuite non détectée",
+                "Facture basée sur une estimation erronée",
+                "Refus du distributeur d'appliquer le plafonnement en cas de fuite"
+              ],
+              "sorties": [
+                {
+                  "type": "mediation",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "coupure_eau_abusive",
+              "label": "Coupure d'eau abusive (interdite pour les résidences principales)",
+              "exemples": [
+                "Coupure d'eau pour impayé dans une résidence principale",
+                "Réduction de débit abusive"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "contrat_eau_clauses_abusives",
+              "label": "Clauses abusives dans un contrat de fourniture d'eau potable",
+              "exemples": [
+                "Frais de mise en service excessifs",
+                "Clause limitant la responsabilité du distributeur en cas de coupure",
+                "Clause imposant un mode de paiement unique"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "optique_audition",
+          "label": "Optique, audition et dispositifs médicaux",
+          "situations": [
+            {
+              "id": "devis_optique_non_conforme",
+              "label": "Devis en optique ou audition non conforme au modèle réglementaire (100% Santé)",
+              "exemples": [
+                "Non-présentation du devis normalisé pour les lunettes",
+                "Pas de proposition d'équipement 100% Santé (reste à charge zéro)",
+                "Devis d'aides auditives ne respectant pas le nouveau modèle"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "dispositif_medical_defectueux",
+              "label": "Dispositif médical acheté en commerce défectueux ou non conforme",
+              "exemples": [
+                "Appareil de mesure de tension défectueux",
+                "Masque FFP2 ou équipement médical non conforme aux normes",
+                "Thermomètre ou tensiomètre donnant des mesures erronées"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_ansm",
+                  "priorite": 2
+                },
+                {
+                  "type": "rappelconso",
+                  "priorite": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "animaux_compagnie",
+          "label": "Vente d'animaux de compagnie",
+          "situations": [
+            {
+              "id": "vente_animal_non_conforme",
+              "label": "Animal de compagnie vendu malade ou sans les documents obligatoires",
+              "exemples": [
+                "Chiot ou chaton vendu avec une maladie non déclarée",
+                "Absence de certificat vétérinaire, d'identification ou de carnet de vaccination",
+                "Annonce de vente d'animal non conforme à la réglementation"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                },
+                {
+                  "type": "juridiction",
+                  "priorite": 3
+                }
+              ]
+            },
+            {
+              "id": "animalerie_conditions_detention",
+              "label": "Conditions de détention non conformes en animalerie",
+              "exemples": [
+                "Animaux en mauvaise santé dans une animalerie",
+                "Conditions d'élevage non conformes à la réglementation",
+                "Trafic d'animaux suspectés (provenance douteuse)"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_dgal",
+                  "priorite": 2
+                }
+              ]
             }
           ]
         }
@@ -2758,12 +3668,21 @@
               "id": "puericulture_non_conforme",
               "label": "Article de puériculture non conforme (lit, poussette, chaise haute, porte-bébé)",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 },
-                { "type": "rappelconso", "priorite": 2 }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "rappelconso",
+                  "priorite": 2
+                }
               ],
               "signalconso": {
                 "category": "ProduitDangereux",
-                "subcategory_hints": ["Puericulture_dangereuse", "Article_enfant_non_conforme"],
+                "subcategory_hints": [
+                  "Puericulture_dangereuse",
+                  "Article_enfant_non_conforme"
+                ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
               }
             },
@@ -2771,12 +3690,21 @@
               "id": "jouet_petites_pieces",
               "label": "Jouet contenant des petites pièces détachables dangereuses pour enfants de moins de 3 ans",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 },
-                { "type": "rappelconso", "priorite": 2 }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "rappelconso",
+                  "priorite": 2
+                }
               ],
               "signalconso": {
                 "category": "ProduitDangereux",
-                "subcategory_hints": ["Jouet_dangereux", "Petites_pieces_detachables"],
+                "subcategory_hints": [
+                  "Jouet_dangereux",
+                  "Petites_pieces_detachables"
+                ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
               }
             }
@@ -2791,12 +3719,22 @@
               "id": "piscine_non_securisee",
               "label": "Piscine privée sans dispositif de sécurité obligatoire (barrière, alarme, couverture, abri)",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 },
-                { "type": "service_public", "priorite": 2, "url": "https://www.service-public.fr/particuliers/vosdroits/F1722" }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2,
+                  "url": "https://www.service-public.fr/particuliers/vosdroits/F1722"
+                }
               ],
               "signalconso": {
                 "category": "ProduitDangereux",
-                "subcategory_hints": ["Securite_piscine", "Absence_dispositif_securite"],
+                "subcategory_hints": [
+                  "Securite_piscine",
+                  "Absence_dispositif_securite"
+                ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
               }
             },
@@ -2804,11 +3742,17 @@
               "id": "aire_jeux_dangereuse",
               "label": "Aire de jeux collective avec équipements dangereux ou mal entretenus",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
               ],
               "signalconso": {
                 "category": "ProduitDangereux",
-                "subcategory_hints": ["Aire_jeux_dangereuse", "Equipement_non_conforme"],
+                "subcategory_hints": [
+                  "Aire_jeux_dangereuse",
+                  "Equipement_non_conforme"
+                ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
               }
             }
@@ -2823,11 +3767,17 @@
               "id": "epi_non_conforme",
               "label": "Équipement de protection individuelle (casque, lunettes, gants) non conforme ou sans marquage CE",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
               ],
               "signalconso": {
                 "category": "ProduitDangereux",
-                "subcategory_hints": ["EPI_non_conforme", "Marquage_CE_absent"],
+                "subcategory_hints": [
+                  "EPI_non_conforme",
+                  "Marquage_CE_absent"
+                ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
               }
             },
@@ -2835,12 +3785,21 @@
               "id": "equipement_sport_dangereux",
               "label": "Équipement sportif dangereux (vélo, trottinette, équipement équestre, nautique)",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 },
-                { "type": "rappelconso", "priorite": 2 }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "rappelconso",
+                  "priorite": 2
+                }
               ],
               "signalconso": {
                 "category": "ProduitDangereux",
-                "subcategory_hints": ["Equipement_sport_dangereux", "Produit_non_conforme"],
+                "subcategory_hints": [
+                  "Equipement_sport_dangereux",
+                  "Produit_non_conforme"
+                ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
               }
             }
@@ -2855,12 +3814,22 @@
               "id": "cosmetique_dangereux",
               "label": "Produit cosmétique provoquant une réaction allergique ou contenant des substances interdites",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 },
-                { "type": "autorite_ansm", "priorite": 2, "note": "L'ANSM surveille les produits cosmétiques" }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_ansm",
+                  "priorite": 2,
+                  "note": "L'ANSM surveille les produits cosmétiques"
+                }
               ],
               "signalconso": {
                 "category": "Sante",
-                "subcategory_hints": ["Produit_cosmetique_dangereux", "Reaction_allergique"],
+                "subcategory_hints": [
+                  "Produit_cosmetique_dangereux",
+                  "Reaction_allergique"
+                ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
               }
             },
@@ -2868,11 +3837,17 @@
               "id": "tatouage_non_conforme",
               "label": "Salon de tatouage ou produits de tatouage/maquillage permanent non conformes",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
               ],
               "signalconso": {
                 "category": "Sante",
-                "subcategory_hints": ["Tatouage_non_conforme", "Encre_tatouage_dangereuse"],
+                "subcategory_hints": [
+                  "Tatouage_non_conforme",
+                  "Encre_tatouage_dangereuse"
+                ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
               }
             }
@@ -2887,12 +3862,21 @@
               "id": "materiau_contact_non_conforme",
               "label": "Emballage, ustensile ou contenant alimentaire libérant des substances nocives (migration, bisphénol, plomb)",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 },
-                { "type": "rappelconso", "priorite": 2 }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "rappelconso",
+                  "priorite": 2
+                }
               ],
               "signalconso": {
                 "category": "ProduitDangereux",
-                "subcategory_hints": ["Materiau_contact_alimentaire", "Migration_substances_nocives"],
+                "subcategory_hints": [
+                  "Materiau_contact_alimentaire",
+                  "Migration_substances_nocives"
+                ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
               }
             },
@@ -2900,11 +3884,17 @@
               "id": "ustensile_cuisine_dangereux",
               "label": "Ustensile de cuisine (poêle, casserole, spatule) avec revêtement dégradé ou matériau non conforme",
               "sorties": [
-                { "type": "signal_conso", "priorite": 1 }
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                }
               ],
               "signalconso": {
                 "category": "ProduitDangereux",
-                "subcategory_hints": ["Ustensile_non_conforme", "Revetement_degrade"],
+                "subcategory_hints": [
+                  "Ustensile_non_conforme",
+                  "Revetement_degrade"
+                ],
                 "url_signalement": "https://signal.conso.gouv.fr/fr/faire-un-signalement"
               }
             }
@@ -3013,6 +4003,909 @@
                 "canal_principal_si_hors_sc": "juridiction",
                 "note": "Relève du tribunal de commerce exclusivement. SignalConso non applicable."
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "logement",
+      "label": "Logement, immobilier et travaux",
+      "icone": "fr-icon-home-4-fill",
+      "description": "Droits des locataires et propriétaires, baux, travaux de rénovation, copropriété, déménagement. Complète le sous-domaine 'immobilier' existant dans secteurs_reglementes (qui ne couvre que les honoraires d'agence, diagnostics et locations non conformes).",
+      "couleur": "#6A6AF4",
+      "sous_domaines": [
+        {
+          "id": "location",
+          "label": "Location d'un logement",
+          "situations": [
+            {
+              "id": "bail_clauses_abusives",
+              "label": "Le bail de location contient des clauses abusives ou illégales",
+              "exemples": [
+                "Clause interdisant d'héberger un tiers",
+                "Clause de résiliation automatique sans mise en demeure",
+                "Clause imposant une assurance spécifique",
+                "Interdiction d'avoir un animal domestique (hors nuisances)"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 3
+                }
+              ]
+            },
+            {
+              "id": "depot_garantie_non_restitue",
+              "label": "Le propriétaire ne restitue pas le dépôt de garantie dans les délais légaux",
+              "exemples": [
+                "Dépôt de garantie non rendu après 1 mois (logement conforme) ou 2 mois",
+                "Retenues injustifiées sur le dépôt de garantie",
+                "Absence d'état des lieux de sortie pour justifier les retenues"
+              ],
+              "sorties": [
+                {
+                  "type": "mediation",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                },
+                {
+                  "type": "juridiction",
+                  "priorite": 3
+                }
+              ]
+            },
+            {
+              "id": "augmentation_loyer_abusive",
+              "label": "Augmentation de loyer abusive ou non conforme à l'indice de référence",
+              "exemples": [
+                "Augmentation supérieure à l'IRL sans justification",
+                "Non-respect de l'encadrement des loyers (zones tendues)",
+                "Augmentation en cours de bail sans clause de révision"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                },
+                {
+                  "type": "juridiction",
+                  "priorite": 3
+                }
+              ]
+            },
+            {
+              "id": "logement_indecent",
+              "label": "Le logement loué est indécent ou insalubre (humidité, chauffage défaillant, nuisibles)",
+              "exemples": [
+                "Absence de chauffage fonctionnel",
+                "Infiltrations d'eau ou moisissures importantes",
+                "Surface habitable inférieure au minimum légal (9 m²)",
+                "Installation électrique dangereuse"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "juridiction",
+                  "priorite": 2
+                },
+                {
+                  "type": "information",
+                  "priorite": 3
+                }
+              ]
+            },
+            {
+              "id": "charges_locatives_abusives",
+              "label": "Charges locatives injustifiées ou non détaillées",
+              "exemples": [
+                "Le bailleur ne fournit pas le décompte des charges",
+                "Charges de copropriété répercutées intégralement sur le locataire",
+                "Régularisation de charges anormalement élevée"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "conge_locataire_abusif",
+              "label": "Congé donné au locataire de manière abusive (faux motif de reprise ou de vente)",
+              "exemples": [
+                "Congé pour reprise sans intention réelle d'habiter",
+                "Congé pour vente à un prix surévalué pour décourager le locataire",
+                "Non-respect du préavis de 6 mois"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "juridiction",
+                  "priorite": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "copropriete",
+          "label": "Copropriété et syndic",
+          "situations": [
+            {
+              "id": "syndic_honoraires_opaques",
+              "label": "Honoraires du syndic opaques, abusifs ou non conformes au contrat type",
+              "exemples": [
+                "Frais de gestion non prévus au contrat",
+                "Facturation de prestations particulières non justifiées",
+                "Non-respect du contrat type obligatoire depuis la loi Alur"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 3
+                }
+              ]
+            },
+            {
+              "id": "charges_copropriete_injustifiees",
+              "label": "Charges de copropriété anormalement élevées ou mal réparties",
+              "exemples": [
+                "Appels de fonds injustifiés",
+                "Répartition des charges non conforme au règlement de copropriété",
+                "Travaux votés sans mise en concurrence"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "juridiction",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "syndic_gestion_defaillante",
+              "label": "Le syndic ne remplit pas ses obligations (comptes, AG, entretien)",
+              "exemples": [
+                "Non-convocation de l'assemblée générale annuelle",
+                "Absence de mise en concurrence pour les contrats de prestataires",
+                "Non-transmission des comptes annuels"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "juridiction",
+                  "priorite": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "travaux_renovation",
+          "label": "Travaux et rénovation du logement",
+          "situations": [
+            {
+              "id": "artisan_malfacon",
+              "label": "Malfaçons ou travaux non conformes au devis (artisan, entreprise du bâtiment)",
+              "exemples": [
+                "Travaux de rénovation bâclés ou non terminés",
+                "Non-respect des normes techniques (DTU)",
+                "Matériaux utilisés différents de ceux prévus au devis"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                },
+                {
+                  "type": "juridiction",
+                  "priorite": 3
+                }
+              ]
+            },
+            {
+              "id": "abandon_chantier",
+              "label": "L'artisan ou l'entreprise abandonne le chantier en cours",
+              "exemples": [
+                "Travaux interrompus sans explication",
+                "Entreprise injoignable après encaissement d'un acompte",
+                "Sous-traitance non déclarée et abandon"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "police_gendarmerie",
+                  "priorite": 2
+                },
+                {
+                  "type": "juridiction",
+                  "priorite": 3
+                }
+              ]
+            },
+            {
+              "id": "devis_travaux_trompeur",
+              "label": "Devis de travaux trompeur ou non remis avant le début des travaux",
+              "exemples": [
+                "Travaux commencés sans devis signé",
+                "Devis imprécis ne permettant pas de comparer",
+                "Surfacturation par rapport au devis initial sans avenant"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "renovation_energetique_arnaque",
+              "label": "Arnaque à la rénovation énergétique (isolation, pompe à chaleur, panneaux solaires)",
+              "exemples": [
+                "Démarchage agressif pour isolation à 1 euro",
+                "Panneaux photovoltaïques posés sans raccordement ou défaillants",
+                "Pompe à chaleur inadaptée ou mal installée avec crédit affecté",
+                "Faux diagnostiqueurs ou faux labels RGE"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "police_gendarmerie",
+                  "priorite": 2
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 3
+                }
+              ]
+            },
+            {
+              "id": "garantie_decennale_non_couverte",
+              "label": "L'entreprise refuse d'appliquer la garantie décennale ou n'est pas assurée",
+              "exemples": [
+                "Infiltrations dans les 10 ans suivant la réception des travaux",
+                "L'entreprise a disparu ou n'avait pas de garantie décennale",
+                "L'assureur dommages-ouvrage refuse l'indemnisation"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "juridiction",
+                  "priorite": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "achat_immobilier",
+          "label": "Achat et vente immobilière",
+          "situations": [
+            {
+              "id": "vente_vices_caches_immobilier",
+              "label": "Vices cachés découverts après l'achat d'un bien immobilier",
+              "exemples": [
+                "Fissures structurelles dissimulées",
+                "Présence de termites ou mérule non signalée",
+                "Problème d'humidité masqué par des travaux cosmétiques"
+              ],
+              "sorties": [
+                {
+                  "type": "juridiction",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "promoteur_non_livraison",
+              "label": "Retard de livraison ou non-conformité d'un logement neuf (VEFA)",
+              "exemples": [
+                "Livraison avec plus de 6 mois de retard sans pénalités",
+                "Logement livré avec des malfaçons ou des différences par rapport aux plans",
+                "Réserves à la livraison non levées"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                },
+                {
+                  "type": "juridiction",
+                  "priorite": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "demenagement",
+          "label": "Déménagement",
+          "situations": [
+            {
+              "id": "demenageur_dommages",
+              "label": "Objets perdus, cassés ou endommagés lors d'un déménagement professionnel",
+              "exemples": [
+                "Meubles abîmés pendant le transport",
+                "Cartons manquants à l'arrivée",
+                "Refus d'indemnisation par le déménageur"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "demenageur_devis_non_respecte",
+              "label": "Le déménageur facture un montant supérieur au devis ou ne respecte pas les délais",
+              "exemples": [
+                "Supplément exigé le jour du déménagement",
+                "Retard de livraison des affaires",
+                "Devis non remis ou incomplet"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "banque_finance",
+      "label": "Banque, services financiers et épargne",
+      "icone": "fr-icon-bank-fill",
+      "description": "Comptes bancaires, moyens de paiement, épargne, surendettement, arnaques aux placements. Complète le sous-domaine 'credit' existant dans secteurs_reglementes (qui ne couvre que le TAEG, le crédit revolving et l'assurance emprunteur).",
+      "couleur": "#009081",
+      "sous_domaines": [
+        {
+          "id": "compte_bancaire",
+          "label": "Compte bancaire et moyens de paiement",
+          "situations": [
+            {
+              "id": "frais_bancaires_abusifs",
+              "label": "Frais bancaires abusifs ou non transparents (commissions d'intervention, frais de tenue de compte)",
+              "exemples": [
+                "Commissions d'intervention excessives pour les clients fragiles",
+                "Frais de tenue de compte non annoncés",
+                "Agios calculés sur une base incorrecte"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                },
+                {
+                  "type": "autorite_acpr",
+                  "priorite": 3
+                }
+              ]
+            },
+            {
+              "id": "refus_ouverture_compte",
+              "label": "Refus d'ouverture de compte bancaire ou clôture abusive",
+              "exemples": [
+                "Refus d'ouvrir un compte sans motif légitime",
+                "Clôture de compte sans préavis suffisant",
+                "Non-respect du droit au compte (procédure Banque de France)"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_acpr",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "fraude_carte_bancaire",
+              "label": "Fraude à la carte bancaire (utilisation frauduleuse, paiement non autorisé)",
+              "exemples": [
+                "Paiements en ligne non reconnus",
+                "Carte clonée ou données volées",
+                "La banque refuse de rembourser une opération frauduleuse"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "police_gendarmerie",
+                  "priorite": 2
+                },
+                {
+                  "type": "autorite_acpr",
+                  "priorite": 3
+                }
+              ]
+            },
+            {
+              "id": "prelevement_non_autorise",
+              "label": "Prélèvement SEPA non autorisé ou contesté",
+              "exemples": [
+                "Prélèvement effectué sans mandat SEPA valide",
+                "La banque refuse de rembourser un prélèvement contesté dans les 8 semaines",
+                "Prélèvements qui continuent après résiliation d'un contrat"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "epargne_placements",
+          "label": "Épargne et placements financiers",
+          "situations": [
+            {
+              "id": "placement_trompeur",
+              "label": "Placement financier avec des informations trompeuses sur les risques ou le rendement",
+              "exemples": [
+                "Rendement garanti annoncé sur un produit à risque",
+                "Frais d'entrée ou de gestion non clairement présentés",
+                "Produit financier complexe vendu sans test d'adéquation"
+              ],
+              "sorties": [
+                {
+                  "type": "autorite_amf",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "assurance_vie_probleme",
+              "label": "Assurance-vie : rachat bloqué, frais cachés ou bénéficiaire non informé",
+              "exemples": [
+                "Rachat d'un contrat d'assurance-vie refusé ou retardé",
+                "Frais de gestion non communiqués clairement",
+                "Bénéficiaire d'un contrat non informé du décès du souscripteur"
+              ],
+              "sorties": [
+                {
+                  "type": "autorite_acpr",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 3
+                }
+              ]
+            },
+            {
+              "id": "crowdfunding_defaillance",
+              "label": "Plateforme de financement participatif défaillante ou trompeuse",
+              "exemples": [
+                "Projet financé qui n'aboutit pas sans remboursement",
+                "Plateforme non agréée par l'AMF",
+                "Informations insuffisantes sur les risques de perte"
+              ],
+              "sorties": [
+                {
+                  "type": "autorite_amf",
+                  "priorite": 1
+                },
+                {
+                  "type": "signal_conso",
+                  "priorite": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "surendettement",
+          "label": "Surendettement et difficultés de paiement",
+          "situations": [
+            {
+              "id": "surendettement_info",
+              "label": "Je suis en situation de surendettement et je cherche de l'aide",
+              "exemples": [
+                "Impossibilité de rembourser ses crédits",
+                "Dépôt d'un dossier de surendettement à la Banque de France",
+                "Procédure de rétablissement personnel"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "information",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "fichage_bancaire_abusif",
+              "label": "Fichage abusif au FICP ou FCC (fichier incidents de paiement)",
+              "exemples": [
+                "Inscription au FICP après un litige résolu",
+                "Interdit bancaire alors que le chèque a été régularisé",
+                "Refus de la banque de lever le fichage après régularisation"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_acpr",
+                  "priorite": 2
+                },
+                {
+                  "type": "autorite_cnil",
+                  "priorite": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "credit_consommation",
+          "label": "Crédit à la consommation (compléments)",
+          "situations": [
+            {
+              "id": "credit_affecte_litige",
+              "label": "Litige sur un crédit affecté (le bien n'est pas livré ou est défectueux mais le crédit court toujours)",
+              "exemples": [
+                "Crédit contracté pour des panneaux solaires qui ne fonctionnent pas",
+                "Bien non livré mais l'organisme de crédit continue les prélèvements",
+                "Droit de suspension des mensualités non respecté"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                },
+                {
+                  "type": "juridiction",
+                  "priorite": 3
+                }
+              ]
+            },
+            {
+              "id": "remboursement_anticipe_refuse",
+              "label": "L'organisme de crédit refuse le remboursement anticipé ou applique des pénalités excessives",
+              "exemples": [
+                "Indemnité de remboursement anticipé supérieure au plafond légal",
+                "Refus de rembourser par anticipation un crédit conso",
+                "Frais cachés lors du remboursement anticipé"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "droits_consommateur",
+      "label": "Droits du consommateur et recours",
+      "icone": "fr-icon-scales-fill",
+      "description": "Informations transversales sur les droits fondamentaux du consommateur, les voies de recours, la médiation et les démarches. Couvre les 130 articles 'Droits du consommateur (général)' orphelins.",
+      "couleur": "#A558A0",
+      "sous_domaines": [
+        {
+          "id": "recours_litiges",
+          "label": "Voies de recours en cas de litige",
+          "situations": [
+            {
+              "id": "mediation_comment",
+              "label": "Comment saisir un médiateur de la consommation",
+              "exemples": [
+                "Trouver le médiateur compétent pour son litige",
+                "Conditions de recevabilité d'une saisine de médiation",
+                "Délais et déroulement de la procédure de médiation"
+              ],
+              "sorties": [
+                {
+                  "type": "mediation",
+                  "priorite": 1
+                },
+                {
+                  "type": "information",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "tribunal_proximite",
+              "label": "Comment porter un litige de consommation devant le tribunal",
+              "exemples": [
+                "Saisine du tribunal judiciaire (ex tribunal d'instance)",
+                "Procédure simplifiée pour les petits litiges (<5 000 €)",
+                "Injonction de payer"
+              ],
+              "sorties": [
+                {
+                  "type": "juridiction",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "action_groupe",
+              "label": "Action de groupe (class action à la française)",
+              "exemples": [
+                "Rejoindre une action de groupe existante",
+                "Conditions pour qu'une association lance une action de groupe",
+                "Actions de groupe en cours (VW Dieselgate, etc.)"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "information",
+                  "priorite": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "droits_fondamentaux",
+          "label": "Droits fondamentaux du consommateur",
+          "situations": [
+            {
+              "id": "delai_prescription",
+              "label": "Délais de prescription pour agir en justice (garantie, vice caché, créance)",
+              "exemples": [
+                "2 ans pour la garantie de conformité",
+                "2 ans à compter de la découverte du vice caché",
+                "5 ans pour les créances commerciales"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "information",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "obligation_information_precontractuelle",
+              "label": "Le professionnel n'a pas fourni les informations précontractuelles obligatoires",
+              "exemples": [
+                "Caractéristiques essentielles du bien ou service non communiquées",
+                "Identité et coordonnées du professionnel absentes",
+                "Conditions générales de vente non accessibles"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "pratiques_discriminatoires",
+              "label": "Refus de vente ou prestation discriminatoire",
+              "exemples": [
+                "Refus de servir un client en raison de son origine ou handicap",
+                "Prix différent selon la nationalité",
+                "Accès refusé à un établissement sans motif légitime"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "police_gendarmerie",
+                  "priorite": 2
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "associations_consommateurs",
+          "label": "Associations de consommateurs et aides",
+          "situations": [
+            {
+              "id": "trouver_aide_consommateur",
+              "label": "Je cherche une association de consommateurs pour m'aider dans un litige",
+              "exemples": [
+                "Liste des associations de consommateurs agréées",
+                "Permanences juridiques gratuites (maisons de justice)",
+                "Points Conseil Budget pour les difficultés financières"
+              ],
+              "sorties": [
+                {
+                  "type": "service_public",
+                  "priorite": 1
+                },
+                {
+                  "type": "information",
+                  "priorite": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "services_funeraires",
+      "label": "Services funéraires",
+      "icone": "fr-icon-heart-fill",
+      "description": "Prestations funéraires, obsèques, contrats obsèques. Secteur avec des pratiques commerciales spécifiques et une réglementation propre.",
+      "couleur": "#7B4F8E",
+      "sous_domaines": [
+        {
+          "id": "obseques_prestations",
+          "label": "Prestations et contrats funéraires",
+          "situations": [
+            {
+              "id": "devis_obseques_non_conforme",
+              "label": "Devis de prestations funéraires non conforme au modèle obligatoire ou surfacturation",
+              "exemples": [
+                "Devis ne respectant pas le modèle réglementaire",
+                "Prestations imposées sans choix possible",
+                "Surfacturation de prestations obligatoires (toilette, transport)"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "service_public",
+                  "priorite": 2
+                }
+              ]
+            },
+            {
+              "id": "contrat_obseques_trompeur",
+              "label": "Contrat d'assurance obsèques trompeur ou mal exécuté",
+              "exemples": [
+                "Capital insuffisant au moment du décès",
+                "Clauses restrictives non expliquées à la souscription",
+                "Impossibilité de résilier ou de transférer le contrat"
+              ],
+              "sorties": [
+                {
+                  "type": "signal_conso",
+                  "priorite": 1
+                },
+                {
+                  "type": "autorite_acpr",
+                  "priorite": 2
+                },
+                {
+                  "type": "mediation",
+                  "priorite": 3
+                }
+              ]
             }
           ]
         }

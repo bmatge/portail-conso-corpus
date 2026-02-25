@@ -1,10 +1,10 @@
 node_modules/
 
 # Corpus (volumineux, non versionnés)
-dgccrf-drupal/
-entreprises-drupal/
-inc-conso-md/
-particuliers-drupal/
+# dgccrf-drupal/
+# entreprises-drupal/
+# inc-conso-md/
+# particuliers-drupal/
 
 # ChromaDB : géré via Git LFS (voir .gitattributes)
 

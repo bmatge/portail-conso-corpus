@@ -1,75 +1,105 @@
 ---
 domaine: secteurs_reglementes
-generated_at: '2026-02-25T02:38:41.512621'
+generated_at: '2026-02-25T11:39:54.676584'
 level: sous_domaine
 model: openweight-medium
 sources_count: 20
 taxonomy_id: energie
 title: Énergie (électricité, gaz)
-tokens: 6649
+tokens: 7055
 ---
 
-# Énergie (électricité, gaz) : vos droits et recours
+# Énergie : vos droits et recours
 
 ## En bref
-En France, le marché de l'énergie (électricité et gaz) est ouvert à la concurrence. Vous avez le droit de choisir votre fournisseur et de résilier votre contrat à tout moment sans frais. Les fournisseurs doivent respecter des obligations strictes en matière d'information, de transparence et de protection des consommateurs. En cas de litige, des recours existent pour défendre vos droits.
+En France, vous avez le droit de choisir librement votre fournisseur d'énergie (électricité et gaz). Vous bénéficiez de protections spécifiques en cas de démarchage abusif, de factures anormales, ou de difficultés avec votre contrat. Les litiges peuvent être résolus via des médiateurs spécialisés.
 
 ## De quoi s'agit-il ?
-Le sous-domaine "Énergie" couvre les droits et obligations liés à la fourniture d'électricité et de gaz naturel pour les particuliers. Il inclut les aspects suivants :
-- Le choix du fournisseur
-- La souscription et la résiliation de contrats
-- La facturation et les tarifs
-- Les démarchages abusifs
-- Les litiges avec les fournisseurs
+Le sous-domaine "Énergie" couvre les droits et recours des consommateurs concernant la fourniture d'électricité et de gaz naturel. Cela inclut les relations avec les fournisseurs, les contrats, les factures, et les litiges éventuels.
 
-Ce sous-domaine ne couvre pas les aspects techniques liés à l'installation ou à la maintenance des équipements (chauffage, électricité, etc.), ni les questions relatives aux énergies renouvelables ou aux aides financières pour la rénovation énergétique.
+**Ce qui est couvert :**
+- Les droits liés aux contrats d'énergie
+- Les démarches en cas de factures anormales
+- Les recours contre le démarchage abusif
+- Les litiges liés aux compteurs (comme Linky)
+- Les difficultés avec le chèque énergie
+
+**Ce qui n'est pas couvert :**
+- Les questions relatives aux énergies renouvelables non liées à la fourniture d'électricité ou de gaz
+- Les problèmes techniques purement liés au réseau (sauf en cas de litige avec le fournisseur)
 
 ## Quels sont vos droits ?
-### Choix du fournisseur
-Vous avez le droit de choisir librement votre fournisseur d'énergie. Le marché est ouvert à la concurrence, ce qui signifie que vous n'êtes pas obligé de rester avec le fournisseur historique (EDF pour l'électricité, Engie pour le gaz).
+### Contrats et factures
+- **Délai de rétractation** : Vous avez 14 jours pour vous rétracter si le contrat est conclu au téléphone, par internet ou en dehors d'un établissement commercial.
+- **Durée du contrat** : Le fournisseur doit proposer au moins un contrat d'une durée d'un an.
+- **Facturation** : Les factures doivent inclure des informations claires sur les tarifs, les modalités de paiement, et les coordonnées du gestionnaire de réseau.
+- **Indemnisation** : Vous pouvez demander une indemnisation si le niveau de qualité de la fourniture d'énergie n'est pas atteint.
 
-### Contrat
-Le contrat doit être écrit et signé ou accepté par voie électronique. Il doit contenir des informations claires et précises, notamment :
-- L'identité du fournisseur
-- La description et les prix des produits et services proposés
-- Les conditions d'évolution des prix
-- Les conditions de résiliation
+### Changement de fournisseur
+- **Libre choix** : Vous pouvez changer de fournisseur à tout moment et sans frais.
+- **Procédure** : Le nouveau fournisseur se charge des formalités de résiliation auprès de l'ancien fournisseur.
+- **Interruption de service** : Il n'y a généralement pas d'interruption de service lors du changement de fournisseur.
 
-### Résiliation
-Vous pouvez résilier votre contrat à tout moment et sans frais. Le fournisseur doit respecter une procédure spécifique en cas de modification des conditions contractuelles, notamment en informant ses clients au moins un mois avant l'application des changements.
-
-### Facturation
-Les factures doivent inclure des informations précises sur votre consommation, les tarifs appliqués et les éventuels changements de prix. Vous avez le droit de contester une facture que vous estimez anormale ou inexpliquée.
-
-### Protection contre les démarchages abusifs
-Les fournisseurs d'énergie doivent respecter des règles strictes en matière de démarchage téléphonique et à domicile. Vous avez le droit de refuser toute offre non sollicitée et de signaler les pratiques abusives.
+### Litiges et réclamations
+- **Médiation** : Vous pouvez saisir le Médiateur national de l'énergie en cas de litige non résolu avec votre fournisseur.
+- **Signalement** : Utilisez la plateforme [SignalConso](https://signal.conso.gouv.fr/fr) pour signaler un problème avec votre fournisseur d'énergie.
 
 ## Les situations les plus fréquentes
 
 - **Démarchage abusif d'un fournisseur d'énergie (pression, faux EDF, changement non voulu de fournisseur)**
-  Vous avez été contacté par un fournisseur d'énergie de manière abusive, avec des pressions ou des mensonges. [Lire la fiche](demarchage_energie_abusif.md)
+  - Description : Vous êtes contacté par un fournisseur d'énergie qui utilise des pratiques de vente agressives ou trompeuses.
+  - [Lire la fiche](demarchage_energie_abusif.md)
 
 - **Facture d'énergie anormalement élevée ou inexpliquée**
-  Votre facture d'énergie est plus élevée que d'habitude ou vous ne comprenez pas les montants facturés. [Lire la fiche](facture_energie_anormale.md)
+  - Description : Vous recevez une facture d'énergie bien plus élevée que d'habitude sans explication claire.
+  - [Lire la fiche](facture_energie_anormale.md)
 
 - **Résiliation du contrat d'énergie bloquée ou frais abusifs**
-  Votre fournisseur refuse de résilier votre contrat ou vous facture des frais abusifs pour la résiliation. [Lire la fiche](resiliation_energie_bloquee.md)
+  - Description : Votre fournisseur refuse de résilier votre contrat ou vous facture des frais abusifs pour la résiliation.
+  - [Lire la fiche](resiliation_energie_bloquee.md)
+
+- **Difficultés d'utilisation du chèque énergie ou refus d'un fournisseur**
+  - Description : Vous rencontrez des problèmes pour utiliser votre chèque énergie ou votre fournisseur refuse de l'accepter.
+  - [Lire la fiche](cheque_energie_difficultes.md)
+
+- **Litige lié au compteur Linky (installation forcée, données, surfacturation post-pose)**
+  - Description : Vous avez un litige concernant l'installation ou l'utilisation du compteur Linky.
+  - [Lire la fiche](compteur_linky_litige.md)
 
 ## Que faire concrètement ?
-1. **Choisir un fournisseur** : Comparez les offres de différents fournisseurs en utilisant des outils comme le comparateur du médiateur national de l'énergie ([comparateur.energie-info.fr](https://comparateur.energie-info.fr/compte/profil)).
-2. **Souscrire un contrat** : Vérifiez que le contrat contient toutes les informations obligatoires et que vous comprenez les conditions de résiliation et d'évolution des prix.
-3. **Surveiller vos factures** : Consultez régulièrement vos factures pour vérifier votre consommation et les tarifs appliqués.
-4. **Résilier votre contrat** : Contactez votre fournisseur pour résilier votre contrat. Vous n'avez pas à payer de frais de résiliation.
-5. **Signaler un litige** : Si vous rencontrez un problème avec votre fournisseur, essayez d'abord de résoudre le litige à l'amiable. Si cela ne fonctionne pas, vous pouvez saisir le médiateur national de l'énergie ou signaler le problème sur [SignalConso](https://signal.conso.gouv.fr).
+
+1. **En cas de démarchage abusif** :
+   - Notez les détails de l'appel ou de la visite (date, heure, nom du démarcheur).
+   - Contactez votre fournisseur pour confirmer ou infirmer tout changement de contrat.
+   - Signalez le démarchage abusif via [SignalConso](https://signal.conso.gouv.fr/fr).
+
+2. **En cas de facture anormale** :
+   - Vérifiez votre consommation et comparez avec les factures précédentes.
+   - Contactez votre fournisseur pour demander une explication et une régularisation.
+   - Si nécessaire, saisissez le Médiateur national de l'énergie.
+
+3. **En cas de difficultés avec le chèque énergie** :
+   - Vérifiez votre éligibilité et la date d'envoi du chèque.
+   - Contactez le fournisseur pour comprendre le refus d'acceptation.
+   - Signalez le problème via [SignalConso](https://signal.conso.gouv.fr/fr).
+
+4. **En cas de litige lié au compteur Linky** :
+   - Documentez les problèmes rencontrés (photos, relevés de compteur).
+   - Contactez votre fournisseur pour signaler le problème.
+   - Si nécessaire, saisissez le Médiateur national de l'énergie.
 
 ## Où signaler / à qui s'adresser ?
+
+- **Saisine CNIL** : [https://www.cnil.fr/fr/plaintes](https://www.cnil.fr/fr/plaintes) (pour les problèmes liés à la protection des données)
+- **Fiche d'information consommateur** : [https://www.economie.gouv.fr/dgccrf/consommation](https://www.economie.gouv.fr/dgccrf/consommation)
 - **Médiation de la consommation** : [https://www.economie.gouv.fr/mediation-conso](https://www.economie.gouv.fr/mediation-conso)
+- **Fiche service-public.fr** : [https://www.service-public.fr](https://www.service-public.fr)
 - **Signalement SignalConso** : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)
 - **Médiateur national de l'énergie** : [https://www.energie-mediateur.fr](https://www.energie-mediateur.fr)
 
 ## Pour aller plus loin
+
 - [FAQ sur l'ouverture des marchés de l'électricité et du gaz naturel](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/faq-sur-louverture-des-marches-de-lelectricite-et-du-gaz-naturel)
 - [Les contrats de gaz et d’électricité : ce que vous devez savoir](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/les-contrats-de-gaz-et-delectricite-ce-que-vous-devez-savoir)
-- [Comment choisir son fournisseur d’énergie ?](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/libre-choix-du-fournisseur)
-- [Contrats et factures](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/contrats-et-factures)
-- [Obligations d'information](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/obligations-dinformation)
+- [Libre choix du fournisseur](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/libre-choix-du-fournisseur)
+- [Deux fournisseurs d’électricité et de gaz naturel contrôlés sur trois insèrent des clauses illicites ou abusives dans leurs contrats](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes/deux-fournisseurs-delectricite-et-de-gaz-naturel-controles)

@@ -1,60 +1,61 @@
 ---
 domaine: securite_produits
-generated_at: '2026-02-25T02:41:44.289397'
+generated_at: '2026-02-25T11:44:20.992517'
 level: sous_domaine
 model: openweight-medium
 sources_count: 20
 taxonomy_id: securite_enfants_puericulture
 title: Sécurité des enfants et puériculture
-tokens: 6072
+tokens: 6008
 ---
 
 # Sécurité des enfants et puériculture : vos droits et recours
 
 ## En bref
-La sécurité des enfants et des articles de puériculture est essentielle pour protéger les plus jeunes. Les produits doivent respecter des normes strictes pour éviter les risques d'accidents. En tant que consommateur, vous avez des droits pour garantir la sécurité des produits que vous achetez.
+La sécurité des enfants et des articles de puériculture est encadrée par des réglementations strictes pour protéger les plus jeunes. Les produits doivent respecter des normes de sécurité spécifiques et être adaptés à l'âge de l'enfant. En cas de non-conformité ou de danger, vous avez des recours pour faire valoir vos droits.
 
 ## De quoi s'agit-il ?
-Cette fiche couvre les droits et recours liés à la sécurité des articles de puériculture et des jouets pour enfants. Elle inclut les produits tels que les lits, poussettes, chaises hautes, porte-bébés, et les jouets contenant des petites pièces détachables dangereuses pour les enfants de moins de 3 ans.
+Cette fiche couvre les droits et recours des consommateurs concernant la sécurité des articles de puériculture et des jouets pour enfants. Elle inclut les produits tels que les lits, poussettes, chaises hautes, porte-bébés, et les jouets contenant des petites pièces détachables dangereuses pour les enfants de moins de 3 ans.
 
-### Ce qui est couvert
-- Articles de puériculture (lits, poussettes, chaises hautes, porte-bébés)
-- Jouets contenant des petites pièces détachables dangereuses pour les enfants de moins de 3 ans
+**Ce qui est couvert :**
+- Les articles de puériculture (lits, poussettes, chaises hautes, porte-bébés, etc.)
+- Les jouets contenant des petites pièces détachables dangereuses pour les enfants de moins de 3 ans
 
-### Ce qui n'est pas couvert
+**Ce qui n'est pas couvert :**
 - Les équipements pour le transport d'enfants dans des voitures particulières, qui relèvent de la sécurité routière et font l’objet d’une réglementation spécifique.
 
 ## Quels sont vos droits ?
-Les articles de puériculture et les jouets doivent respecter des normes de sécurité strictes. Les professionnels ont l'obligation de fournir des produits conformes et d'informer les consommateurs sur les risques potentiels.
+Les articles de puériculture et les jouets doivent respecter des normes de sécurité strictes. Les professionnels ont l'obligation de fournir des produits conformes et d'informer clairement les consommateurs sur les risques potentiels.
 
-### Obligations des professionnels
-- **Normes de sécurité** : Les articles de puériculture doivent être stables et résister à une utilisation raisonnablement prévisible [Source DGCCRF 5].
-- **Informations obligatoires** : Les produits doivent porter des avertissements clairs et visibles, notamment sur l'âge minimum recommandé et les risques potentiels [Source DGCCRF 3, Source DGCCRF 4].
-- **Notice d'utilisation** : Les produits doivent être accompagnés d'une notice d'utilisation claire et complète, incluant les instructions de montage et d'utilisation [Source DGCCRF 7].
+**Obligations des professionnels :**
+- Les articles de puériculture doivent être stables et résister à une utilisation raisonnablement prévisible.
+- Les jouets doivent porter des avertissements clairs indiquant l'âge minimum recommandé et les dangers potentiels (étouffement, stranglement, etc.).
+- Les informations sur le produit, telles que le poids maximal d’utilisation, l’âge de l’enfant, et les dimensions de la chaise, doivent être fournies.
 
-### Délais importants
-- **Signalement de non-conformité** : En cas de découverte d'un produit non conforme, il est important de le signaler immédiatement via [SignalConso](https://signal.conso.gouv.fr).
-- **Rappel de produits** : Les professionnels doivent retirer du marché les produits non conformes et informer les consommateurs via [RappelConso](https://rappel.conso.gouv.fr).
+**Délais importants :**
+- Les produits non conformes doivent être retirés du marché ou rappelés immédiatement.
+- Les consommateurs doivent être informés des risques potentiels et des mesures à prendre en cas de non-conformité.
 
-### Cas particuliers fréquents
-- **Produits d'occasion** : Les articles de puériculture d'occasion doivent être vérifiés pour leur conformité et leur état de fonctionnement [Source DGCCRF 7].
-- **Jouets pour enfants de moins de 3 ans** : Les jouets destinés aux enfants de moins de 3 ans doivent porter un avertissement spécifique et être conformes aux normes de sécurité [Source DGCCRF 9, Source DGCCRF 12].
+**Cas particuliers fréquents :**
+- Les produits d'occasion peuvent ne pas être accompagnés de leur emballage ni de leur notice, ce qui peut mettre en cause la sécurité de l'enfant.
+- Les jouets destinés aux enfants de moins de 3 ans doivent porter un avertissement spécifique indiquant qu'ils ne conviennent pas à cet âge.
 
 ## Les situations les plus fréquentes
 
 - **Article de puériculture non conforme (lit, poussette, chaise haute, porte-bébé)**
-  - Description : Un article de puériculture peut être non conforme s'il ne respecte pas les normes de sécurité ou s'il présente des défauts de fabrication.
-  - Lire la fiche [puericulture_non_conforme.md](puericulture_non_conforme.md)
+  - Un article de puériculture est considéré comme non conforme s'il ne respecte pas les normes de sécurité en vigueur.
+  - [Lire la fiche](puericulture_non_conforme.md)
 
 - **Jouet contenant des petites pièces détachables dangereuses pour enfants de moins de 3 ans**
-  - Description : Les jouets contenant des petites pièces détachables peuvent représenter un risque d'étouffement pour les enfants de moins de 3 ans.
-  - Lire la fiche [jouet_petites_pieces.md](jouet_petites_pieces.md)
+  - Un jouet contenant des petites pièces détachables peut présenter un risque d'étouffement pour les enfants de moins de 3 ans.
+  - [Lire la fiche](jouet_petites_pieces.md)
 
 ## Que faire concrètement ?
-1. **Vérifier la conformité** : Avant d'acheter un article de puériculture ou un jouet, vérifiez qu'il porte les marquages de conformité et les avertissements nécessaires.
-2. **Lire la notice** : Consultez toujours la notice d'utilisation pour comprendre comment utiliser le produit en toute sécurité.
-3. **Signalement** : Si vous découvrez un produit non conforme, signalez-le immédiatement via [SignalConso](https://signal.conso.gouv.fr).
-4. **Consulter RappelConso** : Vérifiez régulièrement [RappelConso](https://rappel.conso.gouv.fr) pour être informé des rappels de produits.
+1. **Vérifiez la conformité du produit** : Assurez-vous que le produit porte les marquages de conformité et les avertissements nécessaires.
+2. **Consultez les rappels de produits** : Utilisez le site [RappelConso](https://rappel.conso.gouv.fr) pour vérifier si le produit que vous possédez a fait l'objet d'un rappel.
+3. **Signalez les produits non conformes** : Utilisez le site [SignalConso](https://signal.conso.gouv.fr) pour signaler tout produit non conforme ou dangereux.
+4. **Contactez le fabricant ou le vendeur** : Informez le fabricant ou le vendeur du problème et demandez un remboursement ou un remplacement du produit.
+5. **Conservez les preuves d'achat** : Gardez les factures et les preuves d'achat pour faciliter les démarches de recours.
 
 ## Où signaler / à qui s'adresser ?
 - **Consulter RappelConso** : [https://rappel.conso.gouv.fr](https://rappel.conso.gouv.fr)

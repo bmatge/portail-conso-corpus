@@ -1,0 +1,501 @@
+============================================================================
+  COVERAGE GAP ANALYSIS
+  Old corpus (4 sources, 5,488 files)
+  vs. New corpus (167 taxonomy-based fiches)
+============================================================================
+
+  OLD CORPUS:           5488 raw files
+    Noise/irrelevant:    337 (BOCCRF archives, institutional, children's
+                              educational material, org directories, etc.)
+    Substantive:        5151 consumer-related articles
+
+  NEW CORPUS:            115 generated fiches (167 taxonomy items)
+
+  MATCHING RESULTS (TF-IDF char-ngram cosine similarity on titles):
+  ──────────────────────────────────────────────────────────────────
+    Covered (sim >= 0.45):         209  Strong topic match
+    Partial (sim >= 0.3):         627  Related topic
+    Orphan  (sim <  0.3):        4315  No clear match
+      In-scope orphans:          3891  Consumer-protection topics
+      Out-of-scope orphans:       424  Tax, employment, education, etc.
+
+    Coverage rate: 16.2% of substantive articles match the taxonomy
+
+  PER-SOURCE BREAKDOWN
+  ==========================================================================
+  Source                   Raw Noise Subst Cover  Part  Orph  Cov%
+  --------------------------------------------------------------------------
+  dgccrf-drupal           1795   254  1541   104   328  1109 28.0%
+  particuliers-drupal      361     1   360    31    56   273 24.2%
+  entreprises-drupal       271     4   267     3     9   255  4.5%
+  inc-conso-md            3061    78  2983    71   234  2678 10.2%
+  --------------------------------------------------------------------------
+  TOTAL                   5488   337  5151   209   627  4315 16.2%
+
+  ORPHAN CATEGORIES
+  ==========================================================================
+    Autre / Non classé                                  1607
+    Logement / Immobilier / Travaux                      450
+    Banque / Crédit / Surendettement                     306
+    Alimentation / Restauration                          264
+    Garanties / SAV / Litiges                            224
+    Transport / Voyages / Tourisme                       146
+    Gestion d'entreprise [hors scope]                    139 *
+    Droits du consommateur (général)                     130
+    Prix / Promotions / Soldes                           127
+    Fiscalité / Impôts [hors scope]                      121 *
+    Emploi / Travail [hors scope]                         85 *
+    Énergie (élec, gaz, eau)                              82
+    Auto / Moto / Garage                                  77
+    Télécoms / Internet                                   77
+    Environnement / Éco-responsabilité                    74
+    Assurance                                             54
+    Santé / Bien-être (conso)                             52
+    Sport / Loisirs                                       49
+    Arnaques / Fraudes en ligne                           47
+    Concurrence                                           38
+    Santé publique [hors scope]                           28 *
+    Éducation [hors scope]                                28 *
+    Sécurité des produits / Rappels                       27
+    Démarchage / Publicité                                27
+    E-commerce / Marketplace                              23
+    Famille / Social [hors scope]                         23 *
+    Numérique / Données personnelles                      10
+    ───────────────────────────────────────────────────────
+    IN-SCOPE TOTAL                                      3891
+    OUT-OF-SCOPE TOTAL                                   424
+    (* = outside DGCCRF consumer-protection mandate)
+
+  TOP 50 IN-SCOPE ORPHAN TOPICS
+  (Consumer-protection topics not covered by the 167 fiches)
+  ==========================================================================
+
+   1. IBAN, BIC, SEPA : de quoi parle-t-on ? BDF
+      Source: inc-conso-md | Score: 0.010
+      Nearest match: Agriculture biologique et labels de qualité
+      Gap category: Autre / Non classé
+
+   2. Le guide du bénévolat 2017-2018
+      Source: inc-conso-md | Score: 0.018
+      Nearest match: La garantie commerciale du fabricant ou du vendeur n'est pas appliquée
+      Gap category: Autre / Non classé
+
+   3. L'horlogerie-bijouterie-orfèvrerie-joaillerie
+      Source: dgccrf-drupal | Score: 0.020
+      Nearest match: Outil de bricolage ou de jardin dangereux (débroussailleuse, tronçonne
+      Gap category: Autre / Non classé
+
+   4. Qu’est-ce que l’Orias ?
+      Source: inc-conso-md | Score: 0.023
+      Nearest match: La composition textile indiquée sur l'étiquette est fausse (ex. : « 10
+      Gap category: Autre / Non classé
+
+   5. Saumons, cabillauds et thons au banc d'essai
+      Source: inc-conso-md | Score: 0.025
+      Nearest match: Une clause exclut ou limite abusivement la responsabilité du professio
+      Gap category: Autre / Non classé
+
+   6. Disques (CD et DVD musicaux)
+      Source: dgccrf-drupal | Score: 0.027
+      Nearest match: Données personnelles et pratiques commerciales
+      Gap category: Autre / Non classé
+
+   7. Paris 2024 Olympic and Paralympic Games : consumer questions
+      Source: dgccrf-drupal | Score: 0.028
+      Nearest match: Garage : facturation de réparations non effectuées ou devis non respec
+      Gap category: Autre / Non classé
+
+   8. Epargner à son rythme en partant de zéro
+      Source: inc-conso-md | Score: 0.028
+      Nearest match: Des produits périmés sont en vente
+      Gap category: Autre / Non classé
+
+   9. Les vide-greniers
+      Source: inc-conso-md | Score: 0.031
+      Nearest match: Un partenariat commercial n'est pas déclaré dans une publication ou vi
+      Gap category: Autre / Non classé
+
+  10. Méfiez-vous des pièges du shopping online
+      Source: inc-conso-md | Score: 0.031
+      Nearest match: Influenceurs et marketing en ligne
+      Gap category: Autre / Non classé
+
+  11. L'enquête de A à Z
+      Source: dgccrf-drupal | Score: 0.032
+      Nearest match: L'agence de voyages a fait faillite ou n'exécute pas le contrat
+      Gap category: Autre / Non classé
+
+  12. Guide ressources sur le thème de l’eau
+      Source: inc-conso-md | Score: 0.032
+      Nearest match: Un site refuse d'exercer mon droit d'accès, de rectification ou de sup
+      Gap category: Autre / Non classé
+
+  13. Guides "Travaux de rénovation"
+      Source: inc-conso-md | Score: 0.032
+      Nearest match: Droit de rétractation
+      Gap category: Logement / Immobilier / Travaux
+
+  14. La pédagothèque et vous
+      Source: inc-conso-md | Score: 0.032
+      Nearest match: Aire de jeux collective avec équipements dangereux ou mal entretenus
+      Gap category: Autre / Non classé
+
+  15. Gérer sa micro-entreprise
+      Source: entreprises-drupal | Score: 0.033
+      Nearest match: L'origine du produit indiquée est fausse ou trompeuse
+      Gap category: Autre / Non classé
+
+  16. Concours Grand Angle 18
+      Source: inc-conso-md | Score: 0.034
+      Nearest match: Un vendeur tiers sur une marketplace (Amazon, Cdiscount, Leboncoin…) n
+      Gap category: Autre / Non classé
+
+  17. Les papiers de la famille
+      Source: inc-conso-md | Score: 0.034
+      Nearest match: Le professionnel refuse le droit de rétractation pour une vente à domi
+      Gap category: Autre / Non classé
+
+  18. La famille Tout-Ecran
+      Source: inc-conso-md | Score: 0.035
+      Nearest match: Produit vendu comme « bio » sans certification officielle (logo AB ou 
+      Gap category: Autre / Non classé
+
+  19. Panneaux photovoltaïques qui brûlent, l'analyse de l'INC
+      Source: inc-conso-md | Score: 0.035
+      Nearest match: Vol annulé et la compagnie refuse le remboursement ou l'indemnisation 
+      Gap category: Énergie (élec, gaz, eau)
+
+  20. Expulsion : trêve hivernale du 1er novembre 2025 au 31 mars 2026
+      Source: inc-conso-md | Score: 0.036
+      Nearest match: Pratiques commerciales déloyales
+      Gap category: Autre / Non classé
+
+  21. Développer son entreprise
+      Source: entreprises-drupal | Score: 0.037
+      Nearest match: Aire de jeux collective avec équipements dangereux ou mal entretenus
+      Gap category: Autre / Non classé
+
+  22. Barbapoux
+      Source: inc-conso-md | Score: 0.037
+      Nearest match: Le prix barré (prix de référence) n'a jamais été pratiqué ou est ficti
+      Gap category: Autre / Non classé
+
+  23. Monnaie, monnaie, monnaie : CD-Rom
+      Source: inc-conso-md | Score: 0.037
+      Nearest match: Secteurs réglementés
+      Gap category: Autre / Non classé
+
+  24. Les tableaux de bord de la DGCCRF
+      Source: dgccrf-drupal | Score: 0.038
+      Nearest match: Rupture brutale de relations commerciales établies sans préavis
+      Gap category: Autre / Non classé
+
+  25. Encadrement des loyers à Paris et en Seine-Saint-Denis (93)
+      Source: inc-conso-md | Score: 0.038
+      Nearest match: Le prix TTC n'est pas clairement indiqué (uniquement HT sans mention)
+      Gap category: Logement / Immobilier / Travaux
+
+  26. La 2ième vie des déchets : Tom se recycle
+      Source: inc-conso-md | Score: 0.038
+      Nearest match: Des avis clients semblent faux ou achetés
+      Gap category: Environnement / Éco-responsabilité
+
+  27. L'eau du robinet en vacances
+      Source: inc-conso-md | Score: 0.038
+      Nearest match: Téléphonie et internet
+      Gap category: Alimentation / Restauration
+
+  28. Inaction de l’État face au Dieselgate - La CLCV saisit la justice
+      Source: inc-conso-md | Score: 0.039
+      Nearest match: Abus de faiblesse ou de vulnérabilité (personne âgée, état de détresse
+      Gap category: Autre / Non classé
+
+  29. Participez au 4èmes Trophées EDUCNUM avec l'INC
+      Source: inc-conso-md | Score: 0.039
+      Nearest match: Litige avec un professionnel basé dans un autre pays de l'UE
+      Gap category: Autre / Non classé
+
+  30. Stop au moustique-tigre : les bons gestes chez soi !
+      Source: inc-conso-md | Score: 0.039
+      Nearest match: Matériaux de construction vendus sans les certifications obligatoires 
+      Gap category: Autre / Non classé
+
+  31. Cueillette de champignons
+      Source: inc-conso-md | Score: 0.040
+      Nearest match: La composition réelle du produit ne correspond pas à l'étiquette (ex :
+      Gap category: Autre / Non classé
+
+  32. Les Points Conseil Budget
+      Source: inc-conso-md | Score: 0.040
+      Nearest match: Mes données personnelles ont été transmises ou vendues à des tiers san
+      Gap category: Autre / Non classé
+
+  33. Vous vous êtes porté(e) caution et vous souhaitez vous dégager
+      Source: inc-conso-md | Score: 0.040
+      Nearest match: Article de puériculture non conforme (lit, poussette, chaise haute, po
+      Gap category: Autre / Non classé
+
+  34. 7 épurateurs d'air au banc d'essai
+      Source: inc-conso-md | Score: 0.041
+      Nearest match: L'opérateur téléphonique rend la résiliation difficile ou facture des 
+      Gap category: Autre / Non classé
+
+  35. Le sommeil en famille
+      Source: inc-conso-md | Score: 0.041
+      Nearest match: Le professionnel refuse le droit de rétractation pour une vente à domi
+      Gap category: Autre / Non classé
+
+  36. Facebook Live "Protéger son épargne"
+      Source: inc-conso-md | Score: 0.042
+      Nearest match: Équipements de protection individuelle et sportive
+      Gap category: Banque / Crédit / Surendettement
+
+  37. Le coût de la rentrée scolaire 2019 en 6ème augmente de 0,95 %
+      Source: inc-conso-md | Score: 0.042
+      Nearest match: Bricolage, BTP et équipements de la maison
+      Gap category: Autre / Non classé
+
+  38. Le point sur l’affaire Volkswagen en 15 questions
+      Source: inc-conso-md | Score: 0.042
+      Nearest match: Les prix ne sont pas affichés en magasin ou sur le site
+      Gap category: Autre / Non classé
+
+  39. Les clés pour agir : les impacts du smartphone
+      Source: inc-conso-md | Score: 0.042
+      Nearest match: Danger immédiat pour la santé ou la sécurité
+      Gap category: Autre / Non classé
+
+  40. Sourdirisque
+      Source: inc-conso-md | Score: 0.042
+      Nearest match: Surcharges incompréhensibles sur la facture téléphonique
+      Gap category: Autre / Non classé
+
+  41. Vacances à la neige : suivez les conseils de la DGCCRF !
+      Source: dgccrf-drupal | Score: 0.043
+      Nearest match: Formation professionnelle et enseignement privé
+      Gap category: Autre / Non classé
+
+  42. Le yield management : qu’est-ce que c’est ?
+      Source: inc-conso-md | Score: 0.043
+      Nearest match: Le prix TTC n'est pas clairement indiqué (uniquement HT sans mention)
+      Gap category: Autre / Non classé
+
+  43. L'eau du robinet : boisson au quotidien pour la famille
+      Source: inc-conso-md | Score: 0.043
+      Nearest match: Le professionnel refuse le droit de rétractation pour une vente à domi
+      Gap category: Alimentation / Restauration
+
+  44. Les aventures de la famille Klaxon – Léon frime trop sur son vélo !
+      Source: inc-conso-md | Score: 0.043
+      Nearest match: Fraude sur la composition des aliments
+      Gap category: Autre / Non classé
+
+  45. Inscrivez-vous avant le 10 novembre 2025 au concours 2026 d’inspecteur de la CCRF !
+      Source: dgccrf-drupal | Score: 0.044
+      Nearest match: Garage : facturation de réparations non effectuées ou devis non respec
+      Gap category: Autre / Non classé
+
+  46. Taxe foncière : mode de calcul et réductions
+      Source: particuliers-drupal | Score: 0.044
+      Nearest match: Un partenaire commercial dominant impose des conditions contractuelles
+      Gap category: Prix / Promotions / Soldes
+
+  47. As’truc Mémo Géant - Les bons gestes pour la nature
+      Source: inc-conso-md | Score: 0.044
+      Nearest match: Danger immédiat pour la santé ou la sécurité
+      Gap category: Autre / Non classé
+
+  48. Bénéficier d'aides pour payer son loyer
+      Source: inc-conso-md | Score: 0.044
+      Nearest match: Obligation d'acheter un produit pour en obtenir un autre (vente liée i
+      Gap category: Logement / Immobilier / Travaux
+
+  49. Boiriez-vous l'eau des égouts ? Une brochure sur l'eau pour les jeunes
+      Source: inc-conso-md | Score: 0.044
+      Nearest match: Voiture d'occasion vendue avec des défauts cachés
+      Gap category: Autre / Non classé
+
+  50. Camping-cars : que dit la loi ?
+      Source: inc-conso-md | Score: 0.044
+      Nearest match: Crédit à la consommation et prêts
+      Gap category: Transport / Voyages / Tourisme
+
+  ALL 167 GENERATED FICHES (new corpus)
+  ==========================================================================
+
+  [ALIMENTAIRE]
+    Produit vendu comme « bio » sans certification officielle (logo AB ou Eurofeuille absent)  (situation)
+    Usage frauduleux d'un signe de qualité (Label Rouge, IGP, STG) ou d'une mention valorisante (« fermier », « artisanal »)  (situation)
+    Un complément alimentaire est présenté comme un médicament (guérit, soigne une maladie)  (situation)
+    Présence suspectée d'une substance interdite dans un complément alimentaire  (situation)
+    Allégations nutritionnelles ou de santé fausses ou non autorisées (ex : 'réduit le cholestérol' sans preuve)  (situation)
+    Les allergènes ne sont pas mentionnés ou sont masqués sur l'étiquette  (situation)
+    Date de péremption (DLC/DDM) absente ou illisible  (situation)
+    Des produits périmés sont en vente  (situation)
+    La composition réelle du produit ne correspond pas à l'étiquette (ex : viande de cheval vendue comme bœuf)  (situation)
+    Usage abusif d'une AOP/IGP/Label Rouge  (situation)
+    Produit vendu comme bio sans certification valide  (situation)
+    L'origine géographique annoncée est fausse (ex : fromage présenté comme provençal, fabriqué en Pologne)  (situation)
+    Problème d'hygiène grave dans un restaurant (rongeurs, cafards, cuisine insalubre…)  (situation)
+    Intoxication alimentaire (toxi-infection alimentaire collective suspectée)  (situation)
+    Produits du menu différents de ce qui est servi (surgelé annoncé comme frais, composition différente)  (situation)
+    Étiquetage non conforme sur une bouteille de vin ou spiritueux (degré, origine, cépage)  (situation)
+    Vin vendu sous une appellation d'origine (AOC/AOP) sans y avoir droit  (situation)
+
+  [CONCURRENCE]
+    Un partenaire commercial dominant impose des conditions contractuelles abusives (délais de paiement non légaux, marges arrière imposées…)  (situation)
+    Des concurrents s'entendent sur les prix ou se répartissent le marché (cartel)  (situation)
+    Un client dépasse les délais de paiement légaux (60 jours en général)  (situation)
+    Rupture brutale de relations commerciales établies sans préavis  (situation)
+
+  [CONTRATS_GARANTIES]
+    Le contrat impose des conditions de résiliation excessivement contraignantes  (situation)
+    Une clause exclut ou limite abusivement la responsabilité du professionnel  (situation)
+    Le professionnel se réserve le droit de modifier unilatéralement le contrat  (situation)
+    La garantie commerciale du fabricant ou du vendeur n'est pas appliquée  (situation)
+    Le vendeur refuse la garantie légale de conformité (2 ans pour produits neufs, 1 an pour occasion)  (situation)
+    Défaut caché découvert après achat (vice caché)  (situation)
+    Le produit commandé n'est pas livré et le vendeur ne répond pas  (situation)
+    Produit reçu endommagé  (situation)
+    Retard de livraison significatif sans information ni solution proposée  (situation)
+    Le professionnel refuse le droit de rétractation pour une vente à domicile  (situation)
+    Le professionnel refuse d'appliquer le droit de rétractation de 14 jours (achat en ligne ou à distance)  (situation)
+    Une réparation est facturée alors qu'elle devrait être couverte par la garantie  (situation)
+    Le SAV ne répond pas ou refuse de traiter la demande  (situation)
+
+  [NUMERIQUE_CYBER]
+    Placement financier frauduleux (crypto, forex, fonds d'investissement promettant des rendements élevés)  (situation)
+    Arnaque au support technique (fausse alerte virus, prise en main à distance non sollicitée)  (situation)
+    Faux site de vente en ligne : j'ai commandé et payé, mais rien reçu et le site a disparu  (situation)
+    Faux site imitant un service public pour obtenir des paiements indus (faux permis de conduire, faux timbres fiscaux…)  (situation)
+    Hameçonnage (phishing) : j'ai reçu un faux email/SMS imitant un organisme officiel  (situation)
+    Un abonnement a été activé suite à une interface conçue pour tromper (case précochée, bouton déguisé, défilement trompeur)  (situation)
+    Impossible de refuser les cookies aussi facilement qu'on peut les accepter  (situation)
+    La résiliation d'un service en ligne est délibérément complexifiée (procédure introuvable, obstacles artificiels)  (situation)
+    Mes données personnelles ont été transmises ou vendues à des tiers sans mon consentement à des fins commerciales  (situation)
+    Un site refuse d'exercer mon droit d'accès, de rectification ou de suppression de mes données  (situation)
+    Un partenariat commercial n'est pas déclaré dans une publication ou vidéo  (situation)
+    Un influenceur promeut un produit de santé, de chirurgie esthétique ou financier de façon trompeuse  (situation)
+    Les résultats ou avis sur une plateforme semblent manipulés ou favorisent des partenaires payants sans information  (situation)
+    Un vendeur tiers sur une marketplace (Amazon, Cdiscount, Leboncoin…) ne livre pas ou vend un produit défectueux  (situation)
+
+  [PRATIQUES_COMMERCIALES]
+    Abus de faiblesse ou de vulnérabilité (personne âgée, état de détresse…)  (situation)
+    Vente à domicile avec pression ou sans remise du bon de rétractation  (situation)
+    Démarchage téléphonique non sollicité (hors exceptions légales)  (situation)
+    Des avis clients semblent faux ou achetés  (situation)
+    Un professionnel fait supprimer des avis négatifs légitimes  (situation)
+    Les caractéristiques du produit/service annoncées ne correspondent pas à la réalité  (situation)
+    Allégations environnementales mensongères (greenwashing, faux écolabel)  (situation)
+    Contenu sponsorisé d'un influenceur non identifié comme publicité  (situation)
+    Le prix réel est supérieur au prix annoncé (frais cachés, conditions non affichées)  (situation)
+    Le prix barré (prix de référence) n'a jamais été pratiqué ou est fictif  (situation)
+    Soldes pratiqués en dehors des périodes légales sans autorisation  (situation)
+    Souscription à un abonnement sans consentement explicite (case précochée, option par défaut)  (situation)
+    Renouvellement automatique d'un contrat sans information préalable  (situation)
+    Obligation d'acheter un produit pour en obtenir un autre (vente liée illégale)  (situation)
+
+  [PRIX_ETIQUETAGE]
+    Des frais (livraison, service) apparaissent seulement au moment du paiement  (situation)
+    Les prix ne sont pas affichés en magasin ou sur le site  (situation)
+    Le prix TTC n'est pas clairement indiqué (uniquement HT sans mention)  (situation)
+    Double étiquetage (nouveau prix sur ancien, l'original reste lisible et est différent)  (situation)
+    L'origine du produit indiquée est fausse ou trompeuse  (situation)
+    La composition textile indiquée sur l'étiquette est fausse (ex. : « 100% coton » alors que c'est du polyester)  (situation)
+    Produit vendu comme « cuir » alors qu'il s'agit de simili-cuir ou matière synthétique  (situation)
+
+  [SECTEURS_REGLEMENTES]
+    Résiliation abusive d'un contrat d'assurance  (situation)
+    Indemnisation suite à un sinistre refusée ou sous-évaluée  (situation)
+    Compteur kilométrique manifestement truqué sur un véhicule d'occasion  (situation)
+    Garage : facturation de réparations non effectuées ou devis non respecté  (situation)
+    Voiture d'occasion vendue avec des défauts cachés  (situation)
+    Matériaux de construction vendus sans les certifications obligatoires ou avec des caractéristiques trompeuses  (situation)
+    Outil de bricolage ou de jardin dangereux (débroussailleuse, tronçonneuse, perceuse sans protections)  (situation)
+    Refus illégal de substitution d'assurance emprunteur  (situation)
+    Crédit renouvelable proposé de façon agressive ou sans vérification de solvabilité  (situation)
+    Taux d'intérêt ou TAEG (Taux Annuel Effectif Global) erroné ou non communiqué  (situation)
+    Démarchage abusif d'un fournisseur d'énergie (pression, faux EDF, changement non voulu de fournisseur)  (situation)
+    Facture d'énergie anormalement élevée ou inexpliquée  (situation)
+    Résiliation du contrat d'énergie bloquée ou frais abusifs  (situation)
+    Diplôme ou certification bidon vendu à prix élevé  (situation)
+    Organisme de formation qui perçoit des fonds CPF sans dispenser la formation correctement  (situation)
+    Honoraires d'agence immobilière non affichés, abusifs ou non conformes à la loi Alur  (situation)
+    Diagnostic immobilier (DPE, amiante…) erroné ou frauduleux  (situation)
+    Logement loué non conforme (DPE mensonger, surfaces fausses, caractéristiques non conformes)  (situation)
+    Produit cosmétique provoquant des effets indésirables graves ou non conforme  (situation)
+    Praticien de médecine alternative facturant des soins inefficaces présentés comme curatifs  (situation)
+    Contrat de salle de sport avec clauses abusives (engagement, résiliation impossible, prélèvements après résiliation)  (situation)
+    Problème d'hygiène ou de sécurité dans une salle de sport (équipements défectueux, propreté)  (situation)
+    L'opérateur téléphonique rend la résiliation difficile ou facture des pénalités abusives  (situation)
+    Le service fourni ne correspond pas à l'offre souscrite (débit insuffisant, couverture réseau)  (situation)
+    Surcharges incompréhensibles sur la facture téléphonique  (situation)
+    L'agence de voyages a fait faillite ou n'exécute pas le contrat  (situation)
+    Le séjour ou le voyage à forfait ne correspond pas à ce qui était décrit  (situation)
+    Vol annulé et la compagnie refuse le remboursement ou l'indemnisation (règlement CE 261/2004)  (situation)
+
+  [SECURITE_PRODUITS]
+    Produit cosmétique provoquant une réaction allergique ou contenant des substances interdites  (situation)
+    Salon de tatouage ou produits de tatouage/maquillage permanent non conformes  (situation)
+    Équipement de protection individuelle (casque, lunettes, gants) non conforme ou sans marquage CE  (situation)
+    Équipement sportif dangereux (vélo, trottinette, équipement équestre, nautique)  (situation)
+    Emballage, ustensile ou contenant alimentaire libérant des substances nocives (migration, bisphénol, plomb)  (situation)
+    Ustensile de cuisine (poêle, casserole, spatule) avec revêtement dégradé ou matériau non conforme  (situation)
+    Jouet dangereux (pièces détachables pour enfants en bas âge, absence de marquage CE, matériaux toxiques)  (situation)
+    Un produit vendu en France ne porte pas le marquage CE obligatoire  (situation)
+    Produit chimique (détergent, biocide) sans étiquetage de danger ou non conforme  (situation)
+    Appareil électrique provoquant des chocs, surchauffe ou incendie  (situation)
+    Je pense avoir acheté un produit faisant l'objet d'un rappel  (situation)
+    Jouet contenant des petites pièces détachables dangereuses pour enfants de moins de 3 ans  (situation)
+    Article de puériculture non conforme (lit, poussette, chaise haute, porte-bébé)  (situation)
+    Aire de jeux collective avec équipements dangereux ou mal entretenus  (situation)
+    Piscine privée sans dispositif de sécurité obligatoire (barrière, alarme, couverture, abri)  (situation)
+
+  [TRANSVERSALES]
+    Litige avec un professionnel basé hors UE  (situation)
+    Litige avec un professionnel basé dans un autre pays de l'UE  (situation)
+    Danger immédiat pour la santé ou la sécurité  (situation)
+
+  INTERPRETATION
+  ==========================================================================
+
+  1. AGGRESSIVE FILTERING: 337 files (6%) were classified as
+     noise/irrelevant. The old corpus contains significant amounts of:
+     - BOCCRF official gazette archives (~50 pages)
+     - Institutional/HR pages (recruitment, org charts)
+     - Children's educational material (INC pedagogical kits)
+     - Association/organization directories
+     - Health awareness campaigns unrelated to consumer protection
+
+  2. COVERAGE: 16.2% of substantive articles have a title match
+     to at least one taxonomy item. This represents 836 articles.
+     
+     The gap is expected: the taxonomy intentionally aggregates thousands of
+     specific topics into 115 consumer-protection situations. A single fiche
+     like "Voiture d'occasion vendue avec des défauts cachés" subsumes dozens
+     of old articles about specific car-buying problems.
+
+  3. OUT-OF-SCOPE: 424 orphan articles cover topics outside DGCCRF's
+     mandate. These come mainly from particuliers-drupal (tax, employment)
+     and entreprises-drupal (business management, HR).
+
+  4. GENUINE GAPS (3891 in-scope orphans): The main gap areas are:
+       - Autre / Non classé: 1607 articles
+       - Logement / Immobilier / Travaux: 450 articles
+       - Banque / Crédit / Surendettement: 306 articles
+       - Alimentation / Restauration: 264 articles
+       - Garanties / SAV / Litiges: 224 articles
+       - Transport / Voyages / Tourisme: 146 articles
+       - Droits du consommateur (général): 130 articles
+       - Prix / Promotions / Soldes: 127 articles
+
+     However, most "orphans" are VARIATIONS or NEWS ARTICLES about
+     already-covered themes. The top 50 list identifies the truly distinct
+     topics that could warrant new taxonomy entries or fiche enrichment.
+
+  5. ESTIMATED UNIQUE GAP TOPICS: ~20-40 genuinely new consumer topics
+     not represented in the current taxonomy. The rest are:
+     - Sector-specific instances of covered situations
+     - News articles about enforcement actions
+     - Detailed how-to guides that supplement existing fiches
+     - Regional/temporal variations (e.g., "encadrement des loyers à Paris")

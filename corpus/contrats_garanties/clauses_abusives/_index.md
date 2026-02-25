@@ -1,111 +1,81 @@
 ---
 domaine: contrats_garanties
-generated_at: '2026-02-25T02:31:53.340733'
+generated_at: '2026-02-25T11:32:57.566292'
 level: sous_domaine
 model: openweight-medium
 sources_count: 20
 taxonomy_id: clauses_abusives
 title: Clauses abusives dans un contrat
-tokens: 8634
+tokens: 7746
 ---
 
 # Clauses abusives dans un contrat : vos droits et recours
 
 ## En bref
-Les clauses abusives sont des dispositions contractuelles qui créent un déséquilibre significatif entre les droits des consommateurs et ceux des professionnels. Elles sont interdites par la loi. Si vous êtes confronté à une clause abusive, vous pouvez la contester et demander sa suppression. La DGCCRF et la Commission des clauses abusives (CCA) jouent un rôle clé dans la protection des consommateurs.
+Les clauses abusives dans un contrat créent un déséquilibre significatif entre vos droits et ceux du professionnel. La loi protège les consommateurs contre ces clauses, quels que soient le type de contrat ou les produits concernés. Vous pouvez contester ces clauses et faire valoir vos droits.
 
 ## De quoi s'agit-il ?
-Une clause abusive est une disposition contractuelle qui crée un déséquilibre significatif entre les droits et obligations des parties au contrat, au détriment du consommateur. Ces clauses peuvent figurer dans divers types de contrats : vente, location, crédit, etc. Elles peuvent concerner des biens ou des services, et être présentes dans différents supports : bons de commande, factures, bons de garantie, etc.
+Une clause abusive est une disposition dans un contrat qui crée un déséquilibre significatif entre vos droits et obligations et ceux du professionnel. Ces clauses peuvent figurer dans divers types de contrats : vente, location, crédit, etc. La réglementation s'applique à tous les supports de contrat, qu'ils soient papier ou électroniques.
 
-### Clauses interdites (clauses "noires")
-Certaines clauses sont interdites et considérées comme abusives dès leur inclusion dans un contrat. Elles sont réputées non écrites, ce qui signifie qu'elles n'ont aucun effet juridique. Exemples de clauses interdites :
-- Clauses qui limitent la responsabilité du professionnel de manière excessive.
-- Clauses qui permettent au professionnel de modifier unilatéralement le contrat.
-- Clauses qui imposent des conditions de résiliation excessivement contraignantes pour le consommateur.
+**Ce qui est couvert** :
+- Tous les types de contrats (vente, location, crédit, etc.)
+- Tous les produits (biens ou prestations de services)
+- Tous les supports de contrat (bon de commande, facture, bon de garantie, etc.)
 
-### Clauses présumées abusives (clauses "grises")
-D'autres clauses sont présumées abusives. Le professionnel doit démontrer que ces clauses ne sont pas abusives dans son contrat spécifique. Si le professionnel ne parvient pas à le faire, ces clauses sont déclarées nulles. Exemples de clauses présumées abusives :
-- Clauses qui imposent des indemnités disproportionnées en cas de manquement du consommateur.
-- Clauses qui permettent au professionnel de résilier le contrat sans préavis suffisant.
-- Clauses qui réservent au professionnel le droit de modifier unilatéralement les conditions du contrat.
+**Ce qui n'est pas couvert** :
+- Les contrats entre professionnels
+- Les contrats conclus entre particuliers
 
 ## Quels sont vos droits ?
-En cas de clause abusive dans un contrat, vous avez plusieurs droits :
-- **Droit à la clarté** : Les clauses doivent être claires et compréhensibles. En cas de doute, elles s'interprètent en faveur du consommateur.
-- **Droit à la contestation** : Vous pouvez contester une clause abusive et demander sa suppression.
-- **Droit à la nullité** : Les clauses abusives sont réputées non écrites, ce qui signifie qu'elles n'ont aucun effet juridique.
-- **Droit à la médiation** : Vous pouvez recourir à la médiation pour résoudre un litige lié à une clause abusive.
+Les professionnels ont l'obligation de rédiger des clauses claires et compréhensibles. En cas de doute, les clauses s'interprètent en votre faveur. La loi interdit certaines clauses (clauses noires) et présume abusives d'autres (clauses grises).
 
-### Délais importants
-- **Délai de prescription** : Vous avez généralement cinq ans pour contester une clause abusive à partir du moment où vous avez pris connaissance de cette clause.
-- **Délai de réponse** : Le professionnel doit répondre à votre demande de suppression de la clause abusive dans un délai raisonnable, généralement sous un mois.
+**Délais importants** :
+- Aucun délai spécifique n'est mentionné pour contester une clause abusive. Vous pouvez saisir le juge à tout moment.
 
-### Cas particuliers fréquents
-- **Clauses de résiliation** : Si une clause impose des conditions de résiliation excessivement contraignantes, vous pouvez la contester.
-- **Clauses de responsabilité limitée** : Si une clause exclut ou limite abusivement la responsabilité du professionnel, vous pouvez demander sa nullité.
-- **Clauses de modification unilatérale** : Si une clause permet au professionnel de modifier unilatéralement le contrat, vous pouvez la contester.
+**Cas particuliers fréquents** :
+- Si la clause figure dans la liste des clauses interdites, elle est réputée non écrite.
+- Si la clause figure dans la liste des clauses présumées abusives, le professionnel doit démontrer sa légitimité.
 
 ## Les situations les plus fréquentes
 
-- **Le contrat impose des conditions de résiliation excessivement contraignantes**
-  - Description : Certaines clauses rendent la résiliation du contrat très difficile pour le consommateur, par exemple en imposant des délais de préavis très longs ou des pénalités financières élevées.
-  - Lire la fiche [clause_resiliation_abusive.md](clause_resiliation_abusive.md)
-
-- **Une clause exclut ou limite abusivement la responsabilité du professionnel**
-  - Description : Certaines clauses limitent ou excluent la responsabilité du professionnel en cas de manquement à ses obligations, ce qui peut être abusif.
-  - Lire la fiche [clause_responsabilite_limitee.md](clause_responsabilite_limitee.md)
-
-- **Le professionnel se réserve le droit de modifier unilatéralement le contrat**
-  - Description : Certaines clauses permettent au professionnel de modifier les termes du contrat sans l'accord du consommateur, ce qui peut être abusif.
-  - Lire la fiche [clause_unilaterale_modification.md](clause_unilaterale_modification.md)
+- **Le contrat impose des conditions de résiliation excessivement contraignantes** ([Lire la fiche](clause_resiliation_abusive.md))
+- **Une clause exclut ou limite abusivement la responsabilité du professionnel** ([Lire la fiche](clause_responsabilite_limitee.md))
+- **Le professionnel se réserve le droit de modifier unilatéralement le contrat** ([Lire la fiche](clause_unilaterale_modification.md))
 
 ## Que faire concrètement ?
-Si vous êtes confronté à une clause abusive dans un contrat, voici les étapes à suivre :
+1. **Identifier la clause abusive** : Vérifiez si la clause figure dans la liste des clauses interdites ou présumées abusives.
+2. **Contester la clause** : Informez le professionnel par écrit de votre contestation.
+3. **Saisir le juge** : Si le professionnel ne répond pas ou maintient la clause, vous pouvez saisir le juge pour faire reconnaître le caractère abusif de la clause.
+4. **Demander la suppression de la clause** : Le juge peut enjoindre au professionnel de supprimer la clause de ses contrats futurs.
 
-1. **Identifier la clause abusive** : Lisez attentivement votre contrat pour identifier les clauses qui pourraient être abusives.
-2. **Consulter les recommandations de la CCA** : Consultez les recommandations de la [Commission des clauses abusives](http://www.clauses-abusives.fr) pour voir si la clause en question est considérée comme abusive.
-3. **Contacter le professionnel** : Informez le professionnel par écrit de votre demande de suppression de la clause abusive. Utilisez un modèle de lettre pour formaliser votre demande.
-4. **Recourir à la médiation** : Si le professionnel ne répond pas ou refuse de supprimer la clause, vous pouvez recourir à la [médiation de la consommation](https://www.economie.gouv.fr/mediation-conso).
-5. **Saisir le juge** : Si la médiation échoue, vous pouvez saisir le juge pour faire déclarer la clause abusive et demander sa suppression.
-
-### Modèle de démarche
-**Modèle de lettre pour contester une clause abusive**
-
+**Modèle de démarche** :
+```
 [Votre nom]
 [Votre adresse]
-[Code postal, Ville]
-[Adresse email]
-[Numéro de téléphone]
+[Date]
 
 [Nom du professionnel]
 [Adresse du professionnel]
-[Code postal, Ville]
 
-[Date]
-
-Objet : Contestation d'une clause abusive dans le contrat n°[numéro du contrat]
+Objet : Contestation d'une clause abusive dans le contrat n°[numéro de contrat]
 
 Madame, Monsieur,
 
-Je me permets de vous écrire concernant le contrat n°[numéro du contrat] que nous avons signé le [date de signature du contrat]. Je souhaite attirer votre attention sur une clause qui me semble abusive et qui crée un déséquilibre significatif entre nos droits et obligations.
+Je vous écris pour contester la clause [décrivez la clause] figurant dans le contrat n°[numéro de contrat] conclu entre nous le [date de conclusion du contrat]. Cette clause me semble abusive car elle crée un déséquilibre significatif entre mes droits et obligations et les vôtres.
 
-La clause en question est la suivante : [décrire la clause abusive]. Cette clause me paraît contraire aux dispositions de l'article L. 212-1 du Code de la consommation, qui interdit les clauses abusives.
+Je vous demande de bien vouloir supprimer cette clause de notre contrat et de me confirmer par écrit cette suppression dans les plus brefs délais.
 
-Je vous demande donc de bien vouloir supprimer cette clause de notre contrat. Je vous prie de croire, Madame, Monsieur, en l'assurance de ma considération distinguée.
+Dans l'attente de votre réponse, je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
 
 [Votre signature]
+```
 
 ## Où signaler / à qui s'adresser ?
-Si vous êtes confronté à une clause abusive, vous pouvez vous adresser aux organismes suivants :
 - **Médiation de la consommation** : [Médiation de la consommation](https://www.economie.gouv.fr/mediation-conso)
-- **Fiche service-public.fr** : [Service-public.fr](https://www.service-public.fr)
 - **Signalement SignalConso** : [SignalConso](https://signal.conso.gouv.fr)
+- **Fiche service-public.fr** : [Service-public.fr](https://www.service-public.fr)
 
 ## Pour aller plus loin
-- [Clauses abusives : 12 clauses interdites et 10 clauses dont il faut démontrer la légitimité](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/clauses-abusives-12-clauses-interdites-et-10-clauses-dont-il-faut-demontrer-la-legitimite)
-- [Garanties et clauses abusives : tout ce que vous devez savoir pour les soldes](https://www.economie.gouv.fr/dgccrf/actualites/garanties-et-clauses-abusives-tout-ce-que-vous-devez-savoir-pour-les-soldes)
-- [Distribution d’eau potable](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/distribution-deau-potable)
-- [Services à la personne : focus sur le mode mandataire](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/services-la-personne-focus-sur-le-mode-mandataire)
-- [Attention aux clauses abusives sur les places de marché en ligne](https://www.economie.gouv.fr/dgccrf/actualites/attention-aux-clauses-abusives-sur-les-places-de-marche-en-ligne)
-- [De nombreuses clauses abusives dans les contrats de clubs de sport](https://www.economie.gouv.fr/dgccrf/actualites/de-nombreuses-clauses-abusives-dans-les-contrats-de-clubs-de-sport)
-- [Les contrats complémentaires santé passés au scanner](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes/les-contrats-complementaires-sante-passes-au-scanner)
+- **Code de la consommation** : Articles L. 212-1 et suivants
+- **Recommandations de la Commission des clauses abusives** : [www.clauses-abusives.fr](http://www.clauses-abusives.fr)
+- **Fiche pratique DGCCRF** : [Clauses abusives : 12 clauses interdites et 10 clauses dont il faut démontrer la légitimité](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/clauses-abusives-12-clauses-interdites-et-10-clauses-dont-il-faut-demontrer-la-legitimite)

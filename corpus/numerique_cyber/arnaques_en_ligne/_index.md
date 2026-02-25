@@ -1,67 +1,78 @@
 ---
 domaine: numerique_cyber
-generated_at: '2026-02-25T02:35:45.873127'
+generated_at: '2026-02-25T11:36:57.515579'
 level: sous_domaine
 model: openweight-medium
 sources_count: 20
 taxonomy_id: arnaques_en_ligne
 title: Arnaques en ligne
-tokens: 7267
+tokens: 7794
 ---
 
 # Arnaques en ligne : vos droits et recours
 
 ## En bref
-Les arnaques en ligne prennent de nombreuses formes, allant des faux sites de commerce aux placements financiers frauduleux. Elles visent à vous extorquer de l'argent ou à voler vos données personnelles. Soyez vigilant et sachez comment réagir pour protéger vos droits.
+Les arnaques en ligne prennent de nombreuses formes, allant du faux site de vente à l'hameçonnage en passant par les placements financiers frauduleux. Ces pratiques visent à vous extorquer de l'argent ou à voler vos données personnelles. En France, vous êtes protégé par la loi, mais il est crucial de savoir comment réagir pour limiter les dégâts.
 
 ## De quoi s'agit-il ?
-Les arnaques en ligne englobent toutes les pratiques frauduleuses menées via internet. Cela inclut les faux sites de vente, le phishing (hameçonnage), les arnaques au support technique, les faux sites gouvernementaux, et les placements financiers frauduleux. Ces arnaques peuvent vous faire perdre de l'argent ou compromettre vos données personnelles.
+Les arnaques en ligne désignent toutes les pratiques frauduleuses menées via internet. Elles peuvent prendre la forme de faux sites de vente, de messages d'hameçonnage (phishing), de faux sites gouvernementaux, d'arnaques au support technique, de placements financiers frauduleux, d'arnaques aux cryptomonnaies, ou encore de pratiques trompeuses de dropshipping.
+
+Ces arnaques ne couvrent pas les fraudes physiques ou les escroqueries par téléphone sans composante numérique. Elles incluent uniquement les fraudes commises via internet.
 
 ## Quels sont vos droits ?
-En cas d'arnaque en ligne, vous avez le droit de signaler la fraude aux autorités compétentes. Vous pouvez également demander le remboursement des sommes versées frauduleusement. Les professionnels doivent respecter les règles de transparence et de sécurité en ligne. En cas de doute, ne communiquez jamais vos informations personnelles ou bancaires.
+En cas d'arnaque en ligne, vous avez le droit de porter plainte et de demander réparation. Les professionnels doivent respecter certaines obligations légales, notamment en matière de transparence et de sécurité des transactions. Les délais pour agir varient selon le type d'arnaque, mais il est généralement recommandé d'agir rapidement.
+
+Les cas particuliers fréquents incluent les arnaques transfrontalières, où les fraudeurs sont souvent basés à l'étranger, ce qui complique les poursuites. Il est également important de noter que les arnaques peuvent survenir à tout moment, mais elles sont plus fréquentes pendant les périodes de trouble ou de congés.
 
 ## Les situations les plus fréquentes
 
-- **Faux site de vente en ligne : j'ai commandé et payé, mais rien reçu et le site a disparu** ([Lire la fiche](faux_site_commerce.md))
-- **Hameçonnage (phishing) : j'ai reçu un faux email/SMS imitant un organisme officiel** ([Lire la fiche](phishing.md))
-- **Faux site imitant un service public pour obtenir des paiements indus (faux permis de conduire, faux timbres fiscaux…)** ([Lire la fiche](faux_site_gouvernemental.md))
-- **Arnaque au support technique (fausse alerte virus, prise en main à distance non sollicitée)** ([Lire la fiche](arnaque_support_technique.md))
-- **Placement financier frauduleux (crypto, forex, fonds d'investissement promettant des rendements élevés)** ([Lire la fiche](arnaque_investissement.md))
+- **Faux site de vente en ligne : j'ai commandé et payé, mais rien reçu et le site a disparu**
+  Vous avez commandé sur un site qui semblait légitime, mais après avoir payé, vous n'avez rien reçu et le site a disparu. [Lire la fiche](faux_site_commerce.md)
+
+- **Hameçonnage (phishing) : j'ai reçu un faux email/SMS imitant un organisme officiel**
+  Vous avez reçu un email ou un SMS qui semble provenir d'une administration ou d'une entreprise connue, mais qui vous demande de cliquer sur un lien ou de fournir des informations personnelles. [Lire la fiche](phishing.md)
+
+- **Faux site imitant un service public pour obtenir des paiements indus (faux permis de conduire, faux timbres fiscaux…)**
+  Un site imitant un service public vous demande de payer pour obtenir un document officiel. [Lire la fiche](faux_site_gouvernemental.md)
+
+- **Arnaque au support technique (fausse alerte virus, prise en main à distance non sollicitée)**
+  Vous recevez un appel ou un message vous informant d'un problème technique sur votre ordinateur et vous demandant de donner accès à distance ou de payer pour une réparation. [Lire la fiche](arnaque_support_technique.md)
+
+- **Placement financier frauduleux (crypto, forex, fonds d'investissement promettant des rendements élevés)**
+  On vous propose un investissement avec des rendements élevés, mais il s'avère être une arnaque. [Lire la fiche](arnaque_investissement.md)
+
+- **Arnaque aux cryptomonnaies (faux exchanges, tokens frauduleux, rug pulls)**
+  Vous investissez dans des cryptomonnaies via une plateforme non enregistrée ou un token frauduleux. [Lire la fiche](arnaque_crypto.md)
+
+- **Dropshipping trompeur (produit annoncé comme local, en réalité expédié de Chine à prix majoré)**
+  Vous achetez un produit annoncé comme local, mais il est en réalité expédié de Chine à un prix majoré. [Lire la fiche](dropshipping_trompeur.md)
 
 ## Que faire concrètement ?
 
 1. **Ne paniquez pas** : restez calme et ne prenez pas de décision hâtive.
-2. **Ne communiquez pas d'informations sensibles** : ne répondez pas aux messages suspects et ne cliquez pas sur les liens.
-3. **Vérifiez l'authenticité du site ou du message** : utilisez des outils de vérification en ligne.
-4. **Signalez l'arnaque** : utilisez les plateformes de signalement comme [Cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr) ou [SignalConso](https://signal.conso.gouv.fr).
-5. **Déposez plainte** : si vous avez été victime d'une arnaque, déposez plainte auprès des autorités compétentes.
-6. **Contactez votre banque** : faites opposition sur vos moyens de paiement si nécessaire.
-7. **Changez vos mots de passe** : sécurisez vos comptes en ligne.
+2. **Ne répondez pas** : ne cliquez pas sur les liens, n'ouvrez pas les pièces jointes et ne répondez pas aux messages suspects.
+3. **Vérifiez l'expéditeur** : regardez l'adresse email ou le numéro de téléphone de l'expéditeur. Les adresses suspectes contiennent souvent des fautes d'orthographe ou des domaines étranges.
+4. **Contactez l'organisme officiel** : si le message prétend venir d'une administration ou d'une entreprise, contactez-les directement via leur site officiel pour vérifier l'authenticité du message.
+5. **Signalez l'arnaque** : utilisez les plateformes de signalement comme [Signal Spam](https://www.signal-spam.fr/) ou [Phishing Initiative](https://phishing-initiative.fr/contrib/).
+6. **Faites opposition** : si vous avez communiqué des informations bancaires, faites opposition immédiatement auprès de votre banque.
+7. **Déposez plainte** : allez à la police ou à la gendarmerie pour déposer plainte. Vous pouvez également utiliser la plateforme [17Cyber](https://www.17cyber.gouv.fr) pour signaler les cybercriminalités.
+8. **Changez vos mots de passe** : si vous avez malencontreusement communiqué vos identifiants, changez immédiatement vos mots de passe.
 
 ## Où signaler / à qui s'adresser ?
 
-- **17Cyber** : [17Cyber](https://www.17cyber.gouv.fr)
-- **Saisine AMF** : [Saisine AMF](https://www.amf-france.org/fr/espace-epargnants/signaler-une-escroquerie)
-- **Cybermalveillance.gouv.fr** : [Cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr)
-- **Dépôt de plainte** : [Dépôt de plainte](https://www.thesee.gouv.fr)
-- **Signalement SignalConso** : [SignalConso](https://signal.conso.gouv.fr)
+- **17Cyber** : [https://www.17cyber.gouv.fr](https://www.17cyber.gouv.fr)
+- **Saisine AMF** : [https://www.amf-france.org/fr/espace-epargnants/signaler-une-escroquerie](https://www.amf-france.org/fr/espace-epargnants/signaler-une-escroquerie)
+- **Cybermalveillance.gouv.fr** : [https://www.cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr)
+- **Dépôt de plainte** : [https://www.thesee.gouv.fr](https://www.thesee.gouv.fr)
+- **Fiche service-public.fr** : [https://www.service-public.fr](https://www.service-public.fr)
+- **Signalement SignalConso** : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)
 
 ## Pour aller plus loin
 
+- **Code monétaire et financier** : Articles L163-3 et L163-4 (Contrefaçon et usage frauduleux de moyen de paiement)
+- **Code de la propriété intellectuelle** : Articles L.713-2 et L.713-3 (Contrefaçon des marques)
+- **Code pénal** : Article 323-1 (Accès frauduleux à un système de traitement automatisé de données)
 - [Le guide de prévention contre les arnaques](https://www.douane.gouv.fr/sites/default/files/2021-03/25/guide-de-prevention-contre-les-arnaques-sur-internet.pdf)
 - [Phishing-initiative.fr](https://phishing-initiative.fr/contrib/)
 - [Signal-spam.fr](https://www.signal-spam.fr/)
-- [Info escroqueries](https://www.police-nationale.interieur.gouv.fr/Actualites/Dossiers/Info-Escroqueries) au 0 805 805 817 (numéro gratuit)
-- [Vademecum à destination des professionnels](https://www.economie.gouv.fr/files/files/directions_services/dgccrf/profil_entreprises/Vademecum_entreprises_final.pdf)
-
-*Code monétaire et financier :*
-
-- **Contrefaçon et usage frauduleux de moyen de paiement** (articles L163-3 et L163-4) : délit passible d’une peine d’emprisonnement de sept ans et de 750.000 euros d’amende.
-
-*Code de la propriété intellectuelle :*
-
-- **Contrefaçon des marques (logos, signes, emblèmes…) utilisées lors de l’hameçonnage** (articles L.713-2 et L.713-3) : Délit passible d’une peine d’emprisonnement de trois ans et de 300.000 euros d’amende.
-
-- **Accès frauduleux à un système de traitement automatisé de données** (article 323-1) : le fait d’accéder ou de se maintenir, frauduleusement, dans tout ou partie d’un système de traitement automatisé de données est passible de deux ans d’emprisonnement et de 60.000 euros d’amende.
-
-- **Délit passible d’une peine d’emprisonnement de cinq ans et de 375.000 euros d’amende.**
+- [Info escroqueries](https://www.police-nationale.interieur.gouv.fr/Actualites/Dossiers/Info-Escroqueries) au 0 805 805 817 (numéro gratuit)

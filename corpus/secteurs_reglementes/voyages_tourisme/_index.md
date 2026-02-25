@@ -1,83 +1,69 @@
 ---
 domaine: secteurs_reglementes
-generated_at: '2026-02-25T02:38:19.756256'
+generated_at: '2026-02-25T11:39:28.276010'
 level: sous_domaine
 model: openweight-medium
 sources_count: 20
 taxonomy_id: voyages_tourisme
 title: Voyages et tourisme
-tokens: 6709
+tokens: 6341
 ---
 
 # Voyages et tourisme : vos droits et recours
 
 ## En bref
-En tant que consommateur, vous avez des droits spécifiques lorsque vous achetez des voyages ou des séjours à forfait. Que ce soit pour un vol annulé, un séjour non conforme ou une agence de voyages défaillante, vous pouvez exiger des remboursements ou des indemnités. Les professionnels doivent respecter des obligations strictes, et vous avez des recours en cas de manquement.
+Lors d'un voyage ou d'un séjour, vous pouvez rencontrer des problèmes tels que des annulations, des prestations non conformes ou des difficultés avec des professionnels défaillants. Vous avez des droits spécifiques en tant que consommateur, notamment en matière de remboursement, d'indemnisation et de résolution de contrat. Connaître ces droits et les démarches à suivre vous permet de mieux vous protéger et de faire valoir vos recours.
 
 ## De quoi s'agit-il ?
-Les voyages et séjours à forfait incluent des prestations combinées (transport, hébergement, activités, etc.) vendues sous forme de package. Cela couvre les circuits organisés, les séjours tout compris, et les voyages personnalisés. Les droits des consommateurs sont encadrés par des réglementations spécifiques, notamment le règlement CE 261/2004 pour les vols annulés et le code du tourisme pour les forfaits.
+Le domaine des voyages et du tourisme couvre l'ensemble des prestations liées aux séjours, voyages à forfait, locations de vacances, transports et hébergements. Il inclut les situations où les prestations ne correspondent pas à ce qui était promis, où le professionnel ne respecte pas ses engagements, ou où des événements imprévus perturbent votre voyage.
 
-**Ce qui est couvert :**
-- Voyages à forfait (transport + hébergement + autres services)
-- Vols annulés ou retardés
-- Séjours non conformes à la description
-- Faillite ou défaillance de l'agence de voyages
-
-**Ce qui n'est pas couvert :**
-- Voyages non organisés (réservations séparées de transport et hébergement)
-- Problèmes liés à des événements exceptionnels et inévitables (catastrophes naturelles, épidémies)
+Ce sous-domaine ne couvre pas les litiges liés à l'achat de biens matériels (comme des souvenirs) ou aux services non liés directement au voyage (comme les assurances non liées au voyage).
 
 ## Quels sont vos droits ?
-### Voyages à forfait
-- **Remboursement intégral** en cas d'annulation par l'agence, avec une indemnisation supplémentaire au moins égale à la pénalité que vous auriez dû payer si vous aviez annulé vous-même.
-- **Délais de remboursement** : dans les meilleurs délais et au plus tard dans les 14 jours après la résolution du contrat.
-- **Modification du contrat** : vous pouvez résilier sans frais et obtenir un remboursement si l'agence modifie des éléments essentiels du voyage (dates, prix, itinéraire).
+En tant que consommateur, vous avez des droits spécifiques lors de l'achat de voyages et de séjours à forfait. Voici les principaux points à connaître :
 
-### Vols annulés
-- **Indemnisation** selon le règlement CE 261/2004 : jusqu'à 600 euros selon la distance du vol.
-- **Remboursement du billet** ou un vol de remplacement.
-- **Exceptions** : l'indemnisation n'est pas due en cas de circonstances exceptionnelles et inévitables (grèves, conditions météo extrêmes).
+- **Annulation de voyage** : Si votre voyage à forfait est annulé par l'agence, vous avez droit à un remboursement intégral des paiements effectués. L'agence doit vous avertir dans des délais précis : 20 jours avant le départ pour un voyage de plus de 6 jours, 7 jours pour un voyage de 2 à 6 jours, et 48 heures pour un voyage de moins de 2 jours.
 
-### Agence de voyages défaillante
-- **Remboursement** des sommes versées en cas de faillite de l'agence.
-- **Assurance annulation** : vérifiez si vous avez souscrit une assurance couvrant ce type de situation.
+- **Non-conformité des prestations** : Si les prestations ne correspondent pas à ce qui était décrit (par exemple, un hôtel non conforme au classement affiché), vous pouvez demander une réduction de prix, des dommages et intérêts, ou même résilier le contrat sans frais si la non-conformité perturbe considérablement votre voyage.
+
+- **Indemnisation en cas de retard ou d'annulation de vol** : En cas de retard ou d'annulation de vol, vous avez droit à une indemnisation selon le règlement CE 261/2004, sauf en cas de circonstances exceptionnelles et inévitables.
+
+- **Location de vacances frauduleuse** : Si vous réservez une location de vacances et que le logement réservé n'existe pas ou est très différent de la description, vous pouvez demander le remboursement intégral et éventuellement des dommages et intérêts.
+
+- **Agence de voyages défaillante** : Si l'agence de voyages fait faillite ou n'exécute pas le contrat, vous pouvez demander le remboursement des sommes versées. Vous pouvez également vous retourner contre le prestataire en ligne si vous avez réservé via une plateforme.
 
 ## Les situations les plus fréquentes
 
 - **Vol annulé et la compagnie refuse le remboursement ou l'indemnisation (règlement CE 261/2004)** : [Lire la fiche](vol_annule_remboursement_refuse.md)
 - **Le séjour ou le voyage à forfait ne correspond pas à ce qui était décrit** : [Lire la fiche](sejour_non_conforme.md)
 - **L'agence de voyages a fait faillite ou n'exécute pas le contrat** : [Lire la fiche](agence_voyage_defaillante.md)
+- **Hôtel non conforme à la description (classement, prestations, hygiène)** : [Lire la fiche](hotel_non_conforme.md)
+- **Location de vacances frauduleuse (annonce fictive, logement inexistant ou très différent)** : [Lire la fiche](location_vacances_arnaque.md)
+- **Camping : pratiques abusives (surfacturation, hygiène, résiliation)** : [Lire la fiche](camping_regles.md)
+- **Retard ou annulation de train : difficultés d'indemnisation** : [Lire la fiche](train_indemnisation.md)
 
 ## Que faire concrètement ?
-1. **Conservez toutes les preuves** : contrats, emails, reçus, photos, etc.
-2. **Contactez le professionnel** : envoyez une lettre recommandée avec accusé de réception pour exiger le remboursement ou l'indemnisation.
-3. **Utilisez les recours légaux** : si le professionnel ne répond pas, contactez le médiateur sectoriel ou déposez une plainte.
-4. **Vérifiez votre assurance** : si vous avez souscrit une assurance annulation, contactez votre assureur.
 
-**Modèle de lettre de réclamation :**
-```
-Madame, Monsieur,
+1. **Constituer un dossier** : Rassemblez tous les documents relatifs à votre réservation, les preuves de paiement, les échanges avec le professionnel, et les preuves de la non-conformité ou du préjudice subi.
 
-Je me permets de vous écrire concernant le voyage à forfait que j'ai réservé avec votre agence, prévu du [date] au [date]. Malheureusement, ce voyage a été annulé sans préavis suffisant, ce qui m'a causé un préjudice important.
+2. **Contacter le professionnel** : Envoyez une réclamation écrite au professionnel, en expliquant clairement le litige et en joignant les preuves. Conservez une copie de votre réclamation.
 
-Conformément à la réglementation en vigueur, je vous demande de bien vouloir me rembourser intégralement les sommes versées, ainsi que de m'indemniser selon les dispositions prévues par le code du tourisme.
+3. **Demander une médiation** : Si le professionnel ne répond pas ou ne propose pas de solution satisfaisante, vous pouvez saisir le médiateur du tourisme et du voyage (MTV) ou une association de consommateurs.
 
-Dans l'attente de votre réponse, je vous prie d'agréer, Madame, Monsieur, mes salutations distinguées.
-
-[Votre nom]
-[Votre adresse]
-[Votre numéro de téléphone]
-[Votre adresse email]
-```
+4. **Saisir les autorités compétentes** : Si la médiation échoue, vous pouvez déposer une plainte auprès de la DGCCRF ou saisir le tribunal compétent.
 
 ## Où signaler / à qui s'adresser ?
-- **Médiation de la consommation** : [https://www.economie.gouv.fr/mediation-conso](https://www.economie.gouv.fr/mediation-conso)
-- **Médiateur du tourisme et du voyage (MTV)** : [https://www.mtv.travel](https://www.mtv.travel)
-- **Fiche service-public.fr** : [https://www.service-public.fr](https://www.service-public.fr)
-- **Signalement SignalConso** : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)
+
+- **Médiation de la consommation** : [Médiation de la consommation](https://www.economie.gouv.fr/mediation-conso)
+- **Dépôt de plainte** : [Dépôt de plainte](https://www.thesee.gouv.fr)
+- **Fiche service-public.fr** : [Fiche service-public.fr](https://www.service-public.fr)
+- **Signalement SignalConso** : [Signalement SignalConso](https://signal.conso.gouv.fr)
+- **Médiateur du tourisme et du voyage (MTV)** : [Médiateur du tourisme et du voyage (MTV)](https://www.mtv.travel)
 
 ## Pour aller plus loin
-- **Règlement CE 261/2004** : [https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32004R0261&from=FR](https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32004R0261&from=FR)
-- **Code du tourisme** : [https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036242700/](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036242700/)
-- **Article L. 211-14 du code du tourisme** : [https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=DD0E706240222E3BF611ED583B7AE64B.tplgfr30s_1?idArticle=LEGIARTI000036242744&cidTexte=LEGITEXT000006074073&dateTexte=20180701](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=DD0E706240222E3BF611ED583B7AE64B.tplgfr30s_1?idArticle=LEGIARTI000036242744&cidTexte=LEGITEXT000006074073&dateTexte=20180701)
-- **Article R. 211-10 du code du tourisme** : [https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=737B5FB07D21E615A05E7C822EF82999.tplgfr43s_1?idArticle=LEGIARTI000036464037&cidTexte=LEGITEXT000006074073&dateTexte=20180701&categorieLien=id&oldAction=&nbResultRech=](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=737B5FB07D21E615A05E7C822EF82999.tplgfr43s_1?idArticle=LEGIARTI000036464037&cidTexte=LEGITEXT000006074073&dateTexte=20180701&categorieLien=id&oldAction=&nbResultRech=)
+
+- **Code du tourisme** : Articles [L. 211-1 et suivants](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074073/LEGISCTA000006143163/#LEGISCTA000020897224) et [articles R. 211-3 et suivants](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074073/LEGISCTA000006143166/#LEGISCTA000021548545)
+- **Règlement CE 261/2004** : Indemnisation en cas de retard ou d'annulation de vol
+- **Directive (UE) n° 2015/2302** : Droits des voyageurs à forfait
+
+[À COMPLÉTER] : Ajoutez ici d'autres références légales pertinentes.

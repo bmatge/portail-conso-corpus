@@ -1,45 +1,50 @@
 ---
 domaine: concurrence
-generated_at: '2026-02-25T02:43:15.223665'
+generated_at: '2026-02-25T11:46:00.998962'
 level: sous_domaine
 model: openweight-medium
 sources_count: 20
 taxonomy_id: ententes
 title: Ententes anticoncurrentielles
-tokens: 5911
+tokens: 6070
 ---
 
 # Ententes anticoncurrentielles : vos droits et recours
 
 ## En bref
-Une entente anticoncurrentielle est un accord entre entreprises qui empêche, restreint ou fausse la concurrence. Cela peut concerner des accords sur les prix, la répartition des marchés ou la limitation de la production. Si vous êtes victime ou témoin de telles pratiques, vous pouvez agir pour faire respecter la concurrence loyale.
+Une entente anticoncurrentielle est un accord ou une action concertée entre entreprises visant à empêcher, restreindre ou fausser la concurrence. Cela peut concerner des accords sur les prix, la répartition des marchés, ou la limitation de la production. Ces pratiques sont strictement encadrées par la loi et peuvent donner lieu à des sanctions lourdes.
 
 ## De quoi s'agit-il ?
-Une entente anticoncurrentielle est un accord ou une action concertée entre entreprises ayant pour but ou pour effet d'empêcher, de restreindre ou de fausser le jeu de la concurrence sur un marché. Ces ententes peuvent prendre diverses formes : écrites ou orales, expresses ou tacites, horizontales (entre concurrents) ou verticales (entre producteurs et distributeurs).
+Une entente anticoncurrentielle est un accord ou une action concertée entre entreprises ayant pour but ou pour effet d'empêcher, de restreindre ou de fausser le jeu de la concurrence sur un marché de produits ou de services. Ces ententes peuvent prendre diverses formes : écrites ou orales, expresses ou tacites, horizontales (entre concurrents sur un même marché) ou verticales (entre un producteur et un distributeur).
 
-Les ententes anticoncurrentielles sont prohibées par la loi. Elles peuvent concerner des accords sur les prix, la répartition des marchés, la limitation de la production, ou toute autre pratique visant à restreindre la concurrence.
+Les ententes anticoncurrentielles sont prohibées par la loi, car elles nuisent à la libre concurrence et peuvent entraîner des prix plus élevés ou une qualité inférieure pour les consommateurs. Elles peuvent concerner divers secteurs, comme les marchés publics, la distribution, ou la fourniture de services.
 
 ## Quels sont vos droits ?
-En tant que consommateur, vous avez le droit de bénéficier d'un marché concurrentiel. Les ententes anticoncurrentielles sont interdites par la loi et peuvent être sanctionnées. Si vous êtes victime d'une entente anticoncurrentielle, vous pouvez signaler cette pratique aux autorités compétentes.
+En tant que consommateur, vous avez le droit de bénéficier d'un marché concurrentiel où les prix et les conditions de vente sont déterminés par la libre concurrence. Les ententes anticoncurrentielles faussent ce jeu de la concurrence et vous privent de ces avantages.
 
-Les entreprises impliquées dans une entente anticoncurrentielle peuvent être sanctionnées par l'Autorité de la concurrence. Les sanctions peuvent inclure des amendes, des injonctions et des astreintes. Les entreprises peuvent également être tenues de modifier leur comportement pour se conformer à la loi.
+Les entreprises impliquées dans des ententes anticoncurrentielles peuvent être sanctionnées par l'Autorité de la concurrence. Les sanctions peuvent inclure des amendes, des injonctions de cesser les pratiques anticoncurrentielles, et des astreintes en cas de non-respect des décisions de l'Autorité.
 
 ## Les situations les plus fréquentes
-
-- **Des concurrents s'entendent sur les prix ou se répartissent le marché (cartel)**
-  Des entreprises concurrentes peuvent s'entendre pour fixer des prix communs ou se répartir un marché, ce qui fausse la concurrence. [Lire la fiche](entente_prix.md)
+- **Des concurrents s'entendent sur les prix ou se répartissent le marché (cartel)** : Cette situation se produit lorsque des entreprises concurrentes sur un même marché s'entendent pour fixer des prix communs ou pour se répartir les parts de marché. Cela peut prendre la forme d'accords écrits ou oraux, ou de pratiques concertées. [Lire la fiche](entente_prix.md)
 
 ## Que faire concrètement ?
-1. **Recueillir des preuves** : Si vous suspectez une entente anticoncurrentielle, recueillez toutes les preuves possibles (emails, documents, témoignages, etc.).
-2. **Signaler la pratique** : Vous pouvez signaler la pratique aux autorités compétentes via [SignalConso](https://signal.conso.gouv.fr).
-3. **Consulter un médiateur** : Si vous êtes impliqué dans un litige, vous pouvez consulter un médiateur sectoriel pour trouver une solution amiable.
-4. **Engager des poursuites** : Si la pratique est avérée, vous pouvez engager des poursuites contre les entreprises impliquées.
+Si vous suspectez une entente anticoncurrentielle, vous pouvez signaler cette pratique aux autorités compétentes. Voici les étapes à suivre :
+
+1. **Recueillir des preuves** : Rassemblez toutes les informations et documents qui peuvent prouver l'existence d'une entente anticoncurrentielle. Cela peut inclure des échanges de courriels, des documents contractuels, ou des témoignages.
+
+2. **Signaler la pratique** : Utilisez la plateforme [SignalConso](https://signal.conso.gouv.fr) pour signaler la pratique anticoncurrentielle. Vous pouvez également contacter directement la DGCCRF ou l'Autorité de la concurrence.
+
+3. **Coopérer avec les autorités** : Si vous êtes contacté par les autorités pour fournir des informations supplémentaires, coopérez pleinement avec elles. Votre témoignage peut être crucial pour établir la preuve de l'entente.
+
+4. **Suivre le processus** : Les autorités compétentes examineront votre signalement et mèneront une enquête si nécessaire. Vous serez informé des suites données à votre signalement.
 
 ## Où signaler / à qui s'adresser ?
 - **SignalConso** : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)
 - **Service-public.fr** : [https://www.service-public.fr](https://www.service-public.fr)
 
 ## Pour aller plus loin
-- [La régulation concurrentielle](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/la-regulation-concurrentielle)
-- [Entente anticoncurrentielle : la réglementation vise l'objet et/ou l'effet restrictif de concurrence](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/entente-anticoncurrentielle-la-reglementation-vise-lobjet-etou-leffet)
-- [Démarches et services en tant que consommateur](https://www.economie.gouv.fr/dgccrf/les-demarches-et-les-services/demarches-et-services-en-tant-que-consommateur)
+- **Article L. 420-1 du Code de commerce** : Prohibe les ententes anticoncurrentielles.
+- **Autorité de la concurrence** : [https://www.autoritedelaconcurrence.fr](https://www.autoritedelaconcurrence.fr)
+- **DGCCRF** : [https://www.economie.gouv.fr/dgccrf](https://www.economie.gouv.fr/dgccrf)
+
+[Recevez gratuitement chaque mois notre lettre d'information Concurrence & Consommation](https://forms.dgccrf.lettres-infos.bercy.gouv.fr/67bed7150539df7ec40b8a2d/Z0GjP6xZTumtejkRaNM2LQ/form.html)

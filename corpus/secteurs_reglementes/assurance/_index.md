@@ -1,72 +1,65 @@
 ---
 domaine: secteurs_reglementes
-generated_at: '2026-02-25T02:39:44.154778'
+generated_at: '2026-02-25T11:41:02.948573'
 level: sous_domaine
 model: openweight-medium
 sources_count: 20
 taxonomy_id: assurance
 title: Assurance
-tokens: 5953
+tokens: 5790
 ---
 
 # Assurance : vos droits et recours
 
 ## En bref
-L'assurance est un contrat par lequel un assureur s'engage à couvrir un risque en échange d'une prime. En tant qu'assuré, vous avez des droits et des obligations. Cette fiche vous explique vos droits, les situations fréquentes et les démarches à suivre en cas de problème.
+
+L'assurance est un secteur réglementé où vos droits sont protégés par la loi. Que ce soit pour une assurance habitation, automobile ou santé, vous avez des recours en cas de litige. Cette fiche vous explique vos droits, les situations fréquentes et les démarches à suivre pour les résoudre.
 
 ## De quoi s'agit-il ?
-L'assurance est un contrat par lequel vous (l'assuré) payez une prime à une compagnie d'assurance en échange d'une couverture contre des risques spécifiques. Ces risques peuvent inclure des dommages matériels, des accidents, des maladies, ou d'autres événements imprévus.
 
-### Ce qui est couvert
-- **Assurance habitation** : couvre les dommages à votre logement et vos biens.
-- **Assurance automobile** : couvre les dommages causés à votre véhicule et les responsabilités civiles.
-- **Assurance santé** : couvre les frais médicaux.
-- **Assurance vie** : couvre les risques liés à la vie, comme le décès ou l'invalidité.
+L'assurance couvre différents domaines comme l'habitation, l'automobile ou la santé. Elle protège contre les risques financiers liés à des événements imprévus. Les contrats d'assurance sont régis par le Code des assurances et doivent respecter des règles strictes en matière d'information, de résiliation et d'indemnisation.
 
-### Ce qui n'est pas couvert
-- Les risques non déclarés ou exclus dans le contrat.
-- Les dommages intentionnels ou causés par négligence grave.
-- Les risques non couverts par le contrat (par exemple, certains sports extrêmes).
+Cette fiche couvre les litiges liés aux assurances habitation, automobile et santé. Elle ne traite pas des assurances vie ou des assurances professionnelles.
 
 ## Quels sont vos droits ?
-### Droits de l'assuré
-- **Droit à l'information** : L'assureur doit vous fournir toutes les informations nécessaires sur le contrat, y compris les exclusions et les conditions de résiliation.
-- **Droit à la résiliation** : Vous pouvez résilier votre contrat à l'échéance ou en cas de changement de situation (déménagement, vente du bien assuré, etc.).
-- **Droit à l'indemnisation** : En cas de sinistre, vous avez droit à une indemnisation conformément aux termes du contrat.
 
-### Obligations de l'assureur
-- **Obligation de couverture** : L'assureur doit couvrir les risques prévus dans le contrat.
-- **Obligation de remboursement** : En cas de sinistre, l'assureur doit indemniser les dommages couverts.
-- **Obligation de transparence** : L'assureur doit vous informer clairement sur les conditions du contrat et les exclusions.
+### Droits généraux
 
-### Délais importants
-- **Déclaration de sinistre** : Vous devez déclarer un sinistre dans un délai rapide, généralement sous 5 jours ouvrés.
-- **Résiliation à l'échéance** : Vous devez informer l'assureur au moins deux mois avant la date d'échéance.
-- **Indemnisation** : L'assureur doit vous indemniser dans un délai raisonnable, généralement sous 3 mois après la déclaration du sinistre.
+- **Information** : L'assureur doit vous fournir toutes les informations nécessaires sur les garanties, les exclusions et les conditions de résiliation.
+- **Résiliation** : Vous pouvez résilier votre contrat à l'échéance avec un préavis d'un mois. L'assureur doit respecter un préavis de deux mois pour les contrats souscrits par les particuliers.
+- **Indemnisation** : En cas de sinistre, l'assureur doit vous indemniser selon les termes du contrat. Vous devez fournir tous les documents nécessaires pour évaluer les dommages.
 
-### Cas particuliers fréquents
-- **Résiliation pour sinistre** : L'assureur peut résilier le contrat après un sinistre, mais doit respecter un préavis d'un mois.
-- **Fausse déclaration** : Si vous avez fait une fausse déclaration, l'assureur peut résilier le contrat et refuser toute indemnisation.
-- **Changement de situation** : Vous devez informer l'assureur de tout changement affectant le risque couvert (par exemple, un déménagement).
+### Cas particuliers
+
+- **Bonus-malus** : Le coefficient de bonus-malus doit être calculé en fonction des sinistres déclarés. Vous avez le droit de contester une erreur dans le relevé d'information.
+- **Résiliation abusive** : L'assureur ne peut pas résilier votre contrat sans motif valable. Vous pouvez contester une résiliation abusive.
 
 ## Les situations les plus fréquentes
-- **Indemnisation suite à un sinistre refusée ou sous-évaluée** : Si votre assureur refuse de vous indemniser ou sous-évalue les dommages, vous pouvez contester cette décision. [Lire la fiche](sinistre_rembourse_insuffisamment.md)
-- **Résiliation abusive d'un contrat d'assurance** : Si votre assureur résilie votre contrat sans motif valable, vous pouvez contester cette résiliation. [Lire la fiche](resiliation_assurance_abusive.md)
+
+- **Indemnisation suite à un sinistre refusée ou sous-évaluée** : [Lire la fiche](sinistre_rembourse_insuffisamment.md)
+- **Résiliation abusive d'un contrat d'assurance** : [Lire la fiche](resiliation_assurance_abusive.md)
+- **Litige avec l'assurance habitation (refus d'indemnisation, expertise contestée)** : [Lire la fiche](assurance_habitation_litige.md)
+- **Mutuelle santé : remboursements inférieurs aux garanties annoncées** : [Lire la fiche](mutuelle_remboursement_insuffisant.md)
+- **Coefficient bonus-malus contesté ou erreur dans le relevé d'information** : [Lire la fiche](assurance_auto_malus_conteste.md)
 
 ## Que faire concrètement ?
-1. **Lire attentivement votre contrat** : Vérifiez les conditions de couverture, les exclusions et les procédures de résiliation.
-2. **Déclarer un sinistre rapidement** : Informez votre assureur dans les délais impartis.
-3. **Contester une décision de l'assureur** : Si vous n'êtes pas d'accord avec une décision de l'assureur, vous pouvez contester par écrit.
-4. **Demander une médiation** : Si vous ne parvenez pas à résoudre le problème avec votre assureur, vous pouvez saisir un médiateur.
-5. **Saisir les autorités compétentes** : En dernier recours, vous pouvez saisir la DGCCRF ou l'ACPR.
+
+1. **Recueillir les preuves** : Rassemblez tous les documents nécessaires pour prouver votre dossier (factures, photos, rapports d'expertise, etc.).
+2. **Contacter l'assureur** : Envoyez une lettre recommandée avec accusé de réception à votre assureur pour exposer votre problème et demander une solution.
+3. **Saisir le médiateur** : Si l'assureur ne répond pas ou ne donne pas satisfaction, saisissez le médiateur de l'assurance.
+4. **Saisir les autorités compétentes** : Si le médiateur ne donne pas de réponse satisfaisante, vous pouvez saisir la DGCCRF ou le tribunal compétent.
 
 ## Où signaler / à qui s'adresser ?
+
+- **Médiation de l'assurance** : [https://www.mediation-assurance.org](https://www.mediation-assurance.org)
 - **Saisine ACPR** : [https://acpr.banque-france.fr](https://acpr.banque-france.fr)
 - **Médiation de la consommation** : [https://www.economie.gouv.fr/mediation-conso](https://www.economie.gouv.fr/mediation-conso)
+- **Fiche service-public.fr** : [https://www.service-public.fr](https://www.service-public.fr)
 - **Signalement SignalConso** : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)
-- **Médiation de l'assurance** : [https://www.mediation-assurance.org](https://www.mediation-assurance.org)
 
 ## Pour aller plus loin
-- [Contrats d’assurance-dommage : les assureurs respectent-ils les conditions de résiliation ?](/dgccrf/contrats-dassurance-dommage-les-assureurs-respectent-ils-les-conditions-de-resiliation)
-- [Article L. 113-12-1 du code des assurances](http://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=6A63E0AD7AA7A59A238B931F6398119C.tpdila22v_1?idArticle=LEGIARTI000028742542&cidTexte=LEGITEXT000006073984&dateTexte=20150423&categorieLien=id&oldAction=&nbResultRech=)
-- [Article L. 121-11 du code des assurances](http://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=F0CF08C4B39869A1D3C8DEE6FAB0D517.tpdjo11v_3?idArticle=LEGIARTI000006792356&cidTexte=LEGITEXT000006073984)
+
+- **Code des assurances** : Articles L113-1 à L113-17, L121-1 à L121-20, L122-1 à L122-12
+- **Directive européenne 2009/138/CE** : Solvabilité II
+- **Loi n°2014-344 du 17 mars 2014** : relative à la consommation
+- **Décret n°2015-351 du 27 mars 2015** : relatif à la médiation de la consommation

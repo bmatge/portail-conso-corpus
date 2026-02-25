@@ -1,0 +1,1184 @@
+{
+  "summary": {
+    "old_corpus_raw": 5488,
+    "noise_filtered": 337,
+    "substantive": 5151,
+    "new_corpus_fiches": 115,
+    "taxonomy_items": 167,
+    "covered": 209,
+    "partial": 627,
+    "orphan": 4315,
+    "orphan_in_scope": 3891,
+    "orphan_out_scope": 424,
+    "coverage_pct": 16.2
+  },
+  "source_stats": {
+    "dgccrf-drupal": {
+      "raw": 1795,
+      "noise": 254,
+      "substantive": 1541,
+      "covered": 104,
+      "partial": 328,
+      "orphan": 1109,
+      "in_scope": 985,
+      "out_scope": 124,
+      "cov_pct": 28.0
+    },
+    "particuliers-drupal": {
+      "raw": 361,
+      "noise": 1,
+      "substantive": 360,
+      "covered": 31,
+      "partial": 56,
+      "orphan": 273,
+      "in_scope": 198,
+      "out_scope": 75,
+      "cov_pct": 24.2
+    },
+    "entreprises-drupal": {
+      "raw": 271,
+      "noise": 4,
+      "substantive": 267,
+      "covered": 3,
+      "partial": 9,
+      "orphan": 255,
+      "in_scope": 151,
+      "out_scope": 104,
+      "cov_pct": 4.5
+    },
+    "inc-conso-md": {
+      "raw": 3061,
+      "noise": 78,
+      "substantive": 2983,
+      "covered": 71,
+      "partial": 234,
+      "orphan": 2678,
+      "in_scope": 2557,
+      "out_scope": 121,
+      "cov_pct": 10.2
+    }
+  },
+  "orphan_categories": {
+    "Autre / Non classé": 1607,
+    "Logement / Immobilier / Travaux": 450,
+    "Banque / Crédit / Surendettement": 306,
+    "Alimentation / Restauration": 264,
+    "Garanties / SAV / Litiges": 224,
+    "Transport / Voyages / Tourisme": 146,
+    "Gestion d'entreprise [hors scope]": 139,
+    "Droits du consommateur (général)": 130,
+    "Prix / Promotions / Soldes": 127,
+    "Fiscalité / Impôts [hors scope]": 121,
+    "Emploi / Travail [hors scope]": 85,
+    "Énergie (élec, gaz, eau)": 82,
+    "Auto / Moto / Garage": 77,
+    "Télécoms / Internet": 77,
+    "Environnement / Éco-responsabilité": 74,
+    "Assurance": 54,
+    "Santé / Bien-être (conso)": 52,
+    "Sport / Loisirs": 49,
+    "Arnaques / Fraudes en ligne": 47,
+    "Concurrence": 38,
+    "Santé publique [hors scope]": 28,
+    "Éducation [hors scope]": 28,
+    "Sécurité des produits / Rappels": 27,
+    "Démarchage / Publicité": 27,
+    "E-commerce / Marketplace": 23,
+    "Famille / Social [hors scope]": 23,
+    "Numérique / Données personnelles": 10
+  },
+  "top_50_orphans": [
+    {
+      "title": "IBAN, BIC, SEPA : de quoi parle-t-on ? BDF",
+      "source": "inc-conso-md",
+      "file": "iban-bic-sepa-de-quoi-parle-t-bdf.md",
+      "best_score": 0.01,
+      "best_match": "Agriculture biologique et labels de qualité",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Le guide du bénévolat 2017-2018",
+      "source": "inc-conso-md",
+      "file": "le-guide-du-benevolat-2017-2018.md",
+      "best_score": 0.018,
+      "best_match": "La garantie commerciale du fabricant ou du vendeur n'est pas appliquée",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "L'horlogerie-bijouterie-orfèvrerie-joaillerie",
+      "source": "dgccrf-drupal",
+      "file": "22336-l-horlogerie-bijouterie-orf-vrerie-joaillerie.md",
+      "best_score": 0.02,
+      "best_match": "Outil de bricolage ou de jardin dangereux (débroussailleuse, tronçonneuse, perceuse sans protections)",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Qu’est-ce que l’Orias ?",
+      "source": "inc-conso-md",
+      "file": "quest-ce-que-lorias-0.md",
+      "best_score": 0.023,
+      "best_match": "La composition textile indiquée sur l'étiquette est fausse (ex. : « 100% coton » alors que c'est du polyester)",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Saumons, cabillauds et thons au banc d'essai",
+      "source": "inc-conso-md",
+      "file": "saumons-cabillauds-et-thons-au-banc-dessai-0.md",
+      "best_score": 0.025,
+      "best_match": "Une clause exclut ou limite abusivement la responsabilité du professionnel",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Disques (CD et DVD musicaux)",
+      "source": "dgccrf-drupal",
+      "file": "22334-disques-cd-et-dvd-musicaux.md",
+      "best_score": 0.027,
+      "best_match": "Données personnelles et pratiques commerciales",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Paris 2024 Olympic and Paralympic Games : consumer questions",
+      "source": "dgccrf-drupal",
+      "file": "3219860-paris-2024-olympic-and-paralympic-games-consumer-questions.md",
+      "best_score": 0.028,
+      "best_match": "Garage : facturation de réparations non effectuées ou devis non respecté",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Epargner à son rythme en partant de zéro",
+      "source": "inc-conso-md",
+      "file": "epargner-son-rythme-en-partant-de-zero.md",
+      "best_score": 0.028,
+      "best_match": "Des produits périmés sont en vente",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Les vide-greniers",
+      "source": "inc-conso-md",
+      "file": "les-vide-greniers.md",
+      "best_score": 0.031,
+      "best_match": "Un partenariat commercial n'est pas déclaré dans une publication ou vidéo",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Méfiez-vous des pièges du shopping online",
+      "source": "inc-conso-md",
+      "file": "mefiez-vous-des-pieges-du-shopping-online.md",
+      "best_score": 0.031,
+      "best_match": "Influenceurs et marketing en ligne",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "L'enquête de A à Z",
+      "source": "dgccrf-drupal",
+      "file": "3228228-l-enqu-te-de-a-z.md",
+      "best_score": 0.032,
+      "best_match": "L'agence de voyages a fait faillite ou n'exécute pas le contrat",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Guide ressources sur le thème de l’eau",
+      "source": "inc-conso-md",
+      "file": "guide-ressources-sur-le-theme-de-leau.md",
+      "best_score": 0.032,
+      "best_match": "Un site refuse d'exercer mon droit d'accès, de rectification ou de suppression de mes données",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Guides \"Travaux de rénovation\"",
+      "source": "inc-conso-md",
+      "file": "guides-travaux-de-renovation.md",
+      "best_score": 0.032,
+      "best_match": "Droit de rétractation",
+      "category": "Logement / Immobilier / Travaux"
+    },
+    {
+      "title": "La pédagothèque et vous",
+      "source": "inc-conso-md",
+      "file": "la-pedagotheque-et-vous.md",
+      "best_score": 0.032,
+      "best_match": "Aire de jeux collective avec équipements dangereux ou mal entretenus",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Gérer sa micro-entreprise",
+      "source": "entreprises-drupal",
+      "file": "3235887-g-rer-sa-micro-entreprise.md",
+      "best_score": 0.033,
+      "best_match": "L'origine du produit indiquée est fausse ou trompeuse",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Concours Grand Angle 18",
+      "source": "inc-conso-md",
+      "file": "concours-grand-angle-18.md",
+      "best_score": 0.034,
+      "best_match": "Un vendeur tiers sur une marketplace (Amazon, Cdiscount, Leboncoin…) ne livre pas ou vend un produit défectueux",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Les papiers de la famille",
+      "source": "inc-conso-md",
+      "file": "les-papiers-de-la-famille.md",
+      "best_score": 0.034,
+      "best_match": "Le professionnel refuse le droit de rétractation pour une vente à domicile",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "La famille Tout-Ecran",
+      "source": "inc-conso-md",
+      "file": "la-famille-tout-ecran.md",
+      "best_score": 0.035,
+      "best_match": "Produit vendu comme « bio » sans certification officielle (logo AB ou Eurofeuille absent)",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Panneaux photovoltaïques qui brûlent, l'analyse de l'INC",
+      "source": "inc-conso-md",
+      "file": "panneaux-photovoltaiques-qui-brulent-lanalyse-de-linc.md",
+      "best_score": 0.035,
+      "best_match": "Vol annulé et la compagnie refuse le remboursement ou l'indemnisation (règlement CE 261/2004)",
+      "category": "Énergie (élec, gaz, eau)"
+    },
+    {
+      "title": "Expulsion : trêve hivernale du 1er novembre 2025 au 31 mars 2026",
+      "source": "inc-conso-md",
+      "file": "expulsion-treve-hivernale-du-1er-novembre-2025-au-31-mars-2026.md",
+      "best_score": 0.036,
+      "best_match": "Pratiques commerciales déloyales",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Développer son entreprise",
+      "source": "entreprises-drupal",
+      "file": "3235905-d-velopper-son-entreprise.md",
+      "best_score": 0.037,
+      "best_match": "Aire de jeux collective avec équipements dangereux ou mal entretenus",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Barbapoux",
+      "source": "inc-conso-md",
+      "file": "barbapoux.md",
+      "best_score": 0.037,
+      "best_match": "Le prix barré (prix de référence) n'a jamais été pratiqué ou est fictif",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Monnaie, monnaie, monnaie : CD-Rom",
+      "source": "inc-conso-md",
+      "file": "monnaie-monnaie-monnaie-cd-rom.md",
+      "best_score": 0.037,
+      "best_match": "Secteurs réglementés",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Les tableaux de bord de la DGCCRF",
+      "source": "dgccrf-drupal",
+      "file": "3234377-les-tableaux-de-bord-de-la-dgccrf.md",
+      "best_score": 0.038,
+      "best_match": "Rupture brutale de relations commerciales établies sans préavis",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Encadrement des loyers à Paris et en Seine-Saint-Denis (93)",
+      "source": "inc-conso-md",
+      "file": "encadrement-des-loyers-paris-et-en-seine-saint-denis-93.md",
+      "best_score": 0.038,
+      "best_match": "Le prix TTC n'est pas clairement indiqué (uniquement HT sans mention)",
+      "category": "Logement / Immobilier / Travaux"
+    },
+    {
+      "title": "La 2ième vie des déchets : Tom se recycle",
+      "source": "inc-conso-md",
+      "file": "la-2ieme-vie-des-dechets-tom-se-recycle.md",
+      "best_score": 0.038,
+      "best_match": "Des avis clients semblent faux ou achetés",
+      "category": "Environnement / Éco-responsabilité"
+    },
+    {
+      "title": "L'eau du robinet en vacances",
+      "source": "inc-conso-md",
+      "file": "leau-du-robinet-en-vacances.md",
+      "best_score": 0.038,
+      "best_match": "Téléphonie et internet",
+      "category": "Alimentation / Restauration"
+    },
+    {
+      "title": "Inaction de l’État face au Dieselgate - La CLCV saisit la justice",
+      "source": "inc-conso-md",
+      "file": "inaction-de-letat-face-au-dieselgate-la-clcv-saisit-la-justice.md",
+      "best_score": 0.039,
+      "best_match": "Abus de faiblesse ou de vulnérabilité (personne âgée, état de détresse…)",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Participez au 4èmes Trophées EDUCNUM avec l'INC",
+      "source": "inc-conso-md",
+      "file": "participez-au-4emes-trophees-educnum-avec-linc.md",
+      "best_score": 0.039,
+      "best_match": "Litige avec un professionnel basé dans un autre pays de l'UE",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Stop au moustique-tigre : les bons gestes chez soi !",
+      "source": "inc-conso-md",
+      "file": "stop-au-moustique-tigre-les-bons-gestes-chez-soi.md",
+      "best_score": 0.039,
+      "best_match": "Matériaux de construction vendus sans les certifications obligatoires ou avec des caractéristiques trompeuses",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Cueillette de champignons",
+      "source": "inc-conso-md",
+      "file": "cueillette-de-champignons.md",
+      "best_score": 0.04,
+      "best_match": "La composition réelle du produit ne correspond pas à l'étiquette (ex : viande de cheval vendue comme bœuf)",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Les Points Conseil Budget",
+      "source": "inc-conso-md",
+      "file": "les-points-conseil-budget.md",
+      "best_score": 0.04,
+      "best_match": "Mes données personnelles ont été transmises ou vendues à des tiers sans mon consentement à des fins commerciales",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Vous vous êtes porté(e) caution et vous souhaitez vous dégager",
+      "source": "inc-conso-md",
+      "file": "vous-vous-etes-portee-caution-et-vous-souhaitez-vous-degager.md",
+      "best_score": 0.04,
+      "best_match": "Article de puériculture non conforme (lit, poussette, chaise haute, porte-bébé)",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "7 épurateurs d'air au banc d'essai",
+      "source": "inc-conso-md",
+      "file": "7-epurateurs-dair-au-banc-dessai.md",
+      "best_score": 0.041,
+      "best_match": "L'opérateur téléphonique rend la résiliation difficile ou facture des pénalités abusives",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Le sommeil en famille",
+      "source": "inc-conso-md",
+      "file": "le-sommeil-en-famille.md",
+      "best_score": 0.041,
+      "best_match": "Le professionnel refuse le droit de rétractation pour une vente à domicile",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Facebook Live \"Protéger son épargne\"",
+      "source": "inc-conso-md",
+      "file": "facebook-live-proteger-son-epargne.md",
+      "best_score": 0.042,
+      "best_match": "Équipements de protection individuelle et sportive",
+      "category": "Banque / Crédit / Surendettement"
+    },
+    {
+      "title": "Le coût de la rentrée scolaire 2019 en 6ème augmente de 0,95 %",
+      "source": "inc-conso-md",
+      "file": "le-cout-de-la-rentree-scolaire-2019-en-6eme-augmente-de-095.md",
+      "best_score": 0.042,
+      "best_match": "Bricolage, BTP et équipements de la maison",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Le point sur l’affaire Volkswagen en 15 questions",
+      "source": "inc-conso-md",
+      "file": "le-point-sur-laffaire-volkswagen-en-15-questions.md",
+      "best_score": 0.042,
+      "best_match": "Les prix ne sont pas affichés en magasin ou sur le site",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Les clés pour agir : les impacts du smartphone",
+      "source": "inc-conso-md",
+      "file": "les-cles-pour-agir-les-impacts-du-smartphone.md",
+      "best_score": 0.042,
+      "best_match": "Danger immédiat pour la santé ou la sécurité",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Sourdirisque",
+      "source": "inc-conso-md",
+      "file": "sourdirisque.md",
+      "best_score": 0.042,
+      "best_match": "Surcharges incompréhensibles sur la facture téléphonique",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Vacances à la neige : suivez les conseils de la DGCCRF !",
+      "source": "dgccrf-drupal",
+      "file": "37172-vacances-la-neige-suivez-les-conseils-de-la-dgccrf.md",
+      "best_score": 0.043,
+      "best_match": "Formation professionnelle et enseignement privé",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Le yield management : qu’est-ce que c’est ?",
+      "source": "inc-conso-md",
+      "file": "le-yield-management-quest-ce-que-cest.md",
+      "best_score": 0.043,
+      "best_match": "Le prix TTC n'est pas clairement indiqué (uniquement HT sans mention)",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "L'eau du robinet : boisson au quotidien pour la famille",
+      "source": "inc-conso-md",
+      "file": "leau-du-robinet-boisson-au-quotidien-pour-la-famille.md",
+      "best_score": 0.043,
+      "best_match": "Le professionnel refuse le droit de rétractation pour une vente à domicile",
+      "category": "Alimentation / Restauration"
+    },
+    {
+      "title": "Les aventures de la famille Klaxon – Léon frime trop sur son vélo !",
+      "source": "inc-conso-md",
+      "file": "les-aventures-de-la-famille-klaxon-leon-frime-trop-sur-son-velo.md",
+      "best_score": 0.043,
+      "best_match": "Fraude sur la composition des aliments",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Inscrivez-vous avant le 10 novembre 2025 au concours 2026 d’inspecteur de la CCRF !",
+      "source": "dgccrf-drupal",
+      "file": "3230638-inscrivez-vous-avant-le-10-novembre-2025-au-concours-2026-d.md",
+      "best_score": 0.044,
+      "best_match": "Garage : facturation de réparations non effectuées ou devis non respecté",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Taxe foncière : mode de calcul et réductions",
+      "source": "particuliers-drupal",
+      "file": "34988-taxe-fonci-re-mode-de-calcul-et-r-ductions.md",
+      "best_score": 0.044,
+      "best_match": "Un partenaire commercial dominant impose des conditions contractuelles abusives (délais de paiement non légaux, marges arrière imposées…)",
+      "category": "Prix / Promotions / Soldes"
+    },
+    {
+      "title": "As’truc Mémo Géant - Les bons gestes pour la nature",
+      "source": "inc-conso-md",
+      "file": "astruc-memo-geant-les-bons-gestes-pour-la-nature.md",
+      "best_score": 0.044,
+      "best_match": "Danger immédiat pour la santé ou la sécurité",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Bénéficier d'aides pour payer son loyer",
+      "source": "inc-conso-md",
+      "file": "beneficier-daides-pour-payer-son-loyer.md",
+      "best_score": 0.044,
+      "best_match": "Obligation d'acheter un produit pour en obtenir un autre (vente liée illégale)",
+      "category": "Logement / Immobilier / Travaux"
+    },
+    {
+      "title": "Boiriez-vous l'eau des égouts ? Une brochure sur l'eau pour les jeunes",
+      "source": "inc-conso-md",
+      "file": "boiriez-vous-leau-des-egouts-une-brochure-sur-leau-pour-les-jeunes.md",
+      "best_score": 0.044,
+      "best_match": "Voiture d'occasion vendue avec des défauts cachés",
+      "category": "Autre / Non classé"
+    },
+    {
+      "title": "Camping-cars : que dit la loi ?",
+      "source": "inc-conso-md",
+      "file": "camping-cars-que-dit-la-loi.md",
+      "best_score": 0.044,
+      "best_match": "Crédit à la consommation et prêts",
+      "category": "Transport / Voyages / Tourisme"
+    }
+  ],
+  "corpus_fiches": [
+    {
+      "title": "Produit vendu comme « bio » sans certification officielle (logo AB ou Eurofeuille absent)",
+      "file": "alimentaire/agriculture_bio_labels/faux_label_bio.md",
+      "level": "situation",
+      "domaine": "alimentaire"
+    },
+    {
+      "title": "Usage frauduleux d'un signe de qualité (Label Rouge, IGP, STG) ou d'une mention valorisante (« fermier », « artisanal »)",
+      "file": "alimentaire/agriculture_bio_labels/label_qualite_usurpe.md",
+      "level": "situation",
+      "domaine": "alimentaire"
+    },
+    {
+      "title": "Un complément alimentaire est présenté comme un médicament (guérit, soigne une maladie)",
+      "file": "alimentaire/complements_alimentaires/complement_allegations_medicales.md",
+      "level": "situation",
+      "domaine": "alimentaire"
+    },
+    {
+      "title": "Présence suspectée d'une substance interdite dans un complément alimentaire",
+      "file": "alimentaire/complements_alimentaires/complement_substance_interdite.md",
+      "level": "situation",
+      "domaine": "alimentaire"
+    },
+    {
+      "title": "Allégations nutritionnelles ou de santé fausses ou non autorisées (ex : 'réduit le cholestérol' sans preuve)",
+      "file": "alimentaire/etiquetage_alimentaire/allegations_nutritionnelles_fausses.md",
+      "level": "situation",
+      "domaine": "alimentaire"
+    },
+    {
+      "title": "Les allergènes ne sont pas mentionnés ou sont masqués sur l'étiquette",
+      "file": "alimentaire/etiquetage_alimentaire/allergenes_absents.md",
+      "level": "situation",
+      "domaine": "alimentaire"
+    },
+    {
+      "title": "Date de péremption (DLC/DDM) absente ou illisible",
+      "file": "alimentaire/etiquetage_alimentaire/date_peremption_manquante.md",
+      "level": "situation",
+      "domaine": "alimentaire"
+    },
+    {
+      "title": "Des produits périmés sont en vente",
+      "file": "alimentaire/etiquetage_alimentaire/produit_perime_vendu.md",
+      "level": "situation",
+      "domaine": "alimentaire"
+    },
+    {
+      "title": "La composition réelle du produit ne correspond pas à l'étiquette (ex : viande de cheval vendue comme bœuf)",
+      "file": "alimentaire/fraude_composition/composition_differente_etiquette.md",
+      "level": "situation",
+      "domaine": "alimentaire"
+    },
+    {
+      "title": "Usage abusif d'une AOP/IGP/Label Rouge",
+      "file": "alimentaire/fraude_composition/fraude_aoc_igp.md",
+      "level": "situation",
+      "domaine": "alimentaire"
+    },
+    {
+      "title": "Produit vendu comme bio sans certification valide",
+      "file": "alimentaire/fraude_composition/fraude_bio.md",
+      "level": "situation",
+      "domaine": "alimentaire"
+    },
+    {
+      "title": "L'origine géographique annoncée est fausse (ex : fromage présenté comme provençal, fabriqué en Pologne)",
+      "file": "alimentaire/fraude_composition/origine_geographique_fausse.md",
+      "level": "situation",
+      "domaine": "alimentaire"
+    },
+    {
+      "title": "Problème d'hygiène grave dans un restaurant (rongeurs, cafards, cuisine insalubre…)",
+      "file": "alimentaire/restauration/hygiene_restauration.md",
+      "level": "situation",
+      "domaine": "alimentaire"
+    },
+    {
+      "title": "Intoxication alimentaire (toxi-infection alimentaire collective suspectée)",
+      "file": "alimentaire/restauration/intoxication_alimentaire.md",
+      "level": "situation",
+      "domaine": "alimentaire"
+    },
+    {
+      "title": "Produits du menu différents de ce qui est servi (surgelé annoncé comme frais, composition différente)",
+      "file": "alimentaire/restauration/tromperie_carte_restaurant.md",
+      "level": "situation",
+      "domaine": "alimentaire"
+    },
+    {
+      "title": "Étiquetage non conforme sur une bouteille de vin ou spiritueux (degré, origine, cépage)",
+      "file": "alimentaire/vins_spiritueux/spiritueux_etiquetage.md",
+      "level": "situation",
+      "domaine": "alimentaire"
+    },
+    {
+      "title": "Vin vendu sous une appellation d'origine (AOC/AOP) sans y avoir droit",
+      "file": "alimentaire/vins_spiritueux/vin_appellation_frauduleuse.md",
+      "level": "situation",
+      "domaine": "alimentaire"
+    },
+    {
+      "title": "Un partenaire commercial dominant impose des conditions contractuelles abusives (délais de paiement non légaux, marges arrière imposées…)",
+      "file": "concurrence/abus_position_dominante/conditions_abusives_fournisseur.md",
+      "level": "situation",
+      "domaine": "concurrence"
+    },
+    {
+      "title": "Des concurrents s'entendent sur les prix ou se répartissent le marché (cartel)",
+      "file": "concurrence/ententes/entente_prix.md",
+      "level": "situation",
+      "domaine": "concurrence"
+    },
+    {
+      "title": "Un client dépasse les délais de paiement légaux (60 jours en général)",
+      "file": "concurrence/pratiques_restrictives/delais_paiement_depasses.md",
+      "level": "situation",
+      "domaine": "concurrence"
+    },
+    {
+      "title": "Rupture brutale de relations commerciales établies sans préavis",
+      "file": "concurrence/pratiques_restrictives/rupture_brutale_relations.md",
+      "level": "situation",
+      "domaine": "concurrence"
+    },
+    {
+      "title": "Le contrat impose des conditions de résiliation excessivement contraignantes",
+      "file": "contrats_garanties/clauses_abusives/clause_resiliation_abusive.md",
+      "level": "situation",
+      "domaine": "contrats_garanties"
+    },
+    {
+      "title": "Une clause exclut ou limite abusivement la responsabilité du professionnel",
+      "file": "contrats_garanties/clauses_abusives/clause_responsabilite_limitee.md",
+      "level": "situation",
+      "domaine": "contrats_garanties"
+    },
+    {
+      "title": "Le professionnel se réserve le droit de modifier unilatéralement le contrat",
+      "file": "contrats_garanties/clauses_abusives/clause_unilaterale_modification.md",
+      "level": "situation",
+      "domaine": "contrats_garanties"
+    },
+    {
+      "title": "La garantie commerciale du fabricant ou du vendeur n'est pas appliquée",
+      "file": "contrats_garanties/garanties/garantie_commerciale_non_respectee.md",
+      "level": "situation",
+      "domaine": "contrats_garanties"
+    },
+    {
+      "title": "Le vendeur refuse la garantie légale de conformité (2 ans pour produits neufs, 1 an pour occasion)",
+      "file": "contrats_garanties/garanties/garantie_conformite_refusee.md",
+      "level": "situation",
+      "domaine": "contrats_garanties"
+    },
+    {
+      "title": "Défaut caché découvert après achat (vice caché)",
+      "file": "contrats_garanties/garanties/garantie_vices_caches.md",
+      "level": "situation",
+      "domaine": "contrats_garanties"
+    },
+    {
+      "title": "Le produit commandé n'est pas livré et le vendeur ne répond pas",
+      "file": "contrats_garanties/livraison/non_livraison.md",
+      "level": "situation",
+      "domaine": "contrats_garanties"
+    },
+    {
+      "title": "Produit reçu endommagé",
+      "file": "contrats_garanties/livraison/produit_endommage_livraison.md",
+      "level": "situation",
+      "domaine": "contrats_garanties"
+    },
+    {
+      "title": "Retard de livraison significatif sans information ni solution proposée",
+      "file": "contrats_garanties/livraison/retard_livraison.md",
+      "level": "situation",
+      "domaine": "contrats_garanties"
+    },
+    {
+      "title": "Le professionnel refuse le droit de rétractation pour une vente à domicile",
+      "file": "contrats_garanties/retractation/retractation_domicile.md",
+      "level": "situation",
+      "domaine": "contrats_garanties"
+    },
+    {
+      "title": "Le professionnel refuse d'appliquer le droit de rétractation de 14 jours (achat en ligne ou à distance)",
+      "file": "contrats_garanties/retractation/retractation_refuse.md",
+      "level": "situation",
+      "domaine": "contrats_garanties"
+    },
+    {
+      "title": "Une réparation est facturée alors qu'elle devrait être couverte par la garantie",
+      "file": "contrats_garanties/sav/reparation_facturee_garantie.md",
+      "level": "situation",
+      "domaine": "contrats_garanties"
+    },
+    {
+      "title": "Le SAV ne répond pas ou refuse de traiter la demande",
+      "file": "contrats_garanties/sav/sav_non_reponse.md",
+      "level": "situation",
+      "domaine": "contrats_garanties"
+    },
+    {
+      "title": "Placement financier frauduleux (crypto, forex, fonds d'investissement promettant des rendements élevés)",
+      "file": "numerique_cyber/arnaques_en_ligne/arnaque_investissement.md",
+      "level": "situation",
+      "domaine": "numerique_cyber"
+    },
+    {
+      "title": "Arnaque au support technique (fausse alerte virus, prise en main à distance non sollicitée)",
+      "file": "numerique_cyber/arnaques_en_ligne/arnaque_support_technique.md",
+      "level": "situation",
+      "domaine": "numerique_cyber"
+    },
+    {
+      "title": "Faux site de vente en ligne : j'ai commandé et payé, mais rien reçu et le site a disparu",
+      "file": "numerique_cyber/arnaques_en_ligne/faux_site_commerce.md",
+      "level": "situation",
+      "domaine": "numerique_cyber"
+    },
+    {
+      "title": "Faux site imitant un service public pour obtenir des paiements indus (faux permis de conduire, faux timbres fiscaux…)",
+      "file": "numerique_cyber/arnaques_en_ligne/faux_site_gouvernemental.md",
+      "level": "situation",
+      "domaine": "numerique_cyber"
+    },
+    {
+      "title": "Hameçonnage (phishing) : j'ai reçu un faux email/SMS imitant un organisme officiel",
+      "file": "numerique_cyber/arnaques_en_ligne/phishing.md",
+      "level": "situation",
+      "domaine": "numerique_cyber"
+    },
+    {
+      "title": "Un abonnement a été activé suite à une interface conçue pour tromper (case précochée, bouton déguisé, défilement trompeur)",
+      "file": "numerique_cyber/dark_patterns/dark_pattern_abonnement.md",
+      "level": "situation",
+      "domaine": "numerique_cyber"
+    },
+    {
+      "title": "Impossible de refuser les cookies aussi facilement qu'on peut les accepter",
+      "file": "numerique_cyber/dark_patterns/dark_pattern_cookies.md",
+      "level": "situation",
+      "domaine": "numerique_cyber"
+    },
+    {
+      "title": "La résiliation d'un service en ligne est délibérément complexifiée (procédure introuvable, obstacles artificiels)",
+      "file": "numerique_cyber/dark_patterns/dark_pattern_resiliation.md",
+      "level": "situation",
+      "domaine": "numerique_cyber"
+    },
+    {
+      "title": "Mes données personnelles ont été transmises ou vendues à des tiers sans mon consentement à des fins commerciales",
+      "file": "numerique_cyber/donnees_personnelles_commerce/donnees_vendues_tiers.md",
+      "level": "situation",
+      "domaine": "numerique_cyber"
+    },
+    {
+      "title": "Un site refuse d'exercer mon droit d'accès, de rectification ou de suppression de mes données",
+      "file": "numerique_cyber/donnees_personnelles_commerce/droit_acces_refuse.md",
+      "level": "situation",
+      "domaine": "numerique_cyber"
+    },
+    {
+      "title": "Un partenariat commercial n'est pas déclaré dans une publication ou vidéo",
+      "file": "numerique_cyber/influenceurs/partenariat_non_declare.md",
+      "level": "situation",
+      "domaine": "numerique_cyber"
+    },
+    {
+      "title": "Un influenceur promeut un produit de santé, de chirurgie esthétique ou financier de façon trompeuse",
+      "file": "numerique_cyber/influenceurs/promo_produit_sante_influenceur.md",
+      "level": "situation",
+      "domaine": "numerique_cyber"
+    },
+    {
+      "title": "Les résultats ou avis sur une plateforme semblent manipulés ou favorisent des partenaires payants sans information",
+      "file": "numerique_cyber/plateformes_marketplaces/plateforme_classement_opaque.md",
+      "level": "situation",
+      "domaine": "numerique_cyber"
+    },
+    {
+      "title": "Un vendeur tiers sur une marketplace (Amazon, Cdiscount, Leboncoin…) ne livre pas ou vend un produit défectueux",
+      "file": "numerique_cyber/plateformes_marketplaces/vendeur_marketplace_defaillant.md",
+      "level": "situation",
+      "domaine": "numerique_cyber"
+    },
+    {
+      "title": "Abus de faiblesse ou de vulnérabilité (personne âgée, état de détresse…)",
+      "file": "pratiques_commerciales/demarchage/abus_faiblesse.md",
+      "level": "situation",
+      "domaine": "pratiques_commerciales"
+    },
+    {
+      "title": "Vente à domicile avec pression ou sans remise du bon de rétractation",
+      "file": "pratiques_commerciales/demarchage/demarchage_domicile.md",
+      "level": "situation",
+      "domaine": "pratiques_commerciales"
+    },
+    {
+      "title": "Démarchage téléphonique non sollicité (hors exceptions légales)",
+      "file": "pratiques_commerciales/demarchage/demarchage_telephonique.md",
+      "level": "situation",
+      "domaine": "pratiques_commerciales"
+    },
+    {
+      "title": "Des avis clients semblent faux ou achetés",
+      "file": "pratiques_commerciales/faux_avis/faux_avis_client.md",
+      "level": "situation",
+      "domaine": "pratiques_commerciales"
+    },
+    {
+      "title": "Un professionnel fait supprimer des avis négatifs légitimes",
+      "file": "pratiques_commerciales/faux_avis/suppression_avis_negatifs.md",
+      "level": "situation",
+      "domaine": "pratiques_commerciales"
+    },
+    {
+      "title": "Les caractéristiques du produit/service annoncées ne correspondent pas à la réalité",
+      "file": "pratiques_commerciales/publicite_trompeuse/pub_caracteristiques_fausses.md",
+      "level": "situation",
+      "domaine": "pratiques_commerciales"
+    },
+    {
+      "title": "Allégations environnementales mensongères (greenwashing, faux écolabel)",
+      "file": "pratiques_commerciales/publicite_trompeuse/pub_greenwashing.md",
+      "level": "situation",
+      "domaine": "pratiques_commerciales"
+    },
+    {
+      "title": "Contenu sponsorisé d'un influenceur non identifié comme publicité",
+      "file": "pratiques_commerciales/publicite_trompeuse/pub_influenceur_dissimule.md",
+      "level": "situation",
+      "domaine": "pratiques_commerciales"
+    },
+    {
+      "title": "Le prix réel est supérieur au prix annoncé (frais cachés, conditions non affichées)",
+      "file": "pratiques_commerciales/publicite_trompeuse/pub_prix_mensonger.md",
+      "level": "situation",
+      "domaine": "pratiques_commerciales"
+    },
+    {
+      "title": "Le prix barré (prix de référence) n'a jamais été pratiqué ou est fictif",
+      "file": "pratiques_commerciales/soldes_promotions/prix_reference_fictif.md",
+      "level": "situation",
+      "domaine": "pratiques_commerciales"
+    },
+    {
+      "title": "Soldes pratiqués en dehors des périodes légales sans autorisation",
+      "file": "pratiques_commerciales/soldes_promotions/soldes_irreguliers.md",
+      "level": "situation",
+      "domaine": "pratiques_commerciales"
+    },
+    {
+      "title": "Souscription à un abonnement sans consentement explicite (case précochée, option par défaut)",
+      "file": "pratiques_commerciales/ventes_abusives/abonnement_cache.md",
+      "level": "situation",
+      "domaine": "pratiques_commerciales"
+    },
+    {
+      "title": "Renouvellement automatique d'un contrat sans information préalable",
+      "file": "pratiques_commerciales/ventes_abusives/renouvellement_tacite_sans_preavis.md",
+      "level": "situation",
+      "domaine": "pratiques_commerciales"
+    },
+    {
+      "title": "Obligation d'acheter un produit pour en obtenir un autre (vente liée illégale)",
+      "file": "pratiques_commerciales/ventes_abusives/vente_liee.md",
+      "level": "situation",
+      "domaine": "pratiques_commerciales"
+    },
+    {
+      "title": "Des frais (livraison, service) apparaissent seulement au moment du paiement",
+      "file": "prix_etiquetage/affichage_prix/frais_caches_commande.md",
+      "level": "situation",
+      "domaine": "prix_etiquetage"
+    },
+    {
+      "title": "Les prix ne sont pas affichés en magasin ou sur le site",
+      "file": "prix_etiquetage/affichage_prix/prix_non_affiche.md",
+      "level": "situation",
+      "domaine": "prix_etiquetage"
+    },
+    {
+      "title": "Le prix TTC n'est pas clairement indiqué (uniquement HT sans mention)",
+      "file": "prix_etiquetage/affichage_prix/prix_ttc_non_mentionne.md",
+      "level": "situation",
+      "domaine": "prix_etiquetage"
+    },
+    {
+      "title": "Double étiquetage (nouveau prix sur ancien, l'original reste lisible et est différent)",
+      "file": "prix_etiquetage/etiquetage_produits/etiquette_double.md",
+      "level": "situation",
+      "domaine": "prix_etiquetage"
+    },
+    {
+      "title": "L'origine du produit indiquée est fausse ou trompeuse",
+      "file": "prix_etiquetage/etiquetage_produits/etiquette_mensongere_origine.md",
+      "level": "situation",
+      "domaine": "prix_etiquetage"
+    },
+    {
+      "title": "La composition textile indiquée sur l'étiquette est fausse (ex. : « 100% coton » alors que c'est du polyester)",
+      "file": "prix_etiquetage/etiquetage_textile_cuir/composition_textile_fausse.md",
+      "level": "situation",
+      "domaine": "prix_etiquetage"
+    },
+    {
+      "title": "Produit vendu comme « cuir » alors qu'il s'agit de simili-cuir ou matière synthétique",
+      "file": "prix_etiquetage/etiquetage_textile_cuir/faux_cuir.md",
+      "level": "situation",
+      "domaine": "prix_etiquetage"
+    },
+    {
+      "title": "Résiliation abusive d'un contrat d'assurance",
+      "file": "secteurs_reglementes/assurance/resiliation_assurance_abusive.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Indemnisation suite à un sinistre refusée ou sous-évaluée",
+      "file": "secteurs_reglementes/assurance/sinistre_rembourse_insuffisamment.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Compteur kilométrique manifestement truqué sur un véhicule d'occasion",
+      "file": "secteurs_reglementes/automobile/compteur_kilometre_truque.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Garage : facturation de réparations non effectuées ou devis non respecté",
+      "file": "secteurs_reglementes/automobile/garage_surfacturation.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Voiture d'occasion vendue avec des défauts cachés",
+      "file": "secteurs_reglementes/automobile/voiture_occasion_vices.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Matériaux de construction vendus sans les certifications obligatoires ou avec des caractéristiques trompeuses",
+      "file": "secteurs_reglementes/bricolage_btp/materiau_construction_non_conforme.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Outil de bricolage ou de jardin dangereux (débroussailleuse, tronçonneuse, perceuse sans protections)",
+      "file": "secteurs_reglementes/bricolage_btp/outillage_dangereux.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Refus illégal de substitution d'assurance emprunteur",
+      "file": "secteurs_reglementes/credit/assurance_emprunteur_refus.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Crédit renouvelable proposé de façon agressive ou sans vérification de solvabilité",
+      "file": "secteurs_reglementes/credit/credit_revolving_abusif.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Taux d'intérêt ou TAEG (Taux Annuel Effectif Global) erroné ou non communiqué",
+      "file": "secteurs_reglementes/credit/teg_errone.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Démarchage abusif d'un fournisseur d'énergie (pression, faux EDF, changement non voulu de fournisseur)",
+      "file": "secteurs_reglementes/energie/demarchage_energie_abusif.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Facture d'énergie anormalement élevée ou inexpliquée",
+      "file": "secteurs_reglementes/energie/facture_energie_anormale.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Résiliation du contrat d'énergie bloquée ou frais abusifs",
+      "file": "secteurs_reglementes/energie/resiliation_energie_bloquee.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Diplôme ou certification bidon vendu à prix élevé",
+      "file": "secteurs_reglementes/formation_professionnelle/diplome_bidon.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Organisme de formation qui perçoit des fonds CPF sans dispenser la formation correctement",
+      "file": "secteurs_reglementes/formation_professionnelle/organisme_formation_frauduleux.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Honoraires d'agence immobilière non affichés, abusifs ou non conformes à la loi Alur",
+      "file": "secteurs_reglementes/immobilier/agence_honoraires_abusifs.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Diagnostic immobilier (DPE, amiante…) erroné ou frauduleux",
+      "file": "secteurs_reglementes/immobilier/diagnostic_errone.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Logement loué non conforme (DPE mensonger, surfaces fausses, caractéristiques non conformes)",
+      "file": "secteurs_reglementes/immobilier/location_logement_non_conforme.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Produit cosmétique provoquant des effets indésirables graves ou non conforme",
+      "file": "secteurs_reglementes/sante_beaute/cosmetique_non_conforme.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Praticien de médecine alternative facturant des soins inefficaces présentés comme curatifs",
+      "file": "secteurs_reglementes/sante_beaute/medecine_douce_arnaque.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Contrat de salle de sport avec clauses abusives (engagement, résiliation impossible, prélèvements après résiliation)",
+      "file": "secteurs_reglementes/sport_loisirs/salle_sport_contrat_abusif.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Problème d'hygiène ou de sécurité dans une salle de sport (équipements défectueux, propreté)",
+      "file": "secteurs_reglementes/sport_loisirs/salle_sport_hygiene.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "L'opérateur téléphonique rend la résiliation difficile ou facture des pénalités abusives",
+      "file": "secteurs_reglementes/telephonie_internet/operateur_resiliation_difficile.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Le service fourni ne correspond pas à l'offre souscrite (débit insuffisant, couverture réseau)",
+      "file": "secteurs_reglementes/telephonie_internet/service_non_conforme_offre.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Surcharges incompréhensibles sur la facture téléphonique",
+      "file": "secteurs_reglementes/telephonie_internet/surcharge_facture_telecom.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "L'agence de voyages a fait faillite ou n'exécute pas le contrat",
+      "file": "secteurs_reglementes/voyages_tourisme/agence_voyage_defaillante.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Le séjour ou le voyage à forfait ne correspond pas à ce qui était décrit",
+      "file": "secteurs_reglementes/voyages_tourisme/sejour_non_conforme.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Vol annulé et la compagnie refuse le remboursement ou l'indemnisation (règlement CE 261/2004)",
+      "file": "secteurs_reglementes/voyages_tourisme/vol_annule_remboursement_refuse.md",
+      "level": "situation",
+      "domaine": "secteurs_reglementes"
+    },
+    {
+      "title": "Produit cosmétique provoquant une réaction allergique ou contenant des substances interdites",
+      "file": "securite_produits/cosmetiques_tatouage/cosmetique_dangereux.md",
+      "level": "situation",
+      "domaine": "securite_produits"
+    },
+    {
+      "title": "Salon de tatouage ou produits de tatouage/maquillage permanent non conformes",
+      "file": "securite_produits/cosmetiques_tatouage/tatouage_non_conforme.md",
+      "level": "situation",
+      "domaine": "securite_produits"
+    },
+    {
+      "title": "Équipement de protection individuelle (casque, lunettes, gants) non conforme ou sans marquage CE",
+      "file": "securite_produits/equipements_protection/epi_non_conforme.md",
+      "level": "situation",
+      "domaine": "securite_produits"
+    },
+    {
+      "title": "Équipement sportif dangereux (vélo, trottinette, équipement équestre, nautique)",
+      "file": "securite_produits/equipements_protection/equipement_sport_dangereux.md",
+      "level": "situation",
+      "domaine": "securite_produits"
+    },
+    {
+      "title": "Emballage, ustensile ou contenant alimentaire libérant des substances nocives (migration, bisphénol, plomb)",
+      "file": "securite_produits/materiaux_contact_alimentaire/materiau_contact_non_conforme.md",
+      "level": "situation",
+      "domaine": "securite_produits"
+    },
+    {
+      "title": "Ustensile de cuisine (poêle, casserole, spatule) avec revêtement dégradé ou matériau non conforme",
+      "file": "securite_produits/materiaux_contact_alimentaire/ustensile_cuisine_dangereux.md",
+      "level": "situation",
+      "domaine": "securite_produits"
+    },
+    {
+      "title": "Jouet dangereux (pièces détachables pour enfants en bas âge, absence de marquage CE, matériaux toxiques)",
+      "file": "securite_produits/produit_dangereux/jouet_dangereux.md",
+      "level": "situation",
+      "domaine": "securite_produits"
+    },
+    {
+      "title": "Un produit vendu en France ne porte pas le marquage CE obligatoire",
+      "file": "securite_produits/produit_dangereux/marquage_ce_absent.md",
+      "level": "situation",
+      "domaine": "securite_produits"
+    },
+    {
+      "title": "Produit chimique (détergent, biocide) sans étiquetage de danger ou non conforme",
+      "file": "securite_produits/produit_dangereux/produit_chimique_dangereux.md",
+      "level": "situation",
+      "domaine": "securite_produits"
+    },
+    {
+      "title": "Appareil électrique provoquant des chocs, surchauffe ou incendie",
+      "file": "securite_produits/produit_dangereux/produit_electrique_dangereux.md",
+      "level": "situation",
+      "domaine": "securite_produits"
+    },
+    {
+      "title": "Je pense avoir acheté un produit faisant l'objet d'un rappel",
+      "file": "securite_produits/produit_dangereux/produit_sous_rappel.md",
+      "level": "situation",
+      "domaine": "securite_produits"
+    },
+    {
+      "title": "Jouet contenant des petites pièces détachables dangereuses pour enfants de moins de 3 ans",
+      "file": "securite_produits/securite_enfants_puericulture/jouet_petites_pieces.md",
+      "level": "situation",
+      "domaine": "securite_produits"
+    },
+    {
+      "title": "Article de puériculture non conforme (lit, poussette, chaise haute, porte-bébé)",
+      "file": "securite_produits/securite_enfants_puericulture/puericulture_non_conforme.md",
+      "level": "situation",
+      "domaine": "securite_produits"
+    },
+    {
+      "title": "Aire de jeux collective avec équipements dangereux ou mal entretenus",
+      "file": "securite_produits/securite_piscines_loisirs/aire_jeux_dangereuse.md",
+      "level": "situation",
+      "domaine": "securite_produits"
+    },
+    {
+      "title": "Piscine privée sans dispositif de sécurité obligatoire (barrière, alarme, couverture, abri)",
+      "file": "securite_produits/securite_piscines_loisirs/piscine_non_securisee.md",
+      "level": "situation",
+      "domaine": "securite_produits"
+    },
+    {
+      "title": "Litige avec un professionnel basé hors UE",
+      "file": "transversales/litige_hors_ue.md",
+      "level": "situation",
+      "domaine": ""
+    },
+    {
+      "title": "Litige avec un professionnel basé dans un autre pays de l'UE",
+      "file": "transversales/litige_ue.md",
+      "level": "situation",
+      "domaine": ""
+    },
+    {
+      "title": "Danger immédiat pour la santé ou la sécurité",
+      "file": "transversales/urgence_securite.md",
+      "level": "situation",
+      "domaine": ""
+    }
+  ]
+}

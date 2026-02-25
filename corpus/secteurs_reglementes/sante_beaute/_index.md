@@ -1,74 +1,84 @@
 ---
 domaine: secteurs_reglementes
-generated_at: '2026-02-25T02:40:26.341025'
+generated_at: '2026-02-25T11:41:47.647262'
 level: sous_domaine
 model: openweight-medium
 sources_count: 20
 taxonomy_id: sante_beaute
 title: Santé et produits de beauté
-tokens: 7122
+tokens: 7331
 ---
 
 # Santé et produits de beauté : vos droits et recours
 
 ## En bref
-Les produits de santé et de beauté sont encadrés par des réglementations strictes pour garantir votre sécurité. Que ce soit pour des cosmétiques provoquant des effets indésirables ou des pratiques de médecine alternative douteuses, vous avez des droits et des recours. Découvrez comment agir en cas de problème.
+Les produits de santé et de beauté sont strictement réglementés pour garantir votre sécurité. Que ce soit pour des produits cosmétiques, des soins de médecine alternative ou des interventions de chirurgie esthétique, vous avez des droits. Découvrez comment agir en cas de problème et à qui vous adresser.
 
 ## De quoi s'agit-il ?
-Cette fiche couvre deux aspects principaux :
-1. **Les produits cosmétiques** : crèmes, huiles, poudres, etc., destinés à nettoyer, parfumer ou protéger le corps.
-2. **Les pratiques de médecine alternative** : soins présentés comme curatifs mais non reconnus par la médecine conventionnelle.
+Ce sous-domaine couvre les litiges liés aux produits cosmétiques, aux pratiques de médecine alternative, aux dépassements d'honoraires médicaux et aux interventions de chirurgie esthétique. Il ne couvre pas les litiges liés aux médicaments ou aux dispositifs médicaux, qui relèvent d'autres réglementations.
 
-### Ce qui est couvert
-- Les produits cosmétiques non conformes ou dangereux.
-- Les pratiques de médecine alternative facturant des soins inefficaces.
+### Produits cosmétiques
+Les produits cosmétiques incluent les crèmes, huiles, poudres et autres produits destinés à nettoyer, parfumer ou protéger le corps. Ils doivent respecter des normes strictes de sécurité et d'information.
 
-### Ce qui n'est pas couvert
-- Les médicaments et dispositifs médicaux (sauf mention explicite).
-- Les produits alimentaires ou de bien-être non classés comme cosmétiques.
+### Médecine alternative
+Les pratiques de médecine alternative incluent des soins comme l'acupuncture, l'homéopathie ou la naturopathie. Ces pratiques ne doivent pas être présentées comme des alternatives aux soins médicaux conventionnels.
+
+### Dépassements d'honoraires médicaux
+Les dépassements d'honoraires concernent les frais supplémentaires facturés par les médecins, notamment dans le secteur privé. Ces dépassements doivent être clairement annoncés avant la consultation.
+
+### Chirurgie esthétique
+La chirurgie esthétique inclut les interventions comme la rhinoplastie, les peelings ou les injections à visée anti-âge. Ces interventions doivent être réalisées avec votre consentement éclairé et respecter des délais de réflexion.
 
 ## Quels sont vos droits ?
-### Pour les produits cosmétiques
-- **Sécurité** : Les produits doivent être sûrs pour la santé humaine dans des conditions normales d’utilisation.
-- **Information** : Les étiquetages doivent être clairs et complets, incluant la liste des ingrédients (INCI).
-- **Allégations** : Les mentions comme "bio" ou "naturel" doivent être justifiées et conformes à la réglementation.
 
-### Pour les pratiques de médecine alternative
-- **Transparence** : Les praticiens doivent clairement indiquer que leurs prestations ne sont pas des soins médicaux.
-- **Interdiction des allégations thérapeutiques** : Il est interdit de prétendre guérir des maladies ou de remplacer un traitement médical conventionnel.
+### Produits cosmétiques
+Les produits cosmétiques doivent être sûrs et correctement étiquetés. Les allégations sur les produits doivent être vérifiables et ne pas être trompeuses. Par exemple, les allégations comme "sans corticostéroïdes" ou "non testé sur les animaux" sont interdites si elles ne sont pas justifiées.
+
+### Médecine alternative
+Les praticiens de médecine alternative doivent être qualifiés et ne pas faire de fausses allégations sur les effets de leurs soins. Ils ne doivent pas présenter leurs pratiques comme des alternatives aux soins médicaux conventionnels.
+
+### Dépassements d'honoraires médicaux
+Les dépassements d'honoraires doivent être clairement annoncés avant la consultation. Les médecins doivent remettre un devis préalable pour les actes supérieurs à un certain seuil. Les dépassements excessifs ou non annoncés sont interdits.
+
+### Chirurgie esthétique
+Les interventions de chirurgie esthétique doivent être réalisées avec votre consentement éclairé. Vous avez droit à un délai de réflexion de 15 jours avant l'intervention. Les praticiens doivent respecter les obligations d'information précontractuelle.
 
 ## Les situations les plus fréquentes
 
 ### **Produit cosmétique provoquant des effets indésirables graves ou non conforme**
-Un produit cosmétique peut provoquer des réactions allergiques, des irritations, ou ne pas respecter les normes de sécurité. Dans ce cas, vous avez le droit de signaler le problème et de demander un remboursement ou un remplacement.
-
-[Lire la fiche](cosmetique_non_conforme.md)
+Un produit cosmétique peut provoquer des effets indésirables graves ou ne pas être conforme aux normes de sécurité. [Lire la fiche](cosmetique_non_conforme.md)
 
 ### **Praticien de médecine alternative facturant des soins inefficaces présentés comme curatifs**
-Certains praticiens de médecine alternative peuvent facturer des soins inefficaces en prétendant qu'ils sont curatifs. Ces pratiques sont illégales et peuvent être dangereuses pour votre santé.
+Un praticien de médecine alternative peut facturer des soins inefficaces présentés comme curatifs. [Lire la fiche](medecine_douce_arnaque.md)
 
-[Lire la fiche](medecine_douce_arnaque.md)
+### **Dépassements d'honoraires médicaux excessifs ou non annoncés**
+Un médecin peut facturer des dépassements d'honoraires excessifs ou non annoncés avant la consultation. [Lire la fiche](depassement_honoraires_sante.md)
+
+### **Chirurgie esthétique : résultat non conforme, complication, absence de consentement éclairé**
+Une intervention de chirurgie esthétique peut avoir un résultat non conforme, entraîner des complications ou être réalisée sans votre consentement éclairé. [Lire la fiche](chirurgie_esthetique_litige.md)
 
 ## Que faire concrètement ?
-### Pour les produits cosmétiques
-1. **Conservez le produit** : Gardez l’emballage et la notice pour preuve.
-2. **Signalez le problème** : Utilisez le [signalement ANSM](https://ansm.sante.fr) ou [SignalConso](https://signal.conso.gouv.fr).
-3. **Contactez le vendeur** : Demandez un remboursement ou un remplacement.
-4. **Consultez un professionnel de santé** : Si les effets indésirables sont graves, consultez un médecin.
 
-### Pour les pratiques de médecine alternative
-1. **Recueillez les preuves** : Conservez les factures, les publicités et les échanges avec le praticien.
-2. **Signalez le problème** : Utilisez [SignalConso](https://signal.conso.gouv.fr).
-3. **Consultez un professionnel de santé** : Si vous avez suivi un traitement inefficace, consultez un médecin pour évaluer les risques.
-4. **Engagez des actions légales** : Si nécessaire, contactez un avocat pour engager des poursuites.
+1. **Signaler le problème** : Utilisez le [signalement ANSM](https://ansm.sante.fr) pour les problèmes liés aux produits de santé.
+2. **Consulter les fiches d'information** : Consultez la [fiche d'information consommateur](https://www.economie.gouv.fr/dgccrf/consommation) pour plus de détails.
+3. **Engager un recours judiciaire** : Si nécessaire, engagez un recours judiciaire via [service-public.fr](https://www.service-public.fr/particuliers/vosdroits/N19-6).
+4. **Recourir à la médiation** : Utilisez la [médiation de la consommation](https://www.economie.gouv.fr/mediation-conso) pour résoudre les litiges.
+5. **Utiliser SignalConso** : Signalez votre problème via [SignalConso](https://signal.conso.gouv.fr).
 
 ## Où signaler / à qui s'adresser ?
+
 - **Signalement ANSM** : [https://ansm.sante.fr](https://ansm.sante.fr)
+- **Fiche d'information consommateur** : [https://www.economie.gouv.fr/dgccrf/consommation](https://www.economie.gouv.fr/dgccrf/consommation)
+- **Recours judiciaire** : [https://www.service-public.fr/particuliers/vosdroits/N19-6](https://www.service-public.fr/particuliers/vosdroits/N19-6)
+- **Médiation de la consommation** : [https://www.economie.gouv.fr/mediation-conso](https://www.economie.gouv.fr/mediation-conso)
+- **Fiche service-public.fr** : [https://www.service-public.fr](https://www.service-public.fr)
 - **Signalement SignalConso** : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)
 
 ## Pour aller plus loin
-- [Règlement (CE) n°1223/2009 relatif aux produits cosmétiques](https://www.legifrance.gouv.fr/)
-- [Code de la consommation, articles L. 121-2 et L. 121-3](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032220953/#LEGISCTA000032227299)
-- [Fiche pratique L’étiquetage dans vos produits cosmétiques](https://www.economie.gouv.fr/dgccrf/Publications/Vie-pratique/Fiches-pratiques/letiquetage-de-vos-produits-cosmetiques)
-- [Fiche pratique Allégations « sans » dans les produits cosmétiques : précisions des autorités de contrôle](https://www.economie.gouv.fr/dgccrf/allegations-sans-dans-les-produits-cosmetiques-precisions-des-autorites-de-controle)
-- [Guide "Je lance mon entreprise de cosmétiques"](https://www.economie.gouv.fr/files/files/directions_services/dgccrf/documentation/publications/depliants/je-lance-mon-entreprise-de-cosmetiques.pdf?v=1721892870)
+
+- [Contrôle des produits cosmétiques](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes/controle-des-produits-cosmetiques)
+- [« Médecines » douces ou alternatives : des insuffisances dans le respect de la règlementation](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes/medecines-douces-ou-alternatives-des-insuffisances-dans-le)
+- [Allégations "sans" dans les produits cosmétiques : précisions des autorités de contrôle](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/allegations-sans-dans-les-produits-cosmetiques-precisions-des-autorites-de-controle)
+- [Chirurgie esthétique : contrôle de l’information délivrée aux patients](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes/chirurgie-esthetique-controle-de-linformation-delivree-aux)
+- [Les produits cosmétiques](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/les-produits-cosmetiques)
+- [Composition des cosmétiques : l’exigence d’une information claire des consommateurs](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes-et-les-controles/composition-des-cosmetiques-lexigence-dune-information-claire-des-consommateurs)

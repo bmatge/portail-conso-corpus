@@ -1,43 +1,47 @@
 ---
 domaine: securite_produits
-generated_at: '2026-02-25T02:43:01.532519'
+generated_at: '2026-02-25T11:45:44.626594'
 level: sous_domaine
 model: openweight-medium
 sources_count: 20
 taxonomy_id: materiaux_contact_alimentaire
 title: Matériaux au contact des denrées alimentaires
-tokens: 6158
+tokens: 6169
 ---
 
-# Matériaux au contact des aliments : vos droits et recours
+# Matériaux au contact des denrées alimentaires : vos droits et recours
 
 ## En bref
-Les matériaux au contact des aliments doivent être conformes à la réglementation pour garantir votre sécurité. Ils incluent les emballages, ustensiles de cuisine, vaisselle et équipements ménagers. Vérifiez toujours la présence du logo d’alimentarité (verre et fourchette) pour vous assurer de leur conformité.
+Les matériaux au contact des denrées alimentaires doivent être conformes à des normes strictes pour garantir votre sécurité. Que ce soit pour des emballages, des ustensiles de cuisine ou des contenants, ces produits doivent respecter des règles précises pour éviter tout risque de migration de substances nocives dans les aliments. Vous avez le droit d'utiliser des produits sûrs et de signaler tout problème.
 
 ## De quoi s'agit-il ?
-Les matériaux au contact des denrées alimentaires sont tous les objets destinés à entrer en contact avec des aliments, que ce soit pour leur conditionnement, leur transport, leur stockage, leur cuisson ou leur consommation directe. Cela inclut les emballages, ustensiles de cuisine, articles de table, et équipements ménagers comme les boules à thé, injecteurs de sauce, grilles de barbecue, et passoires.
+Les matériaux au contact des denrées alimentaires incluent tous les produits utilisés pour le conditionnement, le transport, le stockage, la cuisson des aliments, ou pour fabriquer des ustensiles de cuisine, des articles de table et des équipements ménagers. Cela comprend les emballages, les poêles, les casseroles, les spatules, les boules à thé, les injecteurs de sauce, les grilles de barbecues, les passoires, et bien d'autres.
 
-Ces matériaux doivent respecter des normes strictes pour éviter la migration de substances nocives vers les aliments. Ils sont contrôlés pour leur aptitude au contact alimentaire, leur traçabilité, et la présence d’informations nécessaires à leur bonne utilisation.
+Ces matériaux doivent être conformes à la réglementation pour éviter la migration de substances chimiques nocives vers les aliments. Ils doivent également être traçables et comporter les informations nécessaires à leur bonne utilisation, comme le pictogramme d’alimentarité (un verre et une fourchette).
 
 ## Quels sont vos droits ?
-Vous avez le droit d’utiliser des matériaux conformes à la réglementation en vigueur. Les professionnels doivent s’assurer que les matériaux qu’ils mettent sur le marché respectent les limites spécifiques de migration de substances chimiques, sont traçables, et portent les informations nécessaires à leur bonne utilisation.
+Vous avez le droit d'utiliser des matériaux et objets conçus pour entrer en contact avec les denrées alimentaires et conformes à la réglementation. Ces matériaux doivent être inertes, c'est-à-dire qu'ils ne doivent pas entraîner :
 
-Les matériaux doivent être inertes, c’est-à-dire qu’ils ne doivent pas entraîner un danger pour la santé humaine, une modification inacceptable de la composition des denrées, ou une altération des caractères organoleptiques (goût, texture, odeur, aspect) des aliments.
+- Un danger pour la santé humaine
+- Une modification inacceptable de la composition des denrées
+- Une altération des caractères organoleptiques (goût, texture, odeur, aspect) des aliments
+
+Les matériaux doivent être utilisés dans les conditions prévues dans la déclaration de conformité ou, en son absence, selon les instructions d’usage figurant sur l’étiquetage. Par exemple, un matériau peut être conforme pour un usage à froid mais pas pour un usage à chaud.
 
 ## Les situations les plus fréquentes
 
 - **Emballage, ustensile ou contenant alimentaire libérant des substances nocives (migration, bisphénol, plomb)**
-  - Description : Certains emballages ou ustensiles peuvent libérer des substances nocives dans les aliments, comme le bisphénol A ou le plomb.
+  - Description : Certains emballages, ustensiles ou contenants peuvent libérer des substances nocives dans les aliments, notamment à cause de la chaleur ou du temps de contact.
   - Lire la fiche [materiau_contact_non_conforme.md](materiau_contact_non_conforme.md)
 
 - **Ustensile de cuisine (poêle, casserole, spatule) avec revêtement dégradé ou matériau non conforme**
-  - Description : Les ustensiles de cuisine avec un revêtement dégradé ou non conforme peuvent libérer des substances dangereuses dans les aliments.
+  - Description : Les ustensiles de cuisine avec un revêtement dégradé ou un matériau non conforme peuvent libérer des substances dangereuses dans les aliments.
   - Lire la fiche [ustensile_cuisine_dangereux.md](ustensile_cuisine_dangereux.md)
 
 ## Que faire concrètement ?
-1. **Vérifiez le logo d’alimentarité** : Assurez-vous que les matériaux portent le logo d’alimentarité (verre et fourchette), qui prouve leur aptitude au contact avec les denrées alimentaires.
-2. **Lisez les instructions d’usage** : Utilisez les matériaux selon les instructions figurant sur l’étiquetage ou dans la déclaration de conformité.
-3. **Signalez les non-conformités** : Si vous constatez un problème, signalez-le via [SignalConso](https://signal.conso.gouv.fr).
+1. **Vérifiez le pictogramme d’alimentarité** : Assurez-vous que le produit comporte le logo d’alimentarité (un verre et une fourchette) qui prouve son aptitude au contact avec les denrées alimentaires.
+2. **Lisez l’étiquetage** : Vérifiez les instructions d’usage et les conditions de mise en contact avec les denrées alimentaires.
+3. **Signalez les produits non conformes** : Si vous constatez un problème, signalez-le via [SignalConso](https://signal.conso.gouv.fr).
 4. **Consultez RappelConso** : Pour vérifier si un produit a fait l’objet d’un rappel, consultez [RappelConso](https://rappel.conso.gouv.fr).
 
 ## Où signaler / à qui s'adresser ?
@@ -47,7 +51,6 @@ Les matériaux doivent être inertes, c’est-à-dire qu’ils ne doivent pas en
 ## Pour aller plus loin
 - [Règlement (UE) n°10/2011](http://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02004R0852-20090420&qid=1405604990954&from=FR)
 - [Règlement (CE) n°852/2004](http://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02004R0852-20090420&qid=1405604990954&from=FR)
-- [Fiche pratique - Matériaux au contact des denrées alimentaires : la réglementation pour les professionnels](https://www.economie.gouv.fr/dgccrf/Materiaux-au-contact-des-denrees-alimentaires)
-- [Fiche pratique - Les règles à respecter pour les emballages, ustensiles et contenants alimentaires](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/les-regles-respecter-pour-les-emballages-ustensiles-et-contenants-alimentaires)
-- [Fiche pratique - Prenez garde aux matériaux mis au contact des aliments](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/prenez-garde-aux-materiaux-mis-au-contact-des-aliments)
-- [Enquête - Soyez vigilants en cas d'utilisation de matériaux au contact des aliments](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes/soyez-vigilants-en-cas-dutilisation-de-materiaux-au)
+- [Fiche générale relative à la réglementation des matériaux au contact des denrées alimentaires](/dgccrf/Fiche-generale-relative-a-la-reglementation-des-ma)
+- [Les règles à respecter pour les emballages, ustensiles et contenants alimentaires](/dgccrf/les-fiches-pratiques/les-regles-respecter-pour-les-emballages-ustensiles-et-contenants-alimentaires)
+- [Soyez vigilants en cas d'utilisation de matériaux au contact des aliments](/dgccrf/laction-de-la-dgccrf/les-enquetes-et-les-controles/soyez-vigilants-en-cas-dutilisation-de-materiaux-au-contact-des-aliments)

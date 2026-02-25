@@ -1,47 +1,66 @@
 ---
 domaine: securite_produits
-generated_at: '2026-02-25T02:42:21.493643'
+generated_at: '2026-02-25T11:45:02.734325'
 level: sous_domaine
 model: openweight-medium
 sources_count: 20
 taxonomy_id: equipements_protection
 title: Équipements de protection individuelle et sportive
-tokens: 6043
+tokens: 6149
 ---
 
 # Équipements de protection individuelle et sportive : vos droits et recours
 
 ## En bref
-Les équipements de protection individuelle (EPI) et sportive sont conçus pour vous protéger contre divers risques. Ils doivent respecter des normes strictes et porter le marquage CE. Si un équipement est non conforme ou dangereux, vous avez des recours pour faire valoir vos droits.
+Les équipements de protection individuelle (EPI) et sportive sont conçus pour vous protéger contre divers risques. Ils doivent respecter des normes strictes et porter le marquage CE. Si un équipement est non conforme ou dangereux, vous avez des recours pour signaler le problème et obtenir réparation.
 
 ## De quoi s'agit-il ?
-Les équipements de protection individuelle (EPI) sont des dispositifs destinés à être portés ou tenus pour protéger une personne contre un ou plusieurs risques menaçant sa santé ou sa sécurité. Cela inclut les casques, gants, lunettes, combinaisons, et autres protections. Les équipements sportifs, quant à eux, sont conçus pour des activités spécifiques comme le vélo, la trottinette, l'équitation, ou les sports nautiques.
+Les équipements de protection individuelle (EPI) sont des dispositifs destinés à être portés ou tenus pour protéger une personne contre un ou plusieurs risques menaçant sa santé ou sa sécurité. Ils incluent des casques, des gants, des lunettes, des combinaisons, des chaussures, des protections auditives, etc.
 
-Les EPI doivent obligatoirement porter le marquage CE et être accompagnés d'une déclaration UE de conformité. Ils doivent également indiquer leur date de fabrication ou de péremption, surtout pour les équipements sujets à vieillissement comme les casques.
+Les équipements sportifs, quant à eux, sont des produits utilisés pour pratiquer des activités sportives. Ils doivent également respecter des normes de sécurité pour éviter les accidents.
+
+**Ce qui est couvert** :
+- Casques, gants, lunettes, et autres équipements de protection individuelle
+- Équipements sportifs tels que vélos, trottinettes, équipements équestres, nautiques, etc.
+
+**Ce qui n'est pas couvert** :
+- Les équipements non destinés à la protection ou à la pratique sportive
+- Les jouets et accessoires non réglementés
 
 ## Quels sont vos droits ?
-En tant que consommateur, vous avez le droit d'acheter des équipements de protection individuelle et sportive conformes aux normes en vigueur. Les professionnels doivent vous fournir des produits sûrs, correctement marqués et accompagnés des notices d'utilisation nécessaires.
+Les EPI et équipements sportifs doivent être conformes aux normes en vigueur et porter le marquage CE. Voici vos droits principaux :
 
-Si un équipement est non conforme ou dangereux, vous pouvez exiger son retrait du marché ou son remplacement. Les professionnels doivent prendre des mesures correctives pour assurer votre sécurité.
+1. **Conformité** : Les équipements doivent respecter les normes de sécurité et porter le marquage CE. Ils doivent également être accompagnés d'une notice d'utilisation et d'une déclaration UE de conformité.
+
+2. **Information** : Vous avez le droit d'être informé sur les risques et les conditions d'utilisation des équipements. La notice doit être claire et complète.
+
+3. **Sécurité** : Les équipements doivent être sûrs et ne pas présenter de risques pour votre santé ou votre sécurité.
+
+4. **Recours** : En cas de non-conformité ou de danger, vous pouvez exiger le retrait du produit du marché, un remplacement ou un remboursement.
 
 ## Les situations les plus fréquentes
 
-- **Équipement de protection individuelle (casque, lunettes, gants) non conforme ou sans marquage CE** : Un EPI non conforme peut ne pas porter le marquage CE, manquer de notice d'accompagnement, ou ne pas respecter les normes de sécurité. [Lire la fiche](epi_non_conforme.md)
-
-- **Équipement sportif dangereux (vélo, trottinette, équipement équestre, nautique)** : Un équipement sportif dangereux peut présenter des défauts de fabrication, des marquages incorrects, ou ne pas répondre aux normes de sécurité. [Lire la fiche](equipement_sport_dangereux.md)
+- **Équipement de protection individuelle (casque, lunettes, gants) non conforme ou sans marquage CE** : [Lire la fiche](epi_non_conforme.md)
+- **Équipement sportif dangereux (vélo, trottinette, équipement équestre, nautique)** : [Lire la fiche](equipement_sport_dangereux.md)
 
 ## Que faire concrètement ?
 
-1. **Vérifiez le marquage CE** : Assurez-vous que l'équipement porte le marquage CE et est accompagné d'une déclaration UE de conformité.
-2. **Consultez la notice d'utilisation** : Vérifiez que la notice est complète et comprend toutes les informations nécessaires pour une utilisation sûre.
-3. **Signalez les anomalies** : Si vous constatez un problème, signalez-le via [SignalConso](https://signal.conso.gouv.fr).
-4. **Contactez le vendeur** : Informez le vendeur du problème et demandez un remplacement ou un remboursement.
-5. **Consultez RappelConso** : Vérifiez si l'équipement a été rappelé sur [RappelConso](https://rappel.conso.gouv.fr).
+1. **Vérifier la conformité** : Assurez-vous que l'équipement porte le marquage CE et est accompagné d'une notice d'utilisation et d'une déclaration UE de conformité.
+
+2. **Signalement** : Si vous constatez un équipement non conforme ou dangereux, signalez-le via [SignalConso](https://signal.conso.gouv.fr).
+
+3. **Consulter RappelConso** : Pour vérifier si un produit a été rappelé, consultez [RappelConso](https://rappel.conso.gouv.fr).
+
+4. **Contacter le vendeur** : Informez le vendeur du problème et demandez un remplacement ou un remboursement.
+
+5. **Recours légal** : Si le vendeur ne répond pas à vos demandes, vous pouvez engager un recours légal pour obtenir réparation.
 
 ## Où signaler / à qui s'adresser ?
 
-- **Consulter RappelConso** : [https://rappel.conso.gouv.fr](https://rappel.conso.gouv.fr)
-- **Signalement SignalConso** : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)
+- **SignalConso** : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)
+- **RappelConso** : [https://rappel.conso.gouv.fr](https://rappel.conso.gouv.fr)
+- **Médiateur sectoriel** : [À COMPLÉTER]
+- **DGCCRF** : [https://www.economie.gouv.fr/dgccrf](https://www.economie.gouv.fr/dgccrf)
 
 ## Pour aller plus loin
 

@@ -1,68 +1,62 @@
 ---
 domaine: pratiques_commerciales
-generated_at: '2026-02-25T02:29:51.408214'
+generated_at: '2026-02-25T11:31:09.591938'
 level: sous_domaine
 model: openweight-medium
 sources_count: 20
 taxonomy_id: ventes_abusives
 title: Ventes liées, forcées ou abusives
-tokens: 7544
+tokens: 7156
 ---
 
 # Ventes liées, forcées ou abusives : vos droits et recours
 
 ## En bref
-Les ventes liées, forcées ou abusives sont des pratiques commerciales trompeuses ou agressives qui vous poussent à acheter un produit ou un service que vous n’auriez pas acheté autrement. Ces pratiques sont interdites par la loi française. Vous avez des droits pour vous protéger et des recours si vous êtes victime de ces pratiques.
+Les ventes liées, forcées ou abusives sont des pratiques commerciales trompeuses ou agressives qui poussent les consommateurs à acheter des produits ou services qu'ils n'auraient pas choisis en toute connaissance de cause. Ces pratiques sont strictement encadrées par la loi française. Vous avez des droits pour vous protéger contre ces abus.
 
 ## De quoi s'agit-il ?
-Les ventes liées, forcées ou abusives concernent les situations où un professionnel vous oblige ou vous incite à acheter un produit ou un service que vous n’auriez pas acheté autrement. Cela inclut :
-- **Les ventes liées** : obligation d'acheter un produit pour en obtenir un autre (exemple : obligation d'acheter une assurance pour obtenir un crédit).
-- **Les ventes forcées** : pression pour acheter un produit ou un service sans votre consentement explicite (exemple : cases précochées pour un abonnement).
-- **Les ventes abusives** : renouvellement automatique d'un contrat sans information préalable (exemple : renouvellement tacite d'un abonnement sans préavis).
+Les ventes liées, forcées ou abusives désignent des situations où un professionnel impose ou influence de manière déloyale un consommateur à acheter un produit ou un service. Cela inclut :
+- **Les ventes liées** : obligation d'acheter un produit pour en obtenir un autre (ex. : acheter une imprimante pour avoir des cartouches à prix réduit).
+- **Les ventes forcées** : pression pour acheter un produit non désiré (ex. : démarchage téléphonique agressif).
+- **Les ventes abusives** : utilisation de techniques trompeuses pour inciter à l'achat (ex. : cases précochées pour des abonnements).
 
 Ces pratiques sont interdites par le Code de la consommation et peuvent être sanctionnées.
 
 ## Quels sont vos droits ?
-En tant que consommateur, vous avez le droit de ne pas être soumis à des pratiques commerciales déloyales. Les professionnels doivent respecter vos droits et ne pas vous forcer à acheter un produit ou un service que vous n’auriez pas acheté autrement. Voici quelques droits clés :
-- **Droit à l'information** : les professionnels doivent vous fournir toutes les informations nécessaires pour prendre une décision éclairée.
-- **Droit de rétractation** : vous avez le droit de vous rétracter dans un délai de 14 jours pour les contrats conclus à distance ou hors établissement.
-- **Droit à la loyauté** : les professionnels ne doivent pas vous tromper ou vous manipuler pour vous inciter à acheter.
+Vous avez le droit de :
+- **Refuser une vente liée** : un professionnel ne peut pas vous obliger à acheter un produit pour en obtenir un autre, sauf si les deux produits sont indissociables (ex. : une carte bancaire et son assurance).
+- **Exercer votre droit de rétractation** : vous avez 14 jours pour annuler un achat effectué à distance ou hors établissement (ex. : achat en ligne, démarchage à domicile).
+- **Être informé clairement** : le professionnel doit vous fournir toutes les informations nécessaires avant la vente, y compris les prix, les délais de livraison, et les conditions de rétractation.
+- **Signaler les abus** : vous pouvez signaler les pratiques commerciales déloyales à la DGCCRF ou via la plateforme SignalConso.
 
 ## Les situations les plus fréquentes
 
 - **Obligation d'acheter un produit pour en obtenir un autre (vente liée illégale)**
-  - Description : Un professionnel vous oblige à acheter un produit ou un service pour obtenir un autre produit ou service. Par exemple, vous devez souscrire à une assurance pour obtenir un crédit.
-  - Lire la fiche [Obligation d'acheter un produit pour en obtenir un autre (vente liée illégale)](vente_liee.md)
+  - Description : Un professionnel vous oblige à acheter un produit pour obtenir un autre à prix réduit ou gratuitement.
+  - [Lire la fiche](vente_liee.md)
 
 - **Souscription à un abonnement sans consentement explicite (case précochée, option par défaut)**
-  - Description : Un professionnel vous inscrit automatiquement à un abonnement sans votre consentement explicite, par exemple en précochant une case ou en proposant une option par défaut.
-  - Lire la fiche [Souscription à un abonnement sans consentement explicite (case précochée, option par défaut)](abonnement_cache.md)
+  - Description : Un professionnel utilise des cases précochées ou des options par défaut pour vous faire souscrire à un abonnement sans votre consentement explicite.
+  - [Lire la fiche](abonnement_cache.md)
 
 - **Renouvellement automatique d'un contrat sans information préalable**
-  - Description : Un professionnel renouvelle automatiquement votre contrat sans vous informer préalablement, par exemple en renouvelant un abonnement sans votre consentement explicite.
-  - Lire la fiche [Renouvellement automatique d'un contrat sans information préalable](renouvellement_tacite_sans_preavis.md)
+  - Description : Un professionnel renouvelle automatiquement votre contrat sans vous informer à l'avance, vous engageant ainsi sans votre consentement.
+  - [Lire la fiche](renouvellement_tacite_sans_preavis.md)
 
 ## Que faire concrètement ?
-Si vous êtes victime de ventes liées, forcées ou abusives, voici les étapes à suivre :
-1. **Conserver les preuves** : gardez toutes les preuves de la vente ou du contrat, y compris les emails, les factures et les captures d'écran.
-2. **Contacter le professionnel** : informez le professionnel de votre mécontentement et demandez la résolution du problème.
-3. **Saisir le médiateur de la consommation** : si le professionnel ne répond pas ou ne résout pas le problème, vous pouvez saisir le médiateur de la consommation. [Lire la fiche](https://www.economie.gouv.fr/mediation-conso)
-4. **Signaler le problème** : vous pouvez signaler le problème sur la plateforme SignalConso. [Lire la fiche](https://signal.conso.gouv.fr)
+1. **Refuser l'achat** : Vous pouvez refuser d'acheter un produit ou service imposé de manière abusive.
+2. **Exercer votre droit de rétractation** : Si vous avez acheté un produit ou service de manière abusive, vous pouvez annuler l'achat dans les 14 jours suivant la commande.
+3. **Conserver les preuves** : Gardez tous les documents relatifs à l'achat (emails, factures, enregistrements de conversations téléphoniques).
+4. **Contacter le professionnel** : Essayez de résoudre le problème directement avec le professionnel en expliquant la situation.
+5. **Saisir la médiation** : Si le professionnel ne répond pas à vos demandes, vous pouvez saisir un médiateur de la consommation.
+6. **Signaler à la DGCCRF** : Utilisez la plateforme [SignalConso](https://signal.conso.gouv.fr) pour signaler les pratiques abusives.
 
 ## Où signaler / à qui s'adresser ?
 - **Médiation de la consommation** : [https://www.economie.gouv.fr/mediation-conso](https://www.economie.gouv.fr/mediation-conso)
 - **Signalement SignalConso** : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)
 
 ## Pour aller plus loin
-- [Pratiques commerciales déloyales](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/pratiques-commerciales-deloyales)
-- [Vente avec prime](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/vente-avec-prime)
-- [Pratiques commerciales cachées sous les meubles](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes/pratiques-commerciales-cachees-sous-les-meubles)
-- [Contrôle des pratiques commerciales dans la vente d’ameublement](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes/controle-des-pratiques-commerciales-dans-la-vente-0)
-- [DSA : de nouvelles obligations pour les professionnels](https://www.economie.gouv.fr/dgccrf/dsa-de-nouvelles-obligations-pour-les-professionnels)
-- [Produits reconditionnés : quels engagements vis-à-vis du consommateur ?](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes/produits-reconditionnes-quels-engagements-vis-vis-du)
-- [Promotion faite par les influenceurs et achat via les réseaux sociaux](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/promotion-faite-par-les-influenceurs-et-achat-les-reseaux-sociaux)
-- [Crédit à la consommation : loyauté de l’information précontractuelle](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes/credit-la-consommation-loyaute-de-linformation)
-- [Pratiques commerciales trompeuses : les clés pour les reconnaître et s’en prémunir](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/pratiques-commerciales-trompeuses-les-cles-pour-les-reconnaitre-et-sen-premunir)
-- [Achat de meubles et d’articles de literie : ventes avec démarchage téléphonique ou jeux-concours avec repas gratuits, consommateurs manipulés et trompés](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/achat-de-meubles-et-darticles-de-literie-ventes-avec-demarchage)
-- [Pièges sur les sites de commerce en ligne : attention aux dark patterns !](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/pieges-sur-les-sites-de-commerce-en-ligne-attention-aux-dark-patterns)
-- [E-commerce : les règles entre professionnels et consommateurs](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/e-commerce-les-regles-entre-professionnels-et-consommateurs)
+- [Article L. 121-1 du Code de la consommation](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=EEE293687AF833814530A7F552BE2BD3.tplgfr25s_3?idArticle=LEGIARTI000032227285&cidTexte=LEGITEXT000006069565)
+- [Article L. 121-6 du Code de la consommation](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=662665221DEEE7F44F0839B426359942.tpdila21v_1?idArticle=LEGIARTI000032227285&cidTexte=LEGITEXT000006069565)
+- [Article L. 221-10 du Code de la consommation](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032226864)
+- [Article L. 221-18 du Code de la consommation](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032226842)

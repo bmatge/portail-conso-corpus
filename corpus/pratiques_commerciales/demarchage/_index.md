@@ -1,83 +1,70 @@
 ---
 domaine: pratiques_commerciales
-generated_at: '2026-02-25T02:29:05.895233'
+generated_at: '2026-02-25T11:30:29.749131'
 level: sous_domaine
 model: openweight-medium
 sources_count: 20
 taxonomy_id: demarchage
 title: Démarchage abusif
-tokens: 6595
+tokens: 6139
 ---
 
 # Démarchage abusif : vos droits et recours
 
 ## En bref
-
-Le démarchage abusif désigne les pratiques commerciales trompeuses, agressives ou abusives effectuées par téléphone, à domicile ou par d'autres moyens. Vous avez des droits pour vous protéger contre ces pratiques, notamment le droit de rétractation et le droit de refuser toute sollicitation. Les professionnels doivent respecter des règles strictes pour éviter d'être sanctionnés.
+Le démarchage abusif désigne les pratiques commerciales trompeuses, agressives ou mensongères utilisées par des professionnels pour inciter les consommateurs à acheter des biens ou services. Cela inclut le démarchage téléphonique non sollicité, les ventes à domicile sous pression, et l'exploitation de la vulnérabilité des personnes. Vous avez des droits pour vous protéger contre ces pratiques.
 
 ## De quoi s'agit-il ?
-
-Le démarchage abusif concerne les pratiques commerciales déloyales où un professionnel profite de la situation de faiblesse ou d'ignorance d'une personne pour obtenir son engagement. Cela peut inclure le démarchage téléphonique non sollicité, la vente à domicile avec pression ou sans remise du bon de rétractation, et l'abus de faiblesse ou de vulnérabilité (personne âgée, état de détresse…).
+Le démarchage abusif couvre un ensemble de pratiques commerciales déloyales où les professionnels utilisent des méthodes trompeuses ou agressives pour inciter les consommateurs à acheter des biens ou services. Cela inclut le démarchage téléphonique non sollicité, les ventes à domicile sous pression, et l'exploitation de la vulnérabilité des personnes, notamment les personnes âgées ou en situation de détresse.
 
 ### Périmètre
-
-- **Démarchage téléphonique non sollicité** (hors exceptions légales) : appels téléphoniques non désirés pour des ventes ou des services.
-- **Vente à domicile avec pression ou sans remise du bon de rétractation** : vente effectuée à domicile avec pression ou sans respecter les règles de rétractation.
-- **Abus de faiblesse ou de vulnérabilité** : exploitation de la faiblesse ou de la vulnérabilité d'une personne pour obtenir un engagement.
+- **Démarchage téléphonique** : Appels non sollicités pour vendre des produits ou services.
+- **Vente à domicile** : Pression pour signer un contrat immédiatement ou sans remise du bon de rétractation.
+- **Abus de faiblesse** : Exploitation de la vulnérabilité d'une personne (âge, état de détresse, etc.).
+- **Démarchage spécifique à la rénovation énergétique** : Appels ou visites à domicile pour des travaux d'isolation, installation de pompes à chaleur, etc.
 
 ### Ce qui n'est pas couvert
-
-- Les démarchages effectués dans le cadre légal et respectant les règles de transparence et de consentement.
-- Les démarchages effectués par des professionnels qui respectent les délais et les obligations légales.
+- Les démarchages réalisés dans le cadre d'un contrat en cours.
+- Les démarchages effectués avec le consentement préalable du consommateur.
 
 ## Quels sont vos droits ?
-
 ### Démarchage téléphonique
-
-- **Interdiction de démarchage** : Il est interdit à tout professionnel de démarcher téléphoniquement des consommateurs inscrits sur la liste d’opposition Bloctel.
-- **Horaires de démarchage** : Le démarchage téléphonique est autorisé uniquement du lundi au vendredi, de 10 heures à 13 heures et de 14 heures à 20 heures.
-- **Limitation des appels** : Un même professionnel ne peut démarcher ou tenter de démarcher téléphoniquement un même consommateur plus de quatre fois au cours d'une période de trente jours calendaires.
-- **Refus de sollicitation** : Tout consommateur peut refuser la sollicitation téléphonique lors de la conversation. Le professionnel devra s’abstenir de le contacter ou de tenter de le contacter par téléphone dans les soixante jours calendaires.
+- **Interdiction** : Le démarchage téléphonique est interdit sans votre consentement préalable, notamment dans le secteur de la rénovation énergétique.
+- **Horaires** : Les appels sont autorisés uniquement du lundi au vendredi, de 10h à 13h et de 14h à 20h.
+- **Fréquence** : Un même professionnel ne peut vous appeler plus de quatre fois en trente jours.
+- **Liste Bloctel** : Vous pouvez vous inscrire sur la liste Bloctel pour bloquer les appels de démarchage.
 
 ### Vente à domicile
-
-- **Droit de rétractation** : Vous avez un droit de rétractation de 14 jours à compter de la signature du contrat.
-- **Bon de rétractation** : Le professionnel doit vous remettre un bon de rétractation lors de la signature du contrat.
-- **Information claire** : Le professionnel doit fournir des informations claires et précises sur les produits ou services proposés, ainsi que sur les conditions de vente.
+- **Bon de rétractation** : Vous devez recevoir un bon de rétractation lors de la signature du contrat. Vous avez 14 jours pour vous rétracter sans justification.
+- **Information claire** : Le professionnel doit vous fournir des informations claires sur les prix, les conditions de vente, et les aides publiques disponibles.
 
 ### Abus de faiblesse
+- **Protection** : Les professionnels ne peuvent pas exploiter votre vulnérabilité pour vous inciter à signer un contrat.
+- **Sanctions** : Les pratiques commerciales agressives ou abusives sont passibles de sanctions pénales.
 
-- **Définition** : L’abus de faiblesse consiste à solliciter le consommateur afin de lui faire souscrire un contrat, en abusant de la situation de faiblesse ou d'ignorance de la personne.
-- **Sanctions** : Les professionnels qui abusent de la faiblesse ou de la vulnérabilité d'une personne encourent des sanctions pénales.
-- **Engagement obtenu** : L'engagement doit avoir été obtenu dans des circonstances spécifiques, telles que la visite à domicile, le démarchage par téléphone ou télécopie, ou à la suite d'une offre effectuée à domicile sous forme de sollicitation personnalisée.
+### Rénovation énergétique
+- **Interdiction de démarchage** : Le démarchage téléphonique pour la rénovation énergétique est interdit, sauf dans le cadre de l'exécution d'un contrat en cours.
+- **Vigilance** : Méfiez-vous des appels prétendant à une aide gouvernementale urgente ou des faux auditeurs énergétiques à domicile.
 
 ## Les situations les plus fréquentes
-
 - **Démarchage téléphonique non sollicité (hors exceptions légales)** : [Lire la fiche](demarchage_telephonique.md)
 - **Vente à domicile avec pression ou sans remise du bon de rétractation** : [Lire la fiche](demarchage_domicile.md)
 - **Abus de faiblesse ou de vulnérabilité (personne âgée, état de détresse…)** : [Lire la fiche](abus_faiblesse.md)
+- **Démarchage agressif spécifique à la rénovation énergétique (isolation, pompe à chaleur)** : [Lire la fiche](demarchage_renovation_energetique.md)
 
 ## Que faire concrètement ?
-
-1. **Refuser la sollicitation** : Si vous recevez un appel téléphonique non sollicité, refusez la sollicitation et demandez à ne plus être contacté.
-2. **Inscrire sur Bloctel** : Inscrivez-vous sur la liste d’opposition au démarchage téléphonique [Bloctel](https://www.bloctel.gouv.fr/) pour éviter les appels non désirés.
-3. **Conserver les preuves** : Conservez toutes les preuves de démarchage abusif, telles que les enregistrements téléphoniques, les courriels et les contrats signés.
-4. **Exercer votre droit de rétractation** : Si vous avez signé un contrat à domicile, utilisez votre droit de rétractation de 14 jours.
-5. **Signaler le démarchage abusif** : Signalez le démarchage abusif aux autorités compétentes, telles que la DGCCRF ou le médiateur sectoriel.
+1. **Refuser l'appel ou la visite** : Vous n'êtes pas obligé de répondre aux appels de démarchage ou de laisser entrer un commercial à votre domicile.
+2. **Conserver les preuves** : Notez la date, l'heure, le nom du commercial et les propos tenus.
+3. **Contacter le professionnel** : Exigez des explications et la rectification des informations trompeuses.
+4. **Utiliser le bon de rétractation** : Si vous avez signé un contrat à domicile, utilisez le bon de rétractation dans les 14 jours.
+5. **Signaler le problème** : Utilisez les plateformes de signalement comme SignalConso ou déposez une plainte en ligne.
 
 ## Où signaler / à qui s'adresser ?
-
+- **SignalConso** : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)
 - **Dépôt de plainte** : [https://www.thesee.gouv.fr](https://www.thesee.gouv.fr)
 - **Fiche service-public.fr** : [https://www.service-public.fr](https://www.service-public.fr)
-- **Signalement SignalConso** : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)
 
 ## Pour aller plus loin
-
-- [Abus de faiblesse : définition et sanctions](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/abus-de-faiblesse-definition-et-sanctions)
-- [Démarchage téléphonique en assurance : des comportements abusifs persistants](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes/demarchage-telephonique-en-assurance-des-comportements)
-- [Dépannage à domicile : des pratiques abusives onéreuses pour les consommateurs](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes/depannage-domicile-des-pratiques-abusives-onereuses-pour)
-- [Démarchage téléphonique : des manquements dans la moitié des établissements contrôlés](https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes/demarchage-telephonique-des-manquements-dans-la-moitie-des)
-- [Renforcement des mesures pour lutter contre le démarchage abusif](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/renforcement-des-mesures-pour-lutter-contre-le-demarchage-abusif)
-- [Alerte au démarchage abusif !](https://www.inc-conso.fr/content/alerte-au-demarchage-abusif)
-- [Abus de faiblesse : définition et recours](https://www.inc-conso.fr/content/abus-de-faiblesse-definition-et-recours)
-- [Abus de faiblesse : comment le prévenir ?](https://www.inc-conso.fr/content/abus-de-faiblesse-comment-le-prevenir)
+- **Loi n° 2020-901** : Interdiction du démarchage téléphonique dans le secteur de la rénovation énergétique.
+- **Code de la consommation** : Articles sur les pratiques commerciales trompeuses et agressives.
+- **Liste Bloctel** : [https://www.bloctel.gouv.fr/](https://www.bloctel.gouv.fr/)

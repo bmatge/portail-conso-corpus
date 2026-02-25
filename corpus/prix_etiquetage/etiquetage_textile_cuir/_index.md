@@ -1,47 +1,44 @@
 ---
 domaine: prix_etiquetage
-generated_at: '2026-02-25T02:33:09.467765'
+generated_at: '2026-02-25T11:34:19.788145'
 level: sous_domaine
 model: openweight-medium
 sources_count: 20
 taxonomy_id: etiquetage_textile_cuir
 title: Étiquetage des textiles, cuir et chaussures
-tokens: 6621
+tokens: 6554
 ---
 
 # Étiquetage des textiles, cuir et chaussures : vos droits et recours
 
 ## En bref
-L'étiquetage des textiles, du cuir et des chaussures doit fournir des informations claires et précises sur la composition des produits. Ces informations sont essentielles pour vous permettre de faire des choix éclairés. Les professionnels ont l'obligation de respecter des règles strictes en matière d'étiquetage pour éviter toute tromperie.
+L'étiquetage des textiles, du cuir et des chaussures est encadré par la loi pour garantir la transparence et la loyauté des informations fournies aux consommateurs. Vous avez le droit d'obtenir des informations claires et exactes sur la composition des produits, leur origine et leur entretien. En cas de non-respect de ces obligations, vous pouvez engager des recours.
 
 ## De quoi s'agit-il ?
-L'étiquetage des textiles, du cuir et des chaussures concerne les informations obligatoires que les professionnels doivent fournir sur les produits qu'ils vendent. Cela inclut la composition des matériaux, l'identification du fabricant ou du vendeur, et des indications sur l'entretien. L'étiquetage doit être visible, lisible et rédigé en français.
+L'étiquetage des textiles, du cuir et des chaussures concerne les informations obligatoires que les professionnels doivent fournir sur leurs produits. Cela inclut la composition des matériaux, l'origine du produit, et les instructions d'entretien. Cet étiquetage permet aux consommateurs de faire des choix éclairés et de connaître la véritable nature des produits qu'ils achètent.
 
-**Ce qui est couvert :**
-- Les vêtements et textiles
-- Les produits en cuir (ceintures, sacs, etc.)
-- Les chaussures
+### Périmètre
+- **Textiles** : vêtements, chaussures, et tout produit contenant des fibres textiles.
+- **Cuir** : produits en cuir, y compris les accessoires et les chaussures.
+- **Chaussures** : informations sur la composition des différentes parties de la chaussure.
 
-**Ce qui n'est pas couvert :**
-- Les équipements de protection individuelle
-- Les articles chaussants fabriqués ou commercialisés dans un autre état membre de l'UE
+### Exclusions
+- Les équipements de protection individuelle.
+- Les articles chaussants fabriqués ou commercialisés dans un autre état membre de l'UE.
 
 ## Quels sont vos droits ?
-Les professionnels doivent respecter plusieurs obligations légales concernant l'étiquetage des textiles, du cuir et des chaussures :
+En tant que consommateur, vous avez le droit à des informations claires et exactes sur les produits que vous achetez. Les professionnels doivent respecter les obligations suivantes :
 
-1. **Composition des matériaux** : Les étiquettes doivent indiquer la composition des matériaux en pourcentage. Par exemple, pour les vêtements, l'étiquette doit préciser les pourcentages des différentes fibres textiles utilisées. Pour les chaussures, l'étiquetage doit inclure des informations sur la composition des trois parties principales : la tige, l'intérieur, et la semelle extérieure.
+- **Étiquetage des textiles** : L'étiquette de composition doit être rédigée en français et indiquer les pourcentages des fibres textiles utilisées. Elle doit être lisible et fixée sur le produit.
+- **Étiquetage du cuir** : Les produits en cuir doivent être clairement identifiés comme tels. Les termes "cuir" et "croûte de cuir" doivent être utilisés de manière distincte pour éviter toute confusion.
+- **Étiquetage des chaussures** : Les informations sur la composition des trois parties principales de la chaussure (tige, intérieur, semelle extérieure) doivent être clairement indiquées, soit par des pictogrammes, soit par des indications textuelles.
 
-2. **Identification du fabricant ou du vendeur** : L'étiquetage doit permettre d'identifier clairement le fabricant, l'importateur, le distributeur ou le vendeur.
+### Délais importants
+- Les professionnels doivent fournir ces informations dès la mise en vente du produit.
 
-3. **Langue française** : Toutes les informations sur l'étiquetage doivent être rédigées en français.
-
-4. **Distinction entre cuir et croûte de cuir** : L'étiquetage doit permettre de distinguer le cuir de la croûte de cuir pour éviter toute confusion.
-
-5. **Indications d'entretien** : Bien que facultatives, les indications d'entretien sont fortement recommandées pour éviter la responsabilité du professionnel en cas d'incident.
-
-**Cas particuliers fréquents :**
-- Les bijoux fantaisie comportant au moins 80 % de leur poids en fibres textiles sont soumis à un étiquetage de composition spécifique.
-- Les bijoux fantaisie comportant une partie en cuir doivent se référer à la fiche [cuir](https://www.economie.gouv.fr/dgccrf/Publications/Vie-pratique/Fiches-pratiques/Cuir).
+### Cas particuliers fréquents
+- **Produits sans étiquette** : Les produits vendus sur les marchés de plein air ou en solderie doivent également être étiquetés conformément à la réglementation.
+- **Mentions trompeuses** : Les termes comme "cuir véritable", "cuir naturel", "simili-cuir", "cuir vegan" doivent être utilisés avec précision pour éviter toute tromperie.
 
 ## Les situations les plus fréquentes
 
@@ -49,19 +46,16 @@ Les professionnels doivent respecter plusieurs obligations légales concernant l
 - **Produit vendu comme « cuir » alors qu'il s'agit de simili-cuir ou matière synthétique** ([Lire la fiche](faux_cuir.md))
 
 ## Que faire concrètement ?
-Si vous constatez une anomalie ou une tromperie dans l'étiquetage des textiles, du cuir ou des chaussures, voici les étapes à suivre :
+Si vous constatez une non-conformité dans l'étiquetage d'un produit, voici les étapes à suivre :
 
-1. **Contacter le professionnel** : Informez le vendeur ou le fabricant de votre constat et demandez des explications. Vous pouvez le faire par téléphone, par email ou en vous rendant directement en magasin.
-
-2. **Conserver les preuves** : Gardez l'étiquette du produit, les tickets de caisse et toute autre preuve de l'achat. Prenez des photos des étiquettes et du produit si nécessaire.
-
-3. **Signaler le problème** : Si le professionnel ne répond pas ou ne corrige pas la situation, vous pouvez signaler le problème via la plateforme [SignalConso](https://signal.conso.gouv.fr).
-
-4. **Engager une action en justice** : Si le problème persiste et que vous avez subi un préjudice, vous pouvez engager une action en justice pour obtenir réparation.
+1. **Vérifiez l'étiquette** : Assurez-vous que l'étiquette est présente, lisible et conforme aux exigences légales.
+2. **Contactez le vendeur** : Informez le vendeur du problème et demandez une solution. Vous pouvez exiger un remboursement ou un échange si le produit ne correspond pas à la description.
+3. **Conservez les preuves** : Gardez une copie de l'étiquette, du ticket de caisse et toute autre preuve de l'achat.
+4. **Signalez le problème** : Utilisez la plateforme [SignalConso](https://signal.conso.gouv.fr) pour signaler le problème aux autorités compétentes.
 
 ## Où signaler / à qui s'adresser ?
-- **Signalement SignalConso** : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)
-- **Démarches et services en tant que consommateur** : [https://www.economie.gouv.fr/dgccrf/les-demarches-et-les-services/demarches-et-services-en-tant-que-consommateur](https://www.economie.gouv.fr/dgccrf/les-demarches-et-les-services/demarches-et-services-en-tant-que-consommateur)
+- **SignalConso** : [https://signal.conso.gouv.fr](https://signal.conso.gouv.fr)
+- **Médiateur sectoriel** : [Démarches et services en tant que consommateur](https://www.economie.gouv.fr/dgccrf/les-demarches-et-les-services/demarches-et-services-en-tant-que-consommateur)
 
 ## Pour aller plus loin
 - [Décret n°2010-29 du 8 janvier 2010 – article L.214-1](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021645894/)
