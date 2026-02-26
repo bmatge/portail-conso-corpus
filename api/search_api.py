@@ -56,8 +56,8 @@ SOURCE_DIRS_CONFIG = [
 
 SOURCE_LABELS = {
     "dgccrf": "DGCCRF",
-    "particuliers": "Service-Public Particuliers",
-    "entreprises": "Service-Public Entreprises",
+    "particuliers": "Bercy Infos Particuliers",
+    "entreprises": "Bercy Infos Entreprises",
     "inc": "INC (Institut National de la Consommation)",
 }
 
